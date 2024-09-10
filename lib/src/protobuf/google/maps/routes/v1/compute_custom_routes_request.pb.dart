@@ -139,12 +139,14 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $474.Waypoint ensureDestination() => $_ensure(1);
 
-  /// Optional. A set of waypoints along the route (excluding terminal points), for either
-  /// stopping at or passing by. Up to 25 intermediate waypoints are supported.
+  /// Optional. A set of waypoints along the route (excluding terminal points),
+  /// for either stopping at or passing by. Up to 25 intermediate waypoints are
+  /// supported.
   @$pb.TagNumber(3)
   $core.List<$474.Waypoint> get intermediates => $_getList(2);
 
-  /// Optional. Specifies the mode of transportation. Only DRIVE is supported now.
+  /// Optional. Specifies the mode of transportation. Only `DRIVE` and
+  /// 'TWO_WHEELER' are supported.
   @$pb.TagNumber(4)
   $175.RouteTravelMode get travelMode => $_getN(3);
   @$pb.TagNumber(4)
@@ -154,13 +156,11 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearTravelMode() => clearField(4);
 
-  /// Optional. Specifies how to compute the route. The server attempts to use the selected
-  /// routing preference to compute the route. If the routing preference results
-  /// in an error or an extra long latency, then an error is returned. In the
-  /// future, we might implement a fallback mechanism to use a different option
-  /// when the preferred option does not give a valid result. You can specify
-  /// this option only when the `travel_mode` is `DRIVE` or `TWO_WHEELER`,
-  /// otherwise the request fails.
+  /// Optional. Specifies how to compute the route. The server attempts to use
+  /// the selected routing preference to compute the route. If the routing
+  /// preference results in an error or an extra long latency, then an error is
+  /// returned. You can specify this option only when the `travel_mode` is
+  /// `DRIVE` or `TWO_WHEELER`, otherwise the request fails.
   @$pb.TagNumber(5)
   $175.RoutingPreference get routingPreference => $_getN(4);
   @$pb.TagNumber(5)
@@ -195,11 +195,12 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
   $299.Timestamp ensureDepartureTime() => $_ensure(6);
 
   /// Optional. The BCP-47 language code, such as "en-US" or "sr-Latn". For more
-  /// information, see
-  /// http://www.unicode.org/reports/tr35/#Unicode_locale_identifier. See
-  /// [Language Support](https://developers.google.com/maps/faq#languagesupport)
-  /// for the list of supported languages. When you don't provide this value, the
-  /// display language is inferred from the location of the route request.
+  /// information, see [Unicode Locale
+  /// Identifier](http://www.unicode.org/reports/tr35/#Unicode_locale_identifier).
+  /// See [Language
+  /// Support](https://developers.google.com/maps/faq#languagesupport) for the
+  /// list of supported languages. When you don't provide this value, the display
+  /// language is inferred from the location of the route request.
   @$pb.TagNumber(9)
   $core.String get languageCode => $_getSZ(7);
   @$pb.TagNumber(9)
@@ -209,11 +210,11 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   void clearLanguageCode() => clearField(9);
 
-  /// Optional. Specifies the units of measure for the display fields. This includes the
-  /// `instruction` field in `NavigationInstruction`. The units of measure used
-  /// for the route, leg, step distance, and duration are not affected by this
-  /// value. If you don't provide this value, then the display units are inferred
-  /// from the location of the request.
+  /// Optional. Specifies the units of measure for the display fields. This
+  /// includes the `instruction` field in `NavigationInstruction`. The units of
+  /// measure used for the route, leg, step distance, and duration are not
+  /// affected by this value. If you don't provide this value, then the display
+  /// units are inferred from the location of the request.
   @$pb.TagNumber(10)
   $175.Units get units => $_getN(8);
   @$pb.TagNumber(10)
@@ -223,7 +224,8 @@ class ComputeCustomRoutesRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearUnits() => clearField(10);
 
-  /// Optional. A set of conditions to satisfy that affect the way routes are calculated.
+  /// Optional. A set of conditions to satisfy that affect the way routes are
+  /// calculated.
   @$pb.TagNumber(11)
   $175.RouteModifiers get routeModifiers => $_getN(9);
   @$pb.TagNumber(11)
@@ -310,7 +312,7 @@ class RouteObjective_RateCard_MonetaryCost extends $pb.GeneratedMessage {
   void clearValue() => clearField(1);
 }
 
-/// Encapsulates a RateCard route objective.
+/// Encapsulates a `RateCard` route objective.
 class RouteObjective_RateCard extends $pb.GeneratedMessage {
   factory RouteObjective_RateCard({
     RouteObjective_RateCard_MonetaryCost? costPerMinute,
@@ -396,16 +398,21 @@ class RouteObjective_RateCard extends $pb.GeneratedMessage {
   void clearIncludeTolls() => clearField(4);
 }
 
-/// Information about a dataset that customers uploaded in advance. The
-/// dataset information will be used for generating route annotations or to
-/// influence routing.
+/// Information about a dataset that customers have uploaded in advance. The
+/// dataset information is used to influence routing.
 class RouteObjective_CustomLayer_DatasetInfo extends $pb.GeneratedMessage {
   factory RouteObjective_CustomLayer_DatasetInfo({
+  @$core.Deprecated('This field is deprecated.')
     $core.String? datasetId,
+    $core.String? displayName,
   }) {
     final $result = create();
     if (datasetId != null) {
+      // ignore: deprecated_member_use_from_same_package
       $result.datasetId = datasetId;
+    }
+    if (displayName != null) {
+      $result.displayName = displayName;
     }
     return $result;
   }
@@ -415,6 +422,7 @@ class RouteObjective_CustomLayer_DatasetInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteObjective.CustomLayer.DatasetInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'datasetId')
+    ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
   ;
 
@@ -439,21 +447,36 @@ class RouteObjective_CustomLayer_DatasetInfo extends $pb.GeneratedMessage {
   static RouteObjective_CustomLayer_DatasetInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteObjective_CustomLayer_DatasetInfo>(create);
   static RouteObjective_CustomLayer_DatasetInfo? _defaultInstance;
 
-  /// Required. ID of a customer uploaded dataset for which will be used to annotate or
-  /// influence the route. If the dataset does not exist or is not yet ready,
-  /// the request will fail.
+  /// Optional. Deprecated: use display_name instead.
+  /// ID of a customer uploaded dataset which is used to influence the route.
+  /// If the dataset does not exist or is not yet ready, the request fails.
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   $core.String get datasetId => $_getSZ(0);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   set datasetId($core.String v) { $_setString(0, v); }
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   $core.bool hasDatasetId() => $_has(0);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   void clearDatasetId() => clearField(1);
+
+  /// Optional. Display name of the customer uploaded dataset which is used
+  /// to influence the route. If the dataset does not exist or is not yet
+  /// ready, the request fails.
+  @$pb.TagNumber(2)
+  $core.String get displayName => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set displayName($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasDisplayName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearDisplayName() => clearField(2);
 }
 
-/// Customized data layer that customers use to generated route annotations or
-/// influence the generated route.
+/// Customized data layer that customers use to influence the generated route.
 class RouteObjective_CustomLayer extends $pb.GeneratedMessage {
   factory RouteObjective_CustomLayer({
     RouteObjective_CustomLayer_DatasetInfo? datasetInfo,
@@ -494,7 +517,7 @@ class RouteObjective_CustomLayer extends $pb.GeneratedMessage {
   static RouteObjective_CustomLayer getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteObjective_CustomLayer>(create);
   static RouteObjective_CustomLayer? _defaultInstance;
 
-  /// Required. A dataset that the customer uploaded in advance.
+  /// Required. A dataset that the customer has uploaded in advance.
   @$pb.TagNumber(1)
   RouteObjective_CustomLayer_DatasetInfo get datasetInfo => $_getN(0);
   @$pb.TagNumber(1)
@@ -512,7 +535,7 @@ enum RouteObjective_Objective {
   notSet
 }
 
-/// Encapsulates an objective to optimize for by ComputeCustomRoutes.
+/// Encapsulates an objective to optimize for by `ComputeCustomRoutes`.
 class RouteObjective extends $pb.GeneratedMessage {
   factory RouteObjective({
     RouteObjective_RateCard? rateCard,
@@ -578,12 +601,8 @@ class RouteObjective extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   RouteObjective_RateCard ensureRateCard() => $_ensure(0);
 
-  /// Optional. Specifies the custom data layer being used to affect generated routes.
-  /// Customers can turn off the custom layer by not setting this field. Once a
-  /// custom layer is being set, the custom layer will be used to generate route
-  /// annotations (CustomLayerInfo) in the returned routes, the annotations can
-  /// be turned off using `X-Goog-FieldMask` header (see
-  /// https://cloud.google.com/apis/docs/system-parameters).
+  /// Optional. Specifies the custom data layer being used to affect generated
+  /// routes. Customers can turn off the custom layer by not setting this field.
   @$pb.TagNumber(2)
   RouteObjective_CustomLayer get customLayer => $_getN(1);
   @$pb.TagNumber(2)

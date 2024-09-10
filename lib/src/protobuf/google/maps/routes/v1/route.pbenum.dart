@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 /// A set of values that specify the navigation action to take for the current
-/// step (e.g., turn left, merge, straight, etc.).
+/// step (for example, turn left, merge, or straight).
 class Maneuver extends $pb.ProtobufEnum {
   static const Maneuver MANEUVER_UNSPECIFIED = Maneuver._(0, _omitEnumNames ? '' : 'MANEUVER_UNSPECIFIED');
   static const Maneuver TURN_SLIGHT_LEFT = Maneuver._(1, _omitEnumNames ? '' : 'TURN_SLIGHT_LEFT');
@@ -35,6 +35,8 @@ class Maneuver extends $pb.ProtobufEnum {
   static const Maneuver FERRY_TRAIN = Maneuver._(16, _omitEnumNames ? '' : 'FERRY_TRAIN');
   static const Maneuver ROUNDABOUT_LEFT = Maneuver._(17, _omitEnumNames ? '' : 'ROUNDABOUT_LEFT');
   static const Maneuver ROUNDABOUT_RIGHT = Maneuver._(18, _omitEnumNames ? '' : 'ROUNDABOUT_RIGHT');
+  static const Maneuver DEPART = Maneuver._(19, _omitEnumNames ? '' : 'DEPART');
+  static const Maneuver NAME_CHANGE = Maneuver._(20, _omitEnumNames ? '' : 'NAME_CHANGE');
 
   static const $core.List<Maneuver> values = <Maneuver> [
     MANEUVER_UNSPECIFIED,
@@ -56,6 +58,8 @@ class Maneuver extends $pb.ProtobufEnum {
     FERRY_TRAIN,
     ROUNDABOUT_LEFT,
     ROUNDABOUT_RIGHT,
+    DEPART,
+    NAME_CHANGE,
   ];
 
   static final $core.Map<$core.int, Maneuver> _byValue = $pb.ProtobufEnum.initByValue(values);

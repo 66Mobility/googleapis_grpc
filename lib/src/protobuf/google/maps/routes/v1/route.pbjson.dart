@@ -36,6 +36,8 @@ const Maneuver$json = {
     {'1': 'FERRY_TRAIN', '2': 16},
     {'1': 'ROUNDABOUT_LEFT', '2': 17},
     {'1': 'ROUNDABOUT_RIGHT', '2': 18},
+    {'1': 'DEPART', '2': 19},
+    {'1': 'NAME_CHANGE', '2': 20},
   ],
 };
 
@@ -47,7 +49,7 @@ final $typed_data.Uint8List maneuverDescriptor = $convert.base64Decode(
     'lHSFQQBxIOCgpUVVJOX1JJR0hUEAgSDAoIU1RSQUlHSFQQCRINCglSQU1QX0xFRlQQChIOCgpS'
     'QU1QX1JJR0hUEAsSCQoFTUVSR0UQDBINCglGT1JLX0xFRlQQDRIOCgpGT1JLX1JJR0hUEA4SCQ'
     'oFRkVSUlkQDxIPCgtGRVJSWV9UUkFJThAQEhMKD1JPVU5EQUJPVVRfTEVGVBAREhQKEFJPVU5E'
-    'QUJPVVRfUklHSFQQEg==');
+    'QUJPVVRfUklHSFQQEhIKCgZERVBBUlQQExIPCgtOQU1FX0NIQU5HRRAU');
 
 @$core.Deprecated('Use routeDescriptor instead')
 const Route$json = {
@@ -87,7 +89,15 @@ const RouteTravelAdvisory$json = {
     {'1': 'traffic_restriction', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.TrafficRestriction', '10': 'trafficRestriction'},
     {'1': 'toll_info', '3': 2, '4': 1, '5': 11, '6': '.google.maps.routes.v1.TollInfo', '10': 'tollInfo'},
     {'1': 'speed_reading_intervals', '3': 3, '4': 3, '5': 11, '6': '.google.maps.routes.v1.SpeedReadingInterval', '10': 'speedReadingIntervals'},
-    {'1': 'custom_layer_info', '3': 4, '4': 1, '5': 11, '6': '.google.maps.routes.v1.CustomLayerInfo', '10': 'customLayerInfo'},
+    {
+      '1': 'custom_layer_info',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.CustomLayerInfo',
+      '8': {'3': true},
+      '10': 'customLayerInfo',
+    },
   ],
 };
 
@@ -98,8 +108,8 @@ final $typed_data.Uint8List routeTravelAdvisoryDescriptor = $convert.base64Decod
     'b24SPAoJdG9sbF9pbmZvGAIgASgLMh8uZ29vZ2xlLm1hcHMucm91dGVzLnYxLlRvbGxJbmZvUg'
     'h0b2xsSW5mbxJjChdzcGVlZF9yZWFkaW5nX2ludGVydmFscxgDIAMoCzIrLmdvb2dsZS5tYXBz'
     'LnJvdXRlcy52MS5TcGVlZFJlYWRpbmdJbnRlcnZhbFIVc3BlZWRSZWFkaW5nSW50ZXJ2YWxzEl'
-    'IKEWN1c3RvbV9sYXllcl9pbmZvGAQgASgLMiYuZ29vZ2xlLm1hcHMucm91dGVzLnYxLkN1c3Rv'
-    'bUxheWVySW5mb1IPY3VzdG9tTGF5ZXJJbmZv');
+    'YKEWN1c3RvbV9sYXllcl9pbmZvGAQgASgLMiYuZ29vZ2xlLm1hcHMucm91dGVzLnYxLkN1c3Rv'
+    'bUxheWVySW5mb0ICGAFSD2N1c3RvbUxheWVySW5mbw==');
 
 @$core.Deprecated('Use routeLegTravelAdvisoryDescriptor instead')
 const RouteLegTravelAdvisory$json = {
@@ -107,7 +117,15 @@ const RouteLegTravelAdvisory$json = {
   '2': [
     {'1': 'toll_info', '3': 1, '4': 1, '5': 11, '6': '.google.maps.routes.v1.TollInfo', '10': 'tollInfo'},
     {'1': 'speed_reading_intervals', '3': 2, '4': 3, '5': 11, '6': '.google.maps.routes.v1.SpeedReadingInterval', '10': 'speedReadingIntervals'},
-    {'1': 'custom_layer_info', '3': 3, '4': 1, '5': 11, '6': '.google.maps.routes.v1.CustomLayerInfo', '10': 'customLayerInfo'},
+    {
+      '1': 'custom_layer_info',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.google.maps.routes.v1.CustomLayerInfo',
+      '8': {'3': true},
+      '10': 'customLayerInfo',
+    },
   ],
 };
 
@@ -116,8 +134,8 @@ final $typed_data.Uint8List routeLegTravelAdvisoryDescriptor = $convert.base64De
     'ChZSb3V0ZUxlZ1RyYXZlbEFkdmlzb3J5EjwKCXRvbGxfaW5mbxgBIAEoCzIfLmdvb2dsZS5tYX'
     'BzLnJvdXRlcy52MS5Ub2xsSW5mb1IIdG9sbEluZm8SYwoXc3BlZWRfcmVhZGluZ19pbnRlcnZh'
     'bHMYAiADKAsyKy5nb29nbGUubWFwcy5yb3V0ZXMudjEuU3BlZWRSZWFkaW5nSW50ZXJ2YWxSFX'
-    'NwZWVkUmVhZGluZ0ludGVydmFscxJSChFjdXN0b21fbGF5ZXJfaW5mbxgDIAEoCzImLmdvb2ds'
-    'ZS5tYXBzLnJvdXRlcy52MS5DdXN0b21MYXllckluZm9SD2N1c3RvbUxheWVySW5mbw==');
+    'NwZWVkUmVhZGluZ0ludGVydmFscxJWChFjdXN0b21fbGF5ZXJfaW5mbxgDIAEoCzImLmdvb2ds'
+    'ZS5tYXBzLnJvdXRlcy52MS5DdXN0b21MYXllckluZm9CAhgBUg9jdXN0b21MYXllckluZm8=');
 
 @$core.Deprecated('Use routeLegStepTravelAdvisoryDescriptor instead')
 const RouteLegStepTravelAdvisory$json = {
@@ -280,8 +298,11 @@ const CustomLayerInfo$json = {
   '1': 'CustomLayerInfo',
   '2': [
     {'1': 'area_info', '3': 1, '4': 3, '5': 11, '6': '.google.maps.routes.v1.CustomLayerInfo.AreaInfo', '10': 'areaInfo'},
+    {'1': 'total_distance_in_areas_meters', '3': 2, '4': 1, '5': 2, '10': 'totalDistanceInAreasMeters'},
+    {'1': 'total_duration_in_areas', '3': 3, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'totalDurationInAreas'},
   ],
   '3': [CustomLayerInfo_AreaInfo$json],
+  '7': {'3': true},
 };
 
 @$core.Deprecated('Use customLayerInfoDescriptor instead')
@@ -297,8 +318,11 @@ const CustomLayerInfo_AreaInfo$json = {
 /// Descriptor for `CustomLayerInfo`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List customLayerInfoDescriptor = $convert.base64Decode(
     'Cg9DdXN0b21MYXllckluZm8STAoJYXJlYV9pbmZvGAEgAygLMi8uZ29vZ2xlLm1hcHMucm91dG'
-    'VzLnYxLkN1c3RvbUxheWVySW5mby5BcmVhSW5mb1IIYXJlYUluZm8anwEKCEFyZWFJbmZvEhcK'
-    'B2FyZWFfaWQYASABKAlSBmFyZWFJZBI1ChdkaXN0YW5jZV9pbl9hcmVhX21ldGVycxgCIAEoAl'
-    'IUZGlzdGFuY2VJbkFyZWFNZXRlcnMSQwoQZHVyYXRpb25faW5fYXJlYRgDIAEoCzIZLmdvb2ds'
-    'ZS5wcm90b2J1Zi5EdXJhdGlvblIOZHVyYXRpb25JbkFyZWE=');
+    'VzLnYxLkN1c3RvbUxheWVySW5mby5BcmVhSW5mb1IIYXJlYUluZm8SQgoedG90YWxfZGlzdGFu'
+    'Y2VfaW5fYXJlYXNfbWV0ZXJzGAIgASgCUhp0b3RhbERpc3RhbmNlSW5BcmVhc01ldGVycxJQCh'
+    'd0b3RhbF9kdXJhdGlvbl9pbl9hcmVhcxgDIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlv'
+    'blIUdG90YWxEdXJhdGlvbkluQXJlYXManwEKCEFyZWFJbmZvEhcKB2FyZWFfaWQYASABKAlSBm'
+    'FyZWFJZBI1ChdkaXN0YW5jZV9pbl9hcmVhX21ldGVycxgCIAEoAlIUZGlzdGFuY2VJbkFyZWFN'
+    'ZXRlcnMSQwoQZHVyYXRpb25faW5fYXJlYRgDIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdG'
+    'lvblIOZHVyYXRpb25JbkFyZWE6AhgB');
 

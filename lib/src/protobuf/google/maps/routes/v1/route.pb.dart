@@ -158,8 +158,8 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $261.Duration ensureStaticDuration() => $_ensure(3);
 
-  /// The overall route polyline. This polyline will be the combined polyline of
-  /// all `legs`.
+  /// The overall route polyline. This polyline is the combined polyline of all
+  /// `legs`.
   @$pb.TagNumber(5)
   $475.Polyline get polyline => $_getN(4);
   @$pb.TagNumber(5)
@@ -209,8 +209,8 @@ class Route extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   RouteTravelAdvisory ensureTravelAdvisory() => $_ensure(8);
 
-  /// If ComputeRoutesRequest.optimize_waypoint_order is set to true, this field
-  /// contains the optimized ordering of intermediates waypoints.
+  /// If `ComputeRoutesRequest.optimize_waypoint_order` is set to true, this
+  /// field contains the optimized ordering of intermediates waypoints.
   /// otherwise, this field is empty.
   /// For example, suppose the input is Origin: LA; Intermediates: Dallas,
   /// Bangor, Phoenix;  Destination: New York; and the optimized intermediate
@@ -228,6 +228,7 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
     TrafficRestriction? trafficRestriction,
     TollInfo? tollInfo,
     $core.Iterable<SpeedReadingInterval>? speedReadingIntervals,
+  @$core.Deprecated('This field is deprecated.')
     CustomLayerInfo? customLayerInfo,
   }) {
     final $result = create();
@@ -241,6 +242,7 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
       $result.speedReadingIntervals.addAll(speedReadingIntervals);
     }
     if (customLayerInfo != null) {
+      // ignore: deprecated_member_use_from_same_package
       $result.customLayerInfo = customLayerInfo;
     }
     return $result;
@@ -294,7 +296,7 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
 
   /// Encapsulates information about tolls on the Route.
   /// This field is only populated if we expect there are tolls on the Route.
-  /// If this field is set but the estimated_price subfield is not populated,
+  /// If this field is set but the `estimated_price` subfield is not populated,
   /// we expect that road contains tolls but we do not know an estimated price.
   /// If this field is not set, then we expect there is no toll on the Route.
   @$pb.TagNumber(2)
@@ -321,16 +323,22 @@ class RouteTravelAdvisory extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.List<SpeedReadingInterval> get speedReadingIntervals => $_getList(2);
 
+  /// Deprecated: This field will stop being populated soon.
   /// Information related to the custom layer data that the customer specified
   /// (e.g. time spent in a customer specified area).
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   CustomLayerInfo get customLayerInfo => $_getN(3);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   set customLayerInfo(CustomLayerInfo v) { setField(4, v); }
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   $core.bool hasCustomLayerInfo() => $_has(3);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   void clearCustomLayerInfo() => clearField(4);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   CustomLayerInfo ensureCustomLayerInfo() => $_ensure(3);
 }
@@ -341,6 +349,7 @@ class RouteLegTravelAdvisory extends $pb.GeneratedMessage {
   factory RouteLegTravelAdvisory({
     TollInfo? tollInfo,
     $core.Iterable<SpeedReadingInterval>? speedReadingIntervals,
+  @$core.Deprecated('This field is deprecated.')
     CustomLayerInfo? customLayerInfo,
   }) {
     final $result = create();
@@ -351,6 +360,7 @@ class RouteLegTravelAdvisory extends $pb.GeneratedMessage {
       $result.speedReadingIntervals.addAll(speedReadingIntervals);
     }
     if (customLayerInfo != null) {
+      // ignore: deprecated_member_use_from_same_package
       $result.customLayerInfo = customLayerInfo;
     }
     return $result;
@@ -387,11 +397,12 @@ class RouteLegTravelAdvisory extends $pb.GeneratedMessage {
   static RouteLegTravelAdvisory getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLegTravelAdvisory>(create);
   static RouteLegTravelAdvisory? _defaultInstance;
 
-  /// Encapsulates information about tolls on the specific RouteLeg.
-  /// This field is only populated if we expect there are tolls on the RouteLeg.
-  /// If this field is set but the estimated_price subfield is not populated,
-  /// we expect that road contains tolls but we do not know an estimated price.
-  /// If this field does not exist, then there is no toll on the RouteLeg.
+  /// Encapsulates information about tolls on the specific `RouteLeg`.
+  /// This field is only populated if we expect there are tolls on the
+  /// `RouteLeg`. If this field is set but the `estimated_price` subfield is not
+  /// populated, we expect that road contains tolls but we do not know an
+  /// estimated price. If this field does not exist, then there is no toll on the
+  /// `RouteLeg`.
   @$pb.TagNumber(1)
   TollInfo get tollInfo => $_getN(0);
   @$pb.TagNumber(1)
@@ -405,7 +416,7 @@ class RouteLegTravelAdvisory extends $pb.GeneratedMessage {
 
   ///  Speed reading intervals detailing traffic density. Applicable in case of
   ///  `TRAFFIC_AWARE` and `TRAFFIC_AWARE_OPTIMAL` routing preferences.
-  ///  The intervals cover the entire polyline of the RouteLg without overlap.
+  ///  The intervals cover the entire polyline of the `RouteLeg` without overlap.
   ///  The start point of a specified interval is the same as the end point of the
   ///  preceding interval.
   ///
@@ -416,16 +427,22 @@ class RouteLegTravelAdvisory extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.List<SpeedReadingInterval> get speedReadingIntervals => $_getList(1);
 
+  /// Deprecated: This field will stop being populated soon.
   /// Information related to the custom layer data that the customer specified
   /// (e.g. time spent in a customer specified area).
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   CustomLayerInfo get customLayerInfo => $_getN(2);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   set customLayerInfo(CustomLayerInfo v) { setField(3, v); }
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasCustomLayerInfo() => $_has(2);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   void clearCustomLayerInfo() => clearField(3);
+  @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   CustomLayerInfo ensureCustomLayerInfo() => $_ensure(2);
 }
@@ -472,16 +489,7 @@ class RouteLegStepTravelAdvisory extends $pb.GeneratedMessage {
   static RouteLegStepTravelAdvisory getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteLegStepTravelAdvisory>(create);
   static RouteLegStepTravelAdvisory? _defaultInstance;
 
-  ///  Speed reading intervals detailing traffic density. Applicable in case of
-  ///  `TRAFFIC_AWARE` and `TRAFFIC_AWARE_OPTIMAL` routing preferences.
-  ///  The intervals cover the entire polyline of the RouteLegStep without
-  ///  overlap. The start point of a specified interval is the same as the end
-  ///  point of the preceding interval.
-  ///
-  ///  Example:
-  ///
-  ///      polyline: A ---- B ---- C ---- D ---- E ---- F ---- G
-  ///      speed_reading_intervals: [A,C), [C,D), [D,G).
+  /// NOTE: This field is not currently populated.
   @$pb.TagNumber(1)
   $core.List<SpeedReadingInterval> get speedReadingIntervals => $_getList(0);
 }
@@ -806,12 +814,11 @@ class TollInfo extends $pb.GeneratedMessage {
   static TollInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TollInfo>(create);
   static TollInfo? _defaultInstance;
 
-  /// The monetary amount of tolls for the corresponding Route or RouteLeg.
+  /// The monetary amount of tolls for the corresponding `Route` or `RouteLeg`.
   /// This list contains a money amount for each currency that is expected
-  /// to be charged by the toll stations. Typically this list will contain only
-  /// one item for routes with tolls in one currency. For international trips,
-  /// this list may contain multiple items to reflect tolls in different
-  /// currencies.
+  /// to be charged by the toll stations. Typically this list contains only one
+  /// item for routes with tolls in one currency. For international trips, this
+  /// list may contain multiple items to reflect tolls in different currencies.
   @$pb.TagNumber(1)
   $core.List<$462.Money> get estimatedPrice => $_getList(0);
 }
@@ -1020,8 +1027,9 @@ class NavigationInstruction extends $pb.GeneratedMessage {
   static NavigationInstruction getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NavigationInstruction>(create);
   static NavigationInstruction? _defaultInstance;
 
-  /// Encapsulates the navigation instructions for the current step (e.g., turn
-  /// left, merge, straight, etc.). This field determines which icon to display.
+  /// Encapsulates the navigation instructions for the current step (for example,
+  /// turn left, merge, or straight). This field determines which icon to
+  /// display.
   @$pb.TagNumber(1)
   Maneuver get maneuver => $_getN(0);
   @$pb.TagNumber(1)
@@ -1044,8 +1052,8 @@ class NavigationInstruction extends $pb.GeneratedMessage {
 
 /// Traffic density indicator on a contiguous segment of a polyline or path.
 /// Given a path with points P_0, P_1, ... , P_N (zero-based index), the
-/// SpeedReadingInterval defines an interval and describes its traffic using the
-/// following categories.
+/// `SpeedReadingInterval` defines an interval and describes its traffic using
+/// the following categories.
 class SpeedReadingInterval extends $pb.GeneratedMessage {
   factory SpeedReadingInterval({
     $core.int? startPolylinePointIndex,
@@ -1185,8 +1193,8 @@ class CustomLayerInfo_AreaInfo extends $pb.GeneratedMessage {
   /// For example, the customer may be interested in knowing whether a
   /// returned route is traveling through multiple busy city blocks during
   /// a predefined period of time. An area ID is unique within a single
-  /// dataset uploaded by a customer. That is, a (customer_id, dataset_id,
-  /// area_id) triplet should uniquely identify a set of polygons on the map
+  /// dataset uploaded by a customer. That is, a (`customer_id`, `dataset_id`,
+  /// `area_id`) triplet should uniquely identify a set of polygons on the map
   /// that "activates" following a common schedule.
   @$pb.TagNumber(1)
   $core.String get areaId => $_getSZ(0);
@@ -1220,15 +1228,24 @@ class CustomLayerInfo_AreaInfo extends $pb.GeneratedMessage {
   $261.Duration ensureDurationInArea() => $_ensure(2);
 }
 
+/// Deprecated: This field will stop being populated soon.
 /// Encapsulates statistics about the time spent and distance travelled in a
 /// custom area.
 class CustomLayerInfo extends $pb.GeneratedMessage {
   factory CustomLayerInfo({
     $core.Iterable<CustomLayerInfo_AreaInfo>? areaInfo,
+    $core.double? totalDistanceInAreasMeters,
+    $261.Duration? totalDurationInAreas,
   }) {
     final $result = create();
     if (areaInfo != null) {
       $result.areaInfo.addAll(areaInfo);
+    }
+    if (totalDistanceInAreasMeters != null) {
+      $result.totalDistanceInAreasMeters = totalDistanceInAreasMeters;
+    }
+    if (totalDurationInAreas != null) {
+      $result.totalDurationInAreas = totalDurationInAreas;
     }
     return $result;
   }
@@ -1238,6 +1255,8 @@ class CustomLayerInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomLayerInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..pc<CustomLayerInfo_AreaInfo>(1, _omitFieldNames ? '' : 'areaInfo', $pb.PbFieldType.PM, subBuilder: CustomLayerInfo_AreaInfo.create)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'totalDistanceInAreasMeters', $pb.PbFieldType.OF)
+    ..aOM<$261.Duration>(3, _omitFieldNames ? '' : 'totalDurationInAreas', subBuilder: $261.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1267,6 +1286,34 @@ class CustomLayerInfo extends $pb.GeneratedMessage {
   /// custom layer.
   @$pb.TagNumber(1)
   $core.List<CustomLayerInfo_AreaInfo> get areaInfo => $_getList(0);
+
+  /// Total unique distance traveled across all activated areas in the provided
+  /// dataset (in meters). For example, if a route travels through the
+  /// intersection of area A and area B, the distance in the intersection region
+  /// is only added once to the `total_distance_in_areas_meters`.
+  @$pb.TagNumber(2)
+  $core.double get totalDistanceInAreasMeters => $_getN(1);
+  @$pb.TagNumber(2)
+  set totalDistanceInAreasMeters($core.double v) { $_setFloat(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasTotalDistanceInAreasMeters() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearTotalDistanceInAreasMeters() => clearField(2);
+
+  /// Total time spent across all activated areas in the provided dataset.
+  /// For example, if a route travels through the intersection of area A and
+  /// area B, the time spent in the intersection region is only added once to the
+  /// `total_duration_in_areas`.
+  @$pb.TagNumber(3)
+  $261.Duration get totalDurationInAreas => $_getN(2);
+  @$pb.TagNumber(3)
+  set totalDurationInAreas($261.Duration v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasTotalDurationInAreas() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearTotalDurationInAreas() => clearField(3);
+  @$pb.TagNumber(3)
+  $261.Duration ensureTotalDurationInAreas() => $_ensure(2);
 }
 
 

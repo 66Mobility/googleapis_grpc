@@ -97,7 +97,15 @@ const RouteObjective_CustomLayer$json = {
 const RouteObjective_CustomLayer_DatasetInfo$json = {
   '1': 'DatasetInfo',
   '2': [
-    {'1': 'dataset_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'datasetId'},
+    {
+      '1': 'dataset_id',
+      '3': 1,
+      '4': 1,
+      '5': 9,
+      '8': {'3': true},
+      '10': 'datasetId',
+    },
+    {'1': 'display_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'displayName'},
   ],
 };
 
@@ -111,9 +119,9 @@ final $typed_data.Uint8List routeObjectiveDescriptor = $convert.base64Decode(
     'RhcnlDb3N0QgPgQQFSDWNvc3RQZXJNaW51dGUSYAoLY29zdF9wZXJfa20YAyABKAsyOy5nb29n'
     'bGUubWFwcy5yb3V0ZXMudjEuUm91dGVPYmplY3RpdmUuUmF0ZUNhcmQuTW9uZXRhcnlDb3N0Qg'
     'PgQQFSCWNvc3RQZXJLbRIoCg1pbmNsdWRlX3RvbGxzGAQgASgIQgPgQQFSDGluY2x1ZGVUb2xs'
-    'cxopCgxNb25ldGFyeUNvc3QSGQoFdmFsdWUYASABKAFCA+BBAlIFdmFsdWUapwEKC0N1c3RvbU'
+    'cxopCgxNb25ldGFyeUNvc3QSGQoFdmFsdWUYASABKAFCA+BBAlIFdmFsdWUa0QEKC0N1c3RvbU'
     'xheWVyEmUKDGRhdGFzZXRfaW5mbxgBIAEoCzI9Lmdvb2dsZS5tYXBzLnJvdXRlcy52MS5Sb3V0'
-    'ZU9iamVjdGl2ZS5DdXN0b21MYXllci5EYXRhc2V0SW5mb0ID4EECUgtkYXRhc2V0SW5mbxoxCg'
-    'tEYXRhc2V0SW5mbxIiCgpkYXRhc2V0X2lkGAEgASgJQgPgQQJSCWRhdGFzZXRJZEILCglvYmpl'
-    'Y3RpdmU=');
+    'ZU9iamVjdGl2ZS5DdXN0b21MYXllci5EYXRhc2V0SW5mb0ID4EECUgtkYXRhc2V0SW5mbxpbCg'
+    'tEYXRhc2V0SW5mbxIkCgpkYXRhc2V0X2lkGAEgASgJQgUYAeBBAVIJZGF0YXNldElkEiYKDGRp'
+    'c3BsYXlfbmFtZRgCIAEoCUID4EEBUgtkaXNwbGF5TmFtZUILCglvYmplY3RpdmU=');
 
