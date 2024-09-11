@@ -1,6 +1,6 @@
 name: googleapis_grpc
 description: Auto-generated gRPC Google apis
-version: 1.0.8
+version: 1.0.9
 repository: https://github.com/66Mobility/googleapis_grpc
 
 environment:

@@ -1,3 +1,7 @@
+## 1.0.9
+
+- Update protobuf definitions
+
 ## 1.0.8
 
 - Update protobuf definitions

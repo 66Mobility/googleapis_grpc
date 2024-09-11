@@ -672,6 +672,52 @@ class Cluster extends $pb.GeneratedMessage {
   Cluster_ClusterConfig ensureClusterConfig() => $_ensure(6);
 }
 
+/// If enabled, Bigtable will route the request based on the row key of the
+/// request, rather than randomly. Instead, each row key will be assigned
+/// to a cluster, and will stick to that cluster. If clusters are added or
+/// removed, then this may affect which row keys stick to which clusters.
+/// To avoid this, users can use a cluster group to specify which clusters
+/// are to be used. In this case, new clusters that are not a part of the
+/// cluster group will not be routed to, and routing will be unaffected by
+/// the new cluster. Moreover, clusters specified in the cluster group cannot
+/// be deleted unless removed from the cluster group.
+class AppProfile_MultiClusterRoutingUseAny_RowAffinity extends $pb.GeneratedMessage {
+  factory AppProfile_MultiClusterRoutingUseAny_RowAffinity() => create();
+  AppProfile_MultiClusterRoutingUseAny_RowAffinity._() : super();
+  factory AppProfile_MultiClusterRoutingUseAny_RowAffinity.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AppProfile_MultiClusterRoutingUseAny_RowAffinity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppProfile.MultiClusterRoutingUseAny.RowAffinity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  AppProfile_MultiClusterRoutingUseAny_RowAffinity clone() => AppProfile_MultiClusterRoutingUseAny_RowAffinity()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AppProfile_MultiClusterRoutingUseAny_RowAffinity copyWith(void Function(AppProfile_MultiClusterRoutingUseAny_RowAffinity) updates) => super.copyWith((message) => updates(message as AppProfile_MultiClusterRoutingUseAny_RowAffinity)) as AppProfile_MultiClusterRoutingUseAny_RowAffinity;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AppProfile_MultiClusterRoutingUseAny_RowAffinity create() => AppProfile_MultiClusterRoutingUseAny_RowAffinity._();
+  AppProfile_MultiClusterRoutingUseAny_RowAffinity createEmptyInstance() => create();
+  static $pb.PbList<AppProfile_MultiClusterRoutingUseAny_RowAffinity> createRepeated() => $pb.PbList<AppProfile_MultiClusterRoutingUseAny_RowAffinity>();
+  @$core.pragma('dart2js:noInline')
+  static AppProfile_MultiClusterRoutingUseAny_RowAffinity getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AppProfile_MultiClusterRoutingUseAny_RowAffinity>(create);
+  static AppProfile_MultiClusterRoutingUseAny_RowAffinity? _defaultInstance;
+}
+
+enum AppProfile_MultiClusterRoutingUseAny_Affinity {
+  rowAffinity, 
+  notSet
+}
+
 /// Read/write requests are routed to the nearest cluster in the instance, and
 /// will fail over to the nearest cluster that is available in the event of
 /// transient errors or delays. Clusters in a region are considered
@@ -680,10 +726,14 @@ class Cluster extends $pb.GeneratedMessage {
 class AppProfile_MultiClusterRoutingUseAny extends $pb.GeneratedMessage {
   factory AppProfile_MultiClusterRoutingUseAny({
     $core.Iterable<$core.String>? clusterIds,
+    AppProfile_MultiClusterRoutingUseAny_RowAffinity? rowAffinity,
   }) {
     final $result = create();
     if (clusterIds != null) {
       $result.clusterIds.addAll(clusterIds);
+    }
+    if (rowAffinity != null) {
+      $result.rowAffinity = rowAffinity;
     }
     return $result;
   }
@@ -691,8 +741,14 @@ class AppProfile_MultiClusterRoutingUseAny extends $pb.GeneratedMessage {
   factory AppProfile_MultiClusterRoutingUseAny.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
   factory AppProfile_MultiClusterRoutingUseAny.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
+  static const $core.Map<$core.int, AppProfile_MultiClusterRoutingUseAny_Affinity> _AppProfile_MultiClusterRoutingUseAny_AffinityByTag = {
+    3 : AppProfile_MultiClusterRoutingUseAny_Affinity.rowAffinity,
+    0 : AppProfile_MultiClusterRoutingUseAny_Affinity.notSet
+  };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AppProfile.MultiClusterRoutingUseAny', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
+    ..oo(0, [3])
     ..pPS(1, _omitFieldNames ? '' : 'clusterIds')
+    ..aOM<AppProfile_MultiClusterRoutingUseAny_RowAffinity>(3, _omitFieldNames ? '' : 'rowAffinity', subBuilder: AppProfile_MultiClusterRoutingUseAny_RowAffinity.create)
     ..hasRequiredFields = false
   ;
 
@@ -717,10 +773,26 @@ class AppProfile_MultiClusterRoutingUseAny extends $pb.GeneratedMessage {
   static AppProfile_MultiClusterRoutingUseAny getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AppProfile_MultiClusterRoutingUseAny>(create);
   static AppProfile_MultiClusterRoutingUseAny? _defaultInstance;
 
+  AppProfile_MultiClusterRoutingUseAny_Affinity whichAffinity() => _AppProfile_MultiClusterRoutingUseAny_AffinityByTag[$_whichOneof(0)]!;
+  void clearAffinity() => clearField($_whichOneof(0));
+
   /// The set of clusters to route to. The order is ignored; clusters will be
   /// tried in order of distance. If left empty, all clusters are eligible.
   @$pb.TagNumber(1)
   $core.List<$core.String> get clusterIds => $_getList(0);
+
+  /// Row affinity sticky routing based on the row key of the request.
+  /// Requests that span multiple rows are routed non-deterministically.
+  @$pb.TagNumber(3)
+  AppProfile_MultiClusterRoutingUseAny_RowAffinity get rowAffinity => $_getN(1);
+  @$pb.TagNumber(3)
+  set rowAffinity(AppProfile_MultiClusterRoutingUseAny_RowAffinity v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasRowAffinity() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearRowAffinity() => clearField(3);
+  @$pb.TagNumber(3)
+  AppProfile_MultiClusterRoutingUseAny_RowAffinity ensureRowAffinity() => $_ensure(1);
 }
 
 /// Unconditionally routes all read/write requests to a specific cluster.

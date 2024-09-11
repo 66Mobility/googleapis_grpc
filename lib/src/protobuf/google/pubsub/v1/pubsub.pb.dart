@@ -1744,7 +1744,7 @@ class Subscription extends $pb.GeneratedMessage {
   /// backlog, from the moment a message is published. If `retain_acked_messages`
   /// is true, then this also configures the retention of acknowledged messages,
   /// and thus configures how far back in time a `Seek` can be done. Defaults to
-  /// 7 days. Cannot be more than 7 days or less than 10 minutes.
+  /// 7 days. Cannot be more than 31 days or less than 10 minutes.
   @$pb.TagNumber(8)
   $261.Duration get messageRetentionDuration => $_getN(5);
   @$pb.TagNumber(8)
