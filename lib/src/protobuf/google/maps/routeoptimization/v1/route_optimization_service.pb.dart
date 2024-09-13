@@ -928,7 +928,8 @@ class OptimizeToursResponse extends $pb.GeneratedMessage {
   /// List of all the validation errors that we were able to detect
   /// independently. See the "MULTIPLE ERRORS" explanation for the
   /// [OptimizeToursValidationError][google.maps.routeoptimization.v1.OptimizeToursValidationError]
-  /// message.
+  /// message. Instead of errors, this will include warnings in the case
+  /// `solving_mode` is `DEFAULT_SOLVE`.
   @$pb.TagNumber(5)
   $core.List<OptimizeToursValidationError> get validationErrors => $_getList(3);
 
@@ -2255,6 +2256,114 @@ class ShipmentTypeRequirement extends $pb.GeneratedMessage {
   void clearRequirementMode() => clearField(3);
 }
 
+/// Encapsulates a set of optional conditions to satisfy when calculating
+/// vehicle routes. This is similar to `RouteModifiers` in the Google Maps
+/// Platform Routes Preferred API; see:
+/// https://developers.google.com/maps/documentation/routes/reference/rest/v2/RouteModifiers.
+class RouteModifiers extends $pb.GeneratedMessage {
+  factory RouteModifiers({
+    $core.bool? avoidTolls,
+    $core.bool? avoidHighways,
+    $core.bool? avoidFerries,
+    $core.bool? avoidIndoor,
+  }) {
+    final $result = create();
+    if (avoidTolls != null) {
+      $result.avoidTolls = avoidTolls;
+    }
+    if (avoidHighways != null) {
+      $result.avoidHighways = avoidHighways;
+    }
+    if (avoidFerries != null) {
+      $result.avoidFerries = avoidFerries;
+    }
+    if (avoidIndoor != null) {
+      $result.avoidIndoor = avoidIndoor;
+    }
+    return $result;
+  }
+  RouteModifiers._() : super();
+  factory RouteModifiers.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory RouteModifiers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteModifiers', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
+    ..aOB(2, _omitFieldNames ? '' : 'avoidTolls')
+    ..aOB(3, _omitFieldNames ? '' : 'avoidHighways')
+    ..aOB(4, _omitFieldNames ? '' : 'avoidFerries')
+    ..aOB(5, _omitFieldNames ? '' : 'avoidIndoor')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  RouteModifiers clone() => RouteModifiers()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  RouteModifiers copyWith(void Function(RouteModifiers) updates) => super.copyWith((message) => updates(message as RouteModifiers)) as RouteModifiers;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static RouteModifiers create() => RouteModifiers._();
+  RouteModifiers createEmptyInstance() => create();
+  static $pb.PbList<RouteModifiers> createRepeated() => $pb.PbList<RouteModifiers>();
+  @$core.pragma('dart2js:noInline')
+  static RouteModifiers getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RouteModifiers>(create);
+  static RouteModifiers? _defaultInstance;
+
+  /// Specifies whether to avoid toll roads where reasonable. Preference will be
+  /// given to routes not containing toll roads. Applies only to motorized travel
+  /// modes.
+  @$pb.TagNumber(2)
+  $core.bool get avoidTolls => $_getBF(0);
+  @$pb.TagNumber(2)
+  set avoidTolls($core.bool v) { $_setBool(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasAvoidTolls() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearAvoidTolls() => clearField(2);
+
+  /// Specifies whether to avoid highways where reasonable. Preference will be
+  /// given to routes not containing highways. Applies only to motorized travel
+  /// modes.
+  @$pb.TagNumber(3)
+  $core.bool get avoidHighways => $_getBF(1);
+  @$pb.TagNumber(3)
+  set avoidHighways($core.bool v) { $_setBool(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasAvoidHighways() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearAvoidHighways() => clearField(3);
+
+  /// Specifies whether to avoid ferries where reasonable. Preference will be
+  /// given to routes not containing travel by ferries. Applies only to motorized
+  /// travel modes.
+  @$pb.TagNumber(4)
+  $core.bool get avoidFerries => $_getBF(2);
+  @$pb.TagNumber(4)
+  set avoidFerries($core.bool v) { $_setBool(2, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasAvoidFerries() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearAvoidFerries() => clearField(4);
+
+  /// Optional. Specifies whether to avoid navigating indoors where reasonable.
+  /// Preference will be given to routes not containing indoor navigation.
+  /// Applies only to the `WALKING` travel mode.
+  @$pb.TagNumber(5)
+  $core.bool get avoidIndoor => $_getBF(3);
+  @$pb.TagNumber(5)
+  set avoidIndoor($core.bool v) { $_setBool(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasAvoidIndoor() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearAvoidIndoor() => clearField(5);
+}
+
 /// Interval of acceptable load amounts.
 class Vehicle_LoadLimit_Interval extends $pb.GeneratedMessage {
   factory Vehicle_LoadLimit_Interval({
@@ -2616,6 +2725,7 @@ class Vehicle_DurationLimit extends $pb.GeneratedMessage {
 class Vehicle extends $pb.GeneratedMessage {
   factory Vehicle({
     Vehicle_TravelMode? travelMode,
+    RouteModifiers? routeModifiers,
     $322.LatLng? startLocation,
     Waypoint? startWaypoint,
     $322.LatLng? endLocation,
@@ -2644,6 +2754,9 @@ class Vehicle extends $pb.GeneratedMessage {
     final $result = create();
     if (travelMode != null) {
       $result.travelMode = travelMode;
+    }
+    if (routeModifiers != null) {
+      $result.routeModifiers = routeModifiers;
     }
     if (startLocation != null) {
       $result.startLocation = startLocation;
@@ -2725,6 +2838,7 @@ class Vehicle extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Vehicle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routeoptimization.v1'), createEmptyInstance: create)
     ..e<Vehicle_TravelMode>(1, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: Vehicle_TravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: Vehicle_TravelMode.valueOf, enumValues: Vehicle_TravelMode.values)
+    ..aOM<RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers', subBuilder: RouteModifiers.create)
     ..aOM<$322.LatLng>(3, _omitFieldNames ? '' : 'startLocation', subBuilder: $322.LatLng.create)
     ..aOM<Waypoint>(4, _omitFieldNames ? '' : 'startWaypoint', subBuilder: Waypoint.create)
     ..aOM<$322.LatLng>(5, _omitFieldNames ? '' : 'endLocation', subBuilder: $322.LatLng.create)
@@ -2784,20 +2898,33 @@ class Vehicle extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearTravelMode() => clearField(1);
 
+  /// A set of conditions to satisfy that affect the way routes are calculated
+  /// for the given vehicle.
+  @$pb.TagNumber(2)
+  RouteModifiers get routeModifiers => $_getN(1);
+  @$pb.TagNumber(2)
+  set routeModifiers(RouteModifiers v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasRouteModifiers() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearRouteModifiers() => clearField(2);
+  @$pb.TagNumber(2)
+  RouteModifiers ensureRouteModifiers() => $_ensure(1);
+
   /// Geographic location where the vehicle starts before picking up any
   /// shipments. If not specified, the vehicle starts at its first pickup.
   /// If the shipment model has duration and distance matrices, `start_location`
   /// must not be specified.
   @$pb.TagNumber(3)
-  $322.LatLng get startLocation => $_getN(1);
+  $322.LatLng get startLocation => $_getN(2);
   @$pb.TagNumber(3)
   set startLocation($322.LatLng v) { setField(3, v); }
   @$pb.TagNumber(3)
-  $core.bool hasStartLocation() => $_has(1);
+  $core.bool hasStartLocation() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartLocation() => clearField(3);
   @$pb.TagNumber(3)
-  $322.LatLng ensureStartLocation() => $_ensure(1);
+  $322.LatLng ensureStartLocation() => $_ensure(2);
 
   /// Waypoint representing a geographic location where the vehicle starts before
   /// picking up any shipments. If neither `start_waypoint` nor `start_location`
@@ -2805,15 +2932,15 @@ class Vehicle extends $pb.GeneratedMessage {
   /// If the shipment model has duration and distance matrices, `start_waypoint`
   /// must not be specified.
   @$pb.TagNumber(4)
-  Waypoint get startWaypoint => $_getN(2);
+  Waypoint get startWaypoint => $_getN(3);
   @$pb.TagNumber(4)
   set startWaypoint(Waypoint v) { setField(4, v); }
   @$pb.TagNumber(4)
-  $core.bool hasStartWaypoint() => $_has(2);
+  $core.bool hasStartWaypoint() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartWaypoint() => clearField(4);
   @$pb.TagNumber(4)
-  Waypoint ensureStartWaypoint() => $_ensure(2);
+  Waypoint ensureStartWaypoint() => $_ensure(3);
 
   /// Geographic location where the vehicle ends after it has completed its last
   /// `VisitRequest`. If not specified the vehicle's `ShipmentRoute` ends
@@ -2821,15 +2948,15 @@ class Vehicle extends $pb.GeneratedMessage {
   /// If the shipment model has duration and distance matrices, `end_location`
   /// must not be specified.
   @$pb.TagNumber(5)
-  $322.LatLng get endLocation => $_getN(3);
+  $322.LatLng get endLocation => $_getN(4);
   @$pb.TagNumber(5)
   set endLocation($322.LatLng v) { setField(5, v); }
   @$pb.TagNumber(5)
-  $core.bool hasEndLocation() => $_has(3);
+  $core.bool hasEndLocation() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndLocation() => clearField(5);
   @$pb.TagNumber(5)
-  $322.LatLng ensureEndLocation() => $_ensure(3);
+  $322.LatLng ensureEndLocation() => $_ensure(4);
 
   /// Waypoint representing a geographic location where the vehicle ends after
   /// it has completed its last `VisitRequest`. If neither `end_waypoint` nor
@@ -2838,27 +2965,27 @@ class Vehicle extends $pb.GeneratedMessage {
   /// If the shipment model has duration and distance matrices, `end_waypoint`
   /// must not be specified.
   @$pb.TagNumber(6)
-  Waypoint get endWaypoint => $_getN(4);
+  Waypoint get endWaypoint => $_getN(5);
   @$pb.TagNumber(6)
   set endWaypoint(Waypoint v) { setField(6, v); }
   @$pb.TagNumber(6)
-  $core.bool hasEndWaypoint() => $_has(4);
+  $core.bool hasEndWaypoint() => $_has(5);
   @$pb.TagNumber(6)
   void clearEndWaypoint() => clearField(6);
   @$pb.TagNumber(6)
-  Waypoint ensureEndWaypoint() => $_ensure(4);
+  Waypoint ensureEndWaypoint() => $_ensure(5);
 
   ///  Specifies tags attached to the start of the vehicle's route.
   ///
   ///  Empty or duplicate strings are not allowed.
   @$pb.TagNumber(7)
-  $core.List<$core.String> get startTags => $_getList(5);
+  $core.List<$core.String> get startTags => $_getList(6);
 
   ///  Specifies tags attached to the end of the vehicle's route.
   ///
   ///  Empty or duplicate strings are not allowed.
   @$pb.TagNumber(8)
-  $core.List<$core.String> get endTags => $_getList(6);
+  $core.List<$core.String> get endTags => $_getList(7);
 
   ///  Time windows during which the vehicle may depart its start location.
   ///  They must be within the global time limits (see
@@ -2873,7 +3000,7 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  `cost_per_hour_after_soft_end_time` and `soft_end_time` can only be set if
   ///  there is a single time window.
   @$pb.TagNumber(9)
-  $core.List<TimeWindow> get startTimeWindows => $_getList(7);
+  $core.List<TimeWindow> get startTimeWindows => $_getList(8);
 
   ///  Time windows during which the vehicle may arrive at its end location.
   ///  They must be within the global time limits (see
@@ -2888,7 +3015,7 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  `cost_per_hour_after_soft_end_time` and `soft_end_time` can only be set if
   ///  there is a single time window.
   @$pb.TagNumber(10)
-  $core.List<TimeWindow> get endTimeWindows => $_getList(8);
+  $core.List<TimeWindow> get endTimeWindows => $_getList(9);
 
   ///  Specifies a multiplicative factor that can be used to increase or decrease
   ///  travel times of this vehicle. For example, setting this to 2.0 means
@@ -2904,21 +3031,21 @@ class Vehicle extends $pb.GeneratedMessage {
   ///
   ///  See also `extra_visit_duration_for_visit_type` below.
   @$pb.TagNumber(11)
-  $core.double get travelDurationMultiple => $_getN(9);
+  $core.double get travelDurationMultiple => $_getN(10);
   @$pb.TagNumber(11)
-  set travelDurationMultiple($core.double v) { $_setDouble(9, v); }
+  set travelDurationMultiple($core.double v) { $_setDouble(10, v); }
   @$pb.TagNumber(11)
-  $core.bool hasTravelDurationMultiple() => $_has(9);
+  $core.bool hasTravelDurationMultiple() => $_has(10);
   @$pb.TagNumber(11)
   void clearTravelDurationMultiple() => clearField(11);
 
   /// Unloading policy enforced on the vehicle.
   @$pb.TagNumber(12)
-  Vehicle_UnloadingPolicy get unloadingPolicy => $_getN(10);
+  Vehicle_UnloadingPolicy get unloadingPolicy => $_getN(11);
   @$pb.TagNumber(12)
   set unloadingPolicy(Vehicle_UnloadingPolicy v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasUnloadingPolicy() => $_has(10);
+  $core.bool hasUnloadingPolicy() => $_has(11);
   @$pb.TagNumber(12)
   void clearUnloadingPolicy() => clearField(12);
 
@@ -2930,11 +3057,11 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  Using `cost_per_hour` instead of just `cost_per_traveled_hour` may result
   ///  in additional latency.
   @$pb.TagNumber(16)
-  $core.double get costPerHour => $_getN(11);
+  $core.double get costPerHour => $_getN(12);
   @$pb.TagNumber(16)
-  set costPerHour($core.double v) { $_setDouble(11, v); }
+  set costPerHour($core.double v) { $_setDouble(12, v); }
   @$pb.TagNumber(16)
-  $core.bool hasCostPerHour() => $_has(11);
+  $core.bool hasCostPerHour() => $_has(12);
   @$pb.TagNumber(16)
   void clearCostPerHour() => clearField(16);
 
@@ -2943,11 +3070,11 @@ class Vehicle extends $pb.GeneratedMessage {
   /// [ShipmentRoute.transitions][google.maps.routeoptimization.v1.ShipmentRoute.transitions]),
   /// and excludes waiting time and visit time.
   @$pb.TagNumber(17)
-  $core.double get costPerTraveledHour => $_getN(12);
+  $core.double get costPerTraveledHour => $_getN(13);
   @$pb.TagNumber(17)
-  set costPerTraveledHour($core.double v) { $_setDouble(12, v); }
+  set costPerTraveledHour($core.double v) { $_setDouble(13, v); }
   @$pb.TagNumber(17)
-  $core.bool hasCostPerTraveledHour() => $_has(12);
+  $core.bool hasCostPerTraveledHour() => $_has(13);
   @$pb.TagNumber(17)
   void clearCostPerTraveledHour() => clearField(17);
 
@@ -2957,21 +3084,21 @@ class Vehicle extends $pb.GeneratedMessage {
   /// and does not apply to any distance implicitly traveled from the
   /// `arrival_location` to the `departure_location` of a single `VisitRequest`.
   @$pb.TagNumber(18)
-  $core.double get costPerKilometer => $_getN(13);
+  $core.double get costPerKilometer => $_getN(14);
   @$pb.TagNumber(18)
-  set costPerKilometer($core.double v) { $_setDouble(13, v); }
+  set costPerKilometer($core.double v) { $_setDouble(14, v); }
   @$pb.TagNumber(18)
-  $core.bool hasCostPerKilometer() => $_has(13);
+  $core.bool hasCostPerKilometer() => $_has(14);
   @$pb.TagNumber(18)
   void clearCostPerKilometer() => clearField(18);
 
   /// Fixed cost applied if this vehicle is used to handle a shipment.
   @$pb.TagNumber(19)
-  $core.double get fixedCost => $_getN(14);
+  $core.double get fixedCost => $_getN(15);
   @$pb.TagNumber(19)
-  set fixedCost($core.double v) { $_setDouble(14, v); }
+  set fixedCost($core.double v) { $_setDouble(15, v); }
   @$pb.TagNumber(19)
-  $core.bool hasFixedCost() => $_has(14);
+  $core.bool hasFixedCost() => $_has(15);
   @$pb.TagNumber(19)
   void clearFixedCost() => clearField(19);
 
@@ -2988,11 +3115,11 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  vehicle. In this case, the vehicle's `ShipmentRoute` doesn't contain any
   ///  information except for the vehicle index and label.
   @$pb.TagNumber(20)
-  $core.bool get usedIfRouteIsEmpty => $_getBF(15);
+  $core.bool get usedIfRouteIsEmpty => $_getBF(16);
   @$pb.TagNumber(20)
-  set usedIfRouteIsEmpty($core.bool v) { $_setBool(15, v); }
+  set usedIfRouteIsEmpty($core.bool v) { $_setBool(16, v); }
   @$pb.TagNumber(20)
-  $core.bool hasUsedIfRouteIsEmpty() => $_has(15);
+  $core.bool hasUsedIfRouteIsEmpty() => $_has(16);
   @$pb.TagNumber(20)
   void clearUsedIfRouteIsEmpty() => clearField(20);
 
@@ -3000,43 +3127,43 @@ class Vehicle extends $pb.GeneratedMessage {
   /// `OptimizeToursResponse`, the route duration of a vehicle is the
   /// difference between its `vehicle_end_time` and `vehicle_start_time`.
   @$pb.TagNumber(21)
-  Vehicle_DurationLimit get routeDurationLimit => $_getN(16);
+  Vehicle_DurationLimit get routeDurationLimit => $_getN(17);
   @$pb.TagNumber(21)
   set routeDurationLimit(Vehicle_DurationLimit v) { setField(21, v); }
   @$pb.TagNumber(21)
-  $core.bool hasRouteDurationLimit() => $_has(16);
+  $core.bool hasRouteDurationLimit() => $_has(17);
   @$pb.TagNumber(21)
   void clearRouteDurationLimit() => clearField(21);
   @$pb.TagNumber(21)
-  Vehicle_DurationLimit ensureRouteDurationLimit() => $_ensure(16);
+  Vehicle_DurationLimit ensureRouteDurationLimit() => $_ensure(17);
 
   /// Limit applied to the travel duration of the vehicle's route. In a given
   /// `OptimizeToursResponse`, the route travel duration is the sum of all its
   /// [transitions.travel_duration][google.maps.routeoptimization.v1.ShipmentRoute.Transition.travel_duration].
   @$pb.TagNumber(22)
-  Vehicle_DurationLimit get travelDurationLimit => $_getN(17);
+  Vehicle_DurationLimit get travelDurationLimit => $_getN(18);
   @$pb.TagNumber(22)
   set travelDurationLimit(Vehicle_DurationLimit v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasTravelDurationLimit() => $_has(17);
+  $core.bool hasTravelDurationLimit() => $_has(18);
   @$pb.TagNumber(22)
   void clearTravelDurationLimit() => clearField(22);
   @$pb.TagNumber(22)
-  Vehicle_DurationLimit ensureTravelDurationLimit() => $_ensure(17);
+  Vehicle_DurationLimit ensureTravelDurationLimit() => $_ensure(18);
 
   /// Limit applied to the total distance of the vehicle's route. In a given
   /// `OptimizeToursResponse`, the route distance is the sum of all its
   /// [transitions.travel_distance_meters][google.maps.routeoptimization.v1.ShipmentRoute.Transition.travel_distance_meters].
   @$pb.TagNumber(23)
-  DistanceLimit get routeDistanceLimit => $_getN(18);
+  DistanceLimit get routeDistanceLimit => $_getN(19);
   @$pb.TagNumber(23)
   set routeDistanceLimit(DistanceLimit v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasRouteDistanceLimit() => $_has(18);
+  $core.bool hasRouteDistanceLimit() => $_has(19);
   @$pb.TagNumber(23)
   void clearRouteDistanceLimit() => clearField(23);
   @$pb.TagNumber(23)
-  DistanceLimit ensureRouteDistanceLimit() => $_ensure(18);
+  DistanceLimit ensureRouteDistanceLimit() => $_ensure(19);
 
   ///  Specifies a map from visit_types strings to durations. The duration is time
   ///  in addition to
@@ -3048,30 +3175,30 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  If a visit request has multiple types, a duration will be added for each
   ///  type in the map.
   @$pb.TagNumber(24)
-  $core.Map<$core.String, $261.Duration> get extraVisitDurationForVisitType => $_getMap(19);
+  $core.Map<$core.String, $261.Duration> get extraVisitDurationForVisitType => $_getMap(20);
 
   /// Describes the break schedule to be enforced on this vehicle.
   /// If empty, no breaks will be scheduled for this vehicle.
   @$pb.TagNumber(25)
-  BreakRule get breakRule => $_getN(20);
+  BreakRule get breakRule => $_getN(21);
   @$pb.TagNumber(25)
   set breakRule(BreakRule v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasBreakRule() => $_has(20);
+  $core.bool hasBreakRule() => $_has(21);
   @$pb.TagNumber(25)
   void clearBreakRule() => clearField(25);
   @$pb.TagNumber(25)
-  BreakRule ensureBreakRule() => $_ensure(20);
+  BreakRule ensureBreakRule() => $_ensure(21);
 
   /// Specifies a label for this vehicle. This label is reported in the response
   /// as the `vehicle_label` of the corresponding
   /// [ShipmentRoute][google.maps.routeoptimization.v1.ShipmentRoute].
   @$pb.TagNumber(27)
-  $core.String get label => $_getSZ(21);
+  $core.String get label => $_getSZ(22);
   @$pb.TagNumber(27)
-  set label($core.String v) { $_setString(21, v); }
+  set label($core.String v) { $_setString(22, v); }
   @$pb.TagNumber(27)
-  $core.bool hasLabel() => $_has(21);
+  $core.bool hasLabel() => $_has(22);
   @$pb.TagNumber(27)
   void clearLabel() => clearField(27);
 
@@ -3089,11 +3216,11 @@ class Vehicle extends $pb.GeneratedMessage {
   ///  If a shipment has a non-empty `allowed_vehicle_indices` field and all of
   ///  the allowed vehicles are ignored, it is skipped in the response.
   @$pb.TagNumber(28)
-  $core.bool get ignore => $_getBF(22);
+  $core.bool get ignore => $_getBF(23);
   @$pb.TagNumber(28)
-  set ignore($core.bool v) { $_setBool(22, v); }
+  set ignore($core.bool v) { $_setBool(23, v); }
   @$pb.TagNumber(28)
-  $core.bool hasIgnore() => $_has(22);
+  $core.bool hasIgnore() => $_has(23);
   @$pb.TagNumber(28)
   void clearIgnore() => clearField(28);
 
@@ -3104,16 +3231,16 @@ class Vehicle extends $pb.GeneratedMessage {
   /// field. If a given key is absent from this map, the corresponding capacity
   /// is considered to be limitless.
   @$pb.TagNumber(30)
-  $core.Map<$core.String, Vehicle_LoadLimit> get loadLimits => $_getMap(23);
+  $core.Map<$core.String, Vehicle_LoadLimit> get loadLimits => $_getMap(24);
 
   /// The user-defined display name of the vehicle.
   /// It can be up to 63 characters long and may use UTF-8 characters.
   @$pb.TagNumber(32)
-  $core.String get displayName => $_getSZ(24);
+  $core.String get displayName => $_getSZ(25);
   @$pb.TagNumber(32)
-  set displayName($core.String v) { $_setString(24, v); }
+  set displayName($core.String v) { $_setString(25, v); }
   @$pb.TagNumber(32)
-  $core.bool hasDisplayName() => $_has(24);
+  $core.bool hasDisplayName() => $_has(25);
   @$pb.TagNumber(32)
   void clearDisplayName() => clearField(32);
 }
@@ -3136,8 +3263,9 @@ class Vehicle extends $pb.GeneratedMessage {
 ///  [ShipmentModel.global_end_time][google.maps.routeoptimization.v1.ShipmentModel.global_end_time])
 ///  and should respect:
 ///  ```
-///    0 <= `start_time` <= `soft_start_time` <= `end_time` and
-///    0 <= `start_time` <= `soft_end_time` <= `end_time`.
+///    0 <= `start_time` <= `end_time` and
+///    0 <= `start_time` <= `soft_start_time` and
+///    0 <= `soft_end_time` <= `end_time`.
 ///  ```
 class TimeWindow extends $pb.GeneratedMessage {
   factory TimeWindow({
@@ -3305,6 +3433,7 @@ class DistanceLimit extends $pb.GeneratedMessage {
     $fixnum.Int64? maxMeters,
     $fixnum.Int64? softMaxMeters,
     $core.double? costPerKilometerAboveSoftMax,
+    $core.double? costPerKilometerBelowSoftMax,
   }) {
     final $result = create();
     if (maxMeters != null) {
@@ -3316,6 +3445,9 @@ class DistanceLimit extends $pb.GeneratedMessage {
     if (costPerKilometerAboveSoftMax != null) {
       $result.costPerKilometerAboveSoftMax = costPerKilometerAboveSoftMax;
     }
+    if (costPerKilometerBelowSoftMax != null) {
+      $result.costPerKilometerBelowSoftMax = costPerKilometerBelowSoftMax;
+    }
     return $result;
   }
   DistanceLimit._() : super();
@@ -3326,6 +3458,7 @@ class DistanceLimit extends $pb.GeneratedMessage {
     ..aInt64(1, _omitFieldNames ? '' : 'maxMeters')
     ..aInt64(2, _omitFieldNames ? '' : 'softMaxMeters')
     ..a<$core.double>(3, _omitFieldNames ? '' : 'costPerKilometerAboveSoftMax', $pb.PbFieldType.OD)
+    ..a<$core.double>(4, _omitFieldNames ? '' : 'costPerKilometerBelowSoftMax', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
 
@@ -3392,6 +3525,22 @@ class DistanceLimit extends $pb.GeneratedMessage {
   $core.bool hasCostPerKilometerAboveSoftMax() => $_has(2);
   @$pb.TagNumber(3)
   void clearCostPerKilometerAboveSoftMax() => clearField(3);
+
+  /// Cost per kilometer incurred, increasing up to `soft_max_meters`, with
+  /// formula:
+  /// ```
+  ///   min(distance_meters, soft_max_meters) / 1000.0 *
+  ///   cost_per_kilometer_below_soft_max.
+  /// ```
+  /// This cost is not supported in `route_distance_limit`.
+  @$pb.TagNumber(4)
+  $core.double get costPerKilometerBelowSoftMax => $_getN(3);
+  @$pb.TagNumber(4)
+  set costPerKilometerBelowSoftMax($core.double v) { $_setDouble(3, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasCostPerKilometerBelowSoftMax() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearCostPerKilometerBelowSoftMax() => clearField(4);
 }
 
 /// Specifies attributes of transitions between two consecutive visits on a
@@ -5128,7 +5277,8 @@ class SkippedShipment extends $pb.GeneratedMessage {
   void clearLabel() => clearField(2);
 
   /// A list of reasons that explain why the shipment was skipped. See comment
-  /// above `Reason`.
+  /// above `Reason`. If we are unable to understand why a shipment was skipped,
+  /// reasons will not be set.
   @$pb.TagNumber(3)
   $core.List<SkippedShipment_Reason> get reasons => $_getList(2);
 }
@@ -5718,7 +5868,8 @@ class OptimizeToursValidationError_FieldReference extends $pb.GeneratedMessage {
   void clearKey() => clearField(4);
 }
 
-/// Describes an error encountered when validating an `OptimizeToursRequest`.
+/// Describes an error or warning encountered when validating an
+/// `OptimizeToursRequest`.
 class OptimizeToursValidationError extends $pb.GeneratedMessage {
   factory OptimizeToursValidationError({
     $core.int? code,
@@ -5858,8 +6009,8 @@ class OptimizeToursValidationError extends $pb.GeneratedMessage {
   ///      * TIME_WINDOW_SOFT_END_TIME_WITHOUT_COST_AFTER_SOFT_END_TIME = 2811;
   ///      * TIME_WINDOW_OVERLAPPING_ADJACENT_OR_EARLIER_THAN_PREVIOUS = 2812;
   ///      * TIME_WINDOW_START_TIME_AFTER_SOFT_START_TIME = 2813;
-  ///      * TIME_WINDOW_SOFT_START_TIME_AFTER_END_TIME = 2814;
-  ///      * TIME_WINDOW_START_TIME_AFTER_SOFT_END_TIME = 2815;
+  ///      * TIME_WINDOW_SOFT_START_TIME_OUTSIDE_GLOBAL_TIME_WINDOW = 2819;
+  ///      * TIME_WINDOW_SOFT_END_TIME_OUTSIDE_GLOBAL_TIME_WINDOW = 2820;
   ///      * TIME_WINDOW_SOFT_END_TIME_AFTER_END_TIME = 2816;
   ///      * TIME_WINDOW_COST_BEFORE_SOFT_START_TIME_SET_AND_MULTIPLE_WINDOWS
   ///        = 2817;
@@ -5971,6 +6122,13 @@ class OptimizeToursValidationError extends $pb.GeneratedMessage {
   ///      * VISIT_REQUEST_DURATION_NEGATIVE_OR_NAN = 4404;
   ///      * VISIT_REQUEST_DURATION_EXCEEDS_GLOBAL_DURATION = 4405;
   ///  * PRECEDENCE_ERROR = 46;
+  ///      * PRECEDENCE_RULE_MISSING_FIRST_INDEX = 4600;
+  ///      * PRECEDENCE_RULE_MISSING_SECOND_INDEX = 4601;
+  ///      * PRECEDENCE_RULE_FIRST_INDEX_OUT_OF_BOUNDS = 4602;
+  ///      * PRECEDENCE_RULE_SECOND_INDEX_OUT_OF_BOUNDS = 4603;
+  ///      * PRECEDENCE_RULE_DUPLICATE_INDEX = 4604;
+  ///      * PRECEDENCE_RULE_INEXISTENT_FIRST_VISIT_REQUEST = 4605;
+  ///      * PRECEDENCE_RULE_INEXISTENT_SECOND_VISIT_REQUEST = 4606;
   ///  * BREAK_ERROR = 48;
   ///      * BREAK_RULE_EMPTY = 4800;
   ///      * BREAK_REQUEST_UNSPECIFIED_DURATION = 4801;
@@ -6016,6 +6174,12 @@ class OptimizeToursValidationError extends $pb.GeneratedMessage {
   ///  * DURATION_SECONDS_MATRIX_ERROR = 56;
   ///      * DURATION_SECONDS_MATRIX_DURATION_NEGATIVE_OR_NAN = 5600;
   ///      * DURATION_SECONDS_MATRIX_DURATION_EXCEEDS_GLOBAL_DURATION = 5601;
+  ///  * WARNING = 9;
+  ///      * WARNING_INJECTED_FIRST_SOLUTION = 90;
+  ///          * WARNING_INJECTED_FIRST_SOLUTION_INFEASIBLE_SHIPMENTS_REMOVED
+  ///            = 9000;
+  ///          * WARNING_INJECTED_FIRST_SOLUTION_INFEASIBLE_AFTER_GETTING_TRAVEL_TIMES
+  ///            = 9001;
   @$pb.TagNumber(1)
   $core.int get code => $_getIZ(0);
   @$pb.TagNumber(1)

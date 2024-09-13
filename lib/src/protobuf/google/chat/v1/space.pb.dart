@@ -92,6 +92,74 @@ class Space_SpaceDetails extends $pb.GeneratedMessage {
   void clearGuidelines() => clearField(2);
 }
 
+/// Represents the count of memberships of a space, grouped into categories.
+class Space_MembershipCount extends $pb.GeneratedMessage {
+  factory Space_MembershipCount({
+    $core.int? joinedDirectHumanUserCount,
+    $core.int? joinedGroupCount,
+  }) {
+    final $result = create();
+    if (joinedDirectHumanUserCount != null) {
+      $result.joinedDirectHumanUserCount = joinedDirectHumanUserCount;
+    }
+    if (joinedGroupCount != null) {
+      $result.joinedGroupCount = joinedGroupCount;
+    }
+    return $result;
+  }
+  Space_MembershipCount._() : super();
+  factory Space_MembershipCount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Space_MembershipCount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Space.MembershipCount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'joinedDirectHumanUserCount', $pb.PbFieldType.O3)
+    ..a<$core.int>(5, _omitFieldNames ? '' : 'joinedGroupCount', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  Space_MembershipCount clone() => Space_MembershipCount()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Space_MembershipCount copyWith(void Function(Space_MembershipCount) updates) => super.copyWith((message) => updates(message as Space_MembershipCount)) as Space_MembershipCount;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Space_MembershipCount create() => Space_MembershipCount._();
+  Space_MembershipCount createEmptyInstance() => create();
+  static $pb.PbList<Space_MembershipCount> createRepeated() => $pb.PbList<Space_MembershipCount>();
+  @$core.pragma('dart2js:noInline')
+  static Space_MembershipCount getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Space_MembershipCount>(create);
+  static Space_MembershipCount? _defaultInstance;
+
+  /// Count of human users that have directly joined the space, not counting
+  /// users joined by having membership in a joined group.
+  @$pb.TagNumber(4)
+  $core.int get joinedDirectHumanUserCount => $_getIZ(0);
+  @$pb.TagNumber(4)
+  set joinedDirectHumanUserCount($core.int v) { $_setSignedInt32(0, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasJoinedDirectHumanUserCount() => $_has(0);
+  @$pb.TagNumber(4)
+  void clearJoinedDirectHumanUserCount() => clearField(4);
+
+  /// Count of all groups that have directly joined the space.
+  @$pb.TagNumber(5)
+  $core.int get joinedGroupCount => $_getIZ(1);
+  @$pb.TagNumber(5)
+  set joinedGroupCount($core.int v) { $_setSignedInt32(1, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasJoinedGroupCount() => $_has(1);
+  @$pb.TagNumber(5)
+  void clearJoinedGroupCount() => clearField(5);
+}
+
 /// Represents the [access
 /// setting](https://support.google.com/chat/answer/11971020) of the space.
 class Space_AccessSettings extends $pb.GeneratedMessage {
@@ -187,7 +255,9 @@ class Space extends $pb.GeneratedMessage {
     $406.HistoryState? spaceHistoryState,
     $core.bool? importMode,
     $299.Timestamp? createTime,
+    $299.Timestamp? lastActiveTime,
     $core.bool? adminInstalled,
+    Space_MembershipCount? membershipCount,
     Space_AccessSettings? accessSettings,
     $core.String? spaceUri,
   }) {
@@ -230,8 +300,14 @@ class Space extends $pb.GeneratedMessage {
     if (createTime != null) {
       $result.createTime = createTime;
     }
+    if (lastActiveTime != null) {
+      $result.lastActiveTime = lastActiveTime;
+    }
     if (adminInstalled != null) {
       $result.adminInstalled = adminInstalled;
+    }
+    if (membershipCount != null) {
+      $result.membershipCount = membershipCount;
     }
     if (accessSettings != null) {
       $result.accessSettings = accessSettings;
@@ -258,7 +334,9 @@ class Space extends $pb.GeneratedMessage {
     ..e<$406.HistoryState>(13, _omitFieldNames ? '' : 'spaceHistoryState', $pb.PbFieldType.OE, defaultOrMaker: $406.HistoryState.HISTORY_STATE_UNSPECIFIED, valueOf: $406.HistoryState.valueOf, enumValues: $406.HistoryState.values)
     ..aOB(16, _omitFieldNames ? '' : 'importMode')
     ..aOM<$299.Timestamp>(17, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(18, _omitFieldNames ? '' : 'lastActiveTime', subBuilder: $299.Timestamp.create)
     ..aOB(19, _omitFieldNames ? '' : 'adminInstalled')
+    ..aOM<Space_MembershipCount>(20, _omitFieldNames ? '' : 'membershipCount', subBuilder: Space_MembershipCount.create)
     ..aOM<Space_AccessSettings>(23, _omitFieldNames ? '' : 'accessSettings', subBuilder: Space_AccessSettings.create)
     ..aOS(25, _omitFieldNames ? '' : 'spaceUri')
     ..hasRequiredFields = false
@@ -458,6 +536,18 @@ class Space extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   $299.Timestamp ensureCreateTime() => $_ensure(11);
 
+  /// Output only. Timestamp of the last message in the space.
+  @$pb.TagNumber(18)
+  $299.Timestamp get lastActiveTime => $_getN(12);
+  @$pb.TagNumber(18)
+  set lastActiveTime($299.Timestamp v) { setField(18, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasLastActiveTime() => $_has(12);
+  @$pb.TagNumber(18)
+  void clearLastActiveTime() => clearField(18);
+  @$pb.TagNumber(18)
+  $299.Timestamp ensureLastActiveTime() => $_ensure(12);
+
   ///  Output only. For direct message (DM) spaces with a Chat app, whether the
   ///  space was created by a Google Workspace administrator. Administrators can
   ///  install and set up a direct message with a Chat app on behalf of users in
@@ -465,35 +555,49 @@ class Space extends $pb.GeneratedMessage {
   ///
   ///  To support admin install, your Chat app must feature direct messaging.
   @$pb.TagNumber(19)
-  $core.bool get adminInstalled => $_getBF(12);
+  $core.bool get adminInstalled => $_getBF(13);
   @$pb.TagNumber(19)
-  set adminInstalled($core.bool v) { $_setBool(12, v); }
+  set adminInstalled($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(19)
-  $core.bool hasAdminInstalled() => $_has(12);
+  $core.bool hasAdminInstalled() => $_has(13);
   @$pb.TagNumber(19)
   void clearAdminInstalled() => clearField(19);
+
+  /// Output only. The count of joined memberships grouped by member type.
+  /// Populated when the `space_type` is `SPACE`, `DIRECT_MESSAGE` or
+  /// `GROUP_CHAT`.
+  @$pb.TagNumber(20)
+  Space_MembershipCount get membershipCount => $_getN(14);
+  @$pb.TagNumber(20)
+  set membershipCount(Space_MembershipCount v) { setField(20, v); }
+  @$pb.TagNumber(20)
+  $core.bool hasMembershipCount() => $_has(14);
+  @$pb.TagNumber(20)
+  void clearMembershipCount() => clearField(20);
+  @$pb.TagNumber(20)
+  Space_MembershipCount ensureMembershipCount() => $_ensure(14);
 
   /// Optional. Specifies the [access
   /// setting](https://support.google.com/chat/answer/11971020) of the space.
   /// Only populated when the `space_type` is `SPACE`.
   @$pb.TagNumber(23)
-  Space_AccessSettings get accessSettings => $_getN(13);
+  Space_AccessSettings get accessSettings => $_getN(15);
   @$pb.TagNumber(23)
   set accessSettings(Space_AccessSettings v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasAccessSettings() => $_has(13);
+  $core.bool hasAccessSettings() => $_has(15);
   @$pb.TagNumber(23)
   void clearAccessSettings() => clearField(23);
   @$pb.TagNumber(23)
-  Space_AccessSettings ensureAccessSettings() => $_ensure(13);
+  Space_AccessSettings ensureAccessSettings() => $_ensure(15);
 
   /// Output only. The URI for a user to access the space.
   @$pb.TagNumber(25)
-  $core.String get spaceUri => $_getSZ(14);
+  $core.String get spaceUri => $_getSZ(16);
   @$pb.TagNumber(25)
-  set spaceUri($core.String v) { $_setString(14, v); }
+  set spaceUri($core.String v) { $_setString(16, v); }
   @$pb.TagNumber(25)
-  $core.bool hasSpaceUri() => $_has(14);
+  $core.bool hasSpaceUri() => $_has(16);
   @$pb.TagNumber(25)
   void clearSpaceUri() => clearField(25);
 }
@@ -758,10 +862,14 @@ class ListSpacesResponse extends $pb.GeneratedMessage {
 class GetSpaceRequest extends $pb.GeneratedMessage {
   factory GetSpaceRequest({
     $core.String? name,
+    $core.bool? useAdminAccess,
   }) {
     final $result = create();
     if (name != null) {
       $result.name = name;
+    }
+    if (useAdminAccess != null) {
+      $result.useAdminAccess = useAdminAccess;
     }
     return $result;
   }
@@ -771,6 +879,7 @@ class GetSpaceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..aOB(2, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
 
@@ -806,6 +915,24 @@ class GetSpaceRequest extends $pb.GeneratedMessage {
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
+
+  ///  When `true`, the method runs using the user's Google Workspace
+  ///  administrator privileges.
+  ///
+  ///  The calling user must be a Google Workspace administrator with the
+  ///  [manage chat and spaces conversations
+  ///  privilege](https://support.google.com/a/answer/13369245).
+  ///
+  ///  Requires the `chat.admin.spaces` or `chat.admin.spaces.readonly` [OAuth 2.0
+  ///  scopes](https://developers.google.com/workspace/chat/authenticate-authorize#chat-api-scopes).
+  @$pb.TagNumber(2)
+  $core.bool get useAdminAccess => $_getBF(1);
+  @$pb.TagNumber(2)
+  set useAdminAccess($core.bool v) { $_setBool(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasUseAdminAccess() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearUseAdminAccess() => clearField(2);
 }
 
 /// A request to get direct message space based on the user resource.
@@ -877,6 +1004,7 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   factory UpdateSpaceRequest({
     Space? space,
     $330.FieldMask? updateMask,
+    $core.bool? useAdminAccess,
   }) {
     final $result = create();
     if (space != null) {
@@ -884,6 +1012,9 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
     }
     if (updateMask != null) {
       $result.updateMask = updateMask;
+    }
+    if (useAdminAccess != null) {
+      $result.useAdminAccess = useAdminAccess;
     }
     return $result;
   }
@@ -894,6 +1025,7 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOM<Space>(1, _omitFieldNames ? '' : 'space', subBuilder: Space.create)
     ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
 
@@ -993,16 +1125,344 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
   $330.FieldMask ensureUpdateMask() => $_ensure(1);
+
+  ///  When `true`, the method runs using the user's Google Workspace
+  ///  administrator privileges.
+  ///
+  ///  The calling user must be a Google Workspace administrator with the
+  ///  [manage chat and spaces conversations
+  ///  privilege](https://support.google.com/a/answer/13369245).
+  ///
+  ///  Requires the `chat.admin.spaces` [OAuth 2.0
+  ///  scope](https://developers.google.com/workspace/chat/authenticate-authorize#chat-api-scopes).
+  ///
+  ///  Some `FieldMask` values are not supported using admin access. For details,
+  ///  see the description of `update_mask`.
+  @$pb.TagNumber(3)
+  $core.bool get useAdminAccess => $_getBF(2);
+  @$pb.TagNumber(3)
+  set useAdminAccess($core.bool v) { $_setBool(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasUseAdminAccess() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearUseAdminAccess() => clearField(3);
+}
+
+/// Request to search for a list of spaces based on a query.
+class SearchSpacesRequest extends $pb.GeneratedMessage {
+  factory SearchSpacesRequest({
+    $core.bool? useAdminAccess,
+    $core.int? pageSize,
+    $core.String? pageToken,
+    $core.String? query,
+    $core.String? orderBy,
+  }) {
+    final $result = create();
+    if (useAdminAccess != null) {
+      $result.useAdminAccess = useAdminAccess;
+    }
+    if (pageSize != null) {
+      $result.pageSize = pageSize;
+    }
+    if (pageToken != null) {
+      $result.pageToken = pageToken;
+    }
+    if (query != null) {
+      $result.query = query;
+    }
+    if (orderBy != null) {
+      $result.orderBy = orderBy;
+    }
+    return $result;
+  }
+  SearchSpacesRequest._() : super();
+  factory SearchSpacesRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory SearchSpacesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchSpacesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+    ..aOB(1, _omitFieldNames ? '' : 'useAdminAccess')
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
+    ..aOS(3, _omitFieldNames ? '' : 'pageToken')
+    ..aOS(4, _omitFieldNames ? '' : 'query')
+    ..aOS(5, _omitFieldNames ? '' : 'orderBy')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  SearchSpacesRequest clone() => SearchSpacesRequest()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  SearchSpacesRequest copyWith(void Function(SearchSpacesRequest) updates) => super.copyWith((message) => updates(message as SearchSpacesRequest)) as SearchSpacesRequest;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static SearchSpacesRequest create() => SearchSpacesRequest._();
+  SearchSpacesRequest createEmptyInstance() => create();
+  static $pb.PbList<SearchSpacesRequest> createRepeated() => $pb.PbList<SearchSpacesRequest>();
+  @$core.pragma('dart2js:noInline')
+  static SearchSpacesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchSpacesRequest>(create);
+  static SearchSpacesRequest? _defaultInstance;
+
+  ///  When `true`, the method runs using the user's Google Workspace
+  ///  administrator privileges.
+  ///
+  ///  The calling user must be a Google Workspace administrator with the
+  ///  [manage chat and spaces conversations
+  ///  privilege](https://support.google.com/a/answer/13369245).
+  ///
+  ///  Requires either the `chat.admin.spaces.readonly` or `chat.admin.spaces`
+  ///  [OAuth 2.0
+  ///  scope](https://developers.google.com/workspace/chat/authenticate-authorize#chat-api-scopes).
+  ///
+  ///  This method currently only supports admin access, thus only `true` is
+  ///  accepted for this field.
+  @$pb.TagNumber(1)
+  $core.bool get useAdminAccess => $_getBF(0);
+  @$pb.TagNumber(1)
+  set useAdminAccess($core.bool v) { $_setBool(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasUseAdminAccess() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearUseAdminAccess() => clearField(1);
+
+  ///  The maximum number of spaces to return. The service may return fewer than
+  ///  this value.
+  ///
+  ///  If unspecified, at most 100 spaces are returned.
+  ///
+  ///  The maximum value is 1000. If you use a value more than 1000, it's
+  ///  automatically changed to 1000.
+  @$pb.TagNumber(2)
+  $core.int get pageSize => $_getIZ(1);
+  @$pb.TagNumber(2)
+  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasPageSize() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearPageSize() => clearField(2);
+
+  ///  A token, received from the previous search spaces call. Provide this
+  ///  parameter to retrieve the subsequent page.
+  ///
+  ///  When paginating, all other parameters provided should match the call that
+  ///  provided the page token. Passing different values to the other parameters
+  ///  might lead to unexpected results.
+  @$pb.TagNumber(3)
+  $core.String get pageToken => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set pageToken($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasPageToken() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPageToken() => clearField(3);
+
+  ///  Required. A search query.
+  ///
+  ///  You can search by using the following parameters:
+  ///
+  ///  - `create_time`
+  ///  - `customer`
+  ///  - `display_name`
+  ///  - `external_user_allowed`
+  ///  - `last_active_time`
+  ///  - `space_history_state`
+  ///  - `space_type`
+  ///
+  ///  `create_time` and `last_active_time` accept a timestamp in
+  ///  [RFC-3339](https://www.rfc-editor.org/rfc/rfc3339) format and the supported
+  ///  comparison operators are: `=`, `<`, `>`, `<=`, `>=`.
+  ///
+  ///  `customer` is required and is used to indicate which customer
+  ///  to fetch spaces from. `customers/my_customer` is the only supported value.
+  ///
+  ///  `display_name` only accepts the `HAS` (`:`) operator. The text to
+  ///  match is first tokenized into tokens and each token is prefix-matched
+  ///  case-insensitively and independently as a substring anywhere in the space's
+  ///  `display_name`. For example, `Fun Eve` matches `Fun event` or `The
+  ///  evening was fun`, but not `notFun event` or `even`.
+  ///
+  ///  `external_user_allowed` accepts either `true` or `false`.
+  ///
+  ///  `space_history_state` only accepts values from the [`historyState`]
+  ///  (https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces#Space.HistoryState)
+  ///  field of a `space` resource.
+  ///
+  ///  `space_type` is required and the only valid value is `SPACE`.
+  ///
+  ///  Across different fields, only `AND` operators are supported. A valid
+  ///  example is `space_type = "SPACE" AND display_name:"Hello"` and an invalid
+  ///  example is `space_type = "SPACE" OR display_name:"Hello"`.
+  ///
+  ///  Among the same field,
+  ///  `space_type` doesn't support `AND` or `OR` operators.
+  ///  `display_name`, 'space_history_state', and 'external_user_allowed' only
+  ///  support `OR` operators.
+  ///  `last_active_time` and `create_time` support both `AND` and `OR` operators.
+  ///  `AND` can only be used to represent an interval, such as `last_active_time
+  ///  < "2022-01-01T00:00:00+00:00" AND last_active_time >
+  ///  "2023-01-01T00:00:00+00:00"`.
+  ///
+  ///  The following example queries are valid:
+  ///
+  ///  ```
+  ///  customer = "customers/my_customer" AND space_type = "SPACE"
+  ///
+  ///  customer = "customers/my_customer" AND space_type = "SPACE" AND
+  ///  display_name:"Hello World"
+  ///
+  ///  customer = "customers/my_customer" AND space_type = "SPACE" AND
+  ///  (last_active_time < "2020-01-01T00:00:00+00:00" OR last_active_time >
+  ///  "2022-01-01T00:00:00+00:00")
+  ///
+  ///  customer = "customers/my_customer" AND space_type = "SPACE" AND
+  ///  (display_name:"Hello World" OR display_name:"Fun event") AND
+  ///  (last_active_time > "2020-01-01T00:00:00+00:00" AND last_active_time <
+  ///  "2022-01-01T00:00:00+00:00")
+  ///
+  ///  customer = "customers/my_customer" AND space_type = "SPACE" AND
+  ///  (create_time > "2019-01-01T00:00:00+00:00" AND create_time <
+  ///  "2020-01-01T00:00:00+00:00") AND (external_user_allowed = "true") AND
+  ///  (space_history_state = "HISTORY_ON" OR space_history_state = "HISTORY_OFF")
+  ///  ```
+  @$pb.TagNumber(4)
+  $core.String get query => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set query($core.String v) { $_setString(3, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasQuery() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearQuery() => clearField(4);
+
+  ///  Optional. How the list of spaces is ordered.
+  ///
+  ///  Supported attributes to order by are:
+  ///
+  ///  - `membership_count.joined_direct_human_user_count` — Denotes the count of
+  ///  human users that have directly joined a space.
+  ///  - `last_active_time` — Denotes the time when last eligible item is added to
+  ///  any topic of this space.
+  ///  - `create_time` — Denotes the time of the space creation.
+  ///
+  ///  Valid ordering operation values are:
+  ///
+  ///  - `ASC` for ascending. Default value.
+  ///
+  ///  - `DESC` for descending.
+  ///
+  ///  The supported syntax are:
+  ///
+  ///  - `membership_count.joined_direct_human_user_count DESC`
+  ///  - `membership_count.joined_direct_human_user_count ASC`
+  ///  - `last_active_time DESC`
+  ///  - `last_active_time ASC`
+  ///  - `create_time DESC`
+  ///  - `create_time ASC`
+  @$pb.TagNumber(5)
+  $core.String get orderBy => $_getSZ(4);
+  @$pb.TagNumber(5)
+  set orderBy($core.String v) { $_setString(4, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasOrderBy() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearOrderBy() => clearField(5);
+}
+
+/// Response with a list of spaces corresponding to the search spaces request.
+class SearchSpacesResponse extends $pb.GeneratedMessage {
+  factory SearchSpacesResponse({
+    $core.Iterable<Space>? spaces,
+    $core.String? nextPageToken,
+    $core.int? totalSize,
+  }) {
+    final $result = create();
+    if (spaces != null) {
+      $result.spaces.addAll(spaces);
+    }
+    if (nextPageToken != null) {
+      $result.nextPageToken = nextPageToken;
+    }
+    if (totalSize != null) {
+      $result.totalSize = totalSize;
+    }
+    return $result;
+  }
+  SearchSpacesResponse._() : super();
+  factory SearchSpacesResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory SearchSpacesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchSpacesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
+    ..pc<Space>(1, _omitFieldNames ? '' : 'spaces', $pb.PbFieldType.PM, subBuilder: Space.create)
+    ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
+    ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  SearchSpacesResponse clone() => SearchSpacesResponse()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  SearchSpacesResponse copyWith(void Function(SearchSpacesResponse) updates) => super.copyWith((message) => updates(message as SearchSpacesResponse)) as SearchSpacesResponse;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static SearchSpacesResponse create() => SearchSpacesResponse._();
+  SearchSpacesResponse createEmptyInstance() => create();
+  static $pb.PbList<SearchSpacesResponse> createRepeated() => $pb.PbList<SearchSpacesResponse>();
+  @$core.pragma('dart2js:noInline')
+  static SearchSpacesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SearchSpacesResponse>(create);
+  static SearchSpacesResponse? _defaultInstance;
+
+  /// A page of the requested spaces.
+  @$pb.TagNumber(1)
+  $core.List<Space> get spaces => $_getList(0);
+
+  /// A token that can be used to retrieve the next page. If this field is empty,
+  /// there are no subsequent pages.
+  @$pb.TagNumber(2)
+  $core.String get nextPageToken => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set nextPageToken($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasNextPageToken() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearNextPageToken() => clearField(2);
+
+  /// The total number of spaces that match the query, across all pages. If the
+  /// result is over 10,000 spaces, this value is an estimate.
+  @$pb.TagNumber(3)
+  $core.int get totalSize => $_getIZ(2);
+  @$pb.TagNumber(3)
+  set totalSize($core.int v) { $_setSignedInt32(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasTotalSize() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearTotalSize() => clearField(3);
 }
 
 /// Request for deleting a space.
 class DeleteSpaceRequest extends $pb.GeneratedMessage {
   factory DeleteSpaceRequest({
     $core.String? name,
+    $core.bool? useAdminAccess,
   }) {
     final $result = create();
     if (name != null) {
       $result.name = name;
+    }
+    if (useAdminAccess != null) {
+      $result.useAdminAccess = useAdminAccess;
     }
     return $result;
   }
@@ -1012,6 +1472,7 @@ class DeleteSpaceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..aOB(2, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
 
@@ -1047,6 +1508,24 @@ class DeleteSpaceRequest extends $pb.GeneratedMessage {
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
+
+  ///  When `true`, the method runs using the user's Google Workspace
+  ///  administrator privileges.
+  ///
+  ///  The calling user must be a Google Workspace administrator with the
+  ///  [manage chat and spaces conversations
+  ///  privilege](https://support.google.com/a/answer/13369245).
+  ///
+  ///  Requires the `chat.admin.delete` [OAuth 2.0
+  ///  scope](https://developers.google.com/workspace/chat/authenticate-authorize#chat-api-scopes).
+  @$pb.TagNumber(2)
+  $core.bool get useAdminAccess => $_getBF(1);
+  @$pb.TagNumber(2)
+  set useAdminAccess($core.bool v) { $_setBool(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasUseAdminAccess() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearUseAdminAccess() => clearField(2);
 }
 
 /// Request message for completing the import process for a space.

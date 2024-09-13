@@ -70,6 +70,10 @@ class ChatServiceClient extends $grpc.Client {
       '/google.chat.v1.ChatService/ListSpaces',
       ($97.ListSpacesRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $97.ListSpacesResponse.fromBuffer(value));
+  static final _$searchSpaces = $grpc.ClientMethod<$97.SearchSpacesRequest, $97.SearchSpacesResponse>(
+      '/google.chat.v1.ChatService/SearchSpaces',
+      ($97.SearchSpacesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $97.SearchSpacesResponse.fromBuffer(value));
   static final _$getSpace = $grpc.ClientMethod<$97.GetSpaceRequest, $97.Space>(
       '/google.chat.v1.ChatService/GetSpace',
       ($97.GetSpaceRequest value) => value.writeToBuffer(),
@@ -187,6 +191,10 @@ class ChatServiceClient extends $grpc.Client {
 
   $grpc.ResponseFuture<$97.ListSpacesResponse> listSpaces($97.ListSpacesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listSpaces, request, options: options);
+  }
+
+  $grpc.ResponseFuture<$97.SearchSpacesResponse> searchSpaces($97.SearchSpacesRequest request, {$grpc.CallOptions? options}) {
+    return $createUnaryCall(_$searchSpaces, request, options: options);
   }
 
   $grpc.ResponseFuture<$97.Space> getSpace($97.GetSpaceRequest request, {$grpc.CallOptions? options}) {
@@ -337,6 +345,13 @@ abstract class ChatServiceBase extends $grpc.Service {
         false,
         ($core.List<$core.int> value) => $97.ListSpacesRequest.fromBuffer(value),
         ($97.ListSpacesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$97.SearchSpacesRequest, $97.SearchSpacesResponse>(
+        'SearchSpaces',
+        searchSpaces_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $97.SearchSpacesRequest.fromBuffer(value),
+        ($97.SearchSpacesResponse value) => value.writeToBuffer()));
     $addMethod($grpc.ServiceMethod<$97.GetSpaceRequest, $97.Space>(
         'GetSpace',
         getSpace_Pre,
@@ -505,6 +520,10 @@ abstract class ChatServiceBase extends $grpc.Service {
     return listSpaces(call, await request);
   }
 
+  $async.Future<$97.SearchSpacesResponse> searchSpaces_Pre($grpc.ServiceCall call, $async.Future<$97.SearchSpacesRequest> request) async {
+    return searchSpaces(call, await request);
+  }
+
   $async.Future<$97.Space> getSpace_Pre($grpc.ServiceCall call, $async.Future<$97.GetSpaceRequest> request) async {
     return getSpace(call, await request);
   }
@@ -587,6 +606,7 @@ abstract class ChatServiceBase extends $grpc.Service {
   $async.Future<$96.Attachment> getAttachment($grpc.ServiceCall call, $96.GetAttachmentRequest request);
   $async.Future<$96.UploadAttachmentResponse> uploadAttachment($grpc.ServiceCall call, $96.UploadAttachmentRequest request);
   $async.Future<$97.ListSpacesResponse> listSpaces($grpc.ServiceCall call, $97.ListSpacesRequest request);
+  $async.Future<$97.SearchSpacesResponse> searchSpaces($grpc.ServiceCall call, $97.SearchSpacesRequest request);
   $async.Future<$97.Space> getSpace($grpc.ServiceCall call, $97.GetSpaceRequest request);
   $async.Future<$97.Space> createSpace($grpc.ServiceCall call, $97.CreateSpaceRequest request);
   $async.Future<$97.Space> setUpSpace($grpc.ServiceCall call, $98.SetUpSpaceRequest request);

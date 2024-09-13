@@ -75,6 +75,7 @@ const CreateMembershipRequest$json = {
   '2': [
     {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
     {'1': 'membership', '3': 2, '4': 1, '5': 11, '6': '.google.chat.v1.Membership', '8': {}, '10': 'membership'},
+    {'1': 'use_admin_access', '3': 5, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
 
@@ -82,7 +83,8 @@ const CreateMembershipRequest$json = {
 final $typed_data.Uint8List createMembershipRequestDescriptor = $convert.base64Decode(
     'ChdDcmVhdGVNZW1iZXJzaGlwUmVxdWVzdBI+CgZwYXJlbnQYASABKAlCJuBBAvpBIBIeY2hhdC'
     '5nb29nbGVhcGlzLmNvbS9NZW1iZXJzaGlwUgZwYXJlbnQSPwoKbWVtYmVyc2hpcBgCIAEoCzIa'
-    'Lmdvb2dsZS5jaGF0LnYxLk1lbWJlcnNoaXBCA+BBAlIKbWVtYmVyc2hpcA==');
+    'Lmdvb2dsZS5jaGF0LnYxLk1lbWJlcnNoaXBCA+BBAlIKbWVtYmVyc2hpcBIoChB1c2VfYWRtaW'
+    '5fYWNjZXNzGAUgASgIUg51c2VBZG1pbkFjY2Vzcw==');
 
 @$core.Deprecated('Use updateMembershipRequestDescriptor instead')
 const UpdateMembershipRequest$json = {
@@ -90,6 +92,7 @@ const UpdateMembershipRequest$json = {
   '2': [
     {'1': 'membership', '3': 1, '4': 1, '5': 11, '6': '.google.chat.v1.Membership', '8': {}, '10': 'membership'},
     {'1': 'update_mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '8': {}, '10': 'updateMask'},
+    {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
 
@@ -97,7 +100,8 @@ const UpdateMembershipRequest$json = {
 final $typed_data.Uint8List updateMembershipRequestDescriptor = $convert.base64Decode(
     'ChdVcGRhdGVNZW1iZXJzaGlwUmVxdWVzdBI/CgptZW1iZXJzaGlwGAEgASgLMhouZ29vZ2xlLm'
     'NoYXQudjEuTWVtYmVyc2hpcEID4EECUgptZW1iZXJzaGlwEkAKC3VwZGF0ZV9tYXNrGAIgASgL'
-    'MhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNr');
+    'MhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNrEigKEHVzZV9hZG'
+    '1pbl9hY2Nlc3MYAyABKAhSDnVzZUFkbWluQWNjZXNz');
 
 @$core.Deprecated('Use listMembershipsRequestDescriptor instead')
 const ListMembershipsRequest$json = {
@@ -109,6 +113,7 @@ const ListMembershipsRequest$json = {
     {'1': 'filter', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'filter'},
     {'1': 'show_groups', '3': 6, '4': 1, '5': 8, '8': {}, '10': 'showGroups'},
     {'1': 'show_invited', '3': 7, '4': 1, '5': 8, '8': {}, '10': 'showInvited'},
+    {'1': 'use_admin_access', '3': 8, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
 
@@ -118,7 +123,8 @@ final $typed_data.Uint8List listMembershipsRequestDescriptor = $convert.base64De
     'dvb2dsZWFwaXMuY29tL01lbWJlcnNoaXBSBnBhcmVudBIgCglwYWdlX3NpemUYAiABKAVCA+BB'
     'AVIIcGFnZVNpemUSIgoKcGFnZV90b2tlbhgDIAEoCUID4EEBUglwYWdlVG9rZW4SGwoGZmlsdG'
     'VyGAUgASgJQgPgQQFSBmZpbHRlchIkCgtzaG93X2dyb3VwcxgGIAEoCEID4EEBUgpzaG93R3Jv'
-    'dXBzEiYKDHNob3dfaW52aXRlZBgHIAEoCEID4EEBUgtzaG93SW52aXRlZA==');
+    'dXBzEiYKDHNob3dfaW52aXRlZBgHIAEoCEID4EEBUgtzaG93SW52aXRlZBIoChB1c2VfYWRtaW'
+    '5fYWNjZXNzGAggASgIUg51c2VBZG1pbkFjY2Vzcw==');
 
 @$core.Deprecated('Use listMembershipsResponseDescriptor instead')
 const ListMembershipsResponse$json = {
@@ -140,24 +146,28 @@ const GetMembershipRequest$json = {
   '1': 'GetMembershipRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'use_admin_access', '3': 3, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
 
 /// Descriptor for `GetMembershipRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List getMembershipRequestDescriptor = $convert.base64Decode(
     'ChRHZXRNZW1iZXJzaGlwUmVxdWVzdBI6CgRuYW1lGAEgASgJQibgQQL6QSAKHmNoYXQuZ29vZ2'
-    'xlYXBpcy5jb20vTWVtYmVyc2hpcFIEbmFtZQ==');
+    'xlYXBpcy5jb20vTWVtYmVyc2hpcFIEbmFtZRIoChB1c2VfYWRtaW5fYWNjZXNzGAMgASgIUg51'
+    'c2VBZG1pbkFjY2Vzcw==');
 
 @$core.Deprecated('Use deleteMembershipRequestDescriptor instead')
 const DeleteMembershipRequest$json = {
   '1': 'DeleteMembershipRequest',
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'use_admin_access', '3': 2, '4': 1, '5': 8, '10': 'useAdminAccess'},
   ],
 };
 
 /// Descriptor for `DeleteMembershipRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List deleteMembershipRequestDescriptor = $convert.base64Decode(
     'ChdEZWxldGVNZW1iZXJzaGlwUmVxdWVzdBI6CgRuYW1lGAEgASgJQibgQQL6QSAKHmNoYXQuZ2'
-    '9vZ2xlYXBpcy5jb20vTWVtYmVyc2hpcFIEbmFtZQ==');
+    '9vZ2xlYXBpcy5jb20vTWVtYmVyc2hpcFIEbmFtZRIoChB1c2VfYWRtaW5fYWNjZXNzGAIgASgI'
+    'Ug51c2VBZG1pbkFjY2Vzcw==');
 

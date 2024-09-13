@@ -206,6 +206,7 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
   factory CreateMembershipRequest({
     $core.String? parent,
     Membership? membership,
+    $core.bool? useAdminAccess,
   }) {
     final $result = create();
     if (parent != null) {
@@ -213,6 +214,9 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
     }
     if (membership != null) {
       $result.membership = membership;
+    }
+    if (useAdminAccess != null) {
+      $result.useAdminAccess = useAdminAccess;
     }
     return $result;
   }
@@ -223,6 +227,7 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOM<Membership>(2, _omitFieldNames ? '' : 'membership', subBuilder: Membership.create)
+    ..aOB(5, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
 
@@ -286,6 +291,28 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
   void clearMembership() => clearField(2);
   @$pb.TagNumber(2)
   Membership ensureMembership() => $_ensure(1);
+
+  ///  When `true`, the method runs using the user's Google Workspace
+  ///  administrator privileges.
+  ///
+  ///  The calling user must be a Google Workspace administrator with the
+  ///  [manage chat and spaces conversations
+  ///  privilege](https://support.google.com/a/answer/13369245).
+  ///
+  ///  Requires the `chat.admin.memberships` [OAuth 2.0
+  ///  scope](https://developers.google.com/workspace/chat/authenticate-authorize#chat-api-scopes).
+  ///
+  ///  Creating app memberships or creating memberships for users outside the
+  ///  administrator's Google Workspace organization isn't supported using admin
+  ///  access.
+  @$pb.TagNumber(5)
+  $core.bool get useAdminAccess => $_getBF(2);
+  @$pb.TagNumber(5)
+  set useAdminAccess($core.bool v) { $_setBool(2, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasUseAdminAccess() => $_has(2);
+  @$pb.TagNumber(5)
+  void clearUseAdminAccess() => clearField(5);
 }
 
 /// Request message for updating a membership.
@@ -293,6 +320,7 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   factory UpdateMembershipRequest({
     Membership? membership,
     $330.FieldMask? updateMask,
+    $core.bool? useAdminAccess,
   }) {
     final $result = create();
     if (membership != null) {
@@ -300,6 +328,9 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
     }
     if (updateMask != null) {
       $result.updateMask = updateMask;
+    }
+    if (useAdminAccess != null) {
+      $result.useAdminAccess = useAdminAccess;
     }
     return $result;
   }
@@ -310,6 +341,7 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOM<Membership>(1, _omitFieldNames ? '' : 'membership', subBuilder: Membership.create)
     ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
 
@@ -363,6 +395,24 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
   $330.FieldMask ensureUpdateMask() => $_ensure(1);
+
+  ///  When `true`, the method runs using the user's Google Workspace
+  ///  administrator privileges.
+  ///
+  ///  The calling user must be a Google Workspace administrator with the
+  ///  [manage chat and spaces conversations
+  ///  privilege](https://support.google.com/a/answer/13369245).
+  ///
+  ///  Requires the `chat.admin.memberships` [OAuth 2.0
+  ///  scope](https://developers.google.com/workspace/chat/authenticate-authorize#chat-api-scopes).
+  @$pb.TagNumber(3)
+  $core.bool get useAdminAccess => $_getBF(2);
+  @$pb.TagNumber(3)
+  set useAdminAccess($core.bool v) { $_setBool(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasUseAdminAccess() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearUseAdminAccess() => clearField(3);
 }
 
 /// Request message for listing memberships.
@@ -374,6 +424,7 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
     $core.String? filter,
     $core.bool? showGroups,
     $core.bool? showInvited,
+    $core.bool? useAdminAccess,
   }) {
     final $result = create();
     if (parent != null) {
@@ -394,6 +445,9 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
     if (showInvited != null) {
       $result.showInvited = showInvited;
     }
+    if (useAdminAccess != null) {
+      $result.useAdminAccess = useAdminAccess;
+    }
     return $result;
   }
   ListMembershipsRequest._() : super();
@@ -407,6 +461,7 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'filter')
     ..aOB(6, _omitFieldNames ? '' : 'showGroups')
     ..aOB(7, _omitFieldNames ? '' : 'showInvited')
+    ..aOB(8, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
 
@@ -486,8 +541,8 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   ///
   ///  To filter by role, set `role` to `ROLE_MEMBER` or `ROLE_MANAGER`.
   ///
-  ///  To filter by type, set `member.type` to `HUMAN` or `BOT`. Developer
-  ///  Preview: You can also filter for `member.type` using the `!=` operator.
+  ///  To filter by type, set `member.type` to `HUMAN` or `BOT`. You can also
+  ///  filter for `member.type` using the `!=` operator.
   ///
   ///  To filter by both role and type, use the `AND` operator. To filter by
   ///  either role or type, use the `OR` operator.
@@ -555,6 +610,27 @@ class ListMembershipsRequest extends $pb.GeneratedMessage {
   $core.bool hasShowInvited() => $_has(5);
   @$pb.TagNumber(7)
   void clearShowInvited() => clearField(7);
+
+  ///  When `true`, the method runs using the user's Google Workspace
+  ///  administrator privileges.
+  ///
+  ///  The calling user must be a Google Workspace administrator with the
+  ///  [manage chat and spaces conversations
+  ///  privilege](https://support.google.com/a/answer/13369245).
+  ///
+  ///  Requires either the `chat.admin.memberships.readonly` or
+  ///  `chat.admin.memberships` [OAuth 2.0
+  ///  scope](https://developers.google.com/workspace/chat/authenticate-authorize#chat-api-scopes).
+  ///
+  ///  Listing app memberships in a space isn't supported when using admin access.
+  @$pb.TagNumber(8)
+  $core.bool get useAdminAccess => $_getBF(6);
+  @$pb.TagNumber(8)
+  set useAdminAccess($core.bool v) { $_setBool(6, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasUseAdminAccess() => $_has(6);
+  @$pb.TagNumber(8)
+  void clearUseAdminAccess() => clearField(8);
 }
 
 /// Response to list memberships of the space.
@@ -623,10 +699,14 @@ class ListMembershipsResponse extends $pb.GeneratedMessage {
 class GetMembershipRequest extends $pb.GeneratedMessage {
   factory GetMembershipRequest({
     $core.String? name,
+    $core.bool? useAdminAccess,
   }) {
     final $result = create();
     if (name != null) {
       $result.name = name;
+    }
+    if (useAdminAccess != null) {
+      $result.useAdminAccess = useAdminAccess;
     }
     return $result;
   }
@@ -636,6 +716,7 @@ class GetMembershipRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
 
@@ -681,16 +762,41 @@ class GetMembershipRequest extends $pb.GeneratedMessage {
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
+
+  ///  When `true`, the method runs using the user's Google Workspace
+  ///  administrator privileges.
+  ///
+  ///  The calling user must be a Google Workspace administrator with the
+  ///  [manage chat and spaces conversations
+  ///  privilege](https://support.google.com/a/answer/13369245).
+  ///
+  ///  Requires the `chat.admin.memberships` or `chat.admin.memberships.readonly`
+  ///  [OAuth 2.0
+  ///  scopes](https://developers.google.com/workspace/chat/authenticate-authorize#chat-api-scopes).
+  ///
+  ///  Getting app memberships in a space isn't supported when using admin access.
+  @$pb.TagNumber(3)
+  $core.bool get useAdminAccess => $_getBF(1);
+  @$pb.TagNumber(3)
+  set useAdminAccess($core.bool v) { $_setBool(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasUseAdminAccess() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearUseAdminAccess() => clearField(3);
 }
 
 /// Request to delete a membership in a space.
 class DeleteMembershipRequest extends $pb.GeneratedMessage {
   factory DeleteMembershipRequest({
     $core.String? name,
+    $core.bool? useAdminAccess,
   }) {
     final $result = create();
     if (name != null) {
       $result.name = name;
+    }
+    if (useAdminAccess != null) {
+      $result.useAdminAccess = useAdminAccess;
     }
     return $result;
   }
@@ -700,6 +806,7 @@ class DeleteMembershipRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..aOB(2, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
 
@@ -746,6 +853,26 @@ class DeleteMembershipRequest extends $pb.GeneratedMessage {
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
+
+  ///  When `true`, the method runs using the user's Google Workspace
+  ///  administrator privileges.
+  ///
+  ///  The calling user must be a Google Workspace administrator with the
+  ///  [manage chat and spaces conversations
+  ///  privilege](https://support.google.com/a/answer/13369245).
+  ///
+  ///  Requires the `chat.admin.memberships` [OAuth 2.0
+  ///  scope](https://developers.google.com/workspace/chat/authenticate-authorize#chat-api-scopes).
+  ///
+  ///  Deleting app memberships in a space isn't supported using admin access.
+  @$pb.TagNumber(2)
+  $core.bool get useAdminAccess => $_getBF(1);
+  @$pb.TagNumber(2)
+  set useAdminAccess($core.bool v) { $_setBool(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasUseAdminAccess() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearUseAdminAccess() => clearField(2);
 }
 
 
