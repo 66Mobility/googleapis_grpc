@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/interval.pb.dart' as $503;
-import '../../../type/types.pb.dart' as $528;
+import '../../../../type/interval.pb.dart' as $508;
+import '../../../type/types.pb.dart' as $533;
 
 /// Regional inventory information for the product. Represents specific
 /// information like price and availability for a given product in a specific
@@ -28,11 +28,11 @@ class RegionalInventory extends $pb.GeneratedMessage {
     $core.String? name,
     $fixnum.Int64? account,
     $core.String? region,
-    $528.Price? price,
-    $528.Price? salePrice,
-    $503.Interval? salePriceEffectiveDate,
+    $533.Price? price,
+    $533.Price? salePrice,
+    $508.Interval? salePriceEffectiveDate,
     $core.String? availability,
-    $core.Iterable<$528.CustomAttribute>? customAttributes,
+    $core.Iterable<$533.CustomAttribute>? customAttributes,
   }) {
     final $result = create();
     if (name != null) {
@@ -69,11 +69,11 @@ class RegionalInventory extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'account')
     ..aOS(3, _omitFieldNames ? '' : 'region')
-    ..aOM<$528.Price>(4, _omitFieldNames ? '' : 'price', subBuilder: $528.Price.create)
-    ..aOM<$528.Price>(5, _omitFieldNames ? '' : 'salePrice', subBuilder: $528.Price.create)
-    ..aOM<$503.Interval>(6, _omitFieldNames ? '' : 'salePriceEffectiveDate', subBuilder: $503.Interval.create)
+    ..aOM<$533.Price>(4, _omitFieldNames ? '' : 'price', subBuilder: $533.Price.create)
+    ..aOM<$533.Price>(5, _omitFieldNames ? '' : 'salePrice', subBuilder: $533.Price.create)
+    ..aOM<$508.Interval>(6, _omitFieldNames ? '' : 'salePriceEffectiveDate', subBuilder: $508.Interval.create)
     ..aOS(7, _omitFieldNames ? '' : 'availability')
-    ..pc<$528.CustomAttribute>(8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $528.CustomAttribute.create)
+    ..pc<$533.CustomAttribute>(8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $533.CustomAttribute.create)
     ..hasRequiredFields = false
   ;
 
@@ -136,42 +136,42 @@ class RegionalInventory extends $pb.GeneratedMessage {
 
   /// Price of the product in this region.
   @$pb.TagNumber(4)
-  $528.Price get price => $_getN(3);
+  $533.Price get price => $_getN(3);
   @$pb.TagNumber(4)
-  set price($528.Price v) { setField(4, v); }
+  set price($533.Price v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPrice() => $_has(3);
   @$pb.TagNumber(4)
   void clearPrice() => clearField(4);
   @$pb.TagNumber(4)
-  $528.Price ensurePrice() => $_ensure(3);
+  $533.Price ensurePrice() => $_ensure(3);
 
   /// Sale price of the product in this region. Mandatory if
   /// [`salePriceEffectiveDate`][google.shopping.merchant.inventories.v1beta.RegionalInventory.sale_price_effective_date]
   /// is defined.
   @$pb.TagNumber(5)
-  $528.Price get salePrice => $_getN(4);
+  $533.Price get salePrice => $_getN(4);
   @$pb.TagNumber(5)
-  set salePrice($528.Price v) { setField(5, v); }
+  set salePrice($533.Price v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSalePrice() => $_has(4);
   @$pb.TagNumber(5)
   void clearSalePrice() => clearField(5);
   @$pb.TagNumber(5)
-  $528.Price ensureSalePrice() => $_ensure(4);
+  $533.Price ensureSalePrice() => $_ensure(4);
 
   /// The `TimePeriod` of the
   /// sale price in this region.
   @$pb.TagNumber(6)
-  $503.Interval get salePriceEffectiveDate => $_getN(5);
+  $508.Interval get salePriceEffectiveDate => $_getN(5);
   @$pb.TagNumber(6)
-  set salePriceEffectiveDate($503.Interval v) { setField(6, v); }
+  set salePriceEffectiveDate($508.Interval v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSalePriceEffectiveDate() => $_has(5);
   @$pb.TagNumber(6)
   void clearSalePriceEffectiveDate() => clearField(6);
   @$pb.TagNumber(6)
-  $503.Interval ensureSalePriceEffectiveDate() => $_ensure(5);
+  $508.Interval ensureSalePriceEffectiveDate() => $_ensure(5);
 
   /// Availability of the product in this region.
   /// For accepted attribute values, see the [regional product inventory data
@@ -189,7 +189,7 @@ class RegionalInventory extends $pb.GeneratedMessage {
   /// `CustomAttribute` to submit any attribute of the data specification in its
   /// generic form.
   @$pb.TagNumber(8)
-  $core.List<$528.CustomAttribute> get customAttributes => $_getList(7);
+  $core.List<$533.CustomAttribute> get customAttributes => $_getList(7);
 }
 
 /// Request message for the `ListRegionalInventories` method.

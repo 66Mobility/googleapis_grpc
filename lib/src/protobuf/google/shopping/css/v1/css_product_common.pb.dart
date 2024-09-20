@@ -15,18 +15,18 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/timestamp.pb.dart' as $299;
-import '../../type/types.pb.dart' as $528;
+import '../../type/types.pb.dart' as $533;
 
 /// Attributes for CSS Product.
 class Attributes extends $pb.GeneratedMessage {
   factory Attributes({
     $core.String? cppLink,
     $core.String? cppMobileLink,
-    $528.Price? lowPrice,
-    $528.Price? highPrice,
+    $533.Price? lowPrice,
+    $533.Price? highPrice,
     $fixnum.Int64? numberOfOffers,
     $core.String? headlineOfferCondition,
-    $528.Price? headlineOfferPrice,
+    $533.Price? headlineOfferPrice,
     $core.String? headlineOfferLink,
     $core.String? headlineOfferMobileLink,
     $core.String? title,
@@ -58,7 +58,7 @@ class Attributes extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? productTypes,
     $core.Iterable<Certification>? certifications,
     $299.Timestamp? expirationDate,
-    $528.Price? headlineOfferShippingPrice,
+    $533.Price? headlineOfferShippingPrice,
     $core.String? cppAdsRedirect,
     $core.Iterable<$core.String>? includedDestinations,
     $core.Iterable<$core.String>? excludedDestinations,
@@ -223,11 +223,11 @@ class Attributes extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Attributes', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'cppLink')
     ..aOS(2, _omitFieldNames ? '' : 'cppMobileLink')
-    ..aOM<$528.Price>(3, _omitFieldNames ? '' : 'lowPrice', subBuilder: $528.Price.create)
-    ..aOM<$528.Price>(4, _omitFieldNames ? '' : 'highPrice', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(3, _omitFieldNames ? '' : 'lowPrice', subBuilder: $533.Price.create)
+    ..aOM<$533.Price>(4, _omitFieldNames ? '' : 'highPrice', subBuilder: $533.Price.create)
     ..aInt64(5, _omitFieldNames ? '' : 'numberOfOffers')
     ..aOS(6, _omitFieldNames ? '' : 'headlineOfferCondition')
-    ..aOM<$528.Price>(7, _omitFieldNames ? '' : 'headlineOfferPrice', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(7, _omitFieldNames ? '' : 'headlineOfferPrice', subBuilder: $533.Price.create)
     ..aOS(8, _omitFieldNames ? '' : 'headlineOfferLink')
     ..aOS(9, _omitFieldNames ? '' : 'headlineOfferMobileLink')
     ..aOS(10, _omitFieldNames ? '' : 'title')
@@ -259,7 +259,7 @@ class Attributes extends $pb.GeneratedMessage {
     ..pPS(36, _omitFieldNames ? '' : 'productTypes')
     ..pc<Certification>(39, _omitFieldNames ? '' : 'certifications', $pb.PbFieldType.PM, subBuilder: Certification.create)
     ..aOM<$299.Timestamp>(40, _omitFieldNames ? '' : 'expirationDate', subBuilder: $299.Timestamp.create)
-    ..aOM<$528.Price>(41, _omitFieldNames ? '' : 'headlineOfferShippingPrice', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(41, _omitFieldNames ? '' : 'headlineOfferShippingPrice', subBuilder: $533.Price.create)
     ..aOS(42, _omitFieldNames ? '' : 'cppAdsRedirect')
     ..pPS(43, _omitFieldNames ? '' : 'includedDestinations')
     ..pPS(44, _omitFieldNames ? '' : 'excludedDestinations')
@@ -315,27 +315,27 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Low Price of the aggregate offer.
   @$pb.TagNumber(3)
-  $528.Price get lowPrice => $_getN(2);
+  $533.Price get lowPrice => $_getN(2);
   @$pb.TagNumber(3)
-  set lowPrice($528.Price v) { setField(3, v); }
+  set lowPrice($533.Price v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLowPrice() => $_has(2);
   @$pb.TagNumber(3)
   void clearLowPrice() => clearField(3);
   @$pb.TagNumber(3)
-  $528.Price ensureLowPrice() => $_ensure(2);
+  $533.Price ensureLowPrice() => $_ensure(2);
 
   /// High Price of the aggregate offer.
   @$pb.TagNumber(4)
-  $528.Price get highPrice => $_getN(3);
+  $533.Price get highPrice => $_getN(3);
   @$pb.TagNumber(4)
-  set highPrice($528.Price v) { setField(4, v); }
+  set highPrice($533.Price v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasHighPrice() => $_has(3);
   @$pb.TagNumber(4)
   void clearHighPrice() => clearField(4);
   @$pb.TagNumber(4)
-  $528.Price ensureHighPrice() => $_ensure(3);
+  $533.Price ensureHighPrice() => $_ensure(3);
 
   /// The number of aggregate offers.
   @$pb.TagNumber(5)
@@ -359,15 +359,15 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Headline Price of the aggregate offer.
   @$pb.TagNumber(7)
-  $528.Price get headlineOfferPrice => $_getN(6);
+  $533.Price get headlineOfferPrice => $_getN(6);
   @$pb.TagNumber(7)
-  set headlineOfferPrice($528.Price v) { setField(7, v); }
+  set headlineOfferPrice($533.Price v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasHeadlineOfferPrice() => $_has(6);
   @$pb.TagNumber(7)
   void clearHeadlineOfferPrice() => clearField(7);
   @$pb.TagNumber(7)
-  $528.Price ensureHeadlineOfferPrice() => $_ensure(6);
+  $533.Price ensureHeadlineOfferPrice() => $_ensure(6);
 
   /// Link to the headline offer.
   @$pb.TagNumber(8)
@@ -683,15 +683,15 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Headline Price of the aggregate offer.
   @$pb.TagNumber(41)
-  $528.Price get headlineOfferShippingPrice => $_getN(38);
+  $533.Price get headlineOfferShippingPrice => $_getN(38);
   @$pb.TagNumber(41)
-  set headlineOfferShippingPrice($528.Price v) { setField(41, v); }
+  set headlineOfferShippingPrice($533.Price v) { setField(41, v); }
   @$pb.TagNumber(41)
   $core.bool hasHeadlineOfferShippingPrice() => $_has(38);
   @$pb.TagNumber(41)
   void clearHeadlineOfferShippingPrice() => clearField(41);
   @$pb.TagNumber(41)
-  $528.Price ensureHeadlineOfferShippingPrice() => $_ensure(38);
+  $533.Price ensureHeadlineOfferShippingPrice() => $_ensure(38);
 
   /// Allows advertisers to override the item URL when the product is shown
   /// within the context of Product Ads.

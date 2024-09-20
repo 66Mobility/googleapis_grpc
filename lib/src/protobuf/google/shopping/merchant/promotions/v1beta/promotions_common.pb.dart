@@ -15,9 +15,9 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $299;
-import '../../../../type/interval.pb.dart' as $503;
-import '../../../type/types.pb.dart' as $528;
-import '../../../type/types.pbenum.dart' as $528;
+import '../../../../type/interval.pb.dart' as $508;
+import '../../../type/types.pb.dart' as $533;
+import '../../../type/types.pbenum.dart' as $533;
 import 'promotions_common.pbenum.dart';
 
 export 'promotions_common.pbenum.dart';
@@ -30,7 +30,7 @@ class Attributes extends $pb.GeneratedMessage {
     $core.String? genericRedemptionCode,
     $core.String? longTitle,
     CouponValueType? couponValueType,
-    $core.Iterable<$528.Destination_DestinationEnum>? promotionDestinations,
+    $core.Iterable<$533.Destination_DestinationEnum>? promotionDestinations,
     $core.Iterable<$core.String>? itemIdInclusion,
     $core.Iterable<$core.String>? brandInclusion,
     $core.Iterable<$core.String>? itemGroupIdInclusion,
@@ -39,18 +39,18 @@ class Attributes extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? brandExclusion,
     $core.Iterable<$core.String>? itemGroupIdExclusion,
     $core.Iterable<$core.String>? productTypeExclusion,
-    $528.Price? minimumPurchaseAmount,
+    $533.Price? minimumPurchaseAmount,
     $fixnum.Int64? minimumPurchaseQuantity,
     $fixnum.Int64? limitQuantity,
-    $528.Price? limitValue,
+    $533.Price? limitValue,
     $fixnum.Int64? percentOff,
-    $528.Price? moneyOffAmount,
+    $533.Price? moneyOffAmount,
     $fixnum.Int64? getThisQuantityDiscounted,
-    $528.Price? freeGiftValue,
+    $533.Price? freeGiftValue,
     $core.String? freeGiftDescription,
     $core.String? freeGiftItemId,
-    $503.Interval? promotionEffectiveTimePeriod,
-    $503.Interval? promotionDisplayTimePeriod,
+    $508.Interval? promotionEffectiveTimePeriod,
+    $508.Interval? promotionDisplayTimePeriod,
     StoreApplicability? storeApplicability,
     $core.Iterable<$core.String>? storeCodesInclusion,
     $core.Iterable<$core.String>? storeCodesExclusion,
@@ -159,7 +159,7 @@ class Attributes extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'genericRedemptionCode')
     ..aOS(4, _omitFieldNames ? '' : 'longTitle')
     ..e<CouponValueType>(5, _omitFieldNames ? '' : 'couponValueType', $pb.PbFieldType.OE, defaultOrMaker: CouponValueType.COUPON_VALUE_TYPE_UNSPECIFIED, valueOf: CouponValueType.valueOf, enumValues: CouponValueType.values)
-    ..pc<$528.Destination_DestinationEnum>(6, _omitFieldNames ? '' : 'promotionDestinations', $pb.PbFieldType.KE, valueOf: $528.Destination_DestinationEnum.valueOf, enumValues: $528.Destination_DestinationEnum.values, defaultEnumValue: $528.Destination_DestinationEnum.DESTINATION_ENUM_UNSPECIFIED)
+    ..pc<$533.Destination_DestinationEnum>(6, _omitFieldNames ? '' : 'promotionDestinations', $pb.PbFieldType.KE, valueOf: $533.Destination_DestinationEnum.valueOf, enumValues: $533.Destination_DestinationEnum.values, defaultEnumValue: $533.Destination_DestinationEnum.DESTINATION_ENUM_UNSPECIFIED)
     ..pPS(7, _omitFieldNames ? '' : 'itemIdInclusion')
     ..pPS(8, _omitFieldNames ? '' : 'brandInclusion')
     ..pPS(9, _omitFieldNames ? '' : 'itemGroupIdInclusion')
@@ -168,18 +168,18 @@ class Attributes extends $pb.GeneratedMessage {
     ..pPS(12, _omitFieldNames ? '' : 'brandExclusion')
     ..pPS(13, _omitFieldNames ? '' : 'itemGroupIdExclusion')
     ..pPS(14, _omitFieldNames ? '' : 'productTypeExclusion')
-    ..aOM<$528.Price>(15, _omitFieldNames ? '' : 'minimumPurchaseAmount', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(15, _omitFieldNames ? '' : 'minimumPurchaseAmount', subBuilder: $533.Price.create)
     ..aInt64(16, _omitFieldNames ? '' : 'minimumPurchaseQuantity')
     ..aInt64(17, _omitFieldNames ? '' : 'limitQuantity')
-    ..aOM<$528.Price>(18, _omitFieldNames ? '' : 'limitValue', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(18, _omitFieldNames ? '' : 'limitValue', subBuilder: $533.Price.create)
     ..aInt64(19, _omitFieldNames ? '' : 'percentOff')
-    ..aOM<$528.Price>(20, _omitFieldNames ? '' : 'moneyOffAmount', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(20, _omitFieldNames ? '' : 'moneyOffAmount', subBuilder: $533.Price.create)
     ..aInt64(21, _omitFieldNames ? '' : 'getThisQuantityDiscounted')
-    ..aOM<$528.Price>(22, _omitFieldNames ? '' : 'freeGiftValue', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(22, _omitFieldNames ? '' : 'freeGiftValue', subBuilder: $533.Price.create)
     ..aOS(23, _omitFieldNames ? '' : 'freeGiftDescription')
     ..aOS(24, _omitFieldNames ? '' : 'freeGiftItemId')
-    ..aOM<$503.Interval>(25, _omitFieldNames ? '' : 'promotionEffectiveTimePeriod', subBuilder: $503.Interval.create)
-    ..aOM<$503.Interval>(26, _omitFieldNames ? '' : 'promotionDisplayTimePeriod', subBuilder: $503.Interval.create)
+    ..aOM<$508.Interval>(25, _omitFieldNames ? '' : 'promotionEffectiveTimePeriod', subBuilder: $508.Interval.create)
+    ..aOM<$508.Interval>(26, _omitFieldNames ? '' : 'promotionDisplayTimePeriod', subBuilder: $508.Interval.create)
     ..e<StoreApplicability>(28, _omitFieldNames ? '' : 'storeApplicability', $pb.PbFieldType.OE, defaultOrMaker: StoreApplicability.STORE_APPLICABILITY_UNSPECIFIED, valueOf: StoreApplicability.valueOf, enumValues: StoreApplicability.values)
     ..pPS(29, _omitFieldNames ? '' : 'storeCodesInclusion')
     ..pPS(30, _omitFieldNames ? '' : 'storeCodesExclusion')
@@ -283,7 +283,7 @@ class Attributes extends $pb.GeneratedMessage {
   ///  [Promotion
   ///  destination](https://support.google.com/merchants/answer/13837465?sjid=5155774230887277618-NC)
   @$pb.TagNumber(6)
-  $core.List<$528.Destination_DestinationEnum> get promotionDestinations => $_getList(5);
+  $core.List<$533.Destination_DestinationEnum> get promotionDestinations => $_getList(5);
 
   /// Optional. Product filter by [item
   /// ID](https://support.google.com/merchants/answer/13861565?ref_topic=13773355&sjid=17642868584668136159-NC)
@@ -355,15 +355,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// amount](https://support.google.com/merchants/answer/13837705?ref_topic=13773355&sjid=17642868584668136159-NC)
   /// for the promotion.
   @$pb.TagNumber(15)
-  $528.Price get minimumPurchaseAmount => $_getN(14);
+  $533.Price get minimumPurchaseAmount => $_getN(14);
   @$pb.TagNumber(15)
-  set minimumPurchaseAmount($528.Price v) { setField(15, v); }
+  set minimumPurchaseAmount($533.Price v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasMinimumPurchaseAmount() => $_has(14);
   @$pb.TagNumber(15)
   void clearMinimumPurchaseAmount() => clearField(15);
   @$pb.TagNumber(15)
-  $528.Price ensureMinimumPurchaseAmount() => $_ensure(14);
+  $533.Price ensureMinimumPurchaseAmount() => $_ensure(14);
 
   /// Optional. [Minimum purchase
   /// quantity](https://support.google.com/merchants/answer/13838182?ref_topic=13773355&sjid=17642868584668136159-NC)
@@ -393,15 +393,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// price](https://support.google.com/merchants/answer/2906014) for
   /// promotion.
   @$pb.TagNumber(18)
-  $528.Price get limitValue => $_getN(17);
+  $533.Price get limitValue => $_getN(17);
   @$pb.TagNumber(18)
-  set limitValue($528.Price v) { setField(18, v); }
+  set limitValue($533.Price v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasLimitValue() => $_has(17);
   @$pb.TagNumber(18)
   void clearLimitValue() => clearField(18);
   @$pb.TagNumber(18)
-  $528.Price ensureLimitValue() => $_ensure(17);
+  $533.Price ensureLimitValue() => $_ensure(17);
 
   /// Optional. The [percentage
   /// discount](https://support.google.com/merchants/answer/13837404?sjid=17642868584668136159-NC)
@@ -419,15 +419,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// amount](https://support.google.com/merchants/answer/13838101?ref_topic=13773355&sjid=17642868584668136159-NC)
   /// offered in the promotion.
   @$pb.TagNumber(20)
-  $528.Price get moneyOffAmount => $_getN(19);
+  $533.Price get moneyOffAmount => $_getN(19);
   @$pb.TagNumber(20)
-  set moneyOffAmount($528.Price v) { setField(20, v); }
+  set moneyOffAmount($533.Price v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasMoneyOffAmount() => $_has(19);
   @$pb.TagNumber(20)
   void clearMoneyOffAmount() => clearField(20);
   @$pb.TagNumber(20)
-  $528.Price ensureMoneyOffAmount() => $_ensure(19);
+  $533.Price ensureMoneyOffAmount() => $_ensure(19);
 
   /// Optional. The number of items discounted in the promotion. The attribute is
   /// set when `couponValueType` is equal to `buy_m_get_n_money_off` or
@@ -445,15 +445,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// value](https://support.google.com/merchants/answer/13844477?ref_topic=13773355&sjid=17642868584668136159-NC)
   /// for the promotion.
   @$pb.TagNumber(22)
-  $528.Price get freeGiftValue => $_getN(21);
+  $533.Price get freeGiftValue => $_getN(21);
   @$pb.TagNumber(22)
-  set freeGiftValue($528.Price v) { setField(22, v); }
+  set freeGiftValue($533.Price v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasFreeGiftValue() => $_has(21);
   @$pb.TagNumber(22)
   void clearFreeGiftValue() => clearField(22);
   @$pb.TagNumber(22)
-  $528.Price ensureFreeGiftValue() => $_ensure(21);
+  $533.Price ensureFreeGiftValue() => $_ensure(21);
 
   /// Optional. [Free gift
   /// description](https://support.google.com/merchants/answer/13847245?ref_topic=13773355&sjid=17642868584668136159-NC)
@@ -483,15 +483,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// This attribute specifies that the promotion can be tested on your online
   /// store during this time period.
   @$pb.TagNumber(25)
-  $503.Interval get promotionEffectiveTimePeriod => $_getN(24);
+  $508.Interval get promotionEffectiveTimePeriod => $_getN(24);
   @$pb.TagNumber(25)
-  set promotionEffectiveTimePeriod($503.Interval v) { setField(25, v); }
+  set promotionEffectiveTimePeriod($508.Interval v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasPromotionEffectiveTimePeriod() => $_has(24);
   @$pb.TagNumber(25)
   void clearPromotionEffectiveTimePeriod() => clearField(25);
   @$pb.TagNumber(25)
-  $503.Interval ensurePromotionEffectiveTimePeriod() => $_ensure(24);
+  $508.Interval ensurePromotionEffectiveTimePeriod() => $_ensure(24);
 
   /// Optional. `TimePeriod` representation of the promotion's display dates.
   /// This attribute specifies the date and time frame when the promotion will be
@@ -501,15 +501,15 @@ class Attributes extends $pb.GeneratedMessage {
   /// determines the date and time frame when the promotion will be live on
   /// Google.com and Shopping ads.
   @$pb.TagNumber(26)
-  $503.Interval get promotionDisplayTimePeriod => $_getN(25);
+  $508.Interval get promotionDisplayTimePeriod => $_getN(25);
   @$pb.TagNumber(26)
-  set promotionDisplayTimePeriod($503.Interval v) { setField(26, v); }
+  set promotionDisplayTimePeriod($508.Interval v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasPromotionDisplayTimePeriod() => $_has(25);
   @$pb.TagNumber(26)
   void clearPromotionDisplayTimePeriod() => clearField(26);
   @$pb.TagNumber(26)
-  $503.Interval ensurePromotionDisplayTimePeriod() => $_ensure(25);
+  $508.Interval ensurePromotionDisplayTimePeriod() => $_ensure(25);
 
   /// Optional. Whether the promotion applies to [all stores, or only specified
   /// stores](https://support.google.com/merchants/answer/13857563?sjid=17642868584668136159-NC).
@@ -565,7 +565,7 @@ class Attributes extends $pb.GeneratedMessage {
 /// The status for the specified destination.
 class PromotionStatus_DestinationStatus extends $pb.GeneratedMessage {
   factory PromotionStatus_DestinationStatus({
-    $528.ReportingContext_ReportingContextEnum? reportingContext,
+    $533.ReportingContext_ReportingContextEnum? reportingContext,
     PromotionStatus_DestinationStatus_State? status,
   }) {
     final $result = create();
@@ -582,7 +582,7 @@ class PromotionStatus_DestinationStatus extends $pb.GeneratedMessage {
   factory PromotionStatus_DestinationStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PromotionStatus.DestinationStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.promotions.v1beta'), createEmptyInstance: create)
-    ..e<$528.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $528.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $528.ReportingContext_ReportingContextEnum.valueOf, enumValues: $528.ReportingContext_ReportingContextEnum.values)
+    ..e<$533.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $533.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $533.ReportingContext_ReportingContextEnum.valueOf, enumValues: $533.ReportingContext_ReportingContextEnum.values)
     ..e<PromotionStatus_DestinationStatus_State>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: PromotionStatus_DestinationStatus_State.STATE_UNSPECIFIED, valueOf: PromotionStatus_DestinationStatus_State.valueOf, enumValues: PromotionStatus_DestinationStatus_State.values)
     ..hasRequiredFields = false
   ;
@@ -610,9 +610,9 @@ class PromotionStatus_DestinationStatus extends $pb.GeneratedMessage {
 
   /// Output only. The name of the promotion destination.
   @$pb.TagNumber(1)
-  $528.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
+  $533.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($528.ReportingContext_ReportingContextEnum v) { setField(1, v); }
+  set reportingContext($533.ReportingContext_ReportingContextEnum v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReportingContext() => $_has(0);
   @$pb.TagNumber(1)
@@ -636,7 +636,7 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
     PromotionStatus_ItemLevelIssue_Severity? severity,
     $core.String? resolution,
     $core.String? attribute,
-    $528.ReportingContext_ReportingContextEnum? reportingContext,
+    $533.ReportingContext_ReportingContextEnum? reportingContext,
     $core.String? description,
     $core.String? detail,
     $core.String? documentation,
@@ -681,7 +681,7 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
     ..e<PromotionStatus_ItemLevelIssue_Severity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: PromotionStatus_ItemLevelIssue_Severity.SEVERITY_UNSPECIFIED, valueOf: PromotionStatus_ItemLevelIssue_Severity.valueOf, enumValues: PromotionStatus_ItemLevelIssue_Severity.values)
     ..aOS(3, _omitFieldNames ? '' : 'resolution')
     ..aOS(4, _omitFieldNames ? '' : 'attribute')
-    ..e<$528.ReportingContext_ReportingContextEnum>(5, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $528.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $528.ReportingContext_ReportingContextEnum.valueOf, enumValues: $528.ReportingContext_ReportingContextEnum.values)
+    ..e<$533.ReportingContext_ReportingContextEnum>(5, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $533.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $533.ReportingContext_ReportingContextEnum.valueOf, enumValues: $533.ReportingContext_ReportingContextEnum.values)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..aOS(7, _omitFieldNames ? '' : 'detail')
     ..aOS(8, _omitFieldNames ? '' : 'documentation')
@@ -753,9 +753,9 @@ class PromotionStatus_ItemLevelIssue extends $pb.GeneratedMessage {
 
   /// Output only. The destination the issue applies to.
   @$pb.TagNumber(5)
-  $528.ReportingContext_ReportingContextEnum get reportingContext => $_getN(4);
+  $533.ReportingContext_ReportingContextEnum get reportingContext => $_getN(4);
   @$pb.TagNumber(5)
-  set reportingContext($528.ReportingContext_ReportingContextEnum v) { setField(5, v); }
+  set reportingContext($533.ReportingContext_ReportingContextEnum v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReportingContext() => $_has(4);
   @$pb.TagNumber(5)

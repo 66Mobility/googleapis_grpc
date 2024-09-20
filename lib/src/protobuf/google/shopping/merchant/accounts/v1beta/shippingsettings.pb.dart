@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/types.pb.dart' as $528;
+import '../../../type/types.pb.dart' as $533;
 import 'shippingsettings.pbenum.dart';
 
 export 'shippingsettings.pbenum.dart';
@@ -512,7 +512,7 @@ class Service extends $pb.GeneratedMessage {
     DeliveryTime? deliveryTime,
     $core.Iterable<RateGroup>? rateGroups,
     Service_ShipmentType? shipmentType,
-    $528.Price? minimumOrderValue,
+    $533.Price? minimumOrderValue,
     MinimumOrderValueTable? minimumOrderValueTable,
     Service_StoreConfig? storeConfig,
     $core.Iterable<Service_LoyaltyProgram>? loyaltyPrograms,
@@ -565,7 +565,7 @@ class Service extends $pb.GeneratedMessage {
     ..aOM<DeliveryTime>(5, _omitFieldNames ? '' : 'deliveryTime', subBuilder: DeliveryTime.create)
     ..pc<RateGroup>(6, _omitFieldNames ? '' : 'rateGroups', $pb.PbFieldType.PM, subBuilder: RateGroup.create)
     ..e<Service_ShipmentType>(7, _omitFieldNames ? '' : 'shipmentType', $pb.PbFieldType.OE, defaultOrMaker: Service_ShipmentType.SHIPMENT_TYPE_UNSPECIFIED, valueOf: Service_ShipmentType.valueOf, enumValues: Service_ShipmentType.values)
-    ..aOM<$528.Price>(8, _omitFieldNames ? '' : 'minimumOrderValue', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(8, _omitFieldNames ? '' : 'minimumOrderValue', subBuilder: $533.Price.create)
     ..aOM<MinimumOrderValueTable>(9, _omitFieldNames ? '' : 'minimumOrderValueTable', subBuilder: MinimumOrderValueTable.create)
     ..aOM<Service_StoreConfig>(10, _omitFieldNames ? '' : 'storeConfig', subBuilder: Service_StoreConfig.create)
     ..pc<Service_LoyaltyProgram>(11, _omitFieldNames ? '' : 'loyaltyPrograms', $pb.PbFieldType.PM, subBuilder: Service_LoyaltyProgram.create)
@@ -664,15 +664,15 @@ class Service extends $pb.GeneratedMessage {
   /// All prices within a service must have the same currency.
   /// Cannot be set together with minimum_order_value_table.
   @$pb.TagNumber(8)
-  $528.Price get minimumOrderValue => $_getN(7);
+  $533.Price get minimumOrderValue => $_getN(7);
   @$pb.TagNumber(8)
-  set minimumOrderValue($528.Price v) { setField(8, v); }
+  set minimumOrderValue($533.Price v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMinimumOrderValue() => $_has(7);
   @$pb.TagNumber(8)
   void clearMinimumOrderValue() => clearField(8);
   @$pb.TagNumber(8)
-  $528.Price ensureMinimumOrderValue() => $_ensure(7);
+  $533.Price ensureMinimumOrderValue() => $_ensure(7);
 
   /// Table of per store minimum order values for the pickup fulfillment type.
   /// Cannot be set together with minimum_order_value.
@@ -1925,7 +1925,7 @@ class TransitTable extends $pb.GeneratedMessage {
 class MinimumOrderValueTable_StoreCodeSetWithMov extends $pb.GeneratedMessage {
   factory MinimumOrderValueTable_StoreCodeSetWithMov({
     $core.Iterable<$core.String>? storeCodes,
-    $528.Price? value,
+    $533.Price? value,
   }) {
     final $result = create();
     if (storeCodes != null) {
@@ -1942,7 +1942,7 @@ class MinimumOrderValueTable_StoreCodeSetWithMov extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MinimumOrderValueTable.StoreCodeSetWithMov', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'storeCodes')
-    ..aOM<$528.Price>(2, _omitFieldNames ? '' : 'value', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(2, _omitFieldNames ? '' : 'value', subBuilder: $533.Price.create)
     ..hasRequiredFields = false
   ;
 
@@ -1973,15 +1973,15 @@ class MinimumOrderValueTable_StoreCodeSetWithMov extends $pb.GeneratedMessage {
 
   /// The minimum order value for the given stores.
   @$pb.TagNumber(2)
-  $528.Price get value => $_getN(1);
+  $533.Price get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($528.Price v) { setField(2, v); }
+  set value($533.Price v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $528.Price ensureValue() => $_ensure(1);
+  $533.Price ensureValue() => $_ensure(1);
 }
 
 /// Table of per store minimum order values for the pickup fulfillment type.
@@ -2040,8 +2040,8 @@ class MinimumOrderValueTable extends $pb.GeneratedMessage {
 /// `location` must be set.
 class Headers extends $pb.GeneratedMessage {
   factory Headers({
-    $core.Iterable<$528.Price>? prices,
-    $core.Iterable<$528.Weight>? weights,
+    $core.Iterable<$533.Price>? prices,
+    $core.Iterable<$533.Weight>? weights,
     $core.Iterable<$core.String>? numberOfItems,
     $core.Iterable<$core.String>? postalCodeGroupNames,
     $core.Iterable<LocationIdSet>? locations,
@@ -2069,8 +2069,8 @@ class Headers extends $pb.GeneratedMessage {
   factory Headers.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Headers', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..pc<$528.Price>(1, _omitFieldNames ? '' : 'prices', $pb.PbFieldType.PM, subBuilder: $528.Price.create)
-    ..pc<$528.Weight>(2, _omitFieldNames ? '' : 'weights', $pb.PbFieldType.PM, subBuilder: $528.Weight.create)
+    ..pc<$533.Price>(1, _omitFieldNames ? '' : 'prices', $pb.PbFieldType.PM, subBuilder: $533.Price.create)
+    ..pc<$533.Weight>(2, _omitFieldNames ? '' : 'weights', $pb.PbFieldType.PM, subBuilder: $533.Weight.create)
     ..pPS(3, _omitFieldNames ? '' : 'numberOfItems')
     ..pPS(4, _omitFieldNames ? '' : 'postalCodeGroupNames')
     ..pc<LocationIdSet>(5, _omitFieldNames ? '' : 'locations', $pb.PbFieldType.PM, subBuilder: LocationIdSet.create)
@@ -2107,7 +2107,7 @@ class Headers extends $pb.GeneratedMessage {
   /// the same currency. Must be non-empty. Must be positive except -1. Can only
   /// be set if all other fields are not set.
   @$pb.TagNumber(1)
-  $core.List<$528.Price> get prices => $_getList(0);
+  $core.List<$533.Price> get prices => $_getList(0);
 
   /// Required. A list of inclusive order weight upper bounds. The last weight's
   /// value can be infinity by setting price amount_micros = -1. For example
@@ -2118,7 +2118,7 @@ class Headers extends $pb.GeneratedMessage {
   /// the same unit. Must be non-empty. Must be positive except -1. Can only be
   /// set if all other fields are not set.
   @$pb.TagNumber(2)
-  $core.List<$528.Weight> get weights => $_getList(1);
+  $core.List<$533.Weight> get weights => $_getList(1);
 
   /// Required. A list of inclusive number of items upper bounds. The last value
   /// can be
@@ -2249,7 +2249,7 @@ class Row extends $pb.GeneratedMessage {
 class Value extends $pb.GeneratedMessage {
   factory Value({
     $core.bool? noShipping,
-    $528.Price? flatRate,
+    $533.Price? flatRate,
     $core.String? pricePercentage,
     $core.String? carrierRate,
     $core.String? subtable,
@@ -2278,7 +2278,7 @@ class Value extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Value', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'noShipping')
-    ..aOM<$528.Price>(2, _omitFieldNames ? '' : 'flatRate', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(2, _omitFieldNames ? '' : 'flatRate', subBuilder: $533.Price.create)
     ..aOS(3, _omitFieldNames ? '' : 'pricePercentage')
     ..aOS(4, _omitFieldNames ? '' : 'carrierRate')
     ..aOS(5, _omitFieldNames ? '' : 'subtable')
@@ -2319,15 +2319,15 @@ class Value extends $pb.GeneratedMessage {
 
   /// A flat rate. Can only be set if all other fields are not set.
   @$pb.TagNumber(2)
-  $528.Price get flatRate => $_getN(1);
+  $533.Price get flatRate => $_getN(1);
   @$pb.TagNumber(2)
-  set flatRate($528.Price v) { setField(2, v); }
+  set flatRate($533.Price v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFlatRate() => $_has(1);
   @$pb.TagNumber(2)
   void clearFlatRate() => clearField(2);
   @$pb.TagNumber(2)
-  $528.Price ensureFlatRate() => $_ensure(1);
+  $533.Price ensureFlatRate() => $_ensure(1);
 
   /// A percentage of the price represented as a number in decimal notation
   /// (For example, `"5.4"`). Can only be set if all other fields are not
@@ -2373,7 +2373,7 @@ class CarrierRate extends $pb.GeneratedMessage {
     $core.String? carrierService,
     $core.String? originPostalCode,
     $core.String? percentageAdjustment,
-    $528.Price? flatAdjustment,
+    $533.Price? flatAdjustment,
   }) {
     final $result = create();
     if (name != null) {
@@ -2406,7 +2406,7 @@ class CarrierRate extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'carrierService')
     ..aOS(4, _omitFieldNames ? '' : 'originPostalCode')
     ..aOS(5, _omitFieldNames ? '' : 'percentageAdjustment')
-    ..aOM<$528.Price>(6, _omitFieldNames ? '' : 'flatAdjustment', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(6, _omitFieldNames ? '' : 'flatAdjustment', subBuilder: $533.Price.create)
     ..hasRequiredFields = false
   ;
 
@@ -2488,15 +2488,15 @@ class CarrierRate extends $pb.GeneratedMessage {
   /// `{ "amount_micros": -3, "currency_code" : "USD" }` removes $3 from the
   /// rate.
   @$pb.TagNumber(6)
-  $528.Price get flatAdjustment => $_getN(5);
+  $533.Price get flatAdjustment => $_getN(5);
   @$pb.TagNumber(6)
-  set flatAdjustment($528.Price v) { setField(6, v); }
+  set flatAdjustment($533.Price v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasFlatAdjustment() => $_has(5);
   @$pb.TagNumber(6)
   void clearFlatAdjustment() => clearField(6);
   @$pb.TagNumber(6)
-  $528.Price ensureFlatAdjustment() => $_ensure(5);
+  $533.Price ensureFlatAdjustment() => $_ensure(5);
 }
 
 /// Request message for the `GetShippingSetting` method.

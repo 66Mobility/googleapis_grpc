@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../protobuf/duration.pb.dart' as $261;
-import '../../type/calendar_period.pbenum.dart' as $525;
+import '../../type/calendar_period.pbenum.dart' as $530;
 
 export 'service.pbenum.dart';
 
@@ -1332,7 +1332,7 @@ class ServiceLevelObjective extends $pb.GeneratedMessage {
     ServiceLevelIndicator? serviceLevelIndicator,
     $core.double? goal,
     $261.Duration? rollingPeriod,
-    $525.CalendarPeriod? calendarPeriod,
+    $530.CalendarPeriod? calendarPeriod,
     $core.String? displayName,
     $core.Map<$core.String, $core.String>? userLabels,
   }) {
@@ -1375,7 +1375,7 @@ class ServiceLevelObjective extends $pb.GeneratedMessage {
     ..aOM<ServiceLevelIndicator>(3, _omitFieldNames ? '' : 'serviceLevelIndicator', subBuilder: ServiceLevelIndicator.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'goal', $pb.PbFieldType.OD)
     ..aOM<$261.Duration>(5, _omitFieldNames ? '' : 'rollingPeriod', subBuilder: $261.Duration.create)
-    ..e<$525.CalendarPeriod>(6, _omitFieldNames ? '' : 'calendarPeriod', $pb.PbFieldType.OE, defaultOrMaker: $525.CalendarPeriod.CALENDAR_PERIOD_UNSPECIFIED, valueOf: $525.CalendarPeriod.valueOf, enumValues: $525.CalendarPeriod.values)
+    ..e<$530.CalendarPeriod>(6, _omitFieldNames ? '' : 'calendarPeriod', $pb.PbFieldType.OE, defaultOrMaker: $530.CalendarPeriod.CALENDAR_PERIOD_UNSPECIFIED, valueOf: $530.CalendarPeriod.valueOf, enumValues: $530.CalendarPeriod.values)
     ..aOS(11, _omitFieldNames ? '' : 'displayName')
     ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'userLabels', entryClassName: 'ServiceLevelObjective.UserLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.monitoring.v3'))
     ..hasRequiredFields = false
@@ -1459,9 +1459,9 @@ class ServiceLevelObjective extends $pb.GeneratedMessage {
   /// `<calendar_period>`". At this time, only `DAY`, `WEEK`, `FORTNIGHT`, and
   /// `MONTH` are supported.
   @$pb.TagNumber(6)
-  $525.CalendarPeriod get calendarPeriod => $_getN(4);
+  $530.CalendarPeriod get calendarPeriod => $_getN(4);
   @$pb.TagNumber(6)
-  set calendarPeriod($525.CalendarPeriod v) { setField(6, v); }
+  set calendarPeriod($530.CalendarPeriod v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCalendarPeriod() => $_has(4);
   @$pb.TagNumber(6)

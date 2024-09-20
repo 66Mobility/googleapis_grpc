@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'dashboard_filter.pb.dart' as $521;
-import 'layouts.pb.dart' as $520;
+import 'dashboard_filter.pb.dart' as $526;
+import 'layouts.pb.dart' as $525;
 
 enum Dashboard_Layout {
   gridLayout, 
@@ -31,11 +31,11 @@ class Dashboard extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? etag,
-    $520.GridLayout? gridLayout,
-    $520.MosaicLayout? mosaicLayout,
-    $520.RowLayout? rowLayout,
-    $520.ColumnLayout? columnLayout,
-    $core.Iterable<$521.DashboardFilter>? dashboardFilters,
+    $525.GridLayout? gridLayout,
+    $525.MosaicLayout? mosaicLayout,
+    $525.RowLayout? rowLayout,
+    $525.ColumnLayout? columnLayout,
+    $core.Iterable<$526.DashboardFilter>? dashboardFilters,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -84,11 +84,11 @@ class Dashboard extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(4, _omitFieldNames ? '' : 'etag')
-    ..aOM<$520.GridLayout>(5, _omitFieldNames ? '' : 'gridLayout', subBuilder: $520.GridLayout.create)
-    ..aOM<$520.MosaicLayout>(6, _omitFieldNames ? '' : 'mosaicLayout', subBuilder: $520.MosaicLayout.create)
-    ..aOM<$520.RowLayout>(8, _omitFieldNames ? '' : 'rowLayout', subBuilder: $520.RowLayout.create)
-    ..aOM<$520.ColumnLayout>(9, _omitFieldNames ? '' : 'columnLayout', subBuilder: $520.ColumnLayout.create)
-    ..pc<$521.DashboardFilter>(11, _omitFieldNames ? '' : 'dashboardFilters', $pb.PbFieldType.PM, subBuilder: $521.DashboardFilter.create)
+    ..aOM<$525.GridLayout>(5, _omitFieldNames ? '' : 'gridLayout', subBuilder: $525.GridLayout.create)
+    ..aOM<$525.MosaicLayout>(6, _omitFieldNames ? '' : 'mosaicLayout', subBuilder: $525.MosaicLayout.create)
+    ..aOM<$525.RowLayout>(8, _omitFieldNames ? '' : 'rowLayout', subBuilder: $525.RowLayout.create)
+    ..aOM<$525.ColumnLayout>(9, _omitFieldNames ? '' : 'columnLayout', subBuilder: $525.ColumnLayout.create)
+    ..pc<$526.DashboardFilter>(11, _omitFieldNames ? '' : 'dashboardFilters', $pb.PbFieldType.PM, subBuilder: $526.DashboardFilter.create)
     ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'labels', entryClassName: 'Dashboard.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.monitoring.dashboard.v1'))
     ..hasRequiredFields = false
   ;
@@ -156,58 +156,58 @@ class Dashboard extends $pb.GeneratedMessage {
   /// Content is arranged with a basic layout that re-flows a simple list of
   /// informational elements like widgets or tiles.
   @$pb.TagNumber(5)
-  $520.GridLayout get gridLayout => $_getN(3);
+  $525.GridLayout get gridLayout => $_getN(3);
   @$pb.TagNumber(5)
-  set gridLayout($520.GridLayout v) { setField(5, v); }
+  set gridLayout($525.GridLayout v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasGridLayout() => $_has(3);
   @$pb.TagNumber(5)
   void clearGridLayout() => clearField(5);
   @$pb.TagNumber(5)
-  $520.GridLayout ensureGridLayout() => $_ensure(3);
+  $525.GridLayout ensureGridLayout() => $_ensure(3);
 
   /// The content is arranged as a grid of tiles, with each content widget
   /// occupying one or more grid blocks.
   @$pb.TagNumber(6)
-  $520.MosaicLayout get mosaicLayout => $_getN(4);
+  $525.MosaicLayout get mosaicLayout => $_getN(4);
   @$pb.TagNumber(6)
-  set mosaicLayout($520.MosaicLayout v) { setField(6, v); }
+  set mosaicLayout($525.MosaicLayout v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMosaicLayout() => $_has(4);
   @$pb.TagNumber(6)
   void clearMosaicLayout() => clearField(6);
   @$pb.TagNumber(6)
-  $520.MosaicLayout ensureMosaicLayout() => $_ensure(4);
+  $525.MosaicLayout ensureMosaicLayout() => $_ensure(4);
 
   /// The content is divided into equally spaced rows and the widgets are
   /// arranged horizontally.
   @$pb.TagNumber(8)
-  $520.RowLayout get rowLayout => $_getN(5);
+  $525.RowLayout get rowLayout => $_getN(5);
   @$pb.TagNumber(8)
-  set rowLayout($520.RowLayout v) { setField(8, v); }
+  set rowLayout($525.RowLayout v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasRowLayout() => $_has(5);
   @$pb.TagNumber(8)
   void clearRowLayout() => clearField(8);
   @$pb.TagNumber(8)
-  $520.RowLayout ensureRowLayout() => $_ensure(5);
+  $525.RowLayout ensureRowLayout() => $_ensure(5);
 
   /// The content is divided into equally spaced columns and the widgets are
   /// arranged vertically.
   @$pb.TagNumber(9)
-  $520.ColumnLayout get columnLayout => $_getN(6);
+  $525.ColumnLayout get columnLayout => $_getN(6);
   @$pb.TagNumber(9)
-  set columnLayout($520.ColumnLayout v) { setField(9, v); }
+  set columnLayout($525.ColumnLayout v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasColumnLayout() => $_has(6);
   @$pb.TagNumber(9)
   void clearColumnLayout() => clearField(9);
   @$pb.TagNumber(9)
-  $520.ColumnLayout ensureColumnLayout() => $_ensure(6);
+  $525.ColumnLayout ensureColumnLayout() => $_ensure(6);
 
   /// Filters to reduce the amount of data charted based on the filter criteria.
   @$pb.TagNumber(11)
-  $core.List<$521.DashboardFilter> get dashboardFilters => $_getList(7);
+  $core.List<$526.DashboardFilter> get dashboardFilters => $_getList(7);
 
   /// Labels applied to the dashboard
   @$pb.TagNumber(12)

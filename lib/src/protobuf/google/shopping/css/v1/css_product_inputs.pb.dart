@@ -15,8 +15,8 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/timestamp.pb.dart' as $299;
-import '../../type/types.pb.dart' as $528;
-import 'css_product_common.pb.dart' as $529;
+import '../../type/types.pb.dart' as $533;
+import 'css_product_common.pb.dart' as $534;
 
 /// This resource represents input data you submit for a CSS Product, not
 /// the processed CSS Product that you see in CSS Center, in Shopping Ads, or
@@ -29,8 +29,8 @@ class CssProductInput extends $pb.GeneratedMessage {
     $core.String? contentLanguage,
     $core.String? feedLabel,
     $299.Timestamp? freshnessTime,
-    $529.Attributes? attributes,
-    $core.Iterable<$528.CustomAttribute>? customAttributes,
+    $534.Attributes? attributes,
+    $core.Iterable<$533.CustomAttribute>? customAttributes,
   }) {
     final $result = create();
     if (name != null) {
@@ -70,8 +70,8 @@ class CssProductInput extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(5, _omitFieldNames ? '' : 'feedLabel')
     ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'freshnessTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$529.Attributes>(7, _omitFieldNames ? '' : 'attributes', subBuilder: $529.Attributes.create)
-    ..pc<$528.CustomAttribute>(8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $528.CustomAttribute.create)
+    ..aOM<$534.Attributes>(7, _omitFieldNames ? '' : 'attributes', subBuilder: $534.Attributes.create)
+    ..pc<$533.CustomAttribute>(8, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $533.CustomAttribute.create)
     ..hasRequiredFields = false
   ;
 
@@ -191,15 +191,15 @@ class CssProductInput extends $pb.GeneratedMessage {
 
   /// A list of CSS Product attributes.
   @$pb.TagNumber(7)
-  $529.Attributes get attributes => $_getN(6);
+  $534.Attributes get attributes => $_getN(6);
   @$pb.TagNumber(7)
-  set attributes($529.Attributes v) { setField(7, v); }
+  set attributes($534.Attributes v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAttributes() => $_has(6);
   @$pb.TagNumber(7)
   void clearAttributes() => clearField(7);
   @$pb.TagNumber(7)
-  $529.Attributes ensureAttributes() => $_ensure(6);
+  $534.Attributes ensureAttributes() => $_ensure(6);
 
   /// A list of custom (CSS-provided) attributes. It can also be used for
   /// submitting any attribute of the feed specification in its generic
@@ -208,7 +208,7 @@ class CssProductInput extends $pb.GeneratedMessage {
   /// This is useful for submitting attributes not explicitly exposed by the
   /// API, such as additional attributes used for Buy on Google.
   @$pb.TagNumber(8)
-  $core.List<$528.CustomAttribute> get customAttributes => $_getList(7);
+  $core.List<$533.CustomAttribute> get customAttributes => $_getList(7);
 }
 
 /// Request message for the InsertCssProductInput method.

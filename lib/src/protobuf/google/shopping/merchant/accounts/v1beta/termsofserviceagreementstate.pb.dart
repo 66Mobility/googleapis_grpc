@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../type/date.pb.dart' as $324;
-import 'termsofservicekind.pbenum.dart' as $535;
+import 'termsofservicekind.pbenum.dart' as $540;
 
 ///  This resource represents the agreement state for a given account and terms of
 ///  service kind.
@@ -42,7 +42,7 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   factory TermsOfServiceAgreementState({
     $core.String? name,
     $core.String? regionCode,
-    $535.TermsOfServiceKind? termsOfServiceKind,
+    $540.TermsOfServiceKind? termsOfServiceKind,
     Accepted? accepted,
     Required? required,
   }) {
@@ -71,7 +71,7 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TermsOfServiceAgreementState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'regionCode')
-    ..e<$535.TermsOfServiceKind>(3, _omitFieldNames ? '' : 'termsOfServiceKind', $pb.PbFieldType.OE, defaultOrMaker: $535.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED, valueOf: $535.TermsOfServiceKind.valueOf, enumValues: $535.TermsOfServiceKind.values)
+    ..e<$540.TermsOfServiceKind>(3, _omitFieldNames ? '' : 'termsOfServiceKind', $pb.PbFieldType.OE, defaultOrMaker: $540.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED, valueOf: $540.TermsOfServiceKind.valueOf, enumValues: $540.TermsOfServiceKind.values)
     ..aOM<Accepted>(4, _omitFieldNames ? '' : 'accepted', subBuilder: Accepted.create)
     ..aOM<Required>(5, _omitFieldNames ? '' : 'required', subBuilder: Required.create)
     ..hasRequiredFields = false
@@ -122,9 +122,9 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
 
   /// Terms of Service kind associated with the particular version.
   @$pb.TagNumber(3)
-  $535.TermsOfServiceKind get termsOfServiceKind => $_getN(2);
+  $540.TermsOfServiceKind get termsOfServiceKind => $_getN(2);
   @$pb.TagNumber(3)
-  set termsOfServiceKind($535.TermsOfServiceKind v) { setField(3, v); }
+  set termsOfServiceKind($540.TermsOfServiceKind v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTermsOfServiceKind() => $_has(2);
   @$pb.TagNumber(3)

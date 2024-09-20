@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $547;
+import 'common.pb.dart' as $552;
 import 'vex.pbenum.dart';
 
 export 'vex.pbenum.dart';
@@ -283,7 +283,7 @@ class VulnerabilityAssessmentNote_Assessment_Remediation extends $pb.GeneratedMe
   factory VulnerabilityAssessmentNote_Assessment_Remediation({
     VulnerabilityAssessmentNote_Assessment_Remediation_RemediationType? remediationType,
     $core.String? details,
-    $547.RelatedUrl? remediationUri,
+    $552.RelatedUrl? remediationUri,
   }) {
     final $result = create();
     if (remediationType != null) {
@@ -304,7 +304,7 @@ class VulnerabilityAssessmentNote_Assessment_Remediation extends $pb.GeneratedMe
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VulnerabilityAssessmentNote.Assessment.Remediation', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..e<VulnerabilityAssessmentNote_Assessment_Remediation_RemediationType>(1, _omitFieldNames ? '' : 'remediationType', $pb.PbFieldType.OE, defaultOrMaker: VulnerabilityAssessmentNote_Assessment_Remediation_RemediationType.REMEDIATION_TYPE_UNSPECIFIED, valueOf: VulnerabilityAssessmentNote_Assessment_Remediation_RemediationType.valueOf, enumValues: VulnerabilityAssessmentNote_Assessment_Remediation_RemediationType.values)
     ..aOS(2, _omitFieldNames ? '' : 'details')
-    ..aOM<$547.RelatedUrl>(3, _omitFieldNames ? '' : 'remediationUri', subBuilder: $547.RelatedUrl.create)
+    ..aOM<$552.RelatedUrl>(3, _omitFieldNames ? '' : 'remediationUri', subBuilder: $552.RelatedUrl.create)
     ..hasRequiredFields = false
   ;
 
@@ -351,15 +351,15 @@ class VulnerabilityAssessmentNote_Assessment_Remediation extends $pb.GeneratedMe
 
   /// Contains the URL where to obtain the remediation.
   @$pb.TagNumber(3)
-  $547.RelatedUrl get remediationUri => $_getN(2);
+  $552.RelatedUrl get remediationUri => $_getN(2);
   @$pb.TagNumber(3)
-  set remediationUri($547.RelatedUrl v) { setField(3, v); }
+  set remediationUri($552.RelatedUrl v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRemediationUri() => $_has(2);
   @$pb.TagNumber(3)
   void clearRemediationUri() => clearField(3);
   @$pb.TagNumber(3)
-  $547.RelatedUrl ensureRemediationUri() => $_ensure(2);
+  $552.RelatedUrl ensureRemediationUri() => $_ensure(2);
 }
 
 /// Assessment provides all information that is related to a single
@@ -370,7 +370,7 @@ class VulnerabilityAssessmentNote_Assessment extends $pb.GeneratedMessage {
     $core.String? cve,
     $core.String? shortDescription,
     $core.String? longDescription,
-    $core.Iterable<$547.RelatedUrl>? relatedUris,
+    $core.Iterable<$552.RelatedUrl>? relatedUris,
     VulnerabilityAssessmentNote_Assessment_State? state,
     $core.Iterable<$core.String>? impacts,
     VulnerabilityAssessmentNote_Assessment_Justification? justification,
@@ -416,7 +416,7 @@ class VulnerabilityAssessmentNote_Assessment extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'cve')
     ..aOS(2, _omitFieldNames ? '' : 'shortDescription')
     ..aOS(3, _omitFieldNames ? '' : 'longDescription')
-    ..pc<$547.RelatedUrl>(4, _omitFieldNames ? '' : 'relatedUris', $pb.PbFieldType.PM, subBuilder: $547.RelatedUrl.create)
+    ..pc<$552.RelatedUrl>(4, _omitFieldNames ? '' : 'relatedUris', $pb.PbFieldType.PM, subBuilder: $552.RelatedUrl.create)
     ..e<VulnerabilityAssessmentNote_Assessment_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: VulnerabilityAssessmentNote_Assessment_State.STATE_UNSPECIFIED, valueOf: VulnerabilityAssessmentNote_Assessment_State.valueOf, enumValues: VulnerabilityAssessmentNote_Assessment_State.values)
     ..pPS(6, _omitFieldNames ? '' : 'impacts')
     ..aOM<VulnerabilityAssessmentNote_Assessment_Justification>(7, _omitFieldNames ? '' : 'justification', subBuilder: VulnerabilityAssessmentNote_Assessment_Justification.create)
@@ -487,7 +487,7 @@ class VulnerabilityAssessmentNote_Assessment extends $pb.GeneratedMessage {
   /// vulnerability and the assessment itself. E.g. Link to a document which
   /// details how this assessment concluded the state of this vulnerability.
   @$pb.TagNumber(4)
-  $core.List<$547.RelatedUrl> get relatedUris => $_getList(3);
+  $core.List<$552.RelatedUrl> get relatedUris => $_getList(3);
 
   /// Provides the state of this Vulnerability assessment.
   @$pb.TagNumber(5)

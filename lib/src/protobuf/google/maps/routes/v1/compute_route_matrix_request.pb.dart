@@ -16,7 +16,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../../../protobuf/timestamp.pb.dart' as $299;
 import 'compute_routes_request.pb.dart' as $175;
 import 'compute_routes_request.pbenum.dart' as $175;
-import 'waypoint.pb.dart' as $474;
+import 'waypoint.pb.dart' as $479;
 
 /// ComputeRouteMatrix request message
 class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
@@ -140,7 +140,7 @@ class ComputeRouteMatrixRequest extends $pb.GeneratedMessage {
 /// A single origin for ComputeRouteMatrixRequest
 class RouteMatrixOrigin extends $pb.GeneratedMessage {
   factory RouteMatrixOrigin({
-    $474.Waypoint? waypoint,
+    $479.Waypoint? waypoint,
     $175.RouteModifiers? routeModifiers,
   }) {
     final $result = create();
@@ -157,7 +157,7 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
   factory RouteMatrixOrigin.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteMatrixOrigin', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..aOM<$474.Waypoint>(1, _omitFieldNames ? '' : 'waypoint', subBuilder: $474.Waypoint.create)
+    ..aOM<$479.Waypoint>(1, _omitFieldNames ? '' : 'waypoint', subBuilder: $479.Waypoint.create)
     ..aOM<$175.RouteModifiers>(2, _omitFieldNames ? '' : 'routeModifiers', subBuilder: $175.RouteModifiers.create)
     ..hasRequiredFields = false
   ;
@@ -185,15 +185,15 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
 
   /// Required. Origin waypoint
   @$pb.TagNumber(1)
-  $474.Waypoint get waypoint => $_getN(0);
+  $479.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($474.Waypoint v) { setField(1, v); }
+  set waypoint($479.Waypoint v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasWaypoint() => $_has(0);
   @$pb.TagNumber(1)
   void clearWaypoint() => clearField(1);
   @$pb.TagNumber(1)
-  $474.Waypoint ensureWaypoint() => $_ensure(0);
+  $479.Waypoint ensureWaypoint() => $_ensure(0);
 
   /// Optional. Modifiers for every route that takes this as the origin
   @$pb.TagNumber(2)
@@ -211,7 +211,7 @@ class RouteMatrixOrigin extends $pb.GeneratedMessage {
 /// A single destination for ComputeRouteMatrixRequest
 class RouteMatrixDestination extends $pb.GeneratedMessage {
   factory RouteMatrixDestination({
-    $474.Waypoint? waypoint,
+    $479.Waypoint? waypoint,
   }) {
     final $result = create();
     if (waypoint != null) {
@@ -224,7 +224,7 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
   factory RouteMatrixDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteMatrixDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..aOM<$474.Waypoint>(1, _omitFieldNames ? '' : 'waypoint', subBuilder: $474.Waypoint.create)
+    ..aOM<$479.Waypoint>(1, _omitFieldNames ? '' : 'waypoint', subBuilder: $479.Waypoint.create)
     ..hasRequiredFields = false
   ;
 
@@ -251,15 +251,15 @@ class RouteMatrixDestination extends $pb.GeneratedMessage {
 
   /// Required. Destination waypoint
   @$pb.TagNumber(1)
-  $474.Waypoint get waypoint => $_getN(0);
+  $479.Waypoint get waypoint => $_getN(0);
   @$pb.TagNumber(1)
-  set waypoint($474.Waypoint v) { setField(1, v); }
+  set waypoint($479.Waypoint v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasWaypoint() => $_has(0);
   @$pb.TagNumber(1)
   void clearWaypoint() => clearField(1);
   @$pb.TagNumber(1)
-  $474.Waypoint ensureWaypoint() => $_ensure(0);
+  $479.Waypoint ensureWaypoint() => $_ensure(0);
 }
 
 

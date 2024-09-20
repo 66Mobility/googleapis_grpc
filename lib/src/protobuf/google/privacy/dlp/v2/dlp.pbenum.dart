@@ -1018,6 +1018,50 @@ class DiscoveryCloudStorageConditions_CloudStorageBucketAttribute extends $pb.Pr
   const DiscoveryCloudStorageConditions_CloudStorageBucketAttribute._($core.int v, $core.String n) : super(v, n);
 }
 
+/// Supported Amazon S3 bucket types.
+/// Defaults to TYPE_ALL_SUPPORTED.
+class AmazonS3BucketConditions_BucketType extends $pb.ProtobufEnum {
+  static const AmazonS3BucketConditions_BucketType TYPE_UNSPECIFIED = AmazonS3BucketConditions_BucketType._(0, _omitEnumNames ? '' : 'TYPE_UNSPECIFIED');
+  static const AmazonS3BucketConditions_BucketType TYPE_ALL_SUPPORTED = AmazonS3BucketConditions_BucketType._(1, _omitEnumNames ? '' : 'TYPE_ALL_SUPPORTED');
+  static const AmazonS3BucketConditions_BucketType TYPE_GENERAL_PURPOSE = AmazonS3BucketConditions_BucketType._(2, _omitEnumNames ? '' : 'TYPE_GENERAL_PURPOSE');
+
+  static const $core.List<AmazonS3BucketConditions_BucketType> values = <AmazonS3BucketConditions_BucketType> [
+    TYPE_UNSPECIFIED,
+    TYPE_ALL_SUPPORTED,
+    TYPE_GENERAL_PURPOSE,
+  ];
+
+  static final $core.Map<$core.int, AmazonS3BucketConditions_BucketType> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static AmazonS3BucketConditions_BucketType? valueOf($core.int value) => _byValue[value];
+
+  const AmazonS3BucketConditions_BucketType._($core.int v, $core.String n) : super(v, n);
+}
+
+/// Supported Amazon S3 object storage classes.
+/// Defaults to ALL_SUPPORTED_CLASSES.
+class AmazonS3BucketConditions_ObjectStorageClass extends $pb.ProtobufEnum {
+  static const AmazonS3BucketConditions_ObjectStorageClass UNSPECIFIED = AmazonS3BucketConditions_ObjectStorageClass._(0, _omitEnumNames ? '' : 'UNSPECIFIED');
+  static const AmazonS3BucketConditions_ObjectStorageClass ALL_SUPPORTED_CLASSES = AmazonS3BucketConditions_ObjectStorageClass._(1, _omitEnumNames ? '' : 'ALL_SUPPORTED_CLASSES');
+  static const AmazonS3BucketConditions_ObjectStorageClass STANDARD = AmazonS3BucketConditions_ObjectStorageClass._(2, _omitEnumNames ? '' : 'STANDARD');
+  static const AmazonS3BucketConditions_ObjectStorageClass STANDARD_INFREQUENT_ACCESS = AmazonS3BucketConditions_ObjectStorageClass._(4, _omitEnumNames ? '' : 'STANDARD_INFREQUENT_ACCESS');
+  static const AmazonS3BucketConditions_ObjectStorageClass GLACIER_INSTANT_RETRIEVAL = AmazonS3BucketConditions_ObjectStorageClass._(6, _omitEnumNames ? '' : 'GLACIER_INSTANT_RETRIEVAL');
+  static const AmazonS3BucketConditions_ObjectStorageClass INTELLIGENT_TIERING = AmazonS3BucketConditions_ObjectStorageClass._(7, _omitEnumNames ? '' : 'INTELLIGENT_TIERING');
+
+  static const $core.List<AmazonS3BucketConditions_ObjectStorageClass> values = <AmazonS3BucketConditions_ObjectStorageClass> [
+    UNSPECIFIED,
+    ALL_SUPPORTED_CLASSES,
+    STANDARD,
+    STANDARD_INFREQUENT_ACCESS,
+    GLACIER_INSTANT_RETRIEVAL,
+    INTELLIGENT_TIERING,
+  ];
+
+  static final $core.Map<$core.int, AmazonS3BucketConditions_ObjectStorageClass> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static AmazonS3BucketConditions_ObjectStorageClass? valueOf($core.int value) => _byValue[value];
+
+  const AmazonS3BucketConditions_ObjectStorageClass._($core.int v, $core.String n) : super(v, n);
+}
+
 /// Possible states of a job. New items may be added.
 class DlpJob_JobState extends $pb.ProtobufEnum {
   static const DlpJob_JobState JOB_STATE_UNSPECIFIED = DlpJob_JobState._(0, _omitEnumNames ? '' : 'JOB_STATE_UNSPECIFIED');

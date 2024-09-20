@@ -162,80 +162,6 @@ final $typed_data.Uint8List updateBucketRequestDescriptor = $convert.base64Decod
     'MhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza0ID4EECUgp1cGRhdGVNYXNrQhoKGF9pZl9tZX'
     'RhZ2VuZXJhdGlvbl9tYXRjaEIeChxfaWZfbWV0YWdlbmVyYXRpb25fbm90X21hdGNo');
 
-@$core.Deprecated('Use deleteNotificationConfigRequestDescriptor instead')
-const DeleteNotificationConfigRequest$json = {
-  '1': 'DeleteNotificationConfigRequest',
-  '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-  ],
-};
-
-/// Descriptor for `DeleteNotificationConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteNotificationConfigRequestDescriptor = $convert.base64Decode(
-    'Ch9EZWxldGVOb3RpZmljYXRpb25Db25maWdSZXF1ZXN0EkUKBG5hbWUYASABKAlCMeBBAvpBKw'
-    'opc3RvcmFnZS5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25Db25maWdSBG5hbWU=');
-
-@$core.Deprecated('Use getNotificationConfigRequestDescriptor instead')
-const GetNotificationConfigRequest$json = {
-  '1': 'GetNotificationConfigRequest',
-  '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-  ],
-};
-
-/// Descriptor for `GetNotificationConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getNotificationConfigRequestDescriptor = $convert.base64Decode(
-    'ChxHZXROb3RpZmljYXRpb25Db25maWdSZXF1ZXN0EkUKBG5hbWUYASABKAlCMeBBAvpBKwopc3'
-    'RvcmFnZS5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25Db25maWdSBG5hbWU=');
-
-@$core.Deprecated('Use createNotificationConfigRequestDescriptor instead')
-const CreateNotificationConfigRequest$json = {
-  '1': 'CreateNotificationConfigRequest',
-  '2': [
-    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'notification_config', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v2.NotificationConfig', '8': {}, '10': 'notificationConfig'},
-  ],
-};
-
-/// Descriptor for `CreateNotificationConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createNotificationConfigRequestDescriptor = $convert.base64Decode(
-    'Ch9DcmVhdGVOb3RpZmljYXRpb25Db25maWdSZXF1ZXN0EkkKBnBhcmVudBgBIAEoCUIx4EEC+k'
-    'ErEilzdG9yYWdlLmdvb2dsZWFwaXMuY29tL05vdGlmaWNhdGlvbkNvbmZpZ1IGcGFyZW50ElsK'
-    'E25vdGlmaWNhdGlvbl9jb25maWcYAiABKAsyJS5nb29nbGUuc3RvcmFnZS52Mi5Ob3RpZmljYX'
-    'Rpb25Db25maWdCA+BBAlISbm90aWZpY2F0aW9uQ29uZmln');
-
-@$core.Deprecated('Use listNotificationConfigsRequestDescriptor instead')
-const ListNotificationConfigsRequest$json = {
-  '1': 'ListNotificationConfigsRequest',
-  '2': [
-    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
-    {'1': 'page_size', '3': 2, '4': 1, '5': 5, '10': 'pageSize'},
-    {'1': 'page_token', '3': 3, '4': 1, '5': 9, '10': 'pageToken'},
-  ],
-};
-
-/// Descriptor for `ListNotificationConfigsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNotificationConfigsRequestDescriptor = $convert.base64Decode(
-    'Ch5MaXN0Tm90aWZpY2F0aW9uQ29uZmlnc1JlcXVlc3QSSQoGcGFyZW50GAEgASgJQjHgQQL6QS'
-    'sSKXN0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ29uZmlnUgZwYXJlbnQSGwoJ'
-    'cGFnZV9zaXplGAIgASgFUghwYWdlU2l6ZRIdCgpwYWdlX3Rva2VuGAMgASgJUglwYWdlVG9rZW'
-    '4=');
-
-@$core.Deprecated('Use listNotificationConfigsResponseDescriptor instead')
-const ListNotificationConfigsResponse$json = {
-  '1': 'ListNotificationConfigsResponse',
-  '2': [
-    {'1': 'notification_configs', '3': 1, '4': 3, '5': 11, '6': '.google.storage.v2.NotificationConfig', '10': 'notificationConfigs'},
-    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
-  ],
-};
-
-/// Descriptor for `ListNotificationConfigsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listNotificationConfigsResponseDescriptor = $convert.base64Decode(
-    'Ch9MaXN0Tm90aWZpY2F0aW9uQ29uZmlnc1Jlc3BvbnNlElgKFG5vdGlmaWNhdGlvbl9jb25maW'
-    'dzGAEgAygLMiUuZ29vZ2xlLnN0b3JhZ2UudjIuTm90aWZpY2F0aW9uQ29uZmlnUhNub3RpZmlj'
-    'YXRpb25Db25maWdzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
-
 @$core.Deprecated('Use composeObjectRequestDescriptor instead')
 const ComposeObjectRequest$json = {
   '1': 'ComposeObjectRequest',
@@ -884,6 +810,18 @@ final $typed_data.Uint8List getServiceAccountRequestDescriptor = $convert.base64
     'ChhHZXRTZXJ2aWNlQWNjb3VudFJlcXVlc3QSTQoHcHJvamVjdBgBIAEoCUIz4EEC+kEtCitjbG'
     '91ZHJlc291cmNlbWFuYWdlci5nb29nbGVhcGlzLmNvbS9Qcm9qZWN0Ugdwcm9qZWN0');
 
+@$core.Deprecated('Use serviceAccountDescriptor instead')
+const ServiceAccount$json = {
+  '1': 'ServiceAccount',
+  '2': [
+    {'1': 'email_address', '3': 1, '4': 1, '5': 9, '10': 'emailAddress'},
+  ],
+};
+
+/// Descriptor for `ServiceAccount`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List serviceAccountDescriptor = $convert.base64Decode(
+    'Cg5TZXJ2aWNlQWNjb3VudBIjCg1lbWFpbF9hZGRyZXNzGAEgASgJUgxlbWFpbEFkZHJlc3M=');
+
 @$core.Deprecated('Use createHmacKeyRequestDescriptor instead')
 const CreateHmacKeyRequest$json = {
   '1': 'CreateHmacKeyRequest',
@@ -993,6 +931,32 @@ final $typed_data.Uint8List updateHmacKeyRequestDescriptor = $convert.base64Deco
     'ChRVcGRhdGVIbWFjS2V5UmVxdWVzdBJCCghobWFjX2tleRgBIAEoCzIiLmdvb2dsZS5zdG9yYW'
     'dlLnYyLkhtYWNLZXlNZXRhZGF0YUID4EECUgdobWFjS2V5EjsKC3VwZGF0ZV9tYXNrGAMgASgL'
     'MhouZ29vZ2xlLnByb3RvYnVmLkZpZWxkTWFza1IKdXBkYXRlTWFzaw==');
+
+@$core.Deprecated('Use hmacKeyMetadataDescriptor instead')
+const HmacKeyMetadata$json = {
+  '1': 'HmacKeyMetadata',
+  '2': [
+    {'1': 'id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'id'},
+    {'1': 'access_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'accessId'},
+    {'1': 'project', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'project'},
+    {'1': 'service_account_email', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'serviceAccountEmail'},
+    {'1': 'state', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'state'},
+    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
+    {'1': 'update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
+    {'1': 'etag', '3': 8, '4': 1, '5': 9, '8': {}, '10': 'etag'},
+  ],
+};
+
+/// Descriptor for `HmacKeyMetadata`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List hmacKeyMetadataDescriptor = $convert.base64Decode(
+    'Cg9IbWFjS2V5TWV0YWRhdGESEwoCaWQYASABKAlCA+BBBVICaWQSIAoJYWNjZXNzX2lkGAIgAS'
+    'gJQgPgQQVSCGFjY2Vzc0lkEk0KB3Byb2plY3QYAyABKAlCM+BBBfpBLQorY2xvdWRyZXNvdXJj'
+    'ZW1hbmFnZXIuZ29vZ2xlYXBpcy5jb20vUHJvamVjdFIHcHJvamVjdBI3ChVzZXJ2aWNlX2FjY2'
+    '91bnRfZW1haWwYBCABKAlCA+BBA1ITc2VydmljZUFjY291bnRFbWFpbBIZCgVzdGF0ZRgFIAEo'
+    'CUID4EEBUgVzdGF0ZRJACgtjcmVhdGVfdGltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW'
+    '1lc3RhbXBCA+BBA1IKY3JlYXRlVGltZRJACgt1cGRhdGVfdGltZRgHIAEoCzIaLmdvb2dsZS5w'
+    'cm90b2J1Zi5UaW1lc3RhbXBCA+BBA1IKdXBkYXRlVGltZRIXCgRldGFnGAggASgJQgPgQQFSBG'
+    'V0YWc=');
 
 @$core.Deprecated('Use commonObjectRequestParamsDescriptor instead')
 const CommonObjectRequestParams$json = {
@@ -1439,70 +1403,6 @@ final $typed_data.Uint8List objectChecksumsDescriptor = $convert.base64Decode(
     'Cg9PYmplY3RDaGVja3N1bXMSGwoGY3JjMzJjGAEgASgHSABSBmNyYzMyY4gBARIZCghtZDVfaG'
     'FzaBgCIAEoDFIHbWQ1SGFzaEIJCgdfY3JjMzJj');
 
-@$core.Deprecated('Use hmacKeyMetadataDescriptor instead')
-const HmacKeyMetadata$json = {
-  '1': 'HmacKeyMetadata',
-  '2': [
-    {'1': 'id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'id'},
-    {'1': 'access_id', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'accessId'},
-    {'1': 'project', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'project'},
-    {'1': 'service_account_email', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'serviceAccountEmail'},
-    {'1': 'state', '3': 5, '4': 1, '5': 9, '10': 'state'},
-    {'1': 'create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
-    {'1': 'update_time', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
-    {'1': 'etag', '3': 8, '4': 1, '5': 9, '10': 'etag'},
-  ],
-};
-
-/// Descriptor for `HmacKeyMetadata`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List hmacKeyMetadataDescriptor = $convert.base64Decode(
-    'Cg9IbWFjS2V5TWV0YWRhdGESEwoCaWQYASABKAlCA+BBBVICaWQSIAoJYWNjZXNzX2lkGAIgAS'
-    'gJQgPgQQVSCGFjY2Vzc0lkEk0KB3Byb2plY3QYAyABKAlCM+BBBfpBLQorY2xvdWRyZXNvdXJj'
-    'ZW1hbmFnZXIuZ29vZ2xlYXBpcy5jb20vUHJvamVjdFIHcHJvamVjdBI3ChVzZXJ2aWNlX2FjY2'
-    '91bnRfZW1haWwYBCABKAlCA+BBA1ITc2VydmljZUFjY291bnRFbWFpbBIUCgVzdGF0ZRgFIAEo'
-    'CVIFc3RhdGUSQAoLY3JlYXRlX3RpbWUYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW'
-    '1wQgPgQQNSCmNyZWF0ZVRpbWUSQAoLdXBkYXRlX3RpbWUYByABKAsyGi5nb29nbGUucHJvdG9i'
-    'dWYuVGltZXN0YW1wQgPgQQNSCnVwZGF0ZVRpbWUSEgoEZXRhZxgIIAEoCVIEZXRhZw==');
-
-@$core.Deprecated('Use notificationConfigDescriptor instead')
-const NotificationConfig$json = {
-  '1': 'NotificationConfig',
-  '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
-    {'1': 'topic', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'topic'},
-    {'1': 'etag', '3': 7, '4': 1, '5': 9, '10': 'etag'},
-    {'1': 'event_types', '3': 3, '4': 3, '5': 9, '10': 'eventTypes'},
-    {'1': 'custom_attributes', '3': 4, '4': 3, '5': 11, '6': '.google.storage.v2.NotificationConfig.CustomAttributesEntry', '10': 'customAttributes'},
-    {'1': 'object_name_prefix', '3': 5, '4': 1, '5': 9, '10': 'objectNamePrefix'},
-    {'1': 'payload_format', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'payloadFormat'},
-  ],
-  '3': [NotificationConfig_CustomAttributesEntry$json],
-  '7': {},
-};
-
-@$core.Deprecated('Use notificationConfigDescriptor instead')
-const NotificationConfig_CustomAttributesEntry$json = {
-  '1': 'CustomAttributesEntry',
-  '2': [
-    {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
-    {'1': 'value', '3': 2, '4': 1, '5': 9, '10': 'value'},
-  ],
-  '7': {'7': true},
-};
-
-/// Descriptor for `NotificationConfig`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List notificationConfigDescriptor = $convert.base64Decode(
-    'ChJOb3RpZmljYXRpb25Db25maWcSFwoEbmFtZRgBIAEoCUID4EECUgRuYW1lEhkKBXRvcGljGA'
-    'IgASgJQgPgQQJSBXRvcGljEhIKBGV0YWcYByABKAlSBGV0YWcSHwoLZXZlbnRfdHlwZXMYAyAD'
-    'KAlSCmV2ZW50VHlwZXMSaAoRY3VzdG9tX2F0dHJpYnV0ZXMYBCADKAsyOy5nb29nbGUuc3Rvcm'
-    'FnZS52Mi5Ob3RpZmljYXRpb25Db25maWcuQ3VzdG9tQXR0cmlidXRlc0VudHJ5UhBjdXN0b21B'
-    'dHRyaWJ1dGVzEiwKEm9iamVjdF9uYW1lX3ByZWZpeBgFIAEoCVIQb2JqZWN0TmFtZVByZWZpeB'
-    'IqCg5wYXlsb2FkX2Zvcm1hdBgGIAEoCUID4EECUg1wYXlsb2FkRm9ybWF0GkMKFUN1c3RvbUF0'
-    'dHJpYnV0ZXNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEoCVIFdmFsdWU6Aj'
-    'gBOn3qQXoKKXN0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ29uZmlnEk1wcm9q'
-    'ZWN0cy97cHJvamVjdH0vYnVja2V0cy97YnVja2V0fS9ub3RpZmljYXRpb25Db25maWdzL3tub3'
-    'RpZmljYXRpb25fY29uZmlnfQ==');
-
 @$core.Deprecated('Use customerEncryptionDescriptor instead')
 const CustomerEncryption$json = {
   '1': 'CustomerEncryption',
@@ -1659,18 +1559,6 @@ final $typed_data.Uint8List projectTeamDescriptor = $convert.base64Decode(
     'CgtQcm9qZWN0VGVhbRIlCg5wcm9qZWN0X251bWJlchgBIAEoCVINcHJvamVjdE51bWJlchISCg'
     'R0ZWFtGAIgASgJUgR0ZWFt');
 
-@$core.Deprecated('Use serviceAccountDescriptor instead')
-const ServiceAccount$json = {
-  '1': 'ServiceAccount',
-  '2': [
-    {'1': 'email_address', '3': 1, '4': 1, '5': 9, '10': 'emailAddress'},
-  ],
-};
-
-/// Descriptor for `ServiceAccount`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List serviceAccountDescriptor = $convert.base64Decode(
-    'Cg5TZXJ2aWNlQWNjb3VudBIjCg1lbWFpbF9hZGRyZXNzGAEgASgJUgxlbWFpbEFkZHJlc3M=');
-
 @$core.Deprecated('Use ownerDescriptor instead')
 const Owner$json = {
   '1': 'Owner',
@@ -1699,4 +1587,117 @@ const ContentRange$json = {
 final $typed_data.Uint8List contentRangeDescriptor = $convert.base64Decode(
     'CgxDb250ZW50UmFuZ2USFAoFc3RhcnQYASABKANSBXN0YXJ0EhAKA2VuZBgCIAEoA1IDZW5kEi'
     'cKD2NvbXBsZXRlX2xlbmd0aBgDIAEoA1IOY29tcGxldGVMZW5ndGg=');
+
+@$core.Deprecated('Use deleteNotificationConfigRequestDescriptor instead')
+const DeleteNotificationConfigRequest$json = {
+  '1': 'DeleteNotificationConfigRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+  ],
+};
+
+/// Descriptor for `DeleteNotificationConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List deleteNotificationConfigRequestDescriptor = $convert.base64Decode(
+    'Ch9EZWxldGVOb3RpZmljYXRpb25Db25maWdSZXF1ZXN0EkUKBG5hbWUYASABKAlCMeBBAvpBKw'
+    'opc3RvcmFnZS5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25Db25maWdSBG5hbWU=');
+
+@$core.Deprecated('Use getNotificationConfigRequestDescriptor instead')
+const GetNotificationConfigRequest$json = {
+  '1': 'GetNotificationConfigRequest',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+  ],
+};
+
+/// Descriptor for `GetNotificationConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List getNotificationConfigRequestDescriptor = $convert.base64Decode(
+    'ChxHZXROb3RpZmljYXRpb25Db25maWdSZXF1ZXN0EkUKBG5hbWUYASABKAlCMeBBAvpBKwopc3'
+    'RvcmFnZS5nb29nbGVhcGlzLmNvbS9Ob3RpZmljYXRpb25Db25maWdSBG5hbWU=');
+
+@$core.Deprecated('Use createNotificationConfigRequestDescriptor instead')
+const CreateNotificationConfigRequest$json = {
+  '1': 'CreateNotificationConfigRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'notification_config', '3': 2, '4': 1, '5': 11, '6': '.google.storage.v2.NotificationConfig', '8': {}, '10': 'notificationConfig'},
+  ],
+};
+
+/// Descriptor for `CreateNotificationConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List createNotificationConfigRequestDescriptor = $convert.base64Decode(
+    'Ch9DcmVhdGVOb3RpZmljYXRpb25Db25maWdSZXF1ZXN0EkkKBnBhcmVudBgBIAEoCUIx4EEC+k'
+    'ErEilzdG9yYWdlLmdvb2dsZWFwaXMuY29tL05vdGlmaWNhdGlvbkNvbmZpZ1IGcGFyZW50ElsK'
+    'E25vdGlmaWNhdGlvbl9jb25maWcYAiABKAsyJS5nb29nbGUuc3RvcmFnZS52Mi5Ob3RpZmljYX'
+    'Rpb25Db25maWdCA+BBAlISbm90aWZpY2F0aW9uQ29uZmln');
+
+@$core.Deprecated('Use listNotificationConfigsRequestDescriptor instead')
+const ListNotificationConfigsRequest$json = {
+  '1': 'ListNotificationConfigsRequest',
+  '2': [
+    {'1': 'parent', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'parent'},
+    {'1': 'page_size', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
+    {'1': 'page_token', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
+  ],
+};
+
+/// Descriptor for `ListNotificationConfigsRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listNotificationConfigsRequestDescriptor = $convert.base64Decode(
+    'Ch5MaXN0Tm90aWZpY2F0aW9uQ29uZmlnc1JlcXVlc3QSSQoGcGFyZW50GAEgASgJQjHgQQL6QS'
+    'sSKXN0b3JhZ2UuZ29vZ2xlYXBpcy5jb20vTm90aWZpY2F0aW9uQ29uZmlnUgZwYXJlbnQSIAoJ'
+    'cGFnZV9zaXplGAIgASgFQgPgQQFSCHBhZ2VTaXplEiIKCnBhZ2VfdG9rZW4YAyABKAlCA+BBAV'
+    'IJcGFnZVRva2Vu');
+
+@$core.Deprecated('Use listNotificationConfigsResponseDescriptor instead')
+const ListNotificationConfigsResponse$json = {
+  '1': 'ListNotificationConfigsResponse',
+  '2': [
+    {'1': 'notification_configs', '3': 1, '4': 3, '5': 11, '6': '.google.storage.v2.NotificationConfig', '10': 'notificationConfigs'},
+    {'1': 'next_page_token', '3': 2, '4': 1, '5': 9, '10': 'nextPageToken'},
+  ],
+};
+
+/// Descriptor for `ListNotificationConfigsResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listNotificationConfigsResponseDescriptor = $convert.base64Decode(
+    'Ch9MaXN0Tm90aWZpY2F0aW9uQ29uZmlnc1Jlc3BvbnNlElgKFG5vdGlmaWNhdGlvbl9jb25maW'
+    'dzGAEgAygLMiUuZ29vZ2xlLnN0b3JhZ2UudjIuTm90aWZpY2F0aW9uQ29uZmlnUhNub3RpZmlj'
+    'YXRpb25Db25maWdzEiYKD25leHRfcGFnZV90b2tlbhgCIAEoCVINbmV4dFBhZ2VUb2tlbg==');
+
+@$core.Deprecated('Use notificationConfigDescriptor instead')
+const NotificationConfig$json = {
+  '1': 'NotificationConfig',
+  '2': [
+    {'1': 'name', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'name'},
+    {'1': 'topic', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'topic'},
+    {'1': 'etag', '3': 7, '4': 1, '5': 9, '8': {}, '10': 'etag'},
+    {'1': 'event_types', '3': 3, '4': 3, '5': 9, '8': {}, '10': 'eventTypes'},
+    {'1': 'custom_attributes', '3': 4, '4': 3, '5': 11, '6': '.google.storage.v2.NotificationConfig.CustomAttributesEntry', '8': {}, '10': 'customAttributes'},
+    {'1': 'object_name_prefix', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'objectNamePrefix'},
+    {'1': 'payload_format', '3': 6, '4': 1, '5': 9, '8': {}, '10': 'payloadFormat'},
+  ],
+  '3': [NotificationConfig_CustomAttributesEntry$json],
+  '7': {},
+};
+
+@$core.Deprecated('Use notificationConfigDescriptor instead')
+const NotificationConfig_CustomAttributesEntry$json = {
+  '1': 'CustomAttributesEntry',
+  '2': [
+    {'1': 'key', '3': 1, '4': 1, '5': 9, '10': 'key'},
+    {'1': 'value', '3': 2, '4': 1, '5': 9, '10': 'value'},
+  ],
+  '7': {'7': true},
+};
+
+/// Descriptor for `NotificationConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List notificationConfigDescriptor = $convert.base64Decode(
+    'ChJOb3RpZmljYXRpb25Db25maWcSFwoEbmFtZRgBIAEoCUID4EECUgRuYW1lEhkKBXRvcGljGA'
+    'IgASgJQgPgQQJSBXRvcGljEhcKBGV0YWcYByABKAlCA+BBAVIEZXRhZxIkCgtldmVudF90eXBl'
+    'cxgDIAMoCUID4EEBUgpldmVudFR5cGVzEm0KEWN1c3RvbV9hdHRyaWJ1dGVzGAQgAygLMjsuZ2'
+    '9vZ2xlLnN0b3JhZ2UudjIuTm90aWZpY2F0aW9uQ29uZmlnLkN1c3RvbUF0dHJpYnV0ZXNFbnRy'
+    'eUID4EEBUhBjdXN0b21BdHRyaWJ1dGVzEjEKEm9iamVjdF9uYW1lX3ByZWZpeBgFIAEoCUID4E'
+    'EBUhBvYmplY3ROYW1lUHJlZml4EioKDnBheWxvYWRfZm9ybWF0GAYgASgJQgPgQQJSDXBheWxv'
+    'YWRGb3JtYXQaQwoVQ3VzdG9tQXR0cmlidXRlc0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBX'
+    'ZhbHVlGAIgASgJUgV2YWx1ZToCOAE6fepBegopc3RvcmFnZS5nb29nbGVhcGlzLmNvbS9Ob3Rp'
+    'ZmljYXRpb25Db25maWcSTXByb2plY3RzL3twcm9qZWN0fS9idWNrZXRzL3tidWNrZXR9L25vdG'
+    'lmaWNhdGlvbkNvbmZpZ3Mve25vdGlmaWNhdGlvbl9jb25maWd9');
 

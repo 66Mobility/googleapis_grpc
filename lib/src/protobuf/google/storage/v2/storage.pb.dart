@@ -729,331 +729,6 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
   void clearPredefinedDefaultObjectAcl() => clearField(9);
 }
 
-/// Request message for DeleteNotificationConfig.
-class DeleteNotificationConfigRequest extends $pb.GeneratedMessage {
-  factory DeleteNotificationConfigRequest({
-    $core.String? name,
-  }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    return $result;
-  }
-  DeleteNotificationConfigRequest._() : super();
-  factory DeleteNotificationConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory DeleteNotificationConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteNotificationConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
-
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  DeleteNotificationConfigRequest clone() => DeleteNotificationConfigRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  DeleteNotificationConfigRequest copyWith(void Function(DeleteNotificationConfigRequest) updates) => super.copyWith((message) => updates(message as DeleteNotificationConfigRequest)) as DeleteNotificationConfigRequest;
-
-  $pb.BuilderInfo get info_ => _i;
-
-  @$core.pragma('dart2js:noInline')
-  static DeleteNotificationConfigRequest create() => DeleteNotificationConfigRequest._();
-  DeleteNotificationConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteNotificationConfigRequest> createRepeated() => $pb.PbList<DeleteNotificationConfigRequest>();
-  @$core.pragma('dart2js:noInline')
-  static DeleteNotificationConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteNotificationConfigRequest>(create);
-  static DeleteNotificationConfigRequest? _defaultInstance;
-
-  /// Required. The parent bucket of the NotificationConfig.
-  @$pb.TagNumber(1)
-  $core.String get name => $_getSZ(0);
-  @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
-  @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
-  @$pb.TagNumber(1)
-  void clearName() => clearField(1);
-}
-
-/// Request message for GetNotificationConfig.
-class GetNotificationConfigRequest extends $pb.GeneratedMessage {
-  factory GetNotificationConfigRequest({
-    $core.String? name,
-  }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    return $result;
-  }
-  GetNotificationConfigRequest._() : super();
-  factory GetNotificationConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory GetNotificationConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetNotificationConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..hasRequiredFields = false
-  ;
-
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  GetNotificationConfigRequest clone() => GetNotificationConfigRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  GetNotificationConfigRequest copyWith(void Function(GetNotificationConfigRequest) updates) => super.copyWith((message) => updates(message as GetNotificationConfigRequest)) as GetNotificationConfigRequest;
-
-  $pb.BuilderInfo get info_ => _i;
-
-  @$core.pragma('dart2js:noInline')
-  static GetNotificationConfigRequest create() => GetNotificationConfigRequest._();
-  GetNotificationConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<GetNotificationConfigRequest> createRepeated() => $pb.PbList<GetNotificationConfigRequest>();
-  @$core.pragma('dart2js:noInline')
-  static GetNotificationConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetNotificationConfigRequest>(create);
-  static GetNotificationConfigRequest? _defaultInstance;
-
-  /// Required. The parent bucket of the NotificationConfig.
-  /// Format:
-  /// `projects/{project}/buckets/{bucket}/notificationConfigs/{notificationConfig}`
-  @$pb.TagNumber(1)
-  $core.String get name => $_getSZ(0);
-  @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
-  @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
-  @$pb.TagNumber(1)
-  void clearName() => clearField(1);
-}
-
-/// Request message for CreateNotificationConfig.
-class CreateNotificationConfigRequest extends $pb.GeneratedMessage {
-  factory CreateNotificationConfigRequest({
-    $core.String? parent,
-    NotificationConfig? notificationConfig,
-  }) {
-    final $result = create();
-    if (parent != null) {
-      $result.parent = parent;
-    }
-    if (notificationConfig != null) {
-      $result.notificationConfig = notificationConfig;
-    }
-    return $result;
-  }
-  CreateNotificationConfigRequest._() : super();
-  factory CreateNotificationConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory CreateNotificationConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateNotificationConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<NotificationConfig>(2, _omitFieldNames ? '' : 'notificationConfig', subBuilder: NotificationConfig.create)
-    ..hasRequiredFields = false
-  ;
-
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  CreateNotificationConfigRequest clone() => CreateNotificationConfigRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  CreateNotificationConfigRequest copyWith(void Function(CreateNotificationConfigRequest) updates) => super.copyWith((message) => updates(message as CreateNotificationConfigRequest)) as CreateNotificationConfigRequest;
-
-  $pb.BuilderInfo get info_ => _i;
-
-  @$core.pragma('dart2js:noInline')
-  static CreateNotificationConfigRequest create() => CreateNotificationConfigRequest._();
-  CreateNotificationConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateNotificationConfigRequest> createRepeated() => $pb.PbList<CreateNotificationConfigRequest>();
-  @$core.pragma('dart2js:noInline')
-  static CreateNotificationConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateNotificationConfigRequest>(create);
-  static CreateNotificationConfigRequest? _defaultInstance;
-
-  /// Required. The bucket to which this NotificationConfig belongs.
-  @$pb.TagNumber(1)
-  $core.String get parent => $_getSZ(0);
-  @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
-  @$pb.TagNumber(1)
-  $core.bool hasParent() => $_has(0);
-  @$pb.TagNumber(1)
-  void clearParent() => clearField(1);
-
-  /// Required. Properties of the NotificationConfig to be inserted.
-  @$pb.TagNumber(2)
-  NotificationConfig get notificationConfig => $_getN(1);
-  @$pb.TagNumber(2)
-  set notificationConfig(NotificationConfig v) { setField(2, v); }
-  @$pb.TagNumber(2)
-  $core.bool hasNotificationConfig() => $_has(1);
-  @$pb.TagNumber(2)
-  void clearNotificationConfig() => clearField(2);
-  @$pb.TagNumber(2)
-  NotificationConfig ensureNotificationConfig() => $_ensure(1);
-}
-
-/// Request message for ListNotifications.
-class ListNotificationConfigsRequest extends $pb.GeneratedMessage {
-  factory ListNotificationConfigsRequest({
-    $core.String? parent,
-    $core.int? pageSize,
-    $core.String? pageToken,
-  }) {
-    final $result = create();
-    if (parent != null) {
-      $result.parent = parent;
-    }
-    if (pageSize != null) {
-      $result.pageSize = pageSize;
-    }
-    if (pageToken != null) {
-      $result.pageToken = pageToken;
-    }
-    return $result;
-  }
-  ListNotificationConfigsRequest._() : super();
-  factory ListNotificationConfigsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListNotificationConfigsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationConfigsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
-    ..aOS(3, _omitFieldNames ? '' : 'pageToken')
-    ..hasRequiredFields = false
-  ;
-
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListNotificationConfigsRequest clone() => ListNotificationConfigsRequest()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListNotificationConfigsRequest copyWith(void Function(ListNotificationConfigsRequest) updates) => super.copyWith((message) => updates(message as ListNotificationConfigsRequest)) as ListNotificationConfigsRequest;
-
-  $pb.BuilderInfo get info_ => _i;
-
-  @$core.pragma('dart2js:noInline')
-  static ListNotificationConfigsRequest create() => ListNotificationConfigsRequest._();
-  ListNotificationConfigsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListNotificationConfigsRequest> createRepeated() => $pb.PbList<ListNotificationConfigsRequest>();
-  @$core.pragma('dart2js:noInline')
-  static ListNotificationConfigsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNotificationConfigsRequest>(create);
-  static ListNotificationConfigsRequest? _defaultInstance;
-
-  /// Required. Name of a Google Cloud Storage bucket.
-  @$pb.TagNumber(1)
-  $core.String get parent => $_getSZ(0);
-  @$pb.TagNumber(1)
-  set parent($core.String v) { $_setString(0, v); }
-  @$pb.TagNumber(1)
-  $core.bool hasParent() => $_has(0);
-  @$pb.TagNumber(1)
-  void clearParent() => clearField(1);
-
-  /// The maximum number of NotificationConfigs to return. The service may
-  /// return fewer than this value. The default value is 100. Specifying a value
-  /// above 100 will result in a page_size of 100.
-  @$pb.TagNumber(2)
-  $core.int get pageSize => $_getIZ(1);
-  @$pb.TagNumber(2)
-  set pageSize($core.int v) { $_setSignedInt32(1, v); }
-  @$pb.TagNumber(2)
-  $core.bool hasPageSize() => $_has(1);
-  @$pb.TagNumber(2)
-  void clearPageSize() => clearField(2);
-
-  ///  A page token, received from a previous `ListNotificationConfigs` call.
-  ///  Provide this to retrieve the subsequent page.
-  ///
-  ///  When paginating, all other parameters provided to `ListNotificationConfigs`
-  ///  must match the call that provided the page token.
-  @$pb.TagNumber(3)
-  $core.String get pageToken => $_getSZ(2);
-  @$pb.TagNumber(3)
-  set pageToken($core.String v) { $_setString(2, v); }
-  @$pb.TagNumber(3)
-  $core.bool hasPageToken() => $_has(2);
-  @$pb.TagNumber(3)
-  void clearPageToken() => clearField(3);
-}
-
-/// The result of a call to ListNotificationConfigs
-class ListNotificationConfigsResponse extends $pb.GeneratedMessage {
-  factory ListNotificationConfigsResponse({
-    $core.Iterable<NotificationConfig>? notificationConfigs,
-    $core.String? nextPageToken,
-  }) {
-    final $result = create();
-    if (notificationConfigs != null) {
-      $result.notificationConfigs.addAll(notificationConfigs);
-    }
-    if (nextPageToken != null) {
-      $result.nextPageToken = nextPageToken;
-    }
-    return $result;
-  }
-  ListNotificationConfigsResponse._() : super();
-  factory ListNotificationConfigsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ListNotificationConfigsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationConfigsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
-    ..pc<NotificationConfig>(1, _omitFieldNames ? '' : 'notificationConfigs', $pb.PbFieldType.PM, subBuilder: NotificationConfig.create)
-    ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..hasRequiredFields = false
-  ;
-
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ListNotificationConfigsResponse clone() => ListNotificationConfigsResponse()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ListNotificationConfigsResponse copyWith(void Function(ListNotificationConfigsResponse) updates) => super.copyWith((message) => updates(message as ListNotificationConfigsResponse)) as ListNotificationConfigsResponse;
-
-  $pb.BuilderInfo get info_ => _i;
-
-  @$core.pragma('dart2js:noInline')
-  static ListNotificationConfigsResponse create() => ListNotificationConfigsResponse._();
-  ListNotificationConfigsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListNotificationConfigsResponse> createRepeated() => $pb.PbList<ListNotificationConfigsResponse>();
-  @$core.pragma('dart2js:noInline')
-  static ListNotificationConfigsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNotificationConfigsResponse>(create);
-  static ListNotificationConfigsResponse? _defaultInstance;
-
-  /// The list of items.
-  @$pb.TagNumber(1)
-  $core.List<NotificationConfig> get notificationConfigs => $_getList(0);
-
-  /// A token, which can be sent as `page_token` to retrieve the next page.
-  /// If this field is omitted, there are no subsequent pages.
-  @$pb.TagNumber(2)
-  $core.String get nextPageToken => $_getSZ(1);
-  @$pb.TagNumber(2)
-  set nextPageToken($core.String v) { $_setString(1, v); }
-  @$pb.TagNumber(2)
-  $core.bool hasNextPageToken() => $_has(1);
-  @$pb.TagNumber(2)
-  void clearNextPageToken() => clearField(2);
-}
-
 /// Preconditions for a source object of a composition request.
 class ComposeObjectRequest_SourceObject_ObjectPreconditions extends $pb.GeneratedMessage {
   factory ComposeObjectRequest_SourceObject_ObjectPreconditions({
@@ -2964,8 +2639,7 @@ class BidiWriteObjectRequest extends $pb.GeneratedMessage {
 
   /// Checksums for the complete object. If the checksums computed by the service
   /// don't match the specified checksums the call will fail. May only be
-  /// provided in the first or last request (either with first_message, or
-  /// finish_write set).
+  /// provided in last request (with finish_write set).
   @$pb.TagNumber(6)
   ObjectChecksums get objectChecksums => $_getN(4);
   @$pb.TagNumber(6)
@@ -4486,6 +4160,60 @@ class GetServiceAccountRequest extends $pb.GeneratedMessage {
   void clearProject() => clearField(1);
 }
 
+/// A service account, owned by Cloud Storage, which may be used when taking
+/// action on behalf of a given project, for example to publish Pub/Sub
+/// notifications or to retrieve security keys.
+class ServiceAccount extends $pb.GeneratedMessage {
+  factory ServiceAccount({
+    $core.String? emailAddress,
+  }) {
+    final $result = create();
+    if (emailAddress != null) {
+      $result.emailAddress = emailAddress;
+    }
+    return $result;
+  }
+  ServiceAccount._() : super();
+  factory ServiceAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ServiceAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceAccount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'emailAddress')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  ServiceAccount clone() => ServiceAccount()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ServiceAccount copyWith(void Function(ServiceAccount) updates) => super.copyWith((message) => updates(message as ServiceAccount)) as ServiceAccount;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static ServiceAccount create() => ServiceAccount._();
+  ServiceAccount createEmptyInstance() => create();
+  static $pb.PbList<ServiceAccount> createRepeated() => $pb.PbList<ServiceAccount>();
+  @$core.pragma('dart2js:noInline')
+  static ServiceAccount getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ServiceAccount>(create);
+  static ServiceAccount? _defaultInstance;
+
+  /// The ID of the notification.
+  @$pb.TagNumber(1)
+  $core.String get emailAddress => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set emailAddress($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasEmailAddress() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearEmailAddress() => clearField(1);
+}
+
 /// Request message for CreateHmacKey.
 class CreateHmacKeyRequest extends $pb.GeneratedMessage {
   factory CreateHmacKeyRequest({
@@ -5016,6 +4744,172 @@ class UpdateHmacKeyRequest extends $pb.GeneratedMessage {
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
   $330.FieldMask ensureUpdateMask() => $_ensure(1);
+}
+
+/// Hmac Key Metadata, which includes all information other than the secret.
+class HmacKeyMetadata extends $pb.GeneratedMessage {
+  factory HmacKeyMetadata({
+    $core.String? id,
+    $core.String? accessId,
+    $core.String? project,
+    $core.String? serviceAccountEmail,
+    $core.String? state,
+    $299.Timestamp? createTime,
+    $299.Timestamp? updateTime,
+    $core.String? etag,
+  }) {
+    final $result = create();
+    if (id != null) {
+      $result.id = id;
+    }
+    if (accessId != null) {
+      $result.accessId = accessId;
+    }
+    if (project != null) {
+      $result.project = project;
+    }
+    if (serviceAccountEmail != null) {
+      $result.serviceAccountEmail = serviceAccountEmail;
+    }
+    if (state != null) {
+      $result.state = state;
+    }
+    if (createTime != null) {
+      $result.createTime = createTime;
+    }
+    if (updateTime != null) {
+      $result.updateTime = updateTime;
+    }
+    if (etag != null) {
+      $result.etag = etag;
+    }
+    return $result;
+  }
+  HmacKeyMetadata._() : super();
+  factory HmacKeyMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory HmacKeyMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HmacKeyMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'id')
+    ..aOS(2, _omitFieldNames ? '' : 'accessId')
+    ..aOS(3, _omitFieldNames ? '' : 'project')
+    ..aOS(4, _omitFieldNames ? '' : 'serviceAccountEmail')
+    ..aOS(5, _omitFieldNames ? '' : 'state')
+    ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$299.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
+    ..aOS(8, _omitFieldNames ? '' : 'etag')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  HmacKeyMetadata clone() => HmacKeyMetadata()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  HmacKeyMetadata copyWith(void Function(HmacKeyMetadata) updates) => super.copyWith((message) => updates(message as HmacKeyMetadata)) as HmacKeyMetadata;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static HmacKeyMetadata create() => HmacKeyMetadata._();
+  HmacKeyMetadata createEmptyInstance() => create();
+  static $pb.PbList<HmacKeyMetadata> createRepeated() => $pb.PbList<HmacKeyMetadata>();
+  @$core.pragma('dart2js:noInline')
+  static HmacKeyMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HmacKeyMetadata>(create);
+  static HmacKeyMetadata? _defaultInstance;
+
+  /// Immutable. Resource name ID of the key in the format
+  /// {projectIdentifier}/{accessId}.
+  /// {projectIdentifier} can be the project ID or project number.
+  @$pb.TagNumber(1)
+  $core.String get id => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set id($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearId() => clearField(1);
+
+  /// Immutable. Globally unique id for keys.
+  @$pb.TagNumber(2)
+  $core.String get accessId => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set accessId($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasAccessId() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearAccessId() => clearField(2);
+
+  /// Immutable. Identifies the project that owns the service account of the
+  /// specified HMAC key, in the format "projects/{projectIdentifier}".
+  /// {projectIdentifier} can be the project ID or project number.
+  @$pb.TagNumber(3)
+  $core.String get project => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set project($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasProject() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearProject() => clearField(3);
+
+  /// Output only. Email of the service account the key authenticates as.
+  @$pb.TagNumber(4)
+  $core.String get serviceAccountEmail => $_getSZ(3);
+  @$pb.TagNumber(4)
+  set serviceAccountEmail($core.String v) { $_setString(3, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasServiceAccountEmail() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearServiceAccountEmail() => clearField(4);
+
+  /// Optional. State of the key. One of ACTIVE, INACTIVE, or DELETED.
+  /// Writable, can be updated by UpdateHmacKey operation.
+  @$pb.TagNumber(5)
+  $core.String get state => $_getSZ(4);
+  @$pb.TagNumber(5)
+  set state($core.String v) { $_setString(4, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasState() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearState() => clearField(5);
+
+  /// Output only. The creation time of the HMAC key.
+  @$pb.TagNumber(6)
+  $299.Timestamp get createTime => $_getN(5);
+  @$pb.TagNumber(6)
+  set createTime($299.Timestamp v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasCreateTime() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearCreateTime() => clearField(6);
+  @$pb.TagNumber(6)
+  $299.Timestamp ensureCreateTime() => $_ensure(5);
+
+  /// Output only. The last modification time of the HMAC key metadata.
+  @$pb.TagNumber(7)
+  $299.Timestamp get updateTime => $_getN(6);
+  @$pb.TagNumber(7)
+  set updateTime($299.Timestamp v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasUpdateTime() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearUpdateTime() => clearField(7);
+  @$pb.TagNumber(7)
+  $299.Timestamp ensureUpdateTime() => $_ensure(6);
+
+  /// Optional. The etag of the HMAC key.
+  @$pb.TagNumber(8)
+  $core.String get etag => $_getSZ(7);
+  @$pb.TagNumber(8)
+  set etag($core.String v) { $_setString(7, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasEtag() => $_has(7);
+  @$pb.TagNumber(8)
+  void clearEtag() => clearField(8);
 }
 
 /// Parameters that can be passed to any object request.
@@ -6917,7 +6811,8 @@ class Bucket extends $pb.GeneratedMessage {
   void clearSatisfiesPzs() => clearField(25);
 
   /// Configuration that, if present, specifies the data placement for a
-  /// [https://cloud.google.com/storage/docs/use-dual-regions][Dual Region].
+  /// [https://cloud.google.com/storage/docs/locations#location-dr][configurable
+  /// dual-region].
   @$pb.TagNumber(26)
   Bucket_CustomPlacementConfig get customPlacementConfig => $_getN(24);
   @$pb.TagNumber(26)
@@ -7324,8 +7219,8 @@ class ObjectChecksums extends $pb.GeneratedMessage {
   /// [https://cloud.google.com/storage/docs/hashes-etags#json-api][Hashes and
   /// ETags: Best Practices].
   /// Not all objects will provide an MD5 hash. For example, composite objects
-  /// provide only crc32c hashes.
-  /// This value is equivalent to running `cat object.txt | openssl md5 -binary`
+  /// provide only crc32c hashes. This value is equivalent to running `cat
+  /// object.txt | openssl md5 -binary`
   @$pb.TagNumber(2)
   $core.List<$core.int> get md5Hash => $_getN(1);
   @$pb.TagNumber(2)
@@ -7334,312 +7229,6 @@ class ObjectChecksums extends $pb.GeneratedMessage {
   $core.bool hasMd5Hash() => $_has(1);
   @$pb.TagNumber(2)
   void clearMd5Hash() => clearField(2);
-}
-
-/// Hmac Key Metadata, which includes all information other than the secret.
-class HmacKeyMetadata extends $pb.GeneratedMessage {
-  factory HmacKeyMetadata({
-    $core.String? id,
-    $core.String? accessId,
-    $core.String? project,
-    $core.String? serviceAccountEmail,
-    $core.String? state,
-    $299.Timestamp? createTime,
-    $299.Timestamp? updateTime,
-    $core.String? etag,
-  }) {
-    final $result = create();
-    if (id != null) {
-      $result.id = id;
-    }
-    if (accessId != null) {
-      $result.accessId = accessId;
-    }
-    if (project != null) {
-      $result.project = project;
-    }
-    if (serviceAccountEmail != null) {
-      $result.serviceAccountEmail = serviceAccountEmail;
-    }
-    if (state != null) {
-      $result.state = state;
-    }
-    if (createTime != null) {
-      $result.createTime = createTime;
-    }
-    if (updateTime != null) {
-      $result.updateTime = updateTime;
-    }
-    if (etag != null) {
-      $result.etag = etag;
-    }
-    return $result;
-  }
-  HmacKeyMetadata._() : super();
-  factory HmacKeyMetadata.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory HmacKeyMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HmacKeyMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..aOS(2, _omitFieldNames ? '' : 'accessId')
-    ..aOS(3, _omitFieldNames ? '' : 'project')
-    ..aOS(4, _omitFieldNames ? '' : 'serviceAccountEmail')
-    ..aOS(5, _omitFieldNames ? '' : 'state')
-    ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(7, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
-    ..aOS(8, _omitFieldNames ? '' : 'etag')
-    ..hasRequiredFields = false
-  ;
-
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  HmacKeyMetadata clone() => HmacKeyMetadata()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  HmacKeyMetadata copyWith(void Function(HmacKeyMetadata) updates) => super.copyWith((message) => updates(message as HmacKeyMetadata)) as HmacKeyMetadata;
-
-  $pb.BuilderInfo get info_ => _i;
-
-  @$core.pragma('dart2js:noInline')
-  static HmacKeyMetadata create() => HmacKeyMetadata._();
-  HmacKeyMetadata createEmptyInstance() => create();
-  static $pb.PbList<HmacKeyMetadata> createRepeated() => $pb.PbList<HmacKeyMetadata>();
-  @$core.pragma('dart2js:noInline')
-  static HmacKeyMetadata getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HmacKeyMetadata>(create);
-  static HmacKeyMetadata? _defaultInstance;
-
-  /// Immutable. Resource name ID of the key in the format
-  /// {projectIdentifier}/{accessId}.
-  /// {projectIdentifier} can be the project ID or project number.
-  @$pb.TagNumber(1)
-  $core.String get id => $_getSZ(0);
-  @$pb.TagNumber(1)
-  set id($core.String v) { $_setString(0, v); }
-  @$pb.TagNumber(1)
-  $core.bool hasId() => $_has(0);
-  @$pb.TagNumber(1)
-  void clearId() => clearField(1);
-
-  /// Immutable. Globally unique id for keys.
-  @$pb.TagNumber(2)
-  $core.String get accessId => $_getSZ(1);
-  @$pb.TagNumber(2)
-  set accessId($core.String v) { $_setString(1, v); }
-  @$pb.TagNumber(2)
-  $core.bool hasAccessId() => $_has(1);
-  @$pb.TagNumber(2)
-  void clearAccessId() => clearField(2);
-
-  /// Immutable. Identifies the project that owns the service account of the
-  /// specified HMAC key, in the format "projects/{projectIdentifier}".
-  /// {projectIdentifier} can be the project ID or project number.
-  @$pb.TagNumber(3)
-  $core.String get project => $_getSZ(2);
-  @$pb.TagNumber(3)
-  set project($core.String v) { $_setString(2, v); }
-  @$pb.TagNumber(3)
-  $core.bool hasProject() => $_has(2);
-  @$pb.TagNumber(3)
-  void clearProject() => clearField(3);
-
-  /// Output only. Email of the service account the key authenticates as.
-  @$pb.TagNumber(4)
-  $core.String get serviceAccountEmail => $_getSZ(3);
-  @$pb.TagNumber(4)
-  set serviceAccountEmail($core.String v) { $_setString(3, v); }
-  @$pb.TagNumber(4)
-  $core.bool hasServiceAccountEmail() => $_has(3);
-  @$pb.TagNumber(4)
-  void clearServiceAccountEmail() => clearField(4);
-
-  /// State of the key. One of ACTIVE, INACTIVE, or DELETED.
-  /// Writable, can be updated by UpdateHmacKey operation.
-  @$pb.TagNumber(5)
-  $core.String get state => $_getSZ(4);
-  @$pb.TagNumber(5)
-  set state($core.String v) { $_setString(4, v); }
-  @$pb.TagNumber(5)
-  $core.bool hasState() => $_has(4);
-  @$pb.TagNumber(5)
-  void clearState() => clearField(5);
-
-  /// Output only. The creation time of the HMAC key.
-  @$pb.TagNumber(6)
-  $299.Timestamp get createTime => $_getN(5);
-  @$pb.TagNumber(6)
-  set createTime($299.Timestamp v) { setField(6, v); }
-  @$pb.TagNumber(6)
-  $core.bool hasCreateTime() => $_has(5);
-  @$pb.TagNumber(6)
-  void clearCreateTime() => clearField(6);
-  @$pb.TagNumber(6)
-  $299.Timestamp ensureCreateTime() => $_ensure(5);
-
-  /// Output only. The last modification time of the HMAC key metadata.
-  @$pb.TagNumber(7)
-  $299.Timestamp get updateTime => $_getN(6);
-  @$pb.TagNumber(7)
-  set updateTime($299.Timestamp v) { setField(7, v); }
-  @$pb.TagNumber(7)
-  $core.bool hasUpdateTime() => $_has(6);
-  @$pb.TagNumber(7)
-  void clearUpdateTime() => clearField(7);
-  @$pb.TagNumber(7)
-  $299.Timestamp ensureUpdateTime() => $_ensure(6);
-
-  /// The etag of the HMAC key.
-  @$pb.TagNumber(8)
-  $core.String get etag => $_getSZ(7);
-  @$pb.TagNumber(8)
-  set etag($core.String v) { $_setString(7, v); }
-  @$pb.TagNumber(8)
-  $core.bool hasEtag() => $_has(7);
-  @$pb.TagNumber(8)
-  void clearEtag() => clearField(8);
-}
-
-/// A directive to publish Pub/Sub notifications upon changes to a bucket.
-class NotificationConfig extends $pb.GeneratedMessage {
-  factory NotificationConfig({
-    $core.String? name,
-    $core.String? topic,
-    $core.Iterable<$core.String>? eventTypes,
-    $core.Map<$core.String, $core.String>? customAttributes,
-    $core.String? objectNamePrefix,
-    $core.String? payloadFormat,
-    $core.String? etag,
-  }) {
-    final $result = create();
-    if (name != null) {
-      $result.name = name;
-    }
-    if (topic != null) {
-      $result.topic = topic;
-    }
-    if (eventTypes != null) {
-      $result.eventTypes.addAll(eventTypes);
-    }
-    if (customAttributes != null) {
-      $result.customAttributes.addAll(customAttributes);
-    }
-    if (objectNamePrefix != null) {
-      $result.objectNamePrefix = objectNamePrefix;
-    }
-    if (payloadFormat != null) {
-      $result.payloadFormat = payloadFormat;
-    }
-    if (etag != null) {
-      $result.etag = etag;
-    }
-    return $result;
-  }
-  NotificationConfig._() : super();
-  factory NotificationConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory NotificationConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotificationConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOS(2, _omitFieldNames ? '' : 'topic')
-    ..pPS(3, _omitFieldNames ? '' : 'eventTypes')
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'customAttributes', entryClassName: 'NotificationConfig.CustomAttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.storage.v2'))
-    ..aOS(5, _omitFieldNames ? '' : 'objectNamePrefix')
-    ..aOS(6, _omitFieldNames ? '' : 'payloadFormat')
-    ..aOS(7, _omitFieldNames ? '' : 'etag')
-    ..hasRequiredFields = false
-  ;
-
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  NotificationConfig clone() => NotificationConfig()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  NotificationConfig copyWith(void Function(NotificationConfig) updates) => super.copyWith((message) => updates(message as NotificationConfig)) as NotificationConfig;
-
-  $pb.BuilderInfo get info_ => _i;
-
-  @$core.pragma('dart2js:noInline')
-  static NotificationConfig create() => NotificationConfig._();
-  NotificationConfig createEmptyInstance() => create();
-  static $pb.PbList<NotificationConfig> createRepeated() => $pb.PbList<NotificationConfig>();
-  @$core.pragma('dart2js:noInline')
-  static NotificationConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NotificationConfig>(create);
-  static NotificationConfig? _defaultInstance;
-
-  /// Required. The resource name of this NotificationConfig.
-  /// Format:
-  /// `projects/{project}/buckets/{bucket}/notificationConfigs/{notificationConfig}`
-  /// The `{project}` portion may be `_` for globally unique buckets.
-  @$pb.TagNumber(1)
-  $core.String get name => $_getSZ(0);
-  @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
-  @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
-  @$pb.TagNumber(1)
-  void clearName() => clearField(1);
-
-  /// Required. The Pub/Sub topic to which this subscription publishes. Formatted
-  /// as:
-  /// '//pubsub.googleapis.com/projects/{project-identifier}/topics/{my-topic}'
-  @$pb.TagNumber(2)
-  $core.String get topic => $_getSZ(1);
-  @$pb.TagNumber(2)
-  set topic($core.String v) { $_setString(1, v); }
-  @$pb.TagNumber(2)
-  $core.bool hasTopic() => $_has(1);
-  @$pb.TagNumber(2)
-  void clearTopic() => clearField(2);
-
-  /// If present, only send notifications about listed event types. If
-  /// empty, sent notifications for all event types.
-  @$pb.TagNumber(3)
-  $core.List<$core.String> get eventTypes => $_getList(2);
-
-  /// A list of additional attributes to attach to each Pub/Sub
-  /// message published for this NotificationConfig.
-  @$pb.TagNumber(4)
-  $core.Map<$core.String, $core.String> get customAttributes => $_getMap(3);
-
-  /// If present, only apply this NotificationConfig to object names that
-  /// begin with this prefix.
-  @$pb.TagNumber(5)
-  $core.String get objectNamePrefix => $_getSZ(4);
-  @$pb.TagNumber(5)
-  set objectNamePrefix($core.String v) { $_setString(4, v); }
-  @$pb.TagNumber(5)
-  $core.bool hasObjectNamePrefix() => $_has(4);
-  @$pb.TagNumber(5)
-  void clearObjectNamePrefix() => clearField(5);
-
-  /// Required. The desired content of the Payload.
-  @$pb.TagNumber(6)
-  $core.String get payloadFormat => $_getSZ(5);
-  @$pb.TagNumber(6)
-  set payloadFormat($core.String v) { $_setString(5, v); }
-  @$pb.TagNumber(6)
-  $core.bool hasPayloadFormat() => $_has(5);
-  @$pb.TagNumber(6)
-  void clearPayloadFormat() => clearField(6);
-
-  /// The etag of the NotificationConfig.
-  /// If included in the metadata of GetNotificationConfigRequest, the operation
-  /// will only be performed if the etag matches that of the NotificationConfig.
-  @$pb.TagNumber(7)
-  $core.String get etag => $_getSZ(6);
-  @$pb.TagNumber(7)
-  set etag($core.String v) { $_setString(6, v); }
-  @$pb.TagNumber(7)
-  $core.bool hasEtag() => $_has(6);
-  @$pb.TagNumber(7)
-  void clearEtag() => clearField(7);
 }
 
 /// Describes the Customer-Supplied Encryption Key mechanism used to store an
@@ -8065,7 +7654,10 @@ class Object extends $pb.GeneratedMessage {
   void clearComponentCount() => clearField(15);
 
   /// Output only. Hashes for the data part of this object. This field is used
-  /// for output only and will be silently ignored if provided in requests.
+  /// for output only and will be silently ignored if provided in requests. The
+  /// checksums of the complete object regardless of data range. If the object is
+  /// downloaded in full, the client should compute one of these checksums over
+  /// the downloaded object and compare it against the value provided here.
   @$pb.TagNumber(16)
   ObjectChecksums get checksums => $_getN(15);
   @$pb.TagNumber(16)
@@ -8337,7 +7929,10 @@ class ObjectAccessControl extends $pb.GeneratedMessage {
   static ObjectAccessControl getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ObjectAccessControl>(create);
   static ObjectAccessControl? _defaultInstance;
 
-  /// The access permission for the entity.
+  /// The access permission for the entity. One of the following values:
+  /// * `READER`
+  /// * `WRITER`
+  /// * `OWNER`
   @$pb.TagNumber(1)
   $core.String get role => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -8590,60 +8185,6 @@ class ProjectTeam extends $pb.GeneratedMessage {
   void clearTeam() => clearField(2);
 }
 
-/// A service account, owned by Cloud Storage, which may be used when taking
-/// action on behalf of a given project, for example to publish Pub/Sub
-/// notifications or to retrieve security keys.
-class ServiceAccount extends $pb.GeneratedMessage {
-  factory ServiceAccount({
-    $core.String? emailAddress,
-  }) {
-    final $result = create();
-    if (emailAddress != null) {
-      $result.emailAddress = emailAddress;
-    }
-    return $result;
-  }
-  ServiceAccount._() : super();
-  factory ServiceAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ServiceAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
-
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceAccount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
-    ..aOS(1, _omitFieldNames ? '' : 'emailAddress')
-    ..hasRequiredFields = false
-  ;
-
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
-  ServiceAccount clone() => ServiceAccount()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ServiceAccount copyWith(void Function(ServiceAccount) updates) => super.copyWith((message) => updates(message as ServiceAccount)) as ServiceAccount;
-
-  $pb.BuilderInfo get info_ => _i;
-
-  @$core.pragma('dart2js:noInline')
-  static ServiceAccount create() => ServiceAccount._();
-  ServiceAccount createEmptyInstance() => create();
-  static $pb.PbList<ServiceAccount> createRepeated() => $pb.PbList<ServiceAccount>();
-  @$core.pragma('dart2js:noInline')
-  static ServiceAccount getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ServiceAccount>(create);
-  static ServiceAccount? _defaultInstance;
-
-  /// The ID of the notification.
-  @$pb.TagNumber(1)
-  $core.String get emailAddress => $_getSZ(0);
-  @$pb.TagNumber(1)
-  set emailAddress($core.String v) { $_setString(0, v); }
-  @$pb.TagNumber(1)
-  $core.bool hasEmailAddress() => $_has(0);
-  @$pb.TagNumber(1)
-  void clearEmailAddress() => clearField(1);
-}
-
 /// The owner of a specific resource.
 class Owner extends $pb.GeneratedMessage {
   factory Owner({
@@ -8791,6 +8332,471 @@ class ContentRange extends $pb.GeneratedMessage {
   $core.bool hasCompleteLength() => $_has(2);
   @$pb.TagNumber(3)
   void clearCompleteLength() => clearField(3);
+}
+
+/// Request message for DeleteNotificationConfig.
+class DeleteNotificationConfigRequest extends $pb.GeneratedMessage {
+  factory DeleteNotificationConfigRequest({
+    $core.String? name,
+  }) {
+    final $result = create();
+    if (name != null) {
+      $result.name = name;
+    }
+    return $result;
+  }
+  DeleteNotificationConfigRequest._() : super();
+  factory DeleteNotificationConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DeleteNotificationConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteNotificationConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DeleteNotificationConfigRequest clone() => DeleteNotificationConfigRequest()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DeleteNotificationConfigRequest copyWith(void Function(DeleteNotificationConfigRequest) updates) => super.copyWith((message) => updates(message as DeleteNotificationConfigRequest)) as DeleteNotificationConfigRequest;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DeleteNotificationConfigRequest create() => DeleteNotificationConfigRequest._();
+  DeleteNotificationConfigRequest createEmptyInstance() => create();
+  static $pb.PbList<DeleteNotificationConfigRequest> createRepeated() => $pb.PbList<DeleteNotificationConfigRequest>();
+  @$core.pragma('dart2js:noInline')
+  static DeleteNotificationConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteNotificationConfigRequest>(create);
+  static DeleteNotificationConfigRequest? _defaultInstance;
+
+  /// Required. The parent bucket of the NotificationConfig.
+  @$pb.TagNumber(1)
+  $core.String get name => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set name($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasName() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearName() => clearField(1);
+}
+
+/// Request message for GetNotificationConfig.
+class GetNotificationConfigRequest extends $pb.GeneratedMessage {
+  factory GetNotificationConfigRequest({
+    $core.String? name,
+  }) {
+    final $result = create();
+    if (name != null) {
+      $result.name = name;
+    }
+    return $result;
+  }
+  GetNotificationConfigRequest._() : super();
+  factory GetNotificationConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GetNotificationConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetNotificationConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  GetNotificationConfigRequest clone() => GetNotificationConfigRequest()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GetNotificationConfigRequest copyWith(void Function(GetNotificationConfigRequest) updates) => super.copyWith((message) => updates(message as GetNotificationConfigRequest)) as GetNotificationConfigRequest;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static GetNotificationConfigRequest create() => GetNotificationConfigRequest._();
+  GetNotificationConfigRequest createEmptyInstance() => create();
+  static $pb.PbList<GetNotificationConfigRequest> createRepeated() => $pb.PbList<GetNotificationConfigRequest>();
+  @$core.pragma('dart2js:noInline')
+  static GetNotificationConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetNotificationConfigRequest>(create);
+  static GetNotificationConfigRequest? _defaultInstance;
+
+  /// Required. The parent bucket of the NotificationConfig.
+  /// Format:
+  /// `projects/{project}/buckets/{bucket}/notificationConfigs/{notificationConfig}`
+  @$pb.TagNumber(1)
+  $core.String get name => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set name($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasName() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearName() => clearField(1);
+}
+
+/// Request message for CreateNotificationConfig.
+class CreateNotificationConfigRequest extends $pb.GeneratedMessage {
+  factory CreateNotificationConfigRequest({
+    $core.String? parent,
+    NotificationConfig? notificationConfig,
+  }) {
+    final $result = create();
+    if (parent != null) {
+      $result.parent = parent;
+    }
+    if (notificationConfig != null) {
+      $result.notificationConfig = notificationConfig;
+    }
+    return $result;
+  }
+  CreateNotificationConfigRequest._() : super();
+  factory CreateNotificationConfigRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory CreateNotificationConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateNotificationConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'parent')
+    ..aOM<NotificationConfig>(2, _omitFieldNames ? '' : 'notificationConfig', subBuilder: NotificationConfig.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  CreateNotificationConfigRequest clone() => CreateNotificationConfigRequest()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  CreateNotificationConfigRequest copyWith(void Function(CreateNotificationConfigRequest) updates) => super.copyWith((message) => updates(message as CreateNotificationConfigRequest)) as CreateNotificationConfigRequest;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static CreateNotificationConfigRequest create() => CreateNotificationConfigRequest._();
+  CreateNotificationConfigRequest createEmptyInstance() => create();
+  static $pb.PbList<CreateNotificationConfigRequest> createRepeated() => $pb.PbList<CreateNotificationConfigRequest>();
+  @$core.pragma('dart2js:noInline')
+  static CreateNotificationConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateNotificationConfigRequest>(create);
+  static CreateNotificationConfigRequest? _defaultInstance;
+
+  /// Required. The bucket to which this NotificationConfig belongs.
+  @$pb.TagNumber(1)
+  $core.String get parent => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set parent($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasParent() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearParent() => clearField(1);
+
+  /// Required. Properties of the NotificationConfig to be inserted.
+  @$pb.TagNumber(2)
+  NotificationConfig get notificationConfig => $_getN(1);
+  @$pb.TagNumber(2)
+  set notificationConfig(NotificationConfig v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasNotificationConfig() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearNotificationConfig() => clearField(2);
+  @$pb.TagNumber(2)
+  NotificationConfig ensureNotificationConfig() => $_ensure(1);
+}
+
+/// Request message for ListNotifications.
+class ListNotificationConfigsRequest extends $pb.GeneratedMessage {
+  factory ListNotificationConfigsRequest({
+    $core.String? parent,
+    $core.int? pageSize,
+    $core.String? pageToken,
+  }) {
+    final $result = create();
+    if (parent != null) {
+      $result.parent = parent;
+    }
+    if (pageSize != null) {
+      $result.pageSize = pageSize;
+    }
+    if (pageToken != null) {
+      $result.pageToken = pageToken;
+    }
+    return $result;
+  }
+  ListNotificationConfigsRequest._() : super();
+  factory ListNotificationConfigsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ListNotificationConfigsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationConfigsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'parent')
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
+    ..aOS(3, _omitFieldNames ? '' : 'pageToken')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  ListNotificationConfigsRequest clone() => ListNotificationConfigsRequest()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ListNotificationConfigsRequest copyWith(void Function(ListNotificationConfigsRequest) updates) => super.copyWith((message) => updates(message as ListNotificationConfigsRequest)) as ListNotificationConfigsRequest;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static ListNotificationConfigsRequest create() => ListNotificationConfigsRequest._();
+  ListNotificationConfigsRequest createEmptyInstance() => create();
+  static $pb.PbList<ListNotificationConfigsRequest> createRepeated() => $pb.PbList<ListNotificationConfigsRequest>();
+  @$core.pragma('dart2js:noInline')
+  static ListNotificationConfigsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNotificationConfigsRequest>(create);
+  static ListNotificationConfigsRequest? _defaultInstance;
+
+  /// Required. Name of a Google Cloud Storage bucket.
+  @$pb.TagNumber(1)
+  $core.String get parent => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set parent($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasParent() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearParent() => clearField(1);
+
+  /// Optional. The maximum number of NotificationConfigs to return. The service
+  /// may return fewer than this value. The default value is 100. Specifying a
+  /// value above 100 will result in a page_size of 100.
+  @$pb.TagNumber(2)
+  $core.int get pageSize => $_getIZ(1);
+  @$pb.TagNumber(2)
+  set pageSize($core.int v) { $_setSignedInt32(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasPageSize() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearPageSize() => clearField(2);
+
+  ///  Optional. A page token, received from a previous `ListNotificationConfigs`
+  ///  call. Provide this to retrieve the subsequent page.
+  ///
+  ///  When paginating, all other parameters provided to `ListNotificationConfigs`
+  ///  must match the call that provided the page token.
+  @$pb.TagNumber(3)
+  $core.String get pageToken => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set pageToken($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasPageToken() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPageToken() => clearField(3);
+}
+
+/// The result of a call to ListNotificationConfigs
+class ListNotificationConfigsResponse extends $pb.GeneratedMessage {
+  factory ListNotificationConfigsResponse({
+    $core.Iterable<NotificationConfig>? notificationConfigs,
+    $core.String? nextPageToken,
+  }) {
+    final $result = create();
+    if (notificationConfigs != null) {
+      $result.notificationConfigs.addAll(notificationConfigs);
+    }
+    if (nextPageToken != null) {
+      $result.nextPageToken = nextPageToken;
+    }
+    return $result;
+  }
+  ListNotificationConfigsResponse._() : super();
+  factory ListNotificationConfigsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ListNotificationConfigsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationConfigsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
+    ..pc<NotificationConfig>(1, _omitFieldNames ? '' : 'notificationConfigs', $pb.PbFieldType.PM, subBuilder: NotificationConfig.create)
+    ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  ListNotificationConfigsResponse clone() => ListNotificationConfigsResponse()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ListNotificationConfigsResponse copyWith(void Function(ListNotificationConfigsResponse) updates) => super.copyWith((message) => updates(message as ListNotificationConfigsResponse)) as ListNotificationConfigsResponse;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static ListNotificationConfigsResponse create() => ListNotificationConfigsResponse._();
+  ListNotificationConfigsResponse createEmptyInstance() => create();
+  static $pb.PbList<ListNotificationConfigsResponse> createRepeated() => $pb.PbList<ListNotificationConfigsResponse>();
+  @$core.pragma('dart2js:noInline')
+  static ListNotificationConfigsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListNotificationConfigsResponse>(create);
+  static ListNotificationConfigsResponse? _defaultInstance;
+
+  /// The list of items.
+  @$pb.TagNumber(1)
+  $core.List<NotificationConfig> get notificationConfigs => $_getList(0);
+
+  /// A token, which can be sent as `page_token` to retrieve the next page.
+  /// If this field is omitted, there are no subsequent pages.
+  @$pb.TagNumber(2)
+  $core.String get nextPageToken => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set nextPageToken($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasNextPageToken() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearNextPageToken() => clearField(2);
+}
+
+/// A directive to publish Pub/Sub notifications upon changes to a bucket.
+class NotificationConfig extends $pb.GeneratedMessage {
+  factory NotificationConfig({
+    $core.String? name,
+    $core.String? topic,
+    $core.Iterable<$core.String>? eventTypes,
+    $core.Map<$core.String, $core.String>? customAttributes,
+    $core.String? objectNamePrefix,
+    $core.String? payloadFormat,
+    $core.String? etag,
+  }) {
+    final $result = create();
+    if (name != null) {
+      $result.name = name;
+    }
+    if (topic != null) {
+      $result.topic = topic;
+    }
+    if (eventTypes != null) {
+      $result.eventTypes.addAll(eventTypes);
+    }
+    if (customAttributes != null) {
+      $result.customAttributes.addAll(customAttributes);
+    }
+    if (objectNamePrefix != null) {
+      $result.objectNamePrefix = objectNamePrefix;
+    }
+    if (payloadFormat != null) {
+      $result.payloadFormat = payloadFormat;
+    }
+    if (etag != null) {
+      $result.etag = etag;
+    }
+    return $result;
+  }
+  NotificationConfig._() : super();
+  factory NotificationConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory NotificationConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NotificationConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v2'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'name')
+    ..aOS(2, _omitFieldNames ? '' : 'topic')
+    ..pPS(3, _omitFieldNames ? '' : 'eventTypes')
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'customAttributes', entryClassName: 'NotificationConfig.CustomAttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.storage.v2'))
+    ..aOS(5, _omitFieldNames ? '' : 'objectNamePrefix')
+    ..aOS(6, _omitFieldNames ? '' : 'payloadFormat')
+    ..aOS(7, _omitFieldNames ? '' : 'etag')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  NotificationConfig clone() => NotificationConfig()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  NotificationConfig copyWith(void Function(NotificationConfig) updates) => super.copyWith((message) => updates(message as NotificationConfig)) as NotificationConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static NotificationConfig create() => NotificationConfig._();
+  NotificationConfig createEmptyInstance() => create();
+  static $pb.PbList<NotificationConfig> createRepeated() => $pb.PbList<NotificationConfig>();
+  @$core.pragma('dart2js:noInline')
+  static NotificationConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<NotificationConfig>(create);
+  static NotificationConfig? _defaultInstance;
+
+  /// Required. The resource name of this NotificationConfig.
+  /// Format:
+  /// `projects/{project}/buckets/{bucket}/notificationConfigs/{notificationConfig}`
+  /// The `{project}` portion may be `_` for globally unique buckets.
+  @$pb.TagNumber(1)
+  $core.String get name => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set name($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasName() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearName() => clearField(1);
+
+  /// Required. The Pub/Sub topic to which this subscription publishes. Formatted
+  /// as:
+  /// '//pubsub.googleapis.com/projects/{project-identifier}/topics/{my-topic}'
+  @$pb.TagNumber(2)
+  $core.String get topic => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set topic($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasTopic() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearTopic() => clearField(2);
+
+  /// Optional. If present, only send notifications about listed event types. If
+  /// empty, sent notifications for all event types.
+  @$pb.TagNumber(3)
+  $core.List<$core.String> get eventTypes => $_getList(2);
+
+  /// Optional. A list of additional attributes to attach to each Pub/Sub
+  /// message published for this NotificationConfig.
+  @$pb.TagNumber(4)
+  $core.Map<$core.String, $core.String> get customAttributes => $_getMap(3);
+
+  /// Optional. If present, only apply this NotificationConfig to object names
+  /// that begin with this prefix.
+  @$pb.TagNumber(5)
+  $core.String get objectNamePrefix => $_getSZ(4);
+  @$pb.TagNumber(5)
+  set objectNamePrefix($core.String v) { $_setString(4, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasObjectNamePrefix() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearObjectNamePrefix() => clearField(5);
+
+  /// Required. The desired content of the Payload.
+  @$pb.TagNumber(6)
+  $core.String get payloadFormat => $_getSZ(5);
+  @$pb.TagNumber(6)
+  set payloadFormat($core.String v) { $_setString(5, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasPayloadFormat() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearPayloadFormat() => clearField(6);
+
+  /// Optional. The etag of the NotificationConfig.
+  /// If included in the metadata of GetNotificationConfigRequest, the operation
+  /// will only be performed if the etag matches that of the NotificationConfig.
+  @$pb.TagNumber(7)
+  $core.String get etag => $_getSZ(6);
+  @$pb.TagNumber(7)
+  set etag($core.String v) { $_setString(6, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasEtag() => $_has(6);
+  @$pb.TagNumber(7)
+  void clearEtag() => clearField(7);
 }
 
 

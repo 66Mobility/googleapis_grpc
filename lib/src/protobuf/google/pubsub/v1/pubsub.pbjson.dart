@@ -395,10 +395,20 @@ const Subscription$json = {
     {'1': 'enable_exactly_once_delivery', '3': 16, '4': 1, '5': 8, '8': {}, '10': 'enableExactlyOnceDelivery'},
     {'1': 'topic_message_retention_duration', '3': 17, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '8': {}, '10': 'topicMessageRetentionDuration'},
     {'1': 'state', '3': 19, '4': 1, '5': 14, '6': '.google.pubsub.v1.Subscription.State', '8': {}, '10': 'state'},
+    {'1': 'analytics_hub_subscription_info', '3': 23, '4': 1, '5': 11, '6': '.google.pubsub.v1.Subscription.AnalyticsHubSubscriptionInfo', '8': {}, '10': 'analyticsHubSubscriptionInfo'},
   ],
-  '3': [Subscription_LabelsEntry$json],
+  '3': [Subscription_AnalyticsHubSubscriptionInfo$json, Subscription_LabelsEntry$json],
   '4': [Subscription_State$json],
   '7': {},
+};
+
+@$core.Deprecated('Use subscriptionDescriptor instead')
+const Subscription_AnalyticsHubSubscriptionInfo$json = {
+  '1': 'AnalyticsHubSubscriptionInfo',
+  '2': [
+    {'1': 'listing', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'listing'},
+    {'1': 'subscription', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'subscription'},
+  ],
 };
 
 @$core.Deprecated('Use subscriptionDescriptor instead')
@@ -445,10 +455,15 @@ final $typed_data.Uint8List subscriptionDescriptor = $convert.base64Decode(
     'kSZwogdG9waWNfbWVzc2FnZV9yZXRlbnRpb25fZHVyYXRpb24YESABKAsyGS5nb29nbGUucHJv'
     'dG9idWYuRHVyYXRpb25CA+BBA1IddG9waWNNZXNzYWdlUmV0ZW50aW9uRHVyYXRpb24SPwoFc3'
     'RhdGUYEyABKA4yJC5nb29nbGUucHVic3ViLnYxLlN1YnNjcmlwdGlvbi5TdGF0ZUID4EEDUgVz'
-    'dGF0ZRo5CgtMYWJlbHNFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEoCVIFdm'
-    'FsdWU6AjgBIj4KBVN0YXRlEhUKEVNUQVRFX1VOU1BFQ0lGSUVEEAASCgoGQUNUSVZFEAESEgoO'
-    'UkVTT1VSQ0VfRVJST1IQAjpY6kFVCiJwdWJzdWIuZ29vZ2xlYXBpcy5jb20vU3Vic2NyaXB0aW'
-    '9uEi9wcm9qZWN0cy97cHJvamVjdH0vc3Vic2NyaXB0aW9ucy97c3Vic2NyaXB0aW9ufQ==');
+    'dGF0ZRKHAQofYW5hbHl0aWNzX2h1Yl9zdWJzY3JpcHRpb25faW5mbxgXIAEoCzI7Lmdvb2dsZS'
+    '5wdWJzdWIudjEuU3Vic2NyaXB0aW9uLkFuYWx5dGljc0h1YlN1YnNjcmlwdGlvbkluZm9CA+BB'
+    'A1IcYW5hbHl0aWNzSHViU3Vic2NyaXB0aW9uSW5mbxpmChxBbmFseXRpY3NIdWJTdWJzY3JpcH'
+    'Rpb25JbmZvEh0KB2xpc3RpbmcYASABKAlCA+BBAVIHbGlzdGluZxInCgxzdWJzY3JpcHRpb24Y'
+    'AiABKAlCA+BBAVIMc3Vic2NyaXB0aW9uGjkKC0xhYmVsc0VudHJ5EhAKA2tleRgBIAEoCVIDa2'
+    'V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZToCOAEiPgoFU3RhdGUSFQoRU1RBVEVfVU5TUEVDSUZJ'
+    'RUQQABIKCgZBQ1RJVkUQARISCg5SRVNPVVJDRV9FUlJPUhACOljqQVUKInB1YnN1Yi5nb29nbG'
+    'VhcGlzLmNvbS9TdWJzY3JpcHRpb24SL3Byb2plY3RzL3twcm9qZWN0fS9zdWJzY3JpcHRpb25z'
+    'L3tzdWJzY3JpcHRpb259');
 
 @$core.Deprecated('Use retryPolicyDescriptor instead')
 const RetryPolicy$json = {

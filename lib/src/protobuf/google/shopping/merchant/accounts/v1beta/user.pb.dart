@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/field_mask.pb.dart' as $330;
-import 'accessright.pbenum.dart' as $531;
+import 'accessright.pbenum.dart' as $536;
 import 'user.pbenum.dart';
 
 export 'user.pbenum.dart';
@@ -24,7 +24,7 @@ class User extends $pb.GeneratedMessage {
   factory User({
     $core.String? name,
     User_State? state,
-    $core.Iterable<$531.AccessRight>? accessRights,
+    $core.Iterable<$536.AccessRight>? accessRights,
   }) {
     final $result = create();
     if (name != null) {
@@ -45,7 +45,7 @@ class User extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'User', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<User_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: User_State.STATE_UNSPECIFIED, valueOf: User_State.valueOf, enumValues: User_State.values)
-    ..pc<$531.AccessRight>(4, _omitFieldNames ? '' : 'accessRights', $pb.PbFieldType.KE, valueOf: $531.AccessRight.valueOf, enumValues: $531.AccessRight.values, defaultEnumValue: $531.AccessRight.ACCESS_RIGHT_UNSPECIFIED)
+    ..pc<$536.AccessRight>(4, _omitFieldNames ? '' : 'accessRights', $pb.PbFieldType.KE, valueOf: $536.AccessRight.valueOf, enumValues: $536.AccessRight.values, defaultEnumValue: $536.AccessRight.ACCESS_RIGHT_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -98,7 +98,7 @@ class User extends $pb.GeneratedMessage {
   /// rights](https://support.google.com/merchants/answer/12160472?sjid=6789834943175119429-EU#accesstypes)
   /// the user has.
   @$pb.TagNumber(4)
-  $core.List<$531.AccessRight> get accessRights => $_getList(2);
+  $core.List<$536.AccessRight> get accessRights => $_getList(2);
 }
 
 /// Request message for the `GetUser` method.

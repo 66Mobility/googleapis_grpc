@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $261;
-import 'metrics.pb.dart' as $505;
+import 'metrics.pb.dart' as $510;
 import 'xychart.pbenum.dart';
 
 export 'xychart.pbenum.dart';
@@ -22,7 +22,7 @@ export 'xychart.pbenum.dart';
 /// Groups a time series query definition with charting options.
 class XyChart_DataSet extends $pb.GeneratedMessage {
   factory XyChart_DataSet({
-    $505.TimeSeriesQuery? timeSeriesQuery,
+    $510.TimeSeriesQuery? timeSeriesQuery,
     XyChart_DataSet_PlotType? plotType,
     $core.String? legendTemplate,
     $261.Duration? minAlignmentPeriod,
@@ -51,7 +51,7 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   factory XyChart_DataSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'XyChart.DataSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$505.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $505.TimeSeriesQuery.create)
+    ..aOM<$510.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $510.TimeSeriesQuery.create)
     ..e<XyChart_DataSet_PlotType>(2, _omitFieldNames ? '' : 'plotType', $pb.PbFieldType.OE, defaultOrMaker: XyChart_DataSet_PlotType.PLOT_TYPE_UNSPECIFIED, valueOf: XyChart_DataSet_PlotType.valueOf, enumValues: XyChart_DataSet_PlotType.values)
     ..aOS(3, _omitFieldNames ? '' : 'legendTemplate')
     ..aOM<$261.Duration>(4, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $261.Duration.create)
@@ -83,15 +83,15 @@ class XyChart_DataSet extends $pb.GeneratedMessage {
   /// Required. Fields for querying time series data from the
   /// Stackdriver metrics API.
   @$pb.TagNumber(1)
-  $505.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $510.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($505.TimeSeriesQuery v) { setField(1, v); }
+  set timeSeriesQuery($510.TimeSeriesQuery v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeSeriesQuery() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $505.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $510.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// How this data should be plotted on the chart.
   @$pb.TagNumber(2)
@@ -214,7 +214,7 @@ class XyChart extends $pb.GeneratedMessage {
   factory XyChart({
     $core.Iterable<XyChart_DataSet>? dataSets,
     $261.Duration? timeshiftDuration,
-    $core.Iterable<$505.Threshold>? thresholds,
+    $core.Iterable<$510.Threshold>? thresholds,
     XyChart_Axis? xAxis,
     XyChart_Axis? yAxis,
     ChartOptions? chartOptions,
@@ -251,7 +251,7 @@ class XyChart extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'XyChart', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
     ..pc<XyChart_DataSet>(1, _omitFieldNames ? '' : 'dataSets', $pb.PbFieldType.PM, subBuilder: XyChart_DataSet.create)
     ..aOM<$261.Duration>(4, _omitFieldNames ? '' : 'timeshiftDuration', subBuilder: $261.Duration.create)
-    ..pc<$505.Threshold>(5, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM, subBuilder: $505.Threshold.create)
+    ..pc<$510.Threshold>(5, _omitFieldNames ? '' : 'thresholds', $pb.PbFieldType.PM, subBuilder: $510.Threshold.create)
     ..aOM<XyChart_Axis>(6, _omitFieldNames ? '' : 'xAxis', subBuilder: XyChart_Axis.create)
     ..aOM<XyChart_Axis>(7, _omitFieldNames ? '' : 'yAxis', subBuilder: XyChart_Axis.create)
     ..aOM<ChartOptions>(8, _omitFieldNames ? '' : 'chartOptions', subBuilder: ChartOptions.create)
@@ -302,7 +302,7 @@ class XyChart extends $pb.GeneratedMessage {
 
   /// Threshold lines drawn horizontally across the chart.
   @$pb.TagNumber(5)
-  $core.List<$505.Threshold> get thresholds => $_getList(2);
+  $core.List<$510.Threshold> get thresholds => $_getList(2);
 
   /// The properties applied to the x-axis.
   @$pb.TagNumber(6)

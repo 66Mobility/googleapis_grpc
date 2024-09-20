@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $261;
-import '../../../type/interval.pb.dart' as $503;
+import '../../../type/interval.pb.dart' as $508;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -201,7 +201,7 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
     PickTimeSeriesFilter_Method? rankingMethod,
     $core.int? numTimeSeries,
     PickTimeSeriesFilter_Direction? direction,
-    $503.Interval? interval,
+    $508.Interval? interval,
   }) {
     final $result = create();
     if (rankingMethod != null) {
@@ -226,7 +226,7 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
     ..e<PickTimeSeriesFilter_Method>(1, _omitFieldNames ? '' : 'rankingMethod', $pb.PbFieldType.OE, defaultOrMaker: PickTimeSeriesFilter_Method.METHOD_UNSPECIFIED, valueOf: PickTimeSeriesFilter_Method.valueOf, enumValues: PickTimeSeriesFilter_Method.values)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'numTimeSeries', $pb.PbFieldType.O3)
     ..e<PickTimeSeriesFilter_Direction>(3, _omitFieldNames ? '' : 'direction', $pb.PbFieldType.OE, defaultOrMaker: PickTimeSeriesFilter_Direction.DIRECTION_UNSPECIFIED, valueOf: PickTimeSeriesFilter_Direction.valueOf, enumValues: PickTimeSeriesFilter_Direction.values)
-    ..aOM<$503.Interval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $503.Interval.create)
+    ..aOM<$508.Interval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $508.Interval.create)
     ..hasRequiredFields = false
   ;
 
@@ -285,15 +285,15 @@ class PickTimeSeriesFilter extends $pb.GeneratedMessage {
 
   /// Select the top N streams/time series within this time interval
   @$pb.TagNumber(4)
-  $503.Interval get interval => $_getN(3);
+  $508.Interval get interval => $_getN(3);
   @$pb.TagNumber(4)
-  set interval($503.Interval v) { setField(4, v); }
+  set interval($508.Interval v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInterval() => $_has(3);
   @$pb.TagNumber(4)
   void clearInterval() => clearField(4);
   @$pb.TagNumber(4)
-  $503.Interval ensureInterval() => $_ensure(3);
+  $508.Interval ensureInterval() => $_ensure(3);
 }
 
 /// A filter that ranks streams based on their statistical relation to other

@@ -15,28 +15,28 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/timestamp.pb.dart' as $299;
 import 'compute_routes_request.pbenum.dart';
-import 'polyline.pbenum.dart' as $475;
-import 'toll_passes.pbenum.dart' as $476;
-import 'vehicle_emission_type.pbenum.dart' as $477;
-import 'waypoint.pb.dart' as $474;
+import 'polyline.pbenum.dart' as $480;
+import 'toll_passes.pbenum.dart' as $481;
+import 'vehicle_emission_type.pbenum.dart' as $482;
+import 'waypoint.pb.dart' as $479;
 
 export 'compute_routes_request.pbenum.dart';
 
 /// ComputeRoutes request message.
 class ComputeRoutesRequest extends $pb.GeneratedMessage {
   factory ComputeRoutesRequest({
-    $474.Waypoint? origin,
-    $474.Waypoint? destination,
-    $core.Iterable<$474.Waypoint>? intermediates,
+    $479.Waypoint? origin,
+    $479.Waypoint? destination,
+    $core.Iterable<$479.Waypoint>? intermediates,
     RouteTravelMode? travelMode,
     RoutingPreference? routingPreference,
-    $475.PolylineQuality? polylineQuality,
+    $480.PolylineQuality? polylineQuality,
     $299.Timestamp? departureTime,
     $core.bool? computeAlternativeRoutes,
     RouteModifiers? routeModifiers,
     $core.String? languageCode,
     Units? units,
-    $475.PolylineEncoding? polylineEncoding,
+    $480.PolylineEncoding? polylineEncoding,
     $core.bool? optimizeWaypointOrder,
   }) {
     final $result = create();
@@ -86,18 +86,18 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
   factory ComputeRoutesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeRoutesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..aOM<$474.Waypoint>(1, _omitFieldNames ? '' : 'origin', subBuilder: $474.Waypoint.create)
-    ..aOM<$474.Waypoint>(2, _omitFieldNames ? '' : 'destination', subBuilder: $474.Waypoint.create)
-    ..pc<$474.Waypoint>(3, _omitFieldNames ? '' : 'intermediates', $pb.PbFieldType.PM, subBuilder: $474.Waypoint.create)
+    ..aOM<$479.Waypoint>(1, _omitFieldNames ? '' : 'origin', subBuilder: $479.Waypoint.create)
+    ..aOM<$479.Waypoint>(2, _omitFieldNames ? '' : 'destination', subBuilder: $479.Waypoint.create)
+    ..pc<$479.Waypoint>(3, _omitFieldNames ? '' : 'intermediates', $pb.PbFieldType.PM, subBuilder: $479.Waypoint.create)
     ..e<RouteTravelMode>(4, _omitFieldNames ? '' : 'travelMode', $pb.PbFieldType.OE, defaultOrMaker: RouteTravelMode.TRAVEL_MODE_UNSPECIFIED, valueOf: RouteTravelMode.valueOf, enumValues: RouteTravelMode.values)
     ..e<RoutingPreference>(5, _omitFieldNames ? '' : 'routingPreference', $pb.PbFieldType.OE, defaultOrMaker: RoutingPreference.ROUTING_PREFERENCE_UNSPECIFIED, valueOf: RoutingPreference.valueOf, enumValues: RoutingPreference.values)
-    ..e<$475.PolylineQuality>(6, _omitFieldNames ? '' : 'polylineQuality', $pb.PbFieldType.OE, defaultOrMaker: $475.PolylineQuality.POLYLINE_QUALITY_UNSPECIFIED, valueOf: $475.PolylineQuality.valueOf, enumValues: $475.PolylineQuality.values)
+    ..e<$480.PolylineQuality>(6, _omitFieldNames ? '' : 'polylineQuality', $pb.PbFieldType.OE, defaultOrMaker: $480.PolylineQuality.POLYLINE_QUALITY_UNSPECIFIED, valueOf: $480.PolylineQuality.valueOf, enumValues: $480.PolylineQuality.values)
     ..aOM<$299.Timestamp>(7, _omitFieldNames ? '' : 'departureTime', subBuilder: $299.Timestamp.create)
     ..aOB(8, _omitFieldNames ? '' : 'computeAlternativeRoutes')
     ..aOM<RouteModifiers>(9, _omitFieldNames ? '' : 'routeModifiers', subBuilder: RouteModifiers.create)
     ..aOS(10, _omitFieldNames ? '' : 'languageCode')
     ..e<Units>(11, _omitFieldNames ? '' : 'units', $pb.PbFieldType.OE, defaultOrMaker: Units.UNITS_UNSPECIFIED, valueOf: Units.valueOf, enumValues: Units.values)
-    ..e<$475.PolylineEncoding>(12, _omitFieldNames ? '' : 'polylineEncoding', $pb.PbFieldType.OE, defaultOrMaker: $475.PolylineEncoding.POLYLINE_ENCODING_UNSPECIFIED, valueOf: $475.PolylineEncoding.valueOf, enumValues: $475.PolylineEncoding.values)
+    ..e<$480.PolylineEncoding>(12, _omitFieldNames ? '' : 'polylineEncoding', $pb.PbFieldType.OE, defaultOrMaker: $480.PolylineEncoding.POLYLINE_ENCODING_UNSPECIFIED, valueOf: $480.PolylineEncoding.valueOf, enumValues: $480.PolylineEncoding.values)
     ..aOB(13, _omitFieldNames ? '' : 'optimizeWaypointOrder')
     ..hasRequiredFields = false
   ;
@@ -125,33 +125,33 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
 
   /// Required. Origin waypoint.
   @$pb.TagNumber(1)
-  $474.Waypoint get origin => $_getN(0);
+  $479.Waypoint get origin => $_getN(0);
   @$pb.TagNumber(1)
-  set origin($474.Waypoint v) { setField(1, v); }
+  set origin($479.Waypoint v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOrigin() => $_has(0);
   @$pb.TagNumber(1)
   void clearOrigin() => clearField(1);
   @$pb.TagNumber(1)
-  $474.Waypoint ensureOrigin() => $_ensure(0);
+  $479.Waypoint ensureOrigin() => $_ensure(0);
 
   /// Required. Destination waypoint.
   @$pb.TagNumber(2)
-  $474.Waypoint get destination => $_getN(1);
+  $479.Waypoint get destination => $_getN(1);
   @$pb.TagNumber(2)
-  set destination($474.Waypoint v) { setField(2, v); }
+  set destination($479.Waypoint v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDestination() => $_has(1);
   @$pb.TagNumber(2)
   void clearDestination() => clearField(2);
   @$pb.TagNumber(2)
-  $474.Waypoint ensureDestination() => $_ensure(1);
+  $479.Waypoint ensureDestination() => $_ensure(1);
 
   /// Optional. A set of waypoints along the route (excluding terminal points),
   /// for either stopping at or passing by. Up to 25 intermediate waypoints are
   /// supported.
   @$pb.TagNumber(3)
-  $core.List<$474.Waypoint> get intermediates => $_getList(2);
+  $core.List<$479.Waypoint> get intermediates => $_getList(2);
 
   /// Optional. Specifies the mode of transportation.
   @$pb.TagNumber(4)
@@ -181,9 +181,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
 
   /// Optional. Specifies your preference for the quality of the polyline.
   @$pb.TagNumber(6)
-  $475.PolylineQuality get polylineQuality => $_getN(5);
+  $480.PolylineQuality get polylineQuality => $_getN(5);
   @$pb.TagNumber(6)
-  set polylineQuality($475.PolylineQuality v) { setField(6, v); }
+  set polylineQuality($480.PolylineQuality v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasPolylineQuality() => $_has(5);
   @$pb.TagNumber(6)
@@ -257,9 +257,9 @@ class ComputeRoutesRequest extends $pb.GeneratedMessage {
 
   /// Optional. Specifies the preferred encoding for the polyline.
   @$pb.TagNumber(12)
-  $475.PolylineEncoding get polylineEncoding => $_getN(11);
+  $480.PolylineEncoding get polylineEncoding => $_getN(11);
   @$pb.TagNumber(12)
-  set polylineEncoding($475.PolylineEncoding v) { setField(12, v); }
+  set polylineEncoding($480.PolylineEncoding v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasPolylineEncoding() => $_has(11);
   @$pb.TagNumber(12)
@@ -292,7 +292,7 @@ class RouteModifiers extends $pb.GeneratedMessage {
     $core.bool? avoidFerries,
     $core.bool? avoidIndoor,
     VehicleInfo? vehicleInfo,
-    $core.Iterable<$476.TollPass>? tollPasses,
+    $core.Iterable<$481.TollPass>? tollPasses,
   }) {
     final $result = create();
     if (avoidTolls != null) {
@@ -325,7 +325,7 @@ class RouteModifiers extends $pb.GeneratedMessage {
     ..aOB(3, _omitFieldNames ? '' : 'avoidFerries')
     ..aOB(4, _omitFieldNames ? '' : 'avoidIndoor')
     ..aOM<VehicleInfo>(5, _omitFieldNames ? '' : 'vehicleInfo', subBuilder: VehicleInfo.create)
-    ..pc<$476.TollPass>(6, _omitFieldNames ? '' : 'tollPasses', $pb.PbFieldType.KE, valueOf: $476.TollPass.valueOf, enumValues: $476.TollPass.values, defaultEnumValue: $476.TollPass.TOLL_PASS_UNSPECIFIED)
+    ..pc<$481.TollPass>(6, _omitFieldNames ? '' : 'tollPasses', $pb.PbFieldType.KE, valueOf: $481.TollPass.valueOf, enumValues: $481.TollPass.values, defaultEnumValue: $481.TollPass.TOLL_PASS_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
 
@@ -416,7 +416,7 @@ class RouteModifiers extends $pb.GeneratedMessage {
   /// tries to return the cash price.
   /// Applies only to the DRIVE and TWO_WHEELER travel modes.
   @$pb.TagNumber(6)
-  $core.List<$476.TollPass> get tollPasses => $_getList(5);
+  $core.List<$481.TollPass> get tollPasses => $_getList(5);
 }
 
 /// Encapsulates the vehicle information, such as the license plate last
@@ -424,7 +424,7 @@ class RouteModifiers extends $pb.GeneratedMessage {
 class VehicleInfo extends $pb.GeneratedMessage {
   factory VehicleInfo({
     $core.String? licensePlateLastCharacter,
-    $477.VehicleEmissionType? emissionType,
+    $482.VehicleEmissionType? emissionType,
   }) {
     final $result = create();
     if (licensePlateLastCharacter != null) {
@@ -441,7 +441,7 @@ class VehicleInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'licensePlateLastCharacter')
-    ..e<$477.VehicleEmissionType>(2, _omitFieldNames ? '' : 'emissionType', $pb.PbFieldType.OE, defaultOrMaker: $477.VehicleEmissionType.VEHICLE_EMISSION_TYPE_UNSPECIFIED, valueOf: $477.VehicleEmissionType.valueOf, enumValues: $477.VehicleEmissionType.values)
+    ..e<$482.VehicleEmissionType>(2, _omitFieldNames ? '' : 'emissionType', $pb.PbFieldType.OE, defaultOrMaker: $482.VehicleEmissionType.VEHICLE_EMISSION_TYPE_UNSPECIFIED, valueOf: $482.VehicleEmissionType.valueOf, enumValues: $482.VehicleEmissionType.values)
     ..hasRequiredFields = false
   ;
 
@@ -479,9 +479,9 @@ class VehicleInfo extends $pb.GeneratedMessage {
   /// Describes the vehicle's emission type.
   /// Applies only to the DRIVE travel mode.
   @$pb.TagNumber(2)
-  $477.VehicleEmissionType get emissionType => $_getN(1);
+  $482.VehicleEmissionType get emissionType => $_getN(1);
   @$pb.TagNumber(2)
-  set emissionType($477.VehicleEmissionType v) { setField(2, v); }
+  set emissionType($482.VehicleEmissionType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEmissionType() => $_has(1);
   @$pb.TagNumber(2)

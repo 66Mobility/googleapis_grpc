@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../protobuf/struct.pb.dart' as $258;
-import 'keys.pb.dart' as $542;
+import 'keys.pb.dart' as $547;
 
 /// Arguments to [insert][google.spanner.v1.Mutation.insert], [update][google.spanner.v1.Mutation.update], [insert_or_update][google.spanner.v1.Mutation.insert_or_update], and
 /// [replace][google.spanner.v1.Mutation.replace] operations.
@@ -102,7 +102,7 @@ class Mutation_Write extends $pb.GeneratedMessage {
 class Mutation_Delete extends $pb.GeneratedMessage {
   factory Mutation_Delete({
     $core.String? table,
-    $542.KeySet? keySet,
+    $547.KeySet? keySet,
   }) {
     final $result = create();
     if (table != null) {
@@ -119,7 +119,7 @@ class Mutation_Delete extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Mutation.Delete', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'table')
-    ..aOM<$542.KeySet>(2, _omitFieldNames ? '' : 'keySet', subBuilder: $542.KeySet.create)
+    ..aOM<$547.KeySet>(2, _omitFieldNames ? '' : 'keySet', subBuilder: $547.KeySet.create)
     ..hasRequiredFields = false
   ;
 
@@ -161,15 +161,15 @@ class Mutation_Delete extends $pb.GeneratedMessage {
   /// Delete is idempotent. The transaction will succeed even if some or all
   /// rows do not exist.
   @$pb.TagNumber(2)
-  $542.KeySet get keySet => $_getN(1);
+  $547.KeySet get keySet => $_getN(1);
   @$pb.TagNumber(2)
-  set keySet($542.KeySet v) { setField(2, v); }
+  set keySet($547.KeySet v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasKeySet() => $_has(1);
   @$pb.TagNumber(2)
   void clearKeySet() => clearField(2);
   @$pb.TagNumber(2)
-  $542.KeySet ensureKeySet() => $_ensure(1);
+  $547.KeySet ensureKeySet() => $_ensure(1);
 }
 
 enum Mutation_Operation {

@@ -15,7 +15,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../google/protobuf/timestamp.pb.dart' as $299;
 import '../../google/rpc/status.pb.dart' as $319;
-import 'common.pbenum.dart' as $547;
+import 'common.pbenum.dart' as $552;
 import 'discovery.pbenum.dart';
 
 export 'discovery.pbenum.dart';
@@ -25,7 +25,7 @@ export 'discovery.pbenum.dart';
 /// consumer's project at the start of analysis.
 class DiscoveryNote extends $pb.GeneratedMessage {
   factory DiscoveryNote({
-    $547.NoteKind? analysisKind,
+    $552.NoteKind? analysisKind,
   }) {
     final $result = create();
     if (analysisKind != null) {
@@ -38,7 +38,7 @@ class DiscoveryNote extends $pb.GeneratedMessage {
   factory DiscoveryNote.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..e<$547.NoteKind>(1, _omitFieldNames ? '' : 'analysisKind', $pb.PbFieldType.OE, defaultOrMaker: $547.NoteKind.NOTE_KIND_UNSPECIFIED, valueOf: $547.NoteKind.valueOf, enumValues: $547.NoteKind.values)
+    ..e<$552.NoteKind>(1, _omitFieldNames ? '' : 'analysisKind', $pb.PbFieldType.OE, defaultOrMaker: $552.NoteKind.NOTE_KIND_UNSPECIFIED, valueOf: $552.NoteKind.valueOf, enumValues: $552.NoteKind.values)
     ..hasRequiredFields = false
   ;
 
@@ -66,9 +66,9 @@ class DiscoveryNote extends $pb.GeneratedMessage {
   /// Required. Immutable. The kind of analysis that is handled by this
   /// discovery.
   @$pb.TagNumber(1)
-  $547.NoteKind get analysisKind => $_getN(0);
+  $552.NoteKind get analysisKind => $_getN(0);
   @$pb.TagNumber(1)
-  set analysisKind($547.NoteKind v) { setField(1, v); }
+  set analysisKind($552.NoteKind v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAnalysisKind() => $_has(0);
   @$pb.TagNumber(1)

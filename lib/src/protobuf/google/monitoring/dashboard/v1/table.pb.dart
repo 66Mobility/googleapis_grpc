@@ -14,19 +14,19 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $261;
-import 'metrics.pb.dart' as $505;
+import 'metrics.pb.dart' as $510;
 import 'table.pbenum.dart';
-import 'table_display_options.pb.dart' as $506;
+import 'table_display_options.pb.dart' as $511;
 
 export 'table.pbenum.dart';
 
 /// Groups a time series query definition with table options.
 class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   factory TimeSeriesTable_TableDataSet({
-    $505.TimeSeriesQuery? timeSeriesQuery,
+    $510.TimeSeriesQuery? timeSeriesQuery,
     $core.String? tableTemplate,
     $261.Duration? minAlignmentPeriod,
-    $506.TableDisplayOptions? tableDisplayOptions,
+    $511.TableDisplayOptions? tableDisplayOptions,
   }) {
     final $result = create();
     if (timeSeriesQuery != null) {
@@ -48,10 +48,10 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   factory TimeSeriesTable_TableDataSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeriesTable.TableDataSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$505.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $505.TimeSeriesQuery.create)
+    ..aOM<$510.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $510.TimeSeriesQuery.create)
     ..aOS(2, _omitFieldNames ? '' : 'tableTemplate')
     ..aOM<$261.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $261.Duration.create)
-    ..aOM<$506.TableDisplayOptions>(4, _omitFieldNames ? '' : 'tableDisplayOptions', subBuilder: $506.TableDisplayOptions.create)
+    ..aOM<$511.TableDisplayOptions>(4, _omitFieldNames ? '' : 'tableDisplayOptions', subBuilder: $511.TableDisplayOptions.create)
     ..hasRequiredFields = false
   ;
 
@@ -79,15 +79,15 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   /// Required. Fields for querying time series data from the
   /// Stackdriver metrics API.
   @$pb.TagNumber(1)
-  $505.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $510.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($505.TimeSeriesQuery v) { setField(1, v); }
+  set timeSeriesQuery($510.TimeSeriesQuery v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeSeriesQuery() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $505.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $510.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// Optional. A template string for naming `TimeSeries` in the resulting data
   /// set. This should be a string with interpolations of the form
@@ -121,15 +121,15 @@ class TimeSeriesTable_TableDataSet extends $pb.GeneratedMessage {
   /// Optional. Table display options for configuring how the table is
   /// rendered.
   @$pb.TagNumber(4)
-  $506.TableDisplayOptions get tableDisplayOptions => $_getN(3);
+  $511.TableDisplayOptions get tableDisplayOptions => $_getN(3);
   @$pb.TagNumber(4)
-  set tableDisplayOptions($506.TableDisplayOptions v) { setField(4, v); }
+  set tableDisplayOptions($511.TableDisplayOptions v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTableDisplayOptions() => $_has(3);
   @$pb.TagNumber(4)
   void clearTableDisplayOptions() => clearField(4);
   @$pb.TagNumber(4)
-  $506.TableDisplayOptions ensureTableDisplayOptions() => $_ensure(3);
+  $511.TableDisplayOptions ensureTableDisplayOptions() => $_ensure(3);
 }
 
 /// The persistent settings for a table's columns.

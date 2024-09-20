@@ -16,8 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../../../../longrunning/operations.pb.dart' as $13;
 import '../../../../protobuf/field_mask.pb.dart' as $330;
 import '../../../../protobuf/timestamp.pb.dart' as $299;
-import 'common.pb.dart' as $541;
-import 'common.pbenum.dart' as $541;
+import 'common.pb.dart' as $546;
+import 'common.pbenum.dart' as $546;
 import 'spanner_instance_admin.pbenum.dart';
 
 export 'spanner_instance_admin.pbenum.dart';
@@ -2120,7 +2120,7 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
     $299.Timestamp? startTime,
     $299.Timestamp? cancelTime,
     $299.Timestamp? endTime,
-    $541.FulfillmentPeriod? expectedFulfillmentPeriod,
+    $546.FulfillmentPeriod? expectedFulfillmentPeriod,
   }) {
     final $result = create();
     if (instance != null) {
@@ -2149,7 +2149,7 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
     ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $299.Timestamp.create)
     ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $299.Timestamp.create)
     ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
-    ..e<$541.FulfillmentPeriod>(5, _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE, defaultOrMaker: $541.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED, valueOf: $541.FulfillmentPeriod.valueOf, enumValues: $541.FulfillmentPeriod.values)
+    ..e<$546.FulfillmentPeriod>(5, _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE, defaultOrMaker: $546.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED, valueOf: $546.FulfillmentPeriod.valueOf, enumValues: $546.FulfillmentPeriod.values)
     ..hasRequiredFields = false
   ;
 
@@ -2228,9 +2228,9 @@ class CreateInstanceMetadata extends $pb.GeneratedMessage {
 
   /// The expected fulfillment period of this create operation.
   @$pb.TagNumber(5)
-  $541.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
+  $546.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
   @$pb.TagNumber(5)
-  set expectedFulfillmentPeriod($541.FulfillmentPeriod v) { setField(5, v); }
+  set expectedFulfillmentPeriod($546.FulfillmentPeriod v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpectedFulfillmentPeriod() => $_has(4);
   @$pb.TagNumber(5)
@@ -2245,7 +2245,7 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
     $299.Timestamp? startTime,
     $299.Timestamp? cancelTime,
     $299.Timestamp? endTime,
-    $541.FulfillmentPeriod? expectedFulfillmentPeriod,
+    $546.FulfillmentPeriod? expectedFulfillmentPeriod,
   }) {
     final $result = create();
     if (instance != null) {
@@ -2274,7 +2274,7 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
     ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $299.Timestamp.create)
     ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $299.Timestamp.create)
     ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
-    ..e<$541.FulfillmentPeriod>(5, _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE, defaultOrMaker: $541.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED, valueOf: $541.FulfillmentPeriod.valueOf, enumValues: $541.FulfillmentPeriod.values)
+    ..e<$546.FulfillmentPeriod>(5, _omitFieldNames ? '' : 'expectedFulfillmentPeriod', $pb.PbFieldType.OE, defaultOrMaker: $546.FulfillmentPeriod.FULFILLMENT_PERIOD_UNSPECIFIED, valueOf: $546.FulfillmentPeriod.valueOf, enumValues: $546.FulfillmentPeriod.values)
     ..hasRequiredFields = false
   ;
 
@@ -2353,9 +2353,9 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
 
   /// The expected fulfillment period of this update operation.
   @$pb.TagNumber(5)
-  $541.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
+  $546.FulfillmentPeriod get expectedFulfillmentPeriod => $_getN(4);
   @$pb.TagNumber(5)
-  set expectedFulfillmentPeriod($541.FulfillmentPeriod v) { setField(5, v); }
+  set expectedFulfillmentPeriod($546.FulfillmentPeriod v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpectedFulfillmentPeriod() => $_has(4);
   @$pb.TagNumber(5)
@@ -2367,7 +2367,7 @@ class UpdateInstanceMetadata extends $pb.GeneratedMessage {
 class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   factory CreateInstanceConfigMetadata({
     InstanceConfig? instanceConfig,
-    $541.OperationProgress? progress,
+    $546.OperationProgress? progress,
     $299.Timestamp? cancelTime,
   }) {
     final $result = create();
@@ -2388,7 +2388,7 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateInstanceConfigMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
     ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig', subBuilder: InstanceConfig.create)
-    ..aOM<$541.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $541.OperationProgress.create)
+    ..aOM<$546.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $546.OperationProgress.create)
     ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
@@ -2430,15 +2430,15 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
   /// [CreateInstanceConfig][google.spanner.admin.instance.v1.InstanceAdmin.CreateInstanceConfig]
   /// operation.
   @$pb.TagNumber(2)
-  $541.OperationProgress get progress => $_getN(1);
+  $546.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($541.OperationProgress v) { setField(2, v); }
+  set progress($546.OperationProgress v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $541.OperationProgress ensureProgress() => $_ensure(1);
+  $546.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled.
   @$pb.TagNumber(3)
@@ -2458,7 +2458,7 @@ class CreateInstanceConfigMetadata extends $pb.GeneratedMessage {
 class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   factory UpdateInstanceConfigMetadata({
     InstanceConfig? instanceConfig,
-    $541.OperationProgress? progress,
+    $546.OperationProgress? progress,
     $299.Timestamp? cancelTime,
   }) {
     final $result = create();
@@ -2479,7 +2479,7 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateInstanceConfigMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
     ..aOM<InstanceConfig>(1, _omitFieldNames ? '' : 'instanceConfig', subBuilder: InstanceConfig.create)
-    ..aOM<$541.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $541.OperationProgress.create)
+    ..aOM<$546.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $546.OperationProgress.create)
     ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
@@ -2521,15 +2521,15 @@ class UpdateInstanceConfigMetadata extends $pb.GeneratedMessage {
   /// [UpdateInstanceConfig][google.spanner.admin.instance.v1.InstanceAdmin.UpdateInstanceConfig]
   /// operation.
   @$pb.TagNumber(2)
-  $541.OperationProgress get progress => $_getN(1);
+  $546.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($541.OperationProgress v) { setField(2, v); }
+  set progress($546.OperationProgress v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $541.OperationProgress ensureProgress() => $_ensure(1);
+  $546.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled.
   @$pb.TagNumber(3)
@@ -3852,7 +3852,7 @@ class MoveInstanceResponse extends $pb.GeneratedMessage {
 class MoveInstanceMetadata extends $pb.GeneratedMessage {
   factory MoveInstanceMetadata({
     $core.String? targetConfig,
-    $541.OperationProgress? progress,
+    $546.OperationProgress? progress,
     $299.Timestamp? cancelTime,
   }) {
     final $result = create();
@@ -3873,7 +3873,7 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MoveInstanceMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'targetConfig')
-    ..aOM<$541.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $541.OperationProgress.create)
+    ..aOM<$546.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $546.OperationProgress.create)
     ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $299.Timestamp.create)
     ..hasRequiredFields = false
   ;
@@ -3916,15 +3916,15 @@ class MoveInstanceMetadata extends $pb.GeneratedMessage {
   /// [progress_percent][google.spanner.admin.instance.v1.OperationProgress.progress_percent]
   /// is reset when cancellation is requested.
   @$pb.TagNumber(2)
-  $541.OperationProgress get progress => $_getN(1);
+  $546.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($541.OperationProgress v) { setField(2, v); }
+  set progress($546.OperationProgress v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $541.OperationProgress ensureProgress() => $_ensure(1);
+  $546.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled.
   @$pb.TagNumber(3)

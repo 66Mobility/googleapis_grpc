@@ -15,9 +15,9 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../protobuf/struct.pb.dart' as $258;
-import 'query_plan.pb.dart' as $544;
+import 'query_plan.pb.dart' as $549;
 import 'transaction.pb.dart' as $247;
-import 'type.pb.dart' as $543;
+import 'type.pb.dart' as $548;
 
 /// Results from [Read][google.spanner.v1.Spanner.Read] or
 /// [ExecuteSql][google.spanner.v1.Spanner.ExecuteSql].
@@ -311,9 +311,9 @@ class PartialResultSet extends $pb.GeneratedMessage {
 /// Metadata about a [ResultSet][google.spanner.v1.ResultSet] or [PartialResultSet][google.spanner.v1.PartialResultSet].
 class ResultSetMetadata extends $pb.GeneratedMessage {
   factory ResultSetMetadata({
-    $543.StructType? rowType,
+    $548.StructType? rowType,
     $247.Transaction? transaction,
-    $543.StructType? undeclaredParameters,
+    $548.StructType? undeclaredParameters,
   }) {
     final $result = create();
     if (rowType != null) {
@@ -332,9 +332,9 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   factory ResultSetMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResultSetMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..aOM<$543.StructType>(1, _omitFieldNames ? '' : 'rowType', subBuilder: $543.StructType.create)
+    ..aOM<$548.StructType>(1, _omitFieldNames ? '' : 'rowType', subBuilder: $548.StructType.create)
     ..aOM<$247.Transaction>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $247.Transaction.create)
-    ..aOM<$543.StructType>(3, _omitFieldNames ? '' : 'undeclaredParameters', subBuilder: $543.StructType.create)
+    ..aOM<$548.StructType>(3, _omitFieldNames ? '' : 'undeclaredParameters', subBuilder: $548.StructType.create)
     ..hasRequiredFields = false
   ;
 
@@ -368,15 +368,15 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   ///        { "name": "UserName", "type": { "code": "STRING" } },
   ///      ]
   @$pb.TagNumber(1)
-  $543.StructType get rowType => $_getN(0);
+  $548.StructType get rowType => $_getN(0);
   @$pb.TagNumber(1)
-  set rowType($543.StructType v) { setField(1, v); }
+  set rowType($548.StructType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRowType() => $_has(0);
   @$pb.TagNumber(1)
   void clearRowType() => clearField(1);
   @$pb.TagNumber(1)
-  $543.StructType ensureRowType() => $_ensure(0);
+  $548.StructType ensureRowType() => $_ensure(0);
 
   /// If the read or SQL query began a transaction as a side-effect, the
   /// information about the new transaction is yielded here.
@@ -402,15 +402,15 @@ class ResultSetMetadata extends $pb.GeneratedMessage {
   ///        { "name": "UserName", "type": { "code": "STRING" } },
   ///      ]
   @$pb.TagNumber(3)
-  $543.StructType get undeclaredParameters => $_getN(2);
+  $548.StructType get undeclaredParameters => $_getN(2);
   @$pb.TagNumber(3)
-  set undeclaredParameters($543.StructType v) { setField(3, v); }
+  set undeclaredParameters($548.StructType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUndeclaredParameters() => $_has(2);
   @$pb.TagNumber(3)
   void clearUndeclaredParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $543.StructType ensureUndeclaredParameters() => $_ensure(2);
+  $548.StructType ensureUndeclaredParameters() => $_ensure(2);
 }
 
 enum ResultSetStats_RowCount {
@@ -422,7 +422,7 @@ enum ResultSetStats_RowCount {
 /// Additional statistics about a [ResultSet][google.spanner.v1.ResultSet] or [PartialResultSet][google.spanner.v1.PartialResultSet].
 class ResultSetStats extends $pb.GeneratedMessage {
   factory ResultSetStats({
-    $544.QueryPlan? queryPlan,
+    $549.QueryPlan? queryPlan,
     $258.Struct? queryStats,
     $fixnum.Int64? rowCountExact,
     $fixnum.Int64? rowCountLowerBound,
@@ -453,7 +453,7 @@ class ResultSetStats extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResultSetStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..oo(0, [3, 4])
-    ..aOM<$544.QueryPlan>(1, _omitFieldNames ? '' : 'queryPlan', subBuilder: $544.QueryPlan.create)
+    ..aOM<$549.QueryPlan>(1, _omitFieldNames ? '' : 'queryPlan', subBuilder: $549.QueryPlan.create)
     ..aOM<$258.Struct>(2, _omitFieldNames ? '' : 'queryStats', subBuilder: $258.Struct.create)
     ..aInt64(3, _omitFieldNames ? '' : 'rowCountExact')
     ..aInt64(4, _omitFieldNames ? '' : 'rowCountLowerBound')
@@ -486,15 +486,15 @@ class ResultSetStats extends $pb.GeneratedMessage {
 
   /// [QueryPlan][google.spanner.v1.QueryPlan] for the query associated with this result.
   @$pb.TagNumber(1)
-  $544.QueryPlan get queryPlan => $_getN(0);
+  $549.QueryPlan get queryPlan => $_getN(0);
   @$pb.TagNumber(1)
-  set queryPlan($544.QueryPlan v) { setField(1, v); }
+  set queryPlan($549.QueryPlan v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasQueryPlan() => $_has(0);
   @$pb.TagNumber(1)
   void clearQueryPlan() => clearField(1);
   @$pb.TagNumber(1)
-  $544.QueryPlan ensureQueryPlan() => $_ensure(0);
+  $549.QueryPlan ensureQueryPlan() => $_ensure(0);
 
   ///  Aggregated statistics from the execution of the query. Only present when
   ///  the query is profiled. For example, a query could return the statistics as

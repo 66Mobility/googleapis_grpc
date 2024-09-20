@@ -16,8 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../../api/metric.pb.dart' as $196;
 import '../../api/monitored_resource.pb.dart' as $195;
 import '../../rpc/status.pb.dart' as $319;
-import 'common.pb.dart' as $523;
-import 'metric.pb.dart' as $524;
+import 'common.pb.dart' as $528;
+import 'metric.pb.dart' as $529;
 import 'metric_service.pbenum.dart';
 
 export 'metric_service.pbenum.dart';
@@ -621,14 +621,14 @@ class DeleteMetricDescriptorRequest extends $pb.GeneratedMessage {
 class ListTimeSeriesRequest extends $pb.GeneratedMessage {
   factory ListTimeSeriesRequest({
     $core.String? filter,
-    $523.TimeInterval? interval,
-    $523.Aggregation? aggregation,
+    $528.TimeInterval? interval,
+    $528.Aggregation? aggregation,
     $core.String? orderBy,
     ListTimeSeriesRequest_TimeSeriesView? view,
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? name,
-    $523.Aggregation? secondaryAggregation,
+    $528.Aggregation? secondaryAggregation,
   }) {
     final $result = create();
     if (filter != null) {
@@ -666,14 +666,14 @@ class ListTimeSeriesRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTimeSeriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'filter')
-    ..aOM<$523.TimeInterval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $523.TimeInterval.create)
-    ..aOM<$523.Aggregation>(5, _omitFieldNames ? '' : 'aggregation', subBuilder: $523.Aggregation.create)
+    ..aOM<$528.TimeInterval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $528.TimeInterval.create)
+    ..aOM<$528.Aggregation>(5, _omitFieldNames ? '' : 'aggregation', subBuilder: $528.Aggregation.create)
     ..aOS(6, _omitFieldNames ? '' : 'orderBy')
     ..e<ListTimeSeriesRequest_TimeSeriesView>(7, _omitFieldNames ? '' : 'view', $pb.PbFieldType.OE, defaultOrMaker: ListTimeSeriesRequest_TimeSeriesView.FULL, valueOf: ListTimeSeriesRequest_TimeSeriesView.valueOf, enumValues: ListTimeSeriesRequest_TimeSeriesView.values)
     ..a<$core.int>(8, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(9, _omitFieldNames ? '' : 'pageToken')
     ..aOS(10, _omitFieldNames ? '' : 'name')
-    ..aOM<$523.Aggregation>(11, _omitFieldNames ? '' : 'secondaryAggregation', subBuilder: $523.Aggregation.create)
+    ..aOM<$528.Aggregation>(11, _omitFieldNames ? '' : 'secondaryAggregation', subBuilder: $528.Aggregation.create)
     ..hasRequiredFields = false
   ;
 
@@ -719,15 +719,15 @@ class ListTimeSeriesRequest extends $pb.GeneratedMessage {
   /// series that contain data points in the specified interval are included in
   /// the response.
   @$pb.TagNumber(4)
-  $523.TimeInterval get interval => $_getN(1);
+  $528.TimeInterval get interval => $_getN(1);
   @$pb.TagNumber(4)
-  set interval($523.TimeInterval v) { setField(4, v); }
+  set interval($528.TimeInterval v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInterval() => $_has(1);
   @$pb.TagNumber(4)
   void clearInterval() => clearField(4);
   @$pb.TagNumber(4)
-  $523.TimeInterval ensureInterval() => $_ensure(1);
+  $528.TimeInterval ensureInterval() => $_ensure(1);
 
   ///  Specifies the alignment of data points in individual time series as
   ///  well as how to combine the retrieved time series across specified labels.
@@ -735,15 +735,15 @@ class ListTimeSeriesRequest extends $pb.GeneratedMessage {
   ///  By default (if no `aggregation` is explicitly specified), the raw time
   ///  series data is returned.
   @$pb.TagNumber(5)
-  $523.Aggregation get aggregation => $_getN(2);
+  $528.Aggregation get aggregation => $_getN(2);
   @$pb.TagNumber(5)
-  set aggregation($523.Aggregation v) { setField(5, v); }
+  set aggregation($528.Aggregation v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAggregation() => $_has(2);
   @$pb.TagNumber(5)
   void clearAggregation() => clearField(5);
   @$pb.TagNumber(5)
-  $523.Aggregation ensureAggregation() => $_ensure(2);
+  $528.Aggregation ensureAggregation() => $_ensure(2);
 
   /// Unsupported: must be left blank. The points in each time series are
   /// currently returned in reverse time order (most recent to oldest).
@@ -811,21 +811,21 @@ class ListTimeSeriesRequest extends $pb.GeneratedMessage {
   /// Apply a second aggregation after `aggregation` is applied. May only be
   /// specified if `aggregation` is specified.
   @$pb.TagNumber(11)
-  $523.Aggregation get secondaryAggregation => $_getN(8);
+  $528.Aggregation get secondaryAggregation => $_getN(8);
   @$pb.TagNumber(11)
-  set secondaryAggregation($523.Aggregation v) { setField(11, v); }
+  set secondaryAggregation($528.Aggregation v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSecondaryAggregation() => $_has(8);
   @$pb.TagNumber(11)
   void clearSecondaryAggregation() => clearField(11);
   @$pb.TagNumber(11)
-  $523.Aggregation ensureSecondaryAggregation() => $_ensure(8);
+  $528.Aggregation ensureSecondaryAggregation() => $_ensure(8);
 }
 
 /// The `ListTimeSeries` response.
 class ListTimeSeriesResponse extends $pb.GeneratedMessage {
   factory ListTimeSeriesResponse({
-    $core.Iterable<$524.TimeSeries>? timeSeries,
+    $core.Iterable<$529.TimeSeries>? timeSeries,
     $core.String? nextPageToken,
     $core.Iterable<$319.Status>? executionErrors,
     $core.String? unit,
@@ -850,7 +850,7 @@ class ListTimeSeriesResponse extends $pb.GeneratedMessage {
   factory ListTimeSeriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListTimeSeriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$524.TimeSeries>(1, _omitFieldNames ? '' : 'timeSeries', $pb.PbFieldType.PM, subBuilder: $524.TimeSeries.create)
+    ..pc<$529.TimeSeries>(1, _omitFieldNames ? '' : 'timeSeries', $pb.PbFieldType.PM, subBuilder: $529.TimeSeries.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..pc<$319.Status>(3, _omitFieldNames ? '' : 'executionErrors', $pb.PbFieldType.PM, subBuilder: $319.Status.create)
     ..aOS(5, _omitFieldNames ? '' : 'unit')
@@ -880,7 +880,7 @@ class ListTimeSeriesResponse extends $pb.GeneratedMessage {
 
   /// One or more time series that match the filter included in the request.
   @$pb.TagNumber(1)
-  $core.List<$524.TimeSeries> get timeSeries => $_getList(0);
+  $core.List<$529.TimeSeries> get timeSeries => $_getList(0);
 
   /// If there are more results than have been returned, then this field is set
   /// to a non-empty value.  To see the additional results,
@@ -918,7 +918,7 @@ class ListTimeSeriesResponse extends $pb.GeneratedMessage {
 /// The `CreateTimeSeries` request.
 class CreateTimeSeriesRequest extends $pb.GeneratedMessage {
   factory CreateTimeSeriesRequest({
-    $core.Iterable<$524.TimeSeries>? timeSeries,
+    $core.Iterable<$529.TimeSeries>? timeSeries,
     $core.String? name,
   }) {
     final $result = create();
@@ -935,7 +935,7 @@ class CreateTimeSeriesRequest extends $pb.GeneratedMessage {
   factory CreateTimeSeriesRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateTimeSeriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$524.TimeSeries>(2, _omitFieldNames ? '' : 'timeSeries', $pb.PbFieldType.PM, subBuilder: $524.TimeSeries.create)
+    ..pc<$529.TimeSeries>(2, _omitFieldNames ? '' : 'timeSeries', $pb.PbFieldType.PM, subBuilder: $529.TimeSeries.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
   ;
@@ -969,7 +969,7 @@ class CreateTimeSeriesRequest extends $pb.GeneratedMessage {
   ///
   ///  The maximum number of `TimeSeries` objects per `Create` request is 200.
   @$pb.TagNumber(2)
-  $core.List<$524.TimeSeries> get timeSeries => $_getList(0);
+  $core.List<$529.TimeSeries> get timeSeries => $_getList(0);
 
   ///  Required. The
   ///  [project](https://cloud.google.com/monitoring/api/v3#project_name) on which
@@ -990,7 +990,7 @@ class CreateTimeSeriesRequest extends $pb.GeneratedMessage {
 class CreateTimeSeriesError extends $pb.GeneratedMessage {
   factory CreateTimeSeriesError({
   @$core.Deprecated('This field is deprecated.')
-    $524.TimeSeries? timeSeries,
+    $529.TimeSeries? timeSeries,
   @$core.Deprecated('This field is deprecated.')
     $319.Status? status,
   }) {
@@ -1010,7 +1010,7 @@ class CreateTimeSeriesError extends $pb.GeneratedMessage {
   factory CreateTimeSeriesError.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateTimeSeriesError', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$524.TimeSeries>(1, _omitFieldNames ? '' : 'timeSeries', subBuilder: $524.TimeSeries.create)
+    ..aOM<$529.TimeSeries>(1, _omitFieldNames ? '' : 'timeSeries', subBuilder: $529.TimeSeries.create)
     ..aOM<$319.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $319.Status.create)
     ..hasRequiredFields = false
   ;
@@ -1039,10 +1039,10 @@ class CreateTimeSeriesError extends $pb.GeneratedMessage {
   /// DEPRECATED. Time series ID that resulted in the `status` error.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  $524.TimeSeries get timeSeries => $_getN(0);
+  $529.TimeSeries get timeSeries => $_getN(0);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  set timeSeries($524.TimeSeries v) { setField(1, v); }
+  set timeSeries($529.TimeSeries v) { setField(1, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   $core.bool hasTimeSeries() => $_has(0);
@@ -1051,7 +1051,7 @@ class CreateTimeSeriesError extends $pb.GeneratedMessage {
   void clearTimeSeries() => clearField(1);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  $524.TimeSeries ensureTimeSeries() => $_ensure(0);
+  $529.TimeSeries ensureTimeSeries() => $_ensure(0);
 
   /// DEPRECATED. The status of the requested write operation for `time_series`.
   @$core.Deprecated('This field is deprecated.')
@@ -1324,8 +1324,8 @@ class QueryTimeSeriesRequest extends $pb.GeneratedMessage {
 /// The `QueryTimeSeries` response.
 class QueryTimeSeriesResponse extends $pb.GeneratedMessage {
   factory QueryTimeSeriesResponse({
-    $524.TimeSeriesDescriptor? timeSeriesDescriptor,
-    $core.Iterable<$524.TimeSeriesData>? timeSeriesData,
+    $529.TimeSeriesDescriptor? timeSeriesDescriptor,
+    $core.Iterable<$529.TimeSeriesData>? timeSeriesData,
     $core.String? nextPageToken,
     $core.Iterable<$319.Status>? partialErrors,
   }) {
@@ -1349,8 +1349,8 @@ class QueryTimeSeriesResponse extends $pb.GeneratedMessage {
   factory QueryTimeSeriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryTimeSeriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$524.TimeSeriesDescriptor>(8, _omitFieldNames ? '' : 'timeSeriesDescriptor', subBuilder: $524.TimeSeriesDescriptor.create)
-    ..pc<$524.TimeSeriesData>(9, _omitFieldNames ? '' : 'timeSeriesData', $pb.PbFieldType.PM, subBuilder: $524.TimeSeriesData.create)
+    ..aOM<$529.TimeSeriesDescriptor>(8, _omitFieldNames ? '' : 'timeSeriesDescriptor', subBuilder: $529.TimeSeriesDescriptor.create)
+    ..pc<$529.TimeSeriesData>(9, _omitFieldNames ? '' : 'timeSeriesData', $pb.PbFieldType.PM, subBuilder: $529.TimeSeriesData.create)
     ..aOS(10, _omitFieldNames ? '' : 'nextPageToken')
     ..pc<$319.Status>(11, _omitFieldNames ? '' : 'partialErrors', $pb.PbFieldType.PM, subBuilder: $319.Status.create)
     ..hasRequiredFields = false
@@ -1379,19 +1379,19 @@ class QueryTimeSeriesResponse extends $pb.GeneratedMessage {
 
   /// The descriptor for the time series data.
   @$pb.TagNumber(8)
-  $524.TimeSeriesDescriptor get timeSeriesDescriptor => $_getN(0);
+  $529.TimeSeriesDescriptor get timeSeriesDescriptor => $_getN(0);
   @$pb.TagNumber(8)
-  set timeSeriesDescriptor($524.TimeSeriesDescriptor v) { setField(8, v); }
+  set timeSeriesDescriptor($529.TimeSeriesDescriptor v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTimeSeriesDescriptor() => $_has(0);
   @$pb.TagNumber(8)
   void clearTimeSeriesDescriptor() => clearField(8);
   @$pb.TagNumber(8)
-  $524.TimeSeriesDescriptor ensureTimeSeriesDescriptor() => $_ensure(0);
+  $529.TimeSeriesDescriptor ensureTimeSeriesDescriptor() => $_ensure(0);
 
   /// The time series data.
   @$pb.TagNumber(9)
-  $core.List<$524.TimeSeriesData> get timeSeriesData => $_getList(1);
+  $core.List<$529.TimeSeriesData> get timeSeriesData => $_getList(1);
 
   /// If there are more results than have been returned, then this field is set
   /// to a non-empty value.  To see the additional results, use that value as
@@ -1415,7 +1415,7 @@ class QueryTimeSeriesResponse extends $pb.GeneratedMessage {
 /// This is an error detail intended to be used with INVALID_ARGUMENT errors.
 class QueryErrorList extends $pb.GeneratedMessage {
   factory QueryErrorList({
-    $core.Iterable<$524.QueryError>? errors,
+    $core.Iterable<$529.QueryError>? errors,
     $core.String? errorSummary,
   }) {
     final $result = create();
@@ -1432,7 +1432,7 @@ class QueryErrorList extends $pb.GeneratedMessage {
   factory QueryErrorList.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryErrorList', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$524.QueryError>(1, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $524.QueryError.create)
+    ..pc<$529.QueryError>(1, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: $529.QueryError.create)
     ..aOS(2, _omitFieldNames ? '' : 'errorSummary')
     ..hasRequiredFields = false
   ;
@@ -1461,7 +1461,7 @@ class QueryErrorList extends $pb.GeneratedMessage {
   /// Errors in parsing the time series query language text. The number of errors
   /// in the response may be limited.
   @$pb.TagNumber(1)
-  $core.List<$524.QueryError> get errors => $_getList(0);
+  $core.List<$529.QueryError> get errors => $_getList(0);
 
   /// A summary of all the errors.
   @$pb.TagNumber(2)

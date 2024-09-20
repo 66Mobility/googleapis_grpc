@@ -13,6 +13,26 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
+@$core.Deprecated('Use routingParametersDescriptor instead')
+const RoutingParameters$json = {
+  '1': 'RoutingParameters',
+  '2': [
+    {'1': 'origin', '3': 1, '4': 1, '5': 11, '6': '.google.type.LatLng', '8': {}, '10': 'origin'},
+    {'1': 'travel_mode', '3': 2, '4': 1, '5': 14, '6': '.google.maps.places.v1.TravelMode', '8': {}, '10': 'travelMode'},
+    {'1': 'route_modifiers', '3': 3, '4': 1, '5': 11, '6': '.google.maps.places.v1.RouteModifiers', '8': {}, '10': 'routeModifiers'},
+    {'1': 'routing_preference', '3': 4, '4': 1, '5': 14, '6': '.google.maps.places.v1.RoutingPreference', '8': {}, '10': 'routingPreference'},
+  ],
+};
+
+/// Descriptor for `RoutingParameters`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List routingParametersDescriptor = $convert.base64Decode(
+    'ChFSb3V0aW5nUGFyYW1ldGVycxIwCgZvcmlnaW4YASABKAsyEy5nb29nbGUudHlwZS5MYXRMbm'
+    'dCA+BBAVIGb3JpZ2luEkcKC3RyYXZlbF9tb2RlGAIgASgOMiEuZ29vZ2xlLm1hcHMucGxhY2Vz'
+    'LnYxLlRyYXZlbE1vZGVCA+BBAVIKdHJhdmVsTW9kZRJTCg9yb3V0ZV9tb2RpZmllcnMYAyABKA'
+    'syJS5nb29nbGUubWFwcy5wbGFjZXMudjEuUm91dGVNb2RpZmllcnNCA+BBAVIOcm91dGVNb2Rp'
+    'ZmllcnMSXAoScm91dGluZ19wcmVmZXJlbmNlGAQgASgOMiguZ29vZ2xlLm1hcHMucGxhY2VzLn'
+    'YxLlJvdXRpbmdQcmVmZXJlbmNlQgPgQQFSEXJvdXRpbmdQcmVmZXJlbmNl');
+
 @$core.Deprecated('Use searchNearbyRequestDescriptor instead')
 const SearchNearbyRequest$json = {
   '1': 'SearchNearbyRequest',
@@ -26,6 +46,7 @@ const SearchNearbyRequest$json = {
     {'1': 'max_result_count', '3': 7, '4': 1, '5': 5, '10': 'maxResultCount'},
     {'1': 'location_restriction', '3': 8, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchNearbyRequest.LocationRestriction', '8': {}, '10': 'locationRestriction'},
     {'1': 'rank_preference', '3': 9, '4': 1, '5': 14, '6': '.google.maps.places.v1.SearchNearbyRequest.RankPreference', '10': 'rankPreference'},
+    {'1': 'routing_parameters', '3': 10, '4': 1, '5': 11, '6': '.google.maps.places.v1.RoutingParameters', '8': {}, '10': 'routingParameters'},
   ],
   '3': [SearchNearbyRequest_LocationRestriction$json],
   '4': [SearchNearbyRequest_RankPreference$json],
@@ -63,23 +84,27 @@ final $typed_data.Uint8List searchNearbyRequestDescriptor = $convert.base64Decod
     'ZXN0cmljdGlvbhgIIAEoCzI+Lmdvb2dsZS5tYXBzLnBsYWNlcy52MS5TZWFyY2hOZWFyYnlSZX'
     'F1ZXN0LkxvY2F0aW9uUmVzdHJpY3Rpb25CA+BBAlITbG9jYXRpb25SZXN0cmljdGlvbhJiCg9y'
     'YW5rX3ByZWZlcmVuY2UYCSABKA4yOS5nb29nbGUubWFwcy5wbGFjZXMudjEuU2VhcmNoTmVhcm'
-    'J5UmVxdWVzdC5SYW5rUHJlZmVyZW5jZVIOcmFua1ByZWZlcmVuY2UaVgoTTG9jYXRpb25SZXN0'
-    'cmljdGlvbhI3CgZjaXJjbGUYAiABKAsyHS5nb29nbGUubWFwcy5wbGFjZXMudjEuQ2lyY2xlSA'
-    'BSBmNpcmNsZUIGCgR0eXBlIk8KDlJhbmtQcmVmZXJlbmNlEh8KG1JBTktfUFJFRkVSRU5DRV9V'
-    'TlNQRUNJRklFRBAAEgwKCERJU1RBTkNFEAESDgoKUE9QVUxBUklUWRAC');
+    'J5UmVxdWVzdC5SYW5rUHJlZmVyZW5jZVIOcmFua1ByZWZlcmVuY2USXAoScm91dGluZ19wYXJh'
+    'bWV0ZXJzGAogASgLMiguZ29vZ2xlLm1hcHMucGxhY2VzLnYxLlJvdXRpbmdQYXJhbWV0ZXJzQg'
+    'PgQQFSEXJvdXRpbmdQYXJhbWV0ZXJzGlYKE0xvY2F0aW9uUmVzdHJpY3Rpb24SNwoGY2lyY2xl'
+    'GAIgASgLMh0uZ29vZ2xlLm1hcHMucGxhY2VzLnYxLkNpcmNsZUgAUgZjaXJjbGVCBgoEdHlwZS'
+    'JPCg5SYW5rUHJlZmVyZW5jZRIfChtSQU5LX1BSRUZFUkVOQ0VfVU5TUEVDSUZJRUQQABIMCghE'
+    'SVNUQU5DRRABEg4KClBPUFVMQVJJVFkQAg==');
 
 @$core.Deprecated('Use searchNearbyResponseDescriptor instead')
 const SearchNearbyResponse$json = {
   '1': 'SearchNearbyResponse',
   '2': [
     {'1': 'places', '3': 1, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place', '10': 'places'},
+    {'1': 'routing_summaries', '3': 2, '4': 3, '5': 11, '6': '.google.maps.places.v1.RoutingSummary', '10': 'routingSummaries'},
   ],
 };
 
 /// Descriptor for `SearchNearbyResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List searchNearbyResponseDescriptor = $convert.base64Decode(
     'ChRTZWFyY2hOZWFyYnlSZXNwb25zZRI0CgZwbGFjZXMYASADKAsyHC5nb29nbGUubWFwcy5wbG'
-    'FjZXMudjEuUGxhY2VSBnBsYWNlcw==');
+    'FjZXMudjEuUGxhY2VSBnBsYWNlcxJSChFyb3V0aW5nX3N1bW1hcmllcxgCIAMoCzIlLmdvb2ds'
+    'ZS5tYXBzLnBsYWNlcy52MS5Sb3V0aW5nU3VtbWFyeVIQcm91dGluZ1N1bW1hcmllcw==');
 
 @$core.Deprecated('Use searchTextRequestDescriptor instead')
 const SearchTextRequest$json = {
@@ -98,8 +123,10 @@ const SearchTextRequest$json = {
     {'1': 'location_bias', '3': 13, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchTextRequest.LocationBias', '10': 'locationBias'},
     {'1': 'location_restriction', '3': 14, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchTextRequest.LocationRestriction', '10': 'locationRestriction'},
     {'1': 'ev_options', '3': 15, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchTextRequest.EVOptions', '8': {}, '10': 'evOptions'},
+    {'1': 'routing_parameters', '3': 16, '4': 1, '5': 11, '6': '.google.maps.places.v1.RoutingParameters', '8': {}, '10': 'routingParameters'},
+    {'1': 'search_along_route_parameters', '3': 17, '4': 1, '5': 11, '6': '.google.maps.places.v1.SearchTextRequest.SearchAlongRouteParameters', '8': {}, '10': 'searchAlongRouteParameters'},
   ],
-  '3': [SearchTextRequest_LocationBias$json, SearchTextRequest_LocationRestriction$json, SearchTextRequest_EVOptions$json],
+  '3': [SearchTextRequest_LocationBias$json, SearchTextRequest_LocationRestriction$json, SearchTextRequest_EVOptions$json, SearchTextRequest_SearchAlongRouteParameters$json],
   '4': [SearchTextRequest_RankPreference$json],
 };
 
@@ -136,6 +163,14 @@ const SearchTextRequest_EVOptions$json = {
 };
 
 @$core.Deprecated('Use searchTextRequestDescriptor instead')
+const SearchTextRequest_SearchAlongRouteParameters$json = {
+  '1': 'SearchAlongRouteParameters',
+  '2': [
+    {'1': 'polyline', '3': 1, '4': 1, '5': 11, '6': '.google.maps.places.v1.Polyline', '8': {}, '10': 'polyline'},
+  ],
+};
+
+@$core.Deprecated('Use searchTextRequestDescriptor instead')
 const SearchTextRequest_RankPreference$json = {
   '1': 'RankPreference',
   '2': [
@@ -160,22 +195,29 @@ final $typed_data.Uint8List searchTextRequestDescriptor = $convert.base64Decode(
     'bkJpYXNSDGxvY2F0aW9uQmlhcxJvChRsb2NhdGlvbl9yZXN0cmljdGlvbhgOIAEoCzI8Lmdvb2'
     'dsZS5tYXBzLnBsYWNlcy52MS5TZWFyY2hUZXh0UmVxdWVzdC5Mb2NhdGlvblJlc3RyaWN0aW9u'
     'UhNsb2NhdGlvblJlc3RyaWN0aW9uElYKCmV2X29wdGlvbnMYDyABKAsyMi5nb29nbGUubWFwcy'
-    '5wbGFjZXMudjEuU2VhcmNoVGV4dFJlcXVlc3QuRVZPcHRpb25zQgPgQQFSCWV2T3B0aW9ucxqK'
-    'AQoMTG9jYXRpb25CaWFzEjkKCXJlY3RhbmdsZRgBIAEoCzIZLmdvb2dsZS5nZW8udHlwZS5WaW'
-    'V3cG9ydEgAUglyZWN0YW5nbGUSNwoGY2lyY2xlGAIgASgLMh0uZ29vZ2xlLm1hcHMucGxhY2Vz'
-    'LnYxLkNpcmNsZUgAUgZjaXJjbGVCBgoEdHlwZRpYChNMb2NhdGlvblJlc3RyaWN0aW9uEjkKCX'
-    'JlY3RhbmdsZRgBIAEoCzIZLmdvb2dsZS5nZW8udHlwZS5WaWV3cG9ydEgAUglyZWN0YW5nbGVC'
-    'BgoEdHlwZRqfAQoJRVZPcHRpb25zEjwKGG1pbmltdW1fY2hhcmdpbmdfcmF0ZV9rdxgBIAEoAU'
-    'ID4EEBUhVtaW5pbXVtQ2hhcmdpbmdSYXRlS3cSVAoPY29ubmVjdG9yX3R5cGVzGAIgAygOMiYu'
-    'Z29vZ2xlLm1hcHMucGxhY2VzLnYxLkVWQ29ubmVjdG9yVHlwZUID4EEBUg5jb25uZWN0b3JUeX'
-    'BlcyJOCg5SYW5rUHJlZmVyZW5jZRIfChtSQU5LX1BSRUZFUkVOQ0VfVU5TUEVDSUZJRUQQABIM'
-    'CghESVNUQU5DRRABEg0KCVJFTEVWQU5DRRAC');
+    '5wbGFjZXMudjEuU2VhcmNoVGV4dFJlcXVlc3QuRVZPcHRpb25zQgPgQQFSCWV2T3B0aW9ucxJc'
+    'ChJyb3V0aW5nX3BhcmFtZXRlcnMYECABKAsyKC5nb29nbGUubWFwcy5wbGFjZXMudjEuUm91dG'
+    'luZ1BhcmFtZXRlcnNCA+BBAVIRcm91dGluZ1BhcmFtZXRlcnMSiwEKHXNlYXJjaF9hbG9uZ19y'
+    'b3V0ZV9wYXJhbWV0ZXJzGBEgASgLMkMuZ29vZ2xlLm1hcHMucGxhY2VzLnYxLlNlYXJjaFRleH'
+    'RSZXF1ZXN0LlNlYXJjaEFsb25nUm91dGVQYXJhbWV0ZXJzQgPgQQFSGnNlYXJjaEFsb25nUm91'
+    'dGVQYXJhbWV0ZXJzGooBCgxMb2NhdGlvbkJpYXMSOQoJcmVjdGFuZ2xlGAEgASgLMhkuZ29vZ2'
+    'xlLmdlby50eXBlLlZpZXdwb3J0SABSCXJlY3RhbmdsZRI3CgZjaXJjbGUYAiABKAsyHS5nb29n'
+    'bGUubWFwcy5wbGFjZXMudjEuQ2lyY2xlSABSBmNpcmNsZUIGCgR0eXBlGlgKE0xvY2F0aW9uUm'
+    'VzdHJpY3Rpb24SOQoJcmVjdGFuZ2xlGAEgASgLMhkuZ29vZ2xlLmdlby50eXBlLlZpZXdwb3J0'
+    'SABSCXJlY3RhbmdsZUIGCgR0eXBlGp8BCglFVk9wdGlvbnMSPAoYbWluaW11bV9jaGFyZ2luZ1'
+    '9yYXRlX2t3GAEgASgBQgPgQQFSFW1pbmltdW1DaGFyZ2luZ1JhdGVLdxJUCg9jb25uZWN0b3Jf'
+    'dHlwZXMYAiADKA4yJi5nb29nbGUubWFwcy5wbGFjZXMudjEuRVZDb25uZWN0b3JUeXBlQgPgQQ'
+    'FSDmNvbm5lY3RvclR5cGVzGl4KGlNlYXJjaEFsb25nUm91dGVQYXJhbWV0ZXJzEkAKCHBvbHls'
+    'aW5lGAEgASgLMh8uZ29vZ2xlLm1hcHMucGxhY2VzLnYxLlBvbHlsaW5lQgPgQQJSCHBvbHlsaW'
+    '5lIk4KDlJhbmtQcmVmZXJlbmNlEh8KG1JBTktfUFJFRkVSRU5DRV9VTlNQRUNJRklFRBAAEgwK'
+    'CERJU1RBTkNFEAESDQoJUkVMRVZBTkNFEAI=');
 
 @$core.Deprecated('Use searchTextResponseDescriptor instead')
 const SearchTextResponse$json = {
   '1': 'SearchTextResponse',
   '2': [
     {'1': 'places', '3': 1, '4': 3, '5': 11, '6': '.google.maps.places.v1.Place', '10': 'places'},
+    {'1': 'routing_summaries', '3': 2, '4': 3, '5': 11, '6': '.google.maps.places.v1.RoutingSummary', '10': 'routingSummaries'},
     {'1': 'contextual_contents', '3': 3, '4': 3, '5': 11, '6': '.google.maps.places.v1.ContextualContent', '10': 'contextualContents'},
   ],
 };
@@ -183,8 +225,10 @@ const SearchTextResponse$json = {
 /// Descriptor for `SearchTextResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List searchTextResponseDescriptor = $convert.base64Decode(
     'ChJTZWFyY2hUZXh0UmVzcG9uc2USNAoGcGxhY2VzGAEgAygLMhwuZ29vZ2xlLm1hcHMucGxhY2'
-    'VzLnYxLlBsYWNlUgZwbGFjZXMSWQoTY29udGV4dHVhbF9jb250ZW50cxgDIAMoCzIoLmdvb2ds'
-    'ZS5tYXBzLnBsYWNlcy52MS5Db250ZXh0dWFsQ29udGVudFISY29udGV4dHVhbENvbnRlbnRz');
+    'VzLnYxLlBsYWNlUgZwbGFjZXMSUgoRcm91dGluZ19zdW1tYXJpZXMYAiADKAsyJS5nb29nbGUu'
+    'bWFwcy5wbGFjZXMudjEuUm91dGluZ1N1bW1hcnlSEHJvdXRpbmdTdW1tYXJpZXMSWQoTY29udG'
+    'V4dHVhbF9jb250ZW50cxgDIAMoCzIoLmdvb2dsZS5tYXBzLnBsYWNlcy52MS5Db250ZXh0dWFs'
+    'Q29udGVudFISY29udGV4dHVhbENvbnRlbnRz');
 
 @$core.Deprecated('Use getPhotoMediaRequestDescriptor instead')
 const GetPhotoMediaRequest$json = {

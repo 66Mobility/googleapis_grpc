@@ -3524,9 +3524,11 @@ const DataProfileAction$json = {
   '2': [
     {'1': 'export_data', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DataProfileAction.Export', '9': 0, '10': 'exportData'},
     {'1': 'pub_sub_notification', '3': 2, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DataProfileAction.PubSubNotification', '9': 0, '10': 'pubSubNotification'},
+    {'1': 'publish_to_chronicle', '3': 3, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DataProfileAction.PublishToChronicle', '9': 0, '10': 'publishToChronicle'},
+    {'1': 'publish_to_scc', '3': 4, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DataProfileAction.PublishToSecurityCommandCenter', '9': 0, '10': 'publishToScc'},
     {'1': 'tag_resources', '3': 8, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DataProfileAction.TagResources', '9': 0, '10': 'tagResources'},
   ],
-  '3': [DataProfileAction_Export$json, DataProfileAction_PubSubNotification$json, DataProfileAction_TagResources$json],
+  '3': [DataProfileAction_Export$json, DataProfileAction_PubSubNotification$json, DataProfileAction_PublishToChronicle$json, DataProfileAction_PublishToSecurityCommandCenter$json, DataProfileAction_TagResources$json],
   '4': [DataProfileAction_EventType$json],
   '8': [
     {'1': 'action'},
@@ -3562,6 +3564,16 @@ const DataProfileAction_PubSubNotification_DetailLevel$json = {
     {'1': 'RESOURCE_NAME', '2': 2},
     {'1': 'FILE_STORE_PROFILE', '2': 3},
   ],
+};
+
+@$core.Deprecated('Use dataProfileActionDescriptor instead')
+const DataProfileAction_PublishToChronicle$json = {
+  '1': 'PublishToChronicle',
+};
+
+@$core.Deprecated('Use dataProfileActionDescriptor instead')
+const DataProfileAction_PublishToSecurityCommandCenter$json = {
+  '1': 'PublishToSecurityCommandCenter',
 };
 
 @$core.Deprecated('Use dataProfileActionDescriptor instead')
@@ -3615,31 +3627,36 @@ final $typed_data.Uint8List dataProfileActionDescriptor = $convert.base64Decode(
     'ChFEYXRhUHJvZmlsZUFjdGlvbhJSCgtleHBvcnRfZGF0YRgBIAEoCzIvLmdvb2dsZS5wcml2YW'
     'N5LmRscC52Mi5EYXRhUHJvZmlsZUFjdGlvbi5FeHBvcnRIAFIKZXhwb3J0RGF0YRJvChRwdWJf'
     'c3ViX25vdGlmaWNhdGlvbhgCIAEoCzI7Lmdvb2dsZS5wcml2YWN5LmRscC52Mi5EYXRhUHJvZm'
-    'lsZUFjdGlvbi5QdWJTdWJOb3RpZmljYXRpb25IAFIScHViU3ViTm90aWZpY2F0aW9uElwKDXRh'
-    'Z19yZXNvdXJjZXMYCCABKAsyNS5nb29nbGUucHJpdmFjeS5kbHAudjIuRGF0YVByb2ZpbGVBY3'
-    'Rpb24uVGFnUmVzb3VyY2VzSABSDHRhZ1Jlc291cmNlcxpTCgZFeHBvcnQSSQoNcHJvZmlsZV90'
-    'YWJsZRgBIAEoCzIkLmdvb2dsZS5wcml2YWN5LmRscC52Mi5CaWdRdWVyeVRhYmxlUgxwcm9maW'
-    'xlVGFibGUasgMKElB1YlN1Yk5vdGlmaWNhdGlvbhIUCgV0b3BpYxgBIAEoCVIFdG9waWMSSAoF'
-    'ZXZlbnQYAiABKA4yMi5nb29nbGUucHJpdmFjeS5kbHAudjIuRGF0YVByb2ZpbGVBY3Rpb24uRX'
-    'ZlbnRUeXBlUgVldmVudBJcChBwdWJzdWJfY29uZGl0aW9uGAMgASgLMjEuZ29vZ2xlLnByaXZh'
-    'Y3kuZGxwLnYyLkRhdGFQcm9maWxlUHViU3ViQ29uZGl0aW9uUg9wdWJzdWJDb25kaXRpb24Scw'
-    'oRZGV0YWlsX29mX21lc3NhZ2UYBCABKA4yRy5nb29nbGUucHJpdmFjeS5kbHAudjIuRGF0YVBy'
-    'b2ZpbGVBY3Rpb24uUHViU3ViTm90aWZpY2F0aW9uLkRldGFpbExldmVsUg9kZXRhaWxPZk1lc3'
-    'NhZ2UiaQoLRGV0YWlsTGV2ZWwSHAoYREVUQUlMX0xFVkVMX1VOU1BFQ0lGSUVEEAASEQoNVEFC'
-    'TEVfUFJPRklMRRABEhEKDVJFU09VUkNFX05BTUUQAhIWChJGSUxFX1NUT1JFX1BST0ZJTEUQAx'
-    'qaBAoMVGFnUmVzb3VyY2VzEmkKDnRhZ19jb25kaXRpb25zGAEgAygLMkIuZ29vZ2xlLnByaXZh'
-    'Y3kuZGxwLnYyLkRhdGFQcm9maWxlQWN0aW9uLlRhZ1Jlc291cmNlcy5UYWdDb25kaXRpb25SDX'
-    'RhZ0NvbmRpdGlvbnMSZQoacHJvZmlsZV9nZW5lcmF0aW9uc190b190YWcYAiADKA4yKC5nb29n'
-    'bGUucHJpdmFjeS5kbHAudjIuUHJvZmlsZUdlbmVyYXRpb25SF3Byb2ZpbGVHZW5lcmF0aW9uc1'
-    'RvVGFnEjIKFmxvd2VyX2RhdGFfcmlza190b19sb3cYAyABKAhSEmxvd2VyRGF0YVJpc2tUb0xv'
-    'dxrAAQoMVGFnQ29uZGl0aW9uElAKA3RhZxgBIAEoCzI+Lmdvb2dsZS5wcml2YWN5LmRscC52Mi'
-    '5EYXRhUHJvZmlsZUFjdGlvbi5UYWdSZXNvdXJjZXMuVGFnVmFsdWVSA3RhZxJWChFzZW5zaXRp'
-    'dml0eV9zY29yZRgCIAEoCzInLmdvb2dsZS5wcml2YWN5LmRscC52Mi5TZW5zaXRpdml0eVNjb3'
-    'JlSABSEHNlbnNpdGl2aXR5U2NvcmVCBgoEdHlwZRpBCghUYWdWYWx1ZRIrChBuYW1lc3BhY2Vk'
-    'X3ZhbHVlGAEgASgJSABSD25hbWVzcGFjZWRWYWx1ZUIICgZmb3JtYXQidQoJRXZlbnRUeXBlEh'
-    'oKFkVWRU5UX1RZUEVfVU5TUEVDSUZJRUQQABIPCgtORVdfUFJPRklMRRABEhMKD0NIQU5HRURf'
-    'UFJPRklMRRACEhMKD1NDT1JFX0lOQ1JFQVNFRBADEhEKDUVSUk9SX0NIQU5HRUQQBEIICgZhY3'
-    'Rpb24=');
+    'lsZUFjdGlvbi5QdWJTdWJOb3RpZmljYXRpb25IAFIScHViU3ViTm90aWZpY2F0aW9uEm8KFHB1'
+    'Ymxpc2hfdG9fY2hyb25pY2xlGAMgASgLMjsuZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkRhdGFQcm'
+    '9maWxlQWN0aW9uLlB1Ymxpc2hUb0Nocm9uaWNsZUgAUhJwdWJsaXNoVG9DaHJvbmljbGUSbwoO'
+    'cHVibGlzaF90b19zY2MYBCABKAsyRy5nb29nbGUucHJpdmFjeS5kbHAudjIuRGF0YVByb2ZpbG'
+    'VBY3Rpb24uUHVibGlzaFRvU2VjdXJpdHlDb21tYW5kQ2VudGVySABSDHB1Ymxpc2hUb1NjYxJc'
+    'Cg10YWdfcmVzb3VyY2VzGAggASgLMjUuZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkRhdGFQcm9maW'
+    'xlQWN0aW9uLlRhZ1Jlc291cmNlc0gAUgx0YWdSZXNvdXJjZXMaUwoGRXhwb3J0EkkKDXByb2Zp'
+    'bGVfdGFibGUYASABKAsyJC5nb29nbGUucHJpdmFjeS5kbHAudjIuQmlnUXVlcnlUYWJsZVIMcH'
+    'JvZmlsZVRhYmxlGrIDChJQdWJTdWJOb3RpZmljYXRpb24SFAoFdG9waWMYASABKAlSBXRvcGlj'
+    'EkgKBWV2ZW50GAIgASgOMjIuZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkRhdGFQcm9maWxlQWN0aW'
+    '9uLkV2ZW50VHlwZVIFZXZlbnQSXAoQcHVic3ViX2NvbmRpdGlvbhgDIAEoCzIxLmdvb2dsZS5w'
+    'cml2YWN5LmRscC52Mi5EYXRhUHJvZmlsZVB1YlN1YkNvbmRpdGlvblIPcHVic3ViQ29uZGl0aW'
+    '9uEnMKEWRldGFpbF9vZl9tZXNzYWdlGAQgASgOMkcuZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkRh'
+    'dGFQcm9maWxlQWN0aW9uLlB1YlN1Yk5vdGlmaWNhdGlvbi5EZXRhaWxMZXZlbFIPZGV0YWlsT2'
+    'ZNZXNzYWdlImkKC0RldGFpbExldmVsEhwKGERFVEFJTF9MRVZFTF9VTlNQRUNJRklFRBAAEhEK'
+    'DVRBQkxFX1BST0ZJTEUQARIRCg1SRVNPVVJDRV9OQU1FEAISFgoSRklMRV9TVE9SRV9QUk9GSU'
+    'xFEAMaFAoSUHVibGlzaFRvQ2hyb25pY2xlGiAKHlB1Ymxpc2hUb1NlY3VyaXR5Q29tbWFuZENl'
+    'bnRlchqaBAoMVGFnUmVzb3VyY2VzEmkKDnRhZ19jb25kaXRpb25zGAEgAygLMkIuZ29vZ2xlLn'
+    'ByaXZhY3kuZGxwLnYyLkRhdGFQcm9maWxlQWN0aW9uLlRhZ1Jlc291cmNlcy5UYWdDb25kaXRp'
+    'b25SDXRhZ0NvbmRpdGlvbnMSZQoacHJvZmlsZV9nZW5lcmF0aW9uc190b190YWcYAiADKA4yKC'
+    '5nb29nbGUucHJpdmFjeS5kbHAudjIuUHJvZmlsZUdlbmVyYXRpb25SF3Byb2ZpbGVHZW5lcmF0'
+    'aW9uc1RvVGFnEjIKFmxvd2VyX2RhdGFfcmlza190b19sb3cYAyABKAhSEmxvd2VyRGF0YVJpc2'
+    'tUb0xvdxrAAQoMVGFnQ29uZGl0aW9uElAKA3RhZxgBIAEoCzI+Lmdvb2dsZS5wcml2YWN5LmRs'
+    'cC52Mi5EYXRhUHJvZmlsZUFjdGlvbi5UYWdSZXNvdXJjZXMuVGFnVmFsdWVSA3RhZxJWChFzZW'
+    '5zaXRpdml0eV9zY29yZRgCIAEoCzInLmdvb2dsZS5wcml2YWN5LmRscC52Mi5TZW5zaXRpdml0'
+    'eVNjb3JlSABSEHNlbnNpdGl2aXR5U2NvcmVCBgoEdHlwZRpBCghUYWdWYWx1ZRIrChBuYW1lc3'
+    'BhY2VkX3ZhbHVlGAEgASgJSABSD25hbWVzcGFjZWRWYWx1ZUIICgZmb3JtYXQidQoJRXZlbnRU'
+    'eXBlEhoKFkVWRU5UX1RZUEVfVU5TUEVDSUZJRUQQABIPCgtORVdfUFJPRklMRRABEhMKD0NIQU'
+    '5HRURfUFJPRklMRRACEhMKD1NDT1JFX0lOQ1JFQVNFRBADEhEKDUVSUk9SX0NIQU5HRUQQBEII'
+    'CgZhY3Rpb24=');
 
 @$core.Deprecated('Use dataProfileJobConfigDescriptor instead')
 const DataProfileJobConfig$json = {
@@ -3647,6 +3664,7 @@ const DataProfileJobConfig$json = {
   '2': [
     {'1': 'location', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DataProfileLocation', '10': 'location'},
     {'1': 'project_id', '3': 5, '4': 1, '5': 9, '10': 'projectId'},
+    {'1': 'other_cloud_starting_location', '3': 8, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.OtherCloudDiscoveryStartingLocation', '10': 'otherCloudStartingLocation'},
     {'1': 'inspect_templates', '3': 7, '4': 3, '5': 9, '10': 'inspectTemplates'},
     {'1': 'data_profile_actions', '3': 6, '4': 3, '5': 11, '6': '.google.privacy.dlp.v2.DataProfileAction', '10': 'dataProfileActions'},
   ],
@@ -3656,9 +3674,12 @@ const DataProfileJobConfig$json = {
 final $typed_data.Uint8List dataProfileJobConfigDescriptor = $convert.base64Decode(
     'ChREYXRhUHJvZmlsZUpvYkNvbmZpZxJGCghsb2NhdGlvbhgBIAEoCzIqLmdvb2dsZS5wcml2YW'
     'N5LmRscC52Mi5EYXRhUHJvZmlsZUxvY2F0aW9uUghsb2NhdGlvbhIdCgpwcm9qZWN0X2lkGAUg'
-    'ASgJUglwcm9qZWN0SWQSKwoRaW5zcGVjdF90ZW1wbGF0ZXMYByADKAlSEGluc3BlY3RUZW1wbG'
-    'F0ZXMSWgoUZGF0YV9wcm9maWxlX2FjdGlvbnMYBiADKAsyKC5nb29nbGUucHJpdmFjeS5kbHAu'
-    'djIuRGF0YVByb2ZpbGVBY3Rpb25SEmRhdGFQcm9maWxlQWN0aW9ucw==');
+    'ASgJUglwcm9qZWN0SWQSfQodb3RoZXJfY2xvdWRfc3RhcnRpbmdfbG9jYXRpb24YCCABKAsyOi'
+    '5nb29nbGUucHJpdmFjeS5kbHAudjIuT3RoZXJDbG91ZERpc2NvdmVyeVN0YXJ0aW5nTG9jYXRp'
+    'b25SGm90aGVyQ2xvdWRTdGFydGluZ0xvY2F0aW9uEisKEWluc3BlY3RfdGVtcGxhdGVzGAcgAy'
+    'gJUhBpbnNwZWN0VGVtcGxhdGVzEloKFGRhdGFfcHJvZmlsZV9hY3Rpb25zGAYgAygLMiguZ29v'
+    'Z2xlLnByaXZhY3kuZGxwLnYyLkRhdGFQcm9maWxlQWN0aW9uUhJkYXRhUHJvZmlsZUFjdGlvbn'
+    'M=');
 
 @$core.Deprecated('Use bigQueryRegexDescriptor instead')
 const BigQueryRegex$json = {
@@ -3735,6 +3756,7 @@ const DiscoveryConfig$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'display_name', '3': 11, '4': 1, '5': 9, '10': 'displayName'},
     {'1': 'org_config', '3': 2, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DiscoveryConfig.OrgConfig', '10': 'orgConfig'},
+    {'1': 'other_cloud_starting_location', '3': 12, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.OtherCloudDiscoveryStartingLocation', '10': 'otherCloudStartingLocation'},
     {'1': 'inspect_templates', '3': 3, '4': 3, '5': 9, '10': 'inspectTemplates'},
     {'1': 'actions', '3': 4, '4': 3, '5': 11, '6': '.google.privacy.dlp.v2.DataProfileAction', '10': 'actions'},
     {'1': 'targets', '3': 5, '4': 3, '5': 11, '6': '.google.privacy.dlp.v2.DiscoveryTarget', '10': 'targets'},
@@ -3772,22 +3794,24 @@ const DiscoveryConfig_Status$json = {
 final $typed_data.Uint8List discoveryConfigDescriptor = $convert.base64Decode(
     'Cg9EaXNjb3ZlcnlDb25maWcSEgoEbmFtZRgBIAEoCVIEbmFtZRIhCgxkaXNwbGF5X25hbWUYCy'
     'ABKAlSC2Rpc3BsYXlOYW1lEk8KCm9yZ19jb25maWcYAiABKAsyMC5nb29nbGUucHJpdmFjeS5k'
-    'bHAudjIuRGlzY292ZXJ5Q29uZmlnLk9yZ0NvbmZpZ1IJb3JnQ29uZmlnEisKEWluc3BlY3RfdG'
-    'VtcGxhdGVzGAMgAygJUhBpbnNwZWN0VGVtcGxhdGVzEkIKB2FjdGlvbnMYBCADKAsyKC5nb29n'
-    'bGUucHJpdmFjeS5kbHAudjIuRGF0YVByb2ZpbGVBY3Rpb25SB2FjdGlvbnMSQAoHdGFyZ2V0cx'
-    'gFIAMoCzImLmdvb2dsZS5wcml2YWN5LmRscC52Mi5EaXNjb3ZlcnlUYXJnZXRSB3RhcmdldHMS'
-    'OQoGZXJyb3JzGAYgAygLMhwuZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkVycm9yQgPgQQNSBmVycm'
-    '9ycxJACgtjcmVhdGVfdGltZRgHIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BB'
-    'A1IKY3JlYXRlVGltZRJACgt1cGRhdGVfdGltZRgIIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW'
-    '1lc3RhbXBCA+BBA1IKdXBkYXRlVGltZRJDCg1sYXN0X3J1bl90aW1lGAkgASgLMhouZ29vZ2xl'
-    'LnByb3RvYnVmLlRpbWVzdGFtcEID4EEDUgtsYXN0UnVuVGltZRJKCgZzdGF0dXMYCiABKA4yLS'
-    '5nb29nbGUucHJpdmFjeS5kbHAudjIuRGlzY292ZXJ5Q29uZmlnLlN0YXR1c0ID4EECUgZzdGF0'
-    'dXMaeAoJT3JnQ29uZmlnEkwKCGxvY2F0aW9uGAEgASgLMjAuZ29vZ2xlLnByaXZhY3kuZGxwLn'
-    'YyLkRpc2NvdmVyeVN0YXJ0aW5nTG9jYXRpb25SCGxvY2F0aW9uEh0KCnByb2plY3RfaWQYAiAB'
-    'KAlSCXByb2plY3RJZCI5CgZTdGF0dXMSFgoSU1RBVFVTX1VOU1BFQ0lGSUVEEAASCwoHUlVOTk'
-    'lORxABEgoKBlBBVVNFRBACOnTqQXEKImRscC5nb29nbGVhcGlzLmNvbS9EaXNjb3ZlcnlDb25m'
-    'aWcSS3Byb2plY3RzL3twcm9qZWN0fS9sb2NhdGlvbnMve2xvY2F0aW9ufS9kaXNjb3ZlcnlDb2'
-    '5maWdzL3tkaXNjb3ZlcnlfY29uZmlnfQ==');
+    'bHAudjIuRGlzY292ZXJ5Q29uZmlnLk9yZ0NvbmZpZ1IJb3JnQ29uZmlnEn0KHW90aGVyX2Nsb3'
+    'VkX3N0YXJ0aW5nX2xvY2F0aW9uGAwgASgLMjouZ29vZ2xlLnByaXZhY3kuZGxwLnYyLk90aGVy'
+    'Q2xvdWREaXNjb3ZlcnlTdGFydGluZ0xvY2F0aW9uUhpvdGhlckNsb3VkU3RhcnRpbmdMb2NhdG'
+    'lvbhIrChFpbnNwZWN0X3RlbXBsYXRlcxgDIAMoCVIQaW5zcGVjdFRlbXBsYXRlcxJCCgdhY3Rp'
+    'b25zGAQgAygLMiguZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkRhdGFQcm9maWxlQWN0aW9uUgdhY3'
+    'Rpb25zEkAKB3RhcmdldHMYBSADKAsyJi5nb29nbGUucHJpdmFjeS5kbHAudjIuRGlzY292ZXJ5'
+    'VGFyZ2V0Ugd0YXJnZXRzEjkKBmVycm9ycxgGIAMoCzIcLmdvb2dsZS5wcml2YWN5LmRscC52Mi'
+    '5FcnJvckID4EEDUgZlcnJvcnMSQAoLY3JlYXRlX3RpbWUYByABKAsyGi5nb29nbGUucHJvdG9i'
+    'dWYuVGltZXN0YW1wQgPgQQNSCmNyZWF0ZVRpbWUSQAoLdXBkYXRlX3RpbWUYCCABKAsyGi5nb2'
+    '9nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQNSCnVwZGF0ZVRpbWUSQwoNbGFzdF9ydW5fdGlt'
+    'ZRgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBA1ILbGFzdFJ1blRpbWUSSg'
+    'oGc3RhdHVzGAogASgOMi0uZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkRpc2NvdmVyeUNvbmZpZy5T'
+    'dGF0dXNCA+BBAlIGc3RhdHVzGngKCU9yZ0NvbmZpZxJMCghsb2NhdGlvbhgBIAEoCzIwLmdvb2'
+    'dsZS5wcml2YWN5LmRscC52Mi5EaXNjb3ZlcnlTdGFydGluZ0xvY2F0aW9uUghsb2NhdGlvbhId'
+    'Cgpwcm9qZWN0X2lkGAIgASgJUglwcm9qZWN0SWQiOQoGU3RhdHVzEhYKElNUQVRVU19VTlNQRU'
+    'NJRklFRBAAEgsKB1JVTk5JTkcQARIKCgZQQVVTRUQQAjp06kFxCiJkbHAuZ29vZ2xlYXBpcy5j'
+    'b20vRGlzY292ZXJ5Q29uZmlnEktwcm9qZWN0cy97cHJvamVjdH0vbG9jYXRpb25zL3tsb2NhdG'
+    'lvbn0vZGlzY292ZXJ5Q29uZmlncy97ZGlzY292ZXJ5X2NvbmZpZ30=');
 
 @$core.Deprecated('Use discoveryTargetDescriptor instead')
 const DiscoveryTarget$json = {
@@ -3797,6 +3821,7 @@ const DiscoveryTarget$json = {
     {'1': 'cloud_sql_target', '3': 2, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.CloudSqlDiscoveryTarget', '9': 0, '10': 'cloudSqlTarget'},
     {'1': 'secrets_target', '3': 3, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.SecretsDiscoveryTarget', '9': 0, '10': 'secretsTarget'},
     {'1': 'cloud_storage_target', '3': 4, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.CloudStorageDiscoveryTarget', '9': 0, '10': 'cloudStorageTarget'},
+    {'1': 'other_cloud_target', '3': 5, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.OtherCloudDiscoveryTarget', '9': 0, '10': 'otherCloudTarget'},
   ],
   '8': [
     {'1': 'target'},
@@ -3812,7 +3837,9 @@ final $typed_data.Uint8List discoveryTargetDescriptor = $convert.base64Decode(
     'ASgLMi0uZ29vZ2xlLnByaXZhY3kuZGxwLnYyLlNlY3JldHNEaXNjb3ZlcnlUYXJnZXRIAFINc2'
     'VjcmV0c1RhcmdldBJmChRjbG91ZF9zdG9yYWdlX3RhcmdldBgEIAEoCzIyLmdvb2dsZS5wcml2'
     'YWN5LmRscC52Mi5DbG91ZFN0b3JhZ2VEaXNjb3ZlcnlUYXJnZXRIAFISY2xvdWRTdG9yYWdlVG'
-    'FyZ2V0QggKBnRhcmdldA==');
+    'FyZ2V0EmAKEm90aGVyX2Nsb3VkX3RhcmdldBgFIAEoCzIwLmdvb2dsZS5wcml2YWN5LmRscC52'
+    'Mi5PdGhlckNsb3VkRGlzY292ZXJ5VGFyZ2V0SABSEG90aGVyQ2xvdWRUYXJnZXRCCAoGdGFyZ2'
+    'V0');
 
 @$core.Deprecated('Use bigQueryDiscoveryTargetDescriptor instead')
 const BigQueryDiscoveryTarget$json = {
@@ -4426,6 +4453,257 @@ final $typed_data.Uint8List discoveryFileStoreConditionsDescriptor = $convert.ba
     'ZXJ5Q2xvdWRTdG9yYWdlQ29uZGl0aW9uc0ID4EEBSABSFmNsb3VkU3RvcmFnZUNvbmRpdGlvbn'
     'NCDAoKY29uZGl0aW9ucw==');
 
+@$core.Deprecated('Use otherCloudDiscoveryTargetDescriptor instead')
+const OtherCloudDiscoveryTarget$json = {
+  '1': 'OtherCloudDiscoveryTarget',
+  '2': [
+    {'1': 'data_source_type', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DataSourceType', '8': {}, '10': 'dataSourceType'},
+    {'1': 'filter', '3': 2, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DiscoveryOtherCloudFilter', '8': {}, '10': 'filter'},
+    {'1': 'conditions', '3': 3, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DiscoveryOtherCloudConditions', '8': {}, '10': 'conditions'},
+    {'1': 'generation_cadence', '3': 4, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DiscoveryOtherCloudGenerationCadence', '9': 0, '10': 'generationCadence'},
+    {'1': 'disabled', '3': 5, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.Disabled', '9': 0, '10': 'disabled'},
+  ],
+  '8': [
+    {'1': 'cadence'},
+  ],
+};
+
+/// Descriptor for `OtherCloudDiscoveryTarget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List otherCloudDiscoveryTargetDescriptor = $convert.base64Decode(
+    'ChlPdGhlckNsb3VkRGlzY292ZXJ5VGFyZ2V0ElQKEGRhdGFfc291cmNlX3R5cGUYASABKAsyJS'
+    '5nb29nbGUucHJpdmFjeS5kbHAudjIuRGF0YVNvdXJjZVR5cGVCA+BBAlIOZGF0YVNvdXJjZVR5'
+    'cGUSTQoGZmlsdGVyGAIgASgLMjAuZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkRpc2NvdmVyeU90aG'
+    'VyQ2xvdWRGaWx0ZXJCA+BBAlIGZmlsdGVyElkKCmNvbmRpdGlvbnMYAyABKAsyNC5nb29nbGUu'
+    'cHJpdmFjeS5kbHAudjIuRGlzY292ZXJ5T3RoZXJDbG91ZENvbmRpdGlvbnNCA+BBAVIKY29uZG'
+    'l0aW9ucxJsChJnZW5lcmF0aW9uX2NhZGVuY2UYBCABKAsyOy5nb29nbGUucHJpdmFjeS5kbHAu'
+    'djIuRGlzY292ZXJ5T3RoZXJDbG91ZEdlbmVyYXRpb25DYWRlbmNlSABSEWdlbmVyYXRpb25DYW'
+    'RlbmNlEj0KCGRpc2FibGVkGAUgASgLMh8uZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkRpc2FibGVk'
+    'SABSCGRpc2FibGVkQgkKB2NhZGVuY2U=');
+
+@$core.Deprecated('Use discoveryOtherCloudFilterDescriptor instead')
+const DiscoveryOtherCloudFilter$json = {
+  '1': 'DiscoveryOtherCloudFilter',
+  '2': [
+    {'1': 'collection', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.OtherCloudResourceCollection', '9': 0, '10': 'collection'},
+    {'1': 'single_resource', '3': 2, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.OtherCloudSingleResourceReference', '9': 0, '10': 'singleResource'},
+    {'1': 'others', '3': 100, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.AllOtherResources', '8': {}, '9': 0, '10': 'others'},
+  ],
+  '8': [
+    {'1': 'filter'},
+  ],
+};
+
+/// Descriptor for `DiscoveryOtherCloudFilter`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List discoveryOtherCloudFilterDescriptor = $convert.base64Decode(
+    'ChlEaXNjb3ZlcnlPdGhlckNsb3VkRmlsdGVyElUKCmNvbGxlY3Rpb24YASABKAsyMy5nb29nbG'
+    'UucHJpdmFjeS5kbHAudjIuT3RoZXJDbG91ZFJlc291cmNlQ29sbGVjdGlvbkgAUgpjb2xsZWN0'
+    'aW9uEmMKD3NpbmdsZV9yZXNvdXJjZRgCIAEoCzI4Lmdvb2dsZS5wcml2YWN5LmRscC52Mi5PdG'
+    'hlckNsb3VkU2luZ2xlUmVzb3VyY2VSZWZlcmVuY2VIAFIOc2luZ2xlUmVzb3VyY2USRwoGb3Ro'
+    'ZXJzGGQgASgLMiguZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkFsbE90aGVyUmVzb3VyY2VzQgPgQQ'
+    'FIAFIGb3RoZXJzQggKBmZpbHRlcg==');
+
+@$core.Deprecated('Use otherCloudResourceCollectionDescriptor instead')
+const OtherCloudResourceCollection$json = {
+  '1': 'OtherCloudResourceCollection',
+  '2': [
+    {'1': 'include_regexes', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.OtherCloudResourceRegexes', '9': 0, '10': 'includeRegexes'},
+  ],
+  '8': [
+    {'1': 'pattern'},
+  ],
+};
+
+/// Descriptor for `OtherCloudResourceCollection`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List otherCloudResourceCollectionDescriptor = $convert.base64Decode(
+    'ChxPdGhlckNsb3VkUmVzb3VyY2VDb2xsZWN0aW9uElsKD2luY2x1ZGVfcmVnZXhlcxgBIAEoCz'
+    'IwLmdvb2dsZS5wcml2YWN5LmRscC52Mi5PdGhlckNsb3VkUmVzb3VyY2VSZWdleGVzSABSDmlu'
+    'Y2x1ZGVSZWdleGVzQgkKB3BhdHRlcm4=');
+
+@$core.Deprecated('Use otherCloudResourceRegexesDescriptor instead')
+const OtherCloudResourceRegexes$json = {
+  '1': 'OtherCloudResourceRegexes',
+  '2': [
+    {'1': 'patterns', '3': 1, '4': 3, '5': 11, '6': '.google.privacy.dlp.v2.OtherCloudResourceRegex', '10': 'patterns'},
+  ],
+};
+
+/// Descriptor for `OtherCloudResourceRegexes`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List otherCloudResourceRegexesDescriptor = $convert.base64Decode(
+    'ChlPdGhlckNsb3VkUmVzb3VyY2VSZWdleGVzEkoKCHBhdHRlcm5zGAEgAygLMi4uZ29vZ2xlLn'
+    'ByaXZhY3kuZGxwLnYyLk90aGVyQ2xvdWRSZXNvdXJjZVJlZ2V4UghwYXR0ZXJucw==');
+
+@$core.Deprecated('Use otherCloudResourceRegexDescriptor instead')
+const OtherCloudResourceRegex$json = {
+  '1': 'OtherCloudResourceRegex',
+  '2': [
+    {'1': 'amazon_s3_bucket_regex', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.AmazonS3BucketRegex', '9': 0, '10': 'amazonS3BucketRegex'},
+  ],
+  '8': [
+    {'1': 'resource_regex'},
+  ],
+};
+
+/// Descriptor for `OtherCloudResourceRegex`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List otherCloudResourceRegexDescriptor = $convert.base64Decode(
+    'ChdPdGhlckNsb3VkUmVzb3VyY2VSZWdleBJhChZhbWF6b25fczNfYnVja2V0X3JlZ2V4GAEgAS'
+    'gLMiouZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkFtYXpvblMzQnVja2V0UmVnZXhIAFITYW1hem9u'
+    'UzNCdWNrZXRSZWdleEIQCg5yZXNvdXJjZV9yZWdleA==');
+
+@$core.Deprecated('Use awsAccountRegexDescriptor instead')
+const AwsAccountRegex$json = {
+  '1': 'AwsAccountRegex',
+  '2': [
+    {'1': 'account_id_regex', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'accountIdRegex'},
+  ],
+};
+
+/// Descriptor for `AwsAccountRegex`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List awsAccountRegexDescriptor = $convert.base64Decode(
+    'Cg9Bd3NBY2NvdW50UmVnZXgSLQoQYWNjb3VudF9pZF9yZWdleBgBIAEoCUID4EEBUg5hY2NvdW'
+    '50SWRSZWdleA==');
+
+@$core.Deprecated('Use amazonS3BucketRegexDescriptor instead')
+const AmazonS3BucketRegex$json = {
+  '1': 'AmazonS3BucketRegex',
+  '2': [
+    {'1': 'aws_account_regex', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.AwsAccountRegex', '10': 'awsAccountRegex'},
+    {'1': 'bucket_name_regex', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'bucketNameRegex'},
+  ],
+};
+
+/// Descriptor for `AmazonS3BucketRegex`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List amazonS3BucketRegexDescriptor = $convert.base64Decode(
+    'ChNBbWF6b25TM0J1Y2tldFJlZ2V4ElIKEWF3c19hY2NvdW50X3JlZ2V4GAEgASgLMiYuZ29vZ2'
+    'xlLnByaXZhY3kuZGxwLnYyLkF3c0FjY291bnRSZWdleFIPYXdzQWNjb3VudFJlZ2V4Ei8KEWJ1'
+    'Y2tldF9uYW1lX3JlZ2V4GAIgASgJQgPgQQFSD2J1Y2tldE5hbWVSZWdleA==');
+
+@$core.Deprecated('Use otherCloudSingleResourceReferenceDescriptor instead')
+const OtherCloudSingleResourceReference$json = {
+  '1': 'OtherCloudSingleResourceReference',
+  '2': [
+    {'1': 'amazon_s3_bucket', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.AmazonS3Bucket', '9': 0, '10': 'amazonS3Bucket'},
+  ],
+  '8': [
+    {'1': 'resource'},
+  ],
+};
+
+/// Descriptor for `OtherCloudSingleResourceReference`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List otherCloudSingleResourceReferenceDescriptor = $convert.base64Decode(
+    'CiFPdGhlckNsb3VkU2luZ2xlUmVzb3VyY2VSZWZlcmVuY2USUQoQYW1hem9uX3MzX2J1Y2tldB'
+    'gBIAEoCzIlLmdvb2dsZS5wcml2YWN5LmRscC52Mi5BbWF6b25TM0J1Y2tldEgAUg5hbWF6b25T'
+    'M0J1Y2tldEIKCghyZXNvdXJjZQ==');
+
+@$core.Deprecated('Use awsAccountDescriptor instead')
+const AwsAccount$json = {
+  '1': 'AwsAccount',
+  '2': [
+    {'1': 'account_id', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'accountId'},
+  ],
+};
+
+/// Descriptor for `AwsAccount`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List awsAccountDescriptor = $convert.base64Decode(
+    'CgpBd3NBY2NvdW50EiIKCmFjY291bnRfaWQYASABKAlCA+BBAlIJYWNjb3VudElk');
+
+@$core.Deprecated('Use amazonS3BucketDescriptor instead')
+const AmazonS3Bucket$json = {
+  '1': 'AmazonS3Bucket',
+  '2': [
+    {'1': 'aws_account', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.AwsAccount', '10': 'awsAccount'},
+    {'1': 'bucket_name', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'bucketName'},
+  ],
+};
+
+/// Descriptor for `AmazonS3Bucket`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List amazonS3BucketDescriptor = $convert.base64Decode(
+    'Cg5BbWF6b25TM0J1Y2tldBJCCgthd3NfYWNjb3VudBgBIAEoCzIhLmdvb2dsZS5wcml2YWN5Lm'
+    'RscC52Mi5Bd3NBY2NvdW50Ugphd3NBY2NvdW50EiQKC2J1Y2tldF9uYW1lGAIgASgJQgPgQQJS'
+    'CmJ1Y2tldE5hbWU=');
+
+@$core.Deprecated('Use discoveryOtherCloudConditionsDescriptor instead')
+const DiscoveryOtherCloudConditions$json = {
+  '1': 'DiscoveryOtherCloudConditions',
+  '2': [
+    {'1': 'min_age', '3': 1, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'minAge'},
+    {'1': 'amazon_s3_bucket_conditions', '3': 2, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.AmazonS3BucketConditions', '9': 0, '10': 'amazonS3BucketConditions'},
+  ],
+  '8': [
+    {'1': 'conditions'},
+  ],
+};
+
+/// Descriptor for `DiscoveryOtherCloudConditions`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List discoveryOtherCloudConditionsDescriptor = $convert.base64Decode(
+    'Ch1EaXNjb3ZlcnlPdGhlckNsb3VkQ29uZGl0aW9ucxIyCgdtaW5fYWdlGAEgASgLMhkuZ29vZ2'
+    'xlLnByb3RvYnVmLkR1cmF0aW9uUgZtaW5BZ2UScAobYW1hem9uX3MzX2J1Y2tldF9jb25kaXRp'
+    'b25zGAIgASgLMi8uZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkFtYXpvblMzQnVja2V0Q29uZGl0aW'
+    '9uc0gAUhhhbWF6b25TM0J1Y2tldENvbmRpdGlvbnNCDAoKY29uZGl0aW9ucw==');
+
+@$core.Deprecated('Use amazonS3BucketConditionsDescriptor instead')
+const AmazonS3BucketConditions$json = {
+  '1': 'AmazonS3BucketConditions',
+  '2': [
+    {'1': 'bucket_types', '3': 1, '4': 3, '5': 14, '6': '.google.privacy.dlp.v2.AmazonS3BucketConditions.BucketType', '8': {}, '10': 'bucketTypes'},
+    {'1': 'object_storage_classes', '3': 2, '4': 3, '5': 14, '6': '.google.privacy.dlp.v2.AmazonS3BucketConditions.ObjectStorageClass', '8': {}, '10': 'objectStorageClasses'},
+  ],
+  '4': [AmazonS3BucketConditions_BucketType$json, AmazonS3BucketConditions_ObjectStorageClass$json],
+};
+
+@$core.Deprecated('Use amazonS3BucketConditionsDescriptor instead')
+const AmazonS3BucketConditions_BucketType$json = {
+  '1': 'BucketType',
+  '2': [
+    {'1': 'TYPE_UNSPECIFIED', '2': 0},
+    {'1': 'TYPE_ALL_SUPPORTED', '2': 1},
+    {'1': 'TYPE_GENERAL_PURPOSE', '2': 2},
+  ],
+};
+
+@$core.Deprecated('Use amazonS3BucketConditionsDescriptor instead')
+const AmazonS3BucketConditions_ObjectStorageClass$json = {
+  '1': 'ObjectStorageClass',
+  '2': [
+    {'1': 'UNSPECIFIED', '2': 0},
+    {'1': 'ALL_SUPPORTED_CLASSES', '2': 1},
+    {'1': 'STANDARD', '2': 2},
+    {'1': 'STANDARD_INFREQUENT_ACCESS', '2': 4},
+    {'1': 'GLACIER_INSTANT_RETRIEVAL', '2': 6},
+    {'1': 'INTELLIGENT_TIERING', '2': 7},
+  ],
+};
+
+/// Descriptor for `AmazonS3BucketConditions`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List amazonS3BucketConditionsDescriptor = $convert.base64Decode(
+    'ChhBbWF6b25TM0J1Y2tldENvbmRpdGlvbnMSYgoMYnVja2V0X3R5cGVzGAEgAygOMjouZ29vZ2'
+    'xlLnByaXZhY3kuZGxwLnYyLkFtYXpvblMzQnVja2V0Q29uZGl0aW9ucy5CdWNrZXRUeXBlQgPg'
+    'QQFSC2J1Y2tldFR5cGVzEn0KFm9iamVjdF9zdG9yYWdlX2NsYXNzZXMYAiADKA4yQi5nb29nbG'
+    'UucHJpdmFjeS5kbHAudjIuQW1hem9uUzNCdWNrZXRDb25kaXRpb25zLk9iamVjdFN0b3JhZ2VD'
+    'bGFzc0ID4EEBUhRvYmplY3RTdG9yYWdlQ2xhc3NlcyJUCgpCdWNrZXRUeXBlEhQKEFRZUEVfVU'
+    '5TUEVDSUZJRUQQABIWChJUWVBFX0FMTF9TVVBQT1JURUQQARIYChRUWVBFX0dFTkVSQUxfUFVS'
+    'UE9TRRACIqYBChJPYmplY3RTdG9yYWdlQ2xhc3MSDwoLVU5TUEVDSUZJRUQQABIZChVBTExfU1'
+    'VQUE9SVEVEX0NMQVNTRVMQARIMCghTVEFOREFSRBACEh4KGlNUQU5EQVJEX0lORlJFUVVFTlRf'
+    'QUNDRVNTEAQSHQoZR0xBQ0lFUl9JTlNUQU5UX1JFVFJJRVZBTBAGEhcKE0lOVEVMTElHRU5UX1'
+    'RJRVJJTkcQBw==');
+
+@$core.Deprecated('Use discoveryOtherCloudGenerationCadenceDescriptor instead')
+const DiscoveryOtherCloudGenerationCadence$json = {
+  '1': 'DiscoveryOtherCloudGenerationCadence',
+  '2': [
+    {'1': 'refresh_frequency', '3': 1, '4': 1, '5': 14, '6': '.google.privacy.dlp.v2.DataProfileUpdateFrequency', '8': {}, '10': 'refreshFrequency'},
+    {'1': 'inspect_template_modified_cadence', '3': 2, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.DiscoveryInspectTemplateModifiedCadence', '8': {}, '10': 'inspectTemplateModifiedCadence'},
+  ],
+};
+
+/// Descriptor for `DiscoveryOtherCloudGenerationCadence`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List discoveryOtherCloudGenerationCadenceDescriptor = $convert.base64Decode(
+    'CiREaXNjb3ZlcnlPdGhlckNsb3VkR2VuZXJhdGlvbkNhZGVuY2USYwoRcmVmcmVzaF9mcmVxdW'
+    'VuY3kYASABKA4yMS5nb29nbGUucHJpdmFjeS5kbHAudjIuRGF0YVByb2ZpbGVVcGRhdGVGcmVx'
+    'dWVuY3lCA+BBAVIQcmVmcmVzaEZyZXF1ZW5jeRKOAQohaW5zcGVjdF90ZW1wbGF0ZV9tb2RpZm'
+    'llZF9jYWRlbmNlGAIgASgLMj4uZ29vZ2xlLnByaXZhY3kuZGxwLnYyLkRpc2NvdmVyeUluc3Bl'
+    'Y3RUZW1wbGF0ZU1vZGlmaWVkQ2FkZW5jZUID4EEBUh5pbnNwZWN0VGVtcGxhdGVNb2RpZmllZE'
+    'NhZGVuY2U=');
+
 @$core.Deprecated('Use discoveryStartingLocationDescriptor instead')
 const DiscoveryStartingLocation$json = {
   '1': 'DiscoveryStartingLocation',
@@ -4443,6 +4721,39 @@ final $typed_data.Uint8List discoveryStartingLocationDescriptor = $convert.base6
     'ChlEaXNjb3ZlcnlTdGFydGluZ0xvY2F0aW9uEikKD29yZ2FuaXphdGlvbl9pZBgBIAEoA0gAUg'
     '5vcmdhbml6YXRpb25JZBIdCglmb2xkZXJfaWQYAiABKANIAFIIZm9sZGVySWRCCgoIbG9jYXRp'
     'b24=');
+
+@$core.Deprecated('Use otherCloudDiscoveryStartingLocationDescriptor instead')
+const OtherCloudDiscoveryStartingLocation$json = {
+  '1': 'OtherCloudDiscoveryStartingLocation',
+  '2': [
+    {'1': 'aws_location', '3': 1, '4': 1, '5': 11, '6': '.google.privacy.dlp.v2.OtherCloudDiscoveryStartingLocation.AwsDiscoveryStartingLocation', '9': 0, '10': 'awsLocation'},
+  ],
+  '3': [OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation$json],
+  '8': [
+    {'1': 'location'},
+  ],
+};
+
+@$core.Deprecated('Use otherCloudDiscoveryStartingLocationDescriptor instead')
+const OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation$json = {
+  '1': 'AwsDiscoveryStartingLocation',
+  '2': [
+    {'1': 'account_id', '3': 2, '4': 1, '5': 9, '9': 0, '10': 'accountId'},
+    {'1': 'all_asset_inventory_assets', '3': 3, '4': 1, '5': 8, '9': 0, '10': 'allAssetInventoryAssets'},
+  ],
+  '8': [
+    {'1': 'scope'},
+  ],
+};
+
+/// Descriptor for `OtherCloudDiscoveryStartingLocation`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List otherCloudDiscoveryStartingLocationDescriptor = $convert.base64Decode(
+    'CiNPdGhlckNsb3VkRGlzY292ZXJ5U3RhcnRpbmdMb2NhdGlvbhJ8Cgxhd3NfbG9jYXRpb24YAS'
+    'ABKAsyVy5nb29nbGUucHJpdmFjeS5kbHAudjIuT3RoZXJDbG91ZERpc2NvdmVyeVN0YXJ0aW5n'
+    'TG9jYXRpb24uQXdzRGlzY292ZXJ5U3RhcnRpbmdMb2NhdGlvbkgAUgthd3NMb2NhdGlvbhqHAQ'
+    'ocQXdzRGlzY292ZXJ5U3RhcnRpbmdMb2NhdGlvbhIfCgphY2NvdW50X2lkGAIgASgJSABSCWFj'
+    'Y291bnRJZBI9ChphbGxfYXNzZXRfaW52ZW50b3J5X2Fzc2V0cxgDIAEoCEgAUhdhbGxBc3NldE'
+    'ludmVudG9yeUFzc2V0c0IHCgVzY29wZUIKCghsb2NhdGlvbg==');
 
 @$core.Deprecated('Use allOtherResourcesDescriptor instead')
 const AllOtherResources$json = {

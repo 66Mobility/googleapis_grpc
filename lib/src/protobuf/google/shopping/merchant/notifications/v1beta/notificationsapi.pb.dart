@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/field_mask.pb.dart' as $330;
-import '../../../type/types.pbenum.dart' as $528;
+import '../../../type/types.pbenum.dart' as $533;
 import 'notificationsapi.pbenum.dart';
 
 export 'notificationsapi.pbenum.dart';
@@ -554,7 +554,7 @@ class ProductChange extends $pb.GeneratedMessage {
     $core.String? oldValue,
     $core.String? newValue,
     $core.String? regionCode,
-    $528.ReportingContext_ReportingContextEnum? reportingContext,
+    $533.ReportingContext_ReportingContextEnum? reportingContext,
   }) {
     final $result = create();
     if (oldValue != null) {
@@ -579,7 +579,7 @@ class ProductChange extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'oldValue')
     ..aOS(2, _omitFieldNames ? '' : 'newValue')
     ..aOS(3, _omitFieldNames ? '' : 'regionCode')
-    ..e<$528.ReportingContext_ReportingContextEnum>(4, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $528.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $528.ReportingContext_ReportingContextEnum.valueOf, enumValues: $528.ReportingContext_ReportingContextEnum.values)
+    ..e<$533.ReportingContext_ReportingContextEnum>(4, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $533.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $533.ReportingContext_ReportingContextEnum.valueOf, enumValues: $533.ReportingContext_ReportingContextEnum.values)
     ..hasRequiredFields = false
   ;
 
@@ -636,9 +636,9 @@ class ProductChange extends $pb.GeneratedMessage {
 
   /// Reporting contexts that have the change (if applicable)
   @$pb.TagNumber(4)
-  $528.ReportingContext_ReportingContextEnum get reportingContext => $_getN(3);
+  $533.ReportingContext_ReportingContextEnum get reportingContext => $_getN(3);
   @$pb.TagNumber(4)
-  set reportingContext($528.ReportingContext_ReportingContextEnum v) { setField(4, v); }
+  set reportingContext($533.ReportingContext_ReportingContextEnum v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasReportingContext() => $_has(3);
   @$pb.TagNumber(4)

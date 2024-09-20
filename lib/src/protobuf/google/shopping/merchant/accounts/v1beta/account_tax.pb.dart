@@ -15,14 +15,14 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/field_mask.pb.dart' as $330;
-import 'tax_rule.pb.dart' as $530;
+import 'tax_rule.pb.dart' as $535;
 
 /// The tax settings of a merchant account. All methods require the admin role.
 class AccountTax extends $pb.GeneratedMessage {
   factory AccountTax({
     $core.String? name,
     $fixnum.Int64? account,
-    $core.Iterable<$530.TaxRule>? taxRules,
+    $core.Iterable<$535.TaxRule>? taxRules,
   }) {
     final $result = create();
     if (name != null) {
@@ -43,7 +43,7 @@ class AccountTax extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountTax', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'account')
-    ..pc<$530.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM, subBuilder: $530.TaxRule.create)
+    ..pc<$535.TaxRule>(3, _omitFieldNames ? '' : 'taxRules', $pb.PbFieldType.PM, subBuilder: $535.TaxRule.create)
     ..hasRequiredFields = false
   ;
 
@@ -94,7 +94,7 @@ class AccountTax extends $pb.GeneratedMessage {
   /// Tax rules. "Define the tax rules in each region.
   /// No tax will be presented if a region has no rule."
   @$pb.TagNumber(3)
-  $core.List<$530.TaxRule> get taxRules => $_getList(2);
+  $core.List<$535.TaxRule> get taxRules => $_getList(2);
 }
 
 /// Request to get tax settings

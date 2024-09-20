@@ -502,8 +502,10 @@ class Place_OpeningHours extends $pb.GeneratedMessage {
   static Place_OpeningHours getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Place_OpeningHours>(create);
   static Place_OpeningHours? _defaultInstance;
 
-  /// Is this place open right now?  Always present unless we lack time-of-day
-  /// or timezone data for these opening hours.
+  /// Whether the opening hours period is currently active. For regular opening
+  /// hours and current opening hours, this field means whether the place is
+  /// open. For secondary opening hours and current secondary opening hours,
+  /// this field means whether the secondary hours of this place is active.
   @$pb.TagNumber(1)
   $core.bool get openNow => $_getBF(0);
   @$pb.TagNumber(1)

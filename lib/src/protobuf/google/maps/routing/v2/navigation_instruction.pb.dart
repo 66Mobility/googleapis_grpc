@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'maneuver.pbenum.dart' as $481;
+import 'maneuver.pbenum.dart' as $486;
 
 /// Encapsulates navigation instructions for a
 /// [`RouteLegStep`][google.maps.routing.v2.RouteLegStep].
 class NavigationInstruction extends $pb.GeneratedMessage {
   factory NavigationInstruction({
-    $481.Maneuver? maneuver,
+    $486.Maneuver? maneuver,
     $core.String? instructions,
   }) {
     final $result = create();
@@ -36,7 +36,7 @@ class NavigationInstruction extends $pb.GeneratedMessage {
   factory NavigationInstruction.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NavigationInstruction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..e<$481.Maneuver>(1, _omitFieldNames ? '' : 'maneuver', $pb.PbFieldType.OE, defaultOrMaker: $481.Maneuver.MANEUVER_UNSPECIFIED, valueOf: $481.Maneuver.valueOf, enumValues: $481.Maneuver.values)
+    ..e<$486.Maneuver>(1, _omitFieldNames ? '' : 'maneuver', $pb.PbFieldType.OE, defaultOrMaker: $486.Maneuver.MANEUVER_UNSPECIFIED, valueOf: $486.Maneuver.valueOf, enumValues: $486.Maneuver.values)
     ..aOS(2, _omitFieldNames ? '' : 'instructions')
     ..hasRequiredFields = false
   ;
@@ -66,9 +66,9 @@ class NavigationInstruction extends $pb.GeneratedMessage {
   /// turn left, merge, or straight). This field determines which icon to
   /// display.
   @$pb.TagNumber(1)
-  $481.Maneuver get maneuver => $_getN(0);
+  $486.Maneuver get maneuver => $_getN(0);
   @$pb.TagNumber(1)
-  set maneuver($481.Maneuver v) { setField(1, v); }
+  set maneuver($486.Maneuver v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasManeuver() => $_has(0);
   @$pb.TagNumber(1)

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../google/protobuf/timestamp.pb.dart' as $299;
-import 'package.pb.dart' as $554;
+import 'package.pb.dart' as $559;
 
 /// An Upgrade Note represents a potential upgrade of a package to a given
 /// version. For each package version combination (i.e. bash 4.0, bash 4.1,
@@ -23,7 +23,7 @@ import 'package.pb.dart' as $554;
 class UpgradeNote extends $pb.GeneratedMessage {
   factory UpgradeNote({
     $core.String? package,
-    $554.Version? version,
+    $559.Version? version,
     $core.Iterable<UpgradeDistribution>? distributions,
     WindowsUpdate? windowsUpdate,
   }) {
@@ -48,7 +48,7 @@ class UpgradeNote extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpgradeNote', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'package')
-    ..aOM<$554.Version>(2, _omitFieldNames ? '' : 'version', subBuilder: $554.Version.create)
+    ..aOM<$559.Version>(2, _omitFieldNames ? '' : 'version', subBuilder: $559.Version.create)
     ..pc<UpgradeDistribution>(3, _omitFieldNames ? '' : 'distributions', $pb.PbFieldType.PM, subBuilder: UpgradeDistribution.create)
     ..aOM<WindowsUpdate>(4, _omitFieldNames ? '' : 'windowsUpdate', subBuilder: WindowsUpdate.create)
     ..hasRequiredFields = false
@@ -88,15 +88,15 @@ class UpgradeNote extends $pb.GeneratedMessage {
   /// Required for non-Windows OS. The version of the package in machine + human
   /// readable form.
   @$pb.TagNumber(2)
-  $554.Version get version => $_getN(1);
+  $559.Version get version => $_getN(1);
   @$pb.TagNumber(2)
-  set version($554.Version v) { setField(2, v); }
+  set version($559.Version v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasVersion() => $_has(1);
   @$pb.TagNumber(2)
   void clearVersion() => clearField(2);
   @$pb.TagNumber(2)
-  $554.Version ensureVersion() => $_ensure(1);
+  $559.Version ensureVersion() => $_ensure(1);
 
   /// Metadata about the upgrade for each specific operating system.
   @$pb.TagNumber(3)
@@ -492,7 +492,7 @@ class WindowsUpdate extends $pb.GeneratedMessage {
 class UpgradeOccurrence extends $pb.GeneratedMessage {
   factory UpgradeOccurrence({
     $core.String? package,
-    $554.Version? parsedVersion,
+    $559.Version? parsedVersion,
     UpgradeDistribution? distribution,
     WindowsUpdate? windowsUpdate,
   }) {
@@ -517,7 +517,7 @@ class UpgradeOccurrence extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpgradeOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'package')
-    ..aOM<$554.Version>(3, _omitFieldNames ? '' : 'parsedVersion', subBuilder: $554.Version.create)
+    ..aOM<$559.Version>(3, _omitFieldNames ? '' : 'parsedVersion', subBuilder: $559.Version.create)
     ..aOM<UpgradeDistribution>(4, _omitFieldNames ? '' : 'distribution', subBuilder: UpgradeDistribution.create)
     ..aOM<WindowsUpdate>(5, _omitFieldNames ? '' : 'windowsUpdate', subBuilder: WindowsUpdate.create)
     ..hasRequiredFields = false
@@ -557,15 +557,15 @@ class UpgradeOccurrence extends $pb.GeneratedMessage {
   /// Required for non-Windows OS. The version of the package in a machine +
   /// human readable form.
   @$pb.TagNumber(3)
-  $554.Version get parsedVersion => $_getN(1);
+  $559.Version get parsedVersion => $_getN(1);
   @$pb.TagNumber(3)
-  set parsedVersion($554.Version v) { setField(3, v); }
+  set parsedVersion($559.Version v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParsedVersion() => $_has(1);
   @$pb.TagNumber(3)
   void clearParsedVersion() => clearField(3);
   @$pb.TagNumber(3)
-  $554.Version ensureParsedVersion() => $_ensure(1);
+  $559.Version ensureParsedVersion() => $_ensure(1);
 
   /// Metadata about the upgrade for available for the specific operating system
   /// for the resource_url. This allows efficient filtering, as well as

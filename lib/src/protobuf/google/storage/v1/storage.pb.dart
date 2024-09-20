@@ -17,8 +17,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import '../../iam/v1/iam_policy.pb.dart' as $86;
 import '../../protobuf/field_mask.pb.dart' as $330;
 import '../../protobuf/wrappers.pb.dart' as $304;
-import 'storage_resources.pb.dart' as $546;
-import 'storage_resources.pbenum.dart' as $546;
+import 'storage_resources.pb.dart' as $551;
+import 'storage_resources.pbenum.dart' as $551;
 
 /// Request message for DeleteBucketAccessControl.
 class DeleteBucketAccessControlRequest extends $pb.GeneratedMessage {
@@ -204,7 +204,7 @@ class GetBucketAccessControlRequest extends $pb.GeneratedMessage {
 class InsertBucketAccessControlRequest extends $pb.GeneratedMessage {
   factory InsertBucketAccessControlRequest({
     $core.String? bucket,
-    $546.BucketAccessControl? bucketAccessControl,
+    $551.BucketAccessControl? bucketAccessControl,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -225,7 +225,7 @@ class InsertBucketAccessControlRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertBucketAccessControlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
-    ..aOM<$546.BucketAccessControl>(3, _omitFieldNames ? '' : 'bucketAccessControl', subBuilder: $546.BucketAccessControl.create)
+    ..aOM<$551.BucketAccessControl>(3, _omitFieldNames ? '' : 'bucketAccessControl', subBuilder: $551.BucketAccessControl.create)
     ..aOM<CommonRequestParams>(4, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -263,15 +263,15 @@ class InsertBucketAccessControlRequest extends $pb.GeneratedMessage {
 
   /// Properties of the new bucket access control being inserted.
   @$pb.TagNumber(3)
-  $546.BucketAccessControl get bucketAccessControl => $_getN(1);
+  $551.BucketAccessControl get bucketAccessControl => $_getN(1);
   @$pb.TagNumber(3)
-  set bucketAccessControl($546.BucketAccessControl v) { setField(3, v); }
+  set bucketAccessControl($551.BucketAccessControl v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBucketAccessControl() => $_has(1);
   @$pb.TagNumber(3)
   void clearBucketAccessControl() => clearField(3);
   @$pb.TagNumber(3)
-  $546.BucketAccessControl ensureBucketAccessControl() => $_ensure(1);
+  $551.BucketAccessControl ensureBucketAccessControl() => $_ensure(1);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(4)
@@ -360,7 +360,7 @@ class PatchBucketAccessControlRequest extends $pb.GeneratedMessage {
   factory PatchBucketAccessControlRequest({
     $core.String? bucket,
     $core.String? entity,
-    $546.BucketAccessControl? bucketAccessControl,
+    $551.BucketAccessControl? bucketAccessControl,
     $330.FieldMask? updateMask,
     CommonRequestParams? commonRequestParams,
   }) {
@@ -389,7 +389,7 @@ class PatchBucketAccessControlRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PatchBucketAccessControlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOS(2, _omitFieldNames ? '' : 'entity')
-    ..aOM<$546.BucketAccessControl>(4, _omitFieldNames ? '' : 'bucketAccessControl', subBuilder: $546.BucketAccessControl.create)
+    ..aOM<$551.BucketAccessControl>(4, _omitFieldNames ? '' : 'bucketAccessControl', subBuilder: $551.BucketAccessControl.create)
     ..aOM<$330.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..aOM<CommonRequestParams>(6, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
@@ -444,15 +444,15 @@ class PatchBucketAccessControlRequest extends $pb.GeneratedMessage {
 
   /// The BucketAccessControl for updating.
   @$pb.TagNumber(4)
-  $546.BucketAccessControl get bucketAccessControl => $_getN(2);
+  $551.BucketAccessControl get bucketAccessControl => $_getN(2);
   @$pb.TagNumber(4)
-  set bucketAccessControl($546.BucketAccessControl v) { setField(4, v); }
+  set bucketAccessControl($551.BucketAccessControl v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBucketAccessControl() => $_has(2);
   @$pb.TagNumber(4)
   void clearBucketAccessControl() => clearField(4);
   @$pb.TagNumber(4)
-  $546.BucketAccessControl ensureBucketAccessControl() => $_ensure(2);
+  $551.BucketAccessControl ensureBucketAccessControl() => $_ensure(2);
 
   ///  List of fields to be updated.
   ///
@@ -492,7 +492,7 @@ class UpdateBucketAccessControlRequest extends $pb.GeneratedMessage {
   factory UpdateBucketAccessControlRequest({
     $core.String? bucket,
     $core.String? entity,
-    $546.BucketAccessControl? bucketAccessControl,
+    $551.BucketAccessControl? bucketAccessControl,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -517,7 +517,7 @@ class UpdateBucketAccessControlRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBucketAccessControlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOS(2, _omitFieldNames ? '' : 'entity')
-    ..aOM<$546.BucketAccessControl>(4, _omitFieldNames ? '' : 'bucketAccessControl', subBuilder: $546.BucketAccessControl.create)
+    ..aOM<$551.BucketAccessControl>(4, _omitFieldNames ? '' : 'bucketAccessControl', subBuilder: $551.BucketAccessControl.create)
     ..aOM<CommonRequestParams>(5, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -571,15 +571,15 @@ class UpdateBucketAccessControlRequest extends $pb.GeneratedMessage {
 
   /// The BucketAccessControl for updating.
   @$pb.TagNumber(4)
-  $546.BucketAccessControl get bucketAccessControl => $_getN(2);
+  $551.BucketAccessControl get bucketAccessControl => $_getN(2);
   @$pb.TagNumber(4)
-  set bucketAccessControl($546.BucketAccessControl v) { setField(4, v); }
+  set bucketAccessControl($551.BucketAccessControl v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBucketAccessControl() => $_has(2);
   @$pb.TagNumber(4)
   void clearBucketAccessControl() => clearField(4);
   @$pb.TagNumber(4)
-  $546.BucketAccessControl ensureBucketAccessControl() => $_ensure(2);
+  $551.BucketAccessControl ensureBucketAccessControl() => $_ensure(2);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(5)
@@ -704,7 +704,7 @@ class GetBucketRequest extends $pb.GeneratedMessage {
     $core.String? bucket,
     $304.Int64Value? ifMetagenerationMatch,
     $304.Int64Value? ifMetagenerationNotMatch,
-    $546.CommonEnums_Projection? projection,
+    $551.CommonEnums_Projection? projection,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -733,7 +733,7 @@ class GetBucketRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOM<$304.Int64Value>(2, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(3, _omitFieldNames ? '' : 'ifMetagenerationNotMatch', subBuilder: $304.Int64Value.create)
-    ..e<$546.CommonEnums_Projection>(4, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
+    ..e<$551.CommonEnums_Projection>(4, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
     ..aOM<CommonRequestParams>(6, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -797,9 +797,9 @@ class GetBucketRequest extends $pb.GeneratedMessage {
 
   /// Set of properties to return. Defaults to `NO_ACL`.
   @$pb.TagNumber(4)
-  $546.CommonEnums_Projection get projection => $_getN(3);
+  $551.CommonEnums_Projection get projection => $_getN(3);
   @$pb.TagNumber(4)
-  set projection($546.CommonEnums_Projection v) { setField(4, v); }
+  set projection($551.CommonEnums_Projection v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasProjection() => $_has(3);
   @$pb.TagNumber(4)
@@ -821,11 +821,11 @@ class GetBucketRequest extends $pb.GeneratedMessage {
 /// Request message for InsertBucket.
 class InsertBucketRequest extends $pb.GeneratedMessage {
   factory InsertBucketRequest({
-    $546.CommonEnums_PredefinedBucketAcl? predefinedAcl,
-    $546.CommonEnums_PredefinedObjectAcl? predefinedDefaultObjectAcl,
+    $551.CommonEnums_PredefinedBucketAcl? predefinedAcl,
+    $551.CommonEnums_PredefinedObjectAcl? predefinedDefaultObjectAcl,
     $core.String? project,
-    $546.CommonEnums_Projection? projection,
-    $546.Bucket? bucket,
+    $551.CommonEnums_Projection? projection,
+    $551.Bucket? bucket,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -854,11 +854,11 @@ class InsertBucketRequest extends $pb.GeneratedMessage {
   factory InsertBucketRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertBucketRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
-    ..e<$546.CommonEnums_PredefinedBucketAcl>(1, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedBucketAcl.PREDEFINED_BUCKET_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedBucketAcl.valueOf, enumValues: $546.CommonEnums_PredefinedBucketAcl.values)
-    ..e<$546.CommonEnums_PredefinedObjectAcl>(2, _omitFieldNames ? '' : 'predefinedDefaultObjectAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $546.CommonEnums_PredefinedObjectAcl.values)
+    ..e<$551.CommonEnums_PredefinedBucketAcl>(1, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedBucketAcl.PREDEFINED_BUCKET_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedBucketAcl.valueOf, enumValues: $551.CommonEnums_PredefinedBucketAcl.values)
+    ..e<$551.CommonEnums_PredefinedObjectAcl>(2, _omitFieldNames ? '' : 'predefinedDefaultObjectAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $551.CommonEnums_PredefinedObjectAcl.values)
     ..aOS(3, _omitFieldNames ? '' : 'project')
-    ..e<$546.CommonEnums_Projection>(4, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
-    ..aOM<$546.Bucket>(6, _omitFieldNames ? '' : 'bucket', subBuilder: $546.Bucket.create)
+    ..e<$551.CommonEnums_Projection>(4, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
+    ..aOM<$551.Bucket>(6, _omitFieldNames ? '' : 'bucket', subBuilder: $551.Bucket.create)
     ..aOM<CommonRequestParams>(7, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -886,9 +886,9 @@ class InsertBucketRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of access controls to this bucket.
   @$pb.TagNumber(1)
-  $546.CommonEnums_PredefinedBucketAcl get predefinedAcl => $_getN(0);
+  $551.CommonEnums_PredefinedBucketAcl get predefinedAcl => $_getN(0);
   @$pb.TagNumber(1)
-  set predefinedAcl($546.CommonEnums_PredefinedBucketAcl v) { setField(1, v); }
+  set predefinedAcl($551.CommonEnums_PredefinedBucketAcl v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPredefinedAcl() => $_has(0);
   @$pb.TagNumber(1)
@@ -896,9 +896,9 @@ class InsertBucketRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of default object access controls to this bucket.
   @$pb.TagNumber(2)
-  $546.CommonEnums_PredefinedObjectAcl get predefinedDefaultObjectAcl => $_getN(1);
+  $551.CommonEnums_PredefinedObjectAcl get predefinedDefaultObjectAcl => $_getN(1);
   @$pb.TagNumber(2)
-  set predefinedDefaultObjectAcl($546.CommonEnums_PredefinedObjectAcl v) { setField(2, v); }
+  set predefinedDefaultObjectAcl($551.CommonEnums_PredefinedObjectAcl v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPredefinedDefaultObjectAcl() => $_has(1);
   @$pb.TagNumber(2)
@@ -918,9 +918,9 @@ class InsertBucketRequest extends $pb.GeneratedMessage {
   /// bucket resource specifies `acl` or `defaultObjectAcl`
   /// properties, when it defaults to `FULL`.
   @$pb.TagNumber(4)
-  $546.CommonEnums_Projection get projection => $_getN(3);
+  $551.CommonEnums_Projection get projection => $_getN(3);
   @$pb.TagNumber(4)
-  set projection($546.CommonEnums_Projection v) { setField(4, v); }
+  set projection($551.CommonEnums_Projection v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasProjection() => $_has(3);
   @$pb.TagNumber(4)
@@ -928,15 +928,15 @@ class InsertBucketRequest extends $pb.GeneratedMessage {
 
   /// Properties of the new bucket being inserted, including its name.
   @$pb.TagNumber(6)
-  $546.Bucket get bucket => $_getN(4);
+  $551.Bucket get bucket => $_getN(4);
   @$pb.TagNumber(6)
-  set bucket($546.Bucket v) { setField(6, v); }
+  set bucket($551.Bucket v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasBucket() => $_has(4);
   @$pb.TagNumber(6)
   void clearBucket() => clearField(6);
   @$pb.TagNumber(6)
-  $546.Bucket ensureBucket() => $_ensure(4);
+  $551.Bucket ensureBucket() => $_ensure(4);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(7)
@@ -1027,7 +1027,7 @@ class ListBucketsRequest extends $pb.GeneratedMessage {
     $core.String? pageToken,
     $core.String? prefix,
     $core.String? project,
-    $546.CommonEnums_Projection? projection,
+    $551.CommonEnums_Projection? projection,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -1060,7 +1060,7 @@ class ListBucketsRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'pageToken')
     ..aOS(3, _omitFieldNames ? '' : 'prefix')
     ..aOS(4, _omitFieldNames ? '' : 'project')
-    ..e<$546.CommonEnums_Projection>(5, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
+    ..e<$551.CommonEnums_Projection>(5, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
     ..aOM<CommonRequestParams>(7, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -1130,9 +1130,9 @@ class ListBucketsRequest extends $pb.GeneratedMessage {
 
   /// Set of properties to return. Defaults to `NO_ACL`.
   @$pb.TagNumber(5)
-  $546.CommonEnums_Projection get projection => $_getN(4);
+  $551.CommonEnums_Projection get projection => $_getN(4);
   @$pb.TagNumber(5)
-  set projection($546.CommonEnums_Projection v) { setField(5, v); }
+  set projection($551.CommonEnums_Projection v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasProjection() => $_has(4);
   @$pb.TagNumber(5)
@@ -1242,10 +1242,10 @@ class PatchBucketRequest extends $pb.GeneratedMessage {
     $core.String? bucket,
     $304.Int64Value? ifMetagenerationMatch,
     $304.Int64Value? ifMetagenerationNotMatch,
-    $546.CommonEnums_PredefinedBucketAcl? predefinedAcl,
-    $546.CommonEnums_PredefinedObjectAcl? predefinedDefaultObjectAcl,
-    $546.CommonEnums_Projection? projection,
-    $546.Bucket? metadata,
+    $551.CommonEnums_PredefinedBucketAcl? predefinedAcl,
+    $551.CommonEnums_PredefinedObjectAcl? predefinedDefaultObjectAcl,
+    $551.CommonEnums_Projection? projection,
+    $551.Bucket? metadata,
     $330.FieldMask? updateMask,
     CommonRequestParams? commonRequestParams,
   }) {
@@ -1287,10 +1287,10 @@ class PatchBucketRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOM<$304.Int64Value>(2, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(3, _omitFieldNames ? '' : 'ifMetagenerationNotMatch', subBuilder: $304.Int64Value.create)
-    ..e<$546.CommonEnums_PredefinedBucketAcl>(4, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedBucketAcl.PREDEFINED_BUCKET_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedBucketAcl.valueOf, enumValues: $546.CommonEnums_PredefinedBucketAcl.values)
-    ..e<$546.CommonEnums_PredefinedObjectAcl>(5, _omitFieldNames ? '' : 'predefinedDefaultObjectAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $546.CommonEnums_PredefinedObjectAcl.values)
-    ..e<$546.CommonEnums_Projection>(6, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
-    ..aOM<$546.Bucket>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $546.Bucket.create)
+    ..e<$551.CommonEnums_PredefinedBucketAcl>(4, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedBucketAcl.PREDEFINED_BUCKET_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedBucketAcl.valueOf, enumValues: $551.CommonEnums_PredefinedBucketAcl.values)
+    ..e<$551.CommonEnums_PredefinedObjectAcl>(5, _omitFieldNames ? '' : 'predefinedDefaultObjectAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $551.CommonEnums_PredefinedObjectAcl.values)
+    ..e<$551.CommonEnums_Projection>(6, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
+    ..aOM<$551.Bucket>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $551.Bucket.create)
     ..aOM<$330.FieldMask>(9, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..aOM<CommonRequestParams>(10, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
@@ -1355,9 +1355,9 @@ class PatchBucketRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of access controls to this bucket.
   @$pb.TagNumber(4)
-  $546.CommonEnums_PredefinedBucketAcl get predefinedAcl => $_getN(3);
+  $551.CommonEnums_PredefinedBucketAcl get predefinedAcl => $_getN(3);
   @$pb.TagNumber(4)
-  set predefinedAcl($546.CommonEnums_PredefinedBucketAcl v) { setField(4, v); }
+  set predefinedAcl($551.CommonEnums_PredefinedBucketAcl v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPredefinedAcl() => $_has(3);
   @$pb.TagNumber(4)
@@ -1365,9 +1365,9 @@ class PatchBucketRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of default object access controls to this bucket.
   @$pb.TagNumber(5)
-  $546.CommonEnums_PredefinedObjectAcl get predefinedDefaultObjectAcl => $_getN(4);
+  $551.CommonEnums_PredefinedObjectAcl get predefinedDefaultObjectAcl => $_getN(4);
   @$pb.TagNumber(5)
-  set predefinedDefaultObjectAcl($546.CommonEnums_PredefinedObjectAcl v) { setField(5, v); }
+  set predefinedDefaultObjectAcl($551.CommonEnums_PredefinedObjectAcl v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPredefinedDefaultObjectAcl() => $_has(4);
   @$pb.TagNumber(5)
@@ -1375,9 +1375,9 @@ class PatchBucketRequest extends $pb.GeneratedMessage {
 
   /// Set of properties to return. Defaults to `FULL`.
   @$pb.TagNumber(6)
-  $546.CommonEnums_Projection get projection => $_getN(5);
+  $551.CommonEnums_Projection get projection => $_getN(5);
   @$pb.TagNumber(6)
-  set projection($546.CommonEnums_Projection v) { setField(6, v); }
+  set projection($551.CommonEnums_Projection v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasProjection() => $_has(5);
   @$pb.TagNumber(6)
@@ -1385,15 +1385,15 @@ class PatchBucketRequest extends $pb.GeneratedMessage {
 
   /// The Bucket metadata for updating.
   @$pb.TagNumber(8)
-  $546.Bucket get metadata => $_getN(6);
+  $551.Bucket get metadata => $_getN(6);
   @$pb.TagNumber(8)
-  set metadata($546.Bucket v) { setField(8, v); }
+  set metadata($551.Bucket v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMetadata() => $_has(6);
   @$pb.TagNumber(8)
   void clearMetadata() => clearField(8);
   @$pb.TagNumber(8)
-  $546.Bucket ensureMetadata() => $_ensure(6);
+  $551.Bucket ensureMetadata() => $_ensure(6);
 
   ///  List of fields to be updated.
   ///
@@ -1435,10 +1435,10 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
     $core.String? bucket,
     $304.Int64Value? ifMetagenerationMatch,
     $304.Int64Value? ifMetagenerationNotMatch,
-    $546.CommonEnums_PredefinedBucketAcl? predefinedAcl,
-    $546.CommonEnums_PredefinedObjectAcl? predefinedDefaultObjectAcl,
-    $546.CommonEnums_Projection? projection,
-    $546.Bucket? metadata,
+    $551.CommonEnums_PredefinedBucketAcl? predefinedAcl,
+    $551.CommonEnums_PredefinedObjectAcl? predefinedDefaultObjectAcl,
+    $551.CommonEnums_Projection? projection,
+    $551.Bucket? metadata,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -1476,10 +1476,10 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOM<$304.Int64Value>(2, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(3, _omitFieldNames ? '' : 'ifMetagenerationNotMatch', subBuilder: $304.Int64Value.create)
-    ..e<$546.CommonEnums_PredefinedBucketAcl>(4, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedBucketAcl.PREDEFINED_BUCKET_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedBucketAcl.valueOf, enumValues: $546.CommonEnums_PredefinedBucketAcl.values)
-    ..e<$546.CommonEnums_PredefinedObjectAcl>(5, _omitFieldNames ? '' : 'predefinedDefaultObjectAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $546.CommonEnums_PredefinedObjectAcl.values)
-    ..e<$546.CommonEnums_Projection>(6, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
-    ..aOM<$546.Bucket>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $546.Bucket.create)
+    ..e<$551.CommonEnums_PredefinedBucketAcl>(4, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedBucketAcl.PREDEFINED_BUCKET_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedBucketAcl.valueOf, enumValues: $551.CommonEnums_PredefinedBucketAcl.values)
+    ..e<$551.CommonEnums_PredefinedObjectAcl>(5, _omitFieldNames ? '' : 'predefinedDefaultObjectAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $551.CommonEnums_PredefinedObjectAcl.values)
+    ..e<$551.CommonEnums_Projection>(6, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
+    ..aOM<$551.Bucket>(8, _omitFieldNames ? '' : 'metadata', subBuilder: $551.Bucket.create)
     ..aOM<CommonRequestParams>(9, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -1543,9 +1543,9 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of access controls to this bucket.
   @$pb.TagNumber(4)
-  $546.CommonEnums_PredefinedBucketAcl get predefinedAcl => $_getN(3);
+  $551.CommonEnums_PredefinedBucketAcl get predefinedAcl => $_getN(3);
   @$pb.TagNumber(4)
-  set predefinedAcl($546.CommonEnums_PredefinedBucketAcl v) { setField(4, v); }
+  set predefinedAcl($551.CommonEnums_PredefinedBucketAcl v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPredefinedAcl() => $_has(3);
   @$pb.TagNumber(4)
@@ -1553,9 +1553,9 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of default object access controls to this bucket.
   @$pb.TagNumber(5)
-  $546.CommonEnums_PredefinedObjectAcl get predefinedDefaultObjectAcl => $_getN(4);
+  $551.CommonEnums_PredefinedObjectAcl get predefinedDefaultObjectAcl => $_getN(4);
   @$pb.TagNumber(5)
-  set predefinedDefaultObjectAcl($546.CommonEnums_PredefinedObjectAcl v) { setField(5, v); }
+  set predefinedDefaultObjectAcl($551.CommonEnums_PredefinedObjectAcl v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPredefinedDefaultObjectAcl() => $_has(4);
   @$pb.TagNumber(5)
@@ -1563,9 +1563,9 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
 
   /// Set of properties to return. Defaults to `FULL`.
   @$pb.TagNumber(6)
-  $546.CommonEnums_Projection get projection => $_getN(5);
+  $551.CommonEnums_Projection get projection => $_getN(5);
   @$pb.TagNumber(6)
-  set projection($546.CommonEnums_Projection v) { setField(6, v); }
+  set projection($551.CommonEnums_Projection v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasProjection() => $_has(5);
   @$pb.TagNumber(6)
@@ -1573,15 +1573,15 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
 
   /// The Bucket metadata for updating.
   @$pb.TagNumber(8)
-  $546.Bucket get metadata => $_getN(6);
+  $551.Bucket get metadata => $_getN(6);
   @$pb.TagNumber(8)
-  set metadata($546.Bucket v) { setField(8, v); }
+  set metadata($551.Bucket v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMetadata() => $_has(6);
   @$pb.TagNumber(8)
   void clearMetadata() => clearField(8);
   @$pb.TagNumber(8)
-  $546.Bucket ensureMetadata() => $_ensure(6);
+  $551.Bucket ensureMetadata() => $_ensure(6);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(9)
@@ -1599,7 +1599,7 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
 /// Request message for StopChannel.
 class StopChannelRequest extends $pb.GeneratedMessage {
   factory StopChannelRequest({
-    $546.Channel? channel,
+    $551.Channel? channel,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -1616,7 +1616,7 @@ class StopChannelRequest extends $pb.GeneratedMessage {
   factory StopChannelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StopChannelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
-    ..aOM<$546.Channel>(1, _omitFieldNames ? '' : 'channel', subBuilder: $546.Channel.create)
+    ..aOM<$551.Channel>(1, _omitFieldNames ? '' : 'channel', subBuilder: $551.Channel.create)
     ..aOM<CommonRequestParams>(2, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -1644,15 +1644,15 @@ class StopChannelRequest extends $pb.GeneratedMessage {
 
   /// The channel to be stopped.
   @$pb.TagNumber(1)
-  $546.Channel get channel => $_getN(0);
+  $551.Channel get channel => $_getN(0);
   @$pb.TagNumber(1)
-  set channel($546.Channel v) { setField(1, v); }
+  set channel($551.Channel v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasChannel() => $_has(0);
   @$pb.TagNumber(1)
   void clearChannel() => clearField(1);
   @$pb.TagNumber(1)
-  $546.Channel ensureChannel() => $_ensure(0);
+  $551.Channel ensureChannel() => $_ensure(0);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(2)
@@ -1851,7 +1851,7 @@ class GetDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
 class InsertDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
   factory InsertDefaultObjectAccessControlRequest({
     $core.String? bucket,
-    $546.ObjectAccessControl? objectAccessControl,
+    $551.ObjectAccessControl? objectAccessControl,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -1872,7 +1872,7 @@ class InsertDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertDefaultObjectAccessControlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
-    ..aOM<$546.ObjectAccessControl>(3, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $546.ObjectAccessControl.create)
+    ..aOM<$551.ObjectAccessControl>(3, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $551.ObjectAccessControl.create)
     ..aOM<CommonRequestParams>(4, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -1910,15 +1910,15 @@ class InsertDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
 
   /// Properties of the object access control being inserted.
   @$pb.TagNumber(3)
-  $546.ObjectAccessControl get objectAccessControl => $_getN(1);
+  $551.ObjectAccessControl get objectAccessControl => $_getN(1);
   @$pb.TagNumber(3)
-  set objectAccessControl($546.ObjectAccessControl v) { setField(3, v); }
+  set objectAccessControl($551.ObjectAccessControl v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasObjectAccessControl() => $_has(1);
   @$pb.TagNumber(3)
   void clearObjectAccessControl() => clearField(3);
   @$pb.TagNumber(3)
-  $546.ObjectAccessControl ensureObjectAccessControl() => $_ensure(1);
+  $551.ObjectAccessControl ensureObjectAccessControl() => $_ensure(1);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(4)
@@ -2043,7 +2043,7 @@ class PatchDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
   factory PatchDefaultObjectAccessControlRequest({
     $core.String? bucket,
     $core.String? entity,
-    $546.ObjectAccessControl? objectAccessControl,
+    $551.ObjectAccessControl? objectAccessControl,
     $330.FieldMask? updateMask,
     CommonRequestParams? commonRequestParams,
   }) {
@@ -2072,7 +2072,7 @@ class PatchDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PatchDefaultObjectAccessControlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOS(2, _omitFieldNames ? '' : 'entity')
-    ..aOM<$546.ObjectAccessControl>(4, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $546.ObjectAccessControl.create)
+    ..aOM<$551.ObjectAccessControl>(4, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $551.ObjectAccessControl.create)
     ..aOM<$330.FieldMask>(5, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..aOM<CommonRequestParams>(6, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
@@ -2127,15 +2127,15 @@ class PatchDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
 
   /// The ObjectAccessControl for updating.
   @$pb.TagNumber(4)
-  $546.ObjectAccessControl get objectAccessControl => $_getN(2);
+  $551.ObjectAccessControl get objectAccessControl => $_getN(2);
   @$pb.TagNumber(4)
-  set objectAccessControl($546.ObjectAccessControl v) { setField(4, v); }
+  set objectAccessControl($551.ObjectAccessControl v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasObjectAccessControl() => $_has(2);
   @$pb.TagNumber(4)
   void clearObjectAccessControl() => clearField(4);
   @$pb.TagNumber(4)
-  $546.ObjectAccessControl ensureObjectAccessControl() => $_ensure(2);
+  $551.ObjectAccessControl ensureObjectAccessControl() => $_ensure(2);
 
   ///  List of fields to be updated.
   ///
@@ -2176,7 +2176,7 @@ class UpdateDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
   factory UpdateDefaultObjectAccessControlRequest({
     $core.String? bucket,
     $core.String? entity,
-    $546.ObjectAccessControl? objectAccessControl,
+    $551.ObjectAccessControl? objectAccessControl,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -2201,7 +2201,7 @@ class UpdateDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDefaultObjectAccessControlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOS(2, _omitFieldNames ? '' : 'entity')
-    ..aOM<$546.ObjectAccessControl>(4, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $546.ObjectAccessControl.create)
+    ..aOM<$551.ObjectAccessControl>(4, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $551.ObjectAccessControl.create)
     ..aOM<CommonRequestParams>(5, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -2255,15 +2255,15 @@ class UpdateDefaultObjectAccessControlRequest extends $pb.GeneratedMessage {
 
   /// The ObjectAccessControl for updating.
   @$pb.TagNumber(4)
-  $546.ObjectAccessControl get objectAccessControl => $_getN(2);
+  $551.ObjectAccessControl get objectAccessControl => $_getN(2);
   @$pb.TagNumber(4)
-  set objectAccessControl($546.ObjectAccessControl v) { setField(4, v); }
+  set objectAccessControl($551.ObjectAccessControl v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasObjectAccessControl() => $_has(2);
   @$pb.TagNumber(4)
   void clearObjectAccessControl() => clearField(4);
   @$pb.TagNumber(4)
-  $546.ObjectAccessControl ensureObjectAccessControl() => $_ensure(2);
+  $551.ObjectAccessControl ensureObjectAccessControl() => $_ensure(2);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(5)
@@ -2451,7 +2451,7 @@ class GetNotificationRequest extends $pb.GeneratedMessage {
 class InsertNotificationRequest extends $pb.GeneratedMessage {
   factory InsertNotificationRequest({
     $core.String? bucket,
-    $546.Notification? notification,
+    $551.Notification? notification,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -2472,7 +2472,7 @@ class InsertNotificationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertNotificationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
-    ..aOM<$546.Notification>(3, _omitFieldNames ? '' : 'notification', subBuilder: $546.Notification.create)
+    ..aOM<$551.Notification>(3, _omitFieldNames ? '' : 'notification', subBuilder: $551.Notification.create)
     ..aOM<CommonRequestParams>(4, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -2510,15 +2510,15 @@ class InsertNotificationRequest extends $pb.GeneratedMessage {
 
   /// Properties of the notification to be inserted.
   @$pb.TagNumber(3)
-  $546.Notification get notification => $_getN(1);
+  $551.Notification get notification => $_getN(1);
   @$pb.TagNumber(3)
-  set notification($546.Notification v) { setField(3, v); }
+  set notification($551.Notification v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasNotification() => $_has(1);
   @$pb.TagNumber(3)
   void clearNotification() => clearField(3);
   @$pb.TagNumber(3)
-  $546.Notification ensureNotification() => $_ensure(1);
+  $551.Notification ensureNotification() => $_ensure(1);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(4)
@@ -2850,7 +2850,7 @@ class InsertObjectAccessControlRequest extends $pb.GeneratedMessage {
     $core.String? bucket,
     $core.String? object,
     $fixnum.Int64? generation,
-    $546.ObjectAccessControl? objectAccessControl,
+    $551.ObjectAccessControl? objectAccessControl,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -2879,7 +2879,7 @@ class InsertObjectAccessControlRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'bucket')
     ..aOS(2, _omitFieldNames ? '' : 'object')
     ..aInt64(3, _omitFieldNames ? '' : 'generation')
-    ..aOM<$546.ObjectAccessControl>(5, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $546.ObjectAccessControl.create)
+    ..aOM<$551.ObjectAccessControl>(5, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $551.ObjectAccessControl.create)
     ..aOM<CommonRequestParams>(6, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -2938,15 +2938,15 @@ class InsertObjectAccessControlRequest extends $pb.GeneratedMessage {
 
   /// Properties of the object access control to be inserted.
   @$pb.TagNumber(5)
-  $546.ObjectAccessControl get objectAccessControl => $_getN(3);
+  $551.ObjectAccessControl get objectAccessControl => $_getN(3);
   @$pb.TagNumber(5)
-  set objectAccessControl($546.ObjectAccessControl v) { setField(5, v); }
+  set objectAccessControl($551.ObjectAccessControl v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasObjectAccessControl() => $_has(3);
   @$pb.TagNumber(5)
   void clearObjectAccessControl() => clearField(5);
   @$pb.TagNumber(5)
-  $546.ObjectAccessControl ensureObjectAccessControl() => $_ensure(3);
+  $551.ObjectAccessControl ensureObjectAccessControl() => $_ensure(3);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(6)
@@ -3068,7 +3068,7 @@ class PatchObjectAccessControlRequest extends $pb.GeneratedMessage {
     $core.String? entity,
     $core.String? object,
     $fixnum.Int64? generation,
-    $546.ObjectAccessControl? objectAccessControl,
+    $551.ObjectAccessControl? objectAccessControl,
     CommonRequestParams? commonRequestParams,
     $330.FieldMask? updateMask,
   }) {
@@ -3105,7 +3105,7 @@ class PatchObjectAccessControlRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'entity')
     ..aOS(3, _omitFieldNames ? '' : 'object')
     ..aInt64(4, _omitFieldNames ? '' : 'generation')
-    ..aOM<$546.ObjectAccessControl>(5, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $546.ObjectAccessControl.create)
+    ..aOM<$551.ObjectAccessControl>(5, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $551.ObjectAccessControl.create)
     ..aOM<CommonRequestParams>(6, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..aOM<$330.FieldMask>(7, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
@@ -3182,15 +3182,15 @@ class PatchObjectAccessControlRequest extends $pb.GeneratedMessage {
 
   /// The ObjectAccessControl for updating.
   @$pb.TagNumber(5)
-  $546.ObjectAccessControl get objectAccessControl => $_getN(4);
+  $551.ObjectAccessControl get objectAccessControl => $_getN(4);
   @$pb.TagNumber(5)
-  set objectAccessControl($546.ObjectAccessControl v) { setField(5, v); }
+  set objectAccessControl($551.ObjectAccessControl v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasObjectAccessControl() => $_has(4);
   @$pb.TagNumber(5)
   void clearObjectAccessControl() => clearField(5);
   @$pb.TagNumber(5)
-  $546.ObjectAccessControl ensureObjectAccessControl() => $_ensure(4);
+  $551.ObjectAccessControl ensureObjectAccessControl() => $_ensure(4);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(6)
@@ -3233,7 +3233,7 @@ class UpdateObjectAccessControlRequest extends $pb.GeneratedMessage {
     $core.String? entity,
     $core.String? object,
     $fixnum.Int64? generation,
-    $546.ObjectAccessControl? objectAccessControl,
+    $551.ObjectAccessControl? objectAccessControl,
     CommonRequestParams? commonRequestParams,
     $330.FieldMask? updateMask,
   }) {
@@ -3270,7 +3270,7 @@ class UpdateObjectAccessControlRequest extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'entity')
     ..aOS(3, _omitFieldNames ? '' : 'object')
     ..aInt64(4, _omitFieldNames ? '' : 'generation')
-    ..aOM<$546.ObjectAccessControl>(6, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $546.ObjectAccessControl.create)
+    ..aOM<$551.ObjectAccessControl>(6, _omitFieldNames ? '' : 'objectAccessControl', subBuilder: $551.ObjectAccessControl.create)
     ..aOM<CommonRequestParams>(7, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..aOM<$330.FieldMask>(8, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..hasRequiredFields = false
@@ -3347,15 +3347,15 @@ class UpdateObjectAccessControlRequest extends $pb.GeneratedMessage {
 
   /// The ObjectAccessControl for updating.
   @$pb.TagNumber(6)
-  $546.ObjectAccessControl get objectAccessControl => $_getN(4);
+  $551.ObjectAccessControl get objectAccessControl => $_getN(4);
   @$pb.TagNumber(6)
-  set objectAccessControl($546.ObjectAccessControl v) { setField(6, v); }
+  set objectAccessControl($551.ObjectAccessControl v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasObjectAccessControl() => $_has(4);
   @$pb.TagNumber(6)
   void clearObjectAccessControl() => clearField(6);
   @$pb.TagNumber(6)
-  $546.ObjectAccessControl ensureObjectAccessControl() => $_ensure(4);
+  $551.ObjectAccessControl ensureObjectAccessControl() => $_ensure(4);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(7)
@@ -3537,13 +3537,13 @@ class ComposeObjectRequest extends $pb.GeneratedMessage {
   factory ComposeObjectRequest({
     $core.String? destinationBucket,
     $core.String? destinationObject,
-    $546.CommonEnums_PredefinedObjectAcl? destinationPredefinedAcl,
+    $551.CommonEnums_PredefinedObjectAcl? destinationPredefinedAcl,
     $304.Int64Value? ifGenerationMatch,
     $304.Int64Value? ifMetagenerationMatch,
     $core.String? kmsKeyName,
     CommonObjectRequestParams? commonObjectRequestParams,
     CommonRequestParams? commonRequestParams,
-    $546.Object? destination,
+    $551.Object? destination,
     $core.Iterable<ComposeObjectRequest_SourceObjects>? sourceObjects,
   }) {
     final $result = create();
@@ -3586,13 +3586,13 @@ class ComposeObjectRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComposeObjectRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'destinationBucket')
     ..aOS(2, _omitFieldNames ? '' : 'destinationObject')
-    ..e<$546.CommonEnums_PredefinedObjectAcl>(3, _omitFieldNames ? '' : 'destinationPredefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $546.CommonEnums_PredefinedObjectAcl.values)
+    ..e<$551.CommonEnums_PredefinedObjectAcl>(3, _omitFieldNames ? '' : 'destinationPredefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $551.CommonEnums_PredefinedObjectAcl.values)
     ..aOM<$304.Int64Value>(4, _omitFieldNames ? '' : 'ifGenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(5, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOS(6, _omitFieldNames ? '' : 'kmsKeyName')
     ..aOM<CommonObjectRequestParams>(9, _omitFieldNames ? '' : 'commonObjectRequestParams', subBuilder: CommonObjectRequestParams.create)
     ..aOM<CommonRequestParams>(10, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
-    ..aOM<$546.Object>(11, _omitFieldNames ? '' : 'destination', subBuilder: $546.Object.create)
+    ..aOM<$551.Object>(11, _omitFieldNames ? '' : 'destination', subBuilder: $551.Object.create)
     ..pc<ComposeObjectRequest_SourceObjects>(12, _omitFieldNames ? '' : 'sourceObjects', $pb.PbFieldType.PM, subBuilder: ComposeObjectRequest_SourceObjects.create)
     ..hasRequiredFields = false
   ;
@@ -3641,9 +3641,9 @@ class ComposeObjectRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of access controls to the destination object.
   @$pb.TagNumber(3)
-  $546.CommonEnums_PredefinedObjectAcl get destinationPredefinedAcl => $_getN(2);
+  $551.CommonEnums_PredefinedObjectAcl get destinationPredefinedAcl => $_getN(2);
   @$pb.TagNumber(3)
-  set destinationPredefinedAcl($546.CommonEnums_PredefinedObjectAcl v) { setField(3, v); }
+  set destinationPredefinedAcl($551.CommonEnums_PredefinedObjectAcl v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDestinationPredefinedAcl() => $_has(2);
   @$pb.TagNumber(3)
@@ -3715,15 +3715,15 @@ class ComposeObjectRequest extends $pb.GeneratedMessage {
 
   /// Properties of the resulting object.
   @$pb.TagNumber(11)
-  $546.Object get destination => $_getN(8);
+  $551.Object get destination => $_getN(8);
   @$pb.TagNumber(11)
-  set destination($546.Object v) { setField(11, v); }
+  set destination($551.Object v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDestination() => $_has(8);
   @$pb.TagNumber(11)
   void clearDestination() => clearField(11);
   @$pb.TagNumber(11)
-  $546.Object ensureDestination() => $_ensure(8);
+  $551.Object ensureDestination() => $_ensure(8);
 
   /// The list of source objects that will be concatenated into a single object.
   @$pb.TagNumber(12)
@@ -3735,7 +3735,7 @@ class CopyObjectRequest extends $pb.GeneratedMessage {
   factory CopyObjectRequest({
     $core.String? destinationBucket,
     $core.String? destinationObject,
-    $546.CommonEnums_PredefinedObjectAcl? destinationPredefinedAcl,
+    $551.CommonEnums_PredefinedObjectAcl? destinationPredefinedAcl,
     $304.Int64Value? ifGenerationMatch,
     $304.Int64Value? ifGenerationNotMatch,
     $304.Int64Value? ifMetagenerationMatch,
@@ -3744,11 +3744,11 @@ class CopyObjectRequest extends $pb.GeneratedMessage {
     $304.Int64Value? ifSourceGenerationNotMatch,
     $304.Int64Value? ifSourceMetagenerationMatch,
     $304.Int64Value? ifSourceMetagenerationNotMatch,
-    $546.CommonEnums_Projection? projection,
+    $551.CommonEnums_Projection? projection,
     $core.String? sourceBucket,
     $core.String? sourceObject,
     $fixnum.Int64? sourceGeneration,
-    $546.Object? destination,
+    $551.Object? destination,
     CommonObjectRequestParams? commonObjectRequestParams,
     CommonRequestParams? commonRequestParams,
     $core.String? destinationKmsKeyName,
@@ -3820,7 +3820,7 @@ class CopyObjectRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CopyObjectRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'destinationBucket')
     ..aOS(2, _omitFieldNames ? '' : 'destinationObject')
-    ..e<$546.CommonEnums_PredefinedObjectAcl>(3, _omitFieldNames ? '' : 'destinationPredefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $546.CommonEnums_PredefinedObjectAcl.values)
+    ..e<$551.CommonEnums_PredefinedObjectAcl>(3, _omitFieldNames ? '' : 'destinationPredefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $551.CommonEnums_PredefinedObjectAcl.values)
     ..aOM<$304.Int64Value>(4, _omitFieldNames ? '' : 'ifGenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(5, _omitFieldNames ? '' : 'ifGenerationNotMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(6, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
@@ -3829,11 +3829,11 @@ class CopyObjectRequest extends $pb.GeneratedMessage {
     ..aOM<$304.Int64Value>(9, _omitFieldNames ? '' : 'ifSourceGenerationNotMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(10, _omitFieldNames ? '' : 'ifSourceMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(11, _omitFieldNames ? '' : 'ifSourceMetagenerationNotMatch', subBuilder: $304.Int64Value.create)
-    ..e<$546.CommonEnums_Projection>(12, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
+    ..e<$551.CommonEnums_Projection>(12, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
     ..aOS(13, _omitFieldNames ? '' : 'sourceBucket')
     ..aOS(14, _omitFieldNames ? '' : 'sourceObject')
     ..aInt64(15, _omitFieldNames ? '' : 'sourceGeneration')
-    ..aOM<$546.Object>(17, _omitFieldNames ? '' : 'destination', subBuilder: $546.Object.create)
+    ..aOM<$551.Object>(17, _omitFieldNames ? '' : 'destination', subBuilder: $551.Object.create)
     ..aOM<CommonObjectRequestParams>(18, _omitFieldNames ? '' : 'commonObjectRequestParams', subBuilder: CommonObjectRequestParams.create)
     ..aOM<CommonRequestParams>(19, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..aOS(20, _omitFieldNames ? '' : 'destinationKmsKeyName')
@@ -3887,9 +3887,9 @@ class CopyObjectRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of access controls to the destination object.
   @$pb.TagNumber(3)
-  $546.CommonEnums_PredefinedObjectAcl get destinationPredefinedAcl => $_getN(2);
+  $551.CommonEnums_PredefinedObjectAcl get destinationPredefinedAcl => $_getN(2);
   @$pb.TagNumber(3)
-  set destinationPredefinedAcl($546.CommonEnums_PredefinedObjectAcl v) { setField(3, v); }
+  set destinationPredefinedAcl($551.CommonEnums_PredefinedObjectAcl v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDestinationPredefinedAcl() => $_has(2);
   @$pb.TagNumber(3)
@@ -4006,9 +4006,9 @@ class CopyObjectRequest extends $pb.GeneratedMessage {
   /// object resource specifies the `acl` property, when it defaults
   /// to `full`.
   @$pb.TagNumber(12)
-  $546.CommonEnums_Projection get projection => $_getN(11);
+  $551.CommonEnums_Projection get projection => $_getN(11);
   @$pb.TagNumber(12)
-  set projection($546.CommonEnums_Projection v) { setField(12, v); }
+  set projection($551.CommonEnums_Projection v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasProjection() => $_has(11);
   @$pb.TagNumber(12)
@@ -4048,15 +4048,15 @@ class CopyObjectRequest extends $pb.GeneratedMessage {
   /// Properties of the resulting object. If not set, duplicate properties of
   /// source object.
   @$pb.TagNumber(17)
-  $546.Object get destination => $_getN(15);
+  $551.Object get destination => $_getN(15);
   @$pb.TagNumber(17)
-  set destination($546.Object v) { setField(17, v); }
+  set destination($551.Object v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasDestination() => $_has(15);
   @$pb.TagNumber(17)
   void clearDestination() => clearField(17);
   @$pb.TagNumber(17)
-  $546.Object ensureDestination() => $_ensure(15);
+  $551.Object ensureDestination() => $_ensure(15);
 
   /// A set of parameters common to Storage API requests concerning an object.
   @$pb.TagNumber(18)
@@ -4552,7 +4552,7 @@ class GetObjectRequest extends $pb.GeneratedMessage {
     $304.Int64Value? ifGenerationNotMatch,
     $304.Int64Value? ifMetagenerationMatch,
     $304.Int64Value? ifMetagenerationNotMatch,
-    $546.CommonEnums_Projection? projection,
+    $551.CommonEnums_Projection? projection,
     CommonObjectRequestParams? commonObjectRequestParams,
     CommonRequestParams? commonRequestParams,
   }) {
@@ -4601,7 +4601,7 @@ class GetObjectRequest extends $pb.GeneratedMessage {
     ..aOM<$304.Int64Value>(5, _omitFieldNames ? '' : 'ifGenerationNotMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(6, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(7, _omitFieldNames ? '' : 'ifMetagenerationNotMatch', subBuilder: $304.Int64Value.create)
-    ..e<$546.CommonEnums_Projection>(8, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
+    ..e<$551.CommonEnums_Projection>(8, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
     ..aOM<CommonObjectRequestParams>(10, _omitFieldNames ? '' : 'commonObjectRequestParams', subBuilder: CommonObjectRequestParams.create)
     ..aOM<CommonRequestParams>(11, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
@@ -4716,9 +4716,9 @@ class GetObjectRequest extends $pb.GeneratedMessage {
 
   /// Set of properties to return. Defaults to `NO_ACL`.
   @$pb.TagNumber(8)
-  $546.CommonEnums_Projection get projection => $_getN(7);
+  $551.CommonEnums_Projection get projection => $_getN(7);
   @$pb.TagNumber(8)
-  set projection($546.CommonEnums_Projection v) { setField(8, v); }
+  set projection($551.CommonEnums_Projection v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasProjection() => $_has(7);
   @$pb.TagNumber(8)
@@ -4752,10 +4752,10 @@ class GetObjectRequest extends $pb.GeneratedMessage {
 /// Response message for GetObject.
 class GetObjectMediaResponse extends $pb.GeneratedMessage {
   factory GetObjectMediaResponse({
-    $546.ChecksummedData? checksummedData,
-    $546.ObjectChecksums? objectChecksums,
-    $546.ContentRange? contentRange,
-    $546.Object? metadata,
+    $551.ChecksummedData? checksummedData,
+    $551.ObjectChecksums? objectChecksums,
+    $551.ContentRange? contentRange,
+    $551.Object? metadata,
   }) {
     final $result = create();
     if (checksummedData != null) {
@@ -4777,10 +4777,10 @@ class GetObjectMediaResponse extends $pb.GeneratedMessage {
   factory GetObjectMediaResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetObjectMediaResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
-    ..aOM<$546.ChecksummedData>(1, _omitFieldNames ? '' : 'checksummedData', subBuilder: $546.ChecksummedData.create)
-    ..aOM<$546.ObjectChecksums>(2, _omitFieldNames ? '' : 'objectChecksums', subBuilder: $546.ObjectChecksums.create)
-    ..aOM<$546.ContentRange>(3, _omitFieldNames ? '' : 'contentRange', subBuilder: $546.ContentRange.create)
-    ..aOM<$546.Object>(4, _omitFieldNames ? '' : 'metadata', subBuilder: $546.Object.create)
+    ..aOM<$551.ChecksummedData>(1, _omitFieldNames ? '' : 'checksummedData', subBuilder: $551.ChecksummedData.create)
+    ..aOM<$551.ObjectChecksums>(2, _omitFieldNames ? '' : 'objectChecksums', subBuilder: $551.ObjectChecksums.create)
+    ..aOM<$551.ContentRange>(3, _omitFieldNames ? '' : 'contentRange', subBuilder: $551.ContentRange.create)
+    ..aOM<$551.Object>(4, _omitFieldNames ? '' : 'metadata', subBuilder: $551.Object.create)
     ..hasRequiredFields = false
   ;
 
@@ -4810,68 +4810,68 @@ class GetObjectMediaResponse extends $pb.GeneratedMessage {
   /// client that the request is still live while it is running an operation to
   /// generate more data.
   @$pb.TagNumber(1)
-  $546.ChecksummedData get checksummedData => $_getN(0);
+  $551.ChecksummedData get checksummedData => $_getN(0);
   @$pb.TagNumber(1)
-  set checksummedData($546.ChecksummedData v) { setField(1, v); }
+  set checksummedData($551.ChecksummedData v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasChecksummedData() => $_has(0);
   @$pb.TagNumber(1)
   void clearChecksummedData() => clearField(1);
   @$pb.TagNumber(1)
-  $546.ChecksummedData ensureChecksummedData() => $_ensure(0);
+  $551.ChecksummedData ensureChecksummedData() => $_ensure(0);
 
   /// The checksums of the complete object. The client should compute one of
   /// these checksums over the downloaded object and compare it against the value
   /// provided here.
   @$pb.TagNumber(2)
-  $546.ObjectChecksums get objectChecksums => $_getN(1);
+  $551.ObjectChecksums get objectChecksums => $_getN(1);
   @$pb.TagNumber(2)
-  set objectChecksums($546.ObjectChecksums v) { setField(2, v); }
+  set objectChecksums($551.ObjectChecksums v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasObjectChecksums() => $_has(1);
   @$pb.TagNumber(2)
   void clearObjectChecksums() => clearField(2);
   @$pb.TagNumber(2)
-  $546.ObjectChecksums ensureObjectChecksums() => $_ensure(1);
+  $551.ObjectChecksums ensureObjectChecksums() => $_ensure(1);
 
   /// If read_offset and or read_limit was specified on the
   /// GetObjectMediaRequest, ContentRange will be populated on the first
   /// GetObjectMediaResponse message of the read stream.
   @$pb.TagNumber(3)
-  $546.ContentRange get contentRange => $_getN(2);
+  $551.ContentRange get contentRange => $_getN(2);
   @$pb.TagNumber(3)
-  set contentRange($546.ContentRange v) { setField(3, v); }
+  set contentRange($551.ContentRange v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasContentRange() => $_has(2);
   @$pb.TagNumber(3)
   void clearContentRange() => clearField(3);
   @$pb.TagNumber(3)
-  $546.ContentRange ensureContentRange() => $_ensure(2);
+  $551.ContentRange ensureContentRange() => $_ensure(2);
 
   /// Metadata of the object whose media is being returned.
   /// Only populated in the first response in the stream.
   @$pb.TagNumber(4)
-  $546.Object get metadata => $_getN(3);
+  $551.Object get metadata => $_getN(3);
   @$pb.TagNumber(4)
-  set metadata($546.Object v) { setField(4, v); }
+  set metadata($551.Object v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMetadata() => $_has(3);
   @$pb.TagNumber(4)
   void clearMetadata() => clearField(4);
   @$pb.TagNumber(4)
-  $546.Object ensureMetadata() => $_ensure(3);
+  $551.Object ensureMetadata() => $_ensure(3);
 }
 
 /// Describes an attempt to insert an object, possibly over multiple requests.
 class InsertObjectSpec extends $pb.GeneratedMessage {
   factory InsertObjectSpec({
-    $546.Object? resource,
-    $546.CommonEnums_PredefinedObjectAcl? predefinedAcl,
+    $551.Object? resource,
+    $551.CommonEnums_PredefinedObjectAcl? predefinedAcl,
     $304.Int64Value? ifGenerationMatch,
     $304.Int64Value? ifGenerationNotMatch,
     $304.Int64Value? ifMetagenerationMatch,
     $304.Int64Value? ifMetagenerationNotMatch,
-    $546.CommonEnums_Projection? projection,
+    $551.CommonEnums_Projection? projection,
   }) {
     final $result = create();
     if (resource != null) {
@@ -4902,13 +4902,13 @@ class InsertObjectSpec extends $pb.GeneratedMessage {
   factory InsertObjectSpec.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InsertObjectSpec', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
-    ..aOM<$546.Object>(1, _omitFieldNames ? '' : 'resource', subBuilder: $546.Object.create)
-    ..e<$546.CommonEnums_PredefinedObjectAcl>(2, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $546.CommonEnums_PredefinedObjectAcl.values)
+    ..aOM<$551.Object>(1, _omitFieldNames ? '' : 'resource', subBuilder: $551.Object.create)
+    ..e<$551.CommonEnums_PredefinedObjectAcl>(2, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $551.CommonEnums_PredefinedObjectAcl.values)
     ..aOM<$304.Int64Value>(3, _omitFieldNames ? '' : 'ifGenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(4, _omitFieldNames ? '' : 'ifGenerationNotMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(5, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(6, _omitFieldNames ? '' : 'ifMetagenerationNotMatch', subBuilder: $304.Int64Value.create)
-    ..e<$546.CommonEnums_Projection>(7, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
+    ..e<$551.CommonEnums_Projection>(7, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
     ..hasRequiredFields = false
   ;
 
@@ -4935,21 +4935,21 @@ class InsertObjectSpec extends $pb.GeneratedMessage {
 
   /// Destination object, including its name and its metadata.
   @$pb.TagNumber(1)
-  $546.Object get resource => $_getN(0);
+  $551.Object get resource => $_getN(0);
   @$pb.TagNumber(1)
-  set resource($546.Object v) { setField(1, v); }
+  set resource($551.Object v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasResource() => $_has(0);
   @$pb.TagNumber(1)
   void clearResource() => clearField(1);
   @$pb.TagNumber(1)
-  $546.Object ensureResource() => $_ensure(0);
+  $551.Object ensureResource() => $_ensure(0);
 
   /// Apply a predefined set of access controls to this object.
   @$pb.TagNumber(2)
-  $546.CommonEnums_PredefinedObjectAcl get predefinedAcl => $_getN(1);
+  $551.CommonEnums_PredefinedObjectAcl get predefinedAcl => $_getN(1);
   @$pb.TagNumber(2)
-  set predefinedAcl($546.CommonEnums_PredefinedObjectAcl v) { setField(2, v); }
+  set predefinedAcl($551.CommonEnums_PredefinedObjectAcl v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPredefinedAcl() => $_has(1);
   @$pb.TagNumber(2)
@@ -5014,9 +5014,9 @@ class InsertObjectSpec extends $pb.GeneratedMessage {
   /// object resource specifies the `acl` property, when it defaults
   /// to `full`.
   @$pb.TagNumber(7)
-  $546.CommonEnums_Projection get projection => $_getN(6);
+  $551.CommonEnums_Projection get projection => $_getN(6);
   @$pb.TagNumber(7)
-  set projection($546.CommonEnums_Projection v) { setField(7, v); }
+  set projection($551.CommonEnums_Projection v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasProjection() => $_has(6);
   @$pb.TagNumber(7)
@@ -5041,9 +5041,9 @@ class InsertObjectRequest extends $pb.GeneratedMessage {
     $core.String? uploadId,
     InsertObjectSpec? insertObjectSpec,
     $fixnum.Int64? writeOffset,
-    $546.ChecksummedData? checksummedData,
+    $551.ChecksummedData? checksummedData,
     GetObjectMediaRequest? reference,
-    $546.ObjectChecksums? objectChecksums,
+    $551.ObjectChecksums? objectChecksums,
     $core.bool? finishWrite,
     CommonObjectRequestParams? commonObjectRequestParams,
     CommonRequestParams? commonRequestParams,
@@ -5098,9 +5098,9 @@ class InsertObjectRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'uploadId')
     ..aOM<InsertObjectSpec>(2, _omitFieldNames ? '' : 'insertObjectSpec', subBuilder: InsertObjectSpec.create)
     ..aInt64(3, _omitFieldNames ? '' : 'writeOffset')
-    ..aOM<$546.ChecksummedData>(4, _omitFieldNames ? '' : 'checksummedData', subBuilder: $546.ChecksummedData.create)
+    ..aOM<$551.ChecksummedData>(4, _omitFieldNames ? '' : 'checksummedData', subBuilder: $551.ChecksummedData.create)
     ..aOM<GetObjectMediaRequest>(5, _omitFieldNames ? '' : 'reference', subBuilder: GetObjectMediaRequest.create)
-    ..aOM<$546.ObjectChecksums>(6, _omitFieldNames ? '' : 'objectChecksums', subBuilder: $546.ObjectChecksums.create)
+    ..aOM<$551.ObjectChecksums>(6, _omitFieldNames ? '' : 'objectChecksums', subBuilder: $551.ObjectChecksums.create)
     ..aOB(7, _omitFieldNames ? '' : 'finishWrite')
     ..aOM<CommonObjectRequestParams>(8, _omitFieldNames ? '' : 'commonObjectRequestParams', subBuilder: CommonObjectRequestParams.create)
     ..aOM<CommonRequestParams>(9, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
@@ -5183,15 +5183,15 @@ class InsertObjectRequest extends $pb.GeneratedMessage {
   /// The data to insert. If a crc32c checksum is provided that doesn't match
   /// the checksum computed by the service, the request will fail.
   @$pb.TagNumber(4)
-  $546.ChecksummedData get checksummedData => $_getN(3);
+  $551.ChecksummedData get checksummedData => $_getN(3);
   @$pb.TagNumber(4)
-  set checksummedData($546.ChecksummedData v) { setField(4, v); }
+  set checksummedData($551.ChecksummedData v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasChecksummedData() => $_has(3);
   @$pb.TagNumber(4)
   void clearChecksummedData() => clearField(4);
   @$pb.TagNumber(4)
-  $546.ChecksummedData ensureChecksummedData() => $_ensure(3);
+  $551.ChecksummedData ensureChecksummedData() => $_ensure(3);
 
   /// A reference to an existing object. This can be used to support
   /// several use cases:
@@ -5221,15 +5221,15 @@ class InsertObjectRequest extends $pb.GeneratedMessage {
   /// provided in the first or last request (either with first_message, or
   /// finish_write set).
   @$pb.TagNumber(6)
-  $546.ObjectChecksums get objectChecksums => $_getN(5);
+  $551.ObjectChecksums get objectChecksums => $_getN(5);
   @$pb.TagNumber(6)
-  set objectChecksums($546.ObjectChecksums v) { setField(6, v); }
+  set objectChecksums($551.ObjectChecksums v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasObjectChecksums() => $_has(5);
   @$pb.TagNumber(6)
   void clearObjectChecksums() => clearField(6);
   @$pb.TagNumber(6)
-  $546.ObjectChecksums ensureObjectChecksums() => $_ensure(5);
+  $551.ObjectChecksums ensureObjectChecksums() => $_ensure(5);
 
   /// If `true`, this indicates that the write is complete. Sending any
   /// `InsertObjectRequest`s subsequent to one in which `finish_write` is `true`
@@ -5280,7 +5280,7 @@ class ListObjectsRequest extends $pb.GeneratedMessage {
     $core.int? maxResults,
     $core.String? pageToken,
     $core.String? prefix,
-    $546.CommonEnums_Projection? projection,
+    $551.CommonEnums_Projection? projection,
     $core.bool? versions,
     CommonRequestParams? commonRequestParams,
     $core.String? lexicographicStart,
@@ -5333,7 +5333,7 @@ class ListObjectsRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(4, _omitFieldNames ? '' : 'maxResults', $pb.PbFieldType.O3)
     ..aOS(5, _omitFieldNames ? '' : 'pageToken')
     ..aOS(6, _omitFieldNames ? '' : 'prefix')
-    ..e<$546.CommonEnums_Projection>(7, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
+    ..e<$551.CommonEnums_Projection>(7, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
     ..aOB(9, _omitFieldNames ? '' : 'versions')
     ..aOM<CommonRequestParams>(10, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..aOS(11, _omitFieldNames ? '' : 'lexicographicStart')
@@ -5435,9 +5435,9 @@ class ListObjectsRequest extends $pb.GeneratedMessage {
 
   /// Set of properties to return. Defaults to `NO_ACL`.
   @$pb.TagNumber(7)
-  $546.CommonEnums_Projection get projection => $_getN(6);
+  $551.CommonEnums_Projection get projection => $_getN(6);
   @$pb.TagNumber(7)
-  set projection($546.CommonEnums_Projection v) { setField(7, v); }
+  set projection($551.CommonEnums_Projection v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasProjection() => $_has(6);
   @$pb.TagNumber(7)
@@ -5587,7 +5587,7 @@ class QueryWriteStatusResponse extends $pb.GeneratedMessage {
   factory QueryWriteStatusResponse({
     $fixnum.Int64? committedSize,
     $core.bool? complete,
-    $546.Object? resource,
+    $551.Object? resource,
   }) {
     final $result = create();
     if (committedSize != null) {
@@ -5608,7 +5608,7 @@ class QueryWriteStatusResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryWriteStatusResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'committedSize')
     ..aOB(2, _omitFieldNames ? '' : 'complete')
-    ..aOM<$546.Object>(3, _omitFieldNames ? '' : 'resource', subBuilder: $546.Object.create)
+    ..aOM<$551.Object>(3, _omitFieldNames ? '' : 'resource', subBuilder: $551.Object.create)
     ..hasRequiredFields = false
   ;
 
@@ -5656,15 +5656,15 @@ class QueryWriteStatusResponse extends $pb.GeneratedMessage {
 
   /// The metadata for the uploaded object. Only set if `complete` is `true`.
   @$pb.TagNumber(3)
-  $546.Object get resource => $_getN(2);
+  $551.Object get resource => $_getN(2);
   @$pb.TagNumber(3)
-  set resource($546.Object v) { setField(3, v); }
+  set resource($551.Object v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasResource() => $_has(2);
   @$pb.TagNumber(3)
   void clearResource() => clearField(3);
   @$pb.TagNumber(3)
-  $546.Object ensureResource() => $_ensure(2);
+  $551.Object ensureResource() => $_ensure(2);
 }
 
 /// Request message for RewriteObject.
@@ -5673,7 +5673,7 @@ class RewriteObjectRequest extends $pb.GeneratedMessage {
     $core.String? destinationBucket,
     $core.String? destinationObject,
     $core.String? destinationKmsKeyName,
-    $546.CommonEnums_PredefinedObjectAcl? destinationPredefinedAcl,
+    $551.CommonEnums_PredefinedObjectAcl? destinationPredefinedAcl,
     $304.Int64Value? ifGenerationMatch,
     $304.Int64Value? ifGenerationNotMatch,
     $304.Int64Value? ifMetagenerationMatch,
@@ -5683,12 +5683,12 @@ class RewriteObjectRequest extends $pb.GeneratedMessage {
     $304.Int64Value? ifSourceMetagenerationMatch,
     $304.Int64Value? ifSourceMetagenerationNotMatch,
     $fixnum.Int64? maxBytesRewrittenPerCall,
-    $546.CommonEnums_Projection? projection,
+    $551.CommonEnums_Projection? projection,
     $core.String? rewriteToken,
     $core.String? sourceBucket,
     $core.String? sourceObject,
     $fixnum.Int64? sourceGeneration,
-    $546.Object? object,
+    $551.Object? object,
     $core.String? copySourceEncryptionAlgorithm,
     $core.String? copySourceEncryptionKey,
     $core.String? copySourceEncryptionKeySha256,
@@ -5778,7 +5778,7 @@ class RewriteObjectRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'destinationBucket')
     ..aOS(2, _omitFieldNames ? '' : 'destinationObject')
     ..aOS(3, _omitFieldNames ? '' : 'destinationKmsKeyName')
-    ..e<$546.CommonEnums_PredefinedObjectAcl>(4, _omitFieldNames ? '' : 'destinationPredefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $546.CommonEnums_PredefinedObjectAcl.values)
+    ..e<$551.CommonEnums_PredefinedObjectAcl>(4, _omitFieldNames ? '' : 'destinationPredefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $551.CommonEnums_PredefinedObjectAcl.values)
     ..aOM<$304.Int64Value>(5, _omitFieldNames ? '' : 'ifGenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(6, _omitFieldNames ? '' : 'ifGenerationNotMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(7, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
@@ -5788,12 +5788,12 @@ class RewriteObjectRequest extends $pb.GeneratedMessage {
     ..aOM<$304.Int64Value>(11, _omitFieldNames ? '' : 'ifSourceMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(12, _omitFieldNames ? '' : 'ifSourceMetagenerationNotMatch', subBuilder: $304.Int64Value.create)
     ..aInt64(13, _omitFieldNames ? '' : 'maxBytesRewrittenPerCall')
-    ..e<$546.CommonEnums_Projection>(14, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
+    ..e<$551.CommonEnums_Projection>(14, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
     ..aOS(15, _omitFieldNames ? '' : 'rewriteToken')
     ..aOS(16, _omitFieldNames ? '' : 'sourceBucket')
     ..aOS(17, _omitFieldNames ? '' : 'sourceObject')
     ..aInt64(18, _omitFieldNames ? '' : 'sourceGeneration')
-    ..aOM<$546.Object>(20, _omitFieldNames ? '' : 'object', subBuilder: $546.Object.create)
+    ..aOM<$551.Object>(20, _omitFieldNames ? '' : 'object', subBuilder: $551.Object.create)
     ..aOS(21, _omitFieldNames ? '' : 'copySourceEncryptionAlgorithm')
     ..aOS(22, _omitFieldNames ? '' : 'copySourceEncryptionKey')
     ..aOS(23, _omitFieldNames ? '' : 'copySourceEncryptionKeySha256')
@@ -5861,9 +5861,9 @@ class RewriteObjectRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of access controls to the destination object.
   @$pb.TagNumber(4)
-  $546.CommonEnums_PredefinedObjectAcl get destinationPredefinedAcl => $_getN(3);
+  $551.CommonEnums_PredefinedObjectAcl get destinationPredefinedAcl => $_getN(3);
   @$pb.TagNumber(4)
-  set destinationPredefinedAcl($546.CommonEnums_PredefinedObjectAcl v) { setField(4, v); }
+  set destinationPredefinedAcl($551.CommonEnums_PredefinedObjectAcl v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDestinationPredefinedAcl() => $_has(3);
   @$pb.TagNumber(4)
@@ -5997,9 +5997,9 @@ class RewriteObjectRequest extends $pb.GeneratedMessage {
   /// object resource specifies the `acl` property, when it defaults
   /// to `full`.
   @$pb.TagNumber(14)
-  $546.CommonEnums_Projection get projection => $_getN(13);
+  $551.CommonEnums_Projection get projection => $_getN(13);
   @$pb.TagNumber(14)
-  set projection($546.CommonEnums_Projection v) { setField(14, v); }
+  set projection($551.CommonEnums_Projection v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasProjection() => $_has(13);
   @$pb.TagNumber(14)
@@ -6052,15 +6052,15 @@ class RewriteObjectRequest extends $pb.GeneratedMessage {
 
   /// Properties of the destination, post-rewrite object.
   @$pb.TagNumber(20)
-  $546.Object get object => $_getN(18);
+  $551.Object get object => $_getN(18);
   @$pb.TagNumber(20)
-  set object($546.Object v) { setField(20, v); }
+  set object($551.Object v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasObject() => $_has(18);
   @$pb.TagNumber(20)
   void clearObject() => clearField(20);
   @$pb.TagNumber(20)
-  $546.Object ensureObject() => $_ensure(18);
+  $551.Object ensureObject() => $_ensure(18);
 
   /// The algorithm used to encrypt the source object, if any.
   @$pb.TagNumber(21)
@@ -6124,7 +6124,7 @@ class RewriteResponse extends $pb.GeneratedMessage {
     $fixnum.Int64? objectSize,
     $core.bool? done,
     $core.String? rewriteToken,
-    $546.Object? resource,
+    $551.Object? resource,
   }) {
     final $result = create();
     if (totalBytesRewritten != null) {
@@ -6153,7 +6153,7 @@ class RewriteResponse extends $pb.GeneratedMessage {
     ..aInt64(2, _omitFieldNames ? '' : 'objectSize')
     ..aOB(3, _omitFieldNames ? '' : 'done')
     ..aOS(4, _omitFieldNames ? '' : 'rewriteToken')
-    ..aOM<$546.Object>(5, _omitFieldNames ? '' : 'resource', subBuilder: $546.Object.create)
+    ..aOM<$551.Object>(5, _omitFieldNames ? '' : 'resource', subBuilder: $551.Object.create)
     ..hasRequiredFields = false
   ;
 
@@ -6225,15 +6225,15 @@ class RewriteResponse extends $pb.GeneratedMessage {
   /// A resource containing the metadata for the copied-to object. This property
   /// is present in the response only when copying completes.
   @$pb.TagNumber(5)
-  $546.Object get resource => $_getN(4);
+  $551.Object get resource => $_getN(4);
   @$pb.TagNumber(5)
-  set resource($546.Object v) { setField(5, v); }
+  set resource($551.Object v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResource() => $_has(4);
   @$pb.TagNumber(5)
   void clearResource() => clearField(5);
   @$pb.TagNumber(5)
-  $546.Object ensureResource() => $_ensure(4);
+  $551.Object ensureResource() => $_ensure(4);
 }
 
 /// Request message StartResumableWrite.
@@ -6387,9 +6387,9 @@ class PatchObjectRequest extends $pb.GeneratedMessage {
     $304.Int64Value? ifGenerationNotMatch,
     $304.Int64Value? ifMetagenerationMatch,
     $304.Int64Value? ifMetagenerationNotMatch,
-    $546.CommonEnums_PredefinedObjectAcl? predefinedAcl,
-    $546.CommonEnums_Projection? projection,
-    $546.Object? metadata,
+    $551.CommonEnums_PredefinedObjectAcl? predefinedAcl,
+    $551.CommonEnums_Projection? projection,
+    $551.Object? metadata,
     $330.FieldMask? updateMask,
     CommonObjectRequestParams? commonObjectRequestParams,
     CommonRequestParams? commonRequestParams,
@@ -6448,9 +6448,9 @@ class PatchObjectRequest extends $pb.GeneratedMessage {
     ..aOM<$304.Int64Value>(5, _omitFieldNames ? '' : 'ifGenerationNotMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(6, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(7, _omitFieldNames ? '' : 'ifMetagenerationNotMatch', subBuilder: $304.Int64Value.create)
-    ..e<$546.CommonEnums_PredefinedObjectAcl>(8, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $546.CommonEnums_PredefinedObjectAcl.values)
-    ..e<$546.CommonEnums_Projection>(9, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
-    ..aOM<$546.Object>(11, _omitFieldNames ? '' : 'metadata', subBuilder: $546.Object.create)
+    ..e<$551.CommonEnums_PredefinedObjectAcl>(8, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $551.CommonEnums_PredefinedObjectAcl.values)
+    ..e<$551.CommonEnums_Projection>(9, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
+    ..aOM<$551.Object>(11, _omitFieldNames ? '' : 'metadata', subBuilder: $551.Object.create)
     ..aOM<$330.FieldMask>(12, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
     ..aOM<CommonObjectRequestParams>(13, _omitFieldNames ? '' : 'commonObjectRequestParams', subBuilder: CommonObjectRequestParams.create)
     ..aOM<CommonRequestParams>(14, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
@@ -6566,9 +6566,9 @@ class PatchObjectRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of access controls to this object.
   @$pb.TagNumber(8)
-  $546.CommonEnums_PredefinedObjectAcl get predefinedAcl => $_getN(7);
+  $551.CommonEnums_PredefinedObjectAcl get predefinedAcl => $_getN(7);
   @$pb.TagNumber(8)
-  set predefinedAcl($546.CommonEnums_PredefinedObjectAcl v) { setField(8, v); }
+  set predefinedAcl($551.CommonEnums_PredefinedObjectAcl v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPredefinedAcl() => $_has(7);
   @$pb.TagNumber(8)
@@ -6576,9 +6576,9 @@ class PatchObjectRequest extends $pb.GeneratedMessage {
 
   /// Set of properties to return. Defaults to `FULL`.
   @$pb.TagNumber(9)
-  $546.CommonEnums_Projection get projection => $_getN(8);
+  $551.CommonEnums_Projection get projection => $_getN(8);
   @$pb.TagNumber(9)
-  set projection($546.CommonEnums_Projection v) { setField(9, v); }
+  set projection($551.CommonEnums_Projection v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasProjection() => $_has(8);
   @$pb.TagNumber(9)
@@ -6586,15 +6586,15 @@ class PatchObjectRequest extends $pb.GeneratedMessage {
 
   /// The Object metadata for updating.
   @$pb.TagNumber(11)
-  $546.Object get metadata => $_getN(9);
+  $551.Object get metadata => $_getN(9);
   @$pb.TagNumber(11)
-  set metadata($546.Object v) { setField(11, v); }
+  set metadata($551.Object v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasMetadata() => $_has(9);
   @$pb.TagNumber(11)
   void clearMetadata() => clearField(11);
   @$pb.TagNumber(11)
-  $546.Object ensureMetadata() => $_ensure(9);
+  $551.Object ensureMetadata() => $_ensure(9);
 
   ///  List of fields to be updated.
   ///
@@ -6652,9 +6652,9 @@ class UpdateObjectRequest extends $pb.GeneratedMessage {
     $304.Int64Value? ifGenerationNotMatch,
     $304.Int64Value? ifMetagenerationMatch,
     $304.Int64Value? ifMetagenerationNotMatch,
-    $546.CommonEnums_PredefinedObjectAcl? predefinedAcl,
-    $546.CommonEnums_Projection? projection,
-    $546.Object? metadata,
+    $551.CommonEnums_PredefinedObjectAcl? predefinedAcl,
+    $551.CommonEnums_Projection? projection,
+    $551.Object? metadata,
     CommonObjectRequestParams? commonObjectRequestParams,
     CommonRequestParams? commonRequestParams,
   }) {
@@ -6709,9 +6709,9 @@ class UpdateObjectRequest extends $pb.GeneratedMessage {
     ..aOM<$304.Int64Value>(5, _omitFieldNames ? '' : 'ifGenerationNotMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(6, _omitFieldNames ? '' : 'ifMetagenerationMatch', subBuilder: $304.Int64Value.create)
     ..aOM<$304.Int64Value>(7, _omitFieldNames ? '' : 'ifMetagenerationNotMatch', subBuilder: $304.Int64Value.create)
-    ..e<$546.CommonEnums_PredefinedObjectAcl>(8, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $546.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $546.CommonEnums_PredefinedObjectAcl.values)
-    ..e<$546.CommonEnums_Projection>(9, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
-    ..aOM<$546.Object>(11, _omitFieldNames ? '' : 'metadata', subBuilder: $546.Object.create)
+    ..e<$551.CommonEnums_PredefinedObjectAcl>(8, _omitFieldNames ? '' : 'predefinedAcl', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_PredefinedObjectAcl.PREDEFINED_OBJECT_ACL_UNSPECIFIED, valueOf: $551.CommonEnums_PredefinedObjectAcl.valueOf, enumValues: $551.CommonEnums_PredefinedObjectAcl.values)
+    ..e<$551.CommonEnums_Projection>(9, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
+    ..aOM<$551.Object>(11, _omitFieldNames ? '' : 'metadata', subBuilder: $551.Object.create)
     ..aOM<CommonObjectRequestParams>(12, _omitFieldNames ? '' : 'commonObjectRequestParams', subBuilder: CommonObjectRequestParams.create)
     ..aOM<CommonRequestParams>(13, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
@@ -6826,9 +6826,9 @@ class UpdateObjectRequest extends $pb.GeneratedMessage {
 
   /// Apply a predefined set of access controls to this object.
   @$pb.TagNumber(8)
-  $546.CommonEnums_PredefinedObjectAcl get predefinedAcl => $_getN(7);
+  $551.CommonEnums_PredefinedObjectAcl get predefinedAcl => $_getN(7);
   @$pb.TagNumber(8)
-  set predefinedAcl($546.CommonEnums_PredefinedObjectAcl v) { setField(8, v); }
+  set predefinedAcl($551.CommonEnums_PredefinedObjectAcl v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPredefinedAcl() => $_has(7);
   @$pb.TagNumber(8)
@@ -6836,9 +6836,9 @@ class UpdateObjectRequest extends $pb.GeneratedMessage {
 
   /// Set of properties to return. Defaults to `FULL`.
   @$pb.TagNumber(9)
-  $546.CommonEnums_Projection get projection => $_getN(8);
+  $551.CommonEnums_Projection get projection => $_getN(8);
   @$pb.TagNumber(9)
-  set projection($546.CommonEnums_Projection v) { setField(9, v); }
+  set projection($551.CommonEnums_Projection v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasProjection() => $_has(8);
   @$pb.TagNumber(9)
@@ -6846,15 +6846,15 @@ class UpdateObjectRequest extends $pb.GeneratedMessage {
 
   /// The Object metadata for updating.
   @$pb.TagNumber(11)
-  $546.Object get metadata => $_getN(9);
+  $551.Object get metadata => $_getN(9);
   @$pb.TagNumber(11)
-  set metadata($546.Object v) { setField(11, v); }
+  set metadata($551.Object v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasMetadata() => $_has(9);
   @$pb.TagNumber(11)
   void clearMetadata() => clearField(11);
   @$pb.TagNumber(11)
-  $546.Object ensureMetadata() => $_ensure(9);
+  $551.Object ensureMetadata() => $_ensure(9);
 
   /// A set of parameters common to Storage API requests concerning an object.
   @$pb.TagNumber(12)
@@ -6891,8 +6891,8 @@ class WatchAllObjectsRequest extends $pb.GeneratedMessage {
     $core.String? prefix,
     $core.bool? includeTrailingDelimiter,
     $core.String? pageToken,
-    $546.CommonEnums_Projection? projection,
-    $546.Channel? channel,
+    $551.CommonEnums_Projection? projection,
+    $551.Channel? channel,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -6940,8 +6940,8 @@ class WatchAllObjectsRequest extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'prefix')
     ..aOB(6, _omitFieldNames ? '' : 'includeTrailingDelimiter')
     ..aOS(7, _omitFieldNames ? '' : 'pageToken')
-    ..e<$546.CommonEnums_Projection>(8, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $546.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $546.CommonEnums_Projection.valueOf, enumValues: $546.CommonEnums_Projection.values)
-    ..aOM<$546.Channel>(10, _omitFieldNames ? '' : 'channel', subBuilder: $546.Channel.create)
+    ..e<$551.CommonEnums_Projection>(8, _omitFieldNames ? '' : 'projection', $pb.PbFieldType.OE, defaultOrMaker: $551.CommonEnums_Projection.PROJECTION_UNSPECIFIED, valueOf: $551.CommonEnums_Projection.valueOf, enumValues: $551.CommonEnums_Projection.values)
+    ..aOM<$551.Channel>(10, _omitFieldNames ? '' : 'channel', subBuilder: $551.Channel.create)
     ..aOM<CommonRequestParams>(11, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -7053,9 +7053,9 @@ class WatchAllObjectsRequest extends $pb.GeneratedMessage {
 
   /// Set of properties to return. Defaults to `NO_ACL`.
   @$pb.TagNumber(8)
-  $546.CommonEnums_Projection get projection => $_getN(7);
+  $551.CommonEnums_Projection get projection => $_getN(7);
   @$pb.TagNumber(8)
-  set projection($546.CommonEnums_Projection v) { setField(8, v); }
+  set projection($551.CommonEnums_Projection v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasProjection() => $_has(7);
   @$pb.TagNumber(8)
@@ -7063,15 +7063,15 @@ class WatchAllObjectsRequest extends $pb.GeneratedMessage {
 
   /// Properties of the channel to be inserted.
   @$pb.TagNumber(10)
-  $546.Channel get channel => $_getN(8);
+  $551.Channel get channel => $_getN(8);
   @$pb.TagNumber(10)
-  set channel($546.Channel v) { setField(10, v); }
+  set channel($551.Channel v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasChannel() => $_has(8);
   @$pb.TagNumber(10)
   void clearChannel() => clearField(10);
   @$pb.TagNumber(10)
-  $546.Channel ensureChannel() => $_ensure(8);
+  $551.Channel ensureChannel() => $_ensure(8);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(11)
@@ -7241,7 +7241,7 @@ class CreateHmacKeyRequest extends $pb.GeneratedMessage {
 /// Create hmac response.  The only time the secret for an HMAC will be returned.
 class CreateHmacKeyResponse extends $pb.GeneratedMessage {
   factory CreateHmacKeyResponse({
-    $546.HmacKeyMetadata? metadata,
+    $551.HmacKeyMetadata? metadata,
     $core.String? secret,
   }) {
     final $result = create();
@@ -7258,7 +7258,7 @@ class CreateHmacKeyResponse extends $pb.GeneratedMessage {
   factory CreateHmacKeyResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateHmacKeyResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
-    ..aOM<$546.HmacKeyMetadata>(1, _omitFieldNames ? '' : 'metadata', subBuilder: $546.HmacKeyMetadata.create)
+    ..aOM<$551.HmacKeyMetadata>(1, _omitFieldNames ? '' : 'metadata', subBuilder: $551.HmacKeyMetadata.create)
     ..aOS(2, _omitFieldNames ? '' : 'secret')
     ..hasRequiredFields = false
   ;
@@ -7286,15 +7286,15 @@ class CreateHmacKeyResponse extends $pb.GeneratedMessage {
 
   /// Key metadata.
   @$pb.TagNumber(1)
-  $546.HmacKeyMetadata get metadata => $_getN(0);
+  $551.HmacKeyMetadata get metadata => $_getN(0);
   @$pb.TagNumber(1)
-  set metadata($546.HmacKeyMetadata v) { setField(1, v); }
+  set metadata($551.HmacKeyMetadata v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMetadata() => $_has(0);
   @$pb.TagNumber(1)
   void clearMetadata() => clearField(1);
   @$pb.TagNumber(1)
-  $546.HmacKeyMetadata ensureMetadata() => $_ensure(0);
+  $551.HmacKeyMetadata ensureMetadata() => $_ensure(0);
 
   /// HMAC key secret material.
   @$pb.TagNumber(2)
@@ -7608,7 +7608,7 @@ class ListHmacKeysRequest extends $pb.GeneratedMessage {
 class ListHmacKeysResponse extends $pb.GeneratedMessage {
   factory ListHmacKeysResponse({
     $core.String? nextPageToken,
-    $core.Iterable<$546.HmacKeyMetadata>? items,
+    $core.Iterable<$551.HmacKeyMetadata>? items,
   }) {
     final $result = create();
     if (nextPageToken != null) {
@@ -7625,7 +7625,7 @@ class ListHmacKeysResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListHmacKeysResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'nextPageToken')
-    ..pc<$546.HmacKeyMetadata>(2, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: $546.HmacKeyMetadata.create)
+    ..pc<$551.HmacKeyMetadata>(2, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: $551.HmacKeyMetadata.create)
     ..hasRequiredFields = false
   ;
 
@@ -7663,7 +7663,7 @@ class ListHmacKeysResponse extends $pb.GeneratedMessage {
 
   /// The list of items.
   @$pb.TagNumber(2)
-  $core.List<$546.HmacKeyMetadata> get items => $_getList(1);
+  $core.List<$551.HmacKeyMetadata> get items => $_getList(1);
 }
 
 /// Request object to update an HMAC key state.
@@ -7671,7 +7671,7 @@ class UpdateHmacKeyRequest extends $pb.GeneratedMessage {
   factory UpdateHmacKeyRequest({
     $core.String? accessId,
     $core.String? projectId,
-    $546.HmacKeyMetadata? metadata,
+    $551.HmacKeyMetadata? metadata,
     CommonRequestParams? commonRequestParams,
   }) {
     final $result = create();
@@ -7696,7 +7696,7 @@ class UpdateHmacKeyRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateHmacKeyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accessId')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
-    ..aOM<$546.HmacKeyMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $546.HmacKeyMetadata.create)
+    ..aOM<$551.HmacKeyMetadata>(3, _omitFieldNames ? '' : 'metadata', subBuilder: $551.HmacKeyMetadata.create)
     ..aOM<CommonRequestParams>(5, _omitFieldNames ? '' : 'commonRequestParams', subBuilder: CommonRequestParams.create)
     ..hasRequiredFields = false
   ;
@@ -7744,15 +7744,15 @@ class UpdateHmacKeyRequest extends $pb.GeneratedMessage {
 
   /// Required. The service account owner of the HMAC key.
   @$pb.TagNumber(3)
-  $546.HmacKeyMetadata get metadata => $_getN(2);
+  $551.HmacKeyMetadata get metadata => $_getN(2);
   @$pb.TagNumber(3)
-  set metadata($546.HmacKeyMetadata v) { setField(3, v); }
+  set metadata($551.HmacKeyMetadata v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMetadata() => $_has(2);
   @$pb.TagNumber(3)
   void clearMetadata() => clearField(3);
   @$pb.TagNumber(3)
-  $546.HmacKeyMetadata ensureMetadata() => $_ensure(2);
+  $551.HmacKeyMetadata ensureMetadata() => $_ensure(2);
 
   /// A set of parameters common to all Storage API requests.
   @$pb.TagNumber(5)

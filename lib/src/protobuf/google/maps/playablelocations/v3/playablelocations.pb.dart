@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $261;
-import '../../unity/clientinfo.pb.dart' as $470;
-import 'resources.pb.dart' as $469;
-import 'sample/resources.pb.dart' as $468;
+import '../../unity/clientinfo.pb.dart' as $475;
+import 'resources.pb.dart' as $474;
+import 'sample/resources.pb.dart' as $473;
 
 ///
 ///  Life of a query:
@@ -44,8 +44,8 @@ import 'sample/resources.pb.dart' as $468;
 ///  again to get a fresh view of the real world.
 class SamplePlayableLocationsRequest extends $pb.GeneratedMessage {
   factory SamplePlayableLocationsRequest({
-    $468.AreaFilter? areaFilter,
-    $core.Iterable<$468.Criterion>? criteria,
+    $473.AreaFilter? areaFilter,
+    $core.Iterable<$473.Criterion>? criteria,
   }) {
     final $result = create();
     if (areaFilter != null) {
@@ -61,8 +61,8 @@ class SamplePlayableLocationsRequest extends $pb.GeneratedMessage {
   factory SamplePlayableLocationsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SamplePlayableLocationsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..aOM<$468.AreaFilter>(1, _omitFieldNames ? '' : 'areaFilter', subBuilder: $468.AreaFilter.create)
-    ..pc<$468.Criterion>(2, _omitFieldNames ? '' : 'criteria', $pb.PbFieldType.PM, subBuilder: $468.Criterion.create)
+    ..aOM<$473.AreaFilter>(1, _omitFieldNames ? '' : 'areaFilter', subBuilder: $473.AreaFilter.create)
+    ..pc<$473.Criterion>(2, _omitFieldNames ? '' : 'criteria', $pb.PbFieldType.PM, subBuilder: $473.Criterion.create)
     ..hasRequiredFields = false
   ;
 
@@ -89,20 +89,20 @@ class SamplePlayableLocationsRequest extends $pb.GeneratedMessage {
 
   /// Required. Specifies the area to search within for playable locations.
   @$pb.TagNumber(1)
-  $468.AreaFilter get areaFilter => $_getN(0);
+  $473.AreaFilter get areaFilter => $_getN(0);
   @$pb.TagNumber(1)
-  set areaFilter($468.AreaFilter v) { setField(1, v); }
+  set areaFilter($473.AreaFilter v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAreaFilter() => $_has(0);
   @$pb.TagNumber(1)
   void clearAreaFilter() => clearField(1);
   @$pb.TagNumber(1)
-  $468.AreaFilter ensureAreaFilter() => $_ensure(0);
+  $473.AreaFilter ensureAreaFilter() => $_ensure(0);
 
   /// Required. Specifies one or more (up to 5) criteria for filtering the
   /// returned playable locations.
   @$pb.TagNumber(2)
-  $core.List<$468.Criterion> get criteria => $_getList(1);
+  $core.List<$473.Criterion> get criteria => $_getList(1);
 }
 
 ///
@@ -111,7 +111,7 @@ class SamplePlayableLocationsRequest extends $pb.GeneratedMessage {
 ///  method.
 class SamplePlayableLocationsResponse extends $pb.GeneratedMessage {
   factory SamplePlayableLocationsResponse({
-    $core.Map<$core.int, $468.PlayableLocationList>? locationsPerGameObjectType,
+    $core.Map<$core.int, $473.PlayableLocationList>? locationsPerGameObjectType,
     $261.Duration? ttl,
   }) {
     final $result = create();
@@ -128,7 +128,7 @@ class SamplePlayableLocationsResponse extends $pb.GeneratedMessage {
   factory SamplePlayableLocationsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SamplePlayableLocationsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..m<$core.int, $468.PlayableLocationList>(1, _omitFieldNames ? '' : 'locationsPerGameObjectType', entryClassName: 'SamplePlayableLocationsResponse.LocationsPerGameObjectTypeEntry', keyFieldType: $pb.PbFieldType.O3, valueFieldType: $pb.PbFieldType.OM, valueCreator: $468.PlayableLocationList.create, valueDefaultOrMaker: $468.PlayableLocationList.getDefault, packageName: const $pb.PackageName('google.maps.playablelocations.v3'))
+    ..m<$core.int, $473.PlayableLocationList>(1, _omitFieldNames ? '' : 'locationsPerGameObjectType', entryClassName: 'SamplePlayableLocationsResponse.LocationsPerGameObjectTypeEntry', keyFieldType: $pb.PbFieldType.O3, valueFieldType: $pb.PbFieldType.OM, valueCreator: $473.PlayableLocationList.create, valueDefaultOrMaker: $473.PlayableLocationList.getDefault, packageName: const $pb.PackageName('google.maps.playablelocations.v3'))
     ..aOM<$261.Duration>(9, _omitFieldNames ? '' : 'ttl', subBuilder: $261.Duration.create)
     ..hasRequiredFields = false
   ;
@@ -157,7 +157,7 @@ class SamplePlayableLocationsResponse extends $pb.GeneratedMessage {
   /// Each PlayableLocation object corresponds to a game_object_type specified
   /// in the request.
   @$pb.TagNumber(1)
-  $core.Map<$core.int, $468.PlayableLocationList> get locationsPerGameObjectType => $_getMap(0);
+  $core.Map<$core.int, $473.PlayableLocationList> get locationsPerGameObjectType => $_getMap(0);
 
   /// Required. Specifies the "time-to-live" for the set of playable locations.
   /// You can use this value to determine how long to cache the set of playable
@@ -182,9 +182,9 @@ class SamplePlayableLocationsResponse extends $pb.GeneratedMessage {
 /// A request for logging your player's bad location reports.
 class LogPlayerReportsRequest extends $pb.GeneratedMessage {
   factory LogPlayerReportsRequest({
-    $core.Iterable<$469.PlayerReport>? playerReports,
+    $core.Iterable<$474.PlayerReport>? playerReports,
     $core.String? requestId,
-    $470.ClientInfo? clientInfo,
+    $475.ClientInfo? clientInfo,
   }) {
     final $result = create();
     if (playerReports != null) {
@@ -203,9 +203,9 @@ class LogPlayerReportsRequest extends $pb.GeneratedMessage {
   factory LogPlayerReportsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogPlayerReportsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..pc<$469.PlayerReport>(1, _omitFieldNames ? '' : 'playerReports', $pb.PbFieldType.PM, subBuilder: $469.PlayerReport.create)
+    ..pc<$474.PlayerReport>(1, _omitFieldNames ? '' : 'playerReports', $pb.PbFieldType.PM, subBuilder: $474.PlayerReport.create)
     ..aOS(2, _omitFieldNames ? '' : 'requestId')
-    ..aOM<$470.ClientInfo>(3, _omitFieldNames ? '' : 'clientInfo', subBuilder: $470.ClientInfo.create)
+    ..aOM<$475.ClientInfo>(3, _omitFieldNames ? '' : 'clientInfo', subBuilder: $475.ClientInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -233,7 +233,7 @@ class LogPlayerReportsRequest extends $pb.GeneratedMessage {
   /// Required. Player reports. The maximum number of player reports that you can
   /// log at once is 50.
   @$pb.TagNumber(1)
-  $core.List<$469.PlayerReport> get playerReports => $_getList(0);
+  $core.List<$474.PlayerReport> get playerReports => $_getList(0);
 
   ///  Required. A string that uniquely identifies the log player reports request.
   ///  This allows you to detect duplicate requests. We recommend that you use
@@ -254,15 +254,15 @@ class LogPlayerReportsRequest extends $pb.GeneratedMessage {
   /// Required. Information about the client device (for example, device model
   /// and operating system).
   @$pb.TagNumber(3)
-  $470.ClientInfo get clientInfo => $_getN(2);
+  $475.ClientInfo get clientInfo => $_getN(2);
   @$pb.TagNumber(3)
-  set clientInfo($470.ClientInfo v) { setField(3, v); }
+  set clientInfo($475.ClientInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasClientInfo() => $_has(2);
   @$pb.TagNumber(3)
   void clearClientInfo() => clearField(3);
   @$pb.TagNumber(3)
-  $470.ClientInfo ensureClientInfo() => $_ensure(2);
+  $475.ClientInfo ensureClientInfo() => $_ensure(2);
 }
 
 ///  A response for the
@@ -305,9 +305,9 @@ class LogPlayerReportsResponse extends $pb.GeneratedMessage {
 /// A request for logging impressions.
 class LogImpressionsRequest extends $pb.GeneratedMessage {
   factory LogImpressionsRequest({
-    $core.Iterable<$469.Impression>? impressions,
+    $core.Iterable<$474.Impression>? impressions,
     $core.String? requestId,
-    $470.ClientInfo? clientInfo,
+    $475.ClientInfo? clientInfo,
   }) {
     final $result = create();
     if (impressions != null) {
@@ -326,9 +326,9 @@ class LogImpressionsRequest extends $pb.GeneratedMessage {
   factory LogImpressionsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogImpressionsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.playablelocations.v3'), createEmptyInstance: create)
-    ..pc<$469.Impression>(1, _omitFieldNames ? '' : 'impressions', $pb.PbFieldType.PM, subBuilder: $469.Impression.create)
+    ..pc<$474.Impression>(1, _omitFieldNames ? '' : 'impressions', $pb.PbFieldType.PM, subBuilder: $474.Impression.create)
     ..aOS(2, _omitFieldNames ? '' : 'requestId')
-    ..aOM<$470.ClientInfo>(3, _omitFieldNames ? '' : 'clientInfo', subBuilder: $470.ClientInfo.create)
+    ..aOM<$475.ClientInfo>(3, _omitFieldNames ? '' : 'clientInfo', subBuilder: $475.ClientInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -356,7 +356,7 @@ class LogImpressionsRequest extends $pb.GeneratedMessage {
   /// Required. Impression event details. The maximum number of impression
   /// reports that you can log at once is 50.
   @$pb.TagNumber(1)
-  $core.List<$469.Impression> get impressions => $_getList(0);
+  $core.List<$474.Impression> get impressions => $_getList(0);
 
   ///  Required. A string that uniquely identifies the log impressions request.
   ///  This allows you to detect duplicate requests. We recommend that you use
@@ -377,15 +377,15 @@ class LogImpressionsRequest extends $pb.GeneratedMessage {
   /// Required. Information about the client device. For example, device model
   /// and operating system.
   @$pb.TagNumber(3)
-  $470.ClientInfo get clientInfo => $_getN(2);
+  $475.ClientInfo get clientInfo => $_getN(2);
   @$pb.TagNumber(3)
-  set clientInfo($470.ClientInfo v) { setField(3, v); }
+  set clientInfo($475.ClientInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasClientInfo() => $_has(2);
   @$pb.TagNumber(3)
   void clearClientInfo() => clearField(3);
   @$pb.TagNumber(3)
-  $470.ClientInfo ensureClientInfo() => $_ensure(2);
+  $475.ClientInfo ensureClientInfo() => $_ensure(2);
 }
 
 /// A response for the

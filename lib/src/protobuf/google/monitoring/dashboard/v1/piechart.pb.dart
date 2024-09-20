@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/duration.pb.dart' as $261;
-import 'metrics.pb.dart' as $505;
+import 'metrics.pb.dart' as $510;
 import 'piechart.pbenum.dart';
 
 export 'piechart.pbenum.dart';
@@ -22,7 +22,7 @@ export 'piechart.pbenum.dart';
 /// Groups a time series query definition.
 class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   factory PieChart_PieChartDataSet({
-    $505.TimeSeriesQuery? timeSeriesQuery,
+    $510.TimeSeriesQuery? timeSeriesQuery,
     $core.String? sliceNameTemplate,
     $261.Duration? minAlignmentPeriod,
   }) {
@@ -43,7 +43,7 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   factory PieChart_PieChartDataSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PieChart.PieChartDataSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$505.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $505.TimeSeriesQuery.create)
+    ..aOM<$510.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $510.TimeSeriesQuery.create)
     ..aOS(2, _omitFieldNames ? '' : 'sliceNameTemplate')
     ..aOM<$261.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $261.Duration.create)
     ..hasRequiredFields = false
@@ -73,15 +73,15 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   /// Required. The query for the PieChart. See,
   /// `google.monitoring.dashboard.v1.TimeSeriesQuery`.
   @$pb.TagNumber(1)
-  $505.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $510.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($505.TimeSeriesQuery v) { setField(1, v); }
+  set timeSeriesQuery($510.TimeSeriesQuery v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeSeriesQuery() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $505.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $510.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// Optional. A template for the name of the slice. This name will be
   /// displayed in the legend and the tooltip of the pie chart. It replaces the

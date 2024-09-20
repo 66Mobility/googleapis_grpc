@@ -1528,6 +1528,78 @@ class DetachSubscriptionResponse extends $pb.GeneratedMessage {
   static DetachSubscriptionResponse? _defaultInstance;
 }
 
+/// Information about an associated Analytics Hub subscription
+/// (https://cloud.google.com/bigquery/docs/analytics-hub-manage-subscriptions).
+class Subscription_AnalyticsHubSubscriptionInfo extends $pb.GeneratedMessage {
+  factory Subscription_AnalyticsHubSubscriptionInfo({
+    $core.String? listing,
+    $core.String? subscription,
+  }) {
+    final $result = create();
+    if (listing != null) {
+      $result.listing = listing;
+    }
+    if (subscription != null) {
+      $result.subscription = subscription;
+    }
+    return $result;
+  }
+  Subscription_AnalyticsHubSubscriptionInfo._() : super();
+  factory Subscription_AnalyticsHubSubscriptionInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Subscription_AnalyticsHubSubscriptionInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Subscription.AnalyticsHubSubscriptionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'listing')
+    ..aOS(2, _omitFieldNames ? '' : 'subscription')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  Subscription_AnalyticsHubSubscriptionInfo clone() => Subscription_AnalyticsHubSubscriptionInfo()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Subscription_AnalyticsHubSubscriptionInfo copyWith(void Function(Subscription_AnalyticsHubSubscriptionInfo) updates) => super.copyWith((message) => updates(message as Subscription_AnalyticsHubSubscriptionInfo)) as Subscription_AnalyticsHubSubscriptionInfo;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Subscription_AnalyticsHubSubscriptionInfo create() => Subscription_AnalyticsHubSubscriptionInfo._();
+  Subscription_AnalyticsHubSubscriptionInfo createEmptyInstance() => create();
+  static $pb.PbList<Subscription_AnalyticsHubSubscriptionInfo> createRepeated() => $pb.PbList<Subscription_AnalyticsHubSubscriptionInfo>();
+  @$core.pragma('dart2js:noInline')
+  static Subscription_AnalyticsHubSubscriptionInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Subscription_AnalyticsHubSubscriptionInfo>(create);
+  static Subscription_AnalyticsHubSubscriptionInfo? _defaultInstance;
+
+  /// Optional. The name of the associated Analytics Hub listing resource.
+  /// Pattern:
+  /// "projects/{project}/locations/{location}/dataExchanges/{data_exchange}/listings/{listing}"
+  @$pb.TagNumber(1)
+  $core.String get listing => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set listing($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasListing() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearListing() => clearField(1);
+
+  /// Optional. The name of the associated Analytics Hub subscription resource.
+  /// Pattern:
+  /// "projects/{project}/locations/{location}/subscriptions/{subscription}"
+  @$pb.TagNumber(2)
+  $core.String get subscription => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set subscription($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasSubscription() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearSubscription() => clearField(2);
+}
+
 /// A subscription resource. If none of `push_config`, `bigquery_config`, or
 /// `cloud_storage_config` is set, then the subscriber will pull and ack messages
 /// using API methods. At most one of these fields may be set.
@@ -1551,6 +1623,7 @@ class Subscription extends $pb.GeneratedMessage {
     BigQueryConfig? bigqueryConfig,
     Subscription_State? state,
     CloudStorageConfig? cloudStorageConfig,
+    Subscription_AnalyticsHubSubscriptionInfo? analyticsHubSubscriptionInfo,
   }) {
     final $result = create();
     if (name != null) {
@@ -1607,6 +1680,9 @@ class Subscription extends $pb.GeneratedMessage {
     if (cloudStorageConfig != null) {
       $result.cloudStorageConfig = cloudStorageConfig;
     }
+    if (analyticsHubSubscriptionInfo != null) {
+      $result.analyticsHubSubscriptionInfo = analyticsHubSubscriptionInfo;
+    }
     return $result;
   }
   Subscription._() : super();
@@ -1632,6 +1708,7 @@ class Subscription extends $pb.GeneratedMessage {
     ..aOM<BigQueryConfig>(18, _omitFieldNames ? '' : 'bigqueryConfig', subBuilder: BigQueryConfig.create)
     ..e<Subscription_State>(19, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Subscription_State.STATE_UNSPECIFIED, valueOf: Subscription_State.valueOf, enumValues: Subscription_State.values)
     ..aOM<CloudStorageConfig>(22, _omitFieldNames ? '' : 'cloudStorageConfig', subBuilder: CloudStorageConfig.create)
+    ..aOM<Subscription_AnalyticsHubSubscriptionInfo>(23, _omitFieldNames ? '' : 'analyticsHubSubscriptionInfo', subBuilder: Subscription_AnalyticsHubSubscriptionInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -1931,6 +2008,19 @@ class Subscription extends $pb.GeneratedMessage {
   void clearCloudStorageConfig() => clearField(22);
   @$pb.TagNumber(22)
   CloudStorageConfig ensureCloudStorageConfig() => $_ensure(17);
+
+  /// Output only. Information about the associated Analytics Hub subscription.
+  /// Only set if the subscritpion is created by Analytics Hub.
+  @$pb.TagNumber(23)
+  Subscription_AnalyticsHubSubscriptionInfo get analyticsHubSubscriptionInfo => $_getN(18);
+  @$pb.TagNumber(23)
+  set analyticsHubSubscriptionInfo(Subscription_AnalyticsHubSubscriptionInfo v) { setField(23, v); }
+  @$pb.TagNumber(23)
+  $core.bool hasAnalyticsHubSubscriptionInfo() => $_has(18);
+  @$pb.TagNumber(23)
+  void clearAnalyticsHubSubscriptionInfo() => clearField(23);
+  @$pb.TagNumber(23)
+  Subscription_AnalyticsHubSubscriptionInfo ensureAnalyticsHubSubscriptionInfo() => $_ensure(18);
 }
 
 ///  A policy that specifies how Pub/Sub retries message delivery.

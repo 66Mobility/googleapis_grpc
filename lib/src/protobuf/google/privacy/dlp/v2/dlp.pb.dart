@@ -21,17 +21,17 @@ import '../../../protobuf/timestamp.pb.dart' as $299;
 import '../../../rpc/status.pb.dart' as $319;
 import '../../../type/date.pb.dart' as $324;
 import '../../../type/dayofweek.pbenum.dart' as $424;
-import '../../../type/timeofday.pb.dart' as $527;
+import '../../../type/timeofday.pb.dart' as $532;
 import 'dlp.pbenum.dart';
-import 'storage.pb.dart' as $526;
-import 'storage.pbenum.dart' as $526;
+import 'storage.pb.dart' as $531;
+import 'storage.pbenum.dart' as $531;
 
 export 'dlp.pbenum.dart';
 
 /// List of excluded infoTypes.
 class ExcludeInfoTypes extends $pb.GeneratedMessage {
   factory ExcludeInfoTypes({
-    $core.Iterable<$526.InfoType>? infoTypes,
+    $core.Iterable<$531.InfoType>? infoTypes,
   }) {
     final $result = create();
     if (infoTypes != null) {
@@ -44,7 +44,7 @@ class ExcludeInfoTypes extends $pb.GeneratedMessage {
   factory ExcludeInfoTypes.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExcludeInfoTypes', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..pc<$526.InfoType>(1, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $526.InfoType.create)
+    ..pc<$531.InfoType>(1, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $531.InfoType.create)
     ..hasRequiredFields = false
   ;
 
@@ -78,7 +78,7 @@ class ExcludeInfoTypes extends $pb.GeneratedMessage {
   /// That leads to "555-222-2222@example.org" to generate only a single
   /// finding, namely email address.
   @$pb.TagNumber(1)
-  $core.List<$526.InfoType> get infoTypes => $_getList(0);
+  $core.List<$531.InfoType> get infoTypes => $_getList(0);
 }
 
 /// The rule to exclude findings based on a hotword. For record inspection of
@@ -87,8 +87,8 @@ class ExcludeInfoTypes extends $pb.GeneratedMessage {
 /// pattern.
 class ExcludeByHotword extends $pb.GeneratedMessage {
   factory ExcludeByHotword({
-    $526.CustomInfoType_Regex? hotwordRegex,
-    $526.CustomInfoType_DetectionRule_Proximity? proximity,
+    $531.CustomInfoType_Regex? hotwordRegex,
+    $531.CustomInfoType_DetectionRule_Proximity? proximity,
   }) {
     final $result = create();
     if (hotwordRegex != null) {
@@ -104,8 +104,8 @@ class ExcludeByHotword extends $pb.GeneratedMessage {
   factory ExcludeByHotword.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExcludeByHotword', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.CustomInfoType_Regex>(1, _omitFieldNames ? '' : 'hotwordRegex', subBuilder: $526.CustomInfoType_Regex.create)
-    ..aOM<$526.CustomInfoType_DetectionRule_Proximity>(2, _omitFieldNames ? '' : 'proximity', subBuilder: $526.CustomInfoType_DetectionRule_Proximity.create)
+    ..aOM<$531.CustomInfoType_Regex>(1, _omitFieldNames ? '' : 'hotwordRegex', subBuilder: $531.CustomInfoType_Regex.create)
+    ..aOM<$531.CustomInfoType_DetectionRule_Proximity>(2, _omitFieldNames ? '' : 'proximity', subBuilder: $531.CustomInfoType_DetectionRule_Proximity.create)
     ..hasRequiredFields = false
   ;
 
@@ -132,30 +132,30 @@ class ExcludeByHotword extends $pb.GeneratedMessage {
 
   /// Regular expression pattern defining what qualifies as a hotword.
   @$pb.TagNumber(1)
-  $526.CustomInfoType_Regex get hotwordRegex => $_getN(0);
+  $531.CustomInfoType_Regex get hotwordRegex => $_getN(0);
   @$pb.TagNumber(1)
-  set hotwordRegex($526.CustomInfoType_Regex v) { setField(1, v); }
+  set hotwordRegex($531.CustomInfoType_Regex v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHotwordRegex() => $_has(0);
   @$pb.TagNumber(1)
   void clearHotwordRegex() => clearField(1);
   @$pb.TagNumber(1)
-  $526.CustomInfoType_Regex ensureHotwordRegex() => $_ensure(0);
+  $531.CustomInfoType_Regex ensureHotwordRegex() => $_ensure(0);
 
   /// Range of characters within which the entire hotword must reside.
   /// The total length of the window cannot exceed 1000 characters.
   /// The windowBefore property in proximity should be set to 1 if the hotword
   /// needs to be included in a column header.
   @$pb.TagNumber(2)
-  $526.CustomInfoType_DetectionRule_Proximity get proximity => $_getN(1);
+  $531.CustomInfoType_DetectionRule_Proximity get proximity => $_getN(1);
   @$pb.TagNumber(2)
-  set proximity($526.CustomInfoType_DetectionRule_Proximity v) { setField(2, v); }
+  set proximity($531.CustomInfoType_DetectionRule_Proximity v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProximity() => $_has(1);
   @$pb.TagNumber(2)
   void clearProximity() => clearField(2);
   @$pb.TagNumber(2)
-  $526.CustomInfoType_DetectionRule_Proximity ensureProximity() => $_ensure(1);
+  $531.CustomInfoType_DetectionRule_Proximity ensureProximity() => $_ensure(1);
 }
 
 enum ExclusionRule_Type {
@@ -170,8 +170,8 @@ enum ExclusionRule_Type {
 /// `InspectionRuleSet` are removed from results.
 class ExclusionRule extends $pb.GeneratedMessage {
   factory ExclusionRule({
-    $526.CustomInfoType_Dictionary? dictionary,
-    $526.CustomInfoType_Regex? regex,
+    $531.CustomInfoType_Dictionary? dictionary,
+    $531.CustomInfoType_Regex? regex,
     ExcludeInfoTypes? excludeInfoTypes,
     MatchingType? matchingType,
     ExcludeByHotword? excludeByHotword,
@@ -207,8 +207,8 @@ class ExclusionRule extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExclusionRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 5])
-    ..aOM<$526.CustomInfoType_Dictionary>(1, _omitFieldNames ? '' : 'dictionary', subBuilder: $526.CustomInfoType_Dictionary.create)
-    ..aOM<$526.CustomInfoType_Regex>(2, _omitFieldNames ? '' : 'regex', subBuilder: $526.CustomInfoType_Regex.create)
+    ..aOM<$531.CustomInfoType_Dictionary>(1, _omitFieldNames ? '' : 'dictionary', subBuilder: $531.CustomInfoType_Dictionary.create)
+    ..aOM<$531.CustomInfoType_Regex>(2, _omitFieldNames ? '' : 'regex', subBuilder: $531.CustomInfoType_Regex.create)
     ..aOM<ExcludeInfoTypes>(3, _omitFieldNames ? '' : 'excludeInfoTypes', subBuilder: ExcludeInfoTypes.create)
     ..e<MatchingType>(4, _omitFieldNames ? '' : 'matchingType', $pb.PbFieldType.OE, defaultOrMaker: MatchingType.MATCHING_TYPE_UNSPECIFIED, valueOf: MatchingType.valueOf, enumValues: MatchingType.values)
     ..aOM<ExcludeByHotword>(5, _omitFieldNames ? '' : 'excludeByHotword', subBuilder: ExcludeByHotword.create)
@@ -241,27 +241,27 @@ class ExclusionRule extends $pb.GeneratedMessage {
 
   /// Dictionary which defines the rule.
   @$pb.TagNumber(1)
-  $526.CustomInfoType_Dictionary get dictionary => $_getN(0);
+  $531.CustomInfoType_Dictionary get dictionary => $_getN(0);
   @$pb.TagNumber(1)
-  set dictionary($526.CustomInfoType_Dictionary v) { setField(1, v); }
+  set dictionary($531.CustomInfoType_Dictionary v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDictionary() => $_has(0);
   @$pb.TagNumber(1)
   void clearDictionary() => clearField(1);
   @$pb.TagNumber(1)
-  $526.CustomInfoType_Dictionary ensureDictionary() => $_ensure(0);
+  $531.CustomInfoType_Dictionary ensureDictionary() => $_ensure(0);
 
   /// Regular expression which defines the rule.
   @$pb.TagNumber(2)
-  $526.CustomInfoType_Regex get regex => $_getN(1);
+  $531.CustomInfoType_Regex get regex => $_getN(1);
   @$pb.TagNumber(2)
-  set regex($526.CustomInfoType_Regex v) { setField(2, v); }
+  set regex($531.CustomInfoType_Regex v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRegex() => $_has(1);
   @$pb.TagNumber(2)
   void clearRegex() => clearField(2);
   @$pb.TagNumber(2)
-  $526.CustomInfoType_Regex ensureRegex() => $_ensure(1);
+  $531.CustomInfoType_Regex ensureRegex() => $_ensure(1);
 
   /// Set of infoTypes for which findings would affect this rule.
   @$pb.TagNumber(3)
@@ -309,7 +309,7 @@ enum InspectionRule_Type {
 /// `InspectionRuleSet`.
 class InspectionRule extends $pb.GeneratedMessage {
   factory InspectionRule({
-    $526.CustomInfoType_DetectionRule_HotwordRule? hotwordRule,
+    $531.CustomInfoType_DetectionRule_HotwordRule? hotwordRule,
     ExclusionRule? exclusionRule,
   }) {
     final $result = create();
@@ -332,7 +332,7 @@ class InspectionRule extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InspectionRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$526.CustomInfoType_DetectionRule_HotwordRule>(1, _omitFieldNames ? '' : 'hotwordRule', subBuilder: $526.CustomInfoType_DetectionRule_HotwordRule.create)
+    ..aOM<$531.CustomInfoType_DetectionRule_HotwordRule>(1, _omitFieldNames ? '' : 'hotwordRule', subBuilder: $531.CustomInfoType_DetectionRule_HotwordRule.create)
     ..aOM<ExclusionRule>(2, _omitFieldNames ? '' : 'exclusionRule', subBuilder: ExclusionRule.create)
     ..hasRequiredFields = false
   ;
@@ -363,15 +363,15 @@ class InspectionRule extends $pb.GeneratedMessage {
 
   /// Hotword-based detection rule.
   @$pb.TagNumber(1)
-  $526.CustomInfoType_DetectionRule_HotwordRule get hotwordRule => $_getN(0);
+  $531.CustomInfoType_DetectionRule_HotwordRule get hotwordRule => $_getN(0);
   @$pb.TagNumber(1)
-  set hotwordRule($526.CustomInfoType_DetectionRule_HotwordRule v) { setField(1, v); }
+  set hotwordRule($531.CustomInfoType_DetectionRule_HotwordRule v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasHotwordRule() => $_has(0);
   @$pb.TagNumber(1)
   void clearHotwordRule() => clearField(1);
   @$pb.TagNumber(1)
-  $526.CustomInfoType_DetectionRule_HotwordRule ensureHotwordRule() => $_ensure(0);
+  $531.CustomInfoType_DetectionRule_HotwordRule ensureHotwordRule() => $_ensure(0);
 
   /// Exclusion rule.
   @$pb.TagNumber(2)
@@ -390,7 +390,7 @@ class InspectionRule extends $pb.GeneratedMessage {
 /// circumstances, depending on the specific details of the rules within the set.
 class InspectionRuleSet extends $pb.GeneratedMessage {
   factory InspectionRuleSet({
-    $core.Iterable<$526.InfoType>? infoTypes,
+    $core.Iterable<$531.InfoType>? infoTypes,
     $core.Iterable<InspectionRule>? rules,
   }) {
     final $result = create();
@@ -407,7 +407,7 @@ class InspectionRuleSet extends $pb.GeneratedMessage {
   factory InspectionRuleSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InspectionRuleSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..pc<$526.InfoType>(1, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $526.InfoType.create)
+    ..pc<$531.InfoType>(1, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $531.InfoType.create)
     ..pc<InspectionRule>(2, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: InspectionRule.create)
     ..hasRequiredFields = false
   ;
@@ -435,7 +435,7 @@ class InspectionRuleSet extends $pb.GeneratedMessage {
 
   /// List of infoTypes this rule set is applied to.
   @$pb.TagNumber(1)
-  $core.List<$526.InfoType> get infoTypes => $_getList(0);
+  $core.List<$531.InfoType> get infoTypes => $_getList(0);
 
   /// Set of rules to be applied to infoTypes. The rules are applied in order.
   @$pb.TagNumber(2)
@@ -449,8 +449,8 @@ class InspectionRuleSet extends $pb.GeneratedMessage {
 /// request.
 class InspectConfig_InfoTypeLikelihood extends $pb.GeneratedMessage {
   factory InspectConfig_InfoTypeLikelihood({
-    $526.InfoType? infoType,
-    $526.Likelihood? minLikelihood,
+    $531.InfoType? infoType,
+    $531.Likelihood? minLikelihood,
   }) {
     final $result = create();
     if (infoType != null) {
@@ -466,8 +466,8 @@ class InspectConfig_InfoTypeLikelihood extends $pb.GeneratedMessage {
   factory InspectConfig_InfoTypeLikelihood.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InspectConfig.InfoTypeLikelihood', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
-    ..e<$526.Likelihood>(2, _omitFieldNames ? '' : 'minLikelihood', $pb.PbFieldType.OE, defaultOrMaker: $526.Likelihood.LIKELIHOOD_UNSPECIFIED, valueOf: $526.Likelihood.valueOf, enumValues: $526.Likelihood.values)
+    ..aOM<$531.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
+    ..e<$531.Likelihood>(2, _omitFieldNames ? '' : 'minLikelihood', $pb.PbFieldType.OE, defaultOrMaker: $531.Likelihood.LIKELIHOOD_UNSPECIFIED, valueOf: $531.Likelihood.valueOf, enumValues: $531.Likelihood.values)
     ..hasRequiredFields = false
   ;
 
@@ -496,22 +496,22 @@ class InspectConfig_InfoTypeLikelihood extends $pb.GeneratedMessage {
   /// likelihood per info_type should be provided. If InfoTypeLikelihood does
   /// not have an info_type, the configuration fails.
   @$pb.TagNumber(1)
-  $526.InfoType get infoType => $_getN(0);
+  $531.InfoType get infoType => $_getN(0);
   @$pb.TagNumber(1)
-  set infoType($526.InfoType v) { setField(1, v); }
+  set infoType($531.InfoType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInfoType() => $_has(0);
   @$pb.TagNumber(1)
   void clearInfoType() => clearField(1);
   @$pb.TagNumber(1)
-  $526.InfoType ensureInfoType() => $_ensure(0);
+  $531.InfoType ensureInfoType() => $_ensure(0);
 
   /// Only returns findings equal to or above this threshold. This field is
   /// required or else the configuration fails.
   @$pb.TagNumber(2)
-  $526.Likelihood get minLikelihood => $_getN(1);
+  $531.Likelihood get minLikelihood => $_getN(1);
   @$pb.TagNumber(2)
-  set minLikelihood($526.Likelihood v) { setField(2, v); }
+  set minLikelihood($531.Likelihood v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMinLikelihood() => $_has(1);
   @$pb.TagNumber(2)
@@ -522,7 +522,7 @@ class InspectConfig_InfoTypeLikelihood extends $pb.GeneratedMessage {
 /// running DlpJob.
 class InspectConfig_FindingLimits_InfoTypeLimit extends $pb.GeneratedMessage {
   factory InspectConfig_FindingLimits_InfoTypeLimit({
-    $526.InfoType? infoType,
+    $531.InfoType? infoType,
     $core.int? maxFindings,
   }) {
     final $result = create();
@@ -539,7 +539,7 @@ class InspectConfig_FindingLimits_InfoTypeLimit extends $pb.GeneratedMessage {
   factory InspectConfig_FindingLimits_InfoTypeLimit.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InspectConfig.FindingLimits.InfoTypeLimit', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'maxFindings', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -570,15 +570,15 @@ class InspectConfig_FindingLimits_InfoTypeLimit extends $pb.GeneratedMessage {
   /// info_type, the DLP API applies the limit against all info_types that
   /// are found but not specified in another InfoTypeLimit.
   @$pb.TagNumber(1)
-  $526.InfoType get infoType => $_getN(0);
+  $531.InfoType get infoType => $_getN(0);
   @$pb.TagNumber(1)
-  set infoType($526.InfoType v) { setField(1, v); }
+  set infoType($531.InfoType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInfoType() => $_has(0);
   @$pb.TagNumber(1)
   void clearInfoType() => clearField(1);
   @$pb.TagNumber(1)
-  $526.InfoType ensureInfoType() => $_ensure(0);
+  $531.InfoType ensureInfoType() => $_ensure(0);
 
   /// Max findings limit for the given infoType.
   @$pb.TagNumber(2)
@@ -698,12 +698,12 @@ class InspectConfig_FindingLimits extends $pb.GeneratedMessage {
 /// used.
 class InspectConfig extends $pb.GeneratedMessage {
   factory InspectConfig({
-    $core.Iterable<$526.InfoType>? infoTypes,
-    $526.Likelihood? minLikelihood,
+    $core.Iterable<$531.InfoType>? infoTypes,
+    $531.Likelihood? minLikelihood,
     InspectConfig_FindingLimits? limits,
     $core.bool? includeQuote,
     $core.bool? excludeInfoTypes,
-    $core.Iterable<$526.CustomInfoType>? customInfoTypes,
+    $core.Iterable<$531.CustomInfoType>? customInfoTypes,
     $core.Iterable<ContentOption>? contentOptions,
     $core.Iterable<InspectionRuleSet>? ruleSet,
     $core.Iterable<InspectConfig_InfoTypeLikelihood>? minLikelihoodPerInfoType,
@@ -743,12 +743,12 @@ class InspectConfig extends $pb.GeneratedMessage {
   factory InspectConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InspectConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..pc<$526.InfoType>(1, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $526.InfoType.create)
-    ..e<$526.Likelihood>(2, _omitFieldNames ? '' : 'minLikelihood', $pb.PbFieldType.OE, defaultOrMaker: $526.Likelihood.LIKELIHOOD_UNSPECIFIED, valueOf: $526.Likelihood.valueOf, enumValues: $526.Likelihood.values)
+    ..pc<$531.InfoType>(1, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $531.InfoType.create)
+    ..e<$531.Likelihood>(2, _omitFieldNames ? '' : 'minLikelihood', $pb.PbFieldType.OE, defaultOrMaker: $531.Likelihood.LIKELIHOOD_UNSPECIFIED, valueOf: $531.Likelihood.valueOf, enumValues: $531.Likelihood.values)
     ..aOM<InspectConfig_FindingLimits>(3, _omitFieldNames ? '' : 'limits', subBuilder: InspectConfig_FindingLimits.create)
     ..aOB(4, _omitFieldNames ? '' : 'includeQuote')
     ..aOB(5, _omitFieldNames ? '' : 'excludeInfoTypes')
-    ..pc<$526.CustomInfoType>(6, _omitFieldNames ? '' : 'customInfoTypes', $pb.PbFieldType.PM, subBuilder: $526.CustomInfoType.create)
+    ..pc<$531.CustomInfoType>(6, _omitFieldNames ? '' : 'customInfoTypes', $pb.PbFieldType.PM, subBuilder: $531.CustomInfoType.create)
     ..pc<ContentOption>(8, _omitFieldNames ? '' : 'contentOptions', $pb.PbFieldType.KE, valueOf: ContentOption.valueOf, enumValues: ContentOption.values, defaultEnumValue: ContentOption.CONTENT_UNSPECIFIED)
     ..pc<InspectionRuleSet>(10, _omitFieldNames ? '' : 'ruleSet', $pb.PbFieldType.PM, subBuilder: InspectionRuleSet.create)
     ..pc<InspectConfig_InfoTypeLikelihood>(11, _omitFieldNames ? '' : 'minLikelihoodPerInfoType', $pb.PbFieldType.PM, subBuilder: InspectConfig_InfoTypeLikelihood.create)
@@ -788,7 +788,7 @@ class InspectConfig extends $pb.GeneratedMessage {
   ///  run you should specify specific InfoTypes listed in the reference,
   ///  otherwise a default list will be used, which may change over time.
   @$pb.TagNumber(1)
-  $core.List<$526.InfoType> get infoTypes => $_getList(0);
+  $core.List<$531.InfoType> get infoTypes => $_getList(0);
 
   ///  Only returns findings equal to or above this threshold. The default is
   ///  POSSIBLE.
@@ -798,9 +798,9 @@ class InspectConfig extends $pb.GeneratedMessage {
   ///  see [Match
   ///  likelihood](https://cloud.google.com/sensitive-data-protection/docs/likelihood).
   @$pb.TagNumber(2)
-  $526.Likelihood get minLikelihood => $_getN(1);
+  $531.Likelihood get minLikelihood => $_getN(1);
   @$pb.TagNumber(2)
-  set minLikelihood($526.Likelihood v) { setField(2, v); }
+  set minLikelihood($531.Likelihood v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMinLikelihood() => $_has(1);
   @$pb.TagNumber(2)
@@ -860,7 +860,7 @@ class InspectConfig extends $pb.GeneratedMessage {
   /// https://cloud.google.com/sensitive-data-protection/docs/creating-custom-infotypes
   /// to learn more.
   @$pb.TagNumber(6)
-  $core.List<$526.CustomInfoType> get customInfoTypes => $_getList(5);
+  $core.List<$531.CustomInfoType> get customInfoTypes => $_getList(5);
 
   /// Deprecated and unused.
   @$pb.TagNumber(8)
@@ -1103,7 +1103,7 @@ class Table_Row extends $pb.GeneratedMessage {
 /// to learn more.
 class Table extends $pb.GeneratedMessage {
   factory Table({
-    $core.Iterable<$526.FieldId>? headers,
+    $core.Iterable<$531.FieldId>? headers,
     $core.Iterable<Table_Row>? rows,
   }) {
     final $result = create();
@@ -1120,7 +1120,7 @@ class Table extends $pb.GeneratedMessage {
   factory Table.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Table', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..pc<$526.FieldId>(1, _omitFieldNames ? '' : 'headers', $pb.PbFieldType.PM, subBuilder: $526.FieldId.create)
+    ..pc<$531.FieldId>(1, _omitFieldNames ? '' : 'headers', $pb.PbFieldType.PM, subBuilder: $531.FieldId.create)
     ..pc<Table_Row>(2, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: Table_Row.create)
     ..hasRequiredFields = false
   ;
@@ -1148,7 +1148,7 @@ class Table extends $pb.GeneratedMessage {
 
   /// Headers of the table.
   @$pb.TagNumber(1)
-  $core.List<$526.FieldId> get headers => $_getList(0);
+  $core.List<$531.FieldId> get headers => $_getList(0);
 
   /// Rows of the table.
   @$pb.TagNumber(2)
@@ -1225,8 +1225,8 @@ class InspectResult extends $pb.GeneratedMessage {
 class Finding extends $pb.GeneratedMessage {
   factory Finding({
     $core.String? quote,
-    $526.InfoType? infoType,
-    $526.Likelihood? likelihood,
+    $531.InfoType? infoType,
+    $531.Likelihood? likelihood,
     Location? location,
     $299.Timestamp? createTime,
     QuoteInfo? quoteInfo,
@@ -1286,8 +1286,8 @@ class Finding extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Finding', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'quote')
-    ..aOM<$526.InfoType>(2, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
-    ..e<$526.Likelihood>(3, _omitFieldNames ? '' : 'likelihood', $pb.PbFieldType.OE, defaultOrMaker: $526.Likelihood.LIKELIHOOD_UNSPECIFIED, valueOf: $526.Likelihood.valueOf, enumValues: $526.Likelihood.values)
+    ..aOM<$531.InfoType>(2, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
+    ..e<$531.Likelihood>(3, _omitFieldNames ? '' : 'likelihood', $pb.PbFieldType.OE, defaultOrMaker: $531.Likelihood.LIKELIHOOD_UNSPECIFIED, valueOf: $531.Likelihood.valueOf, enumValues: $531.Likelihood.values)
     ..aOM<Location>(4, _omitFieldNames ? '' : 'location', subBuilder: Location.create)
     ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
     ..aOM<QuoteInfo>(7, _omitFieldNames ? '' : 'quoteInfo', subBuilder: QuoteInfo.create)
@@ -1339,21 +1339,21 @@ class Finding extends $pb.GeneratedMessage {
   /// The type of content that might have been found.
   /// Provided if `excluded_types` is false.
   @$pb.TagNumber(2)
-  $526.InfoType get infoType => $_getN(1);
+  $531.InfoType get infoType => $_getN(1);
   @$pb.TagNumber(2)
-  set infoType($526.InfoType v) { setField(2, v); }
+  set infoType($531.InfoType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInfoType() => $_has(1);
   @$pb.TagNumber(2)
   void clearInfoType() => clearField(2);
   @$pb.TagNumber(2)
-  $526.InfoType ensureInfoType() => $_ensure(1);
+  $531.InfoType ensureInfoType() => $_ensure(1);
 
   /// Confidence of how likely it is that the `info_type` is correct.
   @$pb.TagNumber(3)
-  $526.Likelihood get likelihood => $_getN(2);
+  $531.Likelihood get likelihood => $_getN(2);
   @$pb.TagNumber(3)
-  set likelihood($526.Likelihood v) { setField(3, v); }
+  set likelihood($531.Likelihood v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLikelihood() => $_has(2);
   @$pb.TagNumber(3)
@@ -1958,8 +1958,8 @@ class DocumentLocation extends $pb.GeneratedMessage {
 /// Location of a finding within a row or record.
 class RecordLocation extends $pb.GeneratedMessage {
   factory RecordLocation({
-    $526.RecordKey? recordKey,
-    $526.FieldId? fieldId,
+    $531.RecordKey? recordKey,
+    $531.FieldId? fieldId,
     TableLocation? tableLocation,
   }) {
     final $result = create();
@@ -1979,8 +1979,8 @@ class RecordLocation extends $pb.GeneratedMessage {
   factory RecordLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecordLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.RecordKey>(1, _omitFieldNames ? '' : 'recordKey', subBuilder: $526.RecordKey.create)
-    ..aOM<$526.FieldId>(2, _omitFieldNames ? '' : 'fieldId', subBuilder: $526.FieldId.create)
+    ..aOM<$531.RecordKey>(1, _omitFieldNames ? '' : 'recordKey', subBuilder: $531.RecordKey.create)
+    ..aOM<$531.FieldId>(2, _omitFieldNames ? '' : 'fieldId', subBuilder: $531.FieldId.create)
     ..aOM<TableLocation>(3, _omitFieldNames ? '' : 'tableLocation', subBuilder: TableLocation.create)
     ..hasRequiredFields = false
   ;
@@ -2008,27 +2008,27 @@ class RecordLocation extends $pb.GeneratedMessage {
 
   /// Key of the finding.
   @$pb.TagNumber(1)
-  $526.RecordKey get recordKey => $_getN(0);
+  $531.RecordKey get recordKey => $_getN(0);
   @$pb.TagNumber(1)
-  set recordKey($526.RecordKey v) { setField(1, v); }
+  set recordKey($531.RecordKey v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRecordKey() => $_has(0);
   @$pb.TagNumber(1)
   void clearRecordKey() => clearField(1);
   @$pb.TagNumber(1)
-  $526.RecordKey ensureRecordKey() => $_ensure(0);
+  $531.RecordKey ensureRecordKey() => $_ensure(0);
 
   /// Field id of the field containing the finding.
   @$pb.TagNumber(2)
-  $526.FieldId get fieldId => $_getN(1);
+  $531.FieldId get fieldId => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldId($526.FieldId v) { setField(2, v); }
+  set fieldId($531.FieldId v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldId() => $_has(1);
   @$pb.TagNumber(2)
   void clearFieldId() => clearField(2);
   @$pb.TagNumber(2)
-  $526.FieldId ensureFieldId() => $_ensure(1);
+  $531.FieldId ensureFieldId() => $_ensure(1);
 
   /// Location within a `ContentItem.Table`.
   @$pb.TagNumber(3)
@@ -2484,7 +2484,7 @@ enum RedactImageRequest_ImageRedactionConfig_Target {
 /// Configuration for determining how redaction of images should occur.
 class RedactImageRequest_ImageRedactionConfig extends $pb.GeneratedMessage {
   factory RedactImageRequest_ImageRedactionConfig({
-    $526.InfoType? infoType,
+    $531.InfoType? infoType,
     $core.bool? redactAllText,
     Color? redactionColor,
   }) {
@@ -2511,7 +2511,7 @@ class RedactImageRequest_ImageRedactionConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RedactImageRequest.ImageRedactionConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$526.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
     ..aOB(2, _omitFieldNames ? '' : 'redactAllText')
     ..aOM<Color>(3, _omitFieldNames ? '' : 'redactionColor', subBuilder: Color.create)
     ..hasRequiredFields = false
@@ -2546,15 +2546,15 @@ class RedactImageRequest_ImageRedactionConfig extends $pb.GeneratedMessage {
   /// text that it matches against all info_types that are found, but not
   /// specified in another ImageRedactionConfig.
   @$pb.TagNumber(1)
-  $526.InfoType get infoType => $_getN(0);
+  $531.InfoType get infoType => $_getN(0);
   @$pb.TagNumber(1)
-  set infoType($526.InfoType v) { setField(1, v); }
+  set infoType($531.InfoType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInfoType() => $_has(0);
   @$pb.TagNumber(1)
   void clearInfoType() => clearField(1);
   @$pb.TagNumber(1)
-  $526.InfoType ensureInfoType() => $_ensure(0);
+  $531.InfoType ensureInfoType() => $_ensure(0);
 
   /// If true, all text found in the image, regardless whether it matches an
   /// info_type, is redacted. Only one should be provided.
@@ -3595,7 +3595,7 @@ enum OutputStorageConfig_Type {
 /// Cloud repository for storing output.
 class OutputStorageConfig extends $pb.GeneratedMessage {
   factory OutputStorageConfig({
-    $526.BigQueryTable? table,
+    $531.BigQueryTable? table,
     OutputStorageConfig_OutputSchema? outputSchema,
   }) {
     final $result = create();
@@ -3617,7 +3617,7 @@ class OutputStorageConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OutputStorageConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$526.BigQueryTable>(1, _omitFieldNames ? '' : 'table', subBuilder: $526.BigQueryTable.create)
+    ..aOM<$531.BigQueryTable>(1, _omitFieldNames ? '' : 'table', subBuilder: $531.BigQueryTable.create)
     ..e<OutputStorageConfig_OutputSchema>(3, _omitFieldNames ? '' : 'outputSchema', $pb.PbFieldType.OE, defaultOrMaker: OutputStorageConfig_OutputSchema.OUTPUT_SCHEMA_UNSPECIFIED, valueOf: OutputStorageConfig_OutputSchema.valueOf, enumValues: OutputStorageConfig_OutputSchema.values)
     ..hasRequiredFields = false
   ;
@@ -3661,15 +3661,15 @@ class OutputStorageConfig extends $pb.GeneratedMessage {
   ///  compute a different privacy metric, or use different sets of
   ///  quasi-identifiers, cannot store their results in the same table.
   @$pb.TagNumber(1)
-  $526.BigQueryTable get table => $_getN(0);
+  $531.BigQueryTable get table => $_getN(0);
   @$pb.TagNumber(1)
-  set table($526.BigQueryTable v) { setField(1, v); }
+  set table($531.BigQueryTable v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTable() => $_has(0);
   @$pb.TagNumber(1)
   void clearTable() => clearField(1);
   @$pb.TagNumber(1)
-  $526.BigQueryTable ensureTable() => $_ensure(0);
+  $531.BigQueryTable ensureTable() => $_ensure(0);
 
   ///  Schema used for writing the findings for Inspect jobs. This field is only
   ///  used for Inspect and must be unspecified for Risk jobs. Columns are derived
@@ -3694,7 +3694,7 @@ class OutputStorageConfig extends $pb.GeneratedMessage {
 /// Statistics regarding a specific InfoType.
 class InfoTypeStats extends $pb.GeneratedMessage {
   factory InfoTypeStats({
-    $526.InfoType? infoType,
+    $531.InfoType? infoType,
     $fixnum.Int64? count,
   }) {
     final $result = create();
@@ -3711,7 +3711,7 @@ class InfoTypeStats extends $pb.GeneratedMessage {
   factory InfoTypeStats.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InfoTypeStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
     ..aInt64(2, _omitFieldNames ? '' : 'count')
     ..hasRequiredFields = false
   ;
@@ -3739,15 +3739,15 @@ class InfoTypeStats extends $pb.GeneratedMessage {
 
   /// The type of finding this stat is for.
   @$pb.TagNumber(1)
-  $526.InfoType get infoType => $_getN(0);
+  $531.InfoType get infoType => $_getN(0);
   @$pb.TagNumber(1)
-  set infoType($526.InfoType v) { setField(1, v); }
+  set infoType($531.InfoType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInfoType() => $_has(0);
   @$pb.TagNumber(1)
   void clearInfoType() => clearField(1);
   @$pb.TagNumber(1)
-  $526.InfoType ensureInfoType() => $_ensure(0);
+  $531.InfoType ensureInfoType() => $_ensure(0);
 
   /// Number of findings for this infoType.
   @$pb.TagNumber(2)
@@ -4528,7 +4528,7 @@ class InfoTypeDescription extends $pb.GeneratedMessage {
     $core.String? description,
     $core.Iterable<VersionDescription>? versions,
     $core.Iterable<InfoTypeCategory>? categories,
-    $526.SensitivityScore? sensitivityScore,
+    $531.SensitivityScore? sensitivityScore,
   }) {
     final $result = create();
     if (name != null) {
@@ -4565,7 +4565,7 @@ class InfoTypeDescription extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'description')
     ..pc<VersionDescription>(9, _omitFieldNames ? '' : 'versions', $pb.PbFieldType.PM, subBuilder: VersionDescription.create)
     ..pc<InfoTypeCategory>(10, _omitFieldNames ? '' : 'categories', $pb.PbFieldType.PM, subBuilder: InfoTypeCategory.create)
-    ..aOM<$526.SensitivityScore>(11, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $526.SensitivityScore.create)
+    ..aOM<$531.SensitivityScore>(11, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $531.SensitivityScore.create)
     ..hasRequiredFields = false
   ;
 
@@ -4635,15 +4635,15 @@ class InfoTypeDescription extends $pb.GeneratedMessage {
 
   /// The default sensitivity of the infoType.
   @$pb.TagNumber(11)
-  $526.SensitivityScore get sensitivityScore => $_getN(6);
+  $531.SensitivityScore get sensitivityScore => $_getN(6);
   @$pb.TagNumber(11)
-  set sensitivityScore($526.SensitivityScore v) { setField(11, v); }
+  set sensitivityScore($531.SensitivityScore v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSensitivityScore() => $_has(6);
   @$pb.TagNumber(11)
   void clearSensitivityScore() => clearField(11);
   @$pb.TagNumber(11)
-  $526.SensitivityScore ensureSensitivityScore() => $_ensure(6);
+  $531.SensitivityScore ensureSensitivityScore() => $_ensure(6);
 }
 
 enum InfoTypeCategory_Category {
@@ -4970,7 +4970,7 @@ class ListInfoTypesResponse extends $pb.GeneratedMessage {
 class RiskAnalysisJobConfig extends $pb.GeneratedMessage {
   factory RiskAnalysisJobConfig({
     PrivacyMetric? privacyMetric,
-    $526.BigQueryTable? sourceTable,
+    $531.BigQueryTable? sourceTable,
     $core.Iterable<Action>? actions,
   }) {
     final $result = create();
@@ -4991,7 +4991,7 @@ class RiskAnalysisJobConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RiskAnalysisJobConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..aOM<PrivacyMetric>(1, _omitFieldNames ? '' : 'privacyMetric', subBuilder: PrivacyMetric.create)
-    ..aOM<$526.BigQueryTable>(2, _omitFieldNames ? '' : 'sourceTable', subBuilder: $526.BigQueryTable.create)
+    ..aOM<$531.BigQueryTable>(2, _omitFieldNames ? '' : 'sourceTable', subBuilder: $531.BigQueryTable.create)
     ..pc<Action>(3, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: Action.create)
     ..hasRequiredFields = false
   ;
@@ -5031,15 +5031,15 @@ class RiskAnalysisJobConfig extends $pb.GeneratedMessage {
 
   /// Input dataset to compute metrics over.
   @$pb.TagNumber(2)
-  $526.BigQueryTable get sourceTable => $_getN(1);
+  $531.BigQueryTable get sourceTable => $_getN(1);
   @$pb.TagNumber(2)
-  set sourceTable($526.BigQueryTable v) { setField(2, v); }
+  set sourceTable($531.BigQueryTable v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSourceTable() => $_has(1);
   @$pb.TagNumber(2)
   void clearSourceTable() => clearField(2);
   @$pb.TagNumber(2)
-  $526.BigQueryTable ensureSourceTable() => $_ensure(1);
+  $531.BigQueryTable ensureSourceTable() => $_ensure(1);
 
   /// Actions to execute at the completion of the job. Are executed in the order
   /// provided.
@@ -5057,8 +5057,8 @@ enum QuasiId_Tag {
 /// A column with a semantic tag attached.
 class QuasiId extends $pb.GeneratedMessage {
   factory QuasiId({
-    $526.FieldId? field_1,
-    $526.InfoType? infoType,
+    $531.FieldId? field_1,
+    $531.InfoType? infoType,
     $core.String? customTag,
     $3.Empty? inferred,
   }) {
@@ -5089,8 +5089,8 @@ class QuasiId extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QuasiId', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4])
-    ..aOM<$526.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $526.FieldId.create)
-    ..aOM<$526.InfoType>(2, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $531.FieldId.create)
+    ..aOM<$531.InfoType>(2, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
     ..aOS(3, _omitFieldNames ? '' : 'customTag')
     ..aOM<$3.Empty>(4, _omitFieldNames ? '' : 'inferred', subBuilder: $3.Empty.create)
     ..hasRequiredFields = false
@@ -5122,15 +5122,15 @@ class QuasiId extends $pb.GeneratedMessage {
 
   /// Required. Identifies the column.
   @$pb.TagNumber(1)
-  $526.FieldId get field_1 => $_getN(0);
+  $531.FieldId get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1($526.FieldId v) { setField(1, v); }
+  set field_1($531.FieldId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearField_1() => clearField(1);
   @$pb.TagNumber(1)
-  $526.FieldId ensureField_1() => $_ensure(0);
+  $531.FieldId ensureField_1() => $_ensure(0);
 
   /// A column can be tagged with a InfoType to use the relevant public
   /// dataset as a statistical model of population, if available. We
@@ -5138,15 +5138,15 @@ class QuasiId extends $pb.GeneratedMessage {
   /// To programmatically obtain the list of supported InfoTypes, use
   /// ListInfoTypes with the supported_by=RISK_ANALYSIS filter.
   @$pb.TagNumber(2)
-  $526.InfoType get infoType => $_getN(1);
+  $531.InfoType get infoType => $_getN(1);
   @$pb.TagNumber(2)
-  set infoType($526.InfoType v) { setField(2, v); }
+  set infoType($531.InfoType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInfoType() => $_has(1);
   @$pb.TagNumber(2)
   void clearInfoType() => clearField(2);
   @$pb.TagNumber(2)
-  $526.InfoType ensureInfoType() => $_ensure(1);
+  $531.InfoType ensureInfoType() => $_ensure(1);
 
   /// A column can be tagged with a custom tag. In this case, the user must
   /// indicate an auxiliary table that contains statistical information on
@@ -5178,7 +5178,7 @@ class QuasiId extends $pb.GeneratedMessage {
 /// in the data corresponds to which column in the statistical model.
 class StatisticalTable_QuasiIdentifierField extends $pb.GeneratedMessage {
   factory StatisticalTable_QuasiIdentifierField({
-    $526.FieldId? field_1,
+    $531.FieldId? field_1,
     $core.String? customTag,
   }) {
     final $result = create();
@@ -5195,7 +5195,7 @@ class StatisticalTable_QuasiIdentifierField extends $pb.GeneratedMessage {
   factory StatisticalTable_QuasiIdentifierField.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StatisticalTable.QuasiIdentifierField', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $526.FieldId.create)
+    ..aOM<$531.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $531.FieldId.create)
     ..aOS(2, _omitFieldNames ? '' : 'customTag')
     ..hasRequiredFields = false
   ;
@@ -5223,15 +5223,15 @@ class StatisticalTable_QuasiIdentifierField extends $pb.GeneratedMessage {
 
   /// Identifies the column.
   @$pb.TagNumber(1)
-  $526.FieldId get field_1 => $_getN(0);
+  $531.FieldId get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1($526.FieldId v) { setField(1, v); }
+  set field_1($531.FieldId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearField_1() => clearField(1);
   @$pb.TagNumber(1)
-  $526.FieldId ensureField_1() => $_ensure(0);
+  $531.FieldId ensureField_1() => $_ensure(0);
 
   /// A column can be tagged with a custom tag. In this case, the user must
   /// indicate an auxiliary table that contains statistical information on
@@ -5256,8 +5256,8 @@ class StatisticalTable_QuasiIdentifierField extends $pb.GeneratedMessage {
 class StatisticalTable extends $pb.GeneratedMessage {
   factory StatisticalTable({
     $core.Iterable<StatisticalTable_QuasiIdentifierField>? quasiIds,
-    $526.FieldId? relativeFrequency,
-    $526.BigQueryTable? table,
+    $531.FieldId? relativeFrequency,
+    $531.BigQueryTable? table,
   }) {
     final $result = create();
     if (quasiIds != null) {
@@ -5277,8 +5277,8 @@ class StatisticalTable extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StatisticalTable', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..pc<StatisticalTable_QuasiIdentifierField>(1, _omitFieldNames ? '' : 'quasiIds', $pb.PbFieldType.PM, subBuilder: StatisticalTable_QuasiIdentifierField.create)
-    ..aOM<$526.FieldId>(2, _omitFieldNames ? '' : 'relativeFrequency', subBuilder: $526.FieldId.create)
-    ..aOM<$526.BigQueryTable>(3, _omitFieldNames ? '' : 'table', subBuilder: $526.BigQueryTable.create)
+    ..aOM<$531.FieldId>(2, _omitFieldNames ? '' : 'relativeFrequency', subBuilder: $531.FieldId.create)
+    ..aOM<$531.BigQueryTable>(3, _omitFieldNames ? '' : 'table', subBuilder: $531.BigQueryTable.create)
     ..hasRequiredFields = false
   ;
 
@@ -5310,34 +5310,34 @@ class StatisticalTable extends $pb.GeneratedMessage {
   /// Required. The relative frequency column must contain a floating-point
   /// number between 0 and 1 (inclusive). Null values are assumed to be zero.
   @$pb.TagNumber(2)
-  $526.FieldId get relativeFrequency => $_getN(1);
+  $531.FieldId get relativeFrequency => $_getN(1);
   @$pb.TagNumber(2)
-  set relativeFrequency($526.FieldId v) { setField(2, v); }
+  set relativeFrequency($531.FieldId v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRelativeFrequency() => $_has(1);
   @$pb.TagNumber(2)
   void clearRelativeFrequency() => clearField(2);
   @$pb.TagNumber(2)
-  $526.FieldId ensureRelativeFrequency() => $_ensure(1);
+  $531.FieldId ensureRelativeFrequency() => $_ensure(1);
 
   /// Required. Auxiliary table location.
   @$pb.TagNumber(3)
-  $526.BigQueryTable get table => $_getN(2);
+  $531.BigQueryTable get table => $_getN(2);
   @$pb.TagNumber(3)
-  set table($526.BigQueryTable v) { setField(3, v); }
+  set table($531.BigQueryTable v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTable() => $_has(2);
   @$pb.TagNumber(3)
   void clearTable() => clearField(3);
   @$pb.TagNumber(3)
-  $526.BigQueryTable ensureTable() => $_ensure(2);
+  $531.BigQueryTable ensureTable() => $_ensure(2);
 }
 
 /// Compute numerical stats over an individual column, including
 /// min, max, and quantiles.
 class PrivacyMetric_NumericalStatsConfig extends $pb.GeneratedMessage {
   factory PrivacyMetric_NumericalStatsConfig({
-    $526.FieldId? field_1,
+    $531.FieldId? field_1,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -5350,7 +5350,7 @@ class PrivacyMetric_NumericalStatsConfig extends $pb.GeneratedMessage {
   factory PrivacyMetric_NumericalStatsConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivacyMetric.NumericalStatsConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $526.FieldId.create)
+    ..aOM<$531.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $531.FieldId.create)
     ..hasRequiredFields = false
   ;
 
@@ -5378,22 +5378,22 @@ class PrivacyMetric_NumericalStatsConfig extends $pb.GeneratedMessage {
   /// Field to compute numerical stats on. Supported types are
   /// integer, float, date, datetime, timestamp, time.
   @$pb.TagNumber(1)
-  $526.FieldId get field_1 => $_getN(0);
+  $531.FieldId get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1($526.FieldId v) { setField(1, v); }
+  set field_1($531.FieldId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearField_1() => clearField(1);
   @$pb.TagNumber(1)
-  $526.FieldId ensureField_1() => $_ensure(0);
+  $531.FieldId ensureField_1() => $_ensure(0);
 }
 
 /// Compute numerical stats over an individual column, including
 /// number of distinct values and value count distribution.
 class PrivacyMetric_CategoricalStatsConfig extends $pb.GeneratedMessage {
   factory PrivacyMetric_CategoricalStatsConfig({
-    $526.FieldId? field_1,
+    $531.FieldId? field_1,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -5406,7 +5406,7 @@ class PrivacyMetric_CategoricalStatsConfig extends $pb.GeneratedMessage {
   factory PrivacyMetric_CategoricalStatsConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivacyMetric.CategoricalStatsConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $526.FieldId.create)
+    ..aOM<$531.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $531.FieldId.create)
     ..hasRequiredFields = false
   ;
 
@@ -5436,22 +5436,22 @@ class PrivacyMetric_CategoricalStatsConfig extends $pb.GeneratedMessage {
   /// informative to use NumericalStats when the field type is supported,
   /// depending on the data.
   @$pb.TagNumber(1)
-  $526.FieldId get field_1 => $_getN(0);
+  $531.FieldId get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1($526.FieldId v) { setField(1, v); }
+  set field_1($531.FieldId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearField_1() => clearField(1);
   @$pb.TagNumber(1)
-  $526.FieldId ensureField_1() => $_ensure(0);
+  $531.FieldId ensureField_1() => $_ensure(0);
 }
 
 /// k-anonymity metric, used for analysis of reidentification risk.
 class PrivacyMetric_KAnonymityConfig extends $pb.GeneratedMessage {
   factory PrivacyMetric_KAnonymityConfig({
-    $core.Iterable<$526.FieldId>? quasiIds,
-    $526.EntityId? entityId,
+    $core.Iterable<$531.FieldId>? quasiIds,
+    $531.EntityId? entityId,
   }) {
     final $result = create();
     if (quasiIds != null) {
@@ -5467,8 +5467,8 @@ class PrivacyMetric_KAnonymityConfig extends $pb.GeneratedMessage {
   factory PrivacyMetric_KAnonymityConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivacyMetric.KAnonymityConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..pc<$526.FieldId>(1, _omitFieldNames ? '' : 'quasiIds', $pb.PbFieldType.PM, subBuilder: $526.FieldId.create)
-    ..aOM<$526.EntityId>(2, _omitFieldNames ? '' : 'entityId', subBuilder: $526.EntityId.create)
+    ..pc<$531.FieldId>(1, _omitFieldNames ? '' : 'quasiIds', $pb.PbFieldType.PM, subBuilder: $531.FieldId.create)
+    ..aOM<$531.EntityId>(2, _omitFieldNames ? '' : 'entityId', subBuilder: $531.EntityId.create)
     ..hasRequiredFields = false
   ;
 
@@ -5499,7 +5499,7 @@ class PrivacyMetric_KAnonymityConfig extends $pb.GeneratedMessage {
   /// supported so long as they are not structs themselves or nested within
   /// a repeated field.
   @$pb.TagNumber(1)
-  $core.List<$526.FieldId> get quasiIds => $_getList(0);
+  $core.List<$531.FieldId> get quasiIds => $_getList(0);
 
   ///  Message indicating that multiple rows might be associated to a
   ///  single individual. If the same entity_id is associated to multiple
@@ -5512,22 +5512,22 @@ class PrivacyMetric_KAnonymityConfig extends $pb.GeneratedMessage {
   ///  entity ID. If more rows are associated with the same entity ID, some
   ///  might be ignored.
   @$pb.TagNumber(2)
-  $526.EntityId get entityId => $_getN(1);
+  $531.EntityId get entityId => $_getN(1);
   @$pb.TagNumber(2)
-  set entityId($526.EntityId v) { setField(2, v); }
+  set entityId($531.EntityId v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEntityId() => $_has(1);
   @$pb.TagNumber(2)
   void clearEntityId() => clearField(2);
   @$pb.TagNumber(2)
-  $526.EntityId ensureEntityId() => $_ensure(1);
+  $531.EntityId ensureEntityId() => $_ensure(1);
 }
 
 /// l-diversity metric, used for analysis of reidentification risk.
 class PrivacyMetric_LDiversityConfig extends $pb.GeneratedMessage {
   factory PrivacyMetric_LDiversityConfig({
-    $core.Iterable<$526.FieldId>? quasiIds,
-    $526.FieldId? sensitiveAttribute,
+    $core.Iterable<$531.FieldId>? quasiIds,
+    $531.FieldId? sensitiveAttribute,
   }) {
     final $result = create();
     if (quasiIds != null) {
@@ -5543,8 +5543,8 @@ class PrivacyMetric_LDiversityConfig extends $pb.GeneratedMessage {
   factory PrivacyMetric_LDiversityConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivacyMetric.LDiversityConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..pc<$526.FieldId>(1, _omitFieldNames ? '' : 'quasiIds', $pb.PbFieldType.PM, subBuilder: $526.FieldId.create)
-    ..aOM<$526.FieldId>(2, _omitFieldNames ? '' : 'sensitiveAttribute', subBuilder: $526.FieldId.create)
+    ..pc<$531.FieldId>(1, _omitFieldNames ? '' : 'quasiIds', $pb.PbFieldType.PM, subBuilder: $531.FieldId.create)
+    ..aOM<$531.FieldId>(2, _omitFieldNames ? '' : 'sensitiveAttribute', subBuilder: $531.FieldId.create)
     ..hasRequiredFields = false
   ;
 
@@ -5573,19 +5573,19 @@ class PrivacyMetric_LDiversityConfig extends $pb.GeneratedMessage {
   /// defined for the l-diversity computation. When multiple fields are
   /// specified, they are considered a single composite key.
   @$pb.TagNumber(1)
-  $core.List<$526.FieldId> get quasiIds => $_getList(0);
+  $core.List<$531.FieldId> get quasiIds => $_getList(0);
 
   /// Sensitive field for computing the l-value.
   @$pb.TagNumber(2)
-  $526.FieldId get sensitiveAttribute => $_getN(1);
+  $531.FieldId get sensitiveAttribute => $_getN(1);
   @$pb.TagNumber(2)
-  set sensitiveAttribute($526.FieldId v) { setField(2, v); }
+  set sensitiveAttribute($531.FieldId v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSensitiveAttribute() => $_has(1);
   @$pb.TagNumber(2)
   void clearSensitiveAttribute() => clearField(2);
   @$pb.TagNumber(2)
-  $526.FieldId ensureSensitiveAttribute() => $_ensure(1);
+  $531.FieldId ensureSensitiveAttribute() => $_ensure(1);
 }
 
 enum PrivacyMetric_KMapEstimationConfig_TaggedField_Tag {
@@ -5598,8 +5598,8 @@ enum PrivacyMetric_KMapEstimationConfig_TaggedField_Tag {
 /// A column with a semantic tag attached.
 class PrivacyMetric_KMapEstimationConfig_TaggedField extends $pb.GeneratedMessage {
   factory PrivacyMetric_KMapEstimationConfig_TaggedField({
-    $526.FieldId? field_1,
-    $526.InfoType? infoType,
+    $531.FieldId? field_1,
+    $531.InfoType? infoType,
     $core.String? customTag,
     $3.Empty? inferred,
   }) {
@@ -5630,8 +5630,8 @@ class PrivacyMetric_KMapEstimationConfig_TaggedField extends $pb.GeneratedMessag
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivacyMetric.KMapEstimationConfig.TaggedField', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4])
-    ..aOM<$526.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $526.FieldId.create)
-    ..aOM<$526.InfoType>(2, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $531.FieldId.create)
+    ..aOM<$531.InfoType>(2, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
     ..aOS(3, _omitFieldNames ? '' : 'customTag')
     ..aOM<$3.Empty>(4, _omitFieldNames ? '' : 'inferred', subBuilder: $3.Empty.create)
     ..hasRequiredFields = false
@@ -5663,15 +5663,15 @@ class PrivacyMetric_KMapEstimationConfig_TaggedField extends $pb.GeneratedMessag
 
   /// Required. Identifies the column.
   @$pb.TagNumber(1)
-  $526.FieldId get field_1 => $_getN(0);
+  $531.FieldId get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1($526.FieldId v) { setField(1, v); }
+  set field_1($531.FieldId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearField_1() => clearField(1);
   @$pb.TagNumber(1)
-  $526.FieldId ensureField_1() => $_ensure(0);
+  $531.FieldId ensureField_1() => $_ensure(0);
 
   /// A column can be tagged with a InfoType to use the relevant public
   /// dataset as a statistical model of population, if available. We
@@ -5679,15 +5679,15 @@ class PrivacyMetric_KMapEstimationConfig_TaggedField extends $pb.GeneratedMessag
   /// To programmatically obtain the list of supported InfoTypes, use
   /// ListInfoTypes with the supported_by=RISK_ANALYSIS filter.
   @$pb.TagNumber(2)
-  $526.InfoType get infoType => $_getN(1);
+  $531.InfoType get infoType => $_getN(1);
   @$pb.TagNumber(2)
-  set infoType($526.InfoType v) { setField(2, v); }
+  set infoType($531.InfoType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInfoType() => $_has(1);
   @$pb.TagNumber(2)
   void clearInfoType() => clearField(2);
   @$pb.TagNumber(2)
-  $526.InfoType ensureInfoType() => $_ensure(1);
+  $531.InfoType ensureInfoType() => $_ensure(1);
 
   /// A column can be tagged with a custom tag. In this case, the user must
   /// indicate an auxiliary table that contains statistical information on
@@ -5719,7 +5719,7 @@ class PrivacyMetric_KMapEstimationConfig_TaggedField extends $pb.GeneratedMessag
 /// in the data corresponds to which column in the statistical model.
 class PrivacyMetric_KMapEstimationConfig_AuxiliaryTable_QuasiIdField extends $pb.GeneratedMessage {
   factory PrivacyMetric_KMapEstimationConfig_AuxiliaryTable_QuasiIdField({
-    $526.FieldId? field_1,
+    $531.FieldId? field_1,
     $core.String? customTag,
   }) {
     final $result = create();
@@ -5736,7 +5736,7 @@ class PrivacyMetric_KMapEstimationConfig_AuxiliaryTable_QuasiIdField extends $pb
   factory PrivacyMetric_KMapEstimationConfig_AuxiliaryTable_QuasiIdField.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivacyMetric.KMapEstimationConfig.AuxiliaryTable.QuasiIdField', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $526.FieldId.create)
+    ..aOM<$531.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $531.FieldId.create)
     ..aOS(2, _omitFieldNames ? '' : 'customTag')
     ..hasRequiredFields = false
   ;
@@ -5764,15 +5764,15 @@ class PrivacyMetric_KMapEstimationConfig_AuxiliaryTable_QuasiIdField extends $pb
 
   /// Identifies the column.
   @$pb.TagNumber(1)
-  $526.FieldId get field_1 => $_getN(0);
+  $531.FieldId get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1($526.FieldId v) { setField(1, v); }
+  set field_1($531.FieldId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearField_1() => clearField(1);
   @$pb.TagNumber(1)
-  $526.FieldId ensureField_1() => $_ensure(0);
+  $531.FieldId ensureField_1() => $_ensure(0);
 
   /// A auxiliary field.
   @$pb.TagNumber(2)
@@ -5795,8 +5795,8 @@ class PrivacyMetric_KMapEstimationConfig_AuxiliaryTable_QuasiIdField extends $pb
 class PrivacyMetric_KMapEstimationConfig_AuxiliaryTable extends $pb.GeneratedMessage {
   factory PrivacyMetric_KMapEstimationConfig_AuxiliaryTable({
     $core.Iterable<PrivacyMetric_KMapEstimationConfig_AuxiliaryTable_QuasiIdField>? quasiIds,
-    $526.FieldId? relativeFrequency,
-    $526.BigQueryTable? table,
+    $531.FieldId? relativeFrequency,
+    $531.BigQueryTable? table,
   }) {
     final $result = create();
     if (quasiIds != null) {
@@ -5816,8 +5816,8 @@ class PrivacyMetric_KMapEstimationConfig_AuxiliaryTable extends $pb.GeneratedMes
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrivacyMetric.KMapEstimationConfig.AuxiliaryTable', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..pc<PrivacyMetric_KMapEstimationConfig_AuxiliaryTable_QuasiIdField>(1, _omitFieldNames ? '' : 'quasiIds', $pb.PbFieldType.PM, subBuilder: PrivacyMetric_KMapEstimationConfig_AuxiliaryTable_QuasiIdField.create)
-    ..aOM<$526.FieldId>(2, _omitFieldNames ? '' : 'relativeFrequency', subBuilder: $526.FieldId.create)
-    ..aOM<$526.BigQueryTable>(3, _omitFieldNames ? '' : 'table', subBuilder: $526.BigQueryTable.create)
+    ..aOM<$531.FieldId>(2, _omitFieldNames ? '' : 'relativeFrequency', subBuilder: $531.FieldId.create)
+    ..aOM<$531.BigQueryTable>(3, _omitFieldNames ? '' : 'table', subBuilder: $531.BigQueryTable.create)
     ..hasRequiredFields = false
   ;
 
@@ -5849,27 +5849,27 @@ class PrivacyMetric_KMapEstimationConfig_AuxiliaryTable extends $pb.GeneratedMes
   /// Required. The relative frequency column must contain a floating-point
   /// number between 0 and 1 (inclusive). Null values are assumed to be zero.
   @$pb.TagNumber(2)
-  $526.FieldId get relativeFrequency => $_getN(1);
+  $531.FieldId get relativeFrequency => $_getN(1);
   @$pb.TagNumber(2)
-  set relativeFrequency($526.FieldId v) { setField(2, v); }
+  set relativeFrequency($531.FieldId v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRelativeFrequency() => $_has(1);
   @$pb.TagNumber(2)
   void clearRelativeFrequency() => clearField(2);
   @$pb.TagNumber(2)
-  $526.FieldId ensureRelativeFrequency() => $_ensure(1);
+  $531.FieldId ensureRelativeFrequency() => $_ensure(1);
 
   /// Required. Auxiliary table location.
   @$pb.TagNumber(3)
-  $526.BigQueryTable get table => $_getN(2);
+  $531.BigQueryTable get table => $_getN(2);
   @$pb.TagNumber(3)
-  set table($526.BigQueryTable v) { setField(3, v); }
+  set table($531.BigQueryTable v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTable() => $_has(2);
   @$pb.TagNumber(3)
   void clearTable() => clearField(3);
   @$pb.TagNumber(3)
-  $526.BigQueryTable ensureTable() => $_ensure(2);
+  $531.BigQueryTable ensureTable() => $_ensure(2);
 }
 
 /// Reidentifiability metric. This corresponds to a risk model similar to what
@@ -7418,7 +7418,7 @@ enum AnalyzeDataSourceRiskDetails_Result {
 class AnalyzeDataSourceRiskDetails extends $pb.GeneratedMessage {
   factory AnalyzeDataSourceRiskDetails({
     PrivacyMetric? requestedPrivacyMetric,
-    $526.BigQueryTable? requestedSourceTable,
+    $531.BigQueryTable? requestedSourceTable,
     AnalyzeDataSourceRiskDetails_NumericalStatsResult? numericalStatsResult,
     AnalyzeDataSourceRiskDetails_CategoricalStatsResult? categoricalStatsResult,
     AnalyzeDataSourceRiskDetails_KAnonymityResult? kAnonymityResult,
@@ -7473,7 +7473,7 @@ class AnalyzeDataSourceRiskDetails extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AnalyzeDataSourceRiskDetails', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [3, 4, 5, 6, 7, 9])
     ..aOM<PrivacyMetric>(1, _omitFieldNames ? '' : 'requestedPrivacyMetric', subBuilder: PrivacyMetric.create)
-    ..aOM<$526.BigQueryTable>(2, _omitFieldNames ? '' : 'requestedSourceTable', subBuilder: $526.BigQueryTable.create)
+    ..aOM<$531.BigQueryTable>(2, _omitFieldNames ? '' : 'requestedSourceTable', subBuilder: $531.BigQueryTable.create)
     ..aOM<AnalyzeDataSourceRiskDetails_NumericalStatsResult>(3, _omitFieldNames ? '' : 'numericalStatsResult', subBuilder: AnalyzeDataSourceRiskDetails_NumericalStatsResult.create)
     ..aOM<AnalyzeDataSourceRiskDetails_CategoricalStatsResult>(4, _omitFieldNames ? '' : 'categoricalStatsResult', subBuilder: AnalyzeDataSourceRiskDetails_CategoricalStatsResult.create)
     ..aOM<AnalyzeDataSourceRiskDetails_KAnonymityResult>(5, _omitFieldNames ? '' : 'kAnonymityResult', subBuilder: AnalyzeDataSourceRiskDetails_KAnonymityResult.create)
@@ -7522,15 +7522,15 @@ class AnalyzeDataSourceRiskDetails extends $pb.GeneratedMessage {
 
   /// Input dataset to compute metrics over.
   @$pb.TagNumber(2)
-  $526.BigQueryTable get requestedSourceTable => $_getN(1);
+  $531.BigQueryTable get requestedSourceTable => $_getN(1);
   @$pb.TagNumber(2)
-  set requestedSourceTable($526.BigQueryTable v) { setField(2, v); }
+  set requestedSourceTable($531.BigQueryTable v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRequestedSourceTable() => $_has(1);
   @$pb.TagNumber(2)
   void clearRequestedSourceTable() => clearField(2);
   @$pb.TagNumber(2)
-  $526.BigQueryTable ensureRequestedSourceTable() => $_ensure(1);
+  $531.BigQueryTable ensureRequestedSourceTable() => $_ensure(1);
 
   /// Numerical stats result
   @$pb.TagNumber(3)
@@ -7711,7 +7711,7 @@ class Value extends $pb.GeneratedMessage {
     $core.String? stringValue,
     $core.bool? booleanValue,
     $299.Timestamp? timestampValue,
-    $527.TimeOfDay? timeValue,
+    $532.TimeOfDay? timeValue,
     $324.Date? dateValue,
     $424.DayOfWeek? dayOfWeekValue,
   }) {
@@ -7764,7 +7764,7 @@ class Value extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'stringValue')
     ..aOB(4, _omitFieldNames ? '' : 'booleanValue')
     ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'timestampValue', subBuilder: $299.Timestamp.create)
-    ..aOM<$527.TimeOfDay>(6, _omitFieldNames ? '' : 'timeValue', subBuilder: $527.TimeOfDay.create)
+    ..aOM<$532.TimeOfDay>(6, _omitFieldNames ? '' : 'timeValue', subBuilder: $532.TimeOfDay.create)
     ..aOM<$324.Date>(7, _omitFieldNames ? '' : 'dateValue', subBuilder: $324.Date.create)
     ..e<$424.DayOfWeek>(8, _omitFieldNames ? '' : 'dayOfWeekValue', $pb.PbFieldType.OE, defaultOrMaker: $424.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $424.DayOfWeek.valueOf, enumValues: $424.DayOfWeek.values)
     ..hasRequiredFields = false
@@ -7848,15 +7848,15 @@ class Value extends $pb.GeneratedMessage {
 
   /// time of day
   @$pb.TagNumber(6)
-  $527.TimeOfDay get timeValue => $_getN(5);
+  $532.TimeOfDay get timeValue => $_getN(5);
   @$pb.TagNumber(6)
-  set timeValue($527.TimeOfDay v) { setField(6, v); }
+  set timeValue($532.TimeOfDay v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeValue() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimeValue() => clearField(6);
   @$pb.TagNumber(6)
-  $527.TimeOfDay ensureTimeValue() => $_ensure(5);
+  $532.TimeOfDay ensureTimeValue() => $_ensure(5);
 
   /// date
   @$pb.TagNumber(7)
@@ -8007,7 +8007,7 @@ class DateTime extends $pb.GeneratedMessage {
   factory DateTime({
     $324.Date? date,
     $424.DayOfWeek? dayOfWeek,
-    $527.TimeOfDay? time,
+    $532.TimeOfDay? time,
     DateTime_TimeZone? timeZone,
   }) {
     final $result = create();
@@ -8032,7 +8032,7 @@ class DateTime extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateTime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..aOM<$324.Date>(1, _omitFieldNames ? '' : 'date', subBuilder: $324.Date.create)
     ..e<$424.DayOfWeek>(2, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $424.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $424.DayOfWeek.valueOf, enumValues: $424.DayOfWeek.values)
-    ..aOM<$527.TimeOfDay>(3, _omitFieldNames ? '' : 'time', subBuilder: $527.TimeOfDay.create)
+    ..aOM<$532.TimeOfDay>(3, _omitFieldNames ? '' : 'time', subBuilder: $532.TimeOfDay.create)
     ..aOM<DateTime_TimeZone>(4, _omitFieldNames ? '' : 'timeZone', subBuilder: DateTime_TimeZone.create)
     ..hasRequiredFields = false
   ;
@@ -8083,15 +8083,15 @@ class DateTime extends $pb.GeneratedMessage {
 
   /// Time of day
   @$pb.TagNumber(3)
-  $527.TimeOfDay get time => $_getN(2);
+  $532.TimeOfDay get time => $_getN(2);
   @$pb.TagNumber(3)
-  set time($527.TimeOfDay v) { setField(3, v); }
+  set time($532.TimeOfDay v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearTime() => clearField(3);
   @$pb.TagNumber(3)
-  $527.TimeOfDay ensureTime() => $_ensure(2);
+  $532.TimeOfDay ensureTime() => $_ensure(2);
 
   /// Time zone
   @$pb.TagNumber(4)
@@ -8235,7 +8235,7 @@ class DeidentifyConfig extends $pb.GeneratedMessage {
 /// Apply transformation to the selected info_types.
 class ImageTransformations_ImageTransformation_SelectedInfoTypes extends $pb.GeneratedMessage {
   factory ImageTransformations_ImageTransformation_SelectedInfoTypes({
-    $core.Iterable<$526.InfoType>? infoTypes,
+    $core.Iterable<$531.InfoType>? infoTypes,
   }) {
     final $result = create();
     if (infoTypes != null) {
@@ -8248,7 +8248,7 @@ class ImageTransformations_ImageTransformation_SelectedInfoTypes extends $pb.Gen
   factory ImageTransformations_ImageTransformation_SelectedInfoTypes.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageTransformations.ImageTransformation.SelectedInfoTypes', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..pc<$526.InfoType>(5, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $526.InfoType.create)
+    ..pc<$531.InfoType>(5, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $531.InfoType.create)
     ..hasRequiredFields = false
   ;
 
@@ -8276,7 +8276,7 @@ class ImageTransformations_ImageTransformation_SelectedInfoTypes extends $pb.Gen
   /// Required. InfoTypes to apply the transformation to. Required. Provided
   /// InfoType must be unique within the ImageTransformations message.
   @$pb.TagNumber(5)
-  $core.List<$526.InfoType> get infoTypes => $_getList(0);
+  $core.List<$531.InfoType> get infoTypes => $_getList(0);
 }
 
 /// Apply transformation to all findings.
@@ -9075,8 +9075,8 @@ class CryptoHashConfig extends $pb.GeneratedMessage {
 class CryptoDeterministicConfig extends $pb.GeneratedMessage {
   factory CryptoDeterministicConfig({
     CryptoKey? cryptoKey,
-    $526.InfoType? surrogateInfoType,
-    $526.FieldId? context,
+    $531.InfoType? surrogateInfoType,
+    $531.FieldId? context,
   }) {
     final $result = create();
     if (cryptoKey != null) {
@@ -9096,8 +9096,8 @@ class CryptoDeterministicConfig extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CryptoDeterministicConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..aOM<CryptoKey>(1, _omitFieldNames ? '' : 'cryptoKey', subBuilder: CryptoKey.create)
-    ..aOM<$526.InfoType>(2, _omitFieldNames ? '' : 'surrogateInfoType', subBuilder: $526.InfoType.create)
-    ..aOM<$526.FieldId>(3, _omitFieldNames ? '' : 'context', subBuilder: $526.FieldId.create)
+    ..aOM<$531.InfoType>(2, _omitFieldNames ? '' : 'surrogateInfoType', subBuilder: $531.InfoType.create)
+    ..aOM<$531.FieldId>(3, _omitFieldNames ? '' : 'context', subBuilder: $531.FieldId.create)
     ..hasRequiredFields = false
   ;
 
@@ -9169,15 +9169,15 @@ class CryptoDeterministicConfig extends $pb.GeneratedMessage {
   ///  the symbol with the hex code point 29DD might be used like so:
   ///  ⧝MY_TOKEN_TYPE.
   @$pb.TagNumber(2)
-  $526.InfoType get surrogateInfoType => $_getN(1);
+  $531.InfoType get surrogateInfoType => $_getN(1);
   @$pb.TagNumber(2)
-  set surrogateInfoType($526.InfoType v) { setField(2, v); }
+  set surrogateInfoType($531.InfoType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSurrogateInfoType() => $_has(1);
   @$pb.TagNumber(2)
   void clearSurrogateInfoType() => clearField(2);
   @$pb.TagNumber(2)
-  $526.InfoType ensureSurrogateInfoType() => $_ensure(1);
+  $531.InfoType ensureSurrogateInfoType() => $_ensure(1);
 
   ///  A context may be used for higher security and maintaining
   ///  referential integrity such that the same identifier in two different
@@ -9198,15 +9198,15 @@ class CryptoDeterministicConfig extends $pb.GeneratedMessage {
   ///  Note that case (1) is expected when an `InfoTypeTransformation` is
   ///  applied to both structured and unstructured `ContentItem`s.
   @$pb.TagNumber(3)
-  $526.FieldId get context => $_getN(2);
+  $531.FieldId get context => $_getN(2);
   @$pb.TagNumber(3)
-  set context($526.FieldId v) { setField(3, v); }
+  set context($531.FieldId v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasContext() => $_has(2);
   @$pb.TagNumber(3)
   void clearContext() => clearField(3);
   @$pb.TagNumber(3)
-  $526.FieldId ensureContext() => $_ensure(2);
+  $531.FieldId ensureContext() => $_ensure(2);
 }
 
 /// Replace each input value with a given `Value`.
@@ -9271,7 +9271,7 @@ enum ReplaceDictionaryConfig_Type {
 /// Replace each input value with a value randomly selected from the dictionary.
 class ReplaceDictionaryConfig extends $pb.GeneratedMessage {
   factory ReplaceDictionaryConfig({
-    $526.CustomInfoType_Dictionary_WordList? wordList,
+    $531.CustomInfoType_Dictionary_WordList? wordList,
   }) {
     final $result = create();
     if (wordList != null) {
@@ -9289,7 +9289,7 @@ class ReplaceDictionaryConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReplaceDictionaryConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$526.CustomInfoType_Dictionary_WordList>(1, _omitFieldNames ? '' : 'wordList', subBuilder: $526.CustomInfoType_Dictionary_WordList.create)
+    ..aOM<$531.CustomInfoType_Dictionary_WordList>(1, _omitFieldNames ? '' : 'wordList', subBuilder: $531.CustomInfoType_Dictionary_WordList.create)
     ..hasRequiredFields = false
   ;
 
@@ -9321,15 +9321,15 @@ class ReplaceDictionaryConfig extends $pb.GeneratedMessage {
   /// [limits](https://cloud.google.com/sensitive-data-protection/limits) page
   /// contains details about the size limits of dictionaries.
   @$pb.TagNumber(1)
-  $526.CustomInfoType_Dictionary_WordList get wordList => $_getN(0);
+  $531.CustomInfoType_Dictionary_WordList get wordList => $_getN(0);
   @$pb.TagNumber(1)
-  set wordList($526.CustomInfoType_Dictionary_WordList v) { setField(1, v); }
+  set wordList($531.CustomInfoType_Dictionary_WordList v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasWordList() => $_has(0);
   @$pb.TagNumber(1)
   void clearWordList() => clearField(1);
   @$pb.TagNumber(1)
-  $526.CustomInfoType_Dictionary_WordList ensureWordList() => $_ensure(0);
+  $531.CustomInfoType_Dictionary_WordList ensureWordList() => $_ensure(0);
 }
 
 /// Replace each matching finding with the name of the info_type.
@@ -9886,11 +9886,11 @@ enum CryptoReplaceFfxFpeConfig_Alphabet {
 class CryptoReplaceFfxFpeConfig extends $pb.GeneratedMessage {
   factory CryptoReplaceFfxFpeConfig({
     CryptoKey? cryptoKey,
-    $526.FieldId? context,
+    $531.FieldId? context,
     CryptoReplaceFfxFpeConfig_FfxCommonNativeAlphabet? commonAlphabet,
     $core.String? customAlphabet,
     $core.int? radix,
-    $526.InfoType? surrogateInfoType,
+    $531.InfoType? surrogateInfoType,
   }) {
     final $result = create();
     if (cryptoKey != null) {
@@ -9926,11 +9926,11 @@ class CryptoReplaceFfxFpeConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CryptoReplaceFfxFpeConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [4, 5, 6])
     ..aOM<CryptoKey>(1, _omitFieldNames ? '' : 'cryptoKey', subBuilder: CryptoKey.create)
-    ..aOM<$526.FieldId>(2, _omitFieldNames ? '' : 'context', subBuilder: $526.FieldId.create)
+    ..aOM<$531.FieldId>(2, _omitFieldNames ? '' : 'context', subBuilder: $531.FieldId.create)
     ..e<CryptoReplaceFfxFpeConfig_FfxCommonNativeAlphabet>(4, _omitFieldNames ? '' : 'commonAlphabet', $pb.PbFieldType.OE, defaultOrMaker: CryptoReplaceFfxFpeConfig_FfxCommonNativeAlphabet.FFX_COMMON_NATIVE_ALPHABET_UNSPECIFIED, valueOf: CryptoReplaceFfxFpeConfig_FfxCommonNativeAlphabet.valueOf, enumValues: CryptoReplaceFfxFpeConfig_FfxCommonNativeAlphabet.values)
     ..aOS(5, _omitFieldNames ? '' : 'customAlphabet')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'radix', $pb.PbFieldType.O3)
-    ..aOM<$526.InfoType>(8, _omitFieldNames ? '' : 'surrogateInfoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.InfoType>(8, _omitFieldNames ? '' : 'surrogateInfoType', subBuilder: $531.InfoType.create)
     ..hasRequiredFields = false
   ;
 
@@ -9991,15 +9991,15 @@ class CryptoReplaceFfxFpeConfig extends $pb.GeneratedMessage {
   ///  - a 64 bit integer is encoded followed by a single byte of value 1
   ///  - a string is encoded in UTF-8 format followed by a single byte of value 2
   @$pb.TagNumber(2)
-  $526.FieldId get context => $_getN(1);
+  $531.FieldId get context => $_getN(1);
   @$pb.TagNumber(2)
-  set context($526.FieldId v) { setField(2, v); }
+  set context($531.FieldId v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasContext() => $_has(1);
   @$pb.TagNumber(2)
   void clearContext() => clearField(2);
   @$pb.TagNumber(2)
-  $526.FieldId ensureContext() => $_ensure(1);
+  $531.FieldId ensureContext() => $_ensure(1);
 
   /// Common alphabets.
   @$pb.TagNumber(4)
@@ -10065,15 +10065,15 @@ class CryptoReplaceFfxFpeConfig extends $pb.GeneratedMessage {
   ///  the symbol with the hex code point 29DD might be used like so:
   ///  ⧝MY_TOKEN_TYPE
   @$pb.TagNumber(8)
-  $526.InfoType get surrogateInfoType => $_getN(5);
+  $531.InfoType get surrogateInfoType => $_getN(5);
   @$pb.TagNumber(8)
-  set surrogateInfoType($526.InfoType v) { setField(8, v); }
+  set surrogateInfoType($531.InfoType v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSurrogateInfoType() => $_has(5);
   @$pb.TagNumber(8)
   void clearSurrogateInfoType() => clearField(8);
   @$pb.TagNumber(8)
-  $526.InfoType ensureSurrogateInfoType() => $_ensure(5);
+  $531.InfoType ensureSurrogateInfoType() => $_ensure(5);
 }
 
 enum CryptoKey_Source {
@@ -10387,7 +10387,7 @@ class DateShiftConfig extends $pb.GeneratedMessage {
   factory DateShiftConfig({
     $core.int? upperBoundDays,
     $core.int? lowerBoundDays,
-    $526.FieldId? context,
+    $531.FieldId? context,
     CryptoKey? cryptoKey,
   }) {
     final $result = create();
@@ -10417,7 +10417,7 @@ class DateShiftConfig extends $pb.GeneratedMessage {
     ..oo(0, [4])
     ..a<$core.int>(1, _omitFieldNames ? '' : 'upperBoundDays', $pb.PbFieldType.O3)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'lowerBoundDays', $pb.PbFieldType.O3)
-    ..aOM<$526.FieldId>(3, _omitFieldNames ? '' : 'context', subBuilder: $526.FieldId.create)
+    ..aOM<$531.FieldId>(3, _omitFieldNames ? '' : 'context', subBuilder: $531.FieldId.create)
     ..aOM<CryptoKey>(4, _omitFieldNames ? '' : 'cryptoKey', subBuilder: CryptoKey.create)
     ..hasRequiredFields = false
   ;
@@ -10475,15 +10475,15 @@ class DateShiftConfig extends $pb.GeneratedMessage {
   /// If set, must also set cryptoKey. If set, shift will be consistent for the
   /// given context.
   @$pb.TagNumber(3)
-  $526.FieldId get context => $_getN(2);
+  $531.FieldId get context => $_getN(2);
   @$pb.TagNumber(3)
-  set context($526.FieldId v) { setField(3, v); }
+  set context($531.FieldId v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasContext() => $_has(2);
   @$pb.TagNumber(3)
   void clearContext() => clearField(3);
   @$pb.TagNumber(3)
-  $526.FieldId ensureContext() => $_ensure(2);
+  $531.FieldId ensureContext() => $_ensure(2);
 
   /// Causes the shift to be computed based on this key and the context. This
   /// results in the same shift for the same context and crypto_key. If
@@ -10504,7 +10504,7 @@ class DateShiftConfig extends $pb.GeneratedMessage {
 /// info_type.
 class InfoTypeTransformations_InfoTypeTransformation extends $pb.GeneratedMessage {
   factory InfoTypeTransformations_InfoTypeTransformation({
-    $core.Iterable<$526.InfoType>? infoTypes,
+    $core.Iterable<$531.InfoType>? infoTypes,
     PrimitiveTransformation? primitiveTransformation,
   }) {
     final $result = create();
@@ -10521,7 +10521,7 @@ class InfoTypeTransformations_InfoTypeTransformation extends $pb.GeneratedMessag
   factory InfoTypeTransformations_InfoTypeTransformation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InfoTypeTransformations.InfoTypeTransformation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..pc<$526.InfoType>(1, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $526.InfoType.create)
+    ..pc<$531.InfoType>(1, _omitFieldNames ? '' : 'infoTypes', $pb.PbFieldType.PM, subBuilder: $531.InfoType.create)
     ..aOM<PrimitiveTransformation>(2, _omitFieldNames ? '' : 'primitiveTransformation', subBuilder: PrimitiveTransformation.create)
     ..hasRequiredFields = false
   ;
@@ -10551,7 +10551,7 @@ class InfoTypeTransformations_InfoTypeTransformation extends $pb.GeneratedMessag
   /// this transformation to apply to all findings that correspond to
   /// infoTypes that were requested in `InspectConfig`.
   @$pb.TagNumber(1)
-  $core.List<$526.InfoType> get infoTypes => $_getList(0);
+  $core.List<$531.InfoType> get infoTypes => $_getList(0);
 
   /// Required. Primitive transformation to apply to the infoType.
   @$pb.TagNumber(2)
@@ -10625,7 +10625,7 @@ enum FieldTransformation_Transformation {
 /// The transformation to apply to the field.
 class FieldTransformation extends $pb.GeneratedMessage {
   factory FieldTransformation({
-    $core.Iterable<$526.FieldId>? fields,
+    $core.Iterable<$531.FieldId>? fields,
     RecordCondition? condition,
     PrimitiveTransformation? primitiveTransformation,
     InfoTypeTransformations? infoTypeTransformations,
@@ -10656,7 +10656,7 @@ class FieldTransformation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FieldTransformation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [4, 5])
-    ..pc<$526.FieldId>(1, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM, subBuilder: $526.FieldId.create)
+    ..pc<$531.FieldId>(1, _omitFieldNames ? '' : 'fields', $pb.PbFieldType.PM, subBuilder: $531.FieldId.create)
     ..aOM<RecordCondition>(3, _omitFieldNames ? '' : 'condition', subBuilder: RecordCondition.create)
     ..aOM<PrimitiveTransformation>(4, _omitFieldNames ? '' : 'primitiveTransformation', subBuilder: PrimitiveTransformation.create)
     ..aOM<InfoTypeTransformations>(5, _omitFieldNames ? '' : 'infoTypeTransformations', subBuilder: InfoTypeTransformations.create)
@@ -10692,7 +10692,7 @@ class FieldTransformation extends $pb.GeneratedMessage {
   /// omit the index from the FieldId. FieldId name matching ignores the index.
   /// For example, instead of "contact.nums[0].type", use "contact.nums.type".
   @$pb.TagNumber(1)
-  $core.List<$526.FieldId> get fields => $_getList(0);
+  $core.List<$531.FieldId> get fields => $_getList(0);
 
   ///  Only apply the transformation if the condition evaluates to true for the
   ///  given `RecordCondition`. The conditions are allowed to reference fields
@@ -10874,7 +10874,7 @@ class RecordSuppression extends $pb.GeneratedMessage {
 ///  the condition will evaluate to false.
 class RecordCondition_Condition extends $pb.GeneratedMessage {
   factory RecordCondition_Condition({
-    $526.FieldId? field_1,
+    $531.FieldId? field_1,
     RelationalOperator? operator,
     Value? value,
   }) {
@@ -10895,7 +10895,7 @@ class RecordCondition_Condition extends $pb.GeneratedMessage {
   factory RecordCondition_Condition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecordCondition.Condition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $526.FieldId.create)
+    ..aOM<$531.FieldId>(1, _omitFieldNames ? '' : 'field', subBuilder: $531.FieldId.create)
     ..e<RelationalOperator>(3, _omitFieldNames ? '' : 'operator', $pb.PbFieldType.OE, defaultOrMaker: RelationalOperator.RELATIONAL_OPERATOR_UNSPECIFIED, valueOf: RelationalOperator.valueOf, enumValues: RelationalOperator.values)
     ..aOM<Value>(4, _omitFieldNames ? '' : 'value', subBuilder: Value.create)
     ..hasRequiredFields = false
@@ -10924,15 +10924,15 @@ class RecordCondition_Condition extends $pb.GeneratedMessage {
 
   /// Required. Field within the record this condition is evaluated against.
   @$pb.TagNumber(1)
-  $526.FieldId get field_1 => $_getN(0);
+  $531.FieldId get field_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set field_1($526.FieldId v) { setField(1, v); }
+  set field_1($531.FieldId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasField_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearField_1() => clearField(1);
   @$pb.TagNumber(1)
-  $526.FieldId ensureField_1() => $_ensure(0);
+  $531.FieldId ensureField_1() => $_ensure(0);
 
   /// Required. Operator used to compare the field or infoType to the value.
   @$pb.TagNumber(3)
@@ -11291,8 +11291,8 @@ class TransformationSummary_SummaryResult extends $pb.GeneratedMessage {
 /// will be set.
 class TransformationSummary extends $pb.GeneratedMessage {
   factory TransformationSummary({
-    $526.InfoType? infoType,
-    $526.FieldId? field_2,
+    $531.InfoType? infoType,
+    $531.FieldId? field_2,
     PrimitiveTransformation? transformation,
     $core.Iterable<TransformationSummary_SummaryResult>? results,
     $core.Iterable<FieldTransformation>? fieldTransformations,
@@ -11328,8 +11328,8 @@ class TransformationSummary extends $pb.GeneratedMessage {
   factory TransformationSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransformationSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
-    ..aOM<$526.FieldId>(2, _omitFieldNames ? '' : 'field', subBuilder: $526.FieldId.create)
+    ..aOM<$531.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
+    ..aOM<$531.FieldId>(2, _omitFieldNames ? '' : 'field', subBuilder: $531.FieldId.create)
     ..aOM<PrimitiveTransformation>(3, _omitFieldNames ? '' : 'transformation', subBuilder: PrimitiveTransformation.create)
     ..pc<TransformationSummary_SummaryResult>(4, _omitFieldNames ? '' : 'results', $pb.PbFieldType.PM, subBuilder: TransformationSummary_SummaryResult.create)
     ..pc<FieldTransformation>(5, _omitFieldNames ? '' : 'fieldTransformations', $pb.PbFieldType.PM, subBuilder: FieldTransformation.create)
@@ -11361,27 +11361,27 @@ class TransformationSummary extends $pb.GeneratedMessage {
 
   /// Set if the transformation was limited to a specific InfoType.
   @$pb.TagNumber(1)
-  $526.InfoType get infoType => $_getN(0);
+  $531.InfoType get infoType => $_getN(0);
   @$pb.TagNumber(1)
-  set infoType($526.InfoType v) { setField(1, v); }
+  set infoType($531.InfoType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInfoType() => $_has(0);
   @$pb.TagNumber(1)
   void clearInfoType() => clearField(1);
   @$pb.TagNumber(1)
-  $526.InfoType ensureInfoType() => $_ensure(0);
+  $531.InfoType ensureInfoType() => $_ensure(0);
 
   /// Set if the transformation was limited to a specific FieldId.
   @$pb.TagNumber(2)
-  $526.FieldId get field_2 => $_getN(1);
+  $531.FieldId get field_2 => $_getN(1);
   @$pb.TagNumber(2)
-  set field_2($526.FieldId v) { setField(2, v); }
+  set field_2($531.FieldId v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasField_2() => $_has(1);
   @$pb.TagNumber(2)
   void clearField_2() => clearField(2);
   @$pb.TagNumber(2)
-  $526.FieldId ensureField_2() => $_ensure(1);
+  $531.FieldId ensureField_2() => $_ensure(1);
 
   /// The specific transformation these stats apply to.
   @$pb.TagNumber(3)
@@ -11435,7 +11435,7 @@ class TransformationDescription extends $pb.GeneratedMessage {
     TransformationType? type,
     $core.String? description,
     $core.String? condition,
-    $526.InfoType? infoType,
+    $531.InfoType? infoType,
   }) {
     final $result = create();
     if (type != null) {
@@ -11460,7 +11460,7 @@ class TransformationDescription extends $pb.GeneratedMessage {
     ..e<TransformationType>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: TransformationType.TRANSFORMATION_TYPE_UNSPECIFIED, valueOf: TransformationType.valueOf, enumValues: TransformationType.values)
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'condition')
-    ..aOM<$526.InfoType>(4, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.InfoType>(4, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
     ..hasRequiredFields = false
   ;
 
@@ -11529,15 +11529,15 @@ class TransformationDescription extends $pb.GeneratedMessage {
 
   /// Set if the transformation was limited to a specific `InfoType`.
   @$pb.TagNumber(4)
-  $526.InfoType get infoType => $_getN(3);
+  $531.InfoType get infoType => $_getN(3);
   @$pb.TagNumber(4)
-  set infoType($526.InfoType v) { setField(4, v); }
+  set infoType($531.InfoType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInfoType() => $_has(3);
   @$pb.TagNumber(4)
   void clearInfoType() => clearField(4);
   @$pb.TagNumber(4)
-  $526.InfoType ensureInfoType() => $_ensure(3);
+  $531.InfoType ensureInfoType() => $_ensure(3);
 }
 
 /// Details about a single transformation. This object contains a description of
@@ -11784,7 +11784,7 @@ class TransformationLocation extends $pb.GeneratedMessage {
 /// The field in a record to transform.
 class RecordTransformation extends $pb.GeneratedMessage {
   factory RecordTransformation({
-    $526.FieldId? fieldId,
+    $531.FieldId? fieldId,
     $299.Timestamp? containerTimestamp,
     $core.String? containerVersion,
   }) {
@@ -11805,7 +11805,7 @@ class RecordTransformation extends $pb.GeneratedMessage {
   factory RecordTransformation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RecordTransformation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.FieldId>(1, _omitFieldNames ? '' : 'fieldId', subBuilder: $526.FieldId.create)
+    ..aOM<$531.FieldId>(1, _omitFieldNames ? '' : 'fieldId', subBuilder: $531.FieldId.create)
     ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'containerTimestamp', subBuilder: $299.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'containerVersion')
     ..hasRequiredFields = false
@@ -11834,15 +11834,15 @@ class RecordTransformation extends $pb.GeneratedMessage {
 
   /// For record transformations, provide a field.
   @$pb.TagNumber(1)
-  $526.FieldId get fieldId => $_getN(0);
+  $531.FieldId get fieldId => $_getN(0);
   @$pb.TagNumber(1)
-  set fieldId($526.FieldId v) { setField(1, v); }
+  set fieldId($531.FieldId v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFieldId() => $_has(0);
   @$pb.TagNumber(1)
   void clearFieldId() => clearField(1);
   @$pb.TagNumber(1)
-  $526.FieldId ensureFieldId() => $_ensure(0);
+  $531.FieldId ensureFieldId() => $_ensure(0);
 
   /// Findings container modification timestamp, if applicable.
   @$pb.TagNumber(2)
@@ -11945,7 +11945,7 @@ enum TransformationDetailsStorageConfig_Type {
 /// Config for storing transformation details.
 class TransformationDetailsStorageConfig extends $pb.GeneratedMessage {
   factory TransformationDetailsStorageConfig({
-    $526.BigQueryTable? table,
+    $531.BigQueryTable? table,
   }) {
     final $result = create();
     if (table != null) {
@@ -11963,7 +11963,7 @@ class TransformationDetailsStorageConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransformationDetailsStorageConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$526.BigQueryTable>(1, _omitFieldNames ? '' : 'table', subBuilder: $526.BigQueryTable.create)
+    ..aOM<$531.BigQueryTable>(1, _omitFieldNames ? '' : 'table', subBuilder: $531.BigQueryTable.create)
     ..hasRequiredFields = false
   ;
 
@@ -11998,15 +11998,15 @@ class TransformationDetailsStorageConfig extends $pb.GeneratedMessage {
   /// dlp_googleapis_transformation_details_yyyy_mm_dd_[dlp_job_id]. Pacific
   /// time zone will be used for generating the date details.
   @$pb.TagNumber(1)
-  $526.BigQueryTable get table => $_getN(0);
+  $531.BigQueryTable get table => $_getN(0);
   @$pb.TagNumber(1)
-  set table($526.BigQueryTable v) { setField(1, v); }
+  set table($531.BigQueryTable v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTable() => $_has(0);
   @$pb.TagNumber(1)
   void clearTable() => clearField(1);
   @$pb.TagNumber(1)
-  $526.BigQueryTable ensureTable() => $_ensure(0);
+  $531.BigQueryTable ensureTable() => $_ensure(0);
 }
 
 enum Schedule_Option {
@@ -12999,7 +12999,7 @@ class Action_Deidentify extends $pb.GeneratedMessage {
   factory Action_Deidentify({
     TransformationDetailsStorageConfig? transformationDetailsStorageConfig,
     TransformationConfig? transformationConfig,
-    $core.Iterable<$526.FileType>? fileTypesToTransform,
+    $core.Iterable<$531.FileType>? fileTypesToTransform,
     $core.String? cloudStorageOutput,
   }) {
     final $result = create();
@@ -13029,7 +13029,7 @@ class Action_Deidentify extends $pb.GeneratedMessage {
     ..oo(0, [9])
     ..aOM<TransformationDetailsStorageConfig>(3, _omitFieldNames ? '' : 'transformationDetailsStorageConfig', subBuilder: TransformationDetailsStorageConfig.create)
     ..aOM<TransformationConfig>(7, _omitFieldNames ? '' : 'transformationConfig', subBuilder: TransformationConfig.create)
-    ..pc<$526.FileType>(8, _omitFieldNames ? '' : 'fileTypesToTransform', $pb.PbFieldType.KE, valueOf: $526.FileType.valueOf, enumValues: $526.FileType.values, defaultEnumValue: $526.FileType.FILE_TYPE_UNSPECIFIED)
+    ..pc<$531.FileType>(8, _omitFieldNames ? '' : 'fileTypesToTransform', $pb.PbFieldType.KE, valueOf: $531.FileType.valueOf, enumValues: $531.FileType.values, defaultEnumValue: $531.FileType.FILE_TYPE_UNSPECIFIED)
     ..aOS(9, _omitFieldNames ? '' : 'cloudStorageOutput')
     ..hasRequiredFields = false
   ;
@@ -13097,7 +13097,7 @@ class Action_Deidentify extends $pb.GeneratedMessage {
   /// successfully created/started. Currently the only file types supported
   /// are: IMAGES, TEXT_FILES, CSV, TSV.
   @$pb.TagNumber(8)
-  $core.List<$526.FileType> get fileTypesToTransform => $_getList(2);
+  $core.List<$531.FileType> get fileTypesToTransform => $_getList(2);
 
   ///  Required. User settable Cloud Storage bucket and folders to store
   ///  de-identified files. This field must be set for Cloud Storage
@@ -15245,7 +15245,7 @@ class DeleteJobTriggerRequest extends $pb.GeneratedMessage {
 /// Controls what and how to inspect for findings.
 class InspectJobConfig extends $pb.GeneratedMessage {
   factory InspectJobConfig({
-    $526.StorageConfig? storageConfig,
+    $531.StorageConfig? storageConfig,
     InspectConfig? inspectConfig,
     $core.String? inspectTemplateName,
     $core.Iterable<Action>? actions,
@@ -15270,7 +15270,7 @@ class InspectJobConfig extends $pb.GeneratedMessage {
   factory InspectJobConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InspectJobConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.StorageConfig>(1, _omitFieldNames ? '' : 'storageConfig', subBuilder: $526.StorageConfig.create)
+    ..aOM<$531.StorageConfig>(1, _omitFieldNames ? '' : 'storageConfig', subBuilder: $531.StorageConfig.create)
     ..aOM<InspectConfig>(2, _omitFieldNames ? '' : 'inspectConfig', subBuilder: InspectConfig.create)
     ..aOS(3, _omitFieldNames ? '' : 'inspectTemplateName')
     ..pc<Action>(4, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: Action.create)
@@ -15300,15 +15300,15 @@ class InspectJobConfig extends $pb.GeneratedMessage {
 
   /// The data to scan.
   @$pb.TagNumber(1)
-  $526.StorageConfig get storageConfig => $_getN(0);
+  $531.StorageConfig get storageConfig => $_getN(0);
   @$pb.TagNumber(1)
-  set storageConfig($526.StorageConfig v) { setField(1, v); }
+  set storageConfig($531.StorageConfig v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStorageConfig() => $_has(0);
   @$pb.TagNumber(1)
   void clearStorageConfig() => clearField(1);
   @$pb.TagNumber(1)
-  $526.StorageConfig ensureStorageConfig() => $_ensure(0);
+  $531.StorageConfig ensureStorageConfig() => $_ensure(0);
 
   /// How and what to scan for.
   @$pb.TagNumber(2)
@@ -15343,7 +15343,7 @@ class InspectJobConfig extends $pb.GeneratedMessage {
 /// of your choice whenever updated.
 class DataProfileAction_Export extends $pb.GeneratedMessage {
   factory DataProfileAction_Export({
-    $526.BigQueryTable? profileTable,
+    $531.BigQueryTable? profileTable,
   }) {
     final $result = create();
     if (profileTable != null) {
@@ -15356,7 +15356,7 @@ class DataProfileAction_Export extends $pb.GeneratedMessage {
   factory DataProfileAction_Export.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataProfileAction.Export', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.BigQueryTable>(1, _omitFieldNames ? '' : 'profileTable', subBuilder: $526.BigQueryTable.create)
+    ..aOM<$531.BigQueryTable>(1, _omitFieldNames ? '' : 'profileTable', subBuilder: $531.BigQueryTable.create)
     ..hasRequiredFields = false
   ;
 
@@ -15391,15 +15391,15 @@ class DataProfileAction_Export extends $pb.GeneratedMessage {
   /// visible to queries by the time your topic receives the Pub/Sub
   /// notification.
   @$pb.TagNumber(1)
-  $526.BigQueryTable get profileTable => $_getN(0);
+  $531.BigQueryTable get profileTable => $_getN(0);
   @$pb.TagNumber(1)
-  set profileTable($526.BigQueryTable v) { setField(1, v); }
+  set profileTable($531.BigQueryTable v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasProfileTable() => $_has(0);
   @$pb.TagNumber(1)
   void clearProfileTable() => clearField(1);
   @$pb.TagNumber(1)
-  $526.BigQueryTable ensureProfileTable() => $_ensure(0);
+  $531.BigQueryTable ensureProfileTable() => $_ensure(0);
 }
 
 /// Send a Pub/Sub message into the given Pub/Sub topic to connect other
@@ -15508,6 +15508,72 @@ class DataProfileAction_PubSubNotification extends $pb.GeneratedMessage {
   void clearDetailOfMessage() => clearField(4);
 }
 
+/// Message expressing intention to publish to Google Security Operations.
+class DataProfileAction_PublishToChronicle extends $pb.GeneratedMessage {
+  factory DataProfileAction_PublishToChronicle() => create();
+  DataProfileAction_PublishToChronicle._() : super();
+  factory DataProfileAction_PublishToChronicle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DataProfileAction_PublishToChronicle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataProfileAction.PublishToChronicle', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DataProfileAction_PublishToChronicle clone() => DataProfileAction_PublishToChronicle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DataProfileAction_PublishToChronicle copyWith(void Function(DataProfileAction_PublishToChronicle) updates) => super.copyWith((message) => updates(message as DataProfileAction_PublishToChronicle)) as DataProfileAction_PublishToChronicle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DataProfileAction_PublishToChronicle create() => DataProfileAction_PublishToChronicle._();
+  DataProfileAction_PublishToChronicle createEmptyInstance() => create();
+  static $pb.PbList<DataProfileAction_PublishToChronicle> createRepeated() => $pb.PbList<DataProfileAction_PublishToChronicle>();
+  @$core.pragma('dart2js:noInline')
+  static DataProfileAction_PublishToChronicle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataProfileAction_PublishToChronicle>(create);
+  static DataProfileAction_PublishToChronicle? _defaultInstance;
+}
+
+/// If set, a summary finding will be created/updated in SCC for each profile.
+class DataProfileAction_PublishToSecurityCommandCenter extends $pb.GeneratedMessage {
+  factory DataProfileAction_PublishToSecurityCommandCenter() => create();
+  DataProfileAction_PublishToSecurityCommandCenter._() : super();
+  factory DataProfileAction_PublishToSecurityCommandCenter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DataProfileAction_PublishToSecurityCommandCenter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataProfileAction.PublishToSecurityCommandCenter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DataProfileAction_PublishToSecurityCommandCenter clone() => DataProfileAction_PublishToSecurityCommandCenter()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DataProfileAction_PublishToSecurityCommandCenter copyWith(void Function(DataProfileAction_PublishToSecurityCommandCenter) updates) => super.copyWith((message) => updates(message as DataProfileAction_PublishToSecurityCommandCenter)) as DataProfileAction_PublishToSecurityCommandCenter;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DataProfileAction_PublishToSecurityCommandCenter create() => DataProfileAction_PublishToSecurityCommandCenter._();
+  DataProfileAction_PublishToSecurityCommandCenter createEmptyInstance() => create();
+  static $pb.PbList<DataProfileAction_PublishToSecurityCommandCenter> createRepeated() => $pb.PbList<DataProfileAction_PublishToSecurityCommandCenter>();
+  @$core.pragma('dart2js:noInline')
+  static DataProfileAction_PublishToSecurityCommandCenter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataProfileAction_PublishToSecurityCommandCenter>(create);
+  static DataProfileAction_PublishToSecurityCommandCenter? _defaultInstance;
+}
+
 enum DataProfileAction_TagResources_TagCondition_Type {
   sensitivityScore, 
   notSet
@@ -15518,7 +15584,7 @@ enum DataProfileAction_TagResources_TagCondition_Type {
 class DataProfileAction_TagResources_TagCondition extends $pb.GeneratedMessage {
   factory DataProfileAction_TagResources_TagCondition({
     DataProfileAction_TagResources_TagValue? tag,
-    $526.SensitivityScore? sensitivityScore,
+    $531.SensitivityScore? sensitivityScore,
   }) {
     final $result = create();
     if (tag != null) {
@@ -15540,7 +15606,7 @@ class DataProfileAction_TagResources_TagCondition extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataProfileAction.TagResources.TagCondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [2])
     ..aOM<DataProfileAction_TagResources_TagValue>(1, _omitFieldNames ? '' : 'tag', subBuilder: DataProfileAction_TagResources_TagValue.create)
-    ..aOM<$526.SensitivityScore>(2, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $526.SensitivityScore.create)
+    ..aOM<$531.SensitivityScore>(2, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $531.SensitivityScore.create)
     ..hasRequiredFields = false
   ;
 
@@ -15583,15 +15649,15 @@ class DataProfileAction_TagResources_TagCondition extends $pb.GeneratedMessage {
   /// Conditions attaching the tag to a resource on its profile having this
   /// sensitivity score.
   @$pb.TagNumber(2)
-  $526.SensitivityScore get sensitivityScore => $_getN(1);
+  $531.SensitivityScore get sensitivityScore => $_getN(1);
   @$pb.TagNumber(2)
-  set sensitivityScore($526.SensitivityScore v) { setField(2, v); }
+  set sensitivityScore($531.SensitivityScore v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSensitivityScore() => $_has(1);
   @$pb.TagNumber(2)
   void clearSensitivityScore() => clearField(2);
   @$pb.TagNumber(2)
-  $526.SensitivityScore ensureSensitivityScore() => $_ensure(1);
+  $531.SensitivityScore ensureSensitivityScore() => $_ensure(1);
 }
 
 enum DataProfileAction_TagResources_TagValue_Format {
@@ -15751,6 +15817,8 @@ class DataProfileAction_TagResources extends $pb.GeneratedMessage {
 enum DataProfileAction_Action {
   exportData, 
   pubSubNotification, 
+  publishToChronicle, 
+  publishToScc, 
   tagResources, 
   notSet
 }
@@ -15760,6 +15828,8 @@ class DataProfileAction extends $pb.GeneratedMessage {
   factory DataProfileAction({
     DataProfileAction_Export? exportData,
     DataProfileAction_PubSubNotification? pubSubNotification,
+    DataProfileAction_PublishToChronicle? publishToChronicle,
+    DataProfileAction_PublishToSecurityCommandCenter? publishToScc,
     DataProfileAction_TagResources? tagResources,
   }) {
     final $result = create();
@@ -15768,6 +15838,12 @@ class DataProfileAction extends $pb.GeneratedMessage {
     }
     if (pubSubNotification != null) {
       $result.pubSubNotification = pubSubNotification;
+    }
+    if (publishToChronicle != null) {
+      $result.publishToChronicle = publishToChronicle;
+    }
+    if (publishToScc != null) {
+      $result.publishToScc = publishToScc;
     }
     if (tagResources != null) {
       $result.tagResources = tagResources;
@@ -15781,13 +15857,17 @@ class DataProfileAction extends $pb.GeneratedMessage {
   static const $core.Map<$core.int, DataProfileAction_Action> _DataProfileAction_ActionByTag = {
     1 : DataProfileAction_Action.exportData,
     2 : DataProfileAction_Action.pubSubNotification,
+    3 : DataProfileAction_Action.publishToChronicle,
+    4 : DataProfileAction_Action.publishToScc,
     8 : DataProfileAction_Action.tagResources,
     0 : DataProfileAction_Action.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataProfileAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..oo(0, [1, 2, 8])
+    ..oo(0, [1, 2, 3, 4, 8])
     ..aOM<DataProfileAction_Export>(1, _omitFieldNames ? '' : 'exportData', subBuilder: DataProfileAction_Export.create)
     ..aOM<DataProfileAction_PubSubNotification>(2, _omitFieldNames ? '' : 'pubSubNotification', subBuilder: DataProfileAction_PubSubNotification.create)
+    ..aOM<DataProfileAction_PublishToChronicle>(3, _omitFieldNames ? '' : 'publishToChronicle', subBuilder: DataProfileAction_PublishToChronicle.create)
+    ..aOM<DataProfileAction_PublishToSecurityCommandCenter>(4, _omitFieldNames ? '' : 'publishToScc', subBuilder: DataProfileAction_PublishToSecurityCommandCenter.create)
     ..aOM<DataProfileAction_TagResources>(8, _omitFieldNames ? '' : 'tagResources', subBuilder: DataProfileAction_TagResources.create)
     ..hasRequiredFields = false
   ;
@@ -15840,17 +15920,44 @@ class DataProfileAction extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   DataProfileAction_PubSubNotification ensurePubSubNotification() => $_ensure(1);
 
+  /// Publishes generated data profiles to Google Security Operations.
+  /// For more information, see [Use Sensitive Data Protection data in
+  /// context-aware
+  /// analytics](https://cloud.google.com/chronicle/docs/detection/usecase-dlp-high-risk-user-download).
+  @$pb.TagNumber(3)
+  DataProfileAction_PublishToChronicle get publishToChronicle => $_getN(2);
+  @$pb.TagNumber(3)
+  set publishToChronicle(DataProfileAction_PublishToChronicle v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasPublishToChronicle() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPublishToChronicle() => clearField(3);
+  @$pb.TagNumber(3)
+  DataProfileAction_PublishToChronicle ensurePublishToChronicle() => $_ensure(2);
+
+  /// Publishes findings to SCC for each data profile.
+  @$pb.TagNumber(4)
+  DataProfileAction_PublishToSecurityCommandCenter get publishToScc => $_getN(3);
+  @$pb.TagNumber(4)
+  set publishToScc(DataProfileAction_PublishToSecurityCommandCenter v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasPublishToScc() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearPublishToScc() => clearField(4);
+  @$pb.TagNumber(4)
+  DataProfileAction_PublishToSecurityCommandCenter ensurePublishToScc() => $_ensure(3);
+
   /// Tags the profiled resources with the specified tag values.
   @$pb.TagNumber(8)
-  DataProfileAction_TagResources get tagResources => $_getN(2);
+  DataProfileAction_TagResources get tagResources => $_getN(4);
   @$pb.TagNumber(8)
   set tagResources(DataProfileAction_TagResources v) { setField(8, v); }
   @$pb.TagNumber(8)
-  $core.bool hasTagResources() => $_has(2);
+  $core.bool hasTagResources() => $_has(4);
   @$pb.TagNumber(8)
   void clearTagResources() => clearField(8);
   @$pb.TagNumber(8)
-  DataProfileAction_TagResources ensureTagResources() => $_ensure(2);
+  DataProfileAction_TagResources ensureTagResources() => $_ensure(4);
 }
 
 ///  Configuration for setting up a job to scan resources for profile generation.
@@ -15866,6 +15973,7 @@ class DataProfileJobConfig extends $pb.GeneratedMessage {
     $core.String? projectId,
     $core.Iterable<DataProfileAction>? dataProfileActions,
     $core.Iterable<$core.String>? inspectTemplates,
+    OtherCloudDiscoveryStartingLocation? otherCloudStartingLocation,
   }) {
     final $result = create();
     if (location != null) {
@@ -15880,6 +15988,9 @@ class DataProfileJobConfig extends $pb.GeneratedMessage {
     if (inspectTemplates != null) {
       $result.inspectTemplates.addAll(inspectTemplates);
     }
+    if (otherCloudStartingLocation != null) {
+      $result.otherCloudStartingLocation = otherCloudStartingLocation;
+    }
     return $result;
   }
   DataProfileJobConfig._() : super();
@@ -15891,6 +16002,7 @@ class DataProfileJobConfig extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'projectId')
     ..pc<DataProfileAction>(6, _omitFieldNames ? '' : 'dataProfileActions', $pb.PbFieldType.PM, subBuilder: DataProfileAction.create)
     ..pPS(7, _omitFieldNames ? '' : 'inspectTemplates')
+    ..aOM<OtherCloudDiscoveryStartingLocation>(8, _omitFieldNames ? '' : 'otherCloudStartingLocation', subBuilder: OtherCloudDiscoveryStartingLocation.create)
     ..hasRequiredFields = false
   ;
 
@@ -15961,6 +16073,18 @@ class DataProfileJobConfig extends $pb.GeneratedMessage {
   ///  https://cloud.google.com/sensitive-data-protection/docs/data-profiles#data-residency.
   @$pb.TagNumber(7)
   $core.List<$core.String> get inspectTemplates => $_getList(3);
+
+  /// Must be set only when scanning other clouds.
+  @$pb.TagNumber(8)
+  OtherCloudDiscoveryStartingLocation get otherCloudStartingLocation => $_getN(4);
+  @$pb.TagNumber(8)
+  set otherCloudStartingLocation(OtherCloudDiscoveryStartingLocation v) { setField(8, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasOtherCloudStartingLocation() => $_has(4);
+  @$pb.TagNumber(8)
+  void clearOtherCloudStartingLocation() => clearField(8);
+  @$pb.TagNumber(8)
+  OtherCloudDiscoveryStartingLocation ensureOtherCloudStartingLocation() => $_ensure(4);
 }
 
 /// A pattern to match against one or more tables, datasets, or projects that
@@ -16350,6 +16474,7 @@ class DiscoveryConfig extends $pb.GeneratedMessage {
     $299.Timestamp? lastRunTime,
     DiscoveryConfig_Status? status,
     $core.String? displayName,
+    OtherCloudDiscoveryStartingLocation? otherCloudStartingLocation,
   }) {
     final $result = create();
     if (name != null) {
@@ -16385,6 +16510,9 @@ class DiscoveryConfig extends $pb.GeneratedMessage {
     if (displayName != null) {
       $result.displayName = displayName;
     }
+    if (otherCloudStartingLocation != null) {
+      $result.otherCloudStartingLocation = otherCloudStartingLocation;
+    }
     return $result;
   }
   DiscoveryConfig._() : super();
@@ -16403,6 +16531,7 @@ class DiscoveryConfig extends $pb.GeneratedMessage {
     ..aOM<$299.Timestamp>(9, _omitFieldNames ? '' : 'lastRunTime', subBuilder: $299.Timestamp.create)
     ..e<DiscoveryConfig_Status>(10, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: DiscoveryConfig_Status.STATUS_UNSPECIFIED, valueOf: DiscoveryConfig_Status.valueOf, enumValues: DiscoveryConfig_Status.values)
     ..aOS(11, _omitFieldNames ? '' : 'displayName')
+    ..aOM<OtherCloudDiscoveryStartingLocation>(12, _omitFieldNames ? '' : 'otherCloudStartingLocation', subBuilder: OtherCloudDiscoveryStartingLocation.create)
     ..hasRequiredFields = false
   ;
 
@@ -16540,6 +16669,18 @@ class DiscoveryConfig extends $pb.GeneratedMessage {
   $core.bool hasDisplayName() => $_has(10);
   @$pb.TagNumber(11)
   void clearDisplayName() => clearField(11);
+
+  /// Must be set only when scanning other clouds.
+  @$pb.TagNumber(12)
+  OtherCloudDiscoveryStartingLocation get otherCloudStartingLocation => $_getN(11);
+  @$pb.TagNumber(12)
+  set otherCloudStartingLocation(OtherCloudDiscoveryStartingLocation v) { setField(12, v); }
+  @$pb.TagNumber(12)
+  $core.bool hasOtherCloudStartingLocation() => $_has(11);
+  @$pb.TagNumber(12)
+  void clearOtherCloudStartingLocation() => clearField(12);
+  @$pb.TagNumber(12)
+  OtherCloudDiscoveryStartingLocation ensureOtherCloudStartingLocation() => $_ensure(11);
 }
 
 enum DiscoveryTarget_Target {
@@ -16547,6 +16688,7 @@ enum DiscoveryTarget_Target {
   cloudSqlTarget, 
   secretsTarget, 
   cloudStorageTarget, 
+  otherCloudTarget, 
   notSet
 }
 
@@ -16557,6 +16699,7 @@ class DiscoveryTarget extends $pb.GeneratedMessage {
     CloudSqlDiscoveryTarget? cloudSqlTarget,
     SecretsDiscoveryTarget? secretsTarget,
     CloudStorageDiscoveryTarget? cloudStorageTarget,
+    OtherCloudDiscoveryTarget? otherCloudTarget,
   }) {
     final $result = create();
     if (bigQueryTarget != null) {
@@ -16571,6 +16714,9 @@ class DiscoveryTarget extends $pb.GeneratedMessage {
     if (cloudStorageTarget != null) {
       $result.cloudStorageTarget = cloudStorageTarget;
     }
+    if (otherCloudTarget != null) {
+      $result.otherCloudTarget = otherCloudTarget;
+    }
     return $result;
   }
   DiscoveryTarget._() : super();
@@ -16582,14 +16728,16 @@ class DiscoveryTarget extends $pb.GeneratedMessage {
     2 : DiscoveryTarget_Target.cloudSqlTarget,
     3 : DiscoveryTarget_Target.secretsTarget,
     4 : DiscoveryTarget_Target.cloudStorageTarget,
+    5 : DiscoveryTarget_Target.otherCloudTarget,
     0 : DiscoveryTarget_Target.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryTarget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..oo(0, [1, 2, 3, 4])
+    ..oo(0, [1, 2, 3, 4, 5])
     ..aOM<BigQueryDiscoveryTarget>(1, _omitFieldNames ? '' : 'bigQueryTarget', subBuilder: BigQueryDiscoveryTarget.create)
     ..aOM<CloudSqlDiscoveryTarget>(2, _omitFieldNames ? '' : 'cloudSqlTarget', subBuilder: CloudSqlDiscoveryTarget.create)
     ..aOM<SecretsDiscoveryTarget>(3, _omitFieldNames ? '' : 'secretsTarget', subBuilder: SecretsDiscoveryTarget.create)
     ..aOM<CloudStorageDiscoveryTarget>(4, _omitFieldNames ? '' : 'cloudStorageTarget', subBuilder: CloudStorageDiscoveryTarget.create)
+    ..aOM<OtherCloudDiscoveryTarget>(5, _omitFieldNames ? '' : 'otherCloudTarget', subBuilder: OtherCloudDiscoveryTarget.create)
     ..hasRequiredFields = false
   ;
 
@@ -16669,6 +16817,19 @@ class DiscoveryTarget extends $pb.GeneratedMessage {
   void clearCloudStorageTarget() => clearField(4);
   @$pb.TagNumber(4)
   CloudStorageDiscoveryTarget ensureCloudStorageTarget() => $_ensure(3);
+
+  /// Other clouds target for discovery. The first target to match a resource
+  /// will be the one applied.
+  @$pb.TagNumber(5)
+  OtherCloudDiscoveryTarget get otherCloudTarget => $_getN(4);
+  @$pb.TagNumber(5)
+  set otherCloudTarget(OtherCloudDiscoveryTarget v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasOtherCloudTarget() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearOtherCloudTarget() => clearField(5);
+  @$pb.TagNumber(5)
+  OtherCloudDiscoveryTarget ensureOtherCloudTarget() => $_ensure(4);
 }
 
 enum BigQueryDiscoveryTarget_Frequency {
@@ -16844,7 +17005,7 @@ class DiscoveryBigQueryFilter extends $pb.GeneratedMessage {
   factory DiscoveryBigQueryFilter({
     BigQueryTableCollection? tables,
     DiscoveryBigQueryFilter_AllOtherBigQueryTables? otherTables,
-    $526.TableReference? tableReference,
+    $531.TableReference? tableReference,
   }) {
     final $result = create();
     if (tables != null) {
@@ -16872,7 +17033,7 @@ class DiscoveryBigQueryFilter extends $pb.GeneratedMessage {
     ..oo(0, [1, 2, 3])
     ..aOM<BigQueryTableCollection>(1, _omitFieldNames ? '' : 'tables', subBuilder: BigQueryTableCollection.create)
     ..aOM<DiscoveryBigQueryFilter_AllOtherBigQueryTables>(2, _omitFieldNames ? '' : 'otherTables', subBuilder: DiscoveryBigQueryFilter_AllOtherBigQueryTables.create)
-    ..aOM<$526.TableReference>(3, _omitFieldNames ? '' : 'tableReference', subBuilder: $526.TableReference.create)
+    ..aOM<$531.TableReference>(3, _omitFieldNames ? '' : 'tableReference', subBuilder: $531.TableReference.create)
     ..hasRequiredFields = false
   ;
 
@@ -16934,15 +17095,15 @@ class DiscoveryBigQueryFilter extends $pb.GeneratedMessage {
   /// include one DiscoveryTarget (the DiscoveryTarget with this
   /// TableReference).
   @$pb.TagNumber(3)
-  $526.TableReference get tableReference => $_getN(2);
+  $531.TableReference get tableReference => $_getN(2);
   @$pb.TagNumber(3)
-  set tableReference($526.TableReference v) { setField(3, v); }
+  set tableReference($531.TableReference v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTableReference() => $_has(2);
   @$pb.TagNumber(3)
   void clearTableReference() => clearField(3);
   @$pb.TagNumber(3)
-  $526.TableReference ensureTableReference() => $_ensure(2);
+  $531.TableReference ensureTableReference() => $_ensure(2);
 }
 
 enum BigQueryTableCollection_Pattern {
@@ -19150,6 +19311,977 @@ class DiscoveryFileStoreConditions extends $pb.GeneratedMessage {
   DiscoveryCloudStorageConditions ensureCloudStorageConditions() => $_ensure(2);
 }
 
+enum OtherCloudDiscoveryTarget_Cadence {
+  generationCadence, 
+  disabled, 
+  notSet
+}
+
+/// Target used to match against for discovery of resources from other clouds.
+/// An [AWS connector in Security Command Center
+/// (Enterprise](https://cloud.google.com/security-command-center/docs/connect-scc-to-aws)
+/// is required to use this feature.
+class OtherCloudDiscoveryTarget extends $pb.GeneratedMessage {
+  factory OtherCloudDiscoveryTarget({
+    DataSourceType? dataSourceType,
+    DiscoveryOtherCloudFilter? filter,
+    DiscoveryOtherCloudConditions? conditions,
+    DiscoveryOtherCloudGenerationCadence? generationCadence,
+    Disabled? disabled,
+  }) {
+    final $result = create();
+    if (dataSourceType != null) {
+      $result.dataSourceType = dataSourceType;
+    }
+    if (filter != null) {
+      $result.filter = filter;
+    }
+    if (conditions != null) {
+      $result.conditions = conditions;
+    }
+    if (generationCadence != null) {
+      $result.generationCadence = generationCadence;
+    }
+    if (disabled != null) {
+      $result.disabled = disabled;
+    }
+    return $result;
+  }
+  OtherCloudDiscoveryTarget._() : super();
+  factory OtherCloudDiscoveryTarget.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory OtherCloudDiscoveryTarget.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, OtherCloudDiscoveryTarget_Cadence> _OtherCloudDiscoveryTarget_CadenceByTag = {
+    4 : OtherCloudDiscoveryTarget_Cadence.generationCadence,
+    5 : OtherCloudDiscoveryTarget_Cadence.disabled,
+    0 : OtherCloudDiscoveryTarget_Cadence.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OtherCloudDiscoveryTarget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..oo(0, [4, 5])
+    ..aOM<DataSourceType>(1, _omitFieldNames ? '' : 'dataSourceType', subBuilder: DataSourceType.create)
+    ..aOM<DiscoveryOtherCloudFilter>(2, _omitFieldNames ? '' : 'filter', subBuilder: DiscoveryOtherCloudFilter.create)
+    ..aOM<DiscoveryOtherCloudConditions>(3, _omitFieldNames ? '' : 'conditions', subBuilder: DiscoveryOtherCloudConditions.create)
+    ..aOM<DiscoveryOtherCloudGenerationCadence>(4, _omitFieldNames ? '' : 'generationCadence', subBuilder: DiscoveryOtherCloudGenerationCadence.create)
+    ..aOM<Disabled>(5, _omitFieldNames ? '' : 'disabled', subBuilder: Disabled.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  OtherCloudDiscoveryTarget clone() => OtherCloudDiscoveryTarget()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  OtherCloudDiscoveryTarget copyWith(void Function(OtherCloudDiscoveryTarget) updates) => super.copyWith((message) => updates(message as OtherCloudDiscoveryTarget)) as OtherCloudDiscoveryTarget;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudDiscoveryTarget create() => OtherCloudDiscoveryTarget._();
+  OtherCloudDiscoveryTarget createEmptyInstance() => create();
+  static $pb.PbList<OtherCloudDiscoveryTarget> createRepeated() => $pb.PbList<OtherCloudDiscoveryTarget>();
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudDiscoveryTarget getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OtherCloudDiscoveryTarget>(create);
+  static OtherCloudDiscoveryTarget? _defaultInstance;
+
+  OtherCloudDiscoveryTarget_Cadence whichCadence() => _OtherCloudDiscoveryTarget_CadenceByTag[$_whichOneof(0)]!;
+  void clearCadence() => clearField($_whichOneof(0));
+
+  /// Required. The type of data profiles generated by this discovery target.
+  /// Supported values are:
+  /// * aws/s3/bucket
+  @$pb.TagNumber(1)
+  DataSourceType get dataSourceType => $_getN(0);
+  @$pb.TagNumber(1)
+  set dataSourceType(DataSourceType v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasDataSourceType() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearDataSourceType() => clearField(1);
+  @$pb.TagNumber(1)
+  DataSourceType ensureDataSourceType() => $_ensure(0);
+
+  /// Required. The resources that the discovery cadence applies to. The
+  /// first target with a matching filter will be the one to apply to a resource.
+  @$pb.TagNumber(2)
+  DiscoveryOtherCloudFilter get filter => $_getN(1);
+  @$pb.TagNumber(2)
+  set filter(DiscoveryOtherCloudFilter v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasFilter() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearFilter() => clearField(2);
+  @$pb.TagNumber(2)
+  DiscoveryOtherCloudFilter ensureFilter() => $_ensure(1);
+
+  /// Optional. In addition to matching the filter, these conditions must be true
+  /// before a profile is generated.
+  @$pb.TagNumber(3)
+  DiscoveryOtherCloudConditions get conditions => $_getN(2);
+  @$pb.TagNumber(3)
+  set conditions(DiscoveryOtherCloudConditions v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasConditions() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearConditions() => clearField(3);
+  @$pb.TagNumber(3)
+  DiscoveryOtherCloudConditions ensureConditions() => $_ensure(2);
+
+  /// How often and when to update data profiles. New resources that match both
+  /// the filter and conditions are scanned as quickly as possible depending on
+  /// system capacity.
+  @$pb.TagNumber(4)
+  DiscoveryOtherCloudGenerationCadence get generationCadence => $_getN(3);
+  @$pb.TagNumber(4)
+  set generationCadence(DiscoveryOtherCloudGenerationCadence v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasGenerationCadence() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearGenerationCadence() => clearField(4);
+  @$pb.TagNumber(4)
+  DiscoveryOtherCloudGenerationCadence ensureGenerationCadence() => $_ensure(3);
+
+  /// Disable profiling for resources that match this filter.
+  @$pb.TagNumber(5)
+  Disabled get disabled => $_getN(4);
+  @$pb.TagNumber(5)
+  set disabled(Disabled v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasDisabled() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearDisabled() => clearField(5);
+  @$pb.TagNumber(5)
+  Disabled ensureDisabled() => $_ensure(4);
+}
+
+enum DiscoveryOtherCloudFilter_Filter {
+  collection, 
+  singleResource, 
+  others, 
+  notSet
+}
+
+/// Determines which resources from the other cloud will have profiles generated.
+/// Includes the ability to filter by resource names.
+class DiscoveryOtherCloudFilter extends $pb.GeneratedMessage {
+  factory DiscoveryOtherCloudFilter({
+    OtherCloudResourceCollection? collection,
+    OtherCloudSingleResourceReference? singleResource,
+    AllOtherResources? others,
+  }) {
+    final $result = create();
+    if (collection != null) {
+      $result.collection = collection;
+    }
+    if (singleResource != null) {
+      $result.singleResource = singleResource;
+    }
+    if (others != null) {
+      $result.others = others;
+    }
+    return $result;
+  }
+  DiscoveryOtherCloudFilter._() : super();
+  factory DiscoveryOtherCloudFilter.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DiscoveryOtherCloudFilter.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, DiscoveryOtherCloudFilter_Filter> _DiscoveryOtherCloudFilter_FilterByTag = {
+    1 : DiscoveryOtherCloudFilter_Filter.collection,
+    2 : DiscoveryOtherCloudFilter_Filter.singleResource,
+    100 : DiscoveryOtherCloudFilter_Filter.others,
+    0 : DiscoveryOtherCloudFilter_Filter.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryOtherCloudFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..oo(0, [1, 2, 100])
+    ..aOM<OtherCloudResourceCollection>(1, _omitFieldNames ? '' : 'collection', subBuilder: OtherCloudResourceCollection.create)
+    ..aOM<OtherCloudSingleResourceReference>(2, _omitFieldNames ? '' : 'singleResource', subBuilder: OtherCloudSingleResourceReference.create)
+    ..aOM<AllOtherResources>(100, _omitFieldNames ? '' : 'others', subBuilder: AllOtherResources.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DiscoveryOtherCloudFilter clone() => DiscoveryOtherCloudFilter()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DiscoveryOtherCloudFilter copyWith(void Function(DiscoveryOtherCloudFilter) updates) => super.copyWith((message) => updates(message as DiscoveryOtherCloudFilter)) as DiscoveryOtherCloudFilter;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DiscoveryOtherCloudFilter create() => DiscoveryOtherCloudFilter._();
+  DiscoveryOtherCloudFilter createEmptyInstance() => create();
+  static $pb.PbList<DiscoveryOtherCloudFilter> createRepeated() => $pb.PbList<DiscoveryOtherCloudFilter>();
+  @$core.pragma('dart2js:noInline')
+  static DiscoveryOtherCloudFilter getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DiscoveryOtherCloudFilter>(create);
+  static DiscoveryOtherCloudFilter? _defaultInstance;
+
+  DiscoveryOtherCloudFilter_Filter whichFilter() => _DiscoveryOtherCloudFilter_FilterByTag[$_whichOneof(0)]!;
+  void clearFilter() => clearField($_whichOneof(0));
+
+  /// A collection of resources for this filter to apply to.
+  @$pb.TagNumber(1)
+  OtherCloudResourceCollection get collection => $_getN(0);
+  @$pb.TagNumber(1)
+  set collection(OtherCloudResourceCollection v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasCollection() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearCollection() => clearField(1);
+  @$pb.TagNumber(1)
+  OtherCloudResourceCollection ensureCollection() => $_ensure(0);
+
+  /// The resource to scan. Configs using this filter can only have one target
+  /// (the target with this single resource reference).
+  @$pb.TagNumber(2)
+  OtherCloudSingleResourceReference get singleResource => $_getN(1);
+  @$pb.TagNumber(2)
+  set singleResource(OtherCloudSingleResourceReference v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasSingleResource() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearSingleResource() => clearField(2);
+  @$pb.TagNumber(2)
+  OtherCloudSingleResourceReference ensureSingleResource() => $_ensure(1);
+
+  /// Optional. Catch-all. This should always be the last target in the list
+  /// because anything above it will apply first. Should only appear once in a
+  /// configuration. If none is specified, a default one will be added
+  /// automatically.
+  @$pb.TagNumber(100)
+  AllOtherResources get others => $_getN(2);
+  @$pb.TagNumber(100)
+  set others(AllOtherResources v) { setField(100, v); }
+  @$pb.TagNumber(100)
+  $core.bool hasOthers() => $_has(2);
+  @$pb.TagNumber(100)
+  void clearOthers() => clearField(100);
+  @$pb.TagNumber(100)
+  AllOtherResources ensureOthers() => $_ensure(2);
+}
+
+enum OtherCloudResourceCollection_Pattern {
+  includeRegexes, 
+  notSet
+}
+
+/// Match resources using regex filters.
+class OtherCloudResourceCollection extends $pb.GeneratedMessage {
+  factory OtherCloudResourceCollection({
+    OtherCloudResourceRegexes? includeRegexes,
+  }) {
+    final $result = create();
+    if (includeRegexes != null) {
+      $result.includeRegexes = includeRegexes;
+    }
+    return $result;
+  }
+  OtherCloudResourceCollection._() : super();
+  factory OtherCloudResourceCollection.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory OtherCloudResourceCollection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, OtherCloudResourceCollection_Pattern> _OtherCloudResourceCollection_PatternByTag = {
+    1 : OtherCloudResourceCollection_Pattern.includeRegexes,
+    0 : OtherCloudResourceCollection_Pattern.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OtherCloudResourceCollection', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..oo(0, [1])
+    ..aOM<OtherCloudResourceRegexes>(1, _omitFieldNames ? '' : 'includeRegexes', subBuilder: OtherCloudResourceRegexes.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  OtherCloudResourceCollection clone() => OtherCloudResourceCollection()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  OtherCloudResourceCollection copyWith(void Function(OtherCloudResourceCollection) updates) => super.copyWith((message) => updates(message as OtherCloudResourceCollection)) as OtherCloudResourceCollection;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudResourceCollection create() => OtherCloudResourceCollection._();
+  OtherCloudResourceCollection createEmptyInstance() => create();
+  static $pb.PbList<OtherCloudResourceCollection> createRepeated() => $pb.PbList<OtherCloudResourceCollection>();
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudResourceCollection getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OtherCloudResourceCollection>(create);
+  static OtherCloudResourceCollection? _defaultInstance;
+
+  OtherCloudResourceCollection_Pattern whichPattern() => _OtherCloudResourceCollection_PatternByTag[$_whichOneof(0)]!;
+  void clearPattern() => clearField($_whichOneof(0));
+
+  /// A collection of regular expressions to match a resource against.
+  @$pb.TagNumber(1)
+  OtherCloudResourceRegexes get includeRegexes => $_getN(0);
+  @$pb.TagNumber(1)
+  set includeRegexes(OtherCloudResourceRegexes v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasIncludeRegexes() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearIncludeRegexes() => clearField(1);
+  @$pb.TagNumber(1)
+  OtherCloudResourceRegexes ensureIncludeRegexes() => $_ensure(0);
+}
+
+/// A collection of regular expressions to determine what resources to match
+/// against.
+class OtherCloudResourceRegexes extends $pb.GeneratedMessage {
+  factory OtherCloudResourceRegexes({
+    $core.Iterable<OtherCloudResourceRegex>? patterns,
+  }) {
+    final $result = create();
+    if (patterns != null) {
+      $result.patterns.addAll(patterns);
+    }
+    return $result;
+  }
+  OtherCloudResourceRegexes._() : super();
+  factory OtherCloudResourceRegexes.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory OtherCloudResourceRegexes.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OtherCloudResourceRegexes', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..pc<OtherCloudResourceRegex>(1, _omitFieldNames ? '' : 'patterns', $pb.PbFieldType.PM, subBuilder: OtherCloudResourceRegex.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  OtherCloudResourceRegexes clone() => OtherCloudResourceRegexes()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  OtherCloudResourceRegexes copyWith(void Function(OtherCloudResourceRegexes) updates) => super.copyWith((message) => updates(message as OtherCloudResourceRegexes)) as OtherCloudResourceRegexes;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudResourceRegexes create() => OtherCloudResourceRegexes._();
+  OtherCloudResourceRegexes createEmptyInstance() => create();
+  static $pb.PbList<OtherCloudResourceRegexes> createRepeated() => $pb.PbList<OtherCloudResourceRegexes>();
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudResourceRegexes getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OtherCloudResourceRegexes>(create);
+  static OtherCloudResourceRegexes? _defaultInstance;
+
+  /// A group of regular expression patterns to match against one or more
+  /// resources.
+  /// Maximum of 100 entries. The sum of all regular expression's length can't
+  /// exceed 10 KiB.
+  @$pb.TagNumber(1)
+  $core.List<OtherCloudResourceRegex> get patterns => $_getList(0);
+}
+
+enum OtherCloudResourceRegex_ResourceRegex {
+  amazonS3BucketRegex, 
+  notSet
+}
+
+/// A pattern to match against one or more resources. At least one pattern must
+/// be specified. Regular expressions use RE2
+/// [syntax](https://github.com/google/re2/wiki/Syntax); a guide can be found
+/// under the google/re2 repository on GitHub.
+class OtherCloudResourceRegex extends $pb.GeneratedMessage {
+  factory OtherCloudResourceRegex({
+    AmazonS3BucketRegex? amazonS3BucketRegex,
+  }) {
+    final $result = create();
+    if (amazonS3BucketRegex != null) {
+      $result.amazonS3BucketRegex = amazonS3BucketRegex;
+    }
+    return $result;
+  }
+  OtherCloudResourceRegex._() : super();
+  factory OtherCloudResourceRegex.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory OtherCloudResourceRegex.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, OtherCloudResourceRegex_ResourceRegex> _OtherCloudResourceRegex_ResourceRegexByTag = {
+    1 : OtherCloudResourceRegex_ResourceRegex.amazonS3BucketRegex,
+    0 : OtherCloudResourceRegex_ResourceRegex.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OtherCloudResourceRegex', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..oo(0, [1])
+    ..aOM<AmazonS3BucketRegex>(1, _omitFieldNames ? '' : 'amazonS3BucketRegex', subBuilder: AmazonS3BucketRegex.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  OtherCloudResourceRegex clone() => OtherCloudResourceRegex()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  OtherCloudResourceRegex copyWith(void Function(OtherCloudResourceRegex) updates) => super.copyWith((message) => updates(message as OtherCloudResourceRegex)) as OtherCloudResourceRegex;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudResourceRegex create() => OtherCloudResourceRegex._();
+  OtherCloudResourceRegex createEmptyInstance() => create();
+  static $pb.PbList<OtherCloudResourceRegex> createRepeated() => $pb.PbList<OtherCloudResourceRegex>();
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudResourceRegex getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OtherCloudResourceRegex>(create);
+  static OtherCloudResourceRegex? _defaultInstance;
+
+  OtherCloudResourceRegex_ResourceRegex whichResourceRegex() => _OtherCloudResourceRegex_ResourceRegexByTag[$_whichOneof(0)]!;
+  void clearResourceRegex() => clearField($_whichOneof(0));
+
+  /// Regex for Amazon S3 buckets.
+  @$pb.TagNumber(1)
+  AmazonS3BucketRegex get amazonS3BucketRegex => $_getN(0);
+  @$pb.TagNumber(1)
+  set amazonS3BucketRegex(AmazonS3BucketRegex v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasAmazonS3BucketRegex() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAmazonS3BucketRegex() => clearField(1);
+  @$pb.TagNumber(1)
+  AmazonS3BucketRegex ensureAmazonS3BucketRegex() => $_ensure(0);
+}
+
+/// AWS account regex.
+class AwsAccountRegex extends $pb.GeneratedMessage {
+  factory AwsAccountRegex({
+    $core.String? accountIdRegex,
+  }) {
+    final $result = create();
+    if (accountIdRegex != null) {
+      $result.accountIdRegex = accountIdRegex;
+    }
+    return $result;
+  }
+  AwsAccountRegex._() : super();
+  factory AwsAccountRegex.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AwsAccountRegex.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AwsAccountRegex', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'accountIdRegex')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  AwsAccountRegex clone() => AwsAccountRegex()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AwsAccountRegex copyWith(void Function(AwsAccountRegex) updates) => super.copyWith((message) => updates(message as AwsAccountRegex)) as AwsAccountRegex;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AwsAccountRegex create() => AwsAccountRegex._();
+  AwsAccountRegex createEmptyInstance() => create();
+  static $pb.PbList<AwsAccountRegex> createRepeated() => $pb.PbList<AwsAccountRegex>();
+  @$core.pragma('dart2js:noInline')
+  static AwsAccountRegex getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AwsAccountRegex>(create);
+  static AwsAccountRegex? _defaultInstance;
+
+  /// Optional. Regex to test the AWS account ID against.
+  /// If empty, all accounts match.
+  @$pb.TagNumber(1)
+  $core.String get accountIdRegex => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set accountIdRegex($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasAccountIdRegex() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAccountIdRegex() => clearField(1);
+}
+
+/// Amazon S3 bucket regex.
+class AmazonS3BucketRegex extends $pb.GeneratedMessage {
+  factory AmazonS3BucketRegex({
+    AwsAccountRegex? awsAccountRegex,
+    $core.String? bucketNameRegex,
+  }) {
+    final $result = create();
+    if (awsAccountRegex != null) {
+      $result.awsAccountRegex = awsAccountRegex;
+    }
+    if (bucketNameRegex != null) {
+      $result.bucketNameRegex = bucketNameRegex;
+    }
+    return $result;
+  }
+  AmazonS3BucketRegex._() : super();
+  factory AmazonS3BucketRegex.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AmazonS3BucketRegex.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AmazonS3BucketRegex', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..aOM<AwsAccountRegex>(1, _omitFieldNames ? '' : 'awsAccountRegex', subBuilder: AwsAccountRegex.create)
+    ..aOS(2, _omitFieldNames ? '' : 'bucketNameRegex')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  AmazonS3BucketRegex clone() => AmazonS3BucketRegex()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AmazonS3BucketRegex copyWith(void Function(AmazonS3BucketRegex) updates) => super.copyWith((message) => updates(message as AmazonS3BucketRegex)) as AmazonS3BucketRegex;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AmazonS3BucketRegex create() => AmazonS3BucketRegex._();
+  AmazonS3BucketRegex createEmptyInstance() => create();
+  static $pb.PbList<AmazonS3BucketRegex> createRepeated() => $pb.PbList<AmazonS3BucketRegex>();
+  @$core.pragma('dart2js:noInline')
+  static AmazonS3BucketRegex getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AmazonS3BucketRegex>(create);
+  static AmazonS3BucketRegex? _defaultInstance;
+
+  /// The AWS account regex.
+  @$pb.TagNumber(1)
+  AwsAccountRegex get awsAccountRegex => $_getN(0);
+  @$pb.TagNumber(1)
+  set awsAccountRegex(AwsAccountRegex v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasAwsAccountRegex() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAwsAccountRegex() => clearField(1);
+  @$pb.TagNumber(1)
+  AwsAccountRegex ensureAwsAccountRegex() => $_ensure(0);
+
+  /// Optional. Regex to test the bucket name against.
+  /// If empty, all buckets match.
+  @$pb.TagNumber(2)
+  $core.String get bucketNameRegex => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set bucketNameRegex($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasBucketNameRegex() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearBucketNameRegex() => clearField(2);
+}
+
+enum OtherCloudSingleResourceReference_Resource {
+  amazonS3Bucket, 
+  notSet
+}
+
+/// Identifies a single resource, like a single Amazon S3 bucket.
+class OtherCloudSingleResourceReference extends $pb.GeneratedMessage {
+  factory OtherCloudSingleResourceReference({
+    AmazonS3Bucket? amazonS3Bucket,
+  }) {
+    final $result = create();
+    if (amazonS3Bucket != null) {
+      $result.amazonS3Bucket = amazonS3Bucket;
+    }
+    return $result;
+  }
+  OtherCloudSingleResourceReference._() : super();
+  factory OtherCloudSingleResourceReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory OtherCloudSingleResourceReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, OtherCloudSingleResourceReference_Resource> _OtherCloudSingleResourceReference_ResourceByTag = {
+    1 : OtherCloudSingleResourceReference_Resource.amazonS3Bucket,
+    0 : OtherCloudSingleResourceReference_Resource.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OtherCloudSingleResourceReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..oo(0, [1])
+    ..aOM<AmazonS3Bucket>(1, _omitFieldNames ? '' : 'amazonS3Bucket', subBuilder: AmazonS3Bucket.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  OtherCloudSingleResourceReference clone() => OtherCloudSingleResourceReference()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  OtherCloudSingleResourceReference copyWith(void Function(OtherCloudSingleResourceReference) updates) => super.copyWith((message) => updates(message as OtherCloudSingleResourceReference)) as OtherCloudSingleResourceReference;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudSingleResourceReference create() => OtherCloudSingleResourceReference._();
+  OtherCloudSingleResourceReference createEmptyInstance() => create();
+  static $pb.PbList<OtherCloudSingleResourceReference> createRepeated() => $pb.PbList<OtherCloudSingleResourceReference>();
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudSingleResourceReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OtherCloudSingleResourceReference>(create);
+  static OtherCloudSingleResourceReference? _defaultInstance;
+
+  OtherCloudSingleResourceReference_Resource whichResource() => _OtherCloudSingleResourceReference_ResourceByTag[$_whichOneof(0)]!;
+  void clearResource() => clearField($_whichOneof(0));
+
+  /// Amazon S3 bucket.
+  @$pb.TagNumber(1)
+  AmazonS3Bucket get amazonS3Bucket => $_getN(0);
+  @$pb.TagNumber(1)
+  set amazonS3Bucket(AmazonS3Bucket v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasAmazonS3Bucket() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAmazonS3Bucket() => clearField(1);
+  @$pb.TagNumber(1)
+  AmazonS3Bucket ensureAmazonS3Bucket() => $_ensure(0);
+}
+
+/// AWS account.
+class AwsAccount extends $pb.GeneratedMessage {
+  factory AwsAccount({
+    $core.String? accountId,
+  }) {
+    final $result = create();
+    if (accountId != null) {
+      $result.accountId = accountId;
+    }
+    return $result;
+  }
+  AwsAccount._() : super();
+  factory AwsAccount.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AwsAccount.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AwsAccount', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'accountId')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  AwsAccount clone() => AwsAccount()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AwsAccount copyWith(void Function(AwsAccount) updates) => super.copyWith((message) => updates(message as AwsAccount)) as AwsAccount;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AwsAccount create() => AwsAccount._();
+  AwsAccount createEmptyInstance() => create();
+  static $pb.PbList<AwsAccount> createRepeated() => $pb.PbList<AwsAccount>();
+  @$core.pragma('dart2js:noInline')
+  static AwsAccount getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AwsAccount>(create);
+  static AwsAccount? _defaultInstance;
+
+  /// Required. AWS account ID.
+  @$pb.TagNumber(1)
+  $core.String get accountId => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set accountId($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasAccountId() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAccountId() => clearField(1);
+}
+
+/// Amazon S3 bucket.
+class AmazonS3Bucket extends $pb.GeneratedMessage {
+  factory AmazonS3Bucket({
+    AwsAccount? awsAccount,
+    $core.String? bucketName,
+  }) {
+    final $result = create();
+    if (awsAccount != null) {
+      $result.awsAccount = awsAccount;
+    }
+    if (bucketName != null) {
+      $result.bucketName = bucketName;
+    }
+    return $result;
+  }
+  AmazonS3Bucket._() : super();
+  factory AmazonS3Bucket.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AmazonS3Bucket.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AmazonS3Bucket', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..aOM<AwsAccount>(1, _omitFieldNames ? '' : 'awsAccount', subBuilder: AwsAccount.create)
+    ..aOS(2, _omitFieldNames ? '' : 'bucketName')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  AmazonS3Bucket clone() => AmazonS3Bucket()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AmazonS3Bucket copyWith(void Function(AmazonS3Bucket) updates) => super.copyWith((message) => updates(message as AmazonS3Bucket)) as AmazonS3Bucket;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AmazonS3Bucket create() => AmazonS3Bucket._();
+  AmazonS3Bucket createEmptyInstance() => create();
+  static $pb.PbList<AmazonS3Bucket> createRepeated() => $pb.PbList<AmazonS3Bucket>();
+  @$core.pragma('dart2js:noInline')
+  static AmazonS3Bucket getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AmazonS3Bucket>(create);
+  static AmazonS3Bucket? _defaultInstance;
+
+  /// The AWS account.
+  @$pb.TagNumber(1)
+  AwsAccount get awsAccount => $_getN(0);
+  @$pb.TagNumber(1)
+  set awsAccount(AwsAccount v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasAwsAccount() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAwsAccount() => clearField(1);
+  @$pb.TagNumber(1)
+  AwsAccount ensureAwsAccount() => $_ensure(0);
+
+  /// Required. The bucket name.
+  @$pb.TagNumber(2)
+  $core.String get bucketName => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set bucketName($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasBucketName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearBucketName() => clearField(2);
+}
+
+enum DiscoveryOtherCloudConditions_Conditions {
+  amazonS3BucketConditions, 
+  notSet
+}
+
+/// Requirements that must be true before a resource is profiled for the first
+/// time.
+class DiscoveryOtherCloudConditions extends $pb.GeneratedMessage {
+  factory DiscoveryOtherCloudConditions({
+    $261.Duration? minAge,
+    AmazonS3BucketConditions? amazonS3BucketConditions,
+  }) {
+    final $result = create();
+    if (minAge != null) {
+      $result.minAge = minAge;
+    }
+    if (amazonS3BucketConditions != null) {
+      $result.amazonS3BucketConditions = amazonS3BucketConditions;
+    }
+    return $result;
+  }
+  DiscoveryOtherCloudConditions._() : super();
+  factory DiscoveryOtherCloudConditions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DiscoveryOtherCloudConditions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, DiscoveryOtherCloudConditions_Conditions> _DiscoveryOtherCloudConditions_ConditionsByTag = {
+    2 : DiscoveryOtherCloudConditions_Conditions.amazonS3BucketConditions,
+    0 : DiscoveryOtherCloudConditions_Conditions.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryOtherCloudConditions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..oo(0, [2])
+    ..aOM<$261.Duration>(1, _omitFieldNames ? '' : 'minAge', subBuilder: $261.Duration.create)
+    ..aOM<AmazonS3BucketConditions>(2, _omitFieldNames ? '' : 'amazonS3BucketConditions', subBuilder: AmazonS3BucketConditions.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DiscoveryOtherCloudConditions clone() => DiscoveryOtherCloudConditions()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DiscoveryOtherCloudConditions copyWith(void Function(DiscoveryOtherCloudConditions) updates) => super.copyWith((message) => updates(message as DiscoveryOtherCloudConditions)) as DiscoveryOtherCloudConditions;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DiscoveryOtherCloudConditions create() => DiscoveryOtherCloudConditions._();
+  DiscoveryOtherCloudConditions createEmptyInstance() => create();
+  static $pb.PbList<DiscoveryOtherCloudConditions> createRepeated() => $pb.PbList<DiscoveryOtherCloudConditions>();
+  @$core.pragma('dart2js:noInline')
+  static DiscoveryOtherCloudConditions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DiscoveryOtherCloudConditions>(create);
+  static DiscoveryOtherCloudConditions? _defaultInstance;
+
+  DiscoveryOtherCloudConditions_Conditions whichConditions() => _DiscoveryOtherCloudConditions_ConditionsByTag[$_whichOneof(0)]!;
+  void clearConditions() => clearField($_whichOneof(0));
+
+  /// Minimum age a resource must be before Cloud DLP can profile it. Value must
+  /// be 1 hour or greater.
+  @$pb.TagNumber(1)
+  $261.Duration get minAge => $_getN(0);
+  @$pb.TagNumber(1)
+  set minAge($261.Duration v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasMinAge() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearMinAge() => clearField(1);
+  @$pb.TagNumber(1)
+  $261.Duration ensureMinAge() => $_ensure(0);
+
+  /// Amazon S3 bucket conditions.
+  @$pb.TagNumber(2)
+  AmazonS3BucketConditions get amazonS3BucketConditions => $_getN(1);
+  @$pb.TagNumber(2)
+  set amazonS3BucketConditions(AmazonS3BucketConditions v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasAmazonS3BucketConditions() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearAmazonS3BucketConditions() => clearField(2);
+  @$pb.TagNumber(2)
+  AmazonS3BucketConditions ensureAmazonS3BucketConditions() => $_ensure(1);
+}
+
+/// Amazon S3 bucket conditions.
+class AmazonS3BucketConditions extends $pb.GeneratedMessage {
+  factory AmazonS3BucketConditions({
+    $core.Iterable<AmazonS3BucketConditions_BucketType>? bucketTypes,
+    $core.Iterable<AmazonS3BucketConditions_ObjectStorageClass>? objectStorageClasses,
+  }) {
+    final $result = create();
+    if (bucketTypes != null) {
+      $result.bucketTypes.addAll(bucketTypes);
+    }
+    if (objectStorageClasses != null) {
+      $result.objectStorageClasses.addAll(objectStorageClasses);
+    }
+    return $result;
+  }
+  AmazonS3BucketConditions._() : super();
+  factory AmazonS3BucketConditions.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory AmazonS3BucketConditions.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AmazonS3BucketConditions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..pc<AmazonS3BucketConditions_BucketType>(1, _omitFieldNames ? '' : 'bucketTypes', $pb.PbFieldType.KE, valueOf: AmazonS3BucketConditions_BucketType.valueOf, enumValues: AmazonS3BucketConditions_BucketType.values, defaultEnumValue: AmazonS3BucketConditions_BucketType.TYPE_UNSPECIFIED)
+    ..pc<AmazonS3BucketConditions_ObjectStorageClass>(2, _omitFieldNames ? '' : 'objectStorageClasses', $pb.PbFieldType.KE, valueOf: AmazonS3BucketConditions_ObjectStorageClass.valueOf, enumValues: AmazonS3BucketConditions_ObjectStorageClass.values, defaultEnumValue: AmazonS3BucketConditions_ObjectStorageClass.UNSPECIFIED)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  AmazonS3BucketConditions clone() => AmazonS3BucketConditions()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  AmazonS3BucketConditions copyWith(void Function(AmazonS3BucketConditions) updates) => super.copyWith((message) => updates(message as AmazonS3BucketConditions)) as AmazonS3BucketConditions;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static AmazonS3BucketConditions create() => AmazonS3BucketConditions._();
+  AmazonS3BucketConditions createEmptyInstance() => create();
+  static $pb.PbList<AmazonS3BucketConditions> createRepeated() => $pb.PbList<AmazonS3BucketConditions>();
+  @$core.pragma('dart2js:noInline')
+  static AmazonS3BucketConditions getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<AmazonS3BucketConditions>(create);
+  static AmazonS3BucketConditions? _defaultInstance;
+
+  /// Optional. Bucket types that should be profiled.
+  /// Optional. Defaults to TYPE_ALL_SUPPORTED if unspecified.
+  @$pb.TagNumber(1)
+  $core.List<AmazonS3BucketConditions_BucketType> get bucketTypes => $_getList(0);
+
+  /// Optional. Object classes that should be profiled.
+  /// Optional. Defaults to ALL_SUPPORTED_CLASSES if unspecified.
+  @$pb.TagNumber(2)
+  $core.List<AmazonS3BucketConditions_ObjectStorageClass> get objectStorageClasses => $_getList(1);
+}
+
+/// How often existing resources should have their profiles refreshed.
+/// New resources are scanned as quickly as possible depending on system
+/// capacity.
+class DiscoveryOtherCloudGenerationCadence extends $pb.GeneratedMessage {
+  factory DiscoveryOtherCloudGenerationCadence({
+    DataProfileUpdateFrequency? refreshFrequency,
+    DiscoveryInspectTemplateModifiedCadence? inspectTemplateModifiedCadence,
+  }) {
+    final $result = create();
+    if (refreshFrequency != null) {
+      $result.refreshFrequency = refreshFrequency;
+    }
+    if (inspectTemplateModifiedCadence != null) {
+      $result.inspectTemplateModifiedCadence = inspectTemplateModifiedCadence;
+    }
+    return $result;
+  }
+  DiscoveryOtherCloudGenerationCadence._() : super();
+  factory DiscoveryOtherCloudGenerationCadence.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DiscoveryOtherCloudGenerationCadence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DiscoveryOtherCloudGenerationCadence', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..e<DataProfileUpdateFrequency>(1, _omitFieldNames ? '' : 'refreshFrequency', $pb.PbFieldType.OE, defaultOrMaker: DataProfileUpdateFrequency.UPDATE_FREQUENCY_UNSPECIFIED, valueOf: DataProfileUpdateFrequency.valueOf, enumValues: DataProfileUpdateFrequency.values)
+    ..aOM<DiscoveryInspectTemplateModifiedCadence>(2, _omitFieldNames ? '' : 'inspectTemplateModifiedCadence', subBuilder: DiscoveryInspectTemplateModifiedCadence.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DiscoveryOtherCloudGenerationCadence clone() => DiscoveryOtherCloudGenerationCadence()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DiscoveryOtherCloudGenerationCadence copyWith(void Function(DiscoveryOtherCloudGenerationCadence) updates) => super.copyWith((message) => updates(message as DiscoveryOtherCloudGenerationCadence)) as DiscoveryOtherCloudGenerationCadence;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DiscoveryOtherCloudGenerationCadence create() => DiscoveryOtherCloudGenerationCadence._();
+  DiscoveryOtherCloudGenerationCadence createEmptyInstance() => create();
+  static $pb.PbList<DiscoveryOtherCloudGenerationCadence> createRepeated() => $pb.PbList<DiscoveryOtherCloudGenerationCadence>();
+  @$core.pragma('dart2js:noInline')
+  static DiscoveryOtherCloudGenerationCadence getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DiscoveryOtherCloudGenerationCadence>(create);
+  static DiscoveryOtherCloudGenerationCadence? _defaultInstance;
+
+  /// Optional. Frequency to update profiles regardless of whether the underlying
+  /// resource has changes. Defaults to never.
+  @$pb.TagNumber(1)
+  DataProfileUpdateFrequency get refreshFrequency => $_getN(0);
+  @$pb.TagNumber(1)
+  set refreshFrequency(DataProfileUpdateFrequency v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasRefreshFrequency() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearRefreshFrequency() => clearField(1);
+
+  /// Optional. Governs when to update data profiles when the inspection rules
+  /// defined by the `InspectTemplate` change.
+  /// If not set, changing the template will not cause a data profile to update.
+  @$pb.TagNumber(2)
+  DiscoveryInspectTemplateModifiedCadence get inspectTemplateModifiedCadence => $_getN(1);
+  @$pb.TagNumber(2)
+  set inspectTemplateModifiedCadence(DiscoveryInspectTemplateModifiedCadence v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasInspectTemplateModifiedCadence() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearInspectTemplateModifiedCadence() => clearField(2);
+  @$pb.TagNumber(2)
+  DiscoveryInspectTemplateModifiedCadence ensureInspectTemplateModifiedCadence() => $_ensure(1);
+}
+
 enum DiscoveryStartingLocation_Location {
   organizationId, 
   folderId, 
@@ -19231,6 +20363,159 @@ class DiscoveryStartingLocation extends $pb.GeneratedMessage {
   $core.bool hasFolderId() => $_has(1);
   @$pb.TagNumber(2)
   void clearFolderId() => clearField(2);
+}
+
+enum OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation_Scope {
+  accountId, 
+  allAssetInventoryAssets, 
+  notSet
+}
+
+/// The AWS starting location for discovery.
+class OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation extends $pb.GeneratedMessage {
+  factory OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation({
+    $core.String? accountId,
+    $core.bool? allAssetInventoryAssets,
+  }) {
+    final $result = create();
+    if (accountId != null) {
+      $result.accountId = accountId;
+    }
+    if (allAssetInventoryAssets != null) {
+      $result.allAssetInventoryAssets = allAssetInventoryAssets;
+    }
+    return $result;
+  }
+  OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation._() : super();
+  factory OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation_Scope> _OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation_ScopeByTag = {
+    2 : OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation_Scope.accountId,
+    3 : OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation_Scope.allAssetInventoryAssets,
+    0 : OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation_Scope.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OtherCloudDiscoveryStartingLocation.AwsDiscoveryStartingLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..oo(0, [2, 3])
+    ..aOS(2, _omitFieldNames ? '' : 'accountId')
+    ..aOB(3, _omitFieldNames ? '' : 'allAssetInventoryAssets')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation clone() => OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation copyWith(void Function(OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation) updates) => super.copyWith((message) => updates(message as OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation)) as OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation create() => OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation._();
+  OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation createEmptyInstance() => create();
+  static $pb.PbList<OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation> createRepeated() => $pb.PbList<OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation>();
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation>(create);
+  static OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation? _defaultInstance;
+
+  OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation_Scope whichScope() => _OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation_ScopeByTag[$_whichOneof(0)]!;
+  void clearScope() => clearField($_whichOneof(0));
+
+  /// The AWS account ID that this discovery config applies to.
+  /// Within an AWS organization, you can find the AWS account ID inside an
+  /// AWS account ARN. Example:
+  /// arn:{partition}:organizations::{management_account_id}:account/{org_id}/{account_id}
+  @$pb.TagNumber(2)
+  $core.String get accountId => $_getSZ(0);
+  @$pb.TagNumber(2)
+  set accountId($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasAccountId() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearAccountId() => clearField(2);
+
+  /// All AWS assets stored in Asset Inventory that didn't match other AWS
+  /// discovery configs.
+  @$pb.TagNumber(3)
+  $core.bool get allAssetInventoryAssets => $_getBF(1);
+  @$pb.TagNumber(3)
+  set allAssetInventoryAssets($core.bool v) { $_setBool(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasAllAssetInventoryAssets() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearAllAssetInventoryAssets() => clearField(3);
+}
+
+enum OtherCloudDiscoveryStartingLocation_Location {
+  awsLocation, 
+  notSet
+}
+
+/// The other cloud starting location for discovery.
+class OtherCloudDiscoveryStartingLocation extends $pb.GeneratedMessage {
+  factory OtherCloudDiscoveryStartingLocation({
+    OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation? awsLocation,
+  }) {
+    final $result = create();
+    if (awsLocation != null) {
+      $result.awsLocation = awsLocation;
+    }
+    return $result;
+  }
+  OtherCloudDiscoveryStartingLocation._() : super();
+  factory OtherCloudDiscoveryStartingLocation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory OtherCloudDiscoveryStartingLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, OtherCloudDiscoveryStartingLocation_Location> _OtherCloudDiscoveryStartingLocation_LocationByTag = {
+    1 : OtherCloudDiscoveryStartingLocation_Location.awsLocation,
+    0 : OtherCloudDiscoveryStartingLocation_Location.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OtherCloudDiscoveryStartingLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
+    ..oo(0, [1])
+    ..aOM<OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation>(1, _omitFieldNames ? '' : 'awsLocation', subBuilder: OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  OtherCloudDiscoveryStartingLocation clone() => OtherCloudDiscoveryStartingLocation()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  OtherCloudDiscoveryStartingLocation copyWith(void Function(OtherCloudDiscoveryStartingLocation) updates) => super.copyWith((message) => updates(message as OtherCloudDiscoveryStartingLocation)) as OtherCloudDiscoveryStartingLocation;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudDiscoveryStartingLocation create() => OtherCloudDiscoveryStartingLocation._();
+  OtherCloudDiscoveryStartingLocation createEmptyInstance() => create();
+  static $pb.PbList<OtherCloudDiscoveryStartingLocation> createRepeated() => $pb.PbList<OtherCloudDiscoveryStartingLocation>();
+  @$core.pragma('dart2js:noInline')
+  static OtherCloudDiscoveryStartingLocation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<OtherCloudDiscoveryStartingLocation>(create);
+  static OtherCloudDiscoveryStartingLocation? _defaultInstance;
+
+  OtherCloudDiscoveryStartingLocation_Location whichLocation() => _OtherCloudDiscoveryStartingLocation_LocationByTag[$_whichOneof(0)]!;
+  void clearLocation() => clearField($_whichOneof(0));
+
+  /// The AWS starting location for discovery.
+  @$pb.TagNumber(1)
+  OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation get awsLocation => $_getN(0);
+  @$pb.TagNumber(1)
+  set awsLocation(OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasAwsLocation() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearAwsLocation() => clearField(1);
+  @$pb.TagNumber(1)
+  OtherCloudDiscoveryStartingLocation_AwsDiscoveryStartingLocation ensureAwsLocation() => $_ensure(0);
 }
 
 /// Match discovery resources not covered by any other filter.
@@ -20505,9 +21790,9 @@ enum LargeCustomDictionaryConfig_Source {
 /// that satisfy the size requirements.
 class LargeCustomDictionaryConfig extends $pb.GeneratedMessage {
   factory LargeCustomDictionaryConfig({
-    $526.CloudStoragePath? outputPath,
-    $526.CloudStorageFileSet? cloudStorageFileSet,
-    $526.BigQueryField? bigQueryField,
+    $531.CloudStoragePath? outputPath,
+    $531.CloudStorageFileSet? cloudStorageFileSet,
+    $531.BigQueryField? bigQueryField,
   }) {
     final $result = create();
     if (outputPath != null) {
@@ -20532,9 +21817,9 @@ class LargeCustomDictionaryConfig extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LargeCustomDictionaryConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$526.CloudStoragePath>(1, _omitFieldNames ? '' : 'outputPath', subBuilder: $526.CloudStoragePath.create)
-    ..aOM<$526.CloudStorageFileSet>(2, _omitFieldNames ? '' : 'cloudStorageFileSet', subBuilder: $526.CloudStorageFileSet.create)
-    ..aOM<$526.BigQueryField>(3, _omitFieldNames ? '' : 'bigQueryField', subBuilder: $526.BigQueryField.create)
+    ..aOM<$531.CloudStoragePath>(1, _omitFieldNames ? '' : 'outputPath', subBuilder: $531.CloudStoragePath.create)
+    ..aOM<$531.CloudStorageFileSet>(2, _omitFieldNames ? '' : 'cloudStorageFileSet', subBuilder: $531.CloudStorageFileSet.create)
+    ..aOM<$531.BigQueryField>(3, _omitFieldNames ? '' : 'bigQueryField', subBuilder: $531.BigQueryField.create)
     ..hasRequiredFields = false
   ;
 
@@ -20567,39 +21852,39 @@ class LargeCustomDictionaryConfig extends $pb.GeneratedMessage {
   /// artifacts are modified, the dictionary is considered invalid and can no
   /// longer be used.
   @$pb.TagNumber(1)
-  $526.CloudStoragePath get outputPath => $_getN(0);
+  $531.CloudStoragePath get outputPath => $_getN(0);
   @$pb.TagNumber(1)
-  set outputPath($526.CloudStoragePath v) { setField(1, v); }
+  set outputPath($531.CloudStoragePath v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOutputPath() => $_has(0);
   @$pb.TagNumber(1)
   void clearOutputPath() => clearField(1);
   @$pb.TagNumber(1)
-  $526.CloudStoragePath ensureOutputPath() => $_ensure(0);
+  $531.CloudStoragePath ensureOutputPath() => $_ensure(0);
 
   /// Set of files containing newline-delimited lists of dictionary phrases.
   @$pb.TagNumber(2)
-  $526.CloudStorageFileSet get cloudStorageFileSet => $_getN(1);
+  $531.CloudStorageFileSet get cloudStorageFileSet => $_getN(1);
   @$pb.TagNumber(2)
-  set cloudStorageFileSet($526.CloudStorageFileSet v) { setField(2, v); }
+  set cloudStorageFileSet($531.CloudStorageFileSet v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCloudStorageFileSet() => $_has(1);
   @$pb.TagNumber(2)
   void clearCloudStorageFileSet() => clearField(2);
   @$pb.TagNumber(2)
-  $526.CloudStorageFileSet ensureCloudStorageFileSet() => $_ensure(1);
+  $531.CloudStorageFileSet ensureCloudStorageFileSet() => $_ensure(1);
 
   /// Field in a BigQuery table where each cell represents a dictionary phrase.
   @$pb.TagNumber(3)
-  $526.BigQueryField get bigQueryField => $_getN(2);
+  $531.BigQueryField get bigQueryField => $_getN(2);
   @$pb.TagNumber(3)
-  set bigQueryField($526.BigQueryField v) { setField(3, v); }
+  set bigQueryField($531.BigQueryField v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBigQueryField() => $_has(2);
   @$pb.TagNumber(3)
   void clearBigQueryField() => clearField(3);
   @$pb.TagNumber(3)
-  $526.BigQueryField ensureBigQueryField() => $_ensure(2);
+  $531.BigQueryField ensureBigQueryField() => $_ensure(2);
 }
 
 /// Summary statistics of a custom dictionary.
@@ -20669,8 +21954,8 @@ class StoredInfoTypeConfig extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? description,
     LargeCustomDictionaryConfig? largeCustomDictionary,
-    $526.CustomInfoType_Dictionary? dictionary,
-    $526.CustomInfoType_Regex? regex,
+    $531.CustomInfoType_Dictionary? dictionary,
+    $531.CustomInfoType_Regex? regex,
   }) {
     final $result = create();
     if (displayName != null) {
@@ -20705,8 +21990,8 @@ class StoredInfoTypeConfig extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'displayName')
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOM<LargeCustomDictionaryConfig>(3, _omitFieldNames ? '' : 'largeCustomDictionary', subBuilder: LargeCustomDictionaryConfig.create)
-    ..aOM<$526.CustomInfoType_Dictionary>(4, _omitFieldNames ? '' : 'dictionary', subBuilder: $526.CustomInfoType_Dictionary.create)
-    ..aOM<$526.CustomInfoType_Regex>(5, _omitFieldNames ? '' : 'regex', subBuilder: $526.CustomInfoType_Regex.create)
+    ..aOM<$531.CustomInfoType_Dictionary>(4, _omitFieldNames ? '' : 'dictionary', subBuilder: $531.CustomInfoType_Dictionary.create)
+    ..aOM<$531.CustomInfoType_Regex>(5, _omitFieldNames ? '' : 'regex', subBuilder: $531.CustomInfoType_Regex.create)
     ..hasRequiredFields = false
   ;
 
@@ -20768,27 +22053,27 @@ class StoredInfoTypeConfig extends $pb.GeneratedMessage {
 
   /// Store dictionary-based CustomInfoType.
   @$pb.TagNumber(4)
-  $526.CustomInfoType_Dictionary get dictionary => $_getN(3);
+  $531.CustomInfoType_Dictionary get dictionary => $_getN(3);
   @$pb.TagNumber(4)
-  set dictionary($526.CustomInfoType_Dictionary v) { setField(4, v); }
+  set dictionary($531.CustomInfoType_Dictionary v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDictionary() => $_has(3);
   @$pb.TagNumber(4)
   void clearDictionary() => clearField(4);
   @$pb.TagNumber(4)
-  $526.CustomInfoType_Dictionary ensureDictionary() => $_ensure(3);
+  $531.CustomInfoType_Dictionary ensureDictionary() => $_ensure(3);
 
   /// Store regular expression-based StoredInfoType.
   @$pb.TagNumber(5)
-  $526.CustomInfoType_Regex get regex => $_getN(4);
+  $531.CustomInfoType_Regex get regex => $_getN(4);
   @$pb.TagNumber(5)
-  set regex($526.CustomInfoType_Regex v) { setField(5, v); }
+  set regex($531.CustomInfoType_Regex v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRegex() => $_has(4);
   @$pb.TagNumber(5)
   void clearRegex() => clearField(5);
   @$pb.TagNumber(5)
-  $526.CustomInfoType_Regex ensureRegex() => $_ensure(4);
+  $531.CustomInfoType_Regex ensureRegex() => $_ensure(4);
 }
 
 enum StoredInfoTypeStats_Type {
@@ -21806,7 +23091,7 @@ class HybridFindingDetails extends $pb.GeneratedMessage {
     Container? containerDetails,
     $fixnum.Int64? fileOffset,
     $fixnum.Int64? rowOffset,
-    $526.TableOptions? tableOptions,
+    $531.TableOptions? tableOptions,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -21835,7 +23120,7 @@ class HybridFindingDetails extends $pb.GeneratedMessage {
     ..aOM<Container>(1, _omitFieldNames ? '' : 'containerDetails', subBuilder: Container.create)
     ..aInt64(2, _omitFieldNames ? '' : 'fileOffset')
     ..aInt64(3, _omitFieldNames ? '' : 'rowOffset')
-    ..aOM<$526.TableOptions>(4, _omitFieldNames ? '' : 'tableOptions', subBuilder: $526.TableOptions.create)
+    ..aOM<$531.TableOptions>(4, _omitFieldNames ? '' : 'tableOptions', subBuilder: $531.TableOptions.create)
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'labels', entryClassName: 'HybridFindingDetails.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.privacy.dlp.v2'))
     ..hasRequiredFields = false
   ;
@@ -21904,15 +23189,15 @@ class HybridFindingDetails extends $pb.GeneratedMessage {
   /// will be merged. Note that identifying_fields will only be stored to
   /// BigQuery, and only if the BigQuery action has been included.
   @$pb.TagNumber(4)
-  $526.TableOptions get tableOptions => $_getN(3);
+  $531.TableOptions get tableOptions => $_getN(3);
   @$pb.TagNumber(4)
-  set tableOptions($526.TableOptions v) { setField(4, v); }
+  set tableOptions($531.TableOptions v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTableOptions() => $_has(3);
   @$pb.TagNumber(4)
   void clearTableOptions() => clearField(4);
   @$pb.TagNumber(4)
-  $526.TableOptions ensureTableOptions() => $_ensure(3);
+  $531.TableOptions ensureTableOptions() => $_ensure(3);
 
   ///  Labels to represent user provided metadata about the data being inspected.
   ///  If configured by the job, some key values may be required.
@@ -22683,7 +23968,7 @@ class ProjectDataProfile extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? projectId,
     $299.Timestamp? profileLastGenerated,
-    $526.SensitivityScore? sensitivityScore,
+    $531.SensitivityScore? sensitivityScore,
     DataRiskLevel? dataRiskLevel,
     ProfileStatus? profileStatus,
     $fixnum.Int64? tableDataProfileCount,
@@ -22724,7 +24009,7 @@ class ProjectDataProfile extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'profileLastGenerated', subBuilder: $299.Timestamp.create)
-    ..aOM<$526.SensitivityScore>(4, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $526.SensitivityScore.create)
+    ..aOM<$531.SensitivityScore>(4, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $531.SensitivityScore.create)
     ..aOM<DataRiskLevel>(5, _omitFieldNames ? '' : 'dataRiskLevel', subBuilder: DataRiskLevel.create)
     ..aOM<ProfileStatus>(7, _omitFieldNames ? '' : 'profileStatus', subBuilder: ProfileStatus.create)
     ..aInt64(9, _omitFieldNames ? '' : 'tableDataProfileCount')
@@ -22763,7 +24048,7 @@ class ProjectDataProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearName() => clearField(1);
 
-  /// Project ID that was profiled.
+  /// Project ID or account that was profiled.
   @$pb.TagNumber(2)
   $core.String get projectId => $_getSZ(1);
   @$pb.TagNumber(2)
@@ -22787,15 +24072,15 @@ class ProjectDataProfile extends $pb.GeneratedMessage {
 
   /// The sensitivity score of this project.
   @$pb.TagNumber(4)
-  $526.SensitivityScore get sensitivityScore => $_getN(3);
+  $531.SensitivityScore get sensitivityScore => $_getN(3);
   @$pb.TagNumber(4)
-  set sensitivityScore($526.SensitivityScore v) { setField(4, v); }
+  set sensitivityScore($531.SensitivityScore v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSensitivityScore() => $_has(3);
   @$pb.TagNumber(4)
   void clearSensitivityScore() => clearField(4);
   @$pb.TagNumber(4)
-  $526.SensitivityScore ensureSensitivityScore() => $_ensure(3);
+  $531.SensitivityScore ensureSensitivityScore() => $_ensure(3);
 
   /// The data risk level of this project.
   @$pb.TagNumber(5)
@@ -22980,7 +24265,7 @@ class TableDataProfile extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? projectDataProfile,
     $core.String? fullResource,
-    $526.SensitivityScore? sensitivityScore,
+    $531.SensitivityScore? sensitivityScore,
     DataRiskLevel? dataRiskLevel,
     DataProfileConfigSnapshot? configSnapshot,
     $299.Timestamp? lastModifiedTime,
@@ -23093,7 +24378,7 @@ class TableDataProfile extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'projectDataProfile')
     ..aOS(3, _omitFieldNames ? '' : 'fullResource')
-    ..aOM<$526.SensitivityScore>(5, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $526.SensitivityScore.create)
+    ..aOM<$531.SensitivityScore>(5, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $531.SensitivityScore.create)
     ..aOM<DataRiskLevel>(6, _omitFieldNames ? '' : 'dataRiskLevel', subBuilder: DataRiskLevel.create)
     ..aOM<DataProfileConfigSnapshot>(7, _omitFieldNames ? '' : 'configSnapshot', subBuilder: DataProfileConfigSnapshot.create)
     ..aOM<$299.Timestamp>(8, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $299.Timestamp.create)
@@ -23173,15 +24458,15 @@ class TableDataProfile extends $pb.GeneratedMessage {
 
   /// The sensitivity score of this table.
   @$pb.TagNumber(5)
-  $526.SensitivityScore get sensitivityScore => $_getN(3);
+  $531.SensitivityScore get sensitivityScore => $_getN(3);
   @$pb.TagNumber(5)
-  set sensitivityScore($526.SensitivityScore v) { setField(5, v); }
+  set sensitivityScore($531.SensitivityScore v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSensitivityScore() => $_has(3);
   @$pb.TagNumber(5)
   void clearSensitivityScore() => clearField(5);
   @$pb.TagNumber(5)
-  $526.SensitivityScore ensureSensitivityScore() => $_ensure(3);
+  $531.SensitivityScore ensureSensitivityScore() => $_ensure(3);
 
   /// The data risk level of this table.
   @$pb.TagNumber(6)
@@ -23481,7 +24766,7 @@ class ProfileStatus extends $pb.GeneratedMessage {
 /// The infoType details for this column.
 class InfoTypeSummary extends $pb.GeneratedMessage {
   factory InfoTypeSummary({
-    $526.InfoType? infoType,
+    $531.InfoType? infoType,
   @$core.Deprecated('This field is deprecated.')
     $core.int? estimatedPrevalence,
   }) {
@@ -23500,7 +24785,7 @@ class InfoTypeSummary extends $pb.GeneratedMessage {
   factory InfoTypeSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'InfoTypeSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'estimatedPrevalence', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -23528,15 +24813,15 @@ class InfoTypeSummary extends $pb.GeneratedMessage {
 
   /// The infoType.
   @$pb.TagNumber(1)
-  $526.InfoType get infoType => $_getN(0);
+  $531.InfoType get infoType => $_getN(0);
   @$pb.TagNumber(1)
-  set infoType($526.InfoType v) { setField(1, v); }
+  set infoType($531.InfoType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInfoType() => $_has(0);
   @$pb.TagNumber(1)
   void clearInfoType() => clearField(1);
   @$pb.TagNumber(1)
-  $526.InfoType ensureInfoType() => $_ensure(0);
+  $531.InfoType ensureInfoType() => $_ensure(0);
 
   /// Not populated for predicted infotypes.
   @$core.Deprecated('This field is deprecated.')
@@ -23556,7 +24841,7 @@ class InfoTypeSummary extends $pb.GeneratedMessage {
 /// Infotype details for other infoTypes found within a column.
 class OtherInfoTypeSummary extends $pb.GeneratedMessage {
   factory OtherInfoTypeSummary({
-    $526.InfoType? infoType,
+    $531.InfoType? infoType,
     $core.int? estimatedPrevalence,
     $core.bool? excludedFromAnalysis,
   }) {
@@ -23577,7 +24862,7 @@ class OtherInfoTypeSummary extends $pb.GeneratedMessage {
   factory OtherInfoTypeSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OtherInfoTypeSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'estimatedPrevalence', $pb.PbFieldType.O3)
     ..aOB(3, _omitFieldNames ? '' : 'excludedFromAnalysis')
     ..hasRequiredFields = false
@@ -23606,15 +24891,15 @@ class OtherInfoTypeSummary extends $pb.GeneratedMessage {
 
   /// The other infoType.
   @$pb.TagNumber(1)
-  $526.InfoType get infoType => $_getN(0);
+  $531.InfoType get infoType => $_getN(0);
   @$pb.TagNumber(1)
-  set infoType($526.InfoType v) { setField(1, v); }
+  set infoType($531.InfoType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInfoType() => $_has(0);
   @$pb.TagNumber(1)
   void clearInfoType() => clearField(1);
   @$pb.TagNumber(1)
-  $526.InfoType ensureInfoType() => $_ensure(0);
+  $531.InfoType ensureInfoType() => $_ensure(0);
 
   /// Approximate percentage of non-null rows that contained data detected by
   /// this infotype.
@@ -23647,7 +24932,7 @@ class ColumnDataProfile extends $pb.GeneratedMessage {
     $core.String? tableDataProfile,
     $core.String? tableFullResource,
     $core.String? column,
-    $526.SensitivityScore? sensitivityScore,
+    $531.SensitivityScore? sensitivityScore,
     DataRiskLevel? dataRiskLevel,
     InfoTypeSummary? columnInfoType,
     $core.Iterable<OtherInfoTypeSummary>? otherMatches,
@@ -23736,7 +25021,7 @@ class ColumnDataProfile extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'tableDataProfile')
     ..aOS(5, _omitFieldNames ? '' : 'tableFullResource')
     ..aOS(6, _omitFieldNames ? '' : 'column')
-    ..aOM<$526.SensitivityScore>(7, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $526.SensitivityScore.create)
+    ..aOM<$531.SensitivityScore>(7, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $531.SensitivityScore.create)
     ..aOM<DataRiskLevel>(8, _omitFieldNames ? '' : 'dataRiskLevel', subBuilder: DataRiskLevel.create)
     ..aOM<InfoTypeSummary>(9, _omitFieldNames ? '' : 'columnInfoType', subBuilder: InfoTypeSummary.create)
     ..pc<OtherInfoTypeSummary>(10, _omitFieldNames ? '' : 'otherMatches', $pb.PbFieldType.PM, subBuilder: OtherInfoTypeSummary.create)
@@ -23829,15 +25114,15 @@ class ColumnDataProfile extends $pb.GeneratedMessage {
 
   /// The sensitivity of this column.
   @$pb.TagNumber(7)
-  $526.SensitivityScore get sensitivityScore => $_getN(5);
+  $531.SensitivityScore get sensitivityScore => $_getN(5);
   @$pb.TagNumber(7)
-  set sensitivityScore($526.SensitivityScore v) { setField(7, v); }
+  set sensitivityScore($531.SensitivityScore v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSensitivityScore() => $_has(5);
   @$pb.TagNumber(7)
   void clearSensitivityScore() => clearField(7);
   @$pb.TagNumber(7)
-  $526.SensitivityScore ensureSensitivityScore() => $_ensure(5);
+  $531.SensitivityScore ensureSensitivityScore() => $_ensure(5);
 
   /// The data risk level for this column.
   @$pb.TagNumber(8)
@@ -23991,6 +25276,7 @@ class ColumnDataProfile extends $pb.GeneratedMessage {
 ///  The profile for a file store.
 ///
 ///  * Cloud Storage: maps 1:1 with a bucket.
+///  * Amazon S3: maps 1:1 with a bucket.
 class FileStoreDataProfile extends $pb.GeneratedMessage {
   factory FileStoreDataProfile({
     $core.String? name,
@@ -24004,7 +25290,7 @@ class FileStoreDataProfile extends $pb.GeneratedMessage {
     FileStoreDataProfile_State? state,
     $299.Timestamp? profileLastGenerated,
     ResourceVisibility? resourceVisibility,
-    $526.SensitivityScore? sensitivityScore,
+    $531.SensitivityScore? sensitivityScore,
     DataRiskLevel? dataRiskLevel,
     $299.Timestamp? createTime,
     $299.Timestamp? lastModifiedTime,
@@ -24105,7 +25391,7 @@ class FileStoreDataProfile extends $pb.GeneratedMessage {
     ..e<FileStoreDataProfile_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: FileStoreDataProfile_State.STATE_UNSPECIFIED, valueOf: FileStoreDataProfile_State.valueOf, enumValues: FileStoreDataProfile_State.values)
     ..aOM<$299.Timestamp>(10, _omitFieldNames ? '' : 'profileLastGenerated', subBuilder: $299.Timestamp.create)
     ..e<ResourceVisibility>(11, _omitFieldNames ? '' : 'resourceVisibility', $pb.PbFieldType.OE, defaultOrMaker: ResourceVisibility.RESOURCE_VISIBILITY_UNSPECIFIED, valueOf: ResourceVisibility.valueOf, enumValues: ResourceVisibility.values)
-    ..aOM<$526.SensitivityScore>(12, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $526.SensitivityScore.create)
+    ..aOM<$531.SensitivityScore>(12, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $531.SensitivityScore.create)
     ..aOM<DataRiskLevel>(13, _omitFieldNames ? '' : 'dataRiskLevel', subBuilder: DataRiskLevel.create)
     ..aOM<$299.Timestamp>(14, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
     ..aOM<$299.Timestamp>(15, _omitFieldNames ? '' : 'lastModifiedTime', subBuilder: $299.Timestamp.create)
@@ -24174,6 +25460,7 @@ class FileStoreDataProfile extends $pb.GeneratedMessage {
   void clearProjectDataProfile() => clearField(3);
 
   /// The Google Cloud project ID that owns the resource.
+  /// For Amazon S3 buckets, this is the AWS Account Id.
   @$pb.TagNumber(4)
   $core.String get projectId => $_getSZ(3);
   @$pb.TagNumber(4)
@@ -24187,6 +25474,8 @@ class FileStoreDataProfile extends $pb.GeneratedMessage {
   ///
   ///  * Cloud Storage:
   ///  https://cloud.google.com/storage/docs/locations#available-locations
+  ///  * Amazon S3:
+  ///  https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints
   @$pb.TagNumber(5)
   $core.String get fileStoreLocation => $_getSZ(4);
   @$pb.TagNumber(5)
@@ -24199,6 +25488,7 @@ class FileStoreDataProfile extends $pb.GeneratedMessage {
   ///  The file store path.
   ///
   ///  * Cloud Storage: `gs://{bucket}`
+  ///  * Amazon S3: `s3://{bucket}`
   @$pb.TagNumber(6)
   $core.String get fileStorePath => $_getSZ(5);
   @$pb.TagNumber(6)
@@ -24267,15 +25557,15 @@ class FileStoreDataProfile extends $pb.GeneratedMessage {
 
   /// The sensitivity score of this resource.
   @$pb.TagNumber(12)
-  $526.SensitivityScore get sensitivityScore => $_getN(11);
+  $531.SensitivityScore get sensitivityScore => $_getN(11);
   @$pb.TagNumber(12)
-  set sensitivityScore($526.SensitivityScore v) { setField(12, v); }
+  set sensitivityScore($531.SensitivityScore v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSensitivityScore() => $_has(11);
   @$pb.TagNumber(12)
   void clearSensitivityScore() => clearField(12);
   @$pb.TagNumber(12)
-  $526.SensitivityScore ensureSensitivityScore() => $_ensure(11);
+  $531.SensitivityScore ensureSensitivityScore() => $_ensure(11);
 
   /// The data risk level of this resource.
   @$pb.TagNumber(13)
@@ -24364,8 +25654,11 @@ class FileStoreDataProfile extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   void clearFileStoreIsEmpty() => clearField(23);
 
-  /// The resource name of the resource profiled.
-  /// https://cloud.google.com/apis/design/resource_names#full_resource_name
+  ///  The resource name of the resource profiled.
+  ///  https://cloud.google.com/apis/design/resource_names#full_resource_name
+  ///
+  ///  Example format of an S3 bucket full resource name:
+  ///  `//cloudasset.googleapis.com/organizations/{org_id}/otherCloudConnections/aws/arn:aws:s3:::{bucket_name}`
   @$pb.TagNumber(24)
   $core.String get fullResource => $_getSZ(22);
   @$pb.TagNumber(24)
@@ -24379,7 +25672,7 @@ class FileStoreDataProfile extends $pb.GeneratedMessage {
 /// Information regarding the discovered InfoType.
 class FileStoreInfoTypeSummary extends $pb.GeneratedMessage {
   factory FileStoreInfoTypeSummary({
-    $526.InfoType? infoType,
+    $531.InfoType? infoType,
   }) {
     final $result = create();
     if (infoType != null) {
@@ -24392,7 +25685,7 @@ class FileStoreInfoTypeSummary extends $pb.GeneratedMessage {
   factory FileStoreInfoTypeSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FileStoreInfoTypeSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
-    ..aOM<$526.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $526.InfoType.create)
+    ..aOM<$531.InfoType>(1, _omitFieldNames ? '' : 'infoType', subBuilder: $531.InfoType.create)
     ..hasRequiredFields = false
   ;
 
@@ -24419,15 +25712,15 @@ class FileStoreInfoTypeSummary extends $pb.GeneratedMessage {
 
   /// The InfoType seen.
   @$pb.TagNumber(1)
-  $526.InfoType get infoType => $_getN(0);
+  $531.InfoType get infoType => $_getN(0);
   @$pb.TagNumber(1)
-  set infoType($526.InfoType v) { setField(1, v); }
+  set infoType($531.InfoType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInfoType() => $_has(0);
   @$pb.TagNumber(1)
   void clearInfoType() => clearField(1);
   @$pb.TagNumber(1)
-  $526.InfoType ensureInfoType() => $_ensure(0);
+  $531.InfoType ensureInfoType() => $_ensure(0);
 }
 
 /// Information regarding the discovered file extension.
@@ -24487,7 +25780,7 @@ class FileClusterSummary extends $pb.GeneratedMessage {
   factory FileClusterSummary({
     FileClusterType? fileClusterType,
     $core.Iterable<FileStoreInfoTypeSummary>? fileStoreInfoTypeSummaries,
-    $526.SensitivityScore? sensitivityScore,
+    $531.SensitivityScore? sensitivityScore,
     DataRiskLevel? dataRiskLevel,
     $core.Iterable<Error>? errors,
     $core.Iterable<FileExtensionInfo>? fileExtensionsScanned,
@@ -24528,7 +25821,7 @@ class FileClusterSummary extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FileClusterSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.privacy.dlp.v2'), createEmptyInstance: create)
     ..aOM<FileClusterType>(1, _omitFieldNames ? '' : 'fileClusterType', subBuilder: FileClusterType.create)
     ..pc<FileStoreInfoTypeSummary>(2, _omitFieldNames ? '' : 'fileStoreInfoTypeSummaries', $pb.PbFieldType.PM, subBuilder: FileStoreInfoTypeSummary.create)
-    ..aOM<$526.SensitivityScore>(3, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $526.SensitivityScore.create)
+    ..aOM<$531.SensitivityScore>(3, _omitFieldNames ? '' : 'sensitivityScore', subBuilder: $531.SensitivityScore.create)
     ..aOM<DataRiskLevel>(4, _omitFieldNames ? '' : 'dataRiskLevel', subBuilder: DataRiskLevel.create)
     ..pc<Error>(6, _omitFieldNames ? '' : 'errors', $pb.PbFieldType.PM, subBuilder: Error.create)
     ..pc<FileExtensionInfo>(7, _omitFieldNames ? '' : 'fileExtensionsScanned', $pb.PbFieldType.PM, subBuilder: FileExtensionInfo.create)
@@ -24577,15 +25870,15 @@ class FileClusterSummary extends $pb.GeneratedMessage {
   /// The sensitivity score of this cluster. The score will be SENSITIVITY_LOW
   /// if nothing has been scanned.
   @$pb.TagNumber(3)
-  $526.SensitivityScore get sensitivityScore => $_getN(2);
+  $531.SensitivityScore get sensitivityScore => $_getN(2);
   @$pb.TagNumber(3)
-  set sensitivityScore($526.SensitivityScore v) { setField(3, v); }
+  set sensitivityScore($531.SensitivityScore v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSensitivityScore() => $_has(2);
   @$pb.TagNumber(3)
   void clearSensitivityScore() => clearField(3);
   @$pb.TagNumber(3)
-  $526.SensitivityScore ensureSensitivityScore() => $_ensure(2);
+  $531.SensitivityScore ensureSensitivityScore() => $_ensure(2);
 
   /// The data risk level of this cluster. RISK_LOW if nothing has been
   /// scanned.
@@ -24871,6 +26164,7 @@ class ListFileStoreDataProfilesRequest extends $pb.GeneratedMessage {
   ///  * A restriction has the form of `{field} {operator} {value}`.
   ///  * Supported fields/values:
   ///      - `project_id` - The Google Cloud project ID.
+  ///      - `account_id` - The AWS account ID.
   ///      - `file_store_path` - The path like "gs://bucket".
   ///      - `data_source_type` - The profile's data source type, like
   ///      "google/storage/bucket".
@@ -26457,8 +27751,13 @@ class DataSourceType extends $pb.GeneratedMessage {
   static DataSourceType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataSourceType>(create);
   static DataSourceType? _defaultInstance;
 
-  /// Output only. An identifying string to the type of resource being profiled.
-  /// Current values: google/bigquery/table, google/project
+  ///  Output only. An identifying string to the type of resource being profiled.
+  ///  Current values:
+  ///
+  ///  * google/bigquery/table
+  ///  * google/project
+  ///  * google/sql/table
+  ///  * google/gcs/bucket
   @$pb.TagNumber(1)
   $core.String get dataSource => $_getSZ(0);
   @$pb.TagNumber(1)

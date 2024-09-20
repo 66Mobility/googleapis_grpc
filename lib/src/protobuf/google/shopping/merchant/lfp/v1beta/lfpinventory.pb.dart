@@ -15,7 +15,7 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/timestamp.pb.dart' as $299;
-import '../../../type/types.pb.dart' as $528;
+import '../../../type/types.pb.dart' as $533;
 
 /// Local Inventory for the merchant.
 class LfpInventory extends $pb.GeneratedMessage {
@@ -27,7 +27,7 @@ class LfpInventory extends $pb.GeneratedMessage {
     $core.String? regionCode,
     $core.String? contentLanguage,
     $core.String? gtin,
-    $528.Price? price,
+    $533.Price? price,
     $core.String? availability,
     $fixnum.Int64? quantity,
     $299.Timestamp? collectionTime,
@@ -92,7 +92,7 @@ class LfpInventory extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'regionCode')
     ..aOS(6, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(7, _omitFieldNames ? '' : 'gtin')
-    ..aOM<$528.Price>(8, _omitFieldNames ? '' : 'price', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(8, _omitFieldNames ? '' : 'price', subBuilder: $533.Price.create)
     ..aOS(9, _omitFieldNames ? '' : 'availability')
     ..aInt64(10, _omitFieldNames ? '' : 'quantity')
     ..aOM<$299.Timestamp>(11, _omitFieldNames ? '' : 'collectionTime', subBuilder: $299.Timestamp.create)
@@ -207,15 +207,15 @@ class LfpInventory extends $pb.GeneratedMessage {
 
   /// Optional. The current price of the product.
   @$pb.TagNumber(8)
-  $528.Price get price => $_getN(7);
+  $533.Price get price => $_getN(7);
   @$pb.TagNumber(8)
-  set price($528.Price v) { setField(8, v); }
+  set price($533.Price v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPrice() => $_has(7);
   @$pb.TagNumber(8)
   void clearPrice() => clearField(8);
   @$pb.TagNumber(8)
-  $528.Price ensurePrice() => $_ensure(7);
+  $533.Price ensurePrice() => $_ensure(7);
 
   /// Required. Availability of the product at this store.
   /// For accepted attribute values, see the [local product inventory data

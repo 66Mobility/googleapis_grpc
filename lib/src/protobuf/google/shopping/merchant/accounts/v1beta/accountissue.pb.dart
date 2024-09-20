@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../type/datetime.pb.dart' as $325;
-import '../../../type/types.pbenum.dart' as $528;
+import '../../../type/types.pbenum.dart' as $533;
 import 'accountissue.pbenum.dart';
 
 export 'accountissue.pbenum.dart';
@@ -90,7 +90,7 @@ class AccountIssue_ImpactedDestination_Impact extends $pb.GeneratedMessage {
 /// The impact of the issue on a destination.
 class AccountIssue_ImpactedDestination extends $pb.GeneratedMessage {
   factory AccountIssue_ImpactedDestination({
-    $528.ReportingContext_ReportingContextEnum? reportingContext,
+    $533.ReportingContext_ReportingContextEnum? reportingContext,
     $core.Iterable<AccountIssue_ImpactedDestination_Impact>? impacts,
   }) {
     final $result = create();
@@ -107,7 +107,7 @@ class AccountIssue_ImpactedDestination extends $pb.GeneratedMessage {
   factory AccountIssue_ImpactedDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountIssue.ImpactedDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..e<$528.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $528.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $528.ReportingContext_ReportingContextEnum.valueOf, enumValues: $528.ReportingContext_ReportingContextEnum.values)
+    ..e<$533.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $533.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $533.ReportingContext_ReportingContextEnum.valueOf, enumValues: $533.ReportingContext_ReportingContextEnum.values)
     ..pc<AccountIssue_ImpactedDestination_Impact>(2, _omitFieldNames ? '' : 'impacts', $pb.PbFieldType.PM, subBuilder: AccountIssue_ImpactedDestination_Impact.create)
     ..hasRequiredFields = false
   ;
@@ -135,9 +135,9 @@ class AccountIssue_ImpactedDestination extends $pb.GeneratedMessage {
 
   /// The impacted reporting context.
   @$pb.TagNumber(1)
-  $528.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
+  $533.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($528.ReportingContext_ReportingContextEnum v) { setField(1, v); }
+  set reportingContext($533.ReportingContext_ReportingContextEnum v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReportingContext() => $_has(0);
   @$pb.TagNumber(1)

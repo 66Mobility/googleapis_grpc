@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../api/monitored_resource.pb.dart' as $195;
-import 'common.pb.dart' as $523;
+import 'common.pb.dart' as $528;
 import 'group.pb.dart' as $193;
 
 enum ListGroupsRequest_Filter {
@@ -540,7 +540,7 @@ class ListGroupMembersRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? filter,
-    $523.TimeInterval? interval,
+    $528.TimeInterval? interval,
     $core.String? name,
   }) {
     final $result = create();
@@ -569,7 +569,7 @@ class ListGroupMembersRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(4, _omitFieldNames ? '' : 'pageToken')
     ..aOS(5, _omitFieldNames ? '' : 'filter')
-    ..aOM<$523.TimeInterval>(6, _omitFieldNames ? '' : 'interval', subBuilder: $523.TimeInterval.create)
+    ..aOM<$528.TimeInterval>(6, _omitFieldNames ? '' : 'interval', subBuilder: $528.TimeInterval.create)
     ..aOS(7, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
   ;
@@ -639,15 +639,15 @@ class ListGroupMembersRequest extends $pb.GeneratedMessage {
   /// included in the response.  If no interval is provided then the group
   /// membership over the last minute is returned.
   @$pb.TagNumber(6)
-  $523.TimeInterval get interval => $_getN(3);
+  $528.TimeInterval get interval => $_getN(3);
   @$pb.TagNumber(6)
-  set interval($523.TimeInterval v) { setField(6, v); }
+  set interval($528.TimeInterval v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasInterval() => $_has(3);
   @$pb.TagNumber(6)
   void clearInterval() => clearField(6);
   @$pb.TagNumber(6)
-  $523.TimeInterval ensureInterval() => $_ensure(3);
+  $528.TimeInterval ensureInterval() => $_ensure(3);
 
   ///  Required. The group whose members are listed. The format is:
   ///

@@ -18,7 +18,7 @@ import '../../protobuf/duration.pb.dart' as $261;
 import '../../protobuf/timestamp.pb.dart' as $299;
 import '../../rpc/code.pbenum.dart' as $402;
 import '../../type/date.pb.dart' as $324;
-import '../../type/timeofday.pb.dart' as $527;
+import '../../type/timeofday.pb.dart' as $532;
 import 'transfer_types.pbenum.dart';
 
 export 'transfer_types.pbenum.dart';
@@ -2230,8 +2230,8 @@ class Schedule extends $pb.GeneratedMessage {
   factory Schedule({
     $324.Date? scheduleStartDate,
     $324.Date? scheduleEndDate,
-    $527.TimeOfDay? startTimeOfDay,
-    $527.TimeOfDay? endTimeOfDay,
+    $532.TimeOfDay? startTimeOfDay,
+    $532.TimeOfDay? endTimeOfDay,
     $261.Duration? repeatInterval,
   }) {
     final $result = create();
@@ -2259,8 +2259,8 @@ class Schedule extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Schedule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.storagetransfer.v1'), createEmptyInstance: create)
     ..aOM<$324.Date>(1, _omitFieldNames ? '' : 'scheduleStartDate', subBuilder: $324.Date.create)
     ..aOM<$324.Date>(2, _omitFieldNames ? '' : 'scheduleEndDate', subBuilder: $324.Date.create)
-    ..aOM<$527.TimeOfDay>(3, _omitFieldNames ? '' : 'startTimeOfDay', subBuilder: $527.TimeOfDay.create)
-    ..aOM<$527.TimeOfDay>(4, _omitFieldNames ? '' : 'endTimeOfDay', subBuilder: $527.TimeOfDay.create)
+    ..aOM<$532.TimeOfDay>(3, _omitFieldNames ? '' : 'startTimeOfDay', subBuilder: $532.TimeOfDay.create)
+    ..aOM<$532.TimeOfDay>(4, _omitFieldNames ? '' : 'endTimeOfDay', subBuilder: $532.TimeOfDay.create)
     ..aOM<$261.Duration>(5, _omitFieldNames ? '' : 'repeatInterval', subBuilder: $261.Duration.create)
     ..hasRequiredFields = false
   ;
@@ -2350,15 +2350,15 @@ class Schedule extends $pb.GeneratedMessage {
   ///  *   Recurring transfers run at the specified time each day, through
   ///      `schedule_end_date`.
   @$pb.TagNumber(3)
-  $527.TimeOfDay get startTimeOfDay => $_getN(2);
+  $532.TimeOfDay get startTimeOfDay => $_getN(2);
   @$pb.TagNumber(3)
-  set startTimeOfDay($527.TimeOfDay v) { setField(3, v); }
+  set startTimeOfDay($532.TimeOfDay v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStartTimeOfDay() => $_has(2);
   @$pb.TagNumber(3)
   void clearStartTimeOfDay() => clearField(3);
   @$pb.TagNumber(3)
-  $527.TimeOfDay ensureStartTimeOfDay() => $_ensure(2);
+  $532.TimeOfDay ensureStartTimeOfDay() => $_ensure(2);
 
   ///  The time in UTC that no further transfer operations are scheduled. Combined
   ///  with
@@ -2377,15 +2377,15 @@ class Schedule extends $pb.GeneratedMessage {
   ///  *   If `end_time_of_day` is set and `schedule_end_date` is not set, then
   ///      [INVALID_ARGUMENT][google.rpc.Code.INVALID_ARGUMENT] is returned.
   @$pb.TagNumber(4)
-  $527.TimeOfDay get endTimeOfDay => $_getN(3);
+  $532.TimeOfDay get endTimeOfDay => $_getN(3);
   @$pb.TagNumber(4)
-  set endTimeOfDay($527.TimeOfDay v) { setField(4, v); }
+  set endTimeOfDay($532.TimeOfDay v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndTimeOfDay() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndTimeOfDay() => clearField(4);
   @$pb.TagNumber(4)
-  $527.TimeOfDay ensureEndTimeOfDay() => $_ensure(3);
+  $532.TimeOfDay ensureEndTimeOfDay() => $_ensure(3);
 
   /// Interval between the start of each scheduled TransferOperation. If
   /// unspecified, the default value is 24 hours. This value may not be less than

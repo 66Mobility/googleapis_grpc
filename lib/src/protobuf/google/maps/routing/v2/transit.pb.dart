@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../type/localized_text.pb.dart' as $457;
-import 'location.pb.dart' as $482;
+import 'location.pb.dart' as $487;
 import 'transit.pbenum.dart';
 
 export 'transit.pbenum.dart';
@@ -261,7 +261,7 @@ class TransitLine extends $pb.GeneratedMessage {
 class TransitStop extends $pb.GeneratedMessage {
   factory TransitStop({
     $core.String? name,
-    $482.Location? location,
+    $487.Location? location,
   }) {
     final $result = create();
     if (name != null) {
@@ -278,7 +278,7 @@ class TransitStop extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransitStop', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$482.Location>(2, _omitFieldNames ? '' : 'location', subBuilder: $482.Location.create)
+    ..aOM<$487.Location>(2, _omitFieldNames ? '' : 'location', subBuilder: $487.Location.create)
     ..hasRequiredFields = false
   ;
 
@@ -315,15 +315,15 @@ class TransitStop extends $pb.GeneratedMessage {
 
   /// The location of the stop expressed in latitude/longitude coordinates.
   @$pb.TagNumber(2)
-  $482.Location get location => $_getN(1);
+  $487.Location get location => $_getN(1);
   @$pb.TagNumber(2)
-  set location($482.Location v) { setField(2, v); }
+  set location($487.Location v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLocation() => $_has(1);
   @$pb.TagNumber(2)
   void clearLocation() => clearField(2);
   @$pb.TagNumber(2)
-  $482.Location ensureLocation() => $_ensure(1);
+  $487.Location ensureLocation() => $_ensure(1);
 }
 
 /// Information about a vehicle used in transit routes.

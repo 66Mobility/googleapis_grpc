@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/types.pb.dart' as $528;
+import '../../../type/types.pb.dart' as $533;
 import 'online_return_policy.pbenum.dart';
 
 export 'online_return_policy.pbenum.dart';
@@ -233,7 +233,7 @@ class ListOnlineReturnPoliciesResponse extends $pb.GeneratedMessage {
 class OnlineReturnPolicy_ReturnShippingFee extends $pb.GeneratedMessage {
   factory OnlineReturnPolicy_ReturnShippingFee({
     OnlineReturnPolicy_ReturnShippingFee_Type? type,
-    $528.Price? fixedFee,
+    $533.Price? fixedFee,
   }) {
     final $result = create();
     if (type != null) {
@@ -250,7 +250,7 @@ class OnlineReturnPolicy_ReturnShippingFee extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OnlineReturnPolicy.ReturnShippingFee', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..e<OnlineReturnPolicy_ReturnShippingFee_Type>(1, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: OnlineReturnPolicy_ReturnShippingFee_Type.TYPE_UNSPECIFIED, valueOf: OnlineReturnPolicy_ReturnShippingFee_Type.valueOf, enumValues: OnlineReturnPolicy_ReturnShippingFee_Type.values)
-    ..aOM<$528.Price>(2, _omitFieldNames ? '' : 'fixedFee', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(2, _omitFieldNames ? '' : 'fixedFee', subBuilder: $533.Price.create)
     ..hasRequiredFields = false
   ;
 
@@ -289,15 +289,15 @@ class OnlineReturnPolicy_ReturnShippingFee extends $pb.GeneratedMessage {
   /// is `FIXED`. We will treat the return shipping fee as free if type is
   /// `FIXED` and this value is not set.
   @$pb.TagNumber(2)
-  $528.Price get fixedFee => $_getN(1);
+  $533.Price get fixedFee => $_getN(1);
   @$pb.TagNumber(2)
-  set fixedFee($528.Price v) { setField(2, v); }
+  set fixedFee($533.Price v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFixedFee() => $_has(1);
   @$pb.TagNumber(2)
   void clearFixedFee() => clearField(2);
   @$pb.TagNumber(2)
-  $528.Price ensureFixedFee() => $_ensure(1);
+  $533.Price ensureFixedFee() => $_ensure(1);
 }
 
 enum OnlineReturnPolicy_RestockingFee_Type {
@@ -309,7 +309,7 @@ enum OnlineReturnPolicy_RestockingFee_Type {
 /// The restocking fee. This can be a flat fee or a micro percent.
 class OnlineReturnPolicy_RestockingFee extends $pb.GeneratedMessage {
   factory OnlineReturnPolicy_RestockingFee({
-    $528.Price? fixedFee,
+    $533.Price? fixedFee,
     $core.int? microPercent,
   }) {
     final $result = create();
@@ -332,7 +332,7 @@ class OnlineReturnPolicy_RestockingFee extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OnlineReturnPolicy.RestockingFee', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$528.Price>(1, _omitFieldNames ? '' : 'fixedFee', subBuilder: $528.Price.create)
+    ..aOM<$533.Price>(1, _omitFieldNames ? '' : 'fixedFee', subBuilder: $533.Price.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'microPercent', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -363,15 +363,15 @@ class OnlineReturnPolicy_RestockingFee extends $pb.GeneratedMessage {
 
   /// Fixed restocking fee.
   @$pb.TagNumber(1)
-  $528.Price get fixedFee => $_getN(0);
+  $533.Price get fixedFee => $_getN(0);
   @$pb.TagNumber(1)
-  set fixedFee($528.Price v) { setField(1, v); }
+  set fixedFee($533.Price v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFixedFee() => $_has(0);
   @$pb.TagNumber(1)
   void clearFixedFee() => clearField(1);
   @$pb.TagNumber(1)
-  $528.Price ensureFixedFee() => $_ensure(0);
+  $533.Price ensureFixedFee() => $_ensure(0);
 
   /// Percent of total price in micros. 15,000,000 means 15% of the total
   /// price would be charged.
