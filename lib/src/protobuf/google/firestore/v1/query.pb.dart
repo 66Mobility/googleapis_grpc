@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/wrappers.pb.dart' as $304;
-import 'document.pb.dart' as $129;
+import '../../protobuf/wrappers.pb.dart' as $306;
+import 'document.pb.dart' as $130;
 import 'query.pbenum.dart';
 
 export 'query.pbenum.dart';
@@ -264,7 +264,7 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
   factory StructuredQuery_FieldFilter({
     StructuredQuery_FieldReference? field_1,
     StructuredQuery_FieldFilter_Operator? op,
-    $129.Value? value,
+    $130.Value? value,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -285,7 +285,7 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.FieldFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
     ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field', subBuilder: StructuredQuery_FieldReference.create)
     ..e<StructuredQuery_FieldFilter_Operator>(2, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE, defaultOrMaker: StructuredQuery_FieldFilter_Operator.OPERATOR_UNSPECIFIED, valueOf: StructuredQuery_FieldFilter_Operator.valueOf, enumValues: StructuredQuery_FieldFilter_Operator.values)
-    ..aOM<$129.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $129.Value.create)
+    ..aOM<$130.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $130.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -334,15 +334,15 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
 
   /// The value to compare to.
   @$pb.TagNumber(3)
-  $129.Value get value => $_getN(2);
+  $130.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($129.Value v) { setField(3, v); }
+  set value($130.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearValue() => clearField(3);
   @$pb.TagNumber(3)
-  $129.Value ensureValue() => $_ensure(2);
+  $130.Value ensureValue() => $_ensure(2);
 }
 
 enum StructuredQuery_UnaryFilter_OperandType {
@@ -610,11 +610,11 @@ class StructuredQuery_Projection extends $pb.GeneratedMessage {
 class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   factory StructuredQuery_FindNearest({
     StructuredQuery_FieldReference? vectorField,
-    $129.Value? queryVector,
+    $130.Value? queryVector,
     StructuredQuery_FindNearest_DistanceMeasure? distanceMeasure,
-    $304.Int32Value? limit,
+    $306.Int32Value? limit,
     $core.String? distanceResultField,
-    $304.DoubleValue? distanceThreshold,
+    $306.DoubleValue? distanceThreshold,
   }) {
     final $result = create();
     if (vectorField != null) {
@@ -643,11 +643,11 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.FindNearest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
     ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'vectorField', subBuilder: StructuredQuery_FieldReference.create)
-    ..aOM<$129.Value>(2, _omitFieldNames ? '' : 'queryVector', subBuilder: $129.Value.create)
+    ..aOM<$130.Value>(2, _omitFieldNames ? '' : 'queryVector', subBuilder: $130.Value.create)
     ..e<StructuredQuery_FindNearest_DistanceMeasure>(3, _omitFieldNames ? '' : 'distanceMeasure', $pb.PbFieldType.OE, defaultOrMaker: StructuredQuery_FindNearest_DistanceMeasure.DISTANCE_MEASURE_UNSPECIFIED, valueOf: StructuredQuery_FindNearest_DistanceMeasure.valueOf, enumValues: StructuredQuery_FindNearest_DistanceMeasure.values)
-    ..aOM<$304.Int32Value>(4, _omitFieldNames ? '' : 'limit', subBuilder: $304.Int32Value.create)
+    ..aOM<$306.Int32Value>(4, _omitFieldNames ? '' : 'limit', subBuilder: $306.Int32Value.create)
     ..aOS(5, _omitFieldNames ? '' : 'distanceResultField')
-    ..aOM<$304.DoubleValue>(6, _omitFieldNames ? '' : 'distanceThreshold', subBuilder: $304.DoubleValue.create)
+    ..aOM<$306.DoubleValue>(6, _omitFieldNames ? '' : 'distanceThreshold', subBuilder: $306.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -689,15 +689,15 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   /// Required. The query vector that we are searching on. Must be a vector of
   /// no more than 2048 dimensions.
   @$pb.TagNumber(2)
-  $129.Value get queryVector => $_getN(1);
+  $130.Value get queryVector => $_getN(1);
   @$pb.TagNumber(2)
-  set queryVector($129.Value v) { setField(2, v); }
+  set queryVector($130.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasQueryVector() => $_has(1);
   @$pb.TagNumber(2)
   void clearQueryVector() => clearField(2);
   @$pb.TagNumber(2)
-  $129.Value ensureQueryVector() => $_ensure(1);
+  $130.Value ensureQueryVector() => $_ensure(1);
 
   /// Required. The distance measure to use, required.
   @$pb.TagNumber(3)
@@ -712,15 +712,15 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   /// Required. The number of nearest neighbors to return. Must be a positive
   /// integer of no more than 1000.
   @$pb.TagNumber(4)
-  $304.Int32Value get limit => $_getN(3);
+  $306.Int32Value get limit => $_getN(3);
   @$pb.TagNumber(4)
-  set limit($304.Int32Value v) { setField(4, v); }
+  set limit($306.Int32Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLimit() => $_has(3);
   @$pb.TagNumber(4)
   void clearLimit() => clearField(4);
   @$pb.TagNumber(4)
-  $304.Int32Value ensureLimit() => $_ensure(3);
+  $306.Int32Value ensureLimit() => $_ensure(3);
 
   /// Optional. Optional name of the field to output the result of the vector
   /// distance calculation. Must conform to [document field
@@ -743,15 +743,15 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   ///  For EUCLIDEAN, COSINE: WHERE distance <= distance_threshold
   ///  For DOT_PRODUCT:       WHERE distance >= distance_threshold
   @$pb.TagNumber(6)
-  $304.DoubleValue get distanceThreshold => $_getN(5);
+  $306.DoubleValue get distanceThreshold => $_getN(5);
   @$pb.TagNumber(6)
-  set distanceThreshold($304.DoubleValue v) { setField(6, v); }
+  set distanceThreshold($306.DoubleValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDistanceThreshold() => $_has(5);
   @$pb.TagNumber(6)
   void clearDistanceThreshold() => clearField(6);
   @$pb.TagNumber(6)
-  $304.DoubleValue ensureDistanceThreshold() => $_ensure(5);
+  $306.DoubleValue ensureDistanceThreshold() => $_ensure(5);
 }
 
 ///  A Firestore query.
@@ -769,7 +769,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
     $core.Iterable<StructuredQuery_CollectionSelector>? from,
     StructuredQuery_Filter? where,
     $core.Iterable<StructuredQuery_Order>? orderBy,
-    $304.Int32Value? limit,
+    $306.Int32Value? limit,
     $core.int? offset,
     Cursor? startAt,
     Cursor? endAt,
@@ -814,7 +814,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
     ..pc<StructuredQuery_CollectionSelector>(2, _omitFieldNames ? '' : 'from', $pb.PbFieldType.PM, subBuilder: StructuredQuery_CollectionSelector.create)
     ..aOM<StructuredQuery_Filter>(3, _omitFieldNames ? '' : 'where', subBuilder: StructuredQuery_Filter.create)
     ..pc<StructuredQuery_Order>(4, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.PM, subBuilder: StructuredQuery_Order.create)
-    ..aOM<$304.Int32Value>(5, _omitFieldNames ? '' : 'limit', subBuilder: $304.Int32Value.create)
+    ..aOM<$306.Int32Value>(5, _omitFieldNames ? '' : 'limit', subBuilder: $306.Int32Value.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
     ..aOM<Cursor>(7, _omitFieldNames ? '' : 'startAt', subBuilder: Cursor.create)
     ..aOM<Cursor>(8, _omitFieldNames ? '' : 'endAt', subBuilder: Cursor.create)
@@ -906,15 +906,15 @@ class StructuredQuery extends $pb.GeneratedMessage {
   ///
   ///  * The value must be greater than or equal to zero if specified.
   @$pb.TagNumber(5)
-  $304.Int32Value get limit => $_getN(4);
+  $306.Int32Value get limit => $_getN(4);
   @$pb.TagNumber(5)
-  set limit($304.Int32Value v) { setField(5, v); }
+  set limit($306.Int32Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLimit() => $_has(4);
   @$pb.TagNumber(5)
   void clearLimit() => clearField(5);
   @$pb.TagNumber(5)
-  $304.Int32Value ensureLimit() => $_ensure(4);
+  $306.Int32Value ensureLimit() => $_ensure(4);
 
   ///  The number of documents to skip before returning the first result.
   ///
@@ -1018,7 +1018,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
 ///  so it does not require a field reference.
 class StructuredAggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
   factory StructuredAggregationQuery_Aggregation_Count({
-    $304.Int64Value? upTo,
+    $306.Int64Value? upTo,
   }) {
     final $result = create();
     if (upTo != null) {
@@ -1031,7 +1031,7 @@ class StructuredAggregationQuery_Aggregation_Count extends $pb.GeneratedMessage 
   factory StructuredAggregationQuery_Aggregation_Count.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation.Count', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<$304.Int64Value>(1, _omitFieldNames ? '' : 'upTo', subBuilder: $304.Int64Value.create)
+    ..aOM<$306.Int64Value>(1, _omitFieldNames ? '' : 'upTo', subBuilder: $306.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1074,15 +1074,15 @@ class StructuredAggregationQuery_Aggregation_Count extends $pb.GeneratedMessage 
   ///
   ///  * Must be greater than zero when present.
   @$pb.TagNumber(1)
-  $304.Int64Value get upTo => $_getN(0);
+  $306.Int64Value get upTo => $_getN(0);
   @$pb.TagNumber(1)
-  set upTo($304.Int64Value v) { setField(1, v); }
+  set upTo($306.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpTo() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpTo() => clearField(1);
   @$pb.TagNumber(1)
-  $304.Int64Value ensureUpTo() => $_ensure(0);
+  $306.Int64Value ensureUpTo() => $_ensure(0);
 }
 
 ///  Sum of the values of the requested field.
@@ -1462,7 +1462,7 @@ class StructuredAggregationQuery extends $pb.GeneratedMessage {
 /// A position in a query result set.
 class Cursor extends $pb.GeneratedMessage {
   factory Cursor({
-    $core.Iterable<$129.Value>? values,
+    $core.Iterable<$130.Value>? values,
     $core.bool? before,
   }) {
     final $result = create();
@@ -1479,7 +1479,7 @@ class Cursor extends $pb.GeneratedMessage {
   factory Cursor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cursor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..pc<$129.Value>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $129.Value.create)
+    ..pc<$130.Value>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $130.Value.create)
     ..aOB(2, _omitFieldNames ? '' : 'before')
     ..hasRequiredFields = false
   ;
@@ -1510,7 +1510,7 @@ class Cursor extends $pb.GeneratedMessage {
   ///
   ///  Can contain fewer values than specified in the order by clause.
   @$pb.TagNumber(1)
-  $core.List<$129.Value> get values => $_getList(0);
+  $core.List<$130.Value> get values => $_getList(0);
 
   /// If the position is just before or just after the given values, relative
   /// to the sort order defined by the query.

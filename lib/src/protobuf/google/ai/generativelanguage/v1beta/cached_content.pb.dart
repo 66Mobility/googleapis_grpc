@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $261;
-import '../../../protobuf/timestamp.pb.dart' as $299;
-import 'content.pb.dart' as $329;
+import '../../../protobuf/duration.pb.dart' as $263;
+import '../../../protobuf/timestamp.pb.dart' as $301;
+import 'content.pb.dart' as $331;
 
 /// Metadata on the usage of the cached content.
 class CachedContent_UsageMetadata extends $pb.GeneratedMessage {
@@ -83,14 +83,14 @@ class CachedContent extends $pb.GeneratedMessage {
   factory CachedContent({
     $core.String? name,
     $core.String? model,
-    $329.Content? systemInstruction,
-    $core.Iterable<$329.Content>? contents,
-    $core.Iterable<$329.Tool>? tools,
-    $329.ToolConfig? toolConfig,
-    $299.Timestamp? createTime,
-    $299.Timestamp? updateTime,
-    $299.Timestamp? expireTime,
-    $261.Duration? ttl,
+    $331.Content? systemInstruction,
+    $core.Iterable<$331.Content>? contents,
+    $core.Iterable<$331.Tool>? tools,
+    $331.ToolConfig? toolConfig,
+    $301.Timestamp? createTime,
+    $301.Timestamp? updateTime,
+    $301.Timestamp? expireTime,
+    $263.Duration? ttl,
     $core.String? displayName,
     CachedContent_UsageMetadata? usageMetadata,
   }) {
@@ -146,14 +146,14 @@ class CachedContent extends $pb.GeneratedMessage {
     ..oo(0, [9, 10])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'model')
-    ..aOM<$329.Content>(3, _omitFieldNames ? '' : 'systemInstruction', subBuilder: $329.Content.create)
-    ..pc<$329.Content>(4, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $329.Content.create)
-    ..pc<$329.Tool>(5, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM, subBuilder: $329.Tool.create)
-    ..aOM<$329.ToolConfig>(6, _omitFieldNames ? '' : 'toolConfig', subBuilder: $329.ToolConfig.create)
-    ..aOM<$299.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$261.Duration>(10, _omitFieldNames ? '' : 'ttl', subBuilder: $261.Duration.create)
+    ..aOM<$331.Content>(3, _omitFieldNames ? '' : 'systemInstruction', subBuilder: $331.Content.create)
+    ..pc<$331.Content>(4, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $331.Content.create)
+    ..pc<$331.Tool>(5, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM, subBuilder: $331.Tool.create)
+    ..aOM<$331.ToolConfig>(6, _omitFieldNames ? '' : 'toolConfig', subBuilder: $331.ToolConfig.create)
+    ..aOM<$301.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(9, _omitFieldNames ? '' : 'expireTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$263.Duration>(10, _omitFieldNames ? '' : 'ttl', subBuilder: $263.Duration.create)
     ..aOS(11, _omitFieldNames ? '' : 'displayName')
     ..aOM<CachedContent_UsageMetadata>(12, _omitFieldNames ? '' : 'usageMetadata', subBuilder: CachedContent_UsageMetadata.create)
     ..hasRequiredFields = false
@@ -208,87 +208,87 @@ class CachedContent extends $pb.GeneratedMessage {
   /// Optional. Input only. Immutable. Developer set system instruction.
   /// Currently text only.
   @$pb.TagNumber(3)
-  $329.Content get systemInstruction => $_getN(2);
+  $331.Content get systemInstruction => $_getN(2);
   @$pb.TagNumber(3)
-  set systemInstruction($329.Content v) { setField(3, v); }
+  set systemInstruction($331.Content v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSystemInstruction() => $_has(2);
   @$pb.TagNumber(3)
   void clearSystemInstruction() => clearField(3);
   @$pb.TagNumber(3)
-  $329.Content ensureSystemInstruction() => $_ensure(2);
+  $331.Content ensureSystemInstruction() => $_ensure(2);
 
   /// Optional. Input only. Immutable. The content to cache.
   @$pb.TagNumber(4)
-  $core.List<$329.Content> get contents => $_getList(3);
+  $core.List<$331.Content> get contents => $_getList(3);
 
   /// Optional. Input only. Immutable. A list of `Tools` the model may use to
   /// generate the next response
   @$pb.TagNumber(5)
-  $core.List<$329.Tool> get tools => $_getList(4);
+  $core.List<$331.Tool> get tools => $_getList(4);
 
   /// Optional. Input only. Immutable. Tool config. This config is shared for all
   /// tools.
   @$pb.TagNumber(6)
-  $329.ToolConfig get toolConfig => $_getN(5);
+  $331.ToolConfig get toolConfig => $_getN(5);
   @$pb.TagNumber(6)
-  set toolConfig($329.ToolConfig v) { setField(6, v); }
+  set toolConfig($331.ToolConfig v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasToolConfig() => $_has(5);
   @$pb.TagNumber(6)
   void clearToolConfig() => clearField(6);
   @$pb.TagNumber(6)
-  $329.ToolConfig ensureToolConfig() => $_ensure(5);
+  $331.ToolConfig ensureToolConfig() => $_ensure(5);
 
   /// Output only. Creation time of the cache entry.
   @$pb.TagNumber(7)
-  $299.Timestamp get createTime => $_getN(6);
+  $301.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($299.Timestamp v) { setField(7, v); }
+  set createTime($301.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $299.Timestamp ensureCreateTime() => $_ensure(6);
+  $301.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. When the cache entry was last updated in UTC time.
   @$pb.TagNumber(8)
-  $299.Timestamp get updateTime => $_getN(7);
+  $301.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($299.Timestamp v) { setField(8, v); }
+  set updateTime($301.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $299.Timestamp ensureUpdateTime() => $_ensure(7);
+  $301.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Timestamp in UTC of when this resource is considered expired.
   /// This is *always* provided on output, regardless of what was sent
   /// on input.
   @$pb.TagNumber(9)
-  $299.Timestamp get expireTime => $_getN(8);
+  $301.Timestamp get expireTime => $_getN(8);
   @$pb.TagNumber(9)
-  set expireTime($299.Timestamp v) { setField(9, v); }
+  set expireTime($301.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasExpireTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearExpireTime() => clearField(9);
   @$pb.TagNumber(9)
-  $299.Timestamp ensureExpireTime() => $_ensure(8);
+  $301.Timestamp ensureExpireTime() => $_ensure(8);
 
   /// Input only. New TTL for this resource, input only.
   @$pb.TagNumber(10)
-  $261.Duration get ttl => $_getN(9);
+  $263.Duration get ttl => $_getN(9);
   @$pb.TagNumber(10)
-  set ttl($261.Duration v) { setField(10, v); }
+  set ttl($263.Duration v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTtl() => $_has(9);
   @$pb.TagNumber(10)
   void clearTtl() => clearField(10);
   @$pb.TagNumber(10)
-  $261.Duration ensureTtl() => $_ensure(9);
+  $263.Duration ensureTtl() => $_ensure(9);
 
   /// Optional. Immutable. The user-generated meaningful display name of the
   /// cached content. Maximum 128 Unicode characters.

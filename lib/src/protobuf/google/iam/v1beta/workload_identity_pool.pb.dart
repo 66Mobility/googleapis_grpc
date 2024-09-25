@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $330;
+import '../../protobuf/field_mask.pb.dart' as $332;
 import 'workload_identity_pool.pbenum.dart';
 
 export 'workload_identity_pool.pbenum.dart';
@@ -853,7 +853,7 @@ class CreateWorkloadIdentityPoolRequest extends $pb.GeneratedMessage {
 class UpdateWorkloadIdentityPoolRequest extends $pb.GeneratedMessage {
   factory UpdateWorkloadIdentityPoolRequest({
     WorkloadIdentityPool? workloadIdentityPool,
-    $330.FieldMask? updateMask,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (workloadIdentityPool != null) {
@@ -870,7 +870,7 @@ class UpdateWorkloadIdentityPoolRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateWorkloadIdentityPoolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v1beta'), createEmptyInstance: create)
     ..aOM<WorkloadIdentityPool>(1, _omitFieldNames ? '' : 'workloadIdentityPool', subBuilder: WorkloadIdentityPool.create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -909,15 +909,15 @@ class UpdateWorkloadIdentityPoolRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields update.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(1);
+  $332.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(1);
+  $332.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for DeleteWorkloadIdentityPool.
@@ -1330,7 +1330,7 @@ class CreateWorkloadIdentityPoolProviderRequest extends $pb.GeneratedMessage {
 class UpdateWorkloadIdentityPoolProviderRequest extends $pb.GeneratedMessage {
   factory UpdateWorkloadIdentityPoolProviderRequest({
     WorkloadIdentityPoolProvider? workloadIdentityPoolProvider,
-    $330.FieldMask? updateMask,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (workloadIdentityPoolProvider != null) {
@@ -1347,7 +1347,7 @@ class UpdateWorkloadIdentityPoolProviderRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateWorkloadIdentityPoolProviderRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v1beta'), createEmptyInstance: create)
     ..aOM<WorkloadIdentityPoolProvider>(1, _omitFieldNames ? '' : 'workloadIdentityPoolProvider', subBuilder: WorkloadIdentityPoolProvider.create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1386,15 +1386,15 @@ class UpdateWorkloadIdentityPoolProviderRequest extends $pb.GeneratedMessage {
 
   /// Required. The list of fields to update.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(1);
+  $332.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(1);
+  $332.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for DeleteWorkloadIdentityPoolProvider.

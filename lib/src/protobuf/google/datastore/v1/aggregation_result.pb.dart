@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $299;
-import 'entity.pb.dart' as $418;
-import 'query.pbenum.dart' as $419;
+import '../../protobuf/timestamp.pb.dart' as $301;
+import 'entity.pb.dart' as $420;
+import 'query.pbenum.dart' as $421;
 
 ///  The result of a single bucket from a Datastore aggregation query.
 ///
@@ -24,7 +24,7 @@ import 'query.pbenum.dart' as $419;
 ///  present for each result.
 class AggregationResult extends $pb.GeneratedMessage {
   factory AggregationResult({
-    $core.Map<$core.String, $418.Value>? aggregateProperties,
+    $core.Map<$core.String, $420.Value>? aggregateProperties,
   }) {
     final $result = create();
     if (aggregateProperties != null) {
@@ -37,7 +37,7 @@ class AggregationResult extends $pb.GeneratedMessage {
   factory AggregationResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..m<$core.String, $418.Value>(2, _omitFieldNames ? '' : 'aggregateProperties', entryClassName: 'AggregationResult.AggregatePropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $418.Value.create, valueDefaultOrMaker: $418.Value.getDefault, packageName: const $pb.PackageName('google.datastore.v1'))
+    ..m<$core.String, $420.Value>(2, _omitFieldNames ? '' : 'aggregateProperties', entryClassName: 'AggregationResult.AggregatePropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $420.Value.create, valueDefaultOrMaker: $420.Value.getDefault, packageName: const $pb.PackageName('google.datastore.v1'))
     ..hasRequiredFields = false
   ;
 
@@ -69,15 +69,15 @@ class AggregationResult extends $pb.GeneratedMessage {
   ///  the aggregation function on input and the size of this map equals the
   ///  number of aggregation functions in the query.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $418.Value> get aggregateProperties => $_getMap(0);
+  $core.Map<$core.String, $420.Value> get aggregateProperties => $_getMap(0);
 }
 
 /// A batch of aggregation results produced by an aggregation query.
 class AggregationResultBatch extends $pb.GeneratedMessage {
   factory AggregationResultBatch({
     $core.Iterable<AggregationResult>? aggregationResults,
-    $419.QueryResultBatch_MoreResultsType? moreResults,
-    $299.Timestamp? readTime,
+    $421.QueryResultBatch_MoreResultsType? moreResults,
+    $301.Timestamp? readTime,
   }) {
     final $result = create();
     if (aggregationResults != null) {
@@ -97,8 +97,8 @@ class AggregationResultBatch extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationResultBatch', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
     ..pc<AggregationResult>(1, _omitFieldNames ? '' : 'aggregationResults', $pb.PbFieldType.PM, subBuilder: AggregationResult.create)
-    ..e<$419.QueryResultBatch_MoreResultsType>(2, _omitFieldNames ? '' : 'moreResults', $pb.PbFieldType.OE, defaultOrMaker: $419.QueryResultBatch_MoreResultsType.MORE_RESULTS_TYPE_UNSPECIFIED, valueOf: $419.QueryResultBatch_MoreResultsType.valueOf, enumValues: $419.QueryResultBatch_MoreResultsType.values)
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'readTime', subBuilder: $299.Timestamp.create)
+    ..e<$421.QueryResultBatch_MoreResultsType>(2, _omitFieldNames ? '' : 'moreResults', $pb.PbFieldType.OE, defaultOrMaker: $421.QueryResultBatch_MoreResultsType.MORE_RESULTS_TYPE_UNSPECIFIED, valueOf: $421.QueryResultBatch_MoreResultsType.valueOf, enumValues: $421.QueryResultBatch_MoreResultsType.values)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'readTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -131,9 +131,9 @@ class AggregationResultBatch extends $pb.GeneratedMessage {
   /// Only COUNT(*) aggregations are supported in the initial launch. Therefore,
   /// expected result type is limited to `NO_MORE_RESULTS`.
   @$pb.TagNumber(2)
-  $419.QueryResultBatch_MoreResultsType get moreResults => $_getN(1);
+  $421.QueryResultBatch_MoreResultsType get moreResults => $_getN(1);
   @$pb.TagNumber(2)
-  set moreResults($419.QueryResultBatch_MoreResultsType v) { setField(2, v); }
+  set moreResults($421.QueryResultBatch_MoreResultsType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMoreResults() => $_has(1);
   @$pb.TagNumber(2)
@@ -145,15 +145,15 @@ class AggregationResultBatch extends $pb.GeneratedMessage {
   ///  can have a greater timestamp. Each batch's read timestamp
   ///  is valid for all preceding batches.
   @$pb.TagNumber(3)
-  $299.Timestamp get readTime => $_getN(2);
+  $301.Timestamp get readTime => $_getN(2);
   @$pb.TagNumber(3)
-  set readTime($299.Timestamp v) { setField(3, v); }
+  set readTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasReadTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearReadTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureReadTime() => $_ensure(2);
+  $301.Timestamp ensureReadTime() => $_ensure(2);
 }
 
 

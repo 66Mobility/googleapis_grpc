@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'membership.pb.dart' as $95;
-import 'message.pb.dart' as $94;
-import 'reaction.pb.dart' as $99;
-import 'space.pb.dart' as $97;
+import 'membership.pb.dart' as $96;
+import 'message.pb.dart' as $95;
+import 'reaction.pb.dart' as $100;
+import 'space.pb.dart' as $98;
 
 ///  Event payload for a new membership.
 ///
 ///  Event type: `google.workspace.chat.membership.v1.created`.
 class MembershipCreatedEventData extends $pb.GeneratedMessage {
   factory MembershipCreatedEventData({
-    $95.Membership? membership,
+    $96.Membership? membership,
   }) {
     final $result = create();
     if (membership != null) {
@@ -36,7 +36,7 @@ class MembershipCreatedEventData extends $pb.GeneratedMessage {
   factory MembershipCreatedEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MembershipCreatedEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$95.Membership>(1, _omitFieldNames ? '' : 'membership', subBuilder: $95.Membership.create)
+    ..aOM<$96.Membership>(1, _omitFieldNames ? '' : 'membership', subBuilder: $96.Membership.create)
     ..hasRequiredFields = false
   ;
 
@@ -63,15 +63,15 @@ class MembershipCreatedEventData extends $pb.GeneratedMessage {
 
   /// The new membership.
   @$pb.TagNumber(1)
-  $95.Membership get membership => $_getN(0);
+  $96.Membership get membership => $_getN(0);
   @$pb.TagNumber(1)
-  set membership($95.Membership v) { setField(1, v); }
+  set membership($96.Membership v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMembership() => $_has(0);
   @$pb.TagNumber(1)
   void clearMembership() => clearField(1);
   @$pb.TagNumber(1)
-  $95.Membership ensureMembership() => $_ensure(0);
+  $96.Membership ensureMembership() => $_ensure(0);
 }
 
 ///  Event payload for a deleted membership.
@@ -79,7 +79,7 @@ class MembershipCreatedEventData extends $pb.GeneratedMessage {
 ///  Event type: `google.workspace.chat.membership.v1.deleted`
 class MembershipDeletedEventData extends $pb.GeneratedMessage {
   factory MembershipDeletedEventData({
-    $95.Membership? membership,
+    $96.Membership? membership,
   }) {
     final $result = create();
     if (membership != null) {
@@ -92,7 +92,7 @@ class MembershipDeletedEventData extends $pb.GeneratedMessage {
   factory MembershipDeletedEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MembershipDeletedEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$95.Membership>(1, _omitFieldNames ? '' : 'membership', subBuilder: $95.Membership.create)
+    ..aOM<$96.Membership>(1, _omitFieldNames ? '' : 'membership', subBuilder: $96.Membership.create)
     ..hasRequiredFields = false
   ;
 
@@ -119,15 +119,15 @@ class MembershipDeletedEventData extends $pb.GeneratedMessage {
 
   /// The deleted membership. Only the `name` and `state` fields are populated.
   @$pb.TagNumber(1)
-  $95.Membership get membership => $_getN(0);
+  $96.Membership get membership => $_getN(0);
   @$pb.TagNumber(1)
-  set membership($95.Membership v) { setField(1, v); }
+  set membership($96.Membership v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMembership() => $_has(0);
   @$pb.TagNumber(1)
   void clearMembership() => clearField(1);
   @$pb.TagNumber(1)
-  $95.Membership ensureMembership() => $_ensure(0);
+  $96.Membership ensureMembership() => $_ensure(0);
 }
 
 ///  Event payload for an updated membership.
@@ -135,7 +135,7 @@ class MembershipDeletedEventData extends $pb.GeneratedMessage {
 ///  Event type: `google.workspace.chat.membership.v1.updated`
 class MembershipUpdatedEventData extends $pb.GeneratedMessage {
   factory MembershipUpdatedEventData({
-    $95.Membership? membership,
+    $96.Membership? membership,
   }) {
     final $result = create();
     if (membership != null) {
@@ -148,7 +148,7 @@ class MembershipUpdatedEventData extends $pb.GeneratedMessage {
   factory MembershipUpdatedEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MembershipUpdatedEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$95.Membership>(1, _omitFieldNames ? '' : 'membership', subBuilder: $95.Membership.create)
+    ..aOM<$96.Membership>(1, _omitFieldNames ? '' : 'membership', subBuilder: $96.Membership.create)
     ..hasRequiredFields = false
   ;
 
@@ -175,15 +175,15 @@ class MembershipUpdatedEventData extends $pb.GeneratedMessage {
 
   /// The updated membership.
   @$pb.TagNumber(1)
-  $95.Membership get membership => $_getN(0);
+  $96.Membership get membership => $_getN(0);
   @$pb.TagNumber(1)
-  set membership($95.Membership v) { setField(1, v); }
+  set membership($96.Membership v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMembership() => $_has(0);
   @$pb.TagNumber(1)
   void clearMembership() => clearField(1);
   @$pb.TagNumber(1)
-  $95.Membership ensureMembership() => $_ensure(0);
+  $96.Membership ensureMembership() => $_ensure(0);
 }
 
 ///  Event payload for multiple new memberships.
@@ -335,7 +335,7 @@ class MembershipBatchDeletedEventData extends $pb.GeneratedMessage {
 ///  Event type: `google.workspace.chat.message.v1.created`
 class MessageCreatedEventData extends $pb.GeneratedMessage {
   factory MessageCreatedEventData({
-    $94.Message? message,
+    $95.Message? message,
   }) {
     final $result = create();
     if (message != null) {
@@ -348,7 +348,7 @@ class MessageCreatedEventData extends $pb.GeneratedMessage {
   factory MessageCreatedEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MessageCreatedEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$94.Message>(1, _omitFieldNames ? '' : 'message', subBuilder: $94.Message.create)
+    ..aOM<$95.Message>(1, _omitFieldNames ? '' : 'message', subBuilder: $95.Message.create)
     ..hasRequiredFields = false
   ;
 
@@ -375,15 +375,15 @@ class MessageCreatedEventData extends $pb.GeneratedMessage {
 
   /// The new message.
   @$pb.TagNumber(1)
-  $94.Message get message => $_getN(0);
+  $95.Message get message => $_getN(0);
   @$pb.TagNumber(1)
-  set message($94.Message v) { setField(1, v); }
+  set message($95.Message v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
   void clearMessage() => clearField(1);
   @$pb.TagNumber(1)
-  $94.Message ensureMessage() => $_ensure(0);
+  $95.Message ensureMessage() => $_ensure(0);
 }
 
 ///  Event payload for an updated message.
@@ -391,7 +391,7 @@ class MessageCreatedEventData extends $pb.GeneratedMessage {
 ///  Event type: `google.workspace.chat.message.v1.updated`
 class MessageUpdatedEventData extends $pb.GeneratedMessage {
   factory MessageUpdatedEventData({
-    $94.Message? message,
+    $95.Message? message,
   }) {
     final $result = create();
     if (message != null) {
@@ -404,7 +404,7 @@ class MessageUpdatedEventData extends $pb.GeneratedMessage {
   factory MessageUpdatedEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MessageUpdatedEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$94.Message>(1, _omitFieldNames ? '' : 'message', subBuilder: $94.Message.create)
+    ..aOM<$95.Message>(1, _omitFieldNames ? '' : 'message', subBuilder: $95.Message.create)
     ..hasRequiredFields = false
   ;
 
@@ -431,15 +431,15 @@ class MessageUpdatedEventData extends $pb.GeneratedMessage {
 
   /// The updated message.
   @$pb.TagNumber(1)
-  $94.Message get message => $_getN(0);
+  $95.Message get message => $_getN(0);
   @$pb.TagNumber(1)
-  set message($94.Message v) { setField(1, v); }
+  set message($95.Message v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
   void clearMessage() => clearField(1);
   @$pb.TagNumber(1)
-  $94.Message ensureMessage() => $_ensure(0);
+  $95.Message ensureMessage() => $_ensure(0);
 }
 
 ///  Event payload for a deleted message.
@@ -447,7 +447,7 @@ class MessageUpdatedEventData extends $pb.GeneratedMessage {
 ///  Event type: `google.workspace.chat.message.v1.deleted`
 class MessageDeletedEventData extends $pb.GeneratedMessage {
   factory MessageDeletedEventData({
-    $94.Message? message,
+    $95.Message? message,
   }) {
     final $result = create();
     if (message != null) {
@@ -460,7 +460,7 @@ class MessageDeletedEventData extends $pb.GeneratedMessage {
   factory MessageDeletedEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MessageDeletedEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$94.Message>(1, _omitFieldNames ? '' : 'message', subBuilder: $94.Message.create)
+    ..aOM<$95.Message>(1, _omitFieldNames ? '' : 'message', subBuilder: $95.Message.create)
     ..hasRequiredFields = false
   ;
 
@@ -488,15 +488,15 @@ class MessageDeletedEventData extends $pb.GeneratedMessage {
   /// The deleted message. Only the `name`, `createTime`, `deleteTime`, and
   /// `deletionMetadata` fields are populated.
   @$pb.TagNumber(1)
-  $94.Message get message => $_getN(0);
+  $95.Message get message => $_getN(0);
   @$pb.TagNumber(1)
-  set message($94.Message v) { setField(1, v); }
+  set message($95.Message v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMessage() => $_has(0);
   @$pb.TagNumber(1)
   void clearMessage() => clearField(1);
   @$pb.TagNumber(1)
-  $94.Message ensureMessage() => $_ensure(0);
+  $95.Message ensureMessage() => $_ensure(0);
 }
 
 ///  Event payload for multiple new messages.
@@ -648,7 +648,7 @@ class MessageBatchDeletedEventData extends $pb.GeneratedMessage {
 ///  Event type: `google.workspace.chat.space.v1.updated`
 class SpaceUpdatedEventData extends $pb.GeneratedMessage {
   factory SpaceUpdatedEventData({
-    $97.Space? space,
+    $98.Space? space,
   }) {
     final $result = create();
     if (space != null) {
@@ -661,7 +661,7 @@ class SpaceUpdatedEventData extends $pb.GeneratedMessage {
   factory SpaceUpdatedEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SpaceUpdatedEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$97.Space>(1, _omitFieldNames ? '' : 'space', subBuilder: $97.Space.create)
+    ..aOM<$98.Space>(1, _omitFieldNames ? '' : 'space', subBuilder: $98.Space.create)
     ..hasRequiredFields = false
   ;
 
@@ -688,15 +688,15 @@ class SpaceUpdatedEventData extends $pb.GeneratedMessage {
 
   /// The updated space.
   @$pb.TagNumber(1)
-  $97.Space get space => $_getN(0);
+  $98.Space get space => $_getN(0);
   @$pb.TagNumber(1)
-  set space($97.Space v) { setField(1, v); }
+  set space($98.Space v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpace() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpace() => clearField(1);
   @$pb.TagNumber(1)
-  $97.Space ensureSpace() => $_ensure(0);
+  $98.Space ensureSpace() => $_ensure(0);
 }
 
 ///  Event payload for multiple updates to a space.
@@ -752,7 +752,7 @@ class SpaceBatchUpdatedEventData extends $pb.GeneratedMessage {
 ///  Event type: `google.workspace.chat.reaction.v1.created`
 class ReactionCreatedEventData extends $pb.GeneratedMessage {
   factory ReactionCreatedEventData({
-    $99.Reaction? reaction,
+    $100.Reaction? reaction,
   }) {
     final $result = create();
     if (reaction != null) {
@@ -765,7 +765,7 @@ class ReactionCreatedEventData extends $pb.GeneratedMessage {
   factory ReactionCreatedEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReactionCreatedEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$99.Reaction>(1, _omitFieldNames ? '' : 'reaction', subBuilder: $99.Reaction.create)
+    ..aOM<$100.Reaction>(1, _omitFieldNames ? '' : 'reaction', subBuilder: $100.Reaction.create)
     ..hasRequiredFields = false
   ;
 
@@ -792,15 +792,15 @@ class ReactionCreatedEventData extends $pb.GeneratedMessage {
 
   /// The new reaction.
   @$pb.TagNumber(1)
-  $99.Reaction get reaction => $_getN(0);
+  $100.Reaction get reaction => $_getN(0);
   @$pb.TagNumber(1)
-  set reaction($99.Reaction v) { setField(1, v); }
+  set reaction($100.Reaction v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReaction() => $_has(0);
   @$pb.TagNumber(1)
   void clearReaction() => clearField(1);
   @$pb.TagNumber(1)
-  $99.Reaction ensureReaction() => $_ensure(0);
+  $100.Reaction ensureReaction() => $_ensure(0);
 }
 
 ///  Event payload for a deleted reaction.
@@ -808,7 +808,7 @@ class ReactionCreatedEventData extends $pb.GeneratedMessage {
 ///  Type: `google.workspace.chat.reaction.v1.deleted`
 class ReactionDeletedEventData extends $pb.GeneratedMessage {
   factory ReactionDeletedEventData({
-    $99.Reaction? reaction,
+    $100.Reaction? reaction,
   }) {
     final $result = create();
     if (reaction != null) {
@@ -821,7 +821,7 @@ class ReactionDeletedEventData extends $pb.GeneratedMessage {
   factory ReactionDeletedEventData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReactionDeletedEventData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$99.Reaction>(1, _omitFieldNames ? '' : 'reaction', subBuilder: $99.Reaction.create)
+    ..aOM<$100.Reaction>(1, _omitFieldNames ? '' : 'reaction', subBuilder: $100.Reaction.create)
     ..hasRequiredFields = false
   ;
 
@@ -848,15 +848,15 @@ class ReactionDeletedEventData extends $pb.GeneratedMessage {
 
   /// The deleted reaction.
   @$pb.TagNumber(1)
-  $99.Reaction get reaction => $_getN(0);
+  $100.Reaction get reaction => $_getN(0);
   @$pb.TagNumber(1)
-  set reaction($99.Reaction v) { setField(1, v); }
+  set reaction($100.Reaction v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReaction() => $_has(0);
   @$pb.TagNumber(1)
   void clearReaction() => clearField(1);
   @$pb.TagNumber(1)
-  $99.Reaction ensureReaction() => $_ensure(0);
+  $100.Reaction ensureReaction() => $_ensure(0);
 }
 
 ///  Event payload for multiple new reactions.

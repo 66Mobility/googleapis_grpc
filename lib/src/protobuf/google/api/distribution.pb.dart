@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/any.pb.dart' as $318;
-import '../protobuf/timestamp.pb.dart' as $299;
+import '../protobuf/any.pb.dart' as $320;
+import '../protobuf/timestamp.pb.dart' as $301;
 
 /// The range of the population values.
 class Distribution_Range extends $pb.GeneratedMessage {
@@ -449,8 +449,8 @@ class Distribution_BucketOptions extends $pb.GeneratedMessage {
 class Distribution_Exemplar extends $pb.GeneratedMessage {
   factory Distribution_Exemplar({
     $core.double? value,
-    $299.Timestamp? timestamp,
-    $core.Iterable<$318.Any>? attachments,
+    $301.Timestamp? timestamp,
+    $core.Iterable<$320.Any>? attachments,
   }) {
     final $result = create();
     if (value != null) {
@@ -470,8 +470,8 @@ class Distribution_Exemplar extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Distribution.Exemplar', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
     ..a<$core.double>(1, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'timestamp', subBuilder: $299.Timestamp.create)
-    ..pc<$318.Any>(3, _omitFieldNames ? '' : 'attachments', $pb.PbFieldType.PM, subBuilder: $318.Any.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'timestamp', subBuilder: $301.Timestamp.create)
+    ..pc<$320.Any>(3, _omitFieldNames ? '' : 'attachments', $pb.PbFieldType.PM, subBuilder: $320.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -509,15 +509,15 @@ class Distribution_Exemplar extends $pb.GeneratedMessage {
 
   /// The observation (sampling) time of the above value.
   @$pb.TagNumber(2)
-  $299.Timestamp get timestamp => $_getN(1);
+  $301.Timestamp get timestamp => $_getN(1);
   @$pb.TagNumber(2)
-  set timestamp($299.Timestamp v) { setField(2, v); }
+  set timestamp($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimestamp() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimestamp() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureTimestamp() => $_ensure(1);
+  $301.Timestamp ensureTimestamp() => $_ensure(1);
 
   ///  Contextual information about the example value. Examples are:
   ///
@@ -531,7 +531,7 @@ class Distribution_Exemplar extends $pb.GeneratedMessage {
   ///  There may be only a single attachment of any given message type in a
   ///  single exemplar, and this is enforced by the system.
   @$pb.TagNumber(3)
-  $core.List<$318.Any> get attachments => $_getList(2);
+  $core.List<$320.Any> get attachments => $_getList(2);
 }
 
 ///  `Distribution` contains summary statistics for a population of values. It

@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/localized_text.pb.dart' as $457;
-import 'reference.pb.dart' as $460;
+import '../../../type/localized_text.pb.dart' as $459;
+import 'reference.pb.dart' as $462;
 
 /// A block of content that can be served individually.
 class ContentBlock extends $pb.GeneratedMessage {
   factory ContentBlock({
     $core.String? topic,
-    $457.LocalizedText? content,
-    $460.References? references,
+    $459.LocalizedText? content,
+    $462.References? references,
   }) {
     final $result = create();
     if (topic != null) {
@@ -41,8 +41,8 @@ class ContentBlock extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContentBlock', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'topic')
-    ..aOM<$457.LocalizedText>(2, _omitFieldNames ? '' : 'content', subBuilder: $457.LocalizedText.create)
-    ..aOM<$460.References>(3, _omitFieldNames ? '' : 'references', subBuilder: $460.References.create)
+    ..aOM<$459.LocalizedText>(2, _omitFieldNames ? '' : 'content', subBuilder: $459.LocalizedText.create)
+    ..aOM<$462.References>(3, _omitFieldNames ? '' : 'references', subBuilder: $462.References.create)
     ..hasRequiredFields = false
   ;
 
@@ -79,15 +79,15 @@ class ContentBlock extends $pb.GeneratedMessage {
 
   /// Content related to the topic.
   @$pb.TagNumber(2)
-  $457.LocalizedText get content => $_getN(1);
+  $459.LocalizedText get content => $_getN(1);
   @$pb.TagNumber(2)
-  set content($457.LocalizedText v) { setField(2, v); }
+  set content($459.LocalizedText v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasContent() => $_has(1);
   @$pb.TagNumber(2)
   void clearContent() => clearField(2);
   @$pb.TagNumber(2)
-  $457.LocalizedText ensureContent() => $_ensure(1);
+  $459.LocalizedText ensureContent() => $_ensure(1);
 
   ///  Experimental: See
   ///  https://developers.google.com/maps/documentation/places/web-service/experimental/places-generative
@@ -95,15 +95,15 @@ class ContentBlock extends $pb.GeneratedMessage {
   ///
   ///  References that are related to this block of content.
   @$pb.TagNumber(3)
-  $460.References get references => $_getN(2);
+  $462.References get references => $_getN(2);
   @$pb.TagNumber(3)
-  set references($460.References v) { setField(3, v); }
+  set references($462.References v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasReferences() => $_has(2);
   @$pb.TagNumber(3)
   void clearReferences() => clearField(3);
   @$pb.TagNumber(3)
-  $460.References ensureReferences() => $_ensure(2);
+  $462.References ensureReferences() => $_ensure(2);
 }
 
 

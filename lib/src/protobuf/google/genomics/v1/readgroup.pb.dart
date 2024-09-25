@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $258;
+import '../../protobuf/struct.pb.dart' as $260;
 
 class ReadGroup_Experiment extends $pb.GeneratedMessage {
   factory ReadGroup_Experiment({
@@ -242,7 +242,7 @@ class ReadGroup extends $pb.GeneratedMessage {
     $core.int? predictedInsertSize,
     $core.Iterable<ReadGroup_Program>? programs,
     $core.String? referenceSetId,
-    $core.Map<$core.String, $258.ListValue>? info,
+    $core.Map<$core.String, $260.ListValue>? info,
   }) {
     final $result = create();
     if (id != null) {
@@ -291,7 +291,7 @@ class ReadGroup extends $pb.GeneratedMessage {
     ..a<$core.int>(7, _omitFieldNames ? '' : 'predictedInsertSize', $pb.PbFieldType.O3)
     ..pc<ReadGroup_Program>(10, _omitFieldNames ? '' : 'programs', $pb.PbFieldType.PM, subBuilder: ReadGroup_Program.create)
     ..aOS(11, _omitFieldNames ? '' : 'referenceSetId')
-    ..m<$core.String, $258.ListValue>(12, _omitFieldNames ? '' : 'info', entryClassName: 'ReadGroup.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $258.ListValue.create, valueDefaultOrMaker: $258.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
+    ..m<$core.String, $260.ListValue>(12, _omitFieldNames ? '' : 'info', entryClassName: 'ReadGroup.InfoEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $260.ListValue.create, valueDefaultOrMaker: $260.ListValue.getDefault, packageName: const $pb.PackageName('google.genomics.v1'))
     ..hasRequiredFields = false
   ;
 
@@ -411,7 +411,7 @@ class ReadGroup extends $pb.GeneratedMessage {
   /// A map of additional read group information. This must be of the form
   /// map<string, string[]> (string key mapping to a list of string values).
   @$pb.TagNumber(12)
-  $core.Map<$core.String, $258.ListValue> get info => $_getMap(9);
+  $core.Map<$core.String, $260.ListValue> get info => $_getMap(9);
 }
 
 

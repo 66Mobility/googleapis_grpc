@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $330;
-import 'snooze.pb.dart' as $202;
+import '../../protobuf/field_mask.pb.dart' as $332;
+import 'snooze.pb.dart' as $203;
 
 /// The message definition for creating a `Snooze`. Users must provide the body
 /// of the `Snooze` to be created but must omit the `Snooze` field, `name`.
 class CreateSnoozeRequest extends $pb.GeneratedMessage {
   factory CreateSnoozeRequest({
     $core.String? parent,
-    $202.Snooze? snooze,
+    $203.Snooze? snooze,
   }) {
     final $result = create();
     if (parent != null) {
@@ -38,7 +38,7 @@ class CreateSnoozeRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateSnoozeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$202.Snooze>(2, _omitFieldNames ? '' : 'snooze', subBuilder: $202.Snooze.create)
+    ..aOM<$203.Snooze>(2, _omitFieldNames ? '' : 'snooze', subBuilder: $203.Snooze.create)
     ..hasRequiredFields = false
   ;
 
@@ -80,15 +80,15 @@ class CreateSnoozeRequest extends $pb.GeneratedMessage {
   /// Required. The `Snooze` to create. Omit the `name` field, as it will be
   /// filled in by the API.
   @$pb.TagNumber(2)
-  $202.Snooze get snooze => $_getN(1);
+  $203.Snooze get snooze => $_getN(1);
   @$pb.TagNumber(2)
-  set snooze($202.Snooze v) { setField(2, v); }
+  set snooze($203.Snooze v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSnooze() => $_has(1);
   @$pb.TagNumber(2)
   void clearSnooze() => clearField(2);
   @$pb.TagNumber(2)
-  $202.Snooze ensureSnooze() => $_ensure(1);
+  $203.Snooze ensureSnooze() => $_ensure(1);
 }
 
 /// The message definition for listing `Snooze`s associated with the given
@@ -213,7 +213,7 @@ class ListSnoozesRequest extends $pb.GeneratedMessage {
 /// `Snooze`s.
 class ListSnoozesResponse extends $pb.GeneratedMessage {
   factory ListSnoozesResponse({
-    $core.Iterable<$202.Snooze>? snoozes,
+    $core.Iterable<$203.Snooze>? snoozes,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -230,7 +230,7 @@ class ListSnoozesResponse extends $pb.GeneratedMessage {
   factory ListSnoozesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSnoozesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$202.Snooze>(1, _omitFieldNames ? '' : 'snoozes', $pb.PbFieldType.PM, subBuilder: $202.Snooze.create)
+    ..pc<$203.Snooze>(1, _omitFieldNames ? '' : 'snoozes', $pb.PbFieldType.PM, subBuilder: $203.Snooze.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -258,7 +258,7 @@ class ListSnoozesResponse extends $pb.GeneratedMessage {
 
   /// `Snooze`s matching this list call.
   @$pb.TagNumber(1)
-  $core.List<$202.Snooze> get snoozes => $_getList(0);
+  $core.List<$203.Snooze> get snoozes => $_getList(0);
 
   /// Page token for repeated calls to `ListSnoozes`, to fetch additional pages
   /// of results. If this is empty or missing, there are no more pages.
@@ -342,8 +342,8 @@ class GetSnoozeRequest extends $pb.GeneratedMessage {
 ///      `interval.end_time` can be updated.
 class UpdateSnoozeRequest extends $pb.GeneratedMessage {
   factory UpdateSnoozeRequest({
-    $202.Snooze? snooze,
-    $330.FieldMask? updateMask,
+    $203.Snooze? snooze,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (snooze != null) {
@@ -359,8 +359,8 @@ class UpdateSnoozeRequest extends $pb.GeneratedMessage {
   factory UpdateSnoozeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSnoozeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$202.Snooze>(1, _omitFieldNames ? '' : 'snooze', subBuilder: $202.Snooze.create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$203.Snooze>(1, _omitFieldNames ? '' : 'snooze', subBuilder: $203.Snooze.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -387,15 +387,15 @@ class UpdateSnoozeRequest extends $pb.GeneratedMessage {
 
   /// Required. The `Snooze` to update. Must have the name field present.
   @$pb.TagNumber(1)
-  $202.Snooze get snooze => $_getN(0);
+  $203.Snooze get snooze => $_getN(0);
   @$pb.TagNumber(1)
-  set snooze($202.Snooze v) { setField(1, v); }
+  set snooze($203.Snooze v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSnooze() => $_has(0);
   @$pb.TagNumber(1)
   void clearSnooze() => clearField(1);
   @$pb.TagNumber(1)
-  $202.Snooze ensureSnooze() => $_ensure(0);
+  $203.Snooze ensureSnooze() => $_ensure(0);
 
   ///  Required. The fields to update.
   ///
@@ -420,15 +420,15 @@ class UpdateSnoozeRequest extends $pb.GeneratedMessage {
   ///  consult the documentation for `UpdateSnoozeRequest`, which talks about
   ///  which fields can be updated.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(1);
+  $332.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(1);
+  $332.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

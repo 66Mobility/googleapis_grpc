@@ -17,6 +17,71 @@ import 'datasourcetypes.pbenum.dart';
 
 export 'datasourcetypes.pbenum.dart';
 
+/// Default rule management of the data source.
+class PrimaryProductDataSource_DefaultRule extends $pb.GeneratedMessage {
+  factory PrimaryProductDataSource_DefaultRule({
+    $core.Iterable<DataSourceReference>? takeFromDataSources,
+  }) {
+    final $result = create();
+    if (takeFromDataSources != null) {
+      $result.takeFromDataSources.addAll(takeFromDataSources);
+    }
+    return $result;
+  }
+  PrimaryProductDataSource_DefaultRule._() : super();
+  factory PrimaryProductDataSource_DefaultRule.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PrimaryProductDataSource_DefaultRule.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PrimaryProductDataSource.DefaultRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
+    ..pc<DataSourceReference>(1, _omitFieldNames ? '' : 'takeFromDataSources', $pb.PbFieldType.PM, subBuilder: DataSourceReference.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PrimaryProductDataSource_DefaultRule clone() => PrimaryProductDataSource_DefaultRule()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PrimaryProductDataSource_DefaultRule copyWith(void Function(PrimaryProductDataSource_DefaultRule) updates) => super.copyWith((message) => updates(message as PrimaryProductDataSource_DefaultRule)) as PrimaryProductDataSource_DefaultRule;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static PrimaryProductDataSource_DefaultRule create() => PrimaryProductDataSource_DefaultRule._();
+  PrimaryProductDataSource_DefaultRule createEmptyInstance() => create();
+  static $pb.PbList<PrimaryProductDataSource_DefaultRule> createRepeated() => $pb.PbList<PrimaryProductDataSource_DefaultRule>();
+  @$core.pragma('dart2js:noInline')
+  static PrimaryProductDataSource_DefaultRule getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PrimaryProductDataSource_DefaultRule>(create);
+  static PrimaryProductDataSource_DefaultRule? _defaultInstance;
+
+  ///  Required. The list of data sources linked in the [default
+  ///  rule](https://support.google.com/merchants/answer/7450276).
+  ///  This list is ordered by the default rule priority of joining the data.
+  ///  It might include none or multiple references to `self` and supplemental
+  ///  data sources.
+  ///
+  ///  The list must not be empty.
+  ///
+  ///  To link the data source to the default rule, you need to add a
+  ///  new reference to this list (in sequential order).
+  ///
+  ///  To unlink the data source from the default rule, you need to
+  ///  remove the given reference from this list.
+  ///
+  ///  Changing the order of this list will result in changing the priority of
+  ///  data sources in the default rule.
+  ///
+  ///  For example, providing the following list: [`1001`, `self`] will
+  ///  take attribute values from supplemental data source `1001`, and fallback
+  ///  to `self` if the attribute is not set in `1001`.
+  @$pb.TagNumber(1)
+  $core.List<DataSourceReference> get takeFromDataSources => $_getList(0);
+}
+
 /// The primary data source for local and online products.
 class PrimaryProductDataSource extends $pb.GeneratedMessage {
   factory PrimaryProductDataSource({
@@ -24,6 +89,7 @@ class PrimaryProductDataSource extends $pb.GeneratedMessage {
     $core.String? feedLabel,
     $core.String? contentLanguage,
     $core.Iterable<$core.String>? countries,
+    PrimaryProductDataSource_DefaultRule? defaultRule,
   }) {
     final $result = create();
     if (channel != null) {
@@ -38,6 +104,9 @@ class PrimaryProductDataSource extends $pb.GeneratedMessage {
     if (countries != null) {
       $result.countries.addAll(countries);
     }
+    if (defaultRule != null) {
+      $result.defaultRule = defaultRule;
+    }
     return $result;
   }
   PrimaryProductDataSource._() : super();
@@ -49,6 +118,7 @@ class PrimaryProductDataSource extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'feedLabel')
     ..aOS(5, _omitFieldNames ? '' : 'contentLanguage')
     ..pPS(6, _omitFieldNames ? '' : 'countries')
+    ..aOM<PrimaryProductDataSource_DefaultRule>(7, _omitFieldNames ? '' : 'defaultRule', subBuilder: PrimaryProductDataSource_DefaultRule.create)
     ..hasRequiredFields = false
   ;
 
@@ -131,6 +201,19 @@ class PrimaryProductDataSource extends $pb.GeneratedMessage {
   /// code](https://github.com/unicode-org/cldr/blob/latest/common/main/en.xml).
   @$pb.TagNumber(6)
   $core.List<$core.String> get countries => $_getList(3);
+
+  /// Optional. Default rule management of the data source. If set, the linked
+  /// data sources will be replaced.
+  @$pb.TagNumber(7)
+  PrimaryProductDataSource_DefaultRule get defaultRule => $_getN(4);
+  @$pb.TagNumber(7)
+  set defaultRule(PrimaryProductDataSource_DefaultRule v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasDefaultRule() => $_has(4);
+  @$pb.TagNumber(7)
+  void clearDefaultRule() => clearField(7);
+  @$pb.TagNumber(7)
+  PrimaryProductDataSource_DefaultRule ensureDefaultRule() => $_ensure(4);
 }
 
 /// The supplemental data source for local and online products.
@@ -138,6 +221,7 @@ class SupplementalProductDataSource extends $pb.GeneratedMessage {
   factory SupplementalProductDataSource({
     $core.String? feedLabel,
     $core.String? contentLanguage,
+    $core.Iterable<DataSourceReference>? referencingPrimaryDataSources,
   }) {
     final $result = create();
     if (feedLabel != null) {
@@ -145,6 +229,9 @@ class SupplementalProductDataSource extends $pb.GeneratedMessage {
     }
     if (contentLanguage != null) {
       $result.contentLanguage = contentLanguage;
+    }
+    if (referencingPrimaryDataSources != null) {
+      $result.referencingPrimaryDataSources.addAll(referencingPrimaryDataSources);
     }
     return $result;
   }
@@ -155,6 +242,7 @@ class SupplementalProductDataSource extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SupplementalProductDataSource', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
     ..aOS(4, _omitFieldNames ? '' : 'feedLabel')
     ..aOS(5, _omitFieldNames ? '' : 'contentLanguage')
+    ..pc<DataSourceReference>(7, _omitFieldNames ? '' : 'referencingPrimaryDataSources', $pb.PbFieldType.PM, subBuilder: DataSourceReference.create)
     ..hasRequiredFields = false
   ;
 
@@ -221,6 +309,12 @@ class SupplementalProductDataSource extends $pb.GeneratedMessage {
   $core.bool hasContentLanguage() => $_has(1);
   @$pb.TagNumber(5)
   void clearContentLanguage() => clearField(5);
+
+  /// Output only. The (unordered and deduplicated) list of all primary data
+  /// sources linked to this data source in either default or custom rules.
+  /// Supplemental data source cannot be deleted before all links are removed.
+  @$pb.TagNumber(7)
+  $core.List<DataSourceReference> get referencingPrimaryDataSources => $_getList(2);
 }
 
 /// The local inventory data source.
@@ -444,6 +538,110 @@ class PromotionDataSource extends $pb.GeneratedMessage {
   $core.bool hasContentLanguage() => $_has(1);
   @$pb.TagNumber(2)
   void clearContentLanguage() => clearField(2);
+}
+
+enum DataSourceReference_DataSourceId {
+  self, 
+  supplementalDataSourceName, 
+  primaryDataSourceName, 
+  notSet
+}
+
+/// Data source reference can be used to manage related data sources within the
+/// data source service.
+class DataSourceReference extends $pb.GeneratedMessage {
+  factory DataSourceReference({
+    $core.bool? self,
+    $core.String? supplementalDataSourceName,
+    $core.String? primaryDataSourceName,
+  }) {
+    final $result = create();
+    if (self != null) {
+      $result.self = self;
+    }
+    if (supplementalDataSourceName != null) {
+      $result.supplementalDataSourceName = supplementalDataSourceName;
+    }
+    if (primaryDataSourceName != null) {
+      $result.primaryDataSourceName = primaryDataSourceName;
+    }
+    return $result;
+  }
+  DataSourceReference._() : super();
+  factory DataSourceReference.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DataSourceReference.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, DataSourceReference_DataSourceId> _DataSourceReference_DataSourceIdByTag = {
+    1 : DataSourceReference_DataSourceId.self,
+    2 : DataSourceReference_DataSourceId.supplementalDataSourceName,
+    3 : DataSourceReference_DataSourceId.primaryDataSourceName,
+    0 : DataSourceReference_DataSourceId.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DataSourceReference', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
+    ..oo(0, [1, 2, 3])
+    ..aOB(1, _omitFieldNames ? '' : 'self')
+    ..aOS(2, _omitFieldNames ? '' : 'supplementalDataSourceName')
+    ..aOS(3, _omitFieldNames ? '' : 'primaryDataSourceName')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DataSourceReference clone() => DataSourceReference()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DataSourceReference copyWith(void Function(DataSourceReference) updates) => super.copyWith((message) => updates(message as DataSourceReference)) as DataSourceReference;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DataSourceReference create() => DataSourceReference._();
+  DataSourceReference createEmptyInstance() => create();
+  static $pb.PbList<DataSourceReference> createRepeated() => $pb.PbList<DataSourceReference>();
+  @$core.pragma('dart2js:noInline')
+  static DataSourceReference getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DataSourceReference>(create);
+  static DataSourceReference? _defaultInstance;
+
+  DataSourceReference_DataSourceId whichDataSourceId() => _DataSourceReference_DataSourceIdByTag[$_whichOneof(0)]!;
+  void clearDataSourceId() => clearField($_whichOneof(0));
+
+  /// Self should be used to reference the primary data source itself.
+  @$pb.TagNumber(1)
+  $core.bool get self => $_getBF(0);
+  @$pb.TagNumber(1)
+  set self($core.bool v) { $_setBool(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasSelf() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearSelf() => clearField(1);
+
+  /// Optional. The name of the supplemental data source.
+  /// Format:
+  /// `accounts/{account}/dataSources/{datasource}`
+  @$pb.TagNumber(2)
+  $core.String get supplementalDataSourceName => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set supplementalDataSourceName($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasSupplementalDataSourceName() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearSupplementalDataSourceName() => clearField(2);
+
+  /// Optional. The name of the primary data source.
+  /// Format:
+  /// `accounts/{account}/dataSources/{datasource}`
+  @$pb.TagNumber(3)
+  $core.String get primaryDataSourceName => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set primaryDataSourceName($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasPrimaryDataSourceName() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearPrimaryDataSourceName() => clearField(3);
 }
 
 

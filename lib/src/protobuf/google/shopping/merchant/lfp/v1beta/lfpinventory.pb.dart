@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $299;
-import '../../../type/types.pb.dart' as $533;
+import '../../../../protobuf/timestamp.pb.dart' as $301;
+import '../../../type/types.pb.dart' as $535;
 
 /// Local Inventory for the merchant.
 class LfpInventory extends $pb.GeneratedMessage {
@@ -27,10 +27,10 @@ class LfpInventory extends $pb.GeneratedMessage {
     $core.String? regionCode,
     $core.String? contentLanguage,
     $core.String? gtin,
-    $533.Price? price,
+    $535.Price? price,
     $core.String? availability,
     $fixnum.Int64? quantity,
-    $299.Timestamp? collectionTime,
+    $301.Timestamp? collectionTime,
     $core.String? pickupMethod,
     $core.String? pickupSla,
     $core.String? feedLabel,
@@ -92,10 +92,10 @@ class LfpInventory extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'regionCode')
     ..aOS(6, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(7, _omitFieldNames ? '' : 'gtin')
-    ..aOM<$533.Price>(8, _omitFieldNames ? '' : 'price', subBuilder: $533.Price.create)
+    ..aOM<$535.Price>(8, _omitFieldNames ? '' : 'price', subBuilder: $535.Price.create)
     ..aOS(9, _omitFieldNames ? '' : 'availability')
     ..aInt64(10, _omitFieldNames ? '' : 'quantity')
-    ..aOM<$299.Timestamp>(11, _omitFieldNames ? '' : 'collectionTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(11, _omitFieldNames ? '' : 'collectionTime', subBuilder: $301.Timestamp.create)
     ..aOS(12, _omitFieldNames ? '' : 'pickupMethod')
     ..aOS(13, _omitFieldNames ? '' : 'pickupSla')
     ..aOS(14, _omitFieldNames ? '' : 'feedLabel')
@@ -207,15 +207,15 @@ class LfpInventory extends $pb.GeneratedMessage {
 
   /// Optional. The current price of the product.
   @$pb.TagNumber(8)
-  $533.Price get price => $_getN(7);
+  $535.Price get price => $_getN(7);
   @$pb.TagNumber(8)
-  set price($533.Price v) { setField(8, v); }
+  set price($535.Price v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPrice() => $_has(7);
   @$pb.TagNumber(8)
   void clearPrice() => clearField(8);
   @$pb.TagNumber(8)
-  $533.Price ensurePrice() => $_ensure(7);
+  $535.Price ensurePrice() => $_ensure(7);
 
   /// Required. Availability of the product at this store.
   /// For accepted attribute values, see the [local product inventory data
@@ -243,15 +243,15 @@ class LfpInventory extends $pb.GeneratedMessage {
   /// Optional. The time when the inventory is collected. If not set, it will be
   /// set to the time when the inventory is submitted.
   @$pb.TagNumber(11)
-  $299.Timestamp get collectionTime => $_getN(10);
+  $301.Timestamp get collectionTime => $_getN(10);
   @$pb.TagNumber(11)
-  set collectionTime($299.Timestamp v) { setField(11, v); }
+  set collectionTime($301.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCollectionTime() => $_has(10);
   @$pb.TagNumber(11)
   void clearCollectionTime() => clearField(11);
   @$pb.TagNumber(11)
-  $299.Timestamp ensureCollectionTime() => $_ensure(10);
+  $301.Timestamp ensureCollectionTime() => $_ensure(10);
 
   /// Optional. Supported pickup method for this offer. Unless the value is "not
   /// supported", this field must be submitted together with `pickupSla`. For

@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'citation.pb.dart' as $328;
-import 'content.pb.dart' as $326;
+import 'citation.pb.dart' as $330;
+import 'content.pb.dart' as $328;
 import 'generative_service.pbenum.dart';
-import 'safety.pb.dart' as $327;
+import 'safety.pb.dart' as $329;
 
 export 'generative_service.pbenum.dart';
 
@@ -24,8 +24,8 @@ export 'generative_service.pbenum.dart';
 class GenerateContentRequest extends $pb.GeneratedMessage {
   factory GenerateContentRequest({
     $core.String? model,
-    $core.Iterable<$326.Content>? contents,
-    $core.Iterable<$327.SafetySetting>? safetySettings,
+    $core.Iterable<$328.Content>? contents,
+    $core.Iterable<$329.SafetySetting>? safetySettings,
     GenerationConfig? generationConfig,
   }) {
     final $result = create();
@@ -49,8 +49,8 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateContentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$326.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $326.Content.create)
-    ..pc<$327.SafetySetting>(3, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM, subBuilder: $327.SafetySetting.create)
+    ..pc<$328.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $328.Content.create)
+    ..pc<$329.SafetySetting>(3, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM, subBuilder: $329.SafetySetting.create)
     ..aOM<GenerationConfig>(4, _omitFieldNames ? '' : 'generationConfig', subBuilder: GenerationConfig.create)
     ..hasRequiredFields = false
   ;
@@ -95,7 +95,7 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   ///  this is a repeated field that contains the conversation history and the
   ///  latest request.
   @$pb.TagNumber(2)
-  $core.List<$326.Content> get contents => $_getList(1);
+  $core.List<$328.Content> get contents => $_getList(1);
 
   ///  Optional. A list of unique `SafetySetting` instances for blocking unsafe
   ///  content.
@@ -115,7 +115,7 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   ///  [Safety guidance](https://ai.google.dev/gemini-api/docs/safety-guidance) to
   ///  learn how to incorporate safety considerations in your AI applications.
   @$pb.TagNumber(3)
-  $core.List<$327.SafetySetting> get safetySettings => $_getList(2);
+  $core.List<$329.SafetySetting> get safetySettings => $_getList(2);
 
   /// Optional. Configuration options for model generation and outputs.
   @$pb.TagNumber(4)
@@ -140,6 +140,10 @@ class GenerationConfig extends $pb.GeneratedMessage {
     $core.double? temperature,
     $core.double? topP,
     $core.int? topK,
+    $core.double? presencePenalty,
+    $core.double? frequencyPenalty,
+    $core.bool? responseLogprobs,
+    $core.int? logprobs,
   }) {
     final $result = create();
     if (candidateCount != null) {
@@ -160,6 +164,18 @@ class GenerationConfig extends $pb.GeneratedMessage {
     if (topK != null) {
       $result.topK = topK;
     }
+    if (presencePenalty != null) {
+      $result.presencePenalty = presencePenalty;
+    }
+    if (frequencyPenalty != null) {
+      $result.frequencyPenalty = frequencyPenalty;
+    }
+    if (responseLogprobs != null) {
+      $result.responseLogprobs = responseLogprobs;
+    }
+    if (logprobs != null) {
+      $result.logprobs = logprobs;
+    }
     return $result;
   }
   GenerationConfig._() : super();
@@ -173,6 +189,10 @@ class GenerationConfig extends $pb.GeneratedMessage {
     ..a<$core.double>(5, _omitFieldNames ? '' : 'temperature', $pb.PbFieldType.OF)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'topP', $pb.PbFieldType.OF)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'topK', $pb.PbFieldType.O3)
+    ..a<$core.double>(15, _omitFieldNames ? '' : 'presencePenalty', $pb.PbFieldType.OF)
+    ..a<$core.double>(16, _omitFieldNames ? '' : 'frequencyPenalty', $pb.PbFieldType.OF)
+    ..aOB(17, _omitFieldNames ? '' : 'responseLogprobs')
+    ..a<$core.int>(18, _omitFieldNames ? '' : 'logprobs', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
 
@@ -286,6 +306,76 @@ class GenerationConfig extends $pb.GeneratedMessage {
   $core.bool hasTopK() => $_has(5);
   @$pb.TagNumber(7)
   void clearTopK() => clearField(7);
+
+  ///  Optional. Presence penalty applied to the next token's logprobs if the
+  ///  token has already been seen in the response.
+  ///
+  ///  This penalty is binary on/off and not dependant on the number of times the
+  ///  token is used (after the first). Use
+  ///  [frequency_penalty][google.ai.generativelanguage.v1.GenerationConfig.frequency_penalty]
+  ///  for a penalty that increases with each use.
+  ///
+  ///  A positive penalty will discourage the use of tokens that have already
+  ///  been used in the response, increasing the vocabulary.
+  ///
+  ///  A negative penalty will encourage the use of tokens that have already been
+  ///  used in the response, decreasing the vocabulary.
+  @$pb.TagNumber(15)
+  $core.double get presencePenalty => $_getN(6);
+  @$pb.TagNumber(15)
+  set presencePenalty($core.double v) { $_setFloat(6, v); }
+  @$pb.TagNumber(15)
+  $core.bool hasPresencePenalty() => $_has(6);
+  @$pb.TagNumber(15)
+  void clearPresencePenalty() => clearField(15);
+
+  ///  Optional. Frequency penalty applied to the next token's logprobs,
+  ///  multiplied by the number of times each token has been seen in the respponse
+  ///  so far.
+  ///
+  ///  A positive penalty will discourage the use of tokens that have already
+  ///  been used, proportional to the number of times the token has been used:
+  ///  The more a token is used, the more dificult it is for the model to use
+  ///  that token again increasing the vocabulary of responses.
+  ///
+  ///  Caution: A _negative_ penalty will encourage the model to reuse tokens
+  ///  proportional to the number of times the token has been used. Small
+  ///  negative values will reduce the vocabulary of a response. Larger negative
+  ///  values will cause the model to start repeating a common token  until it
+  ///  hits the
+  ///  [max_output_tokens][google.ai.generativelanguage.v1.GenerationConfig.max_output_tokens]
+  ///  limit: "...the the the the the...".
+  @$pb.TagNumber(16)
+  $core.double get frequencyPenalty => $_getN(7);
+  @$pb.TagNumber(16)
+  set frequencyPenalty($core.double v) { $_setFloat(7, v); }
+  @$pb.TagNumber(16)
+  $core.bool hasFrequencyPenalty() => $_has(7);
+  @$pb.TagNumber(16)
+  void clearFrequencyPenalty() => clearField(16);
+
+  /// Optional. If true, export the logprobs results in response.
+  @$pb.TagNumber(17)
+  $core.bool get responseLogprobs => $_getBF(8);
+  @$pb.TagNumber(17)
+  set responseLogprobs($core.bool v) { $_setBool(8, v); }
+  @$pb.TagNumber(17)
+  $core.bool hasResponseLogprobs() => $_has(8);
+  @$pb.TagNumber(17)
+  void clearResponseLogprobs() => clearField(17);
+
+  /// Optional. Only valid if
+  /// [response_logprobs=True][google.ai.generativelanguage.v1.GenerationConfig.response_logprobs].
+  /// This sets the number of top logprobs to return at each decoding step in the
+  /// [Candidate.logprobs_result][google.ai.generativelanguage.v1.Candidate.logprobs_result].
+  @$pb.TagNumber(18)
+  $core.int get logprobs => $_getIZ(9);
+  @$pb.TagNumber(18)
+  set logprobs($core.int v) { $_setSignedInt32(9, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasLogprobs() => $_has(9);
+  @$pb.TagNumber(18)
+  void clearLogprobs() => clearField(18);
 }
 
 /// A set of the feedback metadata the prompt specified in
@@ -293,7 +383,7 @@ class GenerationConfig extends $pb.GeneratedMessage {
 class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
   factory GenerateContentResponse_PromptFeedback({
     GenerateContentResponse_PromptFeedback_BlockReason? blockReason,
-    $core.Iterable<$327.SafetyRating>? safetyRatings,
+    $core.Iterable<$329.SafetyRating>? safetyRatings,
   }) {
     final $result = create();
     if (blockReason != null) {
@@ -310,7 +400,7 @@ class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateContentResponse.PromptFeedback', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
     ..e<GenerateContentResponse_PromptFeedback_BlockReason>(1, _omitFieldNames ? '' : 'blockReason', $pb.PbFieldType.OE, defaultOrMaker: GenerateContentResponse_PromptFeedback_BlockReason.BLOCK_REASON_UNSPECIFIED, valueOf: GenerateContentResponse_PromptFeedback_BlockReason.valueOf, enumValues: GenerateContentResponse_PromptFeedback_BlockReason.values)
-    ..pc<$327.SafetyRating>(2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $327.SafetyRating.create)
+    ..pc<$329.SafetyRating>(2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $329.SafetyRating.create)
     ..hasRequiredFields = false
   ;
 
@@ -349,7 +439,7 @@ class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
   /// Ratings for safety of the prompt.
   /// There is at most one rating per category.
   @$pb.TagNumber(2)
-  $core.List<$327.SafetyRating> get safetyRatings => $_getList(1);
+  $core.List<$329.SafetyRating> get safetyRatings => $_getList(1);
 }
 
 /// Metadata on the generation request's token usage.
@@ -529,12 +619,14 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
 /// A response candidate generated from the model.
 class Candidate extends $pb.GeneratedMessage {
   factory Candidate({
-    $326.Content? content,
+    $328.Content? content,
     Candidate_FinishReason? finishReason,
     $core.int? index,
-    $core.Iterable<$327.SafetyRating>? safetyRatings,
-    $328.CitationMetadata? citationMetadata,
+    $core.Iterable<$329.SafetyRating>? safetyRatings,
+    $330.CitationMetadata? citationMetadata,
     $core.int? tokenCount,
+    $core.double? avgLogprobs,
+    LogprobsResult? logprobsResult,
   }) {
     final $result = create();
     if (content != null) {
@@ -555,6 +647,12 @@ class Candidate extends $pb.GeneratedMessage {
     if (tokenCount != null) {
       $result.tokenCount = tokenCount;
     }
+    if (avgLogprobs != null) {
+      $result.avgLogprobs = avgLogprobs;
+    }
+    if (logprobsResult != null) {
+      $result.logprobsResult = logprobsResult;
+    }
     return $result;
   }
   Candidate._() : super();
@@ -562,12 +660,14 @@ class Candidate extends $pb.GeneratedMessage {
   factory Candidate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Candidate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
-    ..aOM<$326.Content>(1, _omitFieldNames ? '' : 'content', subBuilder: $326.Content.create)
+    ..aOM<$328.Content>(1, _omitFieldNames ? '' : 'content', subBuilder: $328.Content.create)
     ..e<Candidate_FinishReason>(2, _omitFieldNames ? '' : 'finishReason', $pb.PbFieldType.OE, defaultOrMaker: Candidate_FinishReason.FINISH_REASON_UNSPECIFIED, valueOf: Candidate_FinishReason.valueOf, enumValues: Candidate_FinishReason.values)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
-    ..pc<$327.SafetyRating>(5, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $327.SafetyRating.create)
-    ..aOM<$328.CitationMetadata>(6, _omitFieldNames ? '' : 'citationMetadata', subBuilder: $328.CitationMetadata.create)
+    ..pc<$329.SafetyRating>(5, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $329.SafetyRating.create)
+    ..aOM<$330.CitationMetadata>(6, _omitFieldNames ? '' : 'citationMetadata', subBuilder: $330.CitationMetadata.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'tokenCount', $pb.PbFieldType.O3)
+    ..a<$core.double>(10, _omitFieldNames ? '' : 'avgLogprobs', $pb.PbFieldType.OD)
+    ..aOM<LogprobsResult>(11, _omitFieldNames ? '' : 'logprobsResult', subBuilder: LogprobsResult.create)
     ..hasRequiredFields = false
   ;
 
@@ -594,15 +694,15 @@ class Candidate extends $pb.GeneratedMessage {
 
   /// Output only. Generated content returned from the model.
   @$pb.TagNumber(1)
-  $326.Content get content => $_getN(0);
+  $328.Content get content => $_getN(0);
   @$pb.TagNumber(1)
-  set content($326.Content v) { setField(1, v); }
+  set content($328.Content v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasContent() => $_has(0);
   @$pb.TagNumber(1)
   void clearContent() => clearField(1);
   @$pb.TagNumber(1)
-  $326.Content ensureContent() => $_ensure(0);
+  $328.Content ensureContent() => $_ensure(0);
 
   ///  Optional. Output only. The reason why the model stopped generating tokens.
   ///
@@ -630,7 +730,7 @@ class Candidate extends $pb.GeneratedMessage {
   ///
   ///  There is at most one rating per category.
   @$pb.TagNumber(5)
-  $core.List<$327.SafetyRating> get safetyRatings => $_getList(3);
+  $core.List<$329.SafetyRating> get safetyRatings => $_getList(3);
 
   ///  Output only. Citation information for model-generated candidate.
   ///
@@ -638,15 +738,15 @@ class Candidate extends $pb.GeneratedMessage {
   ///  included in the `content`. These are passages that are "recited" from
   ///  copyrighted material in the foundational LLM's training data.
   @$pb.TagNumber(6)
-  $328.CitationMetadata get citationMetadata => $_getN(4);
+  $330.CitationMetadata get citationMetadata => $_getN(4);
   @$pb.TagNumber(6)
-  set citationMetadata($328.CitationMetadata v) { setField(6, v); }
+  set citationMetadata($330.CitationMetadata v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCitationMetadata() => $_has(4);
   @$pb.TagNumber(6)
   void clearCitationMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $328.CitationMetadata ensureCitationMetadata() => $_ensure(4);
+  $330.CitationMetadata ensureCitationMetadata() => $_ensure(4);
 
   /// Output only. Token count for this candidate.
   @$pb.TagNumber(7)
@@ -657,13 +757,219 @@ class Candidate extends $pb.GeneratedMessage {
   $core.bool hasTokenCount() => $_has(5);
   @$pb.TagNumber(7)
   void clearTokenCount() => clearField(7);
+
+  /// Output only.
+  @$pb.TagNumber(10)
+  $core.double get avgLogprobs => $_getN(6);
+  @$pb.TagNumber(10)
+  set avgLogprobs($core.double v) { $_setDouble(6, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasAvgLogprobs() => $_has(6);
+  @$pb.TagNumber(10)
+  void clearAvgLogprobs() => clearField(10);
+
+  /// Output only. Log-likelihood scores for the response tokens and top tokens
+  @$pb.TagNumber(11)
+  LogprobsResult get logprobsResult => $_getN(7);
+  @$pb.TagNumber(11)
+  set logprobsResult(LogprobsResult v) { setField(11, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasLogprobsResult() => $_has(7);
+  @$pb.TagNumber(11)
+  void clearLogprobsResult() => clearField(11);
+  @$pb.TagNumber(11)
+  LogprobsResult ensureLogprobsResult() => $_ensure(7);
+}
+
+/// Candidate for the logprobs token and score.
+class LogprobsResult_Candidate extends $pb.GeneratedMessage {
+  factory LogprobsResult_Candidate({
+    $core.String? token,
+    $core.double? logProbability,
+    $core.int? tokenId,
+  }) {
+    final $result = create();
+    if (token != null) {
+      $result.token = token;
+    }
+    if (logProbability != null) {
+      $result.logProbability = logProbability;
+    }
+    if (tokenId != null) {
+      $result.tokenId = tokenId;
+    }
+    return $result;
+  }
+  LogprobsResult_Candidate._() : super();
+  factory LogprobsResult_Candidate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory LogprobsResult_Candidate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogprobsResult.Candidate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'token')
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'logProbability', $pb.PbFieldType.OF)
+    ..a<$core.int>(3, _omitFieldNames ? '' : 'tokenId', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  LogprobsResult_Candidate clone() => LogprobsResult_Candidate()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  LogprobsResult_Candidate copyWith(void Function(LogprobsResult_Candidate) updates) => super.copyWith((message) => updates(message as LogprobsResult_Candidate)) as LogprobsResult_Candidate;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static LogprobsResult_Candidate create() => LogprobsResult_Candidate._();
+  LogprobsResult_Candidate createEmptyInstance() => create();
+  static $pb.PbList<LogprobsResult_Candidate> createRepeated() => $pb.PbList<LogprobsResult_Candidate>();
+  @$core.pragma('dart2js:noInline')
+  static LogprobsResult_Candidate getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogprobsResult_Candidate>(create);
+  static LogprobsResult_Candidate? _defaultInstance;
+
+  /// The candidate’s token string value.
+  @$pb.TagNumber(1)
+  $core.String get token => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set token($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasToken() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearToken() => clearField(1);
+
+  /// The candidate's log probability.
+  @$pb.TagNumber(2)
+  $core.double get logProbability => $_getN(1);
+  @$pb.TagNumber(2)
+  set logProbability($core.double v) { $_setFloat(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasLogProbability() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearLogProbability() => clearField(2);
+
+  /// The candidate’s token id value.
+  @$pb.TagNumber(3)
+  $core.int get tokenId => $_getIZ(2);
+  @$pb.TagNumber(3)
+  set tokenId($core.int v) { $_setSignedInt32(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasTokenId() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearTokenId() => clearField(3);
+}
+
+/// Candidates with top log probabilities at each decoding step.
+class LogprobsResult_TopCandidates extends $pb.GeneratedMessage {
+  factory LogprobsResult_TopCandidates({
+    $core.Iterable<LogprobsResult_Candidate>? candidates,
+  }) {
+    final $result = create();
+    if (candidates != null) {
+      $result.candidates.addAll(candidates);
+    }
+    return $result;
+  }
+  LogprobsResult_TopCandidates._() : super();
+  factory LogprobsResult_TopCandidates.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory LogprobsResult_TopCandidates.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogprobsResult.TopCandidates', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
+    ..pc<LogprobsResult_Candidate>(1, _omitFieldNames ? '' : 'candidates', $pb.PbFieldType.PM, subBuilder: LogprobsResult_Candidate.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  LogprobsResult_TopCandidates clone() => LogprobsResult_TopCandidates()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  LogprobsResult_TopCandidates copyWith(void Function(LogprobsResult_TopCandidates) updates) => super.copyWith((message) => updates(message as LogprobsResult_TopCandidates)) as LogprobsResult_TopCandidates;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static LogprobsResult_TopCandidates create() => LogprobsResult_TopCandidates._();
+  LogprobsResult_TopCandidates createEmptyInstance() => create();
+  static $pb.PbList<LogprobsResult_TopCandidates> createRepeated() => $pb.PbList<LogprobsResult_TopCandidates>();
+  @$core.pragma('dart2js:noInline')
+  static LogprobsResult_TopCandidates getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogprobsResult_TopCandidates>(create);
+  static LogprobsResult_TopCandidates? _defaultInstance;
+
+  /// Sorted by log probability in descending order.
+  @$pb.TagNumber(1)
+  $core.List<LogprobsResult_Candidate> get candidates => $_getList(0);
+}
+
+/// Logprobs Result
+class LogprobsResult extends $pb.GeneratedMessage {
+  factory LogprobsResult({
+    $core.Iterable<LogprobsResult_TopCandidates>? topCandidates,
+    $core.Iterable<LogprobsResult_Candidate>? chosenCandidates,
+  }) {
+    final $result = create();
+    if (topCandidates != null) {
+      $result.topCandidates.addAll(topCandidates);
+    }
+    if (chosenCandidates != null) {
+      $result.chosenCandidates.addAll(chosenCandidates);
+    }
+    return $result;
+  }
+  LogprobsResult._() : super();
+  factory LogprobsResult.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory LogprobsResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogprobsResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
+    ..pc<LogprobsResult_TopCandidates>(1, _omitFieldNames ? '' : 'topCandidates', $pb.PbFieldType.PM, subBuilder: LogprobsResult_TopCandidates.create)
+    ..pc<LogprobsResult_Candidate>(2, _omitFieldNames ? '' : 'chosenCandidates', $pb.PbFieldType.PM, subBuilder: LogprobsResult_Candidate.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  LogprobsResult clone() => LogprobsResult()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  LogprobsResult copyWith(void Function(LogprobsResult) updates) => super.copyWith((message) => updates(message as LogprobsResult)) as LogprobsResult;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static LogprobsResult create() => LogprobsResult._();
+  LogprobsResult createEmptyInstance() => create();
+  static $pb.PbList<LogprobsResult> createRepeated() => $pb.PbList<LogprobsResult>();
+  @$core.pragma('dart2js:noInline')
+  static LogprobsResult getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogprobsResult>(create);
+  static LogprobsResult? _defaultInstance;
+
+  /// Length = total number of decoding steps.
+  @$pb.TagNumber(1)
+  $core.List<LogprobsResult_TopCandidates> get topCandidates => $_getList(0);
+
+  /// Length = total number of decoding steps.
+  /// The chosen candidates may or may not be in top_candidates.
+  @$pb.TagNumber(2)
+  $core.List<LogprobsResult_Candidate> get chosenCandidates => $_getList(1);
 }
 
 /// Request containing the `Content` for the model to embed.
 class EmbedContentRequest extends $pb.GeneratedMessage {
   factory EmbedContentRequest({
     $core.String? model,
-    $326.Content? content,
+    $328.Content? content,
     TaskType? taskType,
     $core.String? title,
     $core.int? outputDimensionality,
@@ -692,7 +998,7 @@ class EmbedContentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EmbedContentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..aOM<$326.Content>(2, _omitFieldNames ? '' : 'content', subBuilder: $326.Content.create)
+    ..aOM<$328.Content>(2, _omitFieldNames ? '' : 'content', subBuilder: $328.Content.create)
     ..e<TaskType>(3, _omitFieldNames ? '' : 'taskType', $pb.PbFieldType.OE, defaultOrMaker: TaskType.TASK_TYPE_UNSPECIFIED, valueOf: TaskType.valueOf, enumValues: TaskType.values)
     ..aOS(4, _omitFieldNames ? '' : 'title')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'outputDimensionality', $pb.PbFieldType.O3)
@@ -738,15 +1044,15 @@ class EmbedContentRequest extends $pb.GeneratedMessage {
   /// Required. The content to embed. Only the `parts.text` fields will be
   /// counted.
   @$pb.TagNumber(2)
-  $326.Content get content => $_getN(1);
+  $328.Content get content => $_getN(1);
   @$pb.TagNumber(2)
-  set content($326.Content v) { setField(2, v); }
+  set content($328.Content v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasContent() => $_has(1);
   @$pb.TagNumber(2)
   void clearContent() => clearField(2);
   @$pb.TagNumber(2)
-  $326.Content ensureContent() => $_ensure(1);
+  $328.Content ensureContent() => $_ensure(1);
 
   /// Optional. Optional task type for which the embeddings will be used. Can
   /// only be set for `models/embedding-001`.
@@ -1008,7 +1314,7 @@ class BatchEmbedContentsResponse extends $pb.GeneratedMessage {
 class CountTokensRequest extends $pb.GeneratedMessage {
   factory CountTokensRequest({
     $core.String? model,
-    $core.Iterable<$326.Content>? contents,
+    $core.Iterable<$328.Content>? contents,
     GenerateContentRequest? generateContentRequest,
   }) {
     final $result = create();
@@ -1029,7 +1335,7 @@ class CountTokensRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CountTokensRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$326.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $326.Content.create)
+    ..pc<$328.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $328.Content.create)
     ..aOM<GenerateContentRequest>(3, _omitFieldNames ? '' : 'generateContentRequest', subBuilder: GenerateContentRequest.create)
     ..hasRequiredFields = false
   ;
@@ -1073,7 +1379,7 @@ class CountTokensRequest extends $pb.GeneratedMessage {
   /// Optional. The input given to the model as a prompt. This field is ignored
   /// when `generate_content_request` is set.
   @$pb.TagNumber(2)
-  $core.List<$326.Content> get contents => $_getList(1);
+  $core.List<$328.Content> get contents => $_getList(1);
 
   /// Optional. The overall input given to the `Model`. This includes the prompt
   /// as well as other model steering information like [system

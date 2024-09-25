@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $299;
+import '../../protobuf/timestamp.pb.dart' as $301;
 
 /// A set of field paths on a document.
 /// Used to restrict a get or update operation on a document to a subset of its
@@ -76,7 +76,7 @@ enum Precondition_ConditionType {
 class Precondition extends $pb.GeneratedMessage {
   factory Precondition({
     $core.bool? exists,
-    $299.Timestamp? updateTime,
+    $301.Timestamp? updateTime,
   }) {
     final $result = create();
     if (exists != null) {
@@ -99,7 +99,7 @@ class Precondition extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Precondition', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1beta1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOB(1, _omitFieldNames ? '' : 'exists')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -141,15 +141,15 @@ class Precondition extends $pb.GeneratedMessage {
   /// When set, the target document must exist and have been last updated at
   /// that time.
   @$pb.TagNumber(2)
-  $299.Timestamp get updateTime => $_getN(1);
+  $301.Timestamp get updateTime => $_getN(1);
   @$pb.TagNumber(2)
-  set updateTime($299.Timestamp v) { setField(2, v); }
+  set updateTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureUpdateTime() => $_ensure(1);
+  $301.Timestamp ensureUpdateTime() => $_ensure(1);
 }
 
 /// Options for a transaction that can be used to read and write documents.
@@ -212,7 +212,7 @@ enum TransactionOptions_ReadOnly_ConsistencySelector {
 /// Options for a transaction that can only be used to read documents.
 class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   factory TransactionOptions_ReadOnly({
-    $299.Timestamp? readTime,
+    $301.Timestamp? readTime,
   }) {
     final $result = create();
     if (readTime != null) {
@@ -230,7 +230,7 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TransactionOptions.ReadOnly', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1beta1'), createEmptyInstance: create)
     ..oo(0, [2])
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -261,15 +261,15 @@ class TransactionOptions_ReadOnly extends $pb.GeneratedMessage {
   /// Reads documents at the given time.
   /// This may not be older than 60 seconds.
   @$pb.TagNumber(2)
-  $299.Timestamp get readTime => $_getN(0);
+  $301.Timestamp get readTime => $_getN(0);
   @$pb.TagNumber(2)
-  set readTime($299.Timestamp v) { setField(2, v); }
+  set readTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(0);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureReadTime() => $_ensure(0);
+  $301.Timestamp ensureReadTime() => $_ensure(0);
 }
 
 enum TransactionOptions_Mode {

@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $261;
-import '../../protobuf/field_mask.pb.dart' as $330;
-import '../../protobuf/timestamp.pb.dart' as $299;
+import '../../protobuf/duration.pb.dart' as $263;
+import '../../protobuf/field_mask.pb.dart' as $332;
+import '../../protobuf/timestamp.pb.dart' as $301;
 import 'pubsub.pbenum.dart';
-import 'schema.pbenum.dart' as $207;
+import 'schema.pbenum.dart' as $208;
 
 export 'pubsub.pbenum.dart';
 
@@ -96,7 +96,7 @@ class MessageStoragePolicy extends $pb.GeneratedMessage {
 class SchemaSettings extends $pb.GeneratedMessage {
   factory SchemaSettings({
     $core.String? schema,
-    $207.Encoding? encoding,
+    $208.Encoding? encoding,
     $core.String? firstRevisionId,
     $core.String? lastRevisionId,
   }) {
@@ -121,7 +121,7 @@ class SchemaSettings extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SchemaSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'schema')
-    ..e<$207.Encoding>(2, _omitFieldNames ? '' : 'encoding', $pb.PbFieldType.OE, defaultOrMaker: $207.Encoding.ENCODING_UNSPECIFIED, valueOf: $207.Encoding.valueOf, enumValues: $207.Encoding.values)
+    ..e<$208.Encoding>(2, _omitFieldNames ? '' : 'encoding', $pb.PbFieldType.OE, defaultOrMaker: $208.Encoding.ENCODING_UNSPECIFIED, valueOf: $208.Encoding.valueOf, enumValues: $208.Encoding.values)
     ..aOS(3, _omitFieldNames ? '' : 'firstRevisionId')
     ..aOS(4, _omitFieldNames ? '' : 'lastRevisionId')
     ..hasRequiredFields = false
@@ -163,9 +163,9 @@ class SchemaSettings extends $pb.GeneratedMessage {
 
   /// Optional. The encoding of messages validated against `schema`.
   @$pb.TagNumber(2)
-  $207.Encoding get encoding => $_getN(1);
+  $208.Encoding get encoding => $_getN(1);
   @$pb.TagNumber(2)
-  set encoding($207.Encoding v) { setField(2, v); }
+  set encoding($208.Encoding v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEncoding() => $_has(1);
   @$pb.TagNumber(2)
@@ -315,8 +315,309 @@ class IngestionDataSourceSettings_AwsKinesis extends $pb.GeneratedMessage {
   void clearGcpServiceAccount() => clearField(5);
 }
 
+/// Configuration for reading Cloud Storage data in text format. Each line of
+/// text as specified by the delimiter will be set to the `data` field of a
+/// Pub/Sub message.
+class IngestionDataSourceSettings_CloudStorage_TextFormat extends $pb.GeneratedMessage {
+  factory IngestionDataSourceSettings_CloudStorage_TextFormat({
+    $core.String? delimiter,
+  }) {
+    final $result = create();
+    if (delimiter != null) {
+      $result.delimiter = delimiter;
+    }
+    return $result;
+  }
+  IngestionDataSourceSettings_CloudStorage_TextFormat._() : super();
+  factory IngestionDataSourceSettings_CloudStorage_TextFormat.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory IngestionDataSourceSettings_CloudStorage_TextFormat.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IngestionDataSourceSettings.CloudStorage.TextFormat', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
+    ..aOS(1, _omitFieldNames ? '' : 'delimiter')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  IngestionDataSourceSettings_CloudStorage_TextFormat clone() => IngestionDataSourceSettings_CloudStorage_TextFormat()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  IngestionDataSourceSettings_CloudStorage_TextFormat copyWith(void Function(IngestionDataSourceSettings_CloudStorage_TextFormat) updates) => super.copyWith((message) => updates(message as IngestionDataSourceSettings_CloudStorage_TextFormat)) as IngestionDataSourceSettings_CloudStorage_TextFormat;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_CloudStorage_TextFormat create() => IngestionDataSourceSettings_CloudStorage_TextFormat._();
+  IngestionDataSourceSettings_CloudStorage_TextFormat createEmptyInstance() => create();
+  static $pb.PbList<IngestionDataSourceSettings_CloudStorage_TextFormat> createRepeated() => $pb.PbList<IngestionDataSourceSettings_CloudStorage_TextFormat>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_CloudStorage_TextFormat getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IngestionDataSourceSettings_CloudStorage_TextFormat>(create);
+  static IngestionDataSourceSettings_CloudStorage_TextFormat? _defaultInstance;
+
+  /// Optional. When unset, '\n' is used.
+  @$pb.TagNumber(1)
+  $core.String get delimiter => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set delimiter($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasDelimiter() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearDelimiter() => clearField(1);
+}
+
+/// Configuration for reading Cloud Storage data in Avro binary format. The
+/// bytes of each object will be set to the `data` field of a Pub/Sub
+/// message.
+class IngestionDataSourceSettings_CloudStorage_AvroFormat extends $pb.GeneratedMessage {
+  factory IngestionDataSourceSettings_CloudStorage_AvroFormat() => create();
+  IngestionDataSourceSettings_CloudStorage_AvroFormat._() : super();
+  factory IngestionDataSourceSettings_CloudStorage_AvroFormat.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory IngestionDataSourceSettings_CloudStorage_AvroFormat.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IngestionDataSourceSettings.CloudStorage.AvroFormat', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  IngestionDataSourceSettings_CloudStorage_AvroFormat clone() => IngestionDataSourceSettings_CloudStorage_AvroFormat()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  IngestionDataSourceSettings_CloudStorage_AvroFormat copyWith(void Function(IngestionDataSourceSettings_CloudStorage_AvroFormat) updates) => super.copyWith((message) => updates(message as IngestionDataSourceSettings_CloudStorage_AvroFormat)) as IngestionDataSourceSettings_CloudStorage_AvroFormat;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_CloudStorage_AvroFormat create() => IngestionDataSourceSettings_CloudStorage_AvroFormat._();
+  IngestionDataSourceSettings_CloudStorage_AvroFormat createEmptyInstance() => create();
+  static $pb.PbList<IngestionDataSourceSettings_CloudStorage_AvroFormat> createRepeated() => $pb.PbList<IngestionDataSourceSettings_CloudStorage_AvroFormat>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_CloudStorage_AvroFormat getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IngestionDataSourceSettings_CloudStorage_AvroFormat>(create);
+  static IngestionDataSourceSettings_CloudStorage_AvroFormat? _defaultInstance;
+}
+
+/// Configuration for reading Cloud Storage data written via [Cloud Storage
+/// subscriptions](https://cloud.google.com/pubsub/docs/cloudstorage). The
+/// data and attributes fields of the originally exported Pub/Sub message
+/// will be restored when publishing.
+class IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat extends $pb.GeneratedMessage {
+  factory IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat() => create();
+  IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat._() : super();
+  factory IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IngestionDataSourceSettings.CloudStorage.PubSubAvroFormat', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat clone() => IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat copyWith(void Function(IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat) updates) => super.copyWith((message) => updates(message as IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat)) as IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat create() => IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat._();
+  IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat createEmptyInstance() => create();
+  static $pb.PbList<IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat> createRepeated() => $pb.PbList<IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat>(create);
+  static IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat? _defaultInstance;
+}
+
+enum IngestionDataSourceSettings_CloudStorage_InputFormat {
+  textFormat, 
+  avroFormat, 
+  pubsubAvroFormat, 
+  notSet
+}
+
+/// Ingestion settings for Cloud Storage.
+class IngestionDataSourceSettings_CloudStorage extends $pb.GeneratedMessage {
+  factory IngestionDataSourceSettings_CloudStorage({
+    IngestionDataSourceSettings_CloudStorage_State? state,
+    $core.String? bucket,
+    IngestionDataSourceSettings_CloudStorage_TextFormat? textFormat,
+    IngestionDataSourceSettings_CloudStorage_AvroFormat? avroFormat,
+    IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat? pubsubAvroFormat,
+    $301.Timestamp? minimumObjectCreateTime,
+    $core.String? matchGlob,
+  }) {
+    final $result = create();
+    if (state != null) {
+      $result.state = state;
+    }
+    if (bucket != null) {
+      $result.bucket = bucket;
+    }
+    if (textFormat != null) {
+      $result.textFormat = textFormat;
+    }
+    if (avroFormat != null) {
+      $result.avroFormat = avroFormat;
+    }
+    if (pubsubAvroFormat != null) {
+      $result.pubsubAvroFormat = pubsubAvroFormat;
+    }
+    if (minimumObjectCreateTime != null) {
+      $result.minimumObjectCreateTime = minimumObjectCreateTime;
+    }
+    if (matchGlob != null) {
+      $result.matchGlob = matchGlob;
+    }
+    return $result;
+  }
+  IngestionDataSourceSettings_CloudStorage._() : super();
+  factory IngestionDataSourceSettings_CloudStorage.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory IngestionDataSourceSettings_CloudStorage.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, IngestionDataSourceSettings_CloudStorage_InputFormat> _IngestionDataSourceSettings_CloudStorage_InputFormatByTag = {
+    3 : IngestionDataSourceSettings_CloudStorage_InputFormat.textFormat,
+    4 : IngestionDataSourceSettings_CloudStorage_InputFormat.avroFormat,
+    5 : IngestionDataSourceSettings_CloudStorage_InputFormat.pubsubAvroFormat,
+    0 : IngestionDataSourceSettings_CloudStorage_InputFormat.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IngestionDataSourceSettings.CloudStorage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
+    ..oo(0, [3, 4, 5])
+    ..e<IngestionDataSourceSettings_CloudStorage_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: IngestionDataSourceSettings_CloudStorage_State.STATE_UNSPECIFIED, valueOf: IngestionDataSourceSettings_CloudStorage_State.valueOf, enumValues: IngestionDataSourceSettings_CloudStorage_State.values)
+    ..aOS(2, _omitFieldNames ? '' : 'bucket')
+    ..aOM<IngestionDataSourceSettings_CloudStorage_TextFormat>(3, _omitFieldNames ? '' : 'textFormat', subBuilder: IngestionDataSourceSettings_CloudStorage_TextFormat.create)
+    ..aOM<IngestionDataSourceSettings_CloudStorage_AvroFormat>(4, _omitFieldNames ? '' : 'avroFormat', subBuilder: IngestionDataSourceSettings_CloudStorage_AvroFormat.create)
+    ..aOM<IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat>(5, _omitFieldNames ? '' : 'pubsubAvroFormat', subBuilder: IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat.create)
+    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'minimumObjectCreateTime', subBuilder: $301.Timestamp.create)
+    ..aOS(9, _omitFieldNames ? '' : 'matchGlob')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  IngestionDataSourceSettings_CloudStorage clone() => IngestionDataSourceSettings_CloudStorage()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  IngestionDataSourceSettings_CloudStorage copyWith(void Function(IngestionDataSourceSettings_CloudStorage) updates) => super.copyWith((message) => updates(message as IngestionDataSourceSettings_CloudStorage)) as IngestionDataSourceSettings_CloudStorage;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_CloudStorage create() => IngestionDataSourceSettings_CloudStorage._();
+  IngestionDataSourceSettings_CloudStorage createEmptyInstance() => create();
+  static $pb.PbList<IngestionDataSourceSettings_CloudStorage> createRepeated() => $pb.PbList<IngestionDataSourceSettings_CloudStorage>();
+  @$core.pragma('dart2js:noInline')
+  static IngestionDataSourceSettings_CloudStorage getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<IngestionDataSourceSettings_CloudStorage>(create);
+  static IngestionDataSourceSettings_CloudStorage? _defaultInstance;
+
+  IngestionDataSourceSettings_CloudStorage_InputFormat whichInputFormat() => _IngestionDataSourceSettings_CloudStorage_InputFormatByTag[$_whichOneof(0)]!;
+  void clearInputFormat() => clearField($_whichOneof(0));
+
+  /// Output only. An output-only field that indicates the state of the Cloud
+  /// Storage ingestion source.
+  @$pb.TagNumber(1)
+  IngestionDataSourceSettings_CloudStorage_State get state => $_getN(0);
+  @$pb.TagNumber(1)
+  set state(IngestionDataSourceSettings_CloudStorage_State v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasState() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearState() => clearField(1);
+
+  /// Optional. Cloud Storage bucket. The bucket name must be without any
+  /// prefix like "gs://". See the [bucket naming requirements]
+  /// (https://cloud.google.com/storage/docs/buckets#naming).
+  @$pb.TagNumber(2)
+  $core.String get bucket => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set bucket($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasBucket() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearBucket() => clearField(2);
+
+  /// Optional. Data from Cloud Storage will be interpreted as text.
+  @$pb.TagNumber(3)
+  IngestionDataSourceSettings_CloudStorage_TextFormat get textFormat => $_getN(2);
+  @$pb.TagNumber(3)
+  set textFormat(IngestionDataSourceSettings_CloudStorage_TextFormat v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasTextFormat() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearTextFormat() => clearField(3);
+  @$pb.TagNumber(3)
+  IngestionDataSourceSettings_CloudStorage_TextFormat ensureTextFormat() => $_ensure(2);
+
+  /// Optional. Data from Cloud Storage will be interpreted in Avro format.
+  @$pb.TagNumber(4)
+  IngestionDataSourceSettings_CloudStorage_AvroFormat get avroFormat => $_getN(3);
+  @$pb.TagNumber(4)
+  set avroFormat(IngestionDataSourceSettings_CloudStorage_AvroFormat v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasAvroFormat() => $_has(3);
+  @$pb.TagNumber(4)
+  void clearAvroFormat() => clearField(4);
+  @$pb.TagNumber(4)
+  IngestionDataSourceSettings_CloudStorage_AvroFormat ensureAvroFormat() => $_ensure(3);
+
+  /// Optional. It will be assumed data from Cloud Storage was written via
+  /// [Cloud Storage
+  /// subscriptions](https://cloud.google.com/pubsub/docs/cloudstorage).
+  @$pb.TagNumber(5)
+  IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat get pubsubAvroFormat => $_getN(4);
+  @$pb.TagNumber(5)
+  set pubsubAvroFormat(IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasPubsubAvroFormat() => $_has(4);
+  @$pb.TagNumber(5)
+  void clearPubsubAvroFormat() => clearField(5);
+  @$pb.TagNumber(5)
+  IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat ensurePubsubAvroFormat() => $_ensure(4);
+
+  /// Optional. Only objects with a larger or equal creation timestamp will be
+  /// ingested.
+  @$pb.TagNumber(6)
+  $301.Timestamp get minimumObjectCreateTime => $_getN(5);
+  @$pb.TagNumber(6)
+  set minimumObjectCreateTime($301.Timestamp v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasMinimumObjectCreateTime() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearMinimumObjectCreateTime() => clearField(6);
+  @$pb.TagNumber(6)
+  $301.Timestamp ensureMinimumObjectCreateTime() => $_ensure(5);
+
+  /// Optional. Glob pattern used to match objects that will be ingested. If
+  /// unset, all objects will be ingested. See the [supported
+  /// patterns](https://cloud.google.com/storage/docs/json_api/v1/objects/list#list-objects-and-prefixes-using-glob).
+  @$pb.TagNumber(9)
+  $core.String get matchGlob => $_getSZ(6);
+  @$pb.TagNumber(9)
+  set matchGlob($core.String v) { $_setString(6, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasMatchGlob() => $_has(6);
+  @$pb.TagNumber(9)
+  void clearMatchGlob() => clearField(9);
+}
+
 enum IngestionDataSourceSettings_Source {
   awsKinesis, 
+  cloudStorage, 
   notSet
 }
 
@@ -324,10 +625,18 @@ enum IngestionDataSourceSettings_Source {
 class IngestionDataSourceSettings extends $pb.GeneratedMessage {
   factory IngestionDataSourceSettings({
     IngestionDataSourceSettings_AwsKinesis? awsKinesis,
+    IngestionDataSourceSettings_CloudStorage? cloudStorage,
+    PlatformLogsSettings? platformLogsSettings,
   }) {
     final $result = create();
     if (awsKinesis != null) {
       $result.awsKinesis = awsKinesis;
+    }
+    if (cloudStorage != null) {
+      $result.cloudStorage = cloudStorage;
+    }
+    if (platformLogsSettings != null) {
+      $result.platformLogsSettings = platformLogsSettings;
     }
     return $result;
   }
@@ -337,11 +646,14 @@ class IngestionDataSourceSettings extends $pb.GeneratedMessage {
 
   static const $core.Map<$core.int, IngestionDataSourceSettings_Source> _IngestionDataSourceSettings_SourceByTag = {
     1 : IngestionDataSourceSettings_Source.awsKinesis,
+    2 : IngestionDataSourceSettings_Source.cloudStorage,
     0 : IngestionDataSourceSettings_Source.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IngestionDataSourceSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
-    ..oo(0, [1])
+    ..oo(0, [1, 2])
     ..aOM<IngestionDataSourceSettings_AwsKinesis>(1, _omitFieldNames ? '' : 'awsKinesis', subBuilder: IngestionDataSourceSettings_AwsKinesis.create)
+    ..aOM<IngestionDataSourceSettings_CloudStorage>(2, _omitFieldNames ? '' : 'cloudStorage', subBuilder: IngestionDataSourceSettings_CloudStorage.create)
+    ..aOM<PlatformLogsSettings>(4, _omitFieldNames ? '' : 'platformLogsSettings', subBuilder: PlatformLogsSettings.create)
     ..hasRequiredFields = false
   ;
 
@@ -380,6 +692,83 @@ class IngestionDataSourceSettings extends $pb.GeneratedMessage {
   void clearAwsKinesis() => clearField(1);
   @$pb.TagNumber(1)
   IngestionDataSourceSettings_AwsKinesis ensureAwsKinesis() => $_ensure(0);
+
+  /// Optional. Cloud Storage.
+  @$pb.TagNumber(2)
+  IngestionDataSourceSettings_CloudStorage get cloudStorage => $_getN(1);
+  @$pb.TagNumber(2)
+  set cloudStorage(IngestionDataSourceSettings_CloudStorage v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasCloudStorage() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearCloudStorage() => clearField(2);
+  @$pb.TagNumber(2)
+  IngestionDataSourceSettings_CloudStorage ensureCloudStorage() => $_ensure(1);
+
+  /// Optional. Platform Logs settings. If unset, no Platform Logs will be
+  /// generated.
+  @$pb.TagNumber(4)
+  PlatformLogsSettings get platformLogsSettings => $_getN(2);
+  @$pb.TagNumber(4)
+  set platformLogsSettings(PlatformLogsSettings v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasPlatformLogsSettings() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearPlatformLogsSettings() => clearField(4);
+  @$pb.TagNumber(4)
+  PlatformLogsSettings ensurePlatformLogsSettings() => $_ensure(2);
+}
+
+/// Settings for Platform Logs produced by Pub/Sub.
+class PlatformLogsSettings extends $pb.GeneratedMessage {
+  factory PlatformLogsSettings({
+    PlatformLogsSettings_Severity? severity,
+  }) {
+    final $result = create();
+    if (severity != null) {
+      $result.severity = severity;
+    }
+    return $result;
+  }
+  PlatformLogsSettings._() : super();
+  factory PlatformLogsSettings.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory PlatformLogsSettings.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlatformLogsSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
+    ..e<PlatformLogsSettings_Severity>(1, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: PlatformLogsSettings_Severity.SEVERITY_UNSPECIFIED, valueOf: PlatformLogsSettings_Severity.valueOf, enumValues: PlatformLogsSettings_Severity.values)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  PlatformLogsSettings clone() => PlatformLogsSettings()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  PlatformLogsSettings copyWith(void Function(PlatformLogsSettings) updates) => super.copyWith((message) => updates(message as PlatformLogsSettings)) as PlatformLogsSettings;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static PlatformLogsSettings create() => PlatformLogsSettings._();
+  PlatformLogsSettings createEmptyInstance() => create();
+  static $pb.PbList<PlatformLogsSettings> createRepeated() => $pb.PbList<PlatformLogsSettings>();
+  @$core.pragma('dart2js:noInline')
+  static PlatformLogsSettings getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<PlatformLogsSettings>(create);
+  static PlatformLogsSettings? _defaultInstance;
+
+  /// Optional. The minimum severity level of Platform Logs that will be written.
+  @$pb.TagNumber(1)
+  PlatformLogsSettings_Severity get severity => $_getN(0);
+  @$pb.TagNumber(1)
+  set severity(PlatformLogsSettings_Severity v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasSeverity() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearSeverity() => clearField(1);
 }
 
 /// A topic resource.
@@ -391,7 +780,7 @@ class Topic extends $pb.GeneratedMessage {
     $core.String? kmsKeyName,
     SchemaSettings? schemaSettings,
     $core.bool? satisfiesPzs,
-    $261.Duration? messageRetentionDuration,
+    $263.Duration? messageRetentionDuration,
     Topic_State? state,
     IngestionDataSourceSettings? ingestionDataSourceSettings,
   }) {
@@ -436,7 +825,7 @@ class Topic extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'kmsKeyName')
     ..aOM<SchemaSettings>(6, _omitFieldNames ? '' : 'schemaSettings', subBuilder: SchemaSettings.create)
     ..aOB(7, _omitFieldNames ? '' : 'satisfiesPzs')
-    ..aOM<$261.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration', subBuilder: $263.Duration.create)
     ..e<Topic_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Topic_State.STATE_UNSPECIFIED, valueOf: Topic_State.valueOf, enumValues: Topic_State.values)
     ..aOM<IngestionDataSourceSettings>(10, _omitFieldNames ? '' : 'ingestionDataSourceSettings', subBuilder: IngestionDataSourceSettings.create)
     ..hasRequiredFields = false
@@ -543,15 +932,15 @@ class Topic extends $pb.GeneratedMessage {
   /// not set, message retention is controlled by settings on individual
   /// subscriptions. Cannot be more than 31 days or less than 10 minutes.
   @$pb.TagNumber(8)
-  $261.Duration get messageRetentionDuration => $_getN(6);
+  $263.Duration get messageRetentionDuration => $_getN(6);
   @$pb.TagNumber(8)
-  set messageRetentionDuration($261.Duration v) { setField(8, v); }
+  set messageRetentionDuration($263.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMessageRetentionDuration() => $_has(6);
   @$pb.TagNumber(8)
   void clearMessageRetentionDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $261.Duration ensureMessageRetentionDuration() => $_ensure(6);
+  $263.Duration ensureMessageRetentionDuration() => $_ensure(6);
 
   /// Output only. An output-only field indicating the state of the topic.
   @$pb.TagNumber(9)
@@ -589,7 +978,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
     $core.List<$core.int>? data,
     $core.Map<$core.String, $core.String>? attributes,
     $core.String? messageId,
-    $299.Timestamp? publishTime,
+    $301.Timestamp? publishTime,
     $core.String? orderingKey,
   }) {
     final $result = create();
@@ -618,7 +1007,7 @@ class PubsubMessage extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(1, _omitFieldNames ? '' : 'data', $pb.PbFieldType.OY)
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'attributes', entryClassName: 'PubsubMessage.AttributesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.pubsub.v1'))
     ..aOS(3, _omitFieldNames ? '' : 'messageId')
-    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'publishTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'publishTime', subBuilder: $301.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'orderingKey')
     ..hasRequiredFields = false
   ;
@@ -678,15 +1067,15 @@ class PubsubMessage extends $pb.GeneratedMessage {
   /// it receives the `Publish` call. It must not be populated by the
   /// publisher in a `Publish` call.
   @$pb.TagNumber(4)
-  $299.Timestamp get publishTime => $_getN(3);
+  $301.Timestamp get publishTime => $_getN(3);
   @$pb.TagNumber(4)
-  set publishTime($299.Timestamp v) { setField(4, v); }
+  set publishTime($301.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPublishTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearPublishTime() => clearField(4);
   @$pb.TagNumber(4)
-  $299.Timestamp ensurePublishTime() => $_ensure(3);
+  $301.Timestamp ensurePublishTime() => $_ensure(3);
 
   /// Optional. If non-empty, identifies related messages for which publish order
   /// should be respected. If a `Subscription` has `enable_message_ordering` set
@@ -763,7 +1152,7 @@ class GetTopicRequest extends $pb.GeneratedMessage {
 class UpdateTopicRequest extends $pb.GeneratedMessage {
   factory UpdateTopicRequest({
     Topic? topic,
-    $330.FieldMask? updateMask,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (topic != null) {
@@ -780,7 +1169,7 @@ class UpdateTopicRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateTopicRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..aOM<Topic>(1, _omitFieldNames ? '' : 'topic', subBuilder: Topic.create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -823,15 +1212,15 @@ class UpdateTopicRequest extends $pb.GeneratedMessage {
   /// the `topic` provided above, then the updated value is determined by the
   /// policy configured at the project or organization level.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(1);
+  $332.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(1);
+  $332.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for the Publish method.
@@ -1610,7 +1999,7 @@ class Subscription extends $pb.GeneratedMessage {
     PushConfig? pushConfig,
     $core.int? ackDeadlineSeconds,
     $core.bool? retainAckedMessages,
-    $261.Duration? messageRetentionDuration,
+    $263.Duration? messageRetentionDuration,
     $core.Map<$core.String, $core.String>? labels,
     $core.bool? enableMessageOrdering,
     ExpirationPolicy? expirationPolicy,
@@ -1619,7 +2008,7 @@ class Subscription extends $pb.GeneratedMessage {
     RetryPolicy? retryPolicy,
     $core.bool? detached,
     $core.bool? enableExactlyOnceDelivery,
-    $261.Duration? topicMessageRetentionDuration,
+    $263.Duration? topicMessageRetentionDuration,
     BigQueryConfig? bigqueryConfig,
     Subscription_State? state,
     CloudStorageConfig? cloudStorageConfig,
@@ -1695,7 +2084,7 @@ class Subscription extends $pb.GeneratedMessage {
     ..aOM<PushConfig>(4, _omitFieldNames ? '' : 'pushConfig', subBuilder: PushConfig.create)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'ackDeadlineSeconds', $pb.PbFieldType.O3)
     ..aOB(7, _omitFieldNames ? '' : 'retainAckedMessages')
-    ..aOM<$261.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(8, _omitFieldNames ? '' : 'messageRetentionDuration', subBuilder: $263.Duration.create)
     ..m<$core.String, $core.String>(9, _omitFieldNames ? '' : 'labels', entryClassName: 'Subscription.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.pubsub.v1'))
     ..aOB(10, _omitFieldNames ? '' : 'enableMessageOrdering')
     ..aOM<ExpirationPolicy>(11, _omitFieldNames ? '' : 'expirationPolicy', subBuilder: ExpirationPolicy.create)
@@ -1704,7 +2093,7 @@ class Subscription extends $pb.GeneratedMessage {
     ..aOM<RetryPolicy>(14, _omitFieldNames ? '' : 'retryPolicy', subBuilder: RetryPolicy.create)
     ..aOB(15, _omitFieldNames ? '' : 'detached')
     ..aOB(16, _omitFieldNames ? '' : 'enableExactlyOnceDelivery')
-    ..aOM<$261.Duration>(17, _omitFieldNames ? '' : 'topicMessageRetentionDuration', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(17, _omitFieldNames ? '' : 'topicMessageRetentionDuration', subBuilder: $263.Duration.create)
     ..aOM<BigQueryConfig>(18, _omitFieldNames ? '' : 'bigqueryConfig', subBuilder: BigQueryConfig.create)
     ..e<Subscription_State>(19, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Subscription_State.STATE_UNSPECIFIED, valueOf: Subscription_State.valueOf, enumValues: Subscription_State.values)
     ..aOM<CloudStorageConfig>(22, _omitFieldNames ? '' : 'cloudStorageConfig', subBuilder: CloudStorageConfig.create)
@@ -1823,15 +2212,15 @@ class Subscription extends $pb.GeneratedMessage {
   /// and thus configures how far back in time a `Seek` can be done. Defaults to
   /// 7 days. Cannot be more than 31 days or less than 10 minutes.
   @$pb.TagNumber(8)
-  $261.Duration get messageRetentionDuration => $_getN(5);
+  $263.Duration get messageRetentionDuration => $_getN(5);
   @$pb.TagNumber(8)
-  set messageRetentionDuration($261.Duration v) { setField(8, v); }
+  set messageRetentionDuration($263.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMessageRetentionDuration() => $_has(5);
   @$pb.TagNumber(8)
   void clearMessageRetentionDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $261.Duration ensureMessageRetentionDuration() => $_ensure(5);
+  $263.Duration ensureMessageRetentionDuration() => $_ensure(5);
 
   /// Optional. See [Creating and managing
   /// labels](https://cloud.google.com/pubsub/docs/labels).
@@ -1962,15 +2351,15 @@ class Subscription extends $pb.GeneratedMessage {
   /// the `message_retention_duration` field in `Topic`. This field is set only
   /// in responses from the server; it is ignored if it is set in any requests.
   @$pb.TagNumber(17)
-  $261.Duration get topicMessageRetentionDuration => $_getN(14);
+  $263.Duration get topicMessageRetentionDuration => $_getN(14);
   @$pb.TagNumber(17)
-  set topicMessageRetentionDuration($261.Duration v) { setField(17, v); }
+  set topicMessageRetentionDuration($263.Duration v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasTopicMessageRetentionDuration() => $_has(14);
   @$pb.TagNumber(17)
   void clearTopicMessageRetentionDuration() => clearField(17);
   @$pb.TagNumber(17)
-  $261.Duration ensureTopicMessageRetentionDuration() => $_ensure(14);
+  $263.Duration ensureTopicMessageRetentionDuration() => $_ensure(14);
 
   /// Optional. If delivery to BigQuery is used with this subscription, this
   /// field is used to configure it.
@@ -2036,8 +2425,8 @@ class Subscription extends $pb.GeneratedMessage {
 ///  delay can be more or less than configured backoff.
 class RetryPolicy extends $pb.GeneratedMessage {
   factory RetryPolicy({
-    $261.Duration? minimumBackoff,
-    $261.Duration? maximumBackoff,
+    $263.Duration? minimumBackoff,
+    $263.Duration? maximumBackoff,
   }) {
     final $result = create();
     if (minimumBackoff != null) {
@@ -2053,8 +2442,8 @@ class RetryPolicy extends $pb.GeneratedMessage {
   factory RetryPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RetryPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
-    ..aOM<$261.Duration>(1, _omitFieldNames ? '' : 'minimumBackoff', subBuilder: $261.Duration.create)
-    ..aOM<$261.Duration>(2, _omitFieldNames ? '' : 'maximumBackoff', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(1, _omitFieldNames ? '' : 'minimumBackoff', subBuilder: $263.Duration.create)
+    ..aOM<$263.Duration>(2, _omitFieldNames ? '' : 'maximumBackoff', subBuilder: $263.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -2082,29 +2471,29 @@ class RetryPolicy extends $pb.GeneratedMessage {
   /// Optional. The minimum delay between consecutive deliveries of a given
   /// message. Value should be between 0 and 600 seconds. Defaults to 10 seconds.
   @$pb.TagNumber(1)
-  $261.Duration get minimumBackoff => $_getN(0);
+  $263.Duration get minimumBackoff => $_getN(0);
   @$pb.TagNumber(1)
-  set minimumBackoff($261.Duration v) { setField(1, v); }
+  set minimumBackoff($263.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMinimumBackoff() => $_has(0);
   @$pb.TagNumber(1)
   void clearMinimumBackoff() => clearField(1);
   @$pb.TagNumber(1)
-  $261.Duration ensureMinimumBackoff() => $_ensure(0);
+  $263.Duration ensureMinimumBackoff() => $_ensure(0);
 
   /// Optional. The maximum delay between consecutive deliveries of a given
   /// message. Value should be between 0 and 600 seconds. Defaults to 600
   /// seconds.
   @$pb.TagNumber(2)
-  $261.Duration get maximumBackoff => $_getN(1);
+  $263.Duration get maximumBackoff => $_getN(1);
   @$pb.TagNumber(2)
-  set maximumBackoff($261.Duration v) { setField(2, v); }
+  set maximumBackoff($263.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaximumBackoff() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaximumBackoff() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Duration ensureMaximumBackoff() => $_ensure(1);
+  $263.Duration ensureMaximumBackoff() => $_ensure(1);
 }
 
 ///  Dead lettering is done on a best effort basis. The same message might be
@@ -2202,7 +2591,7 @@ class DeadLetterPolicy extends $pb.GeneratedMessage {
 /// automatic resource deletion).
 class ExpirationPolicy extends $pb.GeneratedMessage {
   factory ExpirationPolicy({
-    $261.Duration? ttl,
+    $263.Duration? ttl,
   }) {
     final $result = create();
     if (ttl != null) {
@@ -2215,7 +2604,7 @@ class ExpirationPolicy extends $pb.GeneratedMessage {
   factory ExpirationPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExpirationPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
-    ..aOM<$261.Duration>(1, _omitFieldNames ? '' : 'ttl', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(1, _omitFieldNames ? '' : 'ttl', subBuilder: $263.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -2247,15 +2636,15 @@ class ExpirationPolicy extends $pb.GeneratedMessage {
   /// associated resource, as well. If `ttl` is not set, the associated resource
   /// never expires.
   @$pb.TagNumber(1)
-  $261.Duration get ttl => $_getN(0);
+  $263.Duration get ttl => $_getN(0);
   @$pb.TagNumber(1)
-  set ttl($261.Duration v) { setField(1, v); }
+  set ttl($263.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTtl() => $_has(0);
   @$pb.TagNumber(1)
   void clearTtl() => clearField(1);
   @$pb.TagNumber(1)
-  $261.Duration ensureTtl() => $_ensure(0);
+  $263.Duration ensureTtl() => $_ensure(0);
 }
 
 /// Contains information needed for generating an
@@ -2875,7 +3264,7 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
     $core.String? filenameSuffix,
     CloudStorageConfig_TextConfig? textConfig,
     CloudStorageConfig_AvroConfig? avroConfig,
-    $261.Duration? maxDuration,
+    $263.Duration? maxDuration,
     $fixnum.Int64? maxBytes,
     $fixnum.Int64? maxMessages,
     CloudStorageConfig_State? state,
@@ -2934,7 +3323,7 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'filenameSuffix')
     ..aOM<CloudStorageConfig_TextConfig>(4, _omitFieldNames ? '' : 'textConfig', subBuilder: CloudStorageConfig_TextConfig.create)
     ..aOM<CloudStorageConfig_AvroConfig>(5, _omitFieldNames ? '' : 'avroConfig', subBuilder: CloudStorageConfig_AvroConfig.create)
-    ..aOM<$261.Duration>(6, _omitFieldNames ? '' : 'maxDuration', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(6, _omitFieldNames ? '' : 'maxDuration', subBuilder: $263.Duration.create)
     ..aInt64(7, _omitFieldNames ? '' : 'maxBytes')
     ..aInt64(8, _omitFieldNames ? '' : 'maxMessages')
     ..e<CloudStorageConfig_State>(9, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CloudStorageConfig_State.STATE_UNSPECIFIED, valueOf: CloudStorageConfig_State.valueOf, enumValues: CloudStorageConfig_State.values)
@@ -3033,15 +3422,15 @@ class CloudStorageConfig extends $pb.GeneratedMessage {
   /// file is created. Min 1 minute, max 10 minutes, default 5 minutes. May not
   /// exceed the subscription's acknowledgement deadline.
   @$pb.TagNumber(6)
-  $261.Duration get maxDuration => $_getN(5);
+  $263.Duration get maxDuration => $_getN(5);
   @$pb.TagNumber(6)
-  set maxDuration($261.Duration v) { setField(6, v); }
+  set maxDuration($263.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasMaxDuration() => $_has(5);
   @$pb.TagNumber(6)
   void clearMaxDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $261.Duration ensureMaxDuration() => $_ensure(5);
+  $263.Duration ensureMaxDuration() => $_ensure(5);
 
   /// Optional. The maximum bytes that can be written to a Cloud Storage file
   /// before a new file is created. Min 1 KB, max 10 GiB. The max_bytes limit may
@@ -3261,7 +3650,7 @@ class GetSubscriptionRequest extends $pb.GeneratedMessage {
 class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   factory UpdateSubscriptionRequest({
     Subscription? subscription,
-    $330.FieldMask? updateMask,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (subscription != null) {
@@ -3278,7 +3667,7 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSubscriptionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..aOM<Subscription>(1, _omitFieldNames ? '' : 'subscription', subBuilder: Subscription.create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3318,15 +3707,15 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   /// Required. Indicates which fields in the provided subscription to update.
   /// Must be specified and non-empty.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(1);
+  $332.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(1);
+  $332.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request for the `ListSubscriptions` method.
@@ -4493,7 +4882,7 @@ class CreateSnapshotRequest extends $pb.GeneratedMessage {
 class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   factory UpdateSnapshotRequest({
     Snapshot? snapshot,
-    $330.FieldMask? updateMask,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (snapshot != null) {
@@ -4510,7 +4899,7 @@ class UpdateSnapshotRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSnapshotRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..aOM<Snapshot>(1, _omitFieldNames ? '' : 'snapshot', subBuilder: Snapshot.create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4550,15 +4939,15 @@ class UpdateSnapshotRequest extends $pb.GeneratedMessage {
   /// Required. Indicates which fields in the provided snapshot to update.
   /// Must be specified and non-empty.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(1);
+  $332.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(1);
+  $332.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// A snapshot resource. Snapshots are used in
@@ -4570,7 +4959,7 @@ class Snapshot extends $pb.GeneratedMessage {
   factory Snapshot({
     $core.String? name,
     $core.String? topic,
-    $299.Timestamp? expireTime,
+    $301.Timestamp? expireTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -4595,7 +4984,7 @@ class Snapshot extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Snapshot', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'topic')
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $301.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Snapshot.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.pubsub.v1'))
     ..hasRequiredFields = false
   ;
@@ -4653,15 +5042,15 @@ class Snapshot extends $pb.GeneratedMessage {
   /// exists -- will expire in 4 days. The service will refuse to create a
   /// snapshot that would expire in less than 1 hour after creation.
   @$pb.TagNumber(3)
-  $299.Timestamp get expireTime => $_getN(2);
+  $301.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($299.Timestamp v) { setField(3, v); }
+  set expireTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureExpireTime() => $_ensure(2);
+  $301.Timestamp ensureExpireTime() => $_ensure(2);
 
   /// Optional. See [Creating and managing labels]
   /// (https://cloud.google.com/pubsub/docs/labels).
@@ -4933,7 +5322,7 @@ enum SeekRequest_Target {
 class SeekRequest extends $pb.GeneratedMessage {
   factory SeekRequest({
     $core.String? subscription,
-    $299.Timestamp? time,
+    $301.Timestamp? time,
     $core.String? snapshot,
   }) {
     final $result = create();
@@ -4960,7 +5349,7 @@ class SeekRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SeekRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.pubsub.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'subscription')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'time', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'time', subBuilder: $301.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'snapshot')
     ..hasRequiredFields = false
   ;
@@ -5011,15 +5400,15 @@ class SeekRequest extends $pb.GeneratedMessage {
   /// creation time), only retained messages will be marked as unacknowledged,
   /// and already-expunged messages will not be restored.
   @$pb.TagNumber(2)
-  $299.Timestamp get time => $_getN(1);
+  $301.Timestamp get time => $_getN(1);
   @$pb.TagNumber(2)
-  set time($299.Timestamp v) { setField(2, v); }
+  set time($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureTime() => $_ensure(1);
+  $301.Timestamp ensureTime() => $_ensure(1);
 
   /// Optional. The snapshot to seek to. The snapshot's topic must be the same
   /// as that of the provided subscription. Format is

@@ -29,6 +29,7 @@ const TunedModel$json = {
     {'1': 'create_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'createTime'},
     {'1': 'update_time', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'updateTime'},
     {'1': 'tuning_task', '3': 10, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.TuningTask', '8': {}, '10': 'tuningTask'},
+    {'1': 'reader_project_numbers', '3': 14, '4': 3, '5': 3, '8': {}, '10': 'readerProjectNumbers'},
   ],
   '4': [TunedModel_State$json],
   '7': {},
@@ -65,11 +66,12 @@ final $typed_data.Uint8List tunedModelDescriptor = $convert.base64Decode(
     'JlYXRlX3RpbWUYCCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgPgQQNSCmNyZWF0'
     'ZVRpbWUSQAoLdXBkYXRlX3RpbWUYCSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQg'
     'PgQQNSCnVwZGF0ZVRpbWUSVQoLdHVuaW5nX3Rhc2sYCiABKAsyLy5nb29nbGUuYWkuZ2VuZXJh'
-    'dGl2ZWxhbmd1YWdlLnYxYmV0YS5UdW5pbmdUYXNrQgPgQQJSCnR1bmluZ1Rhc2siRAoFU3RhdG'
-    'USFQoRU1RBVEVfVU5TUEVDSUZJRUQQABIMCghDUkVBVElORxABEgoKBkFDVElWRRACEgoKBkZB'
-    'SUxFRBADOmXqQWIKLGdlbmVyYXRpdmVsYW5ndWFnZS5nb29nbGVhcGlzLmNvbS9UdW5lZE1vZG'
-    'VsEhl0dW5lZE1vZGVscy97dHVuZWRfbW9kZWx9Kgt0dW5lZE1vZGVsczIKdHVuZWRNb2RlbEIO'
-    'Cgxzb3VyY2VfbW9kZWxCDgoMX3RlbXBlcmF0dXJlQggKBl90b3BfcEIICgZfdG9wX2s=');
+    'dGl2ZWxhbmd1YWdlLnYxYmV0YS5UdW5pbmdUYXNrQgPgQQJSCnR1bmluZ1Rhc2sSOQoWcmVhZG'
+    'VyX3Byb2plY3RfbnVtYmVycxgOIAMoA0ID4EEBUhRyZWFkZXJQcm9qZWN0TnVtYmVycyJECgVT'
+    'dGF0ZRIVChFTVEFURV9VTlNQRUNJRklFRBAAEgwKCENSRUFUSU5HEAESCgoGQUNUSVZFEAISCg'
+    'oGRkFJTEVEEAM6ZepBYgosZ2VuZXJhdGl2ZWxhbmd1YWdlLmdvb2dsZWFwaXMuY29tL1R1bmVk'
+    'TW9kZWwSGXR1bmVkTW9kZWxzL3t0dW5lZF9tb2RlbH0qC3R1bmVkTW9kZWxzMgp0dW5lZE1vZG'
+    'VsQg4KDHNvdXJjZV9tb2RlbEIOCgxfdGVtcGVyYXR1cmVCCAoGX3RvcF9wQggKBl90b3Bfaw==');
 
 @$core.Deprecated('Use tunedModelSourceDescriptor instead')
 const TunedModelSource$json = {

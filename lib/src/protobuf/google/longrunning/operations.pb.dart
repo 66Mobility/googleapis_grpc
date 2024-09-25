@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/any.pb.dart' as $318;
-import '../protobuf/duration.pb.dart' as $261;
-import '../rpc/status.pb.dart' as $319;
+import '../protobuf/any.pb.dart' as $320;
+import '../protobuf/duration.pb.dart' as $263;
+import '../rpc/status.pb.dart' as $321;
 
 enum Operation_Result {
   error, 
@@ -28,10 +28,10 @@ enum Operation_Result {
 class Operation extends $pb.GeneratedMessage {
   factory Operation({
     $core.String? name,
-    $318.Any? metadata,
+    $320.Any? metadata,
     $core.bool? done,
-    $319.Status? error,
-    $318.Any? response,
+    $321.Status? error,
+    $320.Any? response,
   }) {
     final $result = create();
     if (name != null) {
@@ -63,10 +63,10 @@ class Operation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Operation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.longrunning'), createEmptyInstance: create)
     ..oo(0, [4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$318.Any>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $318.Any.create)
+    ..aOM<$320.Any>(2, _omitFieldNames ? '' : 'metadata', subBuilder: $320.Any.create)
     ..aOB(3, _omitFieldNames ? '' : 'done')
-    ..aOM<$319.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $319.Status.create)
-    ..aOM<$318.Any>(5, _omitFieldNames ? '' : 'response', subBuilder: $318.Any.create)
+    ..aOM<$321.Status>(4, _omitFieldNames ? '' : 'error', subBuilder: $321.Status.create)
+    ..aOM<$320.Any>(5, _omitFieldNames ? '' : 'response', subBuilder: $320.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -111,15 +111,15 @@ class Operation extends $pb.GeneratedMessage {
   /// Some services might not provide such metadata.  Any method that returns a
   /// long-running operation should document the metadata type, if any.
   @$pb.TagNumber(2)
-  $318.Any get metadata => $_getN(1);
+  $320.Any get metadata => $_getN(1);
   @$pb.TagNumber(2)
-  set metadata($318.Any v) { setField(2, v); }
+  set metadata($320.Any v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMetadata() => $_has(1);
   @$pb.TagNumber(2)
   void clearMetadata() => clearField(2);
   @$pb.TagNumber(2)
-  $318.Any ensureMetadata() => $_ensure(1);
+  $320.Any ensureMetadata() => $_ensure(1);
 
   /// If the value is `false`, it means the operation is still in progress.
   /// If `true`, the operation is completed, and either `error` or `response` is
@@ -135,15 +135,15 @@ class Operation extends $pb.GeneratedMessage {
 
   /// The error result of the operation in case of failure or cancellation.
   @$pb.TagNumber(4)
-  $319.Status get error => $_getN(3);
+  $321.Status get error => $_getN(3);
   @$pb.TagNumber(4)
-  set error($319.Status v) { setField(4, v); }
+  set error($321.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasError() => $_has(3);
   @$pb.TagNumber(4)
   void clearError() => clearField(4);
   @$pb.TagNumber(4)
-  $319.Status ensureError() => $_ensure(3);
+  $321.Status ensureError() => $_ensure(3);
 
   /// The normal response of the operation in case of success.  If the original
   /// method returns no data on success, such as `Delete`, the response is
@@ -154,15 +154,15 @@ class Operation extends $pb.GeneratedMessage {
   /// is `TakeSnapshot()`, the inferred response type is
   /// `TakeSnapshotResponse`.
   @$pb.TagNumber(5)
-  $318.Any get response => $_getN(4);
+  $320.Any get response => $_getN(4);
   @$pb.TagNumber(5)
-  set response($318.Any v) { setField(5, v); }
+  set response($320.Any v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasResponse() => $_has(4);
   @$pb.TagNumber(5)
   void clearResponse() => clearField(5);
   @$pb.TagNumber(5)
-  $318.Any ensureResponse() => $_ensure(4);
+  $320.Any ensureResponse() => $_ensure(4);
 }
 
 /// The request message for [Operations.GetOperation][google.longrunning.Operations.GetOperation].
@@ -483,7 +483,7 @@ class DeleteOperationRequest extends $pb.GeneratedMessage {
 class WaitOperationRequest extends $pb.GeneratedMessage {
   factory WaitOperationRequest({
     $core.String? name,
-    $261.Duration? timeout,
+    $263.Duration? timeout,
   }) {
     final $result = create();
     if (name != null) {
@@ -500,7 +500,7 @@ class WaitOperationRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WaitOperationRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.longrunning'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$261.Duration>(2, _omitFieldNames ? '' : 'timeout', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(2, _omitFieldNames ? '' : 'timeout', subBuilder: $263.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -539,15 +539,15 @@ class WaitOperationRequest extends $pb.GeneratedMessage {
   /// will be at most the time permitted by the underlying HTTP/RPC protocol.
   /// If RPC context deadline is also specified, the shorter one will be used.
   @$pb.TagNumber(2)
-  $261.Duration get timeout => $_getN(1);
+  $263.Duration get timeout => $_getN(1);
   @$pb.TagNumber(2)
-  set timeout($261.Duration v) { setField(2, v); }
+  set timeout($263.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Duration ensureTimeout() => $_ensure(1);
+  $263.Duration ensureTimeout() => $_ensure(1);
 }
 
 ///  A message representing the message types used by a long-running operation.

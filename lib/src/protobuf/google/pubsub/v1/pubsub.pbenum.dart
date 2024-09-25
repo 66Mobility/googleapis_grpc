@@ -37,6 +37,54 @@ class IngestionDataSourceSettings_AwsKinesis_State extends $pb.ProtobufEnum {
   const IngestionDataSourceSettings_AwsKinesis_State._($core.int v, $core.String n) : super(v, n);
 }
 
+/// Possible states for ingestion from Cloud Storage.
+class IngestionDataSourceSettings_CloudStorage_State extends $pb.ProtobufEnum {
+  static const IngestionDataSourceSettings_CloudStorage_State STATE_UNSPECIFIED = IngestionDataSourceSettings_CloudStorage_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');
+  static const IngestionDataSourceSettings_CloudStorage_State ACTIVE = IngestionDataSourceSettings_CloudStorage_State._(1, _omitEnumNames ? '' : 'ACTIVE');
+  static const IngestionDataSourceSettings_CloudStorage_State CLOUD_STORAGE_PERMISSION_DENIED = IngestionDataSourceSettings_CloudStorage_State._(2, _omitEnumNames ? '' : 'CLOUD_STORAGE_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_CloudStorage_State PUBLISH_PERMISSION_DENIED = IngestionDataSourceSettings_CloudStorage_State._(3, _omitEnumNames ? '' : 'PUBLISH_PERMISSION_DENIED');
+  static const IngestionDataSourceSettings_CloudStorage_State BUCKET_NOT_FOUND = IngestionDataSourceSettings_CloudStorage_State._(4, _omitEnumNames ? '' : 'BUCKET_NOT_FOUND');
+  static const IngestionDataSourceSettings_CloudStorage_State TOO_MANY_OBJECTS = IngestionDataSourceSettings_CloudStorage_State._(5, _omitEnumNames ? '' : 'TOO_MANY_OBJECTS');
+
+  static const $core.List<IngestionDataSourceSettings_CloudStorage_State> values = <IngestionDataSourceSettings_CloudStorage_State> [
+    STATE_UNSPECIFIED,
+    ACTIVE,
+    CLOUD_STORAGE_PERMISSION_DENIED,
+    PUBLISH_PERMISSION_DENIED,
+    BUCKET_NOT_FOUND,
+    TOO_MANY_OBJECTS,
+  ];
+
+  static final $core.Map<$core.int, IngestionDataSourceSettings_CloudStorage_State> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static IngestionDataSourceSettings_CloudStorage_State? valueOf($core.int value) => _byValue[value];
+
+  const IngestionDataSourceSettings_CloudStorage_State._($core.int v, $core.String n) : super(v, n);
+}
+
+/// Severity levels of Platform Logs.
+class PlatformLogsSettings_Severity extends $pb.ProtobufEnum {
+  static const PlatformLogsSettings_Severity SEVERITY_UNSPECIFIED = PlatformLogsSettings_Severity._(0, _omitEnumNames ? '' : 'SEVERITY_UNSPECIFIED');
+  static const PlatformLogsSettings_Severity DISABLED = PlatformLogsSettings_Severity._(1, _omitEnumNames ? '' : 'DISABLED');
+  static const PlatformLogsSettings_Severity DEBUG = PlatformLogsSettings_Severity._(2, _omitEnumNames ? '' : 'DEBUG');
+  static const PlatformLogsSettings_Severity INFO = PlatformLogsSettings_Severity._(3, _omitEnumNames ? '' : 'INFO');
+  static const PlatformLogsSettings_Severity WARNING = PlatformLogsSettings_Severity._(4, _omitEnumNames ? '' : 'WARNING');
+  static const PlatformLogsSettings_Severity ERROR = PlatformLogsSettings_Severity._(5, _omitEnumNames ? '' : 'ERROR');
+
+  static const $core.List<PlatformLogsSettings_Severity> values = <PlatformLogsSettings_Severity> [
+    SEVERITY_UNSPECIFIED,
+    DISABLED,
+    DEBUG,
+    INFO,
+    WARNING,
+    ERROR,
+  ];
+
+  static final $core.Map<$core.int, PlatformLogsSettings_Severity> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static PlatformLogsSettings_Severity? valueOf($core.int value) => _byValue[value];
+
+  const PlatformLogsSettings_Severity._($core.int v, $core.String n) : super(v, n);
+}
+
 /// The state of the topic.
 class Topic_State extends $pb.ProtobufEnum {
   static const Topic_State STATE_UNSPECIFIED = Topic_State._(0, _omitEnumNames ? '' : 'STATE_UNSPECIFIED');

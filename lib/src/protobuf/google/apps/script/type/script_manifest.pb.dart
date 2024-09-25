@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $258;
-import 'addon_widget_set.pb.dart' as $394;
-import 'extension_point.pb.dart' as $393;
+import '../../../protobuf/struct.pb.dart' as $260;
+import 'addon_widget_set.pb.dart' as $396;
+import 'extension_point.pb.dart' as $395;
 import 'script_manifest.pbenum.dart';
 
 export 'script_manifest.pbenum.dart';
@@ -26,11 +26,11 @@ class CommonAddOnManifest extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? logoUrl,
     LayoutProperties? layoutProperties,
-    $394.AddOnWidgetSet? addOnWidgetSet,
+    $396.AddOnWidgetSet? addOnWidgetSet,
     $core.bool? useLocaleFromApp,
-    $393.HomepageExtensionPoint? homepageTrigger,
-    $core.Iterable<$393.UniversalActionExtensionPoint>? universalActions,
-    $258.ListValue? openLinkUrlPrefixes,
+    $395.HomepageExtensionPoint? homepageTrigger,
+    $core.Iterable<$395.UniversalActionExtensionPoint>? universalActions,
+    $260.ListValue? openLinkUrlPrefixes,
   }) {
     final $result = create();
     if (name != null) {
@@ -67,11 +67,11 @@ class CommonAddOnManifest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'logoUrl')
     ..aOM<LayoutProperties>(3, _omitFieldNames ? '' : 'layoutProperties', subBuilder: LayoutProperties.create)
-    ..aOM<$394.AddOnWidgetSet>(4, _omitFieldNames ? '' : 'addOnWidgetSet', subBuilder: $394.AddOnWidgetSet.create)
+    ..aOM<$396.AddOnWidgetSet>(4, _omitFieldNames ? '' : 'addOnWidgetSet', subBuilder: $396.AddOnWidgetSet.create)
     ..aOB(5, _omitFieldNames ? '' : 'useLocaleFromApp')
-    ..aOM<$393.HomepageExtensionPoint>(6, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $393.HomepageExtensionPoint.create)
-    ..pc<$393.UniversalActionExtensionPoint>(7, _omitFieldNames ? '' : 'universalActions', $pb.PbFieldType.PM, subBuilder: $393.UniversalActionExtensionPoint.create)
-    ..aOM<$258.ListValue>(8, _omitFieldNames ? '' : 'openLinkUrlPrefixes', subBuilder: $258.ListValue.create)
+    ..aOM<$395.HomepageExtensionPoint>(6, _omitFieldNames ? '' : 'homepageTrigger', subBuilder: $395.HomepageExtensionPoint.create)
+    ..pc<$395.UniversalActionExtensionPoint>(7, _omitFieldNames ? '' : 'universalActions', $pb.PbFieldType.PM, subBuilder: $395.UniversalActionExtensionPoint.create)
+    ..aOM<$260.ListValue>(8, _omitFieldNames ? '' : 'openLinkUrlPrefixes', subBuilder: $260.ListValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -131,15 +131,15 @@ class CommonAddOnManifest extends $pb.GeneratedMessage {
   /// The widgets used in the add-on. If this field is not specified,
   /// it indicates that default set is used.
   @$pb.TagNumber(4)
-  $394.AddOnWidgetSet get addOnWidgetSet => $_getN(3);
+  $396.AddOnWidgetSet get addOnWidgetSet => $_getN(3);
   @$pb.TagNumber(4)
-  set addOnWidgetSet($394.AddOnWidgetSet v) { setField(4, v); }
+  set addOnWidgetSet($396.AddOnWidgetSet v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasAddOnWidgetSet() => $_has(3);
   @$pb.TagNumber(4)
   void clearAddOnWidgetSet() => clearField(4);
   @$pb.TagNumber(4)
-  $394.AddOnWidgetSet ensureAddOnWidgetSet() => $_ensure(3);
+  $396.AddOnWidgetSet ensureAddOnWidgetSet() => $_ensure(3);
 
   /// Whether to pass locale information from host app.
   @$pb.TagNumber(5)
@@ -156,22 +156,22 @@ class CommonAddOnManifest extends $pb.GeneratedMessage {
   /// the user, but may be eclipsed by contextual content when this add-on
   /// declares more targeted triggers.
   @$pb.TagNumber(6)
-  $393.HomepageExtensionPoint get homepageTrigger => $_getN(5);
+  $395.HomepageExtensionPoint get homepageTrigger => $_getN(5);
   @$pb.TagNumber(6)
-  set homepageTrigger($393.HomepageExtensionPoint v) { setField(6, v); }
+  set homepageTrigger($395.HomepageExtensionPoint v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasHomepageTrigger() => $_has(5);
   @$pb.TagNumber(6)
   void clearHomepageTrigger() => clearField(6);
   @$pb.TagNumber(6)
-  $393.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(5);
+  $395.HomepageExtensionPoint ensureHomepageTrigger() => $_ensure(5);
 
   /// Defines a list of extension points in the universal action menu which
   /// serves as a setting menu for the add-on. The extension point can be
   /// link URL to open or an endpoint to execute as a form
   /// submission.
   @$pb.TagNumber(7)
-  $core.List<$393.UniversalActionExtensionPoint> get universalActions => $_getList(6);
+  $core.List<$395.UniversalActionExtensionPoint> get universalActions => $_getList(6);
 
   /// An OpenLink action
   /// can only use a URL with an HTTPS, MAILTO or TEL scheme.  For HTTPS links,
@@ -181,15 +181,15 @@ class CommonAddOnManifest extends $pb.GeneratedMessage {
   /// is assumed.  Notice that HTTP links are automatically rewritten to HTTPS
   /// links.
   @$pb.TagNumber(8)
-  $258.ListValue get openLinkUrlPrefixes => $_getN(7);
+  $260.ListValue get openLinkUrlPrefixes => $_getN(7);
   @$pb.TagNumber(8)
-  set openLinkUrlPrefixes($258.ListValue v) { setField(8, v); }
+  set openLinkUrlPrefixes($260.ListValue v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasOpenLinkUrlPrefixes() => $_has(7);
   @$pb.TagNumber(8)
   void clearOpenLinkUrlPrefixes() => clearField(8);
   @$pb.TagNumber(8)
-  $258.ListValue ensureOpenLinkUrlPrefixes() => $_ensure(7);
+  $260.ListValue ensureOpenLinkUrlPrefixes() => $_ensure(7);
 }
 
 /// Card layout properties shared across all add-on host applications.

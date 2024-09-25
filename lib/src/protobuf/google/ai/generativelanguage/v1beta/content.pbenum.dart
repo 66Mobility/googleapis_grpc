@@ -76,6 +76,22 @@ class CodeExecutionResult_Outcome extends $pb.ProtobufEnum {
   const CodeExecutionResult_Outcome._($core.int v, $core.String n) : super(v, n);
 }
 
+/// The mode of the predictor to be used in dynamic retrieval.
+class DynamicRetrievalConfig_Mode extends $pb.ProtobufEnum {
+  static const DynamicRetrievalConfig_Mode MODE_UNSPECIFIED = DynamicRetrievalConfig_Mode._(0, _omitEnumNames ? '' : 'MODE_UNSPECIFIED');
+  static const DynamicRetrievalConfig_Mode MODE_DYNAMIC = DynamicRetrievalConfig_Mode._(1, _omitEnumNames ? '' : 'MODE_DYNAMIC');
+
+  static const $core.List<DynamicRetrievalConfig_Mode> values = <DynamicRetrievalConfig_Mode> [
+    MODE_UNSPECIFIED,
+    MODE_DYNAMIC,
+  ];
+
+  static final $core.Map<$core.int, DynamicRetrievalConfig_Mode> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DynamicRetrievalConfig_Mode? valueOf($core.int value) => _byValue[value];
+
+  const DynamicRetrievalConfig_Mode._($core.int v, $core.String n) : super(v, n);
+}
+
 /// Defines the execution behavior for function calling by defining the
 /// execution mode.
 class FunctionCallingConfig_Mode extends $pb.ProtobufEnum {

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $258;
-import 'device.pb.dart' as $439;
+import '../../../protobuf/struct.pb.dart' as $260;
+import 'device.pb.dart' as $441;
 
 /// Request type for the
 /// [`RequestSyncDevices`](#google.home.graph.v1.HomeGraphApiService.RequestSyncDevices)
@@ -383,8 +383,8 @@ class StateAndNotificationPayload extends $pb.GeneratedMessage {
 /// The states and notifications specific to a device.
 class ReportStateAndNotificationDevice extends $pb.GeneratedMessage {
   factory ReportStateAndNotificationDevice({
-    $258.Struct? states,
-    $258.Struct? notifications,
+    $260.Struct? states,
+    $260.Struct? notifications,
   }) {
     final $result = create();
     if (states != null) {
@@ -400,8 +400,8 @@ class ReportStateAndNotificationDevice extends $pb.GeneratedMessage {
   factory ReportStateAndNotificationDevice.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReportStateAndNotificationDevice', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.graph.v1'), createEmptyInstance: create)
-    ..aOM<$258.Struct>(1, _omitFieldNames ? '' : 'states', subBuilder: $258.Struct.create)
-    ..aOM<$258.Struct>(2, _omitFieldNames ? '' : 'notifications', subBuilder: $258.Struct.create)
+    ..aOM<$260.Struct>(1, _omitFieldNames ? '' : 'states', subBuilder: $260.Struct.create)
+    ..aOM<$260.Struct>(2, _omitFieldNames ? '' : 'notifications', subBuilder: $260.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -430,29 +430,29 @@ class ReportStateAndNotificationDevice extends $pb.GeneratedMessage {
   /// of the individual trait [reference
   /// guides](https://developers.home.google.com/cloud-to-cloud/traits).
   @$pb.TagNumber(1)
-  $258.Struct get states => $_getN(0);
+  $260.Struct get states => $_getN(0);
   @$pb.TagNumber(1)
-  set states($258.Struct v) { setField(1, v); }
+  set states($260.Struct v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStates() => $_has(0);
   @$pb.TagNumber(1)
   void clearStates() => clearField(1);
   @$pb.TagNumber(1)
-  $258.Struct ensureStates() => $_ensure(0);
+  $260.Struct ensureStates() => $_ensure(0);
 
   /// Notifications metadata for devices. See the **Device NOTIFICATIONS**
   /// section of the individual trait [reference
   /// guides](https://developers.home.google.com/cloud-to-cloud/traits).
   @$pb.TagNumber(2)
-  $258.Struct get notifications => $_getN(1);
+  $260.Struct get notifications => $_getN(1);
   @$pb.TagNumber(2)
-  set notifications($258.Struct v) { setField(2, v); }
+  set notifications($260.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasNotifications() => $_has(1);
   @$pb.TagNumber(2)
   void clearNotifications() => clearField(2);
   @$pb.TagNumber(2)
-  $258.Struct ensureNotifications() => $_ensure(1);
+  $260.Struct ensureNotifications() => $_ensure(1);
 }
 
 /// Request type for the
@@ -855,7 +855,7 @@ class QueryResponse extends $pb.GeneratedMessage {
 /// Payload containing device states information.
 class QueryResponsePayload extends $pb.GeneratedMessage {
   factory QueryResponsePayload({
-    $core.Map<$core.String, $258.Struct>? devices,
+    $core.Map<$core.String, $260.Struct>? devices,
   }) {
     final $result = create();
     if (devices != null) {
@@ -868,7 +868,7 @@ class QueryResponsePayload extends $pb.GeneratedMessage {
   factory QueryResponsePayload.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryResponsePayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.graph.v1'), createEmptyInstance: create)
-    ..m<$core.String, $258.Struct>(1, _omitFieldNames ? '' : 'devices', entryClassName: 'QueryResponsePayload.DevicesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $258.Struct.create, valueDefaultOrMaker: $258.Struct.getDefault, packageName: const $pb.PackageName('google.home.graph.v1'))
+    ..m<$core.String, $260.Struct>(1, _omitFieldNames ? '' : 'devices', entryClassName: 'QueryResponsePayload.DevicesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $260.Struct.create, valueDefaultOrMaker: $260.Struct.getDefault, packageName: const $pb.PackageName('google.home.graph.v1'))
     ..hasRequiredFields = false
   ;
 
@@ -896,7 +896,7 @@ class QueryResponsePayload extends $pb.GeneratedMessage {
   /// States of the devices. Map of third-party device ID to struct of device
   /// states.
   @$pb.TagNumber(1)
-  $core.Map<$core.String, $258.Struct> get devices => $_getMap(0);
+  $core.Map<$core.String, $260.Struct> get devices => $_getMap(0);
 }
 
 /// Request type for the [`Sync`](#google.home.graph.v1.HomeGraphApiService.Sync)
@@ -1079,7 +1079,7 @@ class SyncResponse extends $pb.GeneratedMessage {
 class SyncResponsePayload extends $pb.GeneratedMessage {
   factory SyncResponsePayload({
     $core.String? agentUserId,
-    $core.Iterable<$439.Device>? devices,
+    $core.Iterable<$441.Device>? devices,
   }) {
     final $result = create();
     if (agentUserId != null) {
@@ -1096,7 +1096,7 @@ class SyncResponsePayload extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SyncResponsePayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.graph.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'agentUserId')
-    ..pc<$439.Device>(2, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM, subBuilder: $439.Device.create)
+    ..pc<$441.Device>(2, _omitFieldNames ? '' : 'devices', $pb.PbFieldType.PM, subBuilder: $441.Device.create)
     ..hasRequiredFields = false
   ;
 
@@ -1133,7 +1133,7 @@ class SyncResponsePayload extends $pb.GeneratedMessage {
 
   /// Devices associated with the third-party user.
   @$pb.TagNumber(2)
-  $core.List<$439.Device> get devices => $_getList(1);
+  $core.List<$441.Device> get devices => $_getList(1);
 }
 
 

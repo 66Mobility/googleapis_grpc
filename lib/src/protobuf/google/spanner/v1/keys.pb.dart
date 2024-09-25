@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $258;
+import '../../protobuf/struct.pb.dart' as $260;
 
 enum KeyRange_StartKeyType {
   startClosed, 
@@ -117,10 +117,10 @@ enum KeyRange_EndKeyType {
 ///  because `Key` is a descending column in the schema.
 class KeyRange extends $pb.GeneratedMessage {
   factory KeyRange({
-    $258.ListValue? startClosed,
-    $258.ListValue? startOpen,
-    $258.ListValue? endClosed,
-    $258.ListValue? endOpen,
+    $260.ListValue? startClosed,
+    $260.ListValue? startOpen,
+    $260.ListValue? endClosed,
+    $260.ListValue? endOpen,
   }) {
     final $result = create();
     if (startClosed != null) {
@@ -154,10 +154,10 @@ class KeyRange extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeyRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..oo(1, [3, 4])
-    ..aOM<$258.ListValue>(1, _omitFieldNames ? '' : 'startClosed', subBuilder: $258.ListValue.create)
-    ..aOM<$258.ListValue>(2, _omitFieldNames ? '' : 'startOpen', subBuilder: $258.ListValue.create)
-    ..aOM<$258.ListValue>(3, _omitFieldNames ? '' : 'endClosed', subBuilder: $258.ListValue.create)
-    ..aOM<$258.ListValue>(4, _omitFieldNames ? '' : 'endOpen', subBuilder: $258.ListValue.create)
+    ..aOM<$260.ListValue>(1, _omitFieldNames ? '' : 'startClosed', subBuilder: $260.ListValue.create)
+    ..aOM<$260.ListValue>(2, _omitFieldNames ? '' : 'startOpen', subBuilder: $260.ListValue.create)
+    ..aOM<$260.ListValue>(3, _omitFieldNames ? '' : 'endClosed', subBuilder: $260.ListValue.create)
+    ..aOM<$260.ListValue>(4, _omitFieldNames ? '' : 'endOpen', subBuilder: $260.ListValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -191,54 +191,54 @@ class KeyRange extends $pb.GeneratedMessage {
   /// If the start is closed, then the range includes all rows whose
   /// first `len(start_closed)` key columns exactly match `start_closed`.
   @$pb.TagNumber(1)
-  $258.ListValue get startClosed => $_getN(0);
+  $260.ListValue get startClosed => $_getN(0);
   @$pb.TagNumber(1)
-  set startClosed($258.ListValue v) { setField(1, v); }
+  set startClosed($260.ListValue v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartClosed() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartClosed() => clearField(1);
   @$pb.TagNumber(1)
-  $258.ListValue ensureStartClosed() => $_ensure(0);
+  $260.ListValue ensureStartClosed() => $_ensure(0);
 
   /// If the start is open, then the range excludes rows whose first
   /// `len(start_open)` key columns exactly match `start_open`.
   @$pb.TagNumber(2)
-  $258.ListValue get startOpen => $_getN(1);
+  $260.ListValue get startOpen => $_getN(1);
   @$pb.TagNumber(2)
-  set startOpen($258.ListValue v) { setField(2, v); }
+  set startOpen($260.ListValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartOpen() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartOpen() => clearField(2);
   @$pb.TagNumber(2)
-  $258.ListValue ensureStartOpen() => $_ensure(1);
+  $260.ListValue ensureStartOpen() => $_ensure(1);
 
   /// If the end is closed, then the range includes all rows whose
   /// first `len(end_closed)` key columns exactly match `end_closed`.
   @$pb.TagNumber(3)
-  $258.ListValue get endClosed => $_getN(2);
+  $260.ListValue get endClosed => $_getN(2);
   @$pb.TagNumber(3)
-  set endClosed($258.ListValue v) { setField(3, v); }
+  set endClosed($260.ListValue v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndClosed() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndClosed() => clearField(3);
   @$pb.TagNumber(3)
-  $258.ListValue ensureEndClosed() => $_ensure(2);
+  $260.ListValue ensureEndClosed() => $_ensure(2);
 
   /// If the end is open, then the range excludes rows whose first
   /// `len(end_open)` key columns exactly match `end_open`.
   @$pb.TagNumber(4)
-  $258.ListValue get endOpen => $_getN(3);
+  $260.ListValue get endOpen => $_getN(3);
   @$pb.TagNumber(4)
-  set endOpen($258.ListValue v) { setField(4, v); }
+  set endOpen($260.ListValue v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEndOpen() => $_has(3);
   @$pb.TagNumber(4)
   void clearEndOpen() => clearField(4);
   @$pb.TagNumber(4)
-  $258.ListValue ensureEndOpen() => $_ensure(3);
+  $260.ListValue ensureEndOpen() => $_ensure(3);
 }
 
 ///  `KeySet` defines a collection of Cloud Spanner keys and/or key ranges. All
@@ -250,7 +250,7 @@ class KeyRange extends $pb.GeneratedMessage {
 ///  behaves as if the key were only specified once.
 class KeySet extends $pb.GeneratedMessage {
   factory KeySet({
-    $core.Iterable<$258.ListValue>? keys,
+    $core.Iterable<$260.ListValue>? keys,
     $core.Iterable<KeyRange>? ranges,
     $core.bool? all,
   }) {
@@ -271,7 +271,7 @@ class KeySet extends $pb.GeneratedMessage {
   factory KeySet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'KeySet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..pc<$258.ListValue>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $258.ListValue.create)
+    ..pc<$260.ListValue>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $260.ListValue.create)
     ..pc<KeyRange>(2, _omitFieldNames ? '' : 'ranges', $pb.PbFieldType.PM, subBuilder: KeyRange.create)
     ..aOB(3, _omitFieldNames ? '' : 'all')
     ..hasRequiredFields = false
@@ -303,7 +303,7 @@ class KeySet extends $pb.GeneratedMessage {
   /// with which this `KeySet` is used.  Individual key values are
   /// encoded as described [here][google.spanner.v1.TypeCode].
   @$pb.TagNumber(1)
-  $core.List<$258.ListValue> get keys => $_getList(0);
+  $core.List<$260.ListValue> get keys => $_getList(0);
 
   /// A list of key ranges. See [KeyRange][google.spanner.v1.KeyRange] for more information about
   /// key range specifications.

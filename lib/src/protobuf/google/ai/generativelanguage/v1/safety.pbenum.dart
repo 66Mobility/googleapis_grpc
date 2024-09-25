@@ -29,6 +29,7 @@ class HarmCategory extends $pb.ProtobufEnum {
   static const HarmCategory HARM_CATEGORY_HATE_SPEECH = HarmCategory._(8, _omitEnumNames ? '' : 'HARM_CATEGORY_HATE_SPEECH');
   static const HarmCategory HARM_CATEGORY_SEXUALLY_EXPLICIT = HarmCategory._(9, _omitEnumNames ? '' : 'HARM_CATEGORY_SEXUALLY_EXPLICIT');
   static const HarmCategory HARM_CATEGORY_DANGEROUS_CONTENT = HarmCategory._(10, _omitEnumNames ? '' : 'HARM_CATEGORY_DANGEROUS_CONTENT');
+  static const HarmCategory HARM_CATEGORY_CIVIC_INTEGRITY = HarmCategory._(11, _omitEnumNames ? '' : 'HARM_CATEGORY_CIVIC_INTEGRITY');
 
   static const $core.List<HarmCategory> values = <HarmCategory> [
     HARM_CATEGORY_UNSPECIFIED,
@@ -42,6 +43,7 @@ class HarmCategory extends $pb.ProtobufEnum {
     HARM_CATEGORY_HATE_SPEECH,
     HARM_CATEGORY_SEXUALLY_EXPLICIT,
     HARM_CATEGORY_DANGEROUS_CONTENT,
+    HARM_CATEGORY_CIVIC_INTEGRITY,
   ];
 
   static final $core.Map<$core.int, HarmCategory> _byValue = $pb.ProtobufEnum.initByValue(values);
@@ -82,6 +84,7 @@ class SafetySetting_HarmBlockThreshold extends $pb.ProtobufEnum {
   static const SafetySetting_HarmBlockThreshold BLOCK_MEDIUM_AND_ABOVE = SafetySetting_HarmBlockThreshold._(2, _omitEnumNames ? '' : 'BLOCK_MEDIUM_AND_ABOVE');
   static const SafetySetting_HarmBlockThreshold BLOCK_ONLY_HIGH = SafetySetting_HarmBlockThreshold._(3, _omitEnumNames ? '' : 'BLOCK_ONLY_HIGH');
   static const SafetySetting_HarmBlockThreshold BLOCK_NONE = SafetySetting_HarmBlockThreshold._(4, _omitEnumNames ? '' : 'BLOCK_NONE');
+  static const SafetySetting_HarmBlockThreshold OFF = SafetySetting_HarmBlockThreshold._(5, _omitEnumNames ? '' : 'OFF');
 
   static const $core.List<SafetySetting_HarmBlockThreshold> values = <SafetySetting_HarmBlockThreshold> [
     HARM_BLOCK_THRESHOLD_UNSPECIFIED,
@@ -89,6 +92,7 @@ class SafetySetting_HarmBlockThreshold extends $pb.ProtobufEnum {
     BLOCK_MEDIUM_AND_ABOVE,
     BLOCK_ONLY_HIGH,
     BLOCK_NONE,
+    OFF,
   ];
 
   static final $core.Map<$core.int, SafetySetting_HarmBlockThreshold> _byValue = $pb.ProtobufEnum.initByValue(values);

@@ -16,23 +16,23 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import 'localinventory.pb.dart' as $230;
+import 'localinventory.pb.dart' as $232;
 
 export 'localinventory.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.inventories.v1beta.LocalInventoryService')
 class LocalInventoryServiceClient extends $grpc.Client {
-  static final _$listLocalInventories = $grpc.ClientMethod<$230.ListLocalInventoriesRequest, $230.ListLocalInventoriesResponse>(
+  static final _$listLocalInventories = $grpc.ClientMethod<$232.ListLocalInventoriesRequest, $232.ListLocalInventoriesResponse>(
       '/google.shopping.merchant.inventories.v1beta.LocalInventoryService/ListLocalInventories',
-      ($230.ListLocalInventoriesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $230.ListLocalInventoriesResponse.fromBuffer(value));
-  static final _$insertLocalInventory = $grpc.ClientMethod<$230.InsertLocalInventoryRequest, $230.LocalInventory>(
+      ($232.ListLocalInventoriesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $232.ListLocalInventoriesResponse.fromBuffer(value));
+  static final _$insertLocalInventory = $grpc.ClientMethod<$232.InsertLocalInventoryRequest, $232.LocalInventory>(
       '/google.shopping.merchant.inventories.v1beta.LocalInventoryService/InsertLocalInventory',
-      ($230.InsertLocalInventoryRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $230.LocalInventory.fromBuffer(value));
-  static final _$deleteLocalInventory = $grpc.ClientMethod<$230.DeleteLocalInventoryRequest, $3.Empty>(
+      ($232.InsertLocalInventoryRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $232.LocalInventory.fromBuffer(value));
+  static final _$deleteLocalInventory = $grpc.ClientMethod<$232.DeleteLocalInventoryRequest, $3.Empty>(
       '/google.shopping.merchant.inventories.v1beta.LocalInventoryService/DeleteLocalInventory',
-      ($230.DeleteLocalInventoryRequest value) => value.writeToBuffer(),
+      ($232.DeleteLocalInventoryRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
 
   LocalInventoryServiceClient($grpc.ClientChannel channel,
@@ -41,15 +41,15 @@ class LocalInventoryServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$230.ListLocalInventoriesResponse> listLocalInventories($230.ListLocalInventoriesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$232.ListLocalInventoriesResponse> listLocalInventories($232.ListLocalInventoriesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listLocalInventories, request, options: options);
   }
 
-  $grpc.ResponseFuture<$230.LocalInventory> insertLocalInventory($230.InsertLocalInventoryRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$232.LocalInventory> insertLocalInventory($232.InsertLocalInventoryRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertLocalInventory, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteLocalInventory($230.DeleteLocalInventoryRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteLocalInventory($232.DeleteLocalInventoryRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteLocalInventory, request, options: options);
   }
 }
@@ -59,42 +59,42 @@ abstract class LocalInventoryServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.inventories.v1beta.LocalInventoryService';
 
   LocalInventoryServiceBase() {
-    $addMethod($grpc.ServiceMethod<$230.ListLocalInventoriesRequest, $230.ListLocalInventoriesResponse>(
+    $addMethod($grpc.ServiceMethod<$232.ListLocalInventoriesRequest, $232.ListLocalInventoriesResponse>(
         'ListLocalInventories',
         listLocalInventories_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $230.ListLocalInventoriesRequest.fromBuffer(value),
-        ($230.ListLocalInventoriesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$230.InsertLocalInventoryRequest, $230.LocalInventory>(
+        ($core.List<$core.int> value) => $232.ListLocalInventoriesRequest.fromBuffer(value),
+        ($232.ListLocalInventoriesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$232.InsertLocalInventoryRequest, $232.LocalInventory>(
         'InsertLocalInventory',
         insertLocalInventory_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $230.InsertLocalInventoryRequest.fromBuffer(value),
-        ($230.LocalInventory value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$230.DeleteLocalInventoryRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $232.InsertLocalInventoryRequest.fromBuffer(value),
+        ($232.LocalInventory value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$232.DeleteLocalInventoryRequest, $3.Empty>(
         'DeleteLocalInventory',
         deleteLocalInventory_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $230.DeleteLocalInventoryRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $232.DeleteLocalInventoryRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$230.ListLocalInventoriesResponse> listLocalInventories_Pre($grpc.ServiceCall call, $async.Future<$230.ListLocalInventoriesRequest> request) async {
+  $async.Future<$232.ListLocalInventoriesResponse> listLocalInventories_Pre($grpc.ServiceCall call, $async.Future<$232.ListLocalInventoriesRequest> request) async {
     return listLocalInventories(call, await request);
   }
 
-  $async.Future<$230.LocalInventory> insertLocalInventory_Pre($grpc.ServiceCall call, $async.Future<$230.InsertLocalInventoryRequest> request) async {
+  $async.Future<$232.LocalInventory> insertLocalInventory_Pre($grpc.ServiceCall call, $async.Future<$232.InsertLocalInventoryRequest> request) async {
     return insertLocalInventory(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteLocalInventory_Pre($grpc.ServiceCall call, $async.Future<$230.DeleteLocalInventoryRequest> request) async {
+  $async.Future<$3.Empty> deleteLocalInventory_Pre($grpc.ServiceCall call, $async.Future<$232.DeleteLocalInventoryRequest> request) async {
     return deleteLocalInventory(call, await request);
   }
 
-  $async.Future<$230.ListLocalInventoriesResponse> listLocalInventories($grpc.ServiceCall call, $230.ListLocalInventoriesRequest request);
-  $async.Future<$230.LocalInventory> insertLocalInventory($grpc.ServiceCall call, $230.InsertLocalInventoryRequest request);
-  $async.Future<$3.Empty> deleteLocalInventory($grpc.ServiceCall call, $230.DeleteLocalInventoryRequest request);
+  $async.Future<$232.ListLocalInventoriesResponse> listLocalInventories($grpc.ServiceCall call, $232.ListLocalInventoriesRequest request);
+  $async.Future<$232.LocalInventory> insertLocalInventory($grpc.ServiceCall call, $232.InsertLocalInventoryRequest request);
+  $async.Future<$3.Empty> deleteLocalInventory($grpc.ServiceCall call, $232.DeleteLocalInventoryRequest request);
 }

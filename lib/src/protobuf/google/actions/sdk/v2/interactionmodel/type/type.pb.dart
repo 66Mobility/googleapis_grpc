@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'free_text_type.pb.dart' as $282;
-import 'regular_expression_type.pb.dart' as $281;
-import 'synonym_type.pb.dart' as $280;
+import 'free_text_type.pb.dart' as $284;
+import 'regular_expression_type.pb.dart' as $283;
+import 'synonym_type.pb.dart' as $282;
 
 enum Type_SubType {
   synonym, 
@@ -30,9 +30,9 @@ enum Type_SubType {
 /// Note, type name is specified in the name of the file.
 class Type extends $pb.GeneratedMessage {
   factory Type({
-    $280.SynonymType? synonym,
-    $281.RegularExpressionType? regularExpression,
-    $282.FreeTextType? freeText,
+    $282.SynonymType? synonym,
+    $283.RegularExpressionType? regularExpression,
+    $284.FreeTextType? freeText,
     $core.Iterable<$core.String>? exclusions,
   }) {
     final $result = create();
@@ -62,9 +62,9 @@ class Type extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Type', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.type'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$280.SynonymType>(1, _omitFieldNames ? '' : 'synonym', subBuilder: $280.SynonymType.create)
-    ..aOM<$281.RegularExpressionType>(2, _omitFieldNames ? '' : 'regularExpression', subBuilder: $281.RegularExpressionType.create)
-    ..aOM<$282.FreeTextType>(3, _omitFieldNames ? '' : 'freeText', subBuilder: $282.FreeTextType.create)
+    ..aOM<$282.SynonymType>(1, _omitFieldNames ? '' : 'synonym', subBuilder: $282.SynonymType.create)
+    ..aOM<$283.RegularExpressionType>(2, _omitFieldNames ? '' : 'regularExpression', subBuilder: $283.RegularExpressionType.create)
+    ..aOM<$284.FreeTextType>(3, _omitFieldNames ? '' : 'freeText', subBuilder: $284.FreeTextType.create)
     ..pPS(4, _omitFieldNames ? '' : 'exclusions')
     ..hasRequiredFields = false
   ;
@@ -95,39 +95,39 @@ class Type extends $pb.GeneratedMessage {
 
   /// Synonyms type, which is essentially an enum.
   @$pb.TagNumber(1)
-  $280.SynonymType get synonym => $_getN(0);
+  $282.SynonymType get synonym => $_getN(0);
   @$pb.TagNumber(1)
-  set synonym($280.SynonymType v) { setField(1, v); }
+  set synonym($282.SynonymType v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSynonym() => $_has(0);
   @$pb.TagNumber(1)
   void clearSynonym() => clearField(1);
   @$pb.TagNumber(1)
-  $280.SynonymType ensureSynonym() => $_ensure(0);
+  $282.SynonymType ensureSynonym() => $_ensure(0);
 
   /// Regex type, allows regular expression matching.
   @$pb.TagNumber(2)
-  $281.RegularExpressionType get regularExpression => $_getN(1);
+  $283.RegularExpressionType get regularExpression => $_getN(1);
   @$pb.TagNumber(2)
-  set regularExpression($281.RegularExpressionType v) { setField(2, v); }
+  set regularExpression($283.RegularExpressionType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRegularExpression() => $_has(1);
   @$pb.TagNumber(2)
   void clearRegularExpression() => clearField(2);
   @$pb.TagNumber(2)
-  $281.RegularExpressionType ensureRegularExpression() => $_ensure(1);
+  $283.RegularExpressionType ensureRegularExpression() => $_ensure(1);
 
   /// FreeText type.
   @$pb.TagNumber(3)
-  $282.FreeTextType get freeText => $_getN(2);
+  $284.FreeTextType get freeText => $_getN(2);
   @$pb.TagNumber(3)
-  set freeText($282.FreeTextType v) { setField(3, v); }
+  set freeText($284.FreeTextType v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasFreeText() => $_has(2);
   @$pb.TagNumber(3)
   void clearFreeText() => clearField(3);
   @$pb.TagNumber(3)
-  $282.FreeTextType ensureFreeText() => $_ensure(2);
+  $284.FreeTextType ensureFreeText() => $_ensure(2);
 
   /// Set of exceptional words/phrases that shouldn't be matched by type.
   /// Note: If word/phrase is matched by the type but listed as an exclusion it

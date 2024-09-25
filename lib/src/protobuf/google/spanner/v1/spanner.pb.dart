@@ -14,16 +14,16 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $261;
-import '../../protobuf/struct.pb.dart' as $258;
-import '../../protobuf/timestamp.pb.dart' as $299;
-import '../../rpc/status.pb.dart' as $319;
-import 'keys.pb.dart' as $547;
-import 'mutation.pb.dart' as $550;
-import 'result_set.pb.dart' as $246;
+import '../../protobuf/duration.pb.dart' as $263;
+import '../../protobuf/struct.pb.dart' as $260;
+import '../../protobuf/timestamp.pb.dart' as $301;
+import '../../rpc/status.pb.dart' as $321;
+import 'keys.pb.dart' as $549;
+import 'mutation.pb.dart' as $552;
+import 'result_set.pb.dart' as $248;
 import 'spanner.pbenum.dart';
-import 'transaction.pb.dart' as $247;
-import 'type.pb.dart' as $548;
+import 'transaction.pb.dart' as $249;
+import 'type.pb.dart' as $550;
 
 export 'commit_response.pb.dart';
 export 'spanner.pbenum.dart';
@@ -239,8 +239,8 @@ class Session extends $pb.GeneratedMessage {
   factory Session({
     $core.String? name,
     $core.Map<$core.String, $core.String>? labels,
-    $299.Timestamp? createTime,
-    $299.Timestamp? approximateLastUseTime,
+    $301.Timestamp? createTime,
+    $301.Timestamp? approximateLastUseTime,
     $core.String? creatorRole,
     $core.bool? multiplexed,
   }) {
@@ -272,8 +272,8 @@ class Session extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Session', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..m<$core.String, $core.String>(2, _omitFieldNames ? '' : 'labels', entryClassName: 'Session.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.spanner.v1'))
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'approximateLastUseTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'approximateLastUseTime', subBuilder: $301.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'creatorRole')
     ..aOB(6, _omitFieldNames ? '' : 'multiplexed')
     ..hasRequiredFields = false
@@ -324,28 +324,28 @@ class Session extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp when the session is created.
   @$pb.TagNumber(3)
-  $299.Timestamp get createTime => $_getN(2);
+  $301.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($299.Timestamp v) { setField(3, v); }
+  set createTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureCreateTime() => $_ensure(2);
+  $301.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The approximate timestamp when the session is last used. It is
   /// typically earlier than the actual last use time.
   @$pb.TagNumber(4)
-  $299.Timestamp get approximateLastUseTime => $_getN(3);
+  $301.Timestamp get approximateLastUseTime => $_getN(3);
   @$pb.TagNumber(4)
-  set approximateLastUseTime($299.Timestamp v) { setField(4, v); }
+  set approximateLastUseTime($301.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasApproximateLastUseTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearApproximateLastUseTime() => clearField(4);
   @$pb.TagNumber(4)
-  $299.Timestamp ensureApproximateLastUseTime() => $_ensure(3);
+  $301.Timestamp ensureApproximateLastUseTime() => $_ensure(3);
 
   /// The database role which created this session.
   @$pb.TagNumber(5)
@@ -1159,10 +1159,10 @@ class ExecuteSqlRequest_QueryOptions extends $pb.GeneratedMessage {
 class ExecuteSqlRequest extends $pb.GeneratedMessage {
   factory ExecuteSqlRequest({
     $core.String? session,
-    $247.TransactionSelector? transaction,
+    $249.TransactionSelector? transaction,
     $core.String? sql,
-    $258.Struct? params,
-    $core.Map<$core.String, $548.Type>? paramTypes,
+    $260.Struct? params,
+    $core.Map<$core.String, $550.Type>? paramTypes,
     $core.List<$core.int>? resumeToken,
     ExecuteSqlRequest_QueryMode? queryMode,
     $core.List<$core.int>? partitionToken,
@@ -1220,10 +1220,10 @@ class ExecuteSqlRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteSqlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'session')
-    ..aOM<$247.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $247.TransactionSelector.create)
+    ..aOM<$249.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $249.TransactionSelector.create)
     ..aOS(3, _omitFieldNames ? '' : 'sql')
-    ..aOM<$258.Struct>(4, _omitFieldNames ? '' : 'params', subBuilder: $258.Struct.create)
-    ..m<$core.String, $548.Type>(5, _omitFieldNames ? '' : 'paramTypes', entryClassName: 'ExecuteSqlRequest.ParamTypesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $548.Type.create, valueDefaultOrMaker: $548.Type.getDefault, packageName: const $pb.PackageName('google.spanner.v1'))
+    ..aOM<$260.Struct>(4, _omitFieldNames ? '' : 'params', subBuilder: $260.Struct.create)
+    ..m<$core.String, $550.Type>(5, _omitFieldNames ? '' : 'paramTypes', entryClassName: 'ExecuteSqlRequest.ParamTypesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $550.Type.create, valueDefaultOrMaker: $550.Type.getDefault, packageName: const $pb.PackageName('google.spanner.v1'))
     ..a<$core.List<$core.int>>(6, _omitFieldNames ? '' : 'resumeToken', $pb.PbFieldType.OY)
     ..e<ExecuteSqlRequest_QueryMode>(7, _omitFieldNames ? '' : 'queryMode', $pb.PbFieldType.OE, defaultOrMaker: ExecuteSqlRequest_QueryMode.NORMAL, valueOf: ExecuteSqlRequest_QueryMode.valueOf, enumValues: ExecuteSqlRequest_QueryMode.values)
     ..a<$core.List<$core.int>>(8, _omitFieldNames ? '' : 'partitionToken', $pb.PbFieldType.OY)
@@ -1277,15 +1277,15 @@ class ExecuteSqlRequest extends $pb.GeneratedMessage {
   ///
   ///  Partitioned DML requires an existing Partitioned DML transaction ID.
   @$pb.TagNumber(2)
-  $247.TransactionSelector get transaction => $_getN(1);
+  $249.TransactionSelector get transaction => $_getN(1);
   @$pb.TagNumber(2)
-  set transaction($247.TransactionSelector v) { setField(2, v); }
+  set transaction($249.TransactionSelector v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTransaction() => $_has(1);
   @$pb.TagNumber(2)
   void clearTransaction() => clearField(2);
   @$pb.TagNumber(2)
-  $247.TransactionSelector ensureTransaction() => $_ensure(1);
+  $249.TransactionSelector ensureTransaction() => $_ensure(1);
 
   /// Required. The SQL string.
   @$pb.TagNumber(3)
@@ -1311,15 +1311,15 @@ class ExecuteSqlRequest extends $pb.GeneratedMessage {
   ///
   ///  It is an error to execute a SQL statement with unbound parameters.
   @$pb.TagNumber(4)
-  $258.Struct get params => $_getN(3);
+  $260.Struct get params => $_getN(3);
   @$pb.TagNumber(4)
-  set params($258.Struct v) { setField(4, v); }
+  set params($260.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasParams() => $_has(3);
   @$pb.TagNumber(4)
   void clearParams() => clearField(4);
   @$pb.TagNumber(4)
-  $258.Struct ensureParams() => $_ensure(3);
+  $260.Struct ensureParams() => $_ensure(3);
 
   ///  It is not always possible for Cloud Spanner to infer the right SQL type
   ///  from a JSON value.  For example, values of type `BYTES` and values
@@ -1331,7 +1331,7 @@ class ExecuteSqlRequest extends $pb.GeneratedMessage {
   ///  definition of [Type][google.spanner.v1.Type] for more information
   ///  about SQL types.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, $548.Type> get paramTypes => $_getMap(4);
+  $core.Map<$core.String, $550.Type> get paramTypes => $_getMap(4);
 
   /// If this request is resuming a previously interrupted SQL statement
   /// execution, `resume_token` should be copied from the last
@@ -1450,8 +1450,8 @@ class ExecuteSqlRequest extends $pb.GeneratedMessage {
 class ExecuteBatchDmlRequest_Statement extends $pb.GeneratedMessage {
   factory ExecuteBatchDmlRequest_Statement({
     $core.String? sql,
-    $258.Struct? params,
-    $core.Map<$core.String, $548.Type>? paramTypes,
+    $260.Struct? params,
+    $core.Map<$core.String, $550.Type>? paramTypes,
   }) {
     final $result = create();
     if (sql != null) {
@@ -1471,8 +1471,8 @@ class ExecuteBatchDmlRequest_Statement extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteBatchDmlRequest.Statement', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sql')
-    ..aOM<$258.Struct>(2, _omitFieldNames ? '' : 'params', subBuilder: $258.Struct.create)
-    ..m<$core.String, $548.Type>(3, _omitFieldNames ? '' : 'paramTypes', entryClassName: 'ExecuteBatchDmlRequest.Statement.ParamTypesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $548.Type.create, valueDefaultOrMaker: $548.Type.getDefault, packageName: const $pb.PackageName('google.spanner.v1'))
+    ..aOM<$260.Struct>(2, _omitFieldNames ? '' : 'params', subBuilder: $260.Struct.create)
+    ..m<$core.String, $550.Type>(3, _omitFieldNames ? '' : 'paramTypes', entryClassName: 'ExecuteBatchDmlRequest.Statement.ParamTypesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $550.Type.create, valueDefaultOrMaker: $550.Type.getDefault, packageName: const $pb.PackageName('google.spanner.v1'))
     ..hasRequiredFields = false
   ;
 
@@ -1520,15 +1520,15 @@ class ExecuteBatchDmlRequest_Statement extends $pb.GeneratedMessage {
   ///
   ///  It is an error to execute a SQL statement with unbound parameters.
   @$pb.TagNumber(2)
-  $258.Struct get params => $_getN(1);
+  $260.Struct get params => $_getN(1);
   @$pb.TagNumber(2)
-  set params($258.Struct v) { setField(2, v); }
+  set params($260.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasParams() => $_has(1);
   @$pb.TagNumber(2)
   void clearParams() => clearField(2);
   @$pb.TagNumber(2)
-  $258.Struct ensureParams() => $_ensure(1);
+  $260.Struct ensureParams() => $_ensure(1);
 
   ///  It is not always possible for Cloud Spanner to infer the right SQL type
   ///  from a JSON value.  For example, values of type `BYTES` and values
@@ -1541,14 +1541,14 @@ class ExecuteBatchDmlRequest_Statement extends $pb.GeneratedMessage {
   ///  definition of [Type][google.spanner.v1.Type] for more information
   ///  about SQL types.
   @$pb.TagNumber(3)
-  $core.Map<$core.String, $548.Type> get paramTypes => $_getMap(2);
+  $core.Map<$core.String, $550.Type> get paramTypes => $_getMap(2);
 }
 
 /// The request for [ExecuteBatchDml][google.spanner.v1.Spanner.ExecuteBatchDml].
 class ExecuteBatchDmlRequest extends $pb.GeneratedMessage {
   factory ExecuteBatchDmlRequest({
     $core.String? session,
-    $247.TransactionSelector? transaction,
+    $249.TransactionSelector? transaction,
     $core.Iterable<ExecuteBatchDmlRequest_Statement>? statements,
     $fixnum.Int64? seqno,
     RequestOptions? requestOptions,
@@ -1577,7 +1577,7 @@ class ExecuteBatchDmlRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteBatchDmlRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'session')
-    ..aOM<$247.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $247.TransactionSelector.create)
+    ..aOM<$249.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $249.TransactionSelector.create)
     ..pc<ExecuteBatchDmlRequest_Statement>(3, _omitFieldNames ? '' : 'statements', $pb.PbFieldType.PM, subBuilder: ExecuteBatchDmlRequest_Statement.create)
     ..aInt64(4, _omitFieldNames ? '' : 'seqno')
     ..aOM<RequestOptions>(5, _omitFieldNames ? '' : 'requestOptions', subBuilder: RequestOptions.create)
@@ -1621,15 +1621,15 @@ class ExecuteBatchDmlRequest extends $pb.GeneratedMessage {
   ///  caller must either supply an existing transaction ID or begin a new
   ///  transaction.
   @$pb.TagNumber(2)
-  $247.TransactionSelector get transaction => $_getN(1);
+  $249.TransactionSelector get transaction => $_getN(1);
   @$pb.TagNumber(2)
-  set transaction($247.TransactionSelector v) { setField(2, v); }
+  set transaction($249.TransactionSelector v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTransaction() => $_has(1);
   @$pb.TagNumber(2)
   void clearTransaction() => clearField(2);
   @$pb.TagNumber(2)
-  $247.TransactionSelector ensureTransaction() => $_ensure(1);
+  $249.TransactionSelector ensureTransaction() => $_ensure(1);
 
   ///  Required. The list of statements to execute in this batch. Statements are
   ///  executed serially, such that the effects of statement `i` are visible to
@@ -1703,8 +1703,8 @@ class ExecuteBatchDmlRequest extends $pb.GeneratedMessage {
 ///    statements were not executed.
 class ExecuteBatchDmlResponse extends $pb.GeneratedMessage {
   factory ExecuteBatchDmlResponse({
-    $core.Iterable<$246.ResultSet>? resultSets,
-    $319.Status? status,
+    $core.Iterable<$248.ResultSet>? resultSets,
+    $321.Status? status,
   }) {
     final $result = create();
     if (resultSets != null) {
@@ -1720,8 +1720,8 @@ class ExecuteBatchDmlResponse extends $pb.GeneratedMessage {
   factory ExecuteBatchDmlResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteBatchDmlResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..pc<$246.ResultSet>(1, _omitFieldNames ? '' : 'resultSets', $pb.PbFieldType.PM, subBuilder: $246.ResultSet.create)
-    ..aOM<$319.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $319.Status.create)
+    ..pc<$248.ResultSet>(1, _omitFieldNames ? '' : 'resultSets', $pb.PbFieldType.PM, subBuilder: $248.ResultSet.create)
+    ..aOM<$321.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $321.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1756,20 +1756,20 @@ class ExecuteBatchDmlResponse extends $pb.GeneratedMessage {
   ///  Only the first [ResultSet][google.spanner.v1.ResultSet] in the response
   ///  contains valid [ResultSetMetadata][google.spanner.v1.ResultSetMetadata].
   @$pb.TagNumber(1)
-  $core.List<$246.ResultSet> get resultSets => $_getList(0);
+  $core.List<$248.ResultSet> get resultSets => $_getList(0);
 
   /// If all DML statements are executed successfully, the status is `OK`.
   /// Otherwise, the error status of the first failed statement.
   @$pb.TagNumber(2)
-  $319.Status get status => $_getN(1);
+  $321.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($319.Status v) { setField(2, v); }
+  set status($321.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $319.Status ensureStatus() => $_ensure(1);
+  $321.Status ensureStatus() => $_ensure(1);
 }
 
 /// Options for a PartitionQueryRequest and
@@ -1856,10 +1856,10 @@ class PartitionOptions extends $pb.GeneratedMessage {
 class PartitionQueryRequest extends $pb.GeneratedMessage {
   factory PartitionQueryRequest({
     $core.String? session,
-    $247.TransactionSelector? transaction,
+    $249.TransactionSelector? transaction,
     $core.String? sql,
-    $258.Struct? params,
-    $core.Map<$core.String, $548.Type>? paramTypes,
+    $260.Struct? params,
+    $core.Map<$core.String, $550.Type>? paramTypes,
     PartitionOptions? partitionOptions,
   }) {
     final $result = create();
@@ -1889,10 +1889,10 @@ class PartitionQueryRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PartitionQueryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'session')
-    ..aOM<$247.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $247.TransactionSelector.create)
+    ..aOM<$249.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $249.TransactionSelector.create)
     ..aOS(3, _omitFieldNames ? '' : 'sql')
-    ..aOM<$258.Struct>(4, _omitFieldNames ? '' : 'params', subBuilder: $258.Struct.create)
-    ..m<$core.String, $548.Type>(5, _omitFieldNames ? '' : 'paramTypes', entryClassName: 'PartitionQueryRequest.ParamTypesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $548.Type.create, valueDefaultOrMaker: $548.Type.getDefault, packageName: const $pb.PackageName('google.spanner.v1'))
+    ..aOM<$260.Struct>(4, _omitFieldNames ? '' : 'params', subBuilder: $260.Struct.create)
+    ..m<$core.String, $550.Type>(5, _omitFieldNames ? '' : 'paramTypes', entryClassName: 'PartitionQueryRequest.ParamTypesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $550.Type.create, valueDefaultOrMaker: $550.Type.getDefault, packageName: const $pb.PackageName('google.spanner.v1'))
     ..aOM<PartitionOptions>(6, _omitFieldNames ? '' : 'partitionOptions', subBuilder: PartitionOptions.create)
     ..hasRequiredFields = false
   ;
@@ -1931,15 +1931,15 @@ class PartitionQueryRequest extends $pb.GeneratedMessage {
   /// Read only snapshot transactions are supported, read/write and single use
   /// transactions are not.
   @$pb.TagNumber(2)
-  $247.TransactionSelector get transaction => $_getN(1);
+  $249.TransactionSelector get transaction => $_getN(1);
   @$pb.TagNumber(2)
-  set transaction($247.TransactionSelector v) { setField(2, v); }
+  set transaction($249.TransactionSelector v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTransaction() => $_has(1);
   @$pb.TagNumber(2)
   void clearTransaction() => clearField(2);
   @$pb.TagNumber(2)
-  $247.TransactionSelector ensureTransaction() => $_ensure(1);
+  $249.TransactionSelector ensureTransaction() => $_ensure(1);
 
   ///  Required. The query request to generate partitions for. The request will
   ///  fail if the query is not root partitionable. For a query to be root
@@ -1975,15 +1975,15 @@ class PartitionQueryRequest extends $pb.GeneratedMessage {
   ///
   ///  It is an error to execute a SQL statement with unbound parameters.
   @$pb.TagNumber(4)
-  $258.Struct get params => $_getN(3);
+  $260.Struct get params => $_getN(3);
   @$pb.TagNumber(4)
-  set params($258.Struct v) { setField(4, v); }
+  set params($260.Struct v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasParams() => $_has(3);
   @$pb.TagNumber(4)
   void clearParams() => clearField(4);
   @$pb.TagNumber(4)
-  $258.Struct ensureParams() => $_ensure(3);
+  $260.Struct ensureParams() => $_ensure(3);
 
   ///  It is not always possible for Cloud Spanner to infer the right SQL type
   ///  from a JSON value.  For example, values of type `BYTES` and values
@@ -1995,7 +1995,7 @@ class PartitionQueryRequest extends $pb.GeneratedMessage {
   ///  definition of [Type][google.spanner.v1.Type] for more information
   ///  about SQL types.
   @$pb.TagNumber(5)
-  $core.Map<$core.String, $548.Type> get paramTypes => $_getMap(4);
+  $core.Map<$core.String, $550.Type> get paramTypes => $_getMap(4);
 
   /// Additional options that affect how many partitions are created.
   @$pb.TagNumber(6)
@@ -2014,11 +2014,11 @@ class PartitionQueryRequest extends $pb.GeneratedMessage {
 class PartitionReadRequest extends $pb.GeneratedMessage {
   factory PartitionReadRequest({
     $core.String? session,
-    $247.TransactionSelector? transaction,
+    $249.TransactionSelector? transaction,
     $core.String? table,
     $core.String? index,
     $core.Iterable<$core.String>? columns,
-    $547.KeySet? keySet,
+    $549.KeySet? keySet,
     PartitionOptions? partitionOptions,
   }) {
     final $result = create();
@@ -2051,11 +2051,11 @@ class PartitionReadRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PartitionReadRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'session')
-    ..aOM<$247.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $247.TransactionSelector.create)
+    ..aOM<$249.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $249.TransactionSelector.create)
     ..aOS(3, _omitFieldNames ? '' : 'table')
     ..aOS(4, _omitFieldNames ? '' : 'index')
     ..pPS(5, _omitFieldNames ? '' : 'columns')
-    ..aOM<$547.KeySet>(6, _omitFieldNames ? '' : 'keySet', subBuilder: $547.KeySet.create)
+    ..aOM<$549.KeySet>(6, _omitFieldNames ? '' : 'keySet', subBuilder: $549.KeySet.create)
     ..aOM<PartitionOptions>(9, _omitFieldNames ? '' : 'partitionOptions', subBuilder: PartitionOptions.create)
     ..hasRequiredFields = false
   ;
@@ -2094,15 +2094,15 @@ class PartitionReadRequest extends $pb.GeneratedMessage {
   /// Read only snapshot transactions are supported, read/write and single use
   /// transactions are not.
   @$pb.TagNumber(2)
-  $247.TransactionSelector get transaction => $_getN(1);
+  $249.TransactionSelector get transaction => $_getN(1);
   @$pb.TagNumber(2)
-  set transaction($247.TransactionSelector v) { setField(2, v); }
+  set transaction($249.TransactionSelector v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTransaction() => $_has(1);
   @$pb.TagNumber(2)
   void clearTransaction() => clearField(2);
   @$pb.TagNumber(2)
-  $247.TransactionSelector ensureTransaction() => $_ensure(1);
+  $249.TransactionSelector ensureTransaction() => $_ensure(1);
 
   /// Required. The name of the table in the database to be read.
   @$pb.TagNumber(3)
@@ -2145,15 +2145,15 @@ class PartitionReadRequest extends $pb.GeneratedMessage {
   ///  It is not an error for the `key_set` to name rows that do not
   ///  exist in the database. Read yields nothing for nonexistent rows.
   @$pb.TagNumber(6)
-  $547.KeySet get keySet => $_getN(5);
+  $549.KeySet get keySet => $_getN(5);
   @$pb.TagNumber(6)
-  set keySet($547.KeySet v) { setField(6, v); }
+  set keySet($549.KeySet v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasKeySet() => $_has(5);
   @$pb.TagNumber(6)
   void clearKeySet() => clearField(6);
   @$pb.TagNumber(6)
-  $547.KeySet ensureKeySet() => $_ensure(5);
+  $549.KeySet ensureKeySet() => $_ensure(5);
 
   /// Additional options that affect how many partitions are created.
   @$pb.TagNumber(9)
@@ -2228,7 +2228,7 @@ class Partition extends $pb.GeneratedMessage {
 class PartitionResponse extends $pb.GeneratedMessage {
   factory PartitionResponse({
     $core.Iterable<Partition>? partitions,
-    $247.Transaction? transaction,
+    $249.Transaction? transaction,
   }) {
     final $result = create();
     if (partitions != null) {
@@ -2245,7 +2245,7 @@ class PartitionResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PartitionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..pc<Partition>(1, _omitFieldNames ? '' : 'partitions', $pb.PbFieldType.PM, subBuilder: Partition.create)
-    ..aOM<$247.Transaction>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $247.Transaction.create)
+    ..aOM<$249.Transaction>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $249.Transaction.create)
     ..hasRequiredFields = false
   ;
 
@@ -2276,15 +2276,15 @@ class PartitionResponse extends $pb.GeneratedMessage {
 
   /// Transaction created by this request.
   @$pb.TagNumber(2)
-  $247.Transaction get transaction => $_getN(1);
+  $249.Transaction get transaction => $_getN(1);
   @$pb.TagNumber(2)
-  set transaction($247.Transaction v) { setField(2, v); }
+  set transaction($249.Transaction v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTransaction() => $_has(1);
   @$pb.TagNumber(2)
   void clearTransaction() => clearField(2);
   @$pb.TagNumber(2)
-  $247.Transaction ensureTransaction() => $_ensure(1);
+  $249.Transaction ensureTransaction() => $_ensure(1);
 }
 
 /// The request for [Read][google.spanner.v1.Spanner.Read] and
@@ -2292,11 +2292,11 @@ class PartitionResponse extends $pb.GeneratedMessage {
 class ReadRequest extends $pb.GeneratedMessage {
   factory ReadRequest({
     $core.String? session,
-    $247.TransactionSelector? transaction,
+    $249.TransactionSelector? transaction,
     $core.String? table,
     $core.String? index,
     $core.Iterable<$core.String>? columns,
-    $547.KeySet? keySet,
+    $549.KeySet? keySet,
     $fixnum.Int64? limit,
     $core.List<$core.int>? resumeToken,
     $core.List<$core.int>? partitionToken,
@@ -2357,11 +2357,11 @@ class ReadRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReadRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'session')
-    ..aOM<$247.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $247.TransactionSelector.create)
+    ..aOM<$249.TransactionSelector>(2, _omitFieldNames ? '' : 'transaction', subBuilder: $249.TransactionSelector.create)
     ..aOS(3, _omitFieldNames ? '' : 'table')
     ..aOS(4, _omitFieldNames ? '' : 'index')
     ..pPS(5, _omitFieldNames ? '' : 'columns')
-    ..aOM<$547.KeySet>(6, _omitFieldNames ? '' : 'keySet', subBuilder: $547.KeySet.create)
+    ..aOM<$549.KeySet>(6, _omitFieldNames ? '' : 'keySet', subBuilder: $549.KeySet.create)
     ..aInt64(8, _omitFieldNames ? '' : 'limit')
     ..a<$core.List<$core.int>>(9, _omitFieldNames ? '' : 'resumeToken', $pb.PbFieldType.OY)
     ..a<$core.List<$core.int>>(10, _omitFieldNames ? '' : 'partitionToken', $pb.PbFieldType.OY)
@@ -2407,15 +2407,15 @@ class ReadRequest extends $pb.GeneratedMessage {
   /// The transaction to use. If none is provided, the default is a
   /// temporary read-only transaction with strong concurrency.
   @$pb.TagNumber(2)
-  $247.TransactionSelector get transaction => $_getN(1);
+  $249.TransactionSelector get transaction => $_getN(1);
   @$pb.TagNumber(2)
-  set transaction($247.TransactionSelector v) { setField(2, v); }
+  set transaction($249.TransactionSelector v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTransaction() => $_has(1);
   @$pb.TagNumber(2)
   void clearTransaction() => clearField(2);
   @$pb.TagNumber(2)
-  $247.TransactionSelector ensureTransaction() => $_ensure(1);
+  $249.TransactionSelector ensureTransaction() => $_ensure(1);
 
   /// Required. The name of the table in the database to be read.
   @$pb.TagNumber(3)
@@ -2464,15 +2464,15 @@ class ReadRequest extends $pb.GeneratedMessage {
   ///  It is not an error for the `key_set` to name rows that do not
   ///  exist in the database. Read yields nothing for nonexistent rows.
   @$pb.TagNumber(6)
-  $547.KeySet get keySet => $_getN(5);
+  $549.KeySet get keySet => $_getN(5);
   @$pb.TagNumber(6)
-  set keySet($547.KeySet v) { setField(6, v); }
+  set keySet($549.KeySet v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasKeySet() => $_has(5);
   @$pb.TagNumber(6)
   void clearKeySet() => clearField(6);
   @$pb.TagNumber(6)
-  $547.KeySet ensureKeySet() => $_ensure(5);
+  $549.KeySet ensureKeySet() => $_ensure(5);
 
   /// If greater than zero, only the first `limit` rows are yielded. If `limit`
   /// is zero, the default is no limit. A limit cannot be specified if
@@ -2585,7 +2585,7 @@ class ReadRequest extends $pb.GeneratedMessage {
 class BeginTransactionRequest extends $pb.GeneratedMessage {
   factory BeginTransactionRequest({
     $core.String? session,
-    $247.TransactionOptions? options,
+    $249.TransactionOptions? options,
     RequestOptions? requestOptions,
   }) {
     final $result = create();
@@ -2606,7 +2606,7 @@ class BeginTransactionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BeginTransactionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'session')
-    ..aOM<$247.TransactionOptions>(2, _omitFieldNames ? '' : 'options', subBuilder: $247.TransactionOptions.create)
+    ..aOM<$249.TransactionOptions>(2, _omitFieldNames ? '' : 'options', subBuilder: $249.TransactionOptions.create)
     ..aOM<RequestOptions>(3, _omitFieldNames ? '' : 'requestOptions', subBuilder: RequestOptions.create)
     ..hasRequiredFields = false
   ;
@@ -2644,15 +2644,15 @@ class BeginTransactionRequest extends $pb.GeneratedMessage {
 
   /// Required. Options for the new transaction.
   @$pb.TagNumber(2)
-  $247.TransactionOptions get options => $_getN(1);
+  $249.TransactionOptions get options => $_getN(1);
   @$pb.TagNumber(2)
-  set options($247.TransactionOptions v) { setField(2, v); }
+  set options($249.TransactionOptions v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOptions() => $_has(1);
   @$pb.TagNumber(2)
   void clearOptions() => clearField(2);
   @$pb.TagNumber(2)
-  $247.TransactionOptions ensureOptions() => $_ensure(1);
+  $249.TransactionOptions ensureOptions() => $_ensure(1);
 
   /// Common options for this request.
   /// Priority is ignored for this request. Setting the priority in this
@@ -2682,11 +2682,11 @@ class CommitRequest extends $pb.GeneratedMessage {
   factory CommitRequest({
     $core.String? session,
     $core.List<$core.int>? transactionId,
-    $247.TransactionOptions? singleUseTransaction,
-    $core.Iterable<$550.Mutation>? mutations,
+    $249.TransactionOptions? singleUseTransaction,
+    $core.Iterable<$552.Mutation>? mutations,
     $core.bool? returnCommitStats,
     RequestOptions? requestOptions,
-    $261.Duration? maxCommitDelay,
+    $263.Duration? maxCommitDelay,
   }) {
     final $result = create();
     if (session != null) {
@@ -2725,11 +2725,11 @@ class CommitRequest extends $pb.GeneratedMessage {
     ..oo(0, [2, 3])
     ..aOS(1, _omitFieldNames ? '' : 'session')
     ..a<$core.List<$core.int>>(2, _omitFieldNames ? '' : 'transactionId', $pb.PbFieldType.OY)
-    ..aOM<$247.TransactionOptions>(3, _omitFieldNames ? '' : 'singleUseTransaction', subBuilder: $247.TransactionOptions.create)
-    ..pc<$550.Mutation>(4, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM, subBuilder: $550.Mutation.create)
+    ..aOM<$249.TransactionOptions>(3, _omitFieldNames ? '' : 'singleUseTransaction', subBuilder: $249.TransactionOptions.create)
+    ..pc<$552.Mutation>(4, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM, subBuilder: $552.Mutation.create)
     ..aOB(5, _omitFieldNames ? '' : 'returnCommitStats')
     ..aOM<RequestOptions>(6, _omitFieldNames ? '' : 'requestOptions', subBuilder: RequestOptions.create)
-    ..aOM<$261.Duration>(8, _omitFieldNames ? '' : 'maxCommitDelay', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(8, _omitFieldNames ? '' : 'maxCommitDelay', subBuilder: $263.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -2787,21 +2787,21 @@ class CommitRequest extends $pb.GeneratedMessage {
   /// [BeginTransaction][google.spanner.v1.Spanner.BeginTransaction] and
   /// [Commit][google.spanner.v1.Spanner.Commit] instead.
   @$pb.TagNumber(3)
-  $247.TransactionOptions get singleUseTransaction => $_getN(2);
+  $249.TransactionOptions get singleUseTransaction => $_getN(2);
   @$pb.TagNumber(3)
-  set singleUseTransaction($247.TransactionOptions v) { setField(3, v); }
+  set singleUseTransaction($249.TransactionOptions v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSingleUseTransaction() => $_has(2);
   @$pb.TagNumber(3)
   void clearSingleUseTransaction() => clearField(3);
   @$pb.TagNumber(3)
-  $247.TransactionOptions ensureSingleUseTransaction() => $_ensure(2);
+  $249.TransactionOptions ensureSingleUseTransaction() => $_ensure(2);
 
   /// The mutations to be executed when this transaction commits. All
   /// mutations are applied atomically, in the order they appear in
   /// this list.
   @$pb.TagNumber(4)
-  $core.List<$550.Mutation> get mutations => $_getList(3);
+  $core.List<$552.Mutation> get mutations => $_getList(3);
 
   /// If `true`, then statistics related to the transaction will be included in
   /// the [CommitResponse][google.spanner.v1.CommitResponse.commit_stats].
@@ -2833,15 +2833,15 @@ class CommitRequest extends $pb.GeneratedMessage {
   /// appropriate delay time. You can specify a batching delay value between 0
   /// and 500 ms.
   @$pb.TagNumber(8)
-  $261.Duration get maxCommitDelay => $_getN(6);
+  $263.Duration get maxCommitDelay => $_getN(6);
   @$pb.TagNumber(8)
-  set maxCommitDelay($261.Duration v) { setField(8, v); }
+  set maxCommitDelay($263.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasMaxCommitDelay() => $_has(6);
   @$pb.TagNumber(8)
   void clearMaxCommitDelay() => clearField(8);
   @$pb.TagNumber(8)
-  $261.Duration ensureMaxCommitDelay() => $_ensure(6);
+  $263.Duration ensureMaxCommitDelay() => $_ensure(6);
 }
 
 /// The request for [Rollback][google.spanner.v1.Spanner.Rollback].
@@ -2916,7 +2916,7 @@ class RollbackRequest extends $pb.GeneratedMessage {
 /// primary key prefix in both parent and child tables are related.
 class BatchWriteRequest_MutationGroup extends $pb.GeneratedMessage {
   factory BatchWriteRequest_MutationGroup({
-    $core.Iterable<$550.Mutation>? mutations,
+    $core.Iterable<$552.Mutation>? mutations,
   }) {
     final $result = create();
     if (mutations != null) {
@@ -2929,7 +2929,7 @@ class BatchWriteRequest_MutationGroup extends $pb.GeneratedMessage {
   factory BatchWriteRequest_MutationGroup.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchWriteRequest.MutationGroup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
-    ..pc<$550.Mutation>(1, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM, subBuilder: $550.Mutation.create)
+    ..pc<$552.Mutation>(1, _omitFieldNames ? '' : 'mutations', $pb.PbFieldType.PM, subBuilder: $552.Mutation.create)
     ..hasRequiredFields = false
   ;
 
@@ -2956,7 +2956,7 @@ class BatchWriteRequest_MutationGroup extends $pb.GeneratedMessage {
 
   /// Required. The mutations in this group.
   @$pb.TagNumber(1)
-  $core.List<$550.Mutation> get mutations => $_getList(0);
+  $core.List<$552.Mutation> get mutations => $_getList(0);
 }
 
 /// The request for [BatchWrite][google.spanner.v1.Spanner.BatchWrite].
@@ -3067,8 +3067,8 @@ class BatchWriteRequest extends $pb.GeneratedMessage {
 class BatchWriteResponse extends $pb.GeneratedMessage {
   factory BatchWriteResponse({
     $core.Iterable<$core.int>? indexes,
-    $319.Status? status,
-    $299.Timestamp? commitTimestamp,
+    $321.Status? status,
+    $301.Timestamp? commitTimestamp,
   }) {
     final $result = create();
     if (indexes != null) {
@@ -3088,8 +3088,8 @@ class BatchWriteResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchWriteResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..p<$core.int>(1, _omitFieldNames ? '' : 'indexes', $pb.PbFieldType.K3)
-    ..aOM<$319.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $319.Status.create)
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'commitTimestamp', subBuilder: $299.Timestamp.create)
+    ..aOM<$321.Status>(2, _omitFieldNames ? '' : 'status', subBuilder: $321.Status.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'commitTimestamp', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3121,28 +3121,28 @@ class BatchWriteResponse extends $pb.GeneratedMessage {
 
   /// An `OK` status indicates success. Any other status indicates a failure.
   @$pb.TagNumber(2)
-  $319.Status get status => $_getN(1);
+  $321.Status get status => $_getN(1);
   @$pb.TagNumber(2)
-  set status($319.Status v) { setField(2, v); }
+  set status($321.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStatus() => $_has(1);
   @$pb.TagNumber(2)
   void clearStatus() => clearField(2);
   @$pb.TagNumber(2)
-  $319.Status ensureStatus() => $_ensure(1);
+  $321.Status ensureStatus() => $_ensure(1);
 
   /// The commit timestamp of the transaction that applied this batch.
   /// Present if `status` is `OK`, absent otherwise.
   @$pb.TagNumber(3)
-  $299.Timestamp get commitTimestamp => $_getN(2);
+  $301.Timestamp get commitTimestamp => $_getN(2);
   @$pb.TagNumber(3)
-  set commitTimestamp($299.Timestamp v) { setField(3, v); }
+  set commitTimestamp($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCommitTimestamp() => $_has(2);
   @$pb.TagNumber(3)
   void clearCommitTimestamp() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureCommitTimestamp() => $_ensure(2);
+  $301.Timestamp ensureCommitTimestamp() => $_ensure(2);
 }
 
 

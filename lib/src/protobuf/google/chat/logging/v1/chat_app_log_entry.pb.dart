@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $319;
+import '../../../rpc/status.pb.dart' as $321;
 
 /// JSON payload of error messages. If the Cloud Logging API is enabled, these
 /// error messages are logged to
@@ -21,7 +21,7 @@ import '../../../rpc/status.pb.dart' as $319;
 class ChatAppLogEntry extends $pb.GeneratedMessage {
   factory ChatAppLogEntry({
     $core.String? deployment,
-    $319.Status? error,
+    $321.Status? error,
     $core.String? deploymentFunction,
   }) {
     final $result = create();
@@ -42,7 +42,7 @@ class ChatAppLogEntry extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChatAppLogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.logging.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'deployment')
-    ..aOM<$319.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $319.Status.create)
+    ..aOM<$321.Status>(2, _omitFieldNames ? '' : 'error', subBuilder: $321.Status.create)
     ..aOS(3, _omitFieldNames ? '' : 'deploymentFunction')
     ..hasRequiredFields = false
   ;
@@ -81,15 +81,15 @@ class ChatAppLogEntry extends $pb.GeneratedMessage {
 
   /// The error code and message.
   @$pb.TagNumber(2)
-  $319.Status get error => $_getN(1);
+  $321.Status get error => $_getN(1);
   @$pb.TagNumber(2)
-  set error($319.Status v) { setField(2, v); }
+  set error($321.Status v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasError() => $_has(1);
   @$pb.TagNumber(2)
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
-  $319.Status ensureError() => $_ensure(1);
+  $321.Status ensureError() => $_ensure(1);
 
   /// The unencrypted `callback_method` name that was running when the error was
   /// encountered.

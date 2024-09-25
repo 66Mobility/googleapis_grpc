@@ -14,19 +14,19 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $299;
-import '../../type/types.pb.dart' as $533;
+import '../../../protobuf/timestamp.pb.dart' as $301;
+import '../../type/types.pb.dart' as $535;
 
 /// Attributes for CSS Product.
 class Attributes extends $pb.GeneratedMessage {
   factory Attributes({
     $core.String? cppLink,
     $core.String? cppMobileLink,
-    $533.Price? lowPrice,
-    $533.Price? highPrice,
+    $535.Price? lowPrice,
+    $535.Price? highPrice,
     $fixnum.Int64? numberOfOffers,
     $core.String? headlineOfferCondition,
-    $533.Price? headlineOfferPrice,
+    $535.Price? headlineOfferPrice,
     $core.String? headlineOfferLink,
     $core.String? headlineOfferMobileLink,
     $core.String? title,
@@ -57,8 +57,8 @@ class Attributes extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? productHighlights,
     $core.Iterable<$core.String>? productTypes,
     $core.Iterable<Certification>? certifications,
-    $299.Timestamp? expirationDate,
-    $533.Price? headlineOfferShippingPrice,
+    $301.Timestamp? expirationDate,
+    $535.Price? headlineOfferShippingPrice,
     $core.String? cppAdsRedirect,
     $core.Iterable<$core.String>? includedDestinations,
     $core.Iterable<$core.String>? excludedDestinations,
@@ -223,11 +223,11 @@ class Attributes extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Attributes', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'cppLink')
     ..aOS(2, _omitFieldNames ? '' : 'cppMobileLink')
-    ..aOM<$533.Price>(3, _omitFieldNames ? '' : 'lowPrice', subBuilder: $533.Price.create)
-    ..aOM<$533.Price>(4, _omitFieldNames ? '' : 'highPrice', subBuilder: $533.Price.create)
+    ..aOM<$535.Price>(3, _omitFieldNames ? '' : 'lowPrice', subBuilder: $535.Price.create)
+    ..aOM<$535.Price>(4, _omitFieldNames ? '' : 'highPrice', subBuilder: $535.Price.create)
     ..aInt64(5, _omitFieldNames ? '' : 'numberOfOffers')
     ..aOS(6, _omitFieldNames ? '' : 'headlineOfferCondition')
-    ..aOM<$533.Price>(7, _omitFieldNames ? '' : 'headlineOfferPrice', subBuilder: $533.Price.create)
+    ..aOM<$535.Price>(7, _omitFieldNames ? '' : 'headlineOfferPrice', subBuilder: $535.Price.create)
     ..aOS(8, _omitFieldNames ? '' : 'headlineOfferLink')
     ..aOS(9, _omitFieldNames ? '' : 'headlineOfferMobileLink')
     ..aOS(10, _omitFieldNames ? '' : 'title')
@@ -258,8 +258,8 @@ class Attributes extends $pb.GeneratedMessage {
     ..pPS(35, _omitFieldNames ? '' : 'productHighlights')
     ..pPS(36, _omitFieldNames ? '' : 'productTypes')
     ..pc<Certification>(39, _omitFieldNames ? '' : 'certifications', $pb.PbFieldType.PM, subBuilder: Certification.create)
-    ..aOM<$299.Timestamp>(40, _omitFieldNames ? '' : 'expirationDate', subBuilder: $299.Timestamp.create)
-    ..aOM<$533.Price>(41, _omitFieldNames ? '' : 'headlineOfferShippingPrice', subBuilder: $533.Price.create)
+    ..aOM<$301.Timestamp>(40, _omitFieldNames ? '' : 'expirationDate', subBuilder: $301.Timestamp.create)
+    ..aOM<$535.Price>(41, _omitFieldNames ? '' : 'headlineOfferShippingPrice', subBuilder: $535.Price.create)
     ..aOS(42, _omitFieldNames ? '' : 'cppAdsRedirect')
     ..pPS(43, _omitFieldNames ? '' : 'includedDestinations')
     ..pPS(44, _omitFieldNames ? '' : 'excludedDestinations')
@@ -315,27 +315,27 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Low Price of the aggregate offer.
   @$pb.TagNumber(3)
-  $533.Price get lowPrice => $_getN(2);
+  $535.Price get lowPrice => $_getN(2);
   @$pb.TagNumber(3)
-  set lowPrice($533.Price v) { setField(3, v); }
+  set lowPrice($535.Price v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasLowPrice() => $_has(2);
   @$pb.TagNumber(3)
   void clearLowPrice() => clearField(3);
   @$pb.TagNumber(3)
-  $533.Price ensureLowPrice() => $_ensure(2);
+  $535.Price ensureLowPrice() => $_ensure(2);
 
   /// High Price of the aggregate offer.
   @$pb.TagNumber(4)
-  $533.Price get highPrice => $_getN(3);
+  $535.Price get highPrice => $_getN(3);
   @$pb.TagNumber(4)
-  set highPrice($533.Price v) { setField(4, v); }
+  set highPrice($535.Price v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasHighPrice() => $_has(3);
   @$pb.TagNumber(4)
   void clearHighPrice() => clearField(4);
   @$pb.TagNumber(4)
-  $533.Price ensureHighPrice() => $_ensure(3);
+  $535.Price ensureHighPrice() => $_ensure(3);
 
   /// The number of aggregate offers.
   @$pb.TagNumber(5)
@@ -359,15 +359,15 @@ class Attributes extends $pb.GeneratedMessage {
 
   /// Headline Price of the aggregate offer.
   @$pb.TagNumber(7)
-  $533.Price get headlineOfferPrice => $_getN(6);
+  $535.Price get headlineOfferPrice => $_getN(6);
   @$pb.TagNumber(7)
-  set headlineOfferPrice($533.Price v) { setField(7, v); }
+  set headlineOfferPrice($535.Price v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasHeadlineOfferPrice() => $_has(6);
   @$pb.TagNumber(7)
   void clearHeadlineOfferPrice() => clearField(7);
   @$pb.TagNumber(7)
-  $533.Price ensureHeadlineOfferPrice() => $_ensure(6);
+  $535.Price ensureHeadlineOfferPrice() => $_ensure(6);
 
   /// Link to the headline offer.
   @$pb.TagNumber(8)
@@ -671,27 +671,27 @@ class Attributes extends $pb.GeneratedMessage {
   /// Note: It may take 2+ days from the expiration date for the item to
   /// actually get deleted.
   @$pb.TagNumber(40)
-  $299.Timestamp get expirationDate => $_getN(37);
+  $301.Timestamp get expirationDate => $_getN(37);
   @$pb.TagNumber(40)
-  set expirationDate($299.Timestamp v) { setField(40, v); }
+  set expirationDate($301.Timestamp v) { setField(40, v); }
   @$pb.TagNumber(40)
   $core.bool hasExpirationDate() => $_has(37);
   @$pb.TagNumber(40)
   void clearExpirationDate() => clearField(40);
   @$pb.TagNumber(40)
-  $299.Timestamp ensureExpirationDate() => $_ensure(37);
+  $301.Timestamp ensureExpirationDate() => $_ensure(37);
 
   /// Headline Price of the aggregate offer.
   @$pb.TagNumber(41)
-  $533.Price get headlineOfferShippingPrice => $_getN(38);
+  $535.Price get headlineOfferShippingPrice => $_getN(38);
   @$pb.TagNumber(41)
-  set headlineOfferShippingPrice($533.Price v) { setField(41, v); }
+  set headlineOfferShippingPrice($535.Price v) { setField(41, v); }
   @$pb.TagNumber(41)
   $core.bool hasHeadlineOfferShippingPrice() => $_has(38);
   @$pb.TagNumber(41)
   void clearHeadlineOfferShippingPrice() => clearField(41);
   @$pb.TagNumber(41)
-  $533.Price ensureHeadlineOfferShippingPrice() => $_ensure(38);
+  $535.Price ensureHeadlineOfferShippingPrice() => $_ensure(38);
 
   /// Allows advertisers to override the item URL when the product is shown
   /// within the context of Product Ads.
@@ -1346,9 +1346,9 @@ class CssProductStatus extends $pb.GeneratedMessage {
   factory CssProductStatus({
     $core.Iterable<CssProductStatus_DestinationStatus>? destinationStatuses,
     $core.Iterable<CssProductStatus_ItemLevelIssue>? itemLevelIssues,
-    $299.Timestamp? creationDate,
-    $299.Timestamp? lastUpdateDate,
-    $299.Timestamp? googleExpirationDate,
+    $301.Timestamp? creationDate,
+    $301.Timestamp? lastUpdateDate,
+    $301.Timestamp? googleExpirationDate,
   }) {
     final $result = create();
     if (destinationStatuses != null) {
@@ -1375,9 +1375,9 @@ class CssProductStatus extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CssProductStatus', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.css.v1'), createEmptyInstance: create)
     ..pc<CssProductStatus_DestinationStatus>(3, _omitFieldNames ? '' : 'destinationStatuses', $pb.PbFieldType.PM, subBuilder: CssProductStatus_DestinationStatus.create)
     ..pc<CssProductStatus_ItemLevelIssue>(4, _omitFieldNames ? '' : 'itemLevelIssues', $pb.PbFieldType.PM, subBuilder: CssProductStatus_ItemLevelIssue.create)
-    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'creationDate', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateDate', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(7, _omitFieldNames ? '' : 'googleExpirationDate', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'creationDate', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'lastUpdateDate', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(7, _omitFieldNames ? '' : 'googleExpirationDate', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1413,41 +1413,41 @@ class CssProductStatus extends $pb.GeneratedMessage {
   /// Date on which the item has been created, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(5)
-  $299.Timestamp get creationDate => $_getN(2);
+  $301.Timestamp get creationDate => $_getN(2);
   @$pb.TagNumber(5)
-  set creationDate($299.Timestamp v) { setField(5, v); }
+  set creationDate($301.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreationDate() => $_has(2);
   @$pb.TagNumber(5)
   void clearCreationDate() => clearField(5);
   @$pb.TagNumber(5)
-  $299.Timestamp ensureCreationDate() => $_ensure(2);
+  $301.Timestamp ensureCreationDate() => $_ensure(2);
 
   /// Date on which the item has been last updated, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(6)
-  $299.Timestamp get lastUpdateDate => $_getN(3);
+  $301.Timestamp get lastUpdateDate => $_getN(3);
   @$pb.TagNumber(6)
-  set lastUpdateDate($299.Timestamp v) { setField(6, v); }
+  set lastUpdateDate($301.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLastUpdateDate() => $_has(3);
   @$pb.TagNumber(6)
   void clearLastUpdateDate() => clearField(6);
   @$pb.TagNumber(6)
-  $299.Timestamp ensureLastUpdateDate() => $_ensure(3);
+  $301.Timestamp ensureLastUpdateDate() => $_ensure(3);
 
   /// Date on which the item expires, in [ISO
   /// 8601](http://en.wikipedia.org/wiki/ISO_8601) format.
   @$pb.TagNumber(7)
-  $299.Timestamp get googleExpirationDate => $_getN(4);
+  $301.Timestamp get googleExpirationDate => $_getN(4);
   @$pb.TagNumber(7)
-  set googleExpirationDate($299.Timestamp v) { setField(7, v); }
+  set googleExpirationDate($301.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasGoogleExpirationDate() => $_has(4);
   @$pb.TagNumber(7)
   void clearGoogleExpirationDate() => clearField(7);
   @$pb.TagNumber(7)
-  $299.Timestamp ensureGoogleExpirationDate() => $_ensure(4);
+  $301.Timestamp ensureGoogleExpirationDate() => $_ensure(4);
 }
 
 

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $299;
+import '../../../protobuf/timestamp.pb.dart' as $301;
 import 'datastore_admin.pbenum.dart';
 
 export 'datastore_admin.pbenum.dart';
@@ -22,8 +22,8 @@ export 'datastore_admin.pbenum.dart';
 /// Metadata common to all Datastore Admin operations.
 class CommonMetadata extends $pb.GeneratedMessage {
   factory CommonMetadata({
-    $299.Timestamp? startTime,
-    $299.Timestamp? endTime,
+    $301.Timestamp? startTime,
+    $301.Timestamp? endTime,
     OperationType? operationType,
     $core.Map<$core.String, $core.String>? labels,
     CommonMetadata_State? state,
@@ -51,8 +51,8 @@ class CommonMetadata extends $pb.GeneratedMessage {
   factory CommonMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CommonMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<$299.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
     ..e<OperationType>(3, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE, defaultOrMaker: OperationType.OPERATION_TYPE_UNSPECIFIED, valueOf: OperationType.valueOf, enumValues: OperationType.values)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'CommonMetadata.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.datastore.admin.v1beta1'))
     ..e<CommonMetadata_State>(5, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: CommonMetadata_State.STATE_UNSPECIFIED, valueOf: CommonMetadata_State.valueOf, enumValues: CommonMetadata_State.values)
@@ -82,27 +82,27 @@ class CommonMetadata extends $pb.GeneratedMessage {
 
   /// The time that work began on the operation.
   @$pb.TagNumber(1)
-  $299.Timestamp get startTime => $_getN(0);
+  $301.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($299.Timestamp v) { setField(1, v); }
+  set startTime($301.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $299.Timestamp ensureStartTime() => $_ensure(0);
+  $301.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the operation ended, either successfully or otherwise.
   @$pb.TagNumber(2)
-  $299.Timestamp get endTime => $_getN(1);
+  $301.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($299.Timestamp v) { setField(2, v); }
+  set endTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureEndTime() => $_ensure(1);
+  $301.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The type of the operation. Can be used as a filter in
   /// ListOperationsRequest.

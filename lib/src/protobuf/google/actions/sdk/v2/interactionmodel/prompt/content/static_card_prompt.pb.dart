@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'static_image_prompt.pb.dart' as $259;
-import 'static_image_prompt.pbenum.dart' as $259;
-import 'static_link_prompt.pb.dart' as $260;
+import 'static_image_prompt.pb.dart' as $261;
+import 'static_image_prompt.pbenum.dart' as $261;
+import 'static_link_prompt.pb.dart' as $262;
 
 /// A basic card for displaying some information, e.g. an image and/or text.
 class StaticCardPrompt extends $pb.GeneratedMessage {
@@ -23,9 +23,9 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
     $core.String? title,
     $core.String? subtitle,
     $core.String? text,
-    $259.StaticImagePrompt? image,
-    $259.StaticImagePrompt_ImageFill? imageFill,
-    $260.StaticLinkPrompt? button,
+    $261.StaticImagePrompt? image,
+    $261.StaticImagePrompt_ImageFill? imageFill,
+    $262.StaticLinkPrompt? button,
   }) {
     final $result = create();
     if (title != null) {
@@ -56,9 +56,9 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
     ..aOS(3, _omitFieldNames ? '' : 'text')
-    ..aOM<$259.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $259.StaticImagePrompt.create)
-    ..e<$259.StaticImagePrompt_ImageFill>(5, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $259.StaticImagePrompt_ImageFill.UNSPECIFIED, valueOf: $259.StaticImagePrompt_ImageFill.valueOf, enumValues: $259.StaticImagePrompt_ImageFill.values)
-    ..aOM<$260.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'button', subBuilder: $260.StaticLinkPrompt.create)
+    ..aOM<$261.StaticImagePrompt>(4, _omitFieldNames ? '' : 'image', subBuilder: $261.StaticImagePrompt.create)
+    ..e<$261.StaticImagePrompt_ImageFill>(5, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $261.StaticImagePrompt_ImageFill.UNSPECIFIED, valueOf: $261.StaticImagePrompt_ImageFill.valueOf, enumValues: $261.StaticImagePrompt_ImageFill.values)
+    ..aOM<$262.StaticLinkPrompt>(6, _omitFieldNames ? '' : 'button', subBuilder: $262.StaticLinkPrompt.create)
     ..hasRequiredFields = false
   ;
 
@@ -116,21 +116,21 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
 
   /// Optional. A hero image for the card. The height is fixed to 192dp.
   @$pb.TagNumber(4)
-  $259.StaticImagePrompt get image => $_getN(3);
+  $261.StaticImagePrompt get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($259.StaticImagePrompt v) { setField(4, v); }
+  set image($261.StaticImagePrompt v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(3);
   @$pb.TagNumber(4)
   void clearImage() => clearField(4);
   @$pb.TagNumber(4)
-  $259.StaticImagePrompt ensureImage() => $_ensure(3);
+  $261.StaticImagePrompt ensureImage() => $_ensure(3);
 
   /// Optional. How the image background will be filled.
   @$pb.TagNumber(5)
-  $259.StaticImagePrompt_ImageFill get imageFill => $_getN(4);
+  $261.StaticImagePrompt_ImageFill get imageFill => $_getN(4);
   @$pb.TagNumber(5)
-  set imageFill($259.StaticImagePrompt_ImageFill v) { setField(5, v); }
+  set imageFill($261.StaticImagePrompt_ImageFill v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasImageFill() => $_has(4);
   @$pb.TagNumber(5)
@@ -138,15 +138,15 @@ class StaticCardPrompt extends $pb.GeneratedMessage {
 
   /// Optional. A clickable button to be shown in the Card.
   @$pb.TagNumber(6)
-  $260.StaticLinkPrompt get button => $_getN(5);
+  $262.StaticLinkPrompt get button => $_getN(5);
   @$pb.TagNumber(6)
-  set button($260.StaticLinkPrompt v) { setField(6, v); }
+  set button($262.StaticLinkPrompt v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasButton() => $_has(5);
   @$pb.TagNumber(6)
   void clearButton() => clearField(6);
   @$pb.TagNumber(6)
-  $260.StaticLinkPrompt ensureButton() => $_ensure(5);
+  $262.StaticLinkPrompt ensureButton() => $_ensure(5);
 }
 
 

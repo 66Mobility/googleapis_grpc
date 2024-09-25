@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../rpc/status.pb.dart' as $319;
-import 'metric_value.pb.dart' as $368;
+import '../../../rpc/status.pb.dart' as $321;
+import 'metric_value.pb.dart' as $370;
 import 'quota_controller.pbenum.dart';
 
 export 'quota_controller.pbenum.dart';
@@ -115,7 +115,7 @@ class QuotaOperation extends $pb.GeneratedMessage {
     $core.String? methodName,
     $core.String? consumerId,
     $core.Map<$core.String, $core.String>? labels,
-    $core.Iterable<$368.MetricValueSet>? quotaMetrics,
+    $core.Iterable<$370.MetricValueSet>? quotaMetrics,
     QuotaOperation_QuotaMode? quotaMode,
   }) {
     final $result = create();
@@ -148,7 +148,7 @@ class QuotaOperation extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'methodName')
     ..aOS(3, _omitFieldNames ? '' : 'consumerId')
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'QuotaOperation.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api.servicecontrol.v1'))
-    ..pc<$368.MetricValueSet>(5, _omitFieldNames ? '' : 'quotaMetrics', $pb.PbFieldType.PM, subBuilder: $368.MetricValueSet.create)
+    ..pc<$370.MetricValueSet>(5, _omitFieldNames ? '' : 'quotaMetrics', $pb.PbFieldType.PM, subBuilder: $370.MetricValueSet.create)
     ..e<QuotaOperation_QuotaMode>(6, _omitFieldNames ? '' : 'quotaMode', $pb.PbFieldType.OE, defaultOrMaker: QuotaOperation_QuotaMode.UNSPECIFIED, valueOf: QuotaOperation_QuotaMode.valueOf, enumValues: QuotaOperation_QuotaMode.values)
     ..hasRequiredFields = false
   ;
@@ -244,7 +244,7 @@ class QuotaOperation extends $pb.GeneratedMessage {
   ///
   ///  This field is mutually exclusive with method_name.
   @$pb.TagNumber(5)
-  $core.List<$368.MetricValueSet> get quotaMetrics => $_getList(4);
+  $core.List<$370.MetricValueSet> get quotaMetrics => $_getList(4);
 
   /// Quota mode for this operation.
   @$pb.TagNumber(6)
@@ -262,7 +262,7 @@ class AllocateQuotaResponse extends $pb.GeneratedMessage {
   factory AllocateQuotaResponse({
     $core.String? operationId,
     $core.Iterable<QuotaError>? allocateErrors,
-    $core.Iterable<$368.MetricValueSet>? quotaMetrics,
+    $core.Iterable<$370.MetricValueSet>? quotaMetrics,
     $core.String? serviceConfigId,
   }) {
     final $result = create();
@@ -287,7 +287,7 @@ class AllocateQuotaResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AllocateQuotaResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.servicecontrol.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'operationId')
     ..pc<QuotaError>(2, _omitFieldNames ? '' : 'allocateErrors', $pb.PbFieldType.PM, subBuilder: QuotaError.create)
-    ..pc<$368.MetricValueSet>(3, _omitFieldNames ? '' : 'quotaMetrics', $pb.PbFieldType.PM, subBuilder: $368.MetricValueSet.create)
+    ..pc<$370.MetricValueSet>(3, _omitFieldNames ? '' : 'quotaMetrics', $pb.PbFieldType.PM, subBuilder: $370.MetricValueSet.create)
     ..aOS(4, _omitFieldNames ? '' : 'serviceConfigId')
     ..hasRequiredFields = false
   ;
@@ -339,7 +339,7 @@ class AllocateQuotaResponse extends $pb.GeneratedMessage {
   ///  boolean metric :
   ///    "serviceruntime.googleapis.com/quota/exceeded"
   @$pb.TagNumber(3)
-  $core.List<$368.MetricValueSet> get quotaMetrics => $_getList(2);
+  $core.List<$370.MetricValueSet> get quotaMetrics => $_getList(2);
 
   /// ID of the actual config used to process the request.
   @$pb.TagNumber(4)
@@ -358,7 +358,7 @@ class QuotaError extends $pb.GeneratedMessage {
     QuotaError_Code? code,
     $core.String? subject,
     $core.String? description,
-    $319.Status? status,
+    $321.Status? status,
   }) {
     final $result = create();
     if (code != null) {
@@ -383,7 +383,7 @@ class QuotaError extends $pb.GeneratedMessage {
     ..e<QuotaError_Code>(1, _omitFieldNames ? '' : 'code', $pb.PbFieldType.OE, defaultOrMaker: QuotaError_Code.UNSPECIFIED, valueOf: QuotaError_Code.valueOf, enumValues: QuotaError_Code.values)
     ..aOS(2, _omitFieldNames ? '' : 'subject')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$319.Status>(4, _omitFieldNames ? '' : 'status', subBuilder: $319.Status.create)
+    ..aOM<$321.Status>(4, _omitFieldNames ? '' : 'status', subBuilder: $321.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -443,15 +443,15 @@ class QuotaError extends $pb.GeneratedMessage {
   /// Contains additional information about the quota error.
   /// If available, `status.code` will be non zero.
   @$pb.TagNumber(4)
-  $319.Status get status => $_getN(3);
+  $321.Status get status => $_getN(3);
   @$pb.TagNumber(4)
-  set status($319.Status v) { setField(4, v); }
+  set status($321.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStatus() => $_has(3);
   @$pb.TagNumber(4)
   void clearStatus() => clearField(4);
   @$pb.TagNumber(4)
-  $319.Status ensureStatus() => $_ensure(3);
+  $321.Status ensureStatus() => $_ensure(3);
 }
 
 

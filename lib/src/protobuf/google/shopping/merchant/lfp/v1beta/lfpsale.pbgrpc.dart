@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'lfpsale.pb.dart' as $233;
+import 'lfpsale.pb.dart' as $235;
 
 export 'lfpsale.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.lfp.v1beta.LfpSaleService')
 class LfpSaleServiceClient extends $grpc.Client {
-  static final _$insertLfpSale = $grpc.ClientMethod<$233.InsertLfpSaleRequest, $233.LfpSale>(
+  static final _$insertLfpSale = $grpc.ClientMethod<$235.InsertLfpSaleRequest, $235.LfpSale>(
       '/google.shopping.merchant.lfp.v1beta.LfpSaleService/InsertLfpSale',
-      ($233.InsertLfpSaleRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $233.LfpSale.fromBuffer(value));
+      ($235.InsertLfpSaleRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $235.LfpSale.fromBuffer(value));
 
   LfpSaleServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class LfpSaleServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$233.LfpSale> insertLfpSale($233.InsertLfpSaleRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$235.LfpSale> insertLfpSale($235.InsertLfpSaleRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertLfpSale, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class LfpSaleServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.lfp.v1beta.LfpSaleService';
 
   LfpSaleServiceBase() {
-    $addMethod($grpc.ServiceMethod<$233.InsertLfpSaleRequest, $233.LfpSale>(
+    $addMethod($grpc.ServiceMethod<$235.InsertLfpSaleRequest, $235.LfpSale>(
         'InsertLfpSale',
         insertLfpSale_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $233.InsertLfpSaleRequest.fromBuffer(value),
-        ($233.LfpSale value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $235.InsertLfpSaleRequest.fromBuffer(value),
+        ($235.LfpSale value) => value.writeToBuffer()));
   }
 
-  $async.Future<$233.LfpSale> insertLfpSale_Pre($grpc.ServiceCall call, $async.Future<$233.InsertLfpSaleRequest> request) async {
+  $async.Future<$235.LfpSale> insertLfpSale_Pre($grpc.ServiceCall call, $async.Future<$235.InsertLfpSaleRequest> request) async {
     return insertLfpSale(call, await request);
   }
 
-  $async.Future<$233.LfpSale> insertLfpSale($grpc.ServiceCall call, $233.InsertLfpSaleRequest request);
+  $async.Future<$235.LfpSale> insertLfpSale($grpc.ServiceCall call, $235.InsertLfpSaleRequest request);
 }

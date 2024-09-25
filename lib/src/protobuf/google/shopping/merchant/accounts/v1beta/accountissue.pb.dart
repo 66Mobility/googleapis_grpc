@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/datetime.pb.dart' as $325;
-import '../../../type/types.pbenum.dart' as $533;
+import '../../../../type/datetime.pb.dart' as $327;
+import '../../../type/types.pbenum.dart' as $535;
 import 'accountissue.pbenum.dart';
 
 export 'accountissue.pbenum.dart';
@@ -90,7 +90,7 @@ class AccountIssue_ImpactedDestination_Impact extends $pb.GeneratedMessage {
 /// The impact of the issue on a destination.
 class AccountIssue_ImpactedDestination extends $pb.GeneratedMessage {
   factory AccountIssue_ImpactedDestination({
-    $533.ReportingContext_ReportingContextEnum? reportingContext,
+    $535.ReportingContext_ReportingContextEnum? reportingContext,
     $core.Iterable<AccountIssue_ImpactedDestination_Impact>? impacts,
   }) {
     final $result = create();
@@ -107,7 +107,7 @@ class AccountIssue_ImpactedDestination extends $pb.GeneratedMessage {
   factory AccountIssue_ImpactedDestination.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AccountIssue.ImpactedDestination', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..e<$533.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $533.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $533.ReportingContext_ReportingContextEnum.valueOf, enumValues: $533.ReportingContext_ReportingContextEnum.values)
+    ..e<$535.ReportingContext_ReportingContextEnum>(1, _omitFieldNames ? '' : 'reportingContext', $pb.PbFieldType.OE, defaultOrMaker: $535.ReportingContext_ReportingContextEnum.REPORTING_CONTEXT_ENUM_UNSPECIFIED, valueOf: $535.ReportingContext_ReportingContextEnum.valueOf, enumValues: $535.ReportingContext_ReportingContextEnum.values)
     ..pc<AccountIssue_ImpactedDestination_Impact>(2, _omitFieldNames ? '' : 'impacts', $pb.PbFieldType.PM, subBuilder: AccountIssue_ImpactedDestination_Impact.create)
     ..hasRequiredFields = false
   ;
@@ -135,9 +135,9 @@ class AccountIssue_ImpactedDestination extends $pb.GeneratedMessage {
 
   /// The impacted reporting context.
   @$pb.TagNumber(1)
-  $533.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
+  $535.ReportingContext_ReportingContextEnum get reportingContext => $_getN(0);
   @$pb.TagNumber(1)
-  set reportingContext($533.ReportingContext_ReportingContextEnum v) { setField(1, v); }
+  set reportingContext($535.ReportingContext_ReportingContextEnum v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasReportingContext() => $_has(0);
   @$pb.TagNumber(1)
@@ -279,7 +279,7 @@ class ListAccountIssuesRequest extends $pb.GeneratedMessage {
     $core.int? pageSize,
     $core.String? pageToken,
     $core.String? languageCode,
-    $325.TimeZone? timeZone,
+    $327.TimeZone? timeZone,
   }) {
     final $result = create();
     if (parent != null) {
@@ -308,7 +308,7 @@ class ListAccountIssuesRequest extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'pageSize', $pb.PbFieldType.O3)
     ..aOS(3, _omitFieldNames ? '' : 'pageToken')
     ..aOS(4, _omitFieldNames ? '' : 'languageCode')
-    ..aOM<$325.TimeZone>(5, _omitFieldNames ? '' : 'timeZone', subBuilder: $325.TimeZone.create)
+    ..aOM<$327.TimeZone>(5, _omitFieldNames ? '' : 'timeZone', subBuilder: $327.TimeZone.create)
     ..hasRequiredFields = false
   ;
 
@@ -387,15 +387,15 @@ class ListAccountIssuesRequest extends $pb.GeneratedMessage {
   /// localize times in human-readable fields. For example 'America/Los_Angeles'.
   /// If not set, 'America/Los_Angeles' will be used.
   @$pb.TagNumber(5)
-  $325.TimeZone get timeZone => $_getN(4);
+  $327.TimeZone get timeZone => $_getN(4);
   @$pb.TagNumber(5)
-  set timeZone($325.TimeZone v) { setField(5, v); }
+  set timeZone($327.TimeZone v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasTimeZone() => $_has(4);
   @$pb.TagNumber(5)
   void clearTimeZone() => clearField(5);
   @$pb.TagNumber(5)
-  $325.TimeZone ensureTimeZone() => $_ensure(4);
+  $327.TimeZone ensureTimeZone() => $_ensure(4);
 }
 
 /// Response message for the `ListAccountIssues` method.

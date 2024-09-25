@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $299;
+import '../../../protobuf/timestamp.pb.dart' as $301;
 
 /// Represents a [Metrics
 /// Scope](https://cloud.google.com/monitoring/settings#concept-scope) in Cloud
@@ -22,8 +22,8 @@ import '../../../protobuf/timestamp.pb.dart' as $299;
 class MetricsScope extends $pb.GeneratedMessage {
   factory MetricsScope({
     $core.String? name,
-    $299.Timestamp? createTime,
-    $299.Timestamp? updateTime,
+    $301.Timestamp? createTime,
+    $301.Timestamp? updateTime,
     $core.Iterable<MonitoredProject>? monitoredProjects,
   }) {
     final $result = create();
@@ -47,8 +47,8 @@ class MetricsScope extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetricsScope', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.metricsscope.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
     ..pc<MonitoredProject>(4, _omitFieldNames ? '' : 'monitoredProjects', $pb.PbFieldType.PM, subBuilder: MonitoredProject.create)
     ..hasRequiredFields = false
   ;
@@ -91,27 +91,27 @@ class MetricsScope extends $pb.GeneratedMessage {
 
   /// Output only. The time when this `Metrics Scope` was created.
   @$pb.TagNumber(2)
-  $299.Timestamp get createTime => $_getN(1);
+  $301.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($299.Timestamp v) { setField(2, v); }
+  set createTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureCreateTime() => $_ensure(1);
+  $301.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time when this `Metrics Scope` record was last updated.
   @$pb.TagNumber(3)
-  $299.Timestamp get updateTime => $_getN(2);
+  $301.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($299.Timestamp v) { setField(3, v); }
+  set updateTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureUpdateTime() => $_ensure(2);
+  $301.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Output only. The list of projects monitored by this `Metrics Scope`.
   @$pb.TagNumber(4)
@@ -124,7 +124,7 @@ class MetricsScope extends $pb.GeneratedMessage {
 class MonitoredProject extends $pb.GeneratedMessage {
   factory MonitoredProject({
     $core.String? name,
-    $299.Timestamp? createTime,
+    $301.Timestamp? createTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -141,7 +141,7 @@ class MonitoredProject extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MonitoredProject', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.metricsscope.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -182,15 +182,15 @@ class MonitoredProject extends $pb.GeneratedMessage {
 
   /// Output only. The time when this `MonitoredProject` was created.
   @$pb.TagNumber(6)
-  $299.Timestamp get createTime => $_getN(1);
+  $301.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(6)
-  set createTime($299.Timestamp v) { setField(6, v); }
+  set createTime($301.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $299.Timestamp ensureCreateTime() => $_ensure(1);
+  $301.Timestamp ensureCreateTime() => $_ensure(1);
 }
 
 

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $509;
+import 'common.pb.dart' as $511;
 import 'metrics.pbenum.dart';
 
 export 'metrics.pbenum.dart';
@@ -192,11 +192,11 @@ enum TimeSeriesFilter_OutputFilter {
 class TimeSeriesFilter extends $pb.GeneratedMessage {
   factory TimeSeriesFilter({
     $core.String? filter,
-    $509.Aggregation? aggregation,
-    $509.Aggregation? secondaryAggregation,
-    $509.PickTimeSeriesFilter? pickTimeSeriesFilter,
+    $511.Aggregation? aggregation,
+    $511.Aggregation? secondaryAggregation,
+    $511.PickTimeSeriesFilter? pickTimeSeriesFilter,
   @$core.Deprecated('This field is deprecated.')
-    $509.StatisticalTimeSeriesFilter? statisticalTimeSeriesFilter,
+    $511.StatisticalTimeSeriesFilter? statisticalTimeSeriesFilter,
   }) {
     final $result = create();
     if (filter != null) {
@@ -229,10 +229,10 @@ class TimeSeriesFilter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeriesFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
     ..oo(0, [4, 5])
     ..aOS(1, _omitFieldNames ? '' : 'filter')
-    ..aOM<$509.Aggregation>(2, _omitFieldNames ? '' : 'aggregation', subBuilder: $509.Aggregation.create)
-    ..aOM<$509.Aggregation>(3, _omitFieldNames ? '' : 'secondaryAggregation', subBuilder: $509.Aggregation.create)
-    ..aOM<$509.PickTimeSeriesFilter>(4, _omitFieldNames ? '' : 'pickTimeSeriesFilter', subBuilder: $509.PickTimeSeriesFilter.create)
-    ..aOM<$509.StatisticalTimeSeriesFilter>(5, _omitFieldNames ? '' : 'statisticalTimeSeriesFilter', subBuilder: $509.StatisticalTimeSeriesFilter.create)
+    ..aOM<$511.Aggregation>(2, _omitFieldNames ? '' : 'aggregation', subBuilder: $511.Aggregation.create)
+    ..aOM<$511.Aggregation>(3, _omitFieldNames ? '' : 'secondaryAggregation', subBuilder: $511.Aggregation.create)
+    ..aOM<$511.PickTimeSeriesFilter>(4, _omitFieldNames ? '' : 'pickTimeSeriesFilter', subBuilder: $511.PickTimeSeriesFilter.create)
+    ..aOM<$511.StatisticalTimeSeriesFilter>(5, _omitFieldNames ? '' : 'statisticalTimeSeriesFilter', subBuilder: $511.StatisticalTimeSeriesFilter.create)
     ..hasRequiredFields = false
   ;
 
@@ -276,48 +276,48 @@ class TimeSeriesFilter extends $pb.GeneratedMessage {
   /// Use this field to combine multiple time series for different views of the
   /// data.
   @$pb.TagNumber(2)
-  $509.Aggregation get aggregation => $_getN(1);
+  $511.Aggregation get aggregation => $_getN(1);
   @$pb.TagNumber(2)
-  set aggregation($509.Aggregation v) { setField(2, v); }
+  set aggregation($511.Aggregation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAggregation() => $_has(1);
   @$pb.TagNumber(2)
   void clearAggregation() => clearField(2);
   @$pb.TagNumber(2)
-  $509.Aggregation ensureAggregation() => $_ensure(1);
+  $511.Aggregation ensureAggregation() => $_ensure(1);
 
   /// Apply a second aggregation after `aggregation` is applied.
   @$pb.TagNumber(3)
-  $509.Aggregation get secondaryAggregation => $_getN(2);
+  $511.Aggregation get secondaryAggregation => $_getN(2);
   @$pb.TagNumber(3)
-  set secondaryAggregation($509.Aggregation v) { setField(3, v); }
+  set secondaryAggregation($511.Aggregation v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSecondaryAggregation() => $_has(2);
   @$pb.TagNumber(3)
   void clearSecondaryAggregation() => clearField(3);
   @$pb.TagNumber(3)
-  $509.Aggregation ensureSecondaryAggregation() => $_ensure(2);
+  $511.Aggregation ensureSecondaryAggregation() => $_ensure(2);
 
   /// Ranking based time series filter.
   @$pb.TagNumber(4)
-  $509.PickTimeSeriesFilter get pickTimeSeriesFilter => $_getN(3);
+  $511.PickTimeSeriesFilter get pickTimeSeriesFilter => $_getN(3);
   @$pb.TagNumber(4)
-  set pickTimeSeriesFilter($509.PickTimeSeriesFilter v) { setField(4, v); }
+  set pickTimeSeriesFilter($511.PickTimeSeriesFilter v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPickTimeSeriesFilter() => $_has(3);
   @$pb.TagNumber(4)
   void clearPickTimeSeriesFilter() => clearField(4);
   @$pb.TagNumber(4)
-  $509.PickTimeSeriesFilter ensurePickTimeSeriesFilter() => $_ensure(3);
+  $511.PickTimeSeriesFilter ensurePickTimeSeriesFilter() => $_ensure(3);
 
   /// Statistics based time series filter.
   /// Note: This field is deprecated and completely ignored by the API.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $509.StatisticalTimeSeriesFilter get statisticalTimeSeriesFilter => $_getN(4);
+  $511.StatisticalTimeSeriesFilter get statisticalTimeSeriesFilter => $_getN(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  set statisticalTimeSeriesFilter($509.StatisticalTimeSeriesFilter v) { setField(5, v); }
+  set statisticalTimeSeriesFilter($511.StatisticalTimeSeriesFilter v) { setField(5, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   $core.bool hasStatisticalTimeSeriesFilter() => $_has(4);
@@ -326,7 +326,7 @@ class TimeSeriesFilter extends $pb.GeneratedMessage {
   void clearStatisticalTimeSeriesFilter() => clearField(5);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $509.StatisticalTimeSeriesFilter ensureStatisticalTimeSeriesFilter() => $_ensure(4);
+  $511.StatisticalTimeSeriesFilter ensureStatisticalTimeSeriesFilter() => $_ensure(4);
 }
 
 /// Describes a query to build the numerator or denominator of a
@@ -334,7 +334,7 @@ class TimeSeriesFilter extends $pb.GeneratedMessage {
 class TimeSeriesFilterRatio_RatioPart extends $pb.GeneratedMessage {
   factory TimeSeriesFilterRatio_RatioPart({
     $core.String? filter,
-    $509.Aggregation? aggregation,
+    $511.Aggregation? aggregation,
   }) {
     final $result = create();
     if (filter != null) {
@@ -351,7 +351,7 @@ class TimeSeriesFilterRatio_RatioPart extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeriesFilterRatio.RatioPart', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'filter')
-    ..aOM<$509.Aggregation>(2, _omitFieldNames ? '' : 'aggregation', subBuilder: $509.Aggregation.create)
+    ..aOM<$511.Aggregation>(2, _omitFieldNames ? '' : 'aggregation', subBuilder: $511.Aggregation.create)
     ..hasRequiredFields = false
   ;
 
@@ -392,15 +392,15 @@ class TimeSeriesFilterRatio_RatioPart extends $pb.GeneratedMessage {
   /// Use this field to combine multiple time series for different views of the
   /// data.
   @$pb.TagNumber(2)
-  $509.Aggregation get aggregation => $_getN(1);
+  $511.Aggregation get aggregation => $_getN(1);
   @$pb.TagNumber(2)
-  set aggregation($509.Aggregation v) { setField(2, v); }
+  set aggregation($511.Aggregation v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAggregation() => $_has(1);
   @$pb.TagNumber(2)
   void clearAggregation() => clearField(2);
   @$pb.TagNumber(2)
-  $509.Aggregation ensureAggregation() => $_ensure(1);
+  $511.Aggregation ensureAggregation() => $_ensure(1);
 }
 
 enum TimeSeriesFilterRatio_OutputFilter {
@@ -416,10 +416,10 @@ class TimeSeriesFilterRatio extends $pb.GeneratedMessage {
   factory TimeSeriesFilterRatio({
     TimeSeriesFilterRatio_RatioPart? numerator,
     TimeSeriesFilterRatio_RatioPart? denominator,
-    $509.Aggregation? secondaryAggregation,
-    $509.PickTimeSeriesFilter? pickTimeSeriesFilter,
+    $511.Aggregation? secondaryAggregation,
+    $511.PickTimeSeriesFilter? pickTimeSeriesFilter,
   @$core.Deprecated('This field is deprecated.')
-    $509.StatisticalTimeSeriesFilter? statisticalTimeSeriesFilter,
+    $511.StatisticalTimeSeriesFilter? statisticalTimeSeriesFilter,
   }) {
     final $result = create();
     if (numerator != null) {
@@ -453,9 +453,9 @@ class TimeSeriesFilterRatio extends $pb.GeneratedMessage {
     ..oo(0, [4, 5])
     ..aOM<TimeSeriesFilterRatio_RatioPart>(1, _omitFieldNames ? '' : 'numerator', subBuilder: TimeSeriesFilterRatio_RatioPart.create)
     ..aOM<TimeSeriesFilterRatio_RatioPart>(2, _omitFieldNames ? '' : 'denominator', subBuilder: TimeSeriesFilterRatio_RatioPart.create)
-    ..aOM<$509.Aggregation>(3, _omitFieldNames ? '' : 'secondaryAggregation', subBuilder: $509.Aggregation.create)
-    ..aOM<$509.PickTimeSeriesFilter>(4, _omitFieldNames ? '' : 'pickTimeSeriesFilter', subBuilder: $509.PickTimeSeriesFilter.create)
-    ..aOM<$509.StatisticalTimeSeriesFilter>(5, _omitFieldNames ? '' : 'statisticalTimeSeriesFilter', subBuilder: $509.StatisticalTimeSeriesFilter.create)
+    ..aOM<$511.Aggregation>(3, _omitFieldNames ? '' : 'secondaryAggregation', subBuilder: $511.Aggregation.create)
+    ..aOM<$511.PickTimeSeriesFilter>(4, _omitFieldNames ? '' : 'pickTimeSeriesFilter', subBuilder: $511.PickTimeSeriesFilter.create)
+    ..aOM<$511.StatisticalTimeSeriesFilter>(5, _omitFieldNames ? '' : 'statisticalTimeSeriesFilter', subBuilder: $511.StatisticalTimeSeriesFilter.create)
     ..hasRequiredFields = false
   ;
 
@@ -509,36 +509,36 @@ class TimeSeriesFilterRatio extends $pb.GeneratedMessage {
 
   /// Apply a second aggregation after the ratio is computed.
   @$pb.TagNumber(3)
-  $509.Aggregation get secondaryAggregation => $_getN(2);
+  $511.Aggregation get secondaryAggregation => $_getN(2);
   @$pb.TagNumber(3)
-  set secondaryAggregation($509.Aggregation v) { setField(3, v); }
+  set secondaryAggregation($511.Aggregation v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasSecondaryAggregation() => $_has(2);
   @$pb.TagNumber(3)
   void clearSecondaryAggregation() => clearField(3);
   @$pb.TagNumber(3)
-  $509.Aggregation ensureSecondaryAggregation() => $_ensure(2);
+  $511.Aggregation ensureSecondaryAggregation() => $_ensure(2);
 
   /// Ranking based time series filter.
   @$pb.TagNumber(4)
-  $509.PickTimeSeriesFilter get pickTimeSeriesFilter => $_getN(3);
+  $511.PickTimeSeriesFilter get pickTimeSeriesFilter => $_getN(3);
   @$pb.TagNumber(4)
-  set pickTimeSeriesFilter($509.PickTimeSeriesFilter v) { setField(4, v); }
+  set pickTimeSeriesFilter($511.PickTimeSeriesFilter v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPickTimeSeriesFilter() => $_has(3);
   @$pb.TagNumber(4)
   void clearPickTimeSeriesFilter() => clearField(4);
   @$pb.TagNumber(4)
-  $509.PickTimeSeriesFilter ensurePickTimeSeriesFilter() => $_ensure(3);
+  $511.PickTimeSeriesFilter ensurePickTimeSeriesFilter() => $_ensure(3);
 
   /// Statistics based time series filter.
   /// Note: This field is deprecated and completely ignored by the API.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $509.StatisticalTimeSeriesFilter get statisticalTimeSeriesFilter => $_getN(4);
+  $511.StatisticalTimeSeriesFilter get statisticalTimeSeriesFilter => $_getN(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  set statisticalTimeSeriesFilter($509.StatisticalTimeSeriesFilter v) { setField(5, v); }
+  set statisticalTimeSeriesFilter($511.StatisticalTimeSeriesFilter v) { setField(5, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
   $core.bool hasStatisticalTimeSeriesFilter() => $_has(4);
@@ -547,7 +547,7 @@ class TimeSeriesFilterRatio extends $pb.GeneratedMessage {
   void clearStatisticalTimeSeriesFilter() => clearField(5);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(5)
-  $509.StatisticalTimeSeriesFilter ensureStatisticalTimeSeriesFilter() => $_ensure(4);
+  $511.StatisticalTimeSeriesFilter ensureStatisticalTimeSeriesFilter() => $_ensure(4);
 }
 
 /// Defines a threshold for categorizing time series values.

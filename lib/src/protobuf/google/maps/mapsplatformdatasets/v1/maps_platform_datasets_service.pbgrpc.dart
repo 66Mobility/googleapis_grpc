@@ -16,36 +16,36 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'dataset.pb.dart' as $168;
-import 'maps_platform_datasets.pb.dart' as $167;
+import 'dataset.pb.dart' as $169;
+import 'maps_platform_datasets.pb.dart' as $168;
 
 export 'maps_platform_datasets_service.pb.dart';
 
 @$pb.GrpcServiceName('google.maps.mapsplatformdatasets.v1.MapsPlatformDatasets')
 class MapsPlatformDatasetsClient extends $grpc.Client {
-  static final _$createDataset = $grpc.ClientMethod<$167.CreateDatasetRequest, $168.Dataset>(
+  static final _$createDataset = $grpc.ClientMethod<$168.CreateDatasetRequest, $169.Dataset>(
       '/google.maps.mapsplatformdatasets.v1.MapsPlatformDatasets/CreateDataset',
-      ($167.CreateDatasetRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $168.Dataset.fromBuffer(value));
-  static final _$updateDatasetMetadata = $grpc.ClientMethod<$167.UpdateDatasetMetadataRequest, $168.Dataset>(
+      ($168.CreateDatasetRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $169.Dataset.fromBuffer(value));
+  static final _$updateDatasetMetadata = $grpc.ClientMethod<$168.UpdateDatasetMetadataRequest, $169.Dataset>(
       '/google.maps.mapsplatformdatasets.v1.MapsPlatformDatasets/UpdateDatasetMetadata',
-      ($167.UpdateDatasetMetadataRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $168.Dataset.fromBuffer(value));
-  static final _$getDataset = $grpc.ClientMethod<$167.GetDatasetRequest, $168.Dataset>(
+      ($168.UpdateDatasetMetadataRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $169.Dataset.fromBuffer(value));
+  static final _$getDataset = $grpc.ClientMethod<$168.GetDatasetRequest, $169.Dataset>(
       '/google.maps.mapsplatformdatasets.v1.MapsPlatformDatasets/GetDataset',
-      ($167.GetDatasetRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $168.Dataset.fromBuffer(value));
-  static final _$fetchDatasetErrors = $grpc.ClientMethod<$167.FetchDatasetErrorsRequest, $167.FetchDatasetErrorsResponse>(
+      ($168.GetDatasetRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $169.Dataset.fromBuffer(value));
+  static final _$fetchDatasetErrors = $grpc.ClientMethod<$168.FetchDatasetErrorsRequest, $168.FetchDatasetErrorsResponse>(
       '/google.maps.mapsplatformdatasets.v1.MapsPlatformDatasets/FetchDatasetErrors',
-      ($167.FetchDatasetErrorsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $167.FetchDatasetErrorsResponse.fromBuffer(value));
-  static final _$listDatasets = $grpc.ClientMethod<$167.ListDatasetsRequest, $167.ListDatasetsResponse>(
+      ($168.FetchDatasetErrorsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $168.FetchDatasetErrorsResponse.fromBuffer(value));
+  static final _$listDatasets = $grpc.ClientMethod<$168.ListDatasetsRequest, $168.ListDatasetsResponse>(
       '/google.maps.mapsplatformdatasets.v1.MapsPlatformDatasets/ListDatasets',
-      ($167.ListDatasetsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $167.ListDatasetsResponse.fromBuffer(value));
-  static final _$deleteDataset = $grpc.ClientMethod<$167.DeleteDatasetRequest, $3.Empty>(
+      ($168.ListDatasetsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $168.ListDatasetsResponse.fromBuffer(value));
+  static final _$deleteDataset = $grpc.ClientMethod<$168.DeleteDatasetRequest, $3.Empty>(
       '/google.maps.mapsplatformdatasets.v1.MapsPlatformDatasets/DeleteDataset',
-      ($167.DeleteDatasetRequest value) => value.writeToBuffer(),
+      ($168.DeleteDatasetRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
 
   MapsPlatformDatasetsClient($grpc.ClientChannel channel,
@@ -54,27 +54,27 @@ class MapsPlatformDatasetsClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$168.Dataset> createDataset($167.CreateDatasetRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$169.Dataset> createDataset($168.CreateDatasetRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createDataset, request, options: options);
   }
 
-  $grpc.ResponseFuture<$168.Dataset> updateDatasetMetadata($167.UpdateDatasetMetadataRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$169.Dataset> updateDatasetMetadata($168.UpdateDatasetMetadataRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateDatasetMetadata, request, options: options);
   }
 
-  $grpc.ResponseFuture<$168.Dataset> getDataset($167.GetDatasetRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$169.Dataset> getDataset($168.GetDatasetRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getDataset, request, options: options);
   }
 
-  $grpc.ResponseFuture<$167.FetchDatasetErrorsResponse> fetchDatasetErrors($167.FetchDatasetErrorsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$168.FetchDatasetErrorsResponse> fetchDatasetErrors($168.FetchDatasetErrorsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$fetchDatasetErrors, request, options: options);
   }
 
-  $grpc.ResponseFuture<$167.ListDatasetsResponse> listDatasets($167.ListDatasetsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$168.ListDatasetsResponse> listDatasets($168.ListDatasetsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listDatasets, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteDataset($167.DeleteDatasetRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteDataset($168.DeleteDatasetRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteDataset, request, options: options);
   }
 }
@@ -84,78 +84,78 @@ abstract class MapsPlatformDatasetsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.maps.mapsplatformdatasets.v1.MapsPlatformDatasets';
 
   MapsPlatformDatasetsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$167.CreateDatasetRequest, $168.Dataset>(
+    $addMethod($grpc.ServiceMethod<$168.CreateDatasetRequest, $169.Dataset>(
         'CreateDataset',
         createDataset_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $167.CreateDatasetRequest.fromBuffer(value),
-        ($168.Dataset value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$167.UpdateDatasetMetadataRequest, $168.Dataset>(
+        ($core.List<$core.int> value) => $168.CreateDatasetRequest.fromBuffer(value),
+        ($169.Dataset value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$168.UpdateDatasetMetadataRequest, $169.Dataset>(
         'UpdateDatasetMetadata',
         updateDatasetMetadata_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $167.UpdateDatasetMetadataRequest.fromBuffer(value),
-        ($168.Dataset value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$167.GetDatasetRequest, $168.Dataset>(
+        ($core.List<$core.int> value) => $168.UpdateDatasetMetadataRequest.fromBuffer(value),
+        ($169.Dataset value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$168.GetDatasetRequest, $169.Dataset>(
         'GetDataset',
         getDataset_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $167.GetDatasetRequest.fromBuffer(value),
-        ($168.Dataset value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$167.FetchDatasetErrorsRequest, $167.FetchDatasetErrorsResponse>(
+        ($core.List<$core.int> value) => $168.GetDatasetRequest.fromBuffer(value),
+        ($169.Dataset value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$168.FetchDatasetErrorsRequest, $168.FetchDatasetErrorsResponse>(
         'FetchDatasetErrors',
         fetchDatasetErrors_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $167.FetchDatasetErrorsRequest.fromBuffer(value),
-        ($167.FetchDatasetErrorsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$167.ListDatasetsRequest, $167.ListDatasetsResponse>(
+        ($core.List<$core.int> value) => $168.FetchDatasetErrorsRequest.fromBuffer(value),
+        ($168.FetchDatasetErrorsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$168.ListDatasetsRequest, $168.ListDatasetsResponse>(
         'ListDatasets',
         listDatasets_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $167.ListDatasetsRequest.fromBuffer(value),
-        ($167.ListDatasetsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$167.DeleteDatasetRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $168.ListDatasetsRequest.fromBuffer(value),
+        ($168.ListDatasetsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$168.DeleteDatasetRequest, $3.Empty>(
         'DeleteDataset',
         deleteDataset_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $167.DeleteDatasetRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $168.DeleteDatasetRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$168.Dataset> createDataset_Pre($grpc.ServiceCall call, $async.Future<$167.CreateDatasetRequest> request) async {
+  $async.Future<$169.Dataset> createDataset_Pre($grpc.ServiceCall call, $async.Future<$168.CreateDatasetRequest> request) async {
     return createDataset(call, await request);
   }
 
-  $async.Future<$168.Dataset> updateDatasetMetadata_Pre($grpc.ServiceCall call, $async.Future<$167.UpdateDatasetMetadataRequest> request) async {
+  $async.Future<$169.Dataset> updateDatasetMetadata_Pre($grpc.ServiceCall call, $async.Future<$168.UpdateDatasetMetadataRequest> request) async {
     return updateDatasetMetadata(call, await request);
   }
 
-  $async.Future<$168.Dataset> getDataset_Pre($grpc.ServiceCall call, $async.Future<$167.GetDatasetRequest> request) async {
+  $async.Future<$169.Dataset> getDataset_Pre($grpc.ServiceCall call, $async.Future<$168.GetDatasetRequest> request) async {
     return getDataset(call, await request);
   }
 
-  $async.Future<$167.FetchDatasetErrorsResponse> fetchDatasetErrors_Pre($grpc.ServiceCall call, $async.Future<$167.FetchDatasetErrorsRequest> request) async {
+  $async.Future<$168.FetchDatasetErrorsResponse> fetchDatasetErrors_Pre($grpc.ServiceCall call, $async.Future<$168.FetchDatasetErrorsRequest> request) async {
     return fetchDatasetErrors(call, await request);
   }
 
-  $async.Future<$167.ListDatasetsResponse> listDatasets_Pre($grpc.ServiceCall call, $async.Future<$167.ListDatasetsRequest> request) async {
+  $async.Future<$168.ListDatasetsResponse> listDatasets_Pre($grpc.ServiceCall call, $async.Future<$168.ListDatasetsRequest> request) async {
     return listDatasets(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteDataset_Pre($grpc.ServiceCall call, $async.Future<$167.DeleteDatasetRequest> request) async {
+  $async.Future<$3.Empty> deleteDataset_Pre($grpc.ServiceCall call, $async.Future<$168.DeleteDatasetRequest> request) async {
     return deleteDataset(call, await request);
   }
 
-  $async.Future<$168.Dataset> createDataset($grpc.ServiceCall call, $167.CreateDatasetRequest request);
-  $async.Future<$168.Dataset> updateDatasetMetadata($grpc.ServiceCall call, $167.UpdateDatasetMetadataRequest request);
-  $async.Future<$168.Dataset> getDataset($grpc.ServiceCall call, $167.GetDatasetRequest request);
-  $async.Future<$167.FetchDatasetErrorsResponse> fetchDatasetErrors($grpc.ServiceCall call, $167.FetchDatasetErrorsRequest request);
-  $async.Future<$167.ListDatasetsResponse> listDatasets($grpc.ServiceCall call, $167.ListDatasetsRequest request);
-  $async.Future<$3.Empty> deleteDataset($grpc.ServiceCall call, $167.DeleteDatasetRequest request);
+  $async.Future<$169.Dataset> createDataset($grpc.ServiceCall call, $168.CreateDatasetRequest request);
+  $async.Future<$169.Dataset> updateDatasetMetadata($grpc.ServiceCall call, $168.UpdateDatasetMetadataRequest request);
+  $async.Future<$169.Dataset> getDataset($grpc.ServiceCall call, $168.GetDatasetRequest request);
+  $async.Future<$168.FetchDatasetErrorsResponse> fetchDatasetErrors($grpc.ServiceCall call, $168.FetchDatasetErrorsRequest request);
+  $async.Future<$168.ListDatasetsResponse> listDatasets($grpc.ServiceCall call, $168.ListDatasetsRequest request);
+  $async.Future<$3.Empty> deleteDataset($grpc.ServiceCall call, $168.DeleteDatasetRequest request);
 }

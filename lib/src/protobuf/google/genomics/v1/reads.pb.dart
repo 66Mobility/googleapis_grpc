@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $330;
-import 'range.pb.dart' as $437;
-import 'readalignment.pb.dart' as $438;
-import 'readgroupset.pb.dart' as $135;
+import '../../protobuf/field_mask.pb.dart' as $332;
+import 'range.pb.dart' as $439;
+import 'readalignment.pb.dart' as $440;
+import 'readgroupset.pb.dart' as $136;
 import 'reads.pbenum.dart';
 
 export 'reads.pbenum.dart';
@@ -121,7 +121,7 @@ class SearchReadGroupSetsRequest extends $pb.GeneratedMessage {
 /// The read group set search response.
 class SearchReadGroupSetsResponse extends $pb.GeneratedMessage {
   factory SearchReadGroupSetsResponse({
-    $core.Iterable<$135.ReadGroupSet>? readGroupSets,
+    $core.Iterable<$136.ReadGroupSet>? readGroupSets,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -138,7 +138,7 @@ class SearchReadGroupSetsResponse extends $pb.GeneratedMessage {
   factory SearchReadGroupSetsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchReadGroupSetsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<$135.ReadGroupSet>(1, _omitFieldNames ? '' : 'readGroupSets', $pb.PbFieldType.PM, subBuilder: $135.ReadGroupSet.create)
+    ..pc<$136.ReadGroupSet>(1, _omitFieldNames ? '' : 'readGroupSets', $pb.PbFieldType.PM, subBuilder: $136.ReadGroupSet.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -166,7 +166,7 @@ class SearchReadGroupSetsResponse extends $pb.GeneratedMessage {
 
   /// The list of matching read group sets.
   @$pb.TagNumber(1)
-  $core.List<$135.ReadGroupSet> get readGroupSets => $_getList(0);
+  $core.List<$136.ReadGroupSet> get readGroupSets => $_getList(0);
 
   /// The continuation token, which is used to page through large result sets.
   /// Provide this value in a subsequent request to return the next page of
@@ -432,8 +432,8 @@ class ExportReadGroupSetRequest extends $pb.GeneratedMessage {
 class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
   factory UpdateReadGroupSetRequest({
     $core.String? readGroupSetId,
-    $135.ReadGroupSet? readGroupSet,
-    $330.FieldMask? updateMask,
+    $136.ReadGroupSet? readGroupSet,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (readGroupSetId != null) {
@@ -453,8 +453,8 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateReadGroupSetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'readGroupSetId')
-    ..aOM<$135.ReadGroupSet>(2, _omitFieldNames ? '' : 'readGroupSet', subBuilder: $135.ReadGroupSet.create)
-    ..aOM<$330.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$136.ReadGroupSet>(2, _omitFieldNames ? '' : 'readGroupSet', subBuilder: $136.ReadGroupSet.create)
+    ..aOM<$332.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -493,15 +493,15 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
   /// The new read group set data. See `updateMask` for details on mutability of
   /// fields.
   @$pb.TagNumber(2)
-  $135.ReadGroupSet get readGroupSet => $_getN(1);
+  $136.ReadGroupSet get readGroupSet => $_getN(1);
   @$pb.TagNumber(2)
-  set readGroupSet($135.ReadGroupSet v) { setField(2, v); }
+  set readGroupSet($136.ReadGroupSet v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadGroupSet() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadGroupSet() => clearField(2);
   @$pb.TagNumber(2)
-  $135.ReadGroupSet ensureReadGroupSet() => $_ensure(1);
+  $136.ReadGroupSet ensureReadGroupSet() => $_ensure(1);
 
   ///  An optional mask specifying which fields to update. Supported fields:
   ///
@@ -511,15 +511,15 @@ class UpdateReadGroupSetRequest extends $pb.GeneratedMessage {
   ///  Leaving `updateMask` unset is equivalent to specifying all mutable
   ///  fields.
   @$pb.TagNumber(3)
-  $330.FieldMask get updateMask => $_getN(2);
+  $332.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($330.FieldMask v) { setField(3, v); }
+  set updateMask($332.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $330.FieldMask ensureUpdateMask() => $_ensure(2);
+  $332.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 class DeleteReadGroupSetRequest extends $pb.GeneratedMessage {
@@ -783,7 +783,7 @@ class ListCoverageBucketsRequest extends $pb.GeneratedMessage {
 /// to a specific range of the reference sequence.
 class CoverageBucket extends $pb.GeneratedMessage {
   factory CoverageBucket({
-    $437.Range? range,
+    $439.Range? range,
     $core.double? meanCoverage,
   }) {
     final $result = create();
@@ -800,7 +800,7 @@ class CoverageBucket extends $pb.GeneratedMessage {
   factory CoverageBucket.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CoverageBucket', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..aOM<$437.Range>(1, _omitFieldNames ? '' : 'range', subBuilder: $437.Range.create)
+    ..aOM<$439.Range>(1, _omitFieldNames ? '' : 'range', subBuilder: $439.Range.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'meanCoverage', $pb.PbFieldType.OF)
     ..hasRequiredFields = false
   ;
@@ -828,15 +828,15 @@ class CoverageBucket extends $pb.GeneratedMessage {
 
   /// The genomic coordinate range spanned by this bucket.
   @$pb.TagNumber(1)
-  $437.Range get range => $_getN(0);
+  $439.Range get range => $_getN(0);
   @$pb.TagNumber(1)
-  set range($437.Range v) { setField(1, v); }
+  set range($439.Range v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRange() => $_has(0);
   @$pb.TagNumber(1)
   void clearRange() => clearField(1);
   @$pb.TagNumber(1)
-  $437.Range ensureRange() => $_ensure(0);
+  $439.Range ensureRange() => $_ensure(0);
 
   /// The average number of reads which are aligned to each individual
   /// reference base in this bucket.
@@ -1078,7 +1078,7 @@ class SearchReadsRequest extends $pb.GeneratedMessage {
 /// The read search response.
 class SearchReadsResponse extends $pb.GeneratedMessage {
   factory SearchReadsResponse({
-    $core.Iterable<$438.Read>? alignments,
+    $core.Iterable<$440.Read>? alignments,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -1095,7 +1095,7 @@ class SearchReadsResponse extends $pb.GeneratedMessage {
   factory SearchReadsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SearchReadsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<$438.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM, subBuilder: $438.Read.create)
+    ..pc<$440.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM, subBuilder: $440.Read.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -1126,7 +1126,7 @@ class SearchReadsResponse extends $pb.GeneratedMessage {
   /// which have no position, are returned contiguously and are sorted in
   /// ascending lexicographic order by fragment name.
   @$pb.TagNumber(1)
-  $core.List<$438.Read> get alignments => $_getList(0);
+  $core.List<$440.Read> get alignments => $_getList(0);
 
   /// The continuation token, which is used to page through large result sets.
   /// Provide this value in a subsequent request to return the next page of
@@ -1308,7 +1308,7 @@ class StreamReadsRequest extends $pb.GeneratedMessage {
 
 class StreamReadsResponse extends $pb.GeneratedMessage {
   factory StreamReadsResponse({
-    $core.Iterable<$438.Read>? alignments,
+    $core.Iterable<$440.Read>? alignments,
   }) {
     final $result = create();
     if (alignments != null) {
@@ -1321,7 +1321,7 @@ class StreamReadsResponse extends $pb.GeneratedMessage {
   factory StreamReadsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StreamReadsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
-    ..pc<$438.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM, subBuilder: $438.Read.create)
+    ..pc<$440.Read>(1, _omitFieldNames ? '' : 'alignments', $pb.PbFieldType.PM, subBuilder: $440.Read.create)
     ..hasRequiredFields = false
   ;
 
@@ -1347,7 +1347,7 @@ class StreamReadsResponse extends $pb.GeneratedMessage {
   static StreamReadsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$438.Read> get alignments => $_getList(0);
+  $core.List<$440.Read> get alignments => $_getList(0);
 }
 
 

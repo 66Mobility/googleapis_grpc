@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'expr.pb.dart' as $343;
+import 'expr.pb.dart' as $345;
 
 enum Decl_Kind {
   ident, 
@@ -230,7 +230,7 @@ class DeclType extends $pb.GeneratedMessage {
 class IdentDecl extends $pb.GeneratedMessage {
   factory IdentDecl({
     DeclType? type,
-    $343.Expr? value,
+    $345.Expr? value,
   }) {
     final $result = create();
     if (type != null) {
@@ -247,7 +247,7 @@ class IdentDecl extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IdentDecl', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.expr.v1beta1'), createEmptyInstance: create)
     ..aOM<DeclType>(3, _omitFieldNames ? '' : 'type', subBuilder: DeclType.create)
-    ..aOM<$343.Expr>(4, _omitFieldNames ? '' : 'value', subBuilder: $343.Expr.create)
+    ..aOM<$345.Expr>(4, _omitFieldNames ? '' : 'value', subBuilder: $345.Expr.create)
     ..hasRequiredFields = false
   ;
 
@@ -286,15 +286,15 @@ class IdentDecl extends $pb.GeneratedMessage {
 
   /// Optional value of the identifier.
   @$pb.TagNumber(4)
-  $343.Expr get value => $_getN(1);
+  $345.Expr get value => $_getN(1);
   @$pb.TagNumber(4)
-  set value($343.Expr v) { setField(4, v); }
+  set value($345.Expr v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(4)
   void clearValue() => clearField(4);
   @$pb.TagNumber(4)
-  $343.Expr ensureValue() => $_ensure(1);
+  $345.Expr ensureValue() => $_ensure(1);
 }
 
 /// A function declaration.

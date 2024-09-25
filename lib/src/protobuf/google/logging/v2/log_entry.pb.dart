@@ -14,12 +14,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../api/monitored_resource.pb.dart' as $195;
-import '../../protobuf/any.pb.dart' as $318;
-import '../../protobuf/struct.pb.dart' as $258;
-import '../../protobuf/timestamp.pb.dart' as $299;
-import '../type/http_request.pb.dart' as $443;
-import '../type/log_severity.pbenum.dart' as $366;
+import '../../api/monitored_resource.pb.dart' as $196;
+import '../../protobuf/any.pb.dart' as $320;
+import '../../protobuf/struct.pb.dart' as $260;
+import '../../protobuf/timestamp.pb.dart' as $301;
+import '../type/http_request.pb.dart' as $445;
+import '../type/log_severity.pbenum.dart' as $368;
 
 enum LogEntry_Payload {
   protoPayload, 
@@ -31,20 +31,20 @@ enum LogEntry_Payload {
 /// An individual entry in a log.
 class LogEntry extends $pb.GeneratedMessage {
   factory LogEntry({
-    $318.Any? protoPayload,
+    $320.Any? protoPayload,
     $core.String? textPayload,
     $core.String? insertId,
-    $258.Struct? jsonPayload,
-    $443.HttpRequest? httpRequest,
-    $195.MonitoredResource? resource,
-    $299.Timestamp? timestamp,
-    $366.LogSeverity? severity,
+    $260.Struct? jsonPayload,
+    $445.HttpRequest? httpRequest,
+    $196.MonitoredResource? resource,
+    $301.Timestamp? timestamp,
+    $368.LogSeverity? severity,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? logName,
     LogEntryOperation? operation,
     $core.String? trace,
     LogEntrySourceLocation? sourceLocation,
-    $299.Timestamp? receiveTimestamp,
+    $301.Timestamp? receiveTimestamp,
     $core.String? spanId,
     $core.bool? traceSampled,
     LogSplit? split,
@@ -115,20 +115,20 @@ class LogEntry extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..oo(0, [2, 3, 6])
-    ..aOM<$318.Any>(2, _omitFieldNames ? '' : 'protoPayload', subBuilder: $318.Any.create)
+    ..aOM<$320.Any>(2, _omitFieldNames ? '' : 'protoPayload', subBuilder: $320.Any.create)
     ..aOS(3, _omitFieldNames ? '' : 'textPayload')
     ..aOS(4, _omitFieldNames ? '' : 'insertId')
-    ..aOM<$258.Struct>(6, _omitFieldNames ? '' : 'jsonPayload', subBuilder: $258.Struct.create)
-    ..aOM<$443.HttpRequest>(7, _omitFieldNames ? '' : 'httpRequest', subBuilder: $443.HttpRequest.create)
-    ..aOM<$195.MonitoredResource>(8, _omitFieldNames ? '' : 'resource', subBuilder: $195.MonitoredResource.create)
-    ..aOM<$299.Timestamp>(9, _omitFieldNames ? '' : 'timestamp', subBuilder: $299.Timestamp.create)
-    ..e<$366.LogSeverity>(10, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $366.LogSeverity.DEFAULT, valueOf: $366.LogSeverity.valueOf, enumValues: $366.LogSeverity.values)
+    ..aOM<$260.Struct>(6, _omitFieldNames ? '' : 'jsonPayload', subBuilder: $260.Struct.create)
+    ..aOM<$445.HttpRequest>(7, _omitFieldNames ? '' : 'httpRequest', subBuilder: $445.HttpRequest.create)
+    ..aOM<$196.MonitoredResource>(8, _omitFieldNames ? '' : 'resource', subBuilder: $196.MonitoredResource.create)
+    ..aOM<$301.Timestamp>(9, _omitFieldNames ? '' : 'timestamp', subBuilder: $301.Timestamp.create)
+    ..e<$368.LogSeverity>(10, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $368.LogSeverity.DEFAULT, valueOf: $368.LogSeverity.valueOf, enumValues: $368.LogSeverity.values)
     ..m<$core.String, $core.String>(11, _omitFieldNames ? '' : 'labels', entryClassName: 'LogEntry.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.logging.v2'))
     ..aOS(12, _omitFieldNames ? '' : 'logName')
     ..aOM<LogEntryOperation>(15, _omitFieldNames ? '' : 'operation', subBuilder: LogEntryOperation.create)
     ..aOS(22, _omitFieldNames ? '' : 'trace')
     ..aOM<LogEntrySourceLocation>(23, _omitFieldNames ? '' : 'sourceLocation', subBuilder: LogEntrySourceLocation.create)
-    ..aOM<$299.Timestamp>(24, _omitFieldNames ? '' : 'receiveTimestamp', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(24, _omitFieldNames ? '' : 'receiveTimestamp', subBuilder: $301.Timestamp.create)
     ..aOS(27, _omitFieldNames ? '' : 'spanId')
     ..aOB(30, _omitFieldNames ? '' : 'traceSampled')
     ..aOM<LogSplit>(35, _omitFieldNames ? '' : 'split', subBuilder: LogSplit.create)
@@ -168,15 +168,15 @@ class LogEntry extends $pb.GeneratedMessage {
   ///    "type.googleapis.com/google.cloud.audit.AuditLog"
   ///    "type.googleapis.com/google.appengine.logging.v1.RequestLog"
   @$pb.TagNumber(2)
-  $318.Any get protoPayload => $_getN(0);
+  $320.Any get protoPayload => $_getN(0);
   @$pb.TagNumber(2)
-  set protoPayload($318.Any v) { setField(2, v); }
+  set protoPayload($320.Any v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProtoPayload() => $_has(0);
   @$pb.TagNumber(2)
   void clearProtoPayload() => clearField(2);
   @$pb.TagNumber(2)
-  $318.Any ensureProtoPayload() => $_ensure(0);
+  $320.Any ensureProtoPayload() => $_ensure(0);
 
   /// The log entry payload, represented as a Unicode string (UTF-8).
   @$pb.TagNumber(3)
@@ -211,28 +211,28 @@ class LogEntry extends $pb.GeneratedMessage {
   /// The log entry payload, represented as a structure that is
   /// expressed as a JSON object.
   @$pb.TagNumber(6)
-  $258.Struct get jsonPayload => $_getN(3);
+  $260.Struct get jsonPayload => $_getN(3);
   @$pb.TagNumber(6)
-  set jsonPayload($258.Struct v) { setField(6, v); }
+  set jsonPayload($260.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasJsonPayload() => $_has(3);
   @$pb.TagNumber(6)
   void clearJsonPayload() => clearField(6);
   @$pb.TagNumber(6)
-  $258.Struct ensureJsonPayload() => $_ensure(3);
+  $260.Struct ensureJsonPayload() => $_ensure(3);
 
   /// Optional. Information about the HTTP request associated with this log
   /// entry, if applicable.
   @$pb.TagNumber(7)
-  $443.HttpRequest get httpRequest => $_getN(4);
+  $445.HttpRequest get httpRequest => $_getN(4);
   @$pb.TagNumber(7)
-  set httpRequest($443.HttpRequest v) { setField(7, v); }
+  set httpRequest($445.HttpRequest v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasHttpRequest() => $_has(4);
   @$pb.TagNumber(7)
   void clearHttpRequest() => clearField(7);
   @$pb.TagNumber(7)
-  $443.HttpRequest ensureHttpRequest() => $_ensure(4);
+  $445.HttpRequest ensureHttpRequest() => $_ensure(4);
 
   ///  Required. The monitored resource that produced this log entry.
   ///
@@ -240,15 +240,15 @@ class LogEntry extends $pb.GeneratedMessage {
   ///  the monitored resource designating the particular database that reported
   ///  the error.
   @$pb.TagNumber(8)
-  $195.MonitoredResource get resource => $_getN(5);
+  $196.MonitoredResource get resource => $_getN(5);
   @$pb.TagNumber(8)
-  set resource($195.MonitoredResource v) { setField(8, v); }
+  set resource($196.MonitoredResource v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasResource() => $_has(5);
   @$pb.TagNumber(8)
   void clearResource() => clearField(8);
   @$pb.TagNumber(8)
-  $195.MonitoredResource ensureResource() => $_ensure(5);
+  $196.MonitoredResource ensureResource() => $_ensure(5);
 
   ///  Optional. The time the event described by the log entry occurred. This time
   ///  is used to compute the log entry's age and to enforce the logs retention
@@ -263,22 +263,22 @@ class LogEntry extends $pb.GeneratedMessage {
   ///  the past, and that don't exceed 24 hours in the future. Log entries outside
   ///  those time boundaries aren't ingested by Logging.
   @$pb.TagNumber(9)
-  $299.Timestamp get timestamp => $_getN(6);
+  $301.Timestamp get timestamp => $_getN(6);
   @$pb.TagNumber(9)
-  set timestamp($299.Timestamp v) { setField(9, v); }
+  set timestamp($301.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTimestamp() => $_has(6);
   @$pb.TagNumber(9)
   void clearTimestamp() => clearField(9);
   @$pb.TagNumber(9)
-  $299.Timestamp ensureTimestamp() => $_ensure(6);
+  $301.Timestamp ensureTimestamp() => $_ensure(6);
 
   /// Optional. The severity of the log entry. The default value is
   /// `LogSeverity.DEFAULT`.
   @$pb.TagNumber(10)
-  $366.LogSeverity get severity => $_getN(7);
+  $368.LogSeverity get severity => $_getN(7);
   @$pb.TagNumber(10)
-  set severity($366.LogSeverity v) { setField(10, v); }
+  set severity($368.LogSeverity v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasSeverity() => $_has(7);
   @$pb.TagNumber(10)
@@ -379,15 +379,15 @@ class LogEntry extends $pb.GeneratedMessage {
 
   /// Output only. The time the log entry was received by Logging.
   @$pb.TagNumber(24)
-  $299.Timestamp get receiveTimestamp => $_getN(13);
+  $301.Timestamp get receiveTimestamp => $_getN(13);
   @$pb.TagNumber(24)
-  set receiveTimestamp($299.Timestamp v) { setField(24, v); }
+  set receiveTimestamp($301.Timestamp v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasReceiveTimestamp() => $_has(13);
   @$pb.TagNumber(24)
   void clearReceiveTimestamp() => clearField(24);
   @$pb.TagNumber(24)
-  $299.Timestamp ensureReceiveTimestamp() => $_ensure(13);
+  $301.Timestamp ensureReceiveTimestamp() => $_ensure(13);
 
   ///  Optional. The ID of the [Cloud Trace](https://cloud.google.com/trace) span
   ///  associated with the current operation in which the log is being written.

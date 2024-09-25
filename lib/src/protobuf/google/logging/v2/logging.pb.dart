@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../api/monitored_resource.pb.dart' as $195;
-import '../../protobuf/duration.pb.dart' as $261;
-import '../../rpc/status.pb.dart' as $319;
-import 'log_entry.pb.dart' as $444;
+import '../../api/monitored_resource.pb.dart' as $196;
+import '../../protobuf/duration.pb.dart' as $263;
+import '../../rpc/status.pb.dart' as $321;
+import 'log_entry.pb.dart' as $446;
 import 'logging.pbenum.dart';
 
 export 'logging.pbenum.dart';
@@ -89,9 +89,9 @@ class DeleteLogRequest extends $pb.GeneratedMessage {
 class WriteLogEntriesRequest extends $pb.GeneratedMessage {
   factory WriteLogEntriesRequest({
     $core.String? logName,
-    $195.MonitoredResource? resource,
+    $196.MonitoredResource? resource,
     $core.Map<$core.String, $core.String>? labels,
-    $core.Iterable<$444.LogEntry>? entries,
+    $core.Iterable<$446.LogEntry>? entries,
     $core.bool? partialSuccess,
     $core.bool? dryRun,
   }) {
@@ -122,9 +122,9 @@ class WriteLogEntriesRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WriteLogEntriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'logName')
-    ..aOM<$195.MonitoredResource>(2, _omitFieldNames ? '' : 'resource', subBuilder: $195.MonitoredResource.create)
+    ..aOM<$196.MonitoredResource>(2, _omitFieldNames ? '' : 'resource', subBuilder: $196.MonitoredResource.create)
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'labels', entryClassName: 'WriteLogEntriesRequest.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.logging.v2'))
-    ..pc<$444.LogEntry>(4, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $444.LogEntry.create)
+    ..pc<$446.LogEntry>(4, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $446.LogEntry.create)
     ..aOB(5, _omitFieldNames ? '' : 'partialSuccess')
     ..aOB(6, _omitFieldNames ? '' : 'dryRun')
     ..hasRequiredFields = false
@@ -186,15 +186,15 @@ class WriteLogEntriesRequest extends $pb.GeneratedMessage {
   ///
   ///  See [LogEntry][google.logging.v2.LogEntry].
   @$pb.TagNumber(2)
-  $195.MonitoredResource get resource => $_getN(1);
+  $196.MonitoredResource get resource => $_getN(1);
   @$pb.TagNumber(2)
-  set resource($195.MonitoredResource v) { setField(2, v); }
+  set resource($196.MonitoredResource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResource() => $_has(1);
   @$pb.TagNumber(2)
   void clearResource() => clearField(2);
   @$pb.TagNumber(2)
-  $195.MonitoredResource ensureResource() => $_ensure(1);
+  $196.MonitoredResource ensureResource() => $_ensure(1);
 
   /// Optional. Default labels that are added to the `labels` field of all log
   /// entries in `entries`. If a log entry already has a label with the same key
@@ -228,7 +228,7 @@ class WriteLogEntriesRequest extends $pb.GeneratedMessage {
   ///  `entries.write`, you should try to include several log entries in this
   ///  list, rather than calling this method for each individual log entry.
   @$pb.TagNumber(4)
-  $core.List<$444.LogEntry> get entries => $_getList(3);
+  $core.List<$446.LogEntry> get entries => $_getList(3);
 
   /// Optional. Whether a batch's valid entries should be written even if some
   /// other entry failed due to a permanent error such as INVALID_ARGUMENT or
@@ -295,7 +295,7 @@ class WriteLogEntriesResponse extends $pb.GeneratedMessage {
 /// Error details for WriteLogEntries with partial success.
 class WriteLogEntriesPartialErrors extends $pb.GeneratedMessage {
   factory WriteLogEntriesPartialErrors({
-    $core.Map<$core.int, $319.Status>? logEntryErrors,
+    $core.Map<$core.int, $321.Status>? logEntryErrors,
   }) {
     final $result = create();
     if (logEntryErrors != null) {
@@ -308,7 +308,7 @@ class WriteLogEntriesPartialErrors extends $pb.GeneratedMessage {
   factory WriteLogEntriesPartialErrors.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WriteLogEntriesPartialErrors', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..m<$core.int, $319.Status>(1, _omitFieldNames ? '' : 'logEntryErrors', entryClassName: 'WriteLogEntriesPartialErrors.LogEntryErrorsEntry', keyFieldType: $pb.PbFieldType.O3, valueFieldType: $pb.PbFieldType.OM, valueCreator: $319.Status.create, valueDefaultOrMaker: $319.Status.getDefault, packageName: const $pb.PackageName('google.logging.v2'))
+    ..m<$core.int, $321.Status>(1, _omitFieldNames ? '' : 'logEntryErrors', entryClassName: 'WriteLogEntriesPartialErrors.LogEntryErrorsEntry', keyFieldType: $pb.PbFieldType.O3, valueFieldType: $pb.PbFieldType.OM, valueCreator: $321.Status.create, valueDefaultOrMaker: $321.Status.getDefault, packageName: const $pb.PackageName('google.logging.v2'))
     ..hasRequiredFields = false
   ;
 
@@ -340,7 +340,7 @@ class WriteLogEntriesPartialErrors extends $pb.GeneratedMessage {
   ///  Failed requests for which no entries are written will not include
   ///  per-entry errors.
   @$pb.TagNumber(1)
-  $core.Map<$core.int, $319.Status> get logEntryErrors => $_getMap(0);
+  $core.Map<$core.int, $321.Status> get logEntryErrors => $_getMap(0);
 }
 
 /// The parameters to `ListLogEntries`.
@@ -483,7 +483,7 @@ class ListLogEntriesRequest extends $pb.GeneratedMessage {
 /// Result returned from `ListLogEntries`.
 class ListLogEntriesResponse extends $pb.GeneratedMessage {
   factory ListLogEntriesResponse({
-    $core.Iterable<$444.LogEntry>? entries,
+    $core.Iterable<$446.LogEntry>? entries,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -500,7 +500,7 @@ class ListLogEntriesResponse extends $pb.GeneratedMessage {
   factory ListLogEntriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListLogEntriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..pc<$444.LogEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $444.LogEntry.create)
+    ..pc<$446.LogEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $446.LogEntry.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -530,7 +530,7 @@ class ListLogEntriesResponse extends $pb.GeneratedMessage {
   /// returned, indicating that more entries may exist.  See `nextPageToken` for
   /// more information.
   @$pb.TagNumber(1)
-  $core.List<$444.LogEntry> get entries => $_getList(0);
+  $core.List<$446.LogEntry> get entries => $_getList(0);
 
   ///  If there might be more results than those appearing in this response, then
   ///  `nextPageToken` is included.  To get the next set of results, call this
@@ -627,7 +627,7 @@ class ListMonitoredResourceDescriptorsRequest extends $pb.GeneratedMessage {
 /// Result returned from ListMonitoredResourceDescriptors.
 class ListMonitoredResourceDescriptorsResponse extends $pb.GeneratedMessage {
   factory ListMonitoredResourceDescriptorsResponse({
-    $core.Iterable<$195.MonitoredResourceDescriptor>? resourceDescriptors,
+    $core.Iterable<$196.MonitoredResourceDescriptor>? resourceDescriptors,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -644,7 +644,7 @@ class ListMonitoredResourceDescriptorsResponse extends $pb.GeneratedMessage {
   factory ListMonitoredResourceDescriptorsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListMonitoredResourceDescriptorsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..pc<$195.MonitoredResourceDescriptor>(1, _omitFieldNames ? '' : 'resourceDescriptors', $pb.PbFieldType.PM, subBuilder: $195.MonitoredResourceDescriptor.create)
+    ..pc<$196.MonitoredResourceDescriptor>(1, _omitFieldNames ? '' : 'resourceDescriptors', $pb.PbFieldType.PM, subBuilder: $196.MonitoredResourceDescriptor.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -672,7 +672,7 @@ class ListMonitoredResourceDescriptorsResponse extends $pb.GeneratedMessage {
 
   /// A list of resource descriptors.
   @$pb.TagNumber(1)
-  $core.List<$195.MonitoredResourceDescriptor> get resourceDescriptors => $_getList(0);
+  $core.List<$196.MonitoredResourceDescriptor> get resourceDescriptors => $_getList(0);
 
   /// If there might be more results than those appearing in this response, then
   /// `nextPageToken` is included.  To get the next set of results, call this
@@ -872,7 +872,7 @@ class TailLogEntriesRequest extends $pb.GeneratedMessage {
   factory TailLogEntriesRequest({
     $core.Iterable<$core.String>? resourceNames,
     $core.String? filter,
-    $261.Duration? bufferWindow,
+    $263.Duration? bufferWindow,
   }) {
     final $result = create();
     if (resourceNames != null) {
@@ -893,7 +893,7 @@ class TailLogEntriesRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TailLogEntriesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..pPS(1, _omitFieldNames ? '' : 'resourceNames')
     ..aOS(2, _omitFieldNames ? '' : 'filter')
-    ..aOM<$261.Duration>(3, _omitFieldNames ? '' : 'bufferWindow', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'bufferWindow', subBuilder: $263.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -953,15 +953,15 @@ class TailLogEntriesRequest extends $pb.GeneratedMessage {
   /// entries. Valid values are between 0-60000 milliseconds. Defaults to 2000
   /// milliseconds.
   @$pb.TagNumber(3)
-  $261.Duration get bufferWindow => $_getN(2);
+  $263.Duration get bufferWindow => $_getN(2);
   @$pb.TagNumber(3)
-  set bufferWindow($261.Duration v) { setField(3, v); }
+  set bufferWindow($263.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBufferWindow() => $_has(2);
   @$pb.TagNumber(3)
   void clearBufferWindow() => clearField(3);
   @$pb.TagNumber(3)
-  $261.Duration ensureBufferWindow() => $_ensure(2);
+  $263.Duration ensureBufferWindow() => $_ensure(2);
 }
 
 /// Information about entries that were omitted from the session.
@@ -1034,7 +1034,7 @@ class TailLogEntriesResponse_SuppressionInfo extends $pb.GeneratedMessage {
 /// Result returned from `TailLogEntries`.
 class TailLogEntriesResponse extends $pb.GeneratedMessage {
   factory TailLogEntriesResponse({
-    $core.Iterable<$444.LogEntry>? entries,
+    $core.Iterable<$446.LogEntry>? entries,
     $core.Iterable<TailLogEntriesResponse_SuppressionInfo>? suppressionInfo,
   }) {
     final $result = create();
@@ -1051,7 +1051,7 @@ class TailLogEntriesResponse extends $pb.GeneratedMessage {
   factory TailLogEntriesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TailLogEntriesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..pc<$444.LogEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $444.LogEntry.create)
+    ..pc<$446.LogEntry>(1, _omitFieldNames ? '' : 'entries', $pb.PbFieldType.PM, subBuilder: $446.LogEntry.create)
     ..pc<TailLogEntriesResponse_SuppressionInfo>(2, _omitFieldNames ? '' : 'suppressionInfo', $pb.PbFieldType.PM, subBuilder: TailLogEntriesResponse_SuppressionInfo.create)
     ..hasRequiredFields = false
   ;
@@ -1081,7 +1081,7 @@ class TailLogEntriesResponse extends $pb.GeneratedMessage {
   /// increasing values of `LogEntry.timestamp`. Ordering is not guaranteed
   /// between separate responses.
   @$pb.TagNumber(1)
-  $core.List<$444.LogEntry> get entries => $_getList(0);
+  $core.List<$446.LogEntry> get entries => $_getList(0);
 
   /// If entries that otherwise would have been included in the session were not
   /// sent back to the client, counts of relevant entries omitted from the

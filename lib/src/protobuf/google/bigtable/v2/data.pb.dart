@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $299;
-import '../../type/date.pb.dart' as $324;
-import 'types.pb.dart' as $399;
+import '../../protobuf/timestamp.pb.dart' as $301;
+import '../../type/date.pb.dart' as $326;
+import 'types.pb.dart' as $401;
 
 /// Specifies the complete (requested) contents of a single row of a table.
 /// Rows which exceed 256MiB in size cannot be read in full.
@@ -323,13 +323,13 @@ class Value extends $pb.GeneratedMessage {
     $core.String? stringValue,
     ArrayValue? arrayValue,
     $fixnum.Int64? intValue,
-    $399.Type? type,
+    $401.Type? type,
     $core.List<$core.int>? rawValue,
     $fixnum.Int64? rawTimestampMicros,
     $core.bool? boolValue,
     $core.double? floatValue,
-    $299.Timestamp? timestampValue,
-    $324.Date? dateValue,
+    $301.Timestamp? timestampValue,
+    $326.Date? dateValue,
   }) {
     final $result = create();
     if (bytesValue != null) {
@@ -390,13 +390,13 @@ class Value extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'stringValue')
     ..aOM<ArrayValue>(4, _omitFieldNames ? '' : 'arrayValue', subBuilder: ArrayValue.create)
     ..aInt64(6, _omitFieldNames ? '' : 'intValue')
-    ..aOM<$399.Type>(7, _omitFieldNames ? '' : 'type', subBuilder: $399.Type.create)
+    ..aOM<$401.Type>(7, _omitFieldNames ? '' : 'type', subBuilder: $401.Type.create)
     ..a<$core.List<$core.int>>(8, _omitFieldNames ? '' : 'rawValue', $pb.PbFieldType.OY)
     ..aInt64(9, _omitFieldNames ? '' : 'rawTimestampMicros')
     ..aOB(10, _omitFieldNames ? '' : 'boolValue')
     ..a<$core.double>(11, _omitFieldNames ? '' : 'floatValue', $pb.PbFieldType.OD)
-    ..aOM<$299.Timestamp>(12, _omitFieldNames ? '' : 'timestampValue', subBuilder: $299.Timestamp.create)
-    ..aOM<$324.Date>(13, _omitFieldNames ? '' : 'dateValue', subBuilder: $324.Date.create)
+    ..aOM<$301.Timestamp>(12, _omitFieldNames ? '' : 'timestampValue', subBuilder: $301.Timestamp.create)
+    ..aOM<$326.Date>(13, _omitFieldNames ? '' : 'dateValue', subBuilder: $326.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -484,15 +484,15 @@ class Value extends $pb.GeneratedMessage {
   ///  If a nested `Value` provides a `type` on write, the request will be
   ///  rejected with INVALID_ARGUMENT.
   @$pb.TagNumber(7)
-  $399.Type get type => $_getN(4);
+  $401.Type get type => $_getN(4);
   @$pb.TagNumber(7)
-  set type($399.Type v) { setField(7, v); }
+  set type($401.Type v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasType() => $_has(4);
   @$pb.TagNumber(7)
   void clearType() => clearField(7);
   @$pb.TagNumber(7)
-  $399.Type ensureType() => $_ensure(4);
+  $401.Type ensureType() => $_ensure(4);
 
   /// Represents a raw byte sequence with no type information.
   /// The `type` field must be omitted.
@@ -538,27 +538,27 @@ class Value extends $pb.GeneratedMessage {
 
   /// Represents a typed value transported as a timestamp.
   @$pb.TagNumber(12)
-  $299.Timestamp get timestampValue => $_getN(9);
+  $301.Timestamp get timestampValue => $_getN(9);
   @$pb.TagNumber(12)
-  set timestampValue($299.Timestamp v) { setField(12, v); }
+  set timestampValue($301.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasTimestampValue() => $_has(9);
   @$pb.TagNumber(12)
   void clearTimestampValue() => clearField(12);
   @$pb.TagNumber(12)
-  $299.Timestamp ensureTimestampValue() => $_ensure(9);
+  $301.Timestamp ensureTimestampValue() => $_ensure(9);
 
   /// Represents a typed value transported as a date.
   @$pb.TagNumber(13)
-  $324.Date get dateValue => $_getN(10);
+  $326.Date get dateValue => $_getN(10);
   @$pb.TagNumber(13)
-  set dateValue($324.Date v) { setField(13, v); }
+  set dateValue($326.Date v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasDateValue() => $_has(10);
   @$pb.TagNumber(13)
   void clearDateValue() => clearField(13);
   @$pb.TagNumber(13)
-  $324.Date ensureDateValue() => $_ensure(10);
+  $326.Date ensureDateValue() => $_ensure(10);
 }
 
 /// `ArrayValue` is an ordered list of `Value`.
@@ -2855,7 +2855,7 @@ class ProtoFormat extends $pb.GeneratedMessage {
 class ColumnMetadata extends $pb.GeneratedMessage {
   factory ColumnMetadata({
     $core.String? name,
-    $399.Type? type,
+    $401.Type? type,
   }) {
     final $result = create();
     if (name != null) {
@@ -2872,7 +2872,7 @@ class ColumnMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ColumnMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$399.Type>(2, _omitFieldNames ? '' : 'type', subBuilder: $399.Type.create)
+    ..aOM<$401.Type>(2, _omitFieldNames ? '' : 'type', subBuilder: $401.Type.create)
     ..hasRequiredFields = false
   ;
 
@@ -2909,15 +2909,15 @@ class ColumnMetadata extends $pb.GeneratedMessage {
 
   /// The type of the column.
   @$pb.TagNumber(2)
-  $399.Type get type => $_getN(1);
+  $401.Type get type => $_getN(1);
   @$pb.TagNumber(2)
-  set type($399.Type v) { setField(2, v); }
+  set type($401.Type v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasType() => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => clearField(2);
   @$pb.TagNumber(2)
-  $399.Type ensureType() => $_ensure(1);
+  $401.Type ensureType() => $_ensure(1);
 }
 
 /// ResultSet schema in proto format

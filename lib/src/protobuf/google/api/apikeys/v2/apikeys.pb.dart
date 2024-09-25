@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $330;
-import 'resources.pb.dart' as $34;
+import '../../../protobuf/field_mask.pb.dart' as $332;
+import 'resources.pb.dart' as $35;
 
 /// Request message for `CreateKey` method.
 class CreateKeyRequest extends $pb.GeneratedMessage {
   factory CreateKeyRequest({
     $core.String? parent,
-    $34.Key? key,
+    $35.Key? key,
     $core.String? keyId,
   }) {
     final $result = create();
@@ -41,7 +41,7 @@ class CreateKeyRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateKeyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$34.Key>(2, _omitFieldNames ? '' : 'key', subBuilder: $34.Key.create)
+    ..aOM<$35.Key>(2, _omitFieldNames ? '' : 'key', subBuilder: $35.Key.create)
     ..aOS(3, _omitFieldNames ? '' : 'keyId')
     ..hasRequiredFields = false
   ;
@@ -81,15 +81,15 @@ class CreateKeyRequest extends $pb.GeneratedMessage {
   /// You can configure only the `display_name`, `restrictions`, and
   /// `annotations` fields.
   @$pb.TagNumber(2)
-  $34.Key get key => $_getN(1);
+  $35.Key get key => $_getN(1);
   @$pb.TagNumber(2)
-  set key($34.Key v) { setField(2, v); }
+  set key($35.Key v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasKey() => $_has(1);
   @$pb.TagNumber(2)
   void clearKey() => clearField(2);
   @$pb.TagNumber(2)
-  $34.Key ensureKey() => $_ensure(1);
+  $35.Key ensureKey() => $_ensure(1);
 
   ///  User specified key id (optional). If specified, it will become the final
   ///  component of the key resource name.
@@ -211,7 +211,7 @@ class ListKeysRequest extends $pb.GeneratedMessage {
 /// Response message for `ListKeys` method.
 class ListKeysResponse extends $pb.GeneratedMessage {
   factory ListKeysResponse({
-    $core.Iterable<$34.Key>? keys,
+    $core.Iterable<$35.Key>? keys,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -228,7 +228,7 @@ class ListKeysResponse extends $pb.GeneratedMessage {
   factory ListKeysResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListKeysResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
-    ..pc<$34.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $34.Key.create)
+    ..pc<$35.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $35.Key.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -256,7 +256,7 @@ class ListKeysResponse extends $pb.GeneratedMessage {
 
   /// A list of API keys.
   @$pb.TagNumber(1)
-  $core.List<$34.Key> get keys => $_getList(0);
+  $core.List<$35.Key> get keys => $_getList(0);
 
   /// The pagination token for the next page of results.
   @$pb.TagNumber(2)
@@ -428,8 +428,8 @@ class GetKeyStringResponse extends $pb.GeneratedMessage {
 /// Request message for `UpdateKey` method.
 class UpdateKeyRequest extends $pb.GeneratedMessage {
   factory UpdateKeyRequest({
-    $34.Key? key,
-    $330.FieldMask? updateMask,
+    $35.Key? key,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (key != null) {
@@ -445,8 +445,8 @@ class UpdateKeyRequest extends $pb.GeneratedMessage {
   factory UpdateKeyRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateKeyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.apikeys.v2'), createEmptyInstance: create)
-    ..aOM<$34.Key>(1, _omitFieldNames ? '' : 'key', subBuilder: $34.Key.create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$35.Key>(1, _omitFieldNames ? '' : 'key', subBuilder: $35.Key.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -475,15 +475,15 @@ class UpdateKeyRequest extends $pb.GeneratedMessage {
   /// updated. You can update only the `display_name`, `restrictions`, and
   /// `annotations` fields.
   @$pb.TagNumber(1)
-  $34.Key get key => $_getN(0);
+  $35.Key get key => $_getN(0);
   @$pb.TagNumber(1)
-  set key($34.Key v) { setField(1, v); }
+  set key($35.Key v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(1)
   void clearKey() => clearField(1);
   @$pb.TagNumber(1)
-  $34.Key ensureKey() => $_ensure(0);
+  $35.Key ensureKey() => $_ensure(0);
 
   /// The field mask specifies which fields to be updated as part of this
   /// request. All other fields are ignored.
@@ -493,15 +493,15 @@ class UpdateKeyRequest extends $pb.GeneratedMessage {
   /// mask has a special value "*", the service treats it equivalent to replace
   /// all allowed mutable fields.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(1);
+  $332.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(1);
+  $332.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for `DeleteKey` method.

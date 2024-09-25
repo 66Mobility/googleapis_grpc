@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'value.pb.dart' as $339;
+import 'value.pb.dart' as $341;
 
 /// ID and value index of one step.
 class Explain_ExprStep extends $pb.GeneratedMessage {
@@ -87,7 +87,7 @@ class Explain_ExprStep extends $pb.GeneratedMessage {
 /// Deprecated, use `EvalState` instead.
 class Explain extends $pb.GeneratedMessage {
   factory Explain({
-    $core.Iterable<$339.Value>? values,
+    $core.Iterable<$341.Value>? values,
     $core.Iterable<Explain_ExprStep>? exprSteps,
   }) {
     final $result = create();
@@ -104,7 +104,7 @@ class Explain extends $pb.GeneratedMessage {
   factory Explain.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Explain', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.expr.v1alpha1'), createEmptyInstance: create)
-    ..pc<$339.Value>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $339.Value.create)
+    ..pc<$341.Value>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $341.Value.create)
     ..pc<Explain_ExprStep>(2, _omitFieldNames ? '' : 'exprSteps', $pb.PbFieldType.PM, subBuilder: Explain_ExprStep.create)
     ..hasRequiredFields = false
   ;
@@ -135,7 +135,7 @@ class Explain extends $pb.GeneratedMessage {
   ///  The field value_index is an index in the values list.
   ///  Separating values from steps is needed to remove redundant values.
   @$pb.TagNumber(1)
-  $core.List<$339.Value> get values => $_getList(0);
+  $core.List<$341.Value> get values => $_getList(0);
 
   ///  List of steps.
   ///

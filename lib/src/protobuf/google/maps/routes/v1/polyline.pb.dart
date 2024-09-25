@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $258;
+import '../../../protobuf/struct.pb.dart' as $260;
 
 export 'polyline.pbenum.dart';
 
@@ -27,7 +27,7 @@ enum Polyline_PolylineType {
 class Polyline extends $pb.GeneratedMessage {
   factory Polyline({
     $core.String? encodedPolyline,
-    $258.Struct? geoJsonLinestring,
+    $260.Struct? geoJsonLinestring,
   }) {
     final $result = create();
     if (encodedPolyline != null) {
@@ -50,7 +50,7 @@ class Polyline extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Polyline', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2])
     ..aOS(1, _omitFieldNames ? '' : 'encodedPolyline')
-    ..aOM<$258.Struct>(2, _omitFieldNames ? '' : 'geoJsonLinestring', subBuilder: $258.Struct.create)
+    ..aOM<$260.Struct>(2, _omitFieldNames ? '' : 'geoJsonLinestring', subBuilder: $260.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -92,15 +92,15 @@ class Polyline extends $pb.GeneratedMessage {
   /// Specifies a polyline using the [GeoJSON LineString
   /// format](https://tools.ietf.org/html/rfc7946#section-3.1.4)
   @$pb.TagNumber(2)
-  $258.Struct get geoJsonLinestring => $_getN(1);
+  $260.Struct get geoJsonLinestring => $_getN(1);
   @$pb.TagNumber(2)
-  set geoJsonLinestring($258.Struct v) { setField(2, v); }
+  set geoJsonLinestring($260.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasGeoJsonLinestring() => $_has(1);
   @$pb.TagNumber(2)
   void clearGeoJsonLinestring() => clearField(2);
   @$pb.TagNumber(2)
-  $258.Struct ensureGeoJsonLinestring() => $_ensure(1);
+  $260.Struct ensureGeoJsonLinestring() => $_ensure(1);
 }
 
 

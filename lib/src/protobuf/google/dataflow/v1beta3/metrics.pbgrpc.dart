@@ -15,24 +15,24 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'metrics.pb.dart' as $108;
+import 'metrics.pb.dart' as $109;
 
 export 'metrics.pb.dart';
 
 @$pb.GrpcServiceName('google.dataflow.v1beta3.MetricsV1Beta3')
 class MetricsV1Beta3Client extends $grpc.Client {
-  static final _$getJobMetrics = $grpc.ClientMethod<$108.GetJobMetricsRequest, $108.JobMetrics>(
+  static final _$getJobMetrics = $grpc.ClientMethod<$109.GetJobMetricsRequest, $109.JobMetrics>(
       '/google.dataflow.v1beta3.MetricsV1Beta3/GetJobMetrics',
-      ($108.GetJobMetricsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $108.JobMetrics.fromBuffer(value));
-  static final _$getJobExecutionDetails = $grpc.ClientMethod<$108.GetJobExecutionDetailsRequest, $108.JobExecutionDetails>(
+      ($109.GetJobMetricsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $109.JobMetrics.fromBuffer(value));
+  static final _$getJobExecutionDetails = $grpc.ClientMethod<$109.GetJobExecutionDetailsRequest, $109.JobExecutionDetails>(
       '/google.dataflow.v1beta3.MetricsV1Beta3/GetJobExecutionDetails',
-      ($108.GetJobExecutionDetailsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $108.JobExecutionDetails.fromBuffer(value));
-  static final _$getStageExecutionDetails = $grpc.ClientMethod<$108.GetStageExecutionDetailsRequest, $108.StageExecutionDetails>(
+      ($109.GetJobExecutionDetailsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $109.JobExecutionDetails.fromBuffer(value));
+  static final _$getStageExecutionDetails = $grpc.ClientMethod<$109.GetStageExecutionDetailsRequest, $109.StageExecutionDetails>(
       '/google.dataflow.v1beta3.MetricsV1Beta3/GetStageExecutionDetails',
-      ($108.GetStageExecutionDetailsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $108.StageExecutionDetails.fromBuffer(value));
+      ($109.GetStageExecutionDetailsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $109.StageExecutionDetails.fromBuffer(value));
 
   MetricsV1Beta3Client($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -40,15 +40,15 @@ class MetricsV1Beta3Client extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$108.JobMetrics> getJobMetrics($108.GetJobMetricsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$109.JobMetrics> getJobMetrics($109.GetJobMetricsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getJobMetrics, request, options: options);
   }
 
-  $grpc.ResponseFuture<$108.JobExecutionDetails> getJobExecutionDetails($108.GetJobExecutionDetailsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$109.JobExecutionDetails> getJobExecutionDetails($109.GetJobExecutionDetailsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getJobExecutionDetails, request, options: options);
   }
 
-  $grpc.ResponseFuture<$108.StageExecutionDetails> getStageExecutionDetails($108.GetStageExecutionDetailsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$109.StageExecutionDetails> getStageExecutionDetails($109.GetStageExecutionDetailsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getStageExecutionDetails, request, options: options);
   }
 }
@@ -58,42 +58,42 @@ abstract class MetricsV1Beta3ServiceBase extends $grpc.Service {
   $core.String get $name => 'google.dataflow.v1beta3.MetricsV1Beta3';
 
   MetricsV1Beta3ServiceBase() {
-    $addMethod($grpc.ServiceMethod<$108.GetJobMetricsRequest, $108.JobMetrics>(
+    $addMethod($grpc.ServiceMethod<$109.GetJobMetricsRequest, $109.JobMetrics>(
         'GetJobMetrics',
         getJobMetrics_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $108.GetJobMetricsRequest.fromBuffer(value),
-        ($108.JobMetrics value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$108.GetJobExecutionDetailsRequest, $108.JobExecutionDetails>(
+        ($core.List<$core.int> value) => $109.GetJobMetricsRequest.fromBuffer(value),
+        ($109.JobMetrics value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$109.GetJobExecutionDetailsRequest, $109.JobExecutionDetails>(
         'GetJobExecutionDetails',
         getJobExecutionDetails_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $108.GetJobExecutionDetailsRequest.fromBuffer(value),
-        ($108.JobExecutionDetails value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$108.GetStageExecutionDetailsRequest, $108.StageExecutionDetails>(
+        ($core.List<$core.int> value) => $109.GetJobExecutionDetailsRequest.fromBuffer(value),
+        ($109.JobExecutionDetails value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$109.GetStageExecutionDetailsRequest, $109.StageExecutionDetails>(
         'GetStageExecutionDetails',
         getStageExecutionDetails_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $108.GetStageExecutionDetailsRequest.fromBuffer(value),
-        ($108.StageExecutionDetails value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $109.GetStageExecutionDetailsRequest.fromBuffer(value),
+        ($109.StageExecutionDetails value) => value.writeToBuffer()));
   }
 
-  $async.Future<$108.JobMetrics> getJobMetrics_Pre($grpc.ServiceCall call, $async.Future<$108.GetJobMetricsRequest> request) async {
+  $async.Future<$109.JobMetrics> getJobMetrics_Pre($grpc.ServiceCall call, $async.Future<$109.GetJobMetricsRequest> request) async {
     return getJobMetrics(call, await request);
   }
 
-  $async.Future<$108.JobExecutionDetails> getJobExecutionDetails_Pre($grpc.ServiceCall call, $async.Future<$108.GetJobExecutionDetailsRequest> request) async {
+  $async.Future<$109.JobExecutionDetails> getJobExecutionDetails_Pre($grpc.ServiceCall call, $async.Future<$109.GetJobExecutionDetailsRequest> request) async {
     return getJobExecutionDetails(call, await request);
   }
 
-  $async.Future<$108.StageExecutionDetails> getStageExecutionDetails_Pre($grpc.ServiceCall call, $async.Future<$108.GetStageExecutionDetailsRequest> request) async {
+  $async.Future<$109.StageExecutionDetails> getStageExecutionDetails_Pre($grpc.ServiceCall call, $async.Future<$109.GetStageExecutionDetailsRequest> request) async {
     return getStageExecutionDetails(call, await request);
   }
 
-  $async.Future<$108.JobMetrics> getJobMetrics($grpc.ServiceCall call, $108.GetJobMetricsRequest request);
-  $async.Future<$108.JobExecutionDetails> getJobExecutionDetails($grpc.ServiceCall call, $108.GetJobExecutionDetailsRequest request);
-  $async.Future<$108.StageExecutionDetails> getStageExecutionDetails($grpc.ServiceCall call, $108.GetStageExecutionDetailsRequest request);
+  $async.Future<$109.JobMetrics> getJobMetrics($grpc.ServiceCall call, $109.GetJobMetricsRequest request);
+  $async.Future<$109.JobExecutionDetails> getJobExecutionDetails($grpc.ServiceCall call, $109.GetJobExecutionDetailsRequest request);
+  $async.Future<$109.StageExecutionDetails> getStageExecutionDetails($grpc.ServiceCall call, $109.GetStageExecutionDetailsRequest request);
 }

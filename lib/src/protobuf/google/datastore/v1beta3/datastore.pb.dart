@@ -15,8 +15,8 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'datastore.pbenum.dart';
-import 'entity.pb.dart' as $422;
-import 'query.pb.dart' as $423;
+import 'entity.pb.dart' as $424;
+import 'query.pb.dart' as $425;
 
 export 'datastore.pbenum.dart';
 
@@ -25,7 +25,7 @@ export 'datastore.pbenum.dart';
 class LookupRequest extends $pb.GeneratedMessage {
   factory LookupRequest({
     ReadOptions? readOptions,
-    $core.Iterable<$422.Key>? keys,
+    $core.Iterable<$424.Key>? keys,
     $core.String? projectId,
   }) {
     final $result = create();
@@ -46,7 +46,7 @@ class LookupRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LookupRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1beta3'), createEmptyInstance: create)
     ..aOM<ReadOptions>(1, _omitFieldNames ? '' : 'readOptions', subBuilder: ReadOptions.create)
-    ..pc<$422.Key>(3, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $422.Key.create)
+    ..pc<$424.Key>(3, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $424.Key.create)
     ..aOS(8, _omitFieldNames ? '' : 'projectId')
     ..hasRequiredFields = false
   ;
@@ -86,7 +86,7 @@ class LookupRequest extends $pb.GeneratedMessage {
 
   /// Keys of entities to look up.
   @$pb.TagNumber(3)
-  $core.List<$422.Key> get keys => $_getList(1);
+  $core.List<$424.Key> get keys => $_getList(1);
 
   /// The ID of the project against which to make the request.
   @$pb.TagNumber(8)
@@ -103,9 +103,9 @@ class LookupRequest extends $pb.GeneratedMessage {
 /// [Datastore.Lookup][google.datastore.v1beta3.Datastore.Lookup].
 class LookupResponse extends $pb.GeneratedMessage {
   factory LookupResponse({
-    $core.Iterable<$423.EntityResult>? found,
-    $core.Iterable<$423.EntityResult>? missing,
-    $core.Iterable<$422.Key>? deferred,
+    $core.Iterable<$425.EntityResult>? found,
+    $core.Iterable<$425.EntityResult>? missing,
+    $core.Iterable<$424.Key>? deferred,
   }) {
     final $result = create();
     if (found != null) {
@@ -124,9 +124,9 @@ class LookupResponse extends $pb.GeneratedMessage {
   factory LookupResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LookupResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1beta3'), createEmptyInstance: create)
-    ..pc<$423.EntityResult>(1, _omitFieldNames ? '' : 'found', $pb.PbFieldType.PM, subBuilder: $423.EntityResult.create)
-    ..pc<$423.EntityResult>(2, _omitFieldNames ? '' : 'missing', $pb.PbFieldType.PM, subBuilder: $423.EntityResult.create)
-    ..pc<$422.Key>(3, _omitFieldNames ? '' : 'deferred', $pb.PbFieldType.PM, subBuilder: $422.Key.create)
+    ..pc<$425.EntityResult>(1, _omitFieldNames ? '' : 'found', $pb.PbFieldType.PM, subBuilder: $425.EntityResult.create)
+    ..pc<$425.EntityResult>(2, _omitFieldNames ? '' : 'missing', $pb.PbFieldType.PM, subBuilder: $425.EntityResult.create)
+    ..pc<$424.Key>(3, _omitFieldNames ? '' : 'deferred', $pb.PbFieldType.PM, subBuilder: $424.Key.create)
     ..hasRequiredFields = false
   ;
 
@@ -155,19 +155,19 @@ class LookupResponse extends $pb.GeneratedMessage {
   /// field is undefined and has no relation to the order of the keys in the
   /// input.
   @$pb.TagNumber(1)
-  $core.List<$423.EntityResult> get found => $_getList(0);
+  $core.List<$425.EntityResult> get found => $_getList(0);
 
   /// Entities not found as `ResultType.KEY_ONLY` entities. The order of results
   /// in this field is undefined and has no relation to the order of the keys
   /// in the input.
   @$pb.TagNumber(2)
-  $core.List<$423.EntityResult> get missing => $_getList(1);
+  $core.List<$425.EntityResult> get missing => $_getList(1);
 
   /// A list of keys that were not looked up due to resource constraints. The
   /// order of results in this field is undefined and has no relation to the
   /// order of the keys in the input.
   @$pb.TagNumber(3)
-  $core.List<$422.Key> get deferred => $_getList(2);
+  $core.List<$424.Key> get deferred => $_getList(2);
 }
 
 enum RunQueryRequest_QueryType {
@@ -181,9 +181,9 @@ enum RunQueryRequest_QueryType {
 class RunQueryRequest extends $pb.GeneratedMessage {
   factory RunQueryRequest({
     ReadOptions? readOptions,
-    $422.PartitionId? partitionId,
-    $423.Query? query,
-    $423.GqlQuery? gqlQuery,
+    $424.PartitionId? partitionId,
+    $425.Query? query,
+    $425.GqlQuery? gqlQuery,
     $core.String? projectId,
   }) {
     final $result = create();
@@ -216,9 +216,9 @@ class RunQueryRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunQueryRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1beta3'), createEmptyInstance: create)
     ..oo(0, [3, 7])
     ..aOM<ReadOptions>(1, _omitFieldNames ? '' : 'readOptions', subBuilder: ReadOptions.create)
-    ..aOM<$422.PartitionId>(2, _omitFieldNames ? '' : 'partitionId', subBuilder: $422.PartitionId.create)
-    ..aOM<$423.Query>(3, _omitFieldNames ? '' : 'query', subBuilder: $423.Query.create)
-    ..aOM<$423.GqlQuery>(7, _omitFieldNames ? '' : 'gqlQuery', subBuilder: $423.GqlQuery.create)
+    ..aOM<$424.PartitionId>(2, _omitFieldNames ? '' : 'partitionId', subBuilder: $424.PartitionId.create)
+    ..aOM<$425.Query>(3, _omitFieldNames ? '' : 'query', subBuilder: $425.Query.create)
+    ..aOM<$425.GqlQuery>(7, _omitFieldNames ? '' : 'gqlQuery', subBuilder: $425.GqlQuery.create)
     ..aOS(8, _omitFieldNames ? '' : 'projectId')
     ..hasRequiredFields = false
   ;
@@ -264,39 +264,39 @@ class RunQueryRequest extends $pb.GeneratedMessage {
   /// This partition ID is normalized with the standard default context
   /// partition ID.
   @$pb.TagNumber(2)
-  $422.PartitionId get partitionId => $_getN(1);
+  $424.PartitionId get partitionId => $_getN(1);
   @$pb.TagNumber(2)
-  set partitionId($422.PartitionId v) { setField(2, v); }
+  set partitionId($424.PartitionId v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPartitionId() => $_has(1);
   @$pb.TagNumber(2)
   void clearPartitionId() => clearField(2);
   @$pb.TagNumber(2)
-  $422.PartitionId ensurePartitionId() => $_ensure(1);
+  $424.PartitionId ensurePartitionId() => $_ensure(1);
 
   /// The query to run.
   @$pb.TagNumber(3)
-  $423.Query get query => $_getN(2);
+  $425.Query get query => $_getN(2);
   @$pb.TagNumber(3)
-  set query($423.Query v) { setField(3, v); }
+  set query($425.Query v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasQuery() => $_has(2);
   @$pb.TagNumber(3)
   void clearQuery() => clearField(3);
   @$pb.TagNumber(3)
-  $423.Query ensureQuery() => $_ensure(2);
+  $425.Query ensureQuery() => $_ensure(2);
 
   /// The GQL query to run.
   @$pb.TagNumber(7)
-  $423.GqlQuery get gqlQuery => $_getN(3);
+  $425.GqlQuery get gqlQuery => $_getN(3);
   @$pb.TagNumber(7)
-  set gqlQuery($423.GqlQuery v) { setField(7, v); }
+  set gqlQuery($425.GqlQuery v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasGqlQuery() => $_has(3);
   @$pb.TagNumber(7)
   void clearGqlQuery() => clearField(7);
   @$pb.TagNumber(7)
-  $423.GqlQuery ensureGqlQuery() => $_ensure(3);
+  $425.GqlQuery ensureGqlQuery() => $_ensure(3);
 
   /// The ID of the project against which to make the request.
   @$pb.TagNumber(8)
@@ -313,8 +313,8 @@ class RunQueryRequest extends $pb.GeneratedMessage {
 /// [Datastore.RunQuery][google.datastore.v1beta3.Datastore.RunQuery].
 class RunQueryResponse extends $pb.GeneratedMessage {
   factory RunQueryResponse({
-    $423.QueryResultBatch? batch,
-    $423.Query? query,
+    $425.QueryResultBatch? batch,
+    $425.Query? query,
   }) {
     final $result = create();
     if (batch != null) {
@@ -330,8 +330,8 @@ class RunQueryResponse extends $pb.GeneratedMessage {
   factory RunQueryResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RunQueryResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1beta3'), createEmptyInstance: create)
-    ..aOM<$423.QueryResultBatch>(1, _omitFieldNames ? '' : 'batch', subBuilder: $423.QueryResultBatch.create)
-    ..aOM<$423.Query>(2, _omitFieldNames ? '' : 'query', subBuilder: $423.Query.create)
+    ..aOM<$425.QueryResultBatch>(1, _omitFieldNames ? '' : 'batch', subBuilder: $425.QueryResultBatch.create)
+    ..aOM<$425.Query>(2, _omitFieldNames ? '' : 'query', subBuilder: $425.Query.create)
     ..hasRequiredFields = false
   ;
 
@@ -358,27 +358,27 @@ class RunQueryResponse extends $pb.GeneratedMessage {
 
   /// A batch of query results (always present).
   @$pb.TagNumber(1)
-  $423.QueryResultBatch get batch => $_getN(0);
+  $425.QueryResultBatch get batch => $_getN(0);
   @$pb.TagNumber(1)
-  set batch($423.QueryResultBatch v) { setField(1, v); }
+  set batch($425.QueryResultBatch v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBatch() => $_has(0);
   @$pb.TagNumber(1)
   void clearBatch() => clearField(1);
   @$pb.TagNumber(1)
-  $423.QueryResultBatch ensureBatch() => $_ensure(0);
+  $425.QueryResultBatch ensureBatch() => $_ensure(0);
 
   /// The parsed form of the `GqlQuery` from the request, if it was set.
   @$pb.TagNumber(2)
-  $423.Query get query => $_getN(1);
+  $425.Query get query => $_getN(1);
   @$pb.TagNumber(2)
-  set query($423.Query v) { setField(2, v); }
+  set query($425.Query v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasQuery() => $_has(1);
   @$pb.TagNumber(2)
   void clearQuery() => clearField(2);
   @$pb.TagNumber(2)
-  $423.Query ensureQuery() => $_ensure(1);
+  $425.Query ensureQuery() => $_ensure(1);
 }
 
 /// The request for
@@ -795,7 +795,7 @@ class CommitResponse extends $pb.GeneratedMessage {
 /// [Datastore.AllocateIds][google.datastore.v1beta3.Datastore.AllocateIds].
 class AllocateIdsRequest extends $pb.GeneratedMessage {
   factory AllocateIdsRequest({
-    $core.Iterable<$422.Key>? keys,
+    $core.Iterable<$424.Key>? keys,
     $core.String? projectId,
   }) {
     final $result = create();
@@ -812,7 +812,7 @@ class AllocateIdsRequest extends $pb.GeneratedMessage {
   factory AllocateIdsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AllocateIdsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1beta3'), createEmptyInstance: create)
-    ..pc<$422.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $422.Key.create)
+    ..pc<$424.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $424.Key.create)
     ..aOS(8, _omitFieldNames ? '' : 'projectId')
     ..hasRequiredFields = false
   ;
@@ -841,7 +841,7 @@ class AllocateIdsRequest extends $pb.GeneratedMessage {
   /// A list of keys with incomplete key paths for which to allocate IDs.
   /// No key may be reserved/read-only.
   @$pb.TagNumber(1)
-  $core.List<$422.Key> get keys => $_getList(0);
+  $core.List<$424.Key> get keys => $_getList(0);
 
   /// The ID of the project against which to make the request.
   @$pb.TagNumber(8)
@@ -858,7 +858,7 @@ class AllocateIdsRequest extends $pb.GeneratedMessage {
 /// [Datastore.AllocateIds][google.datastore.v1beta3.Datastore.AllocateIds].
 class AllocateIdsResponse extends $pb.GeneratedMessage {
   factory AllocateIdsResponse({
-    $core.Iterable<$422.Key>? keys,
+    $core.Iterable<$424.Key>? keys,
   }) {
     final $result = create();
     if (keys != null) {
@@ -871,7 +871,7 @@ class AllocateIdsResponse extends $pb.GeneratedMessage {
   factory AllocateIdsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AllocateIdsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1beta3'), createEmptyInstance: create)
-    ..pc<$422.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $422.Key.create)
+    ..pc<$424.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $424.Key.create)
     ..hasRequiredFields = false
   ;
 
@@ -899,14 +899,14 @@ class AllocateIdsResponse extends $pb.GeneratedMessage {
   /// The keys specified in the request (in the same order), each with
   /// its key path completed with a newly allocated ID.
   @$pb.TagNumber(1)
-  $core.List<$422.Key> get keys => $_getList(0);
+  $core.List<$424.Key> get keys => $_getList(0);
 }
 
 /// The request for
 /// [Datastore.ReserveIds][google.datastore.v1beta3.Datastore.ReserveIds].
 class ReserveIdsRequest extends $pb.GeneratedMessage {
   factory ReserveIdsRequest({
-    $core.Iterable<$422.Key>? keys,
+    $core.Iterable<$424.Key>? keys,
     $core.String? projectId,
     $core.String? databaseId,
   }) {
@@ -927,7 +927,7 @@ class ReserveIdsRequest extends $pb.GeneratedMessage {
   factory ReserveIdsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ReserveIdsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1beta3'), createEmptyInstance: create)
-    ..pc<$422.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $422.Key.create)
+    ..pc<$424.Key>(1, _omitFieldNames ? '' : 'keys', $pb.PbFieldType.PM, subBuilder: $424.Key.create)
     ..aOS(8, _omitFieldNames ? '' : 'projectId')
     ..aOS(9, _omitFieldNames ? '' : 'databaseId')
     ..hasRequiredFields = false
@@ -957,7 +957,7 @@ class ReserveIdsRequest extends $pb.GeneratedMessage {
   /// A list of keys with complete key paths whose numeric IDs should not be
   /// auto-allocated.
   @$pb.TagNumber(1)
-  $core.List<$422.Key> get keys => $_getList(0);
+  $core.List<$424.Key> get keys => $_getList(0);
 
   /// The ID of the project against which to make the request.
   @$pb.TagNumber(8)
@@ -1030,10 +1030,10 @@ enum Mutation_ConflictDetectionStrategy {
 /// A mutation to apply to an entity.
 class Mutation extends $pb.GeneratedMessage {
   factory Mutation({
-    $422.Entity? insert,
-    $422.Entity? update,
-    $422.Entity? upsert,
-    $422.Key? delete,
+    $424.Entity? insert,
+    $424.Entity? update,
+    $424.Entity? upsert,
+    $424.Key? delete,
     $fixnum.Int64? baseVersion,
   }) {
     final $result = create();
@@ -1072,10 +1072,10 @@ class Mutation extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Mutation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1beta3'), createEmptyInstance: create)
     ..oo(0, [4, 5, 6, 7])
     ..oo(1, [8])
-    ..aOM<$422.Entity>(4, _omitFieldNames ? '' : 'insert', subBuilder: $422.Entity.create)
-    ..aOM<$422.Entity>(5, _omitFieldNames ? '' : 'update', subBuilder: $422.Entity.create)
-    ..aOM<$422.Entity>(6, _omitFieldNames ? '' : 'upsert', subBuilder: $422.Entity.create)
-    ..aOM<$422.Key>(7, _omitFieldNames ? '' : 'delete', subBuilder: $422.Key.create)
+    ..aOM<$424.Entity>(4, _omitFieldNames ? '' : 'insert', subBuilder: $424.Entity.create)
+    ..aOM<$424.Entity>(5, _omitFieldNames ? '' : 'update', subBuilder: $424.Entity.create)
+    ..aOM<$424.Entity>(6, _omitFieldNames ? '' : 'upsert', subBuilder: $424.Entity.create)
+    ..aOM<$424.Key>(7, _omitFieldNames ? '' : 'delete', subBuilder: $424.Key.create)
     ..aInt64(8, _omitFieldNames ? '' : 'baseVersion')
     ..hasRequiredFields = false
   ;
@@ -1110,54 +1110,54 @@ class Mutation extends $pb.GeneratedMessage {
   /// The entity to insert. The entity must not already exist.
   /// The entity key's final path element may be incomplete.
   @$pb.TagNumber(4)
-  $422.Entity get insert => $_getN(0);
+  $424.Entity get insert => $_getN(0);
   @$pb.TagNumber(4)
-  set insert($422.Entity v) { setField(4, v); }
+  set insert($424.Entity v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInsert() => $_has(0);
   @$pb.TagNumber(4)
   void clearInsert() => clearField(4);
   @$pb.TagNumber(4)
-  $422.Entity ensureInsert() => $_ensure(0);
+  $424.Entity ensureInsert() => $_ensure(0);
 
   /// The entity to update. The entity must already exist.
   /// Must have a complete key path.
   @$pb.TagNumber(5)
-  $422.Entity get update => $_getN(1);
+  $424.Entity get update => $_getN(1);
   @$pb.TagNumber(5)
-  set update($422.Entity v) { setField(5, v); }
+  set update($424.Entity v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(5)
   void clearUpdate() => clearField(5);
   @$pb.TagNumber(5)
-  $422.Entity ensureUpdate() => $_ensure(1);
+  $424.Entity ensureUpdate() => $_ensure(1);
 
   /// The entity to upsert. The entity may or may not already exist.
   /// The entity key's final path element may be incomplete.
   @$pb.TagNumber(6)
-  $422.Entity get upsert => $_getN(2);
+  $424.Entity get upsert => $_getN(2);
   @$pb.TagNumber(6)
-  set upsert($422.Entity v) { setField(6, v); }
+  set upsert($424.Entity v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpsert() => $_has(2);
   @$pb.TagNumber(6)
   void clearUpsert() => clearField(6);
   @$pb.TagNumber(6)
-  $422.Entity ensureUpsert() => $_ensure(2);
+  $424.Entity ensureUpsert() => $_ensure(2);
 
   /// The key of the entity to delete. The entity may or may not already exist.
   /// Must have a complete key path and must not be reserved/read-only.
   @$pb.TagNumber(7)
-  $422.Key get delete => $_getN(3);
+  $424.Key get delete => $_getN(3);
   @$pb.TagNumber(7)
-  set delete($422.Key v) { setField(7, v); }
+  set delete($424.Key v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDelete() => $_has(3);
   @$pb.TagNumber(7)
   void clearDelete() => clearField(7);
   @$pb.TagNumber(7)
-  $422.Key ensureDelete() => $_ensure(3);
+  $424.Key ensureDelete() => $_ensure(3);
 
   /// The version of the entity that this mutation is being applied to. If this
   /// does not match the current version on the server, the mutation conflicts.
@@ -1174,7 +1174,7 @@ class Mutation extends $pb.GeneratedMessage {
 /// The result of applying a mutation.
 class MutationResult extends $pb.GeneratedMessage {
   factory MutationResult({
-    $422.Key? key,
+    $424.Key? key,
     $fixnum.Int64? version,
     $core.bool? conflictDetected,
   }) {
@@ -1195,7 +1195,7 @@ class MutationResult extends $pb.GeneratedMessage {
   factory MutationResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MutationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1beta3'), createEmptyInstance: create)
-    ..aOM<$422.Key>(3, _omitFieldNames ? '' : 'key', subBuilder: $422.Key.create)
+    ..aOM<$424.Key>(3, _omitFieldNames ? '' : 'key', subBuilder: $424.Key.create)
     ..aInt64(4, _omitFieldNames ? '' : 'version')
     ..aOB(5, _omitFieldNames ? '' : 'conflictDetected')
     ..hasRequiredFields = false
@@ -1225,15 +1225,15 @@ class MutationResult extends $pb.GeneratedMessage {
   /// The automatically allocated key.
   /// Set only when the mutation allocated a key.
   @$pb.TagNumber(3)
-  $422.Key get key => $_getN(0);
+  $424.Key get key => $_getN(0);
   @$pb.TagNumber(3)
-  set key($422.Key v) { setField(3, v); }
+  set key($424.Key v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasKey() => $_has(0);
   @$pb.TagNumber(3)
   void clearKey() => clearField(3);
   @$pb.TagNumber(3)
-  $422.Key ensureKey() => $_ensure(0);
+  $424.Key ensureKey() => $_ensure(0);
 
   /// The version of the entity on the server after processing the mutation. If
   /// the mutation doesn't change anything on the server, then the version will

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../protobuf/duration.pb.dart' as $261;
-import 'image.pb.dart' as $306;
+import '../../../../../../protobuf/duration.pb.dart' as $263;
+import 'image.pb.dart' as $308;
 import 'media.pbenum.dart';
 
 export 'media.pbenum.dart';
@@ -23,7 +23,7 @@ export 'media.pbenum.dart';
 /// Contains information about the media, such as name, description, url, etc.
 class Media extends $pb.GeneratedMessage {
   factory Media({
-    $261.Duration? startOffset,
+    $263.Duration? startOffset,
     $core.Iterable<Media_OptionalMediaControls>? optionalMediaControls,
     $core.Iterable<MediaObject>? mediaObjects,
     Media_MediaType? mediaType,
@@ -48,7 +48,7 @@ class Media extends $pb.GeneratedMessage {
   factory Media.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Media', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
-    ..aOM<$261.Duration>(5, _omitFieldNames ? '' : 'startOffset', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(5, _omitFieldNames ? '' : 'startOffset', subBuilder: $263.Duration.create)
     ..pc<Media_OptionalMediaControls>(6, _omitFieldNames ? '' : 'optionalMediaControls', $pb.PbFieldType.KE, valueOf: Media_OptionalMediaControls.valueOf, enumValues: Media_OptionalMediaControls.values, defaultEnumValue: Media_OptionalMediaControls.OPTIONAL_MEDIA_CONTROLS_UNSPECIFIED)
     ..pc<MediaObject>(7, _omitFieldNames ? '' : 'mediaObjects', $pb.PbFieldType.PM, subBuilder: MediaObject.create)
     ..e<Media_MediaType>(8, _omitFieldNames ? '' : 'mediaType', $pb.PbFieldType.OE, defaultOrMaker: Media_MediaType.MEDIA_TYPE_UNSPECIFIED, valueOf: Media_MediaType.valueOf, enumValues: Media_MediaType.values)
@@ -78,15 +78,15 @@ class Media extends $pb.GeneratedMessage {
 
   /// Start offset of the first media object.
   @$pb.TagNumber(5)
-  $261.Duration get startOffset => $_getN(0);
+  $263.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(5)
-  set startOffset($261.Duration v) { setField(5, v); }
+  set startOffset($263.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStartOffset() => $_has(0);
   @$pb.TagNumber(5)
   void clearStartOffset() => clearField(5);
   @$pb.TagNumber(5)
-  $261.Duration ensureStartOffset() => $_ensure(0);
+  $263.Duration ensureStartOffset() => $_ensure(0);
 
   /// Optional media control types this media response session can support.
   /// If set, request will be made to 3p when a certain media event happens.
@@ -218,8 +218,8 @@ enum MediaImage_Image {
 /// Image to show with the media card.
 class MediaImage extends $pb.GeneratedMessage {
   factory MediaImage({
-    $306.Image? large,
-    $306.Image? icon,
+    $308.Image? large,
+    $308.Image? icon,
   }) {
     final $result = create();
     if (large != null) {
@@ -241,8 +241,8 @@ class MediaImage extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MediaImage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$306.Image>(1, _omitFieldNames ? '' : 'large', subBuilder: $306.Image.create)
-    ..aOM<$306.Image>(2, _omitFieldNames ? '' : 'icon', subBuilder: $306.Image.create)
+    ..aOM<$308.Image>(1, _omitFieldNames ? '' : 'large', subBuilder: $308.Image.create)
+    ..aOM<$308.Image>(2, _omitFieldNames ? '' : 'icon', subBuilder: $308.Image.create)
     ..hasRequiredFields = false
   ;
 
@@ -272,28 +272,28 @@ class MediaImage extends $pb.GeneratedMessage {
 
   /// A large image, such as the cover of the album, etc.
   @$pb.TagNumber(1)
-  $306.Image get large => $_getN(0);
+  $308.Image get large => $_getN(0);
   @$pb.TagNumber(1)
-  set large($306.Image v) { setField(1, v); }
+  set large($308.Image v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLarge() => $_has(0);
   @$pb.TagNumber(1)
   void clearLarge() => clearField(1);
   @$pb.TagNumber(1)
-  $306.Image ensureLarge() => $_ensure(0);
+  $308.Image ensureLarge() => $_ensure(0);
 
   /// A small image icon displayed on the right from the title.
   /// It's resized to 36x36 dp.
   @$pb.TagNumber(2)
-  $306.Image get icon => $_getN(1);
+  $308.Image get icon => $_getN(1);
   @$pb.TagNumber(2)
-  set icon($306.Image v) { setField(2, v); }
+  set icon($308.Image v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIcon() => $_has(1);
   @$pb.TagNumber(2)
   void clearIcon() => clearField(2);
   @$pb.TagNumber(2)
-  $306.Image ensureIcon() => $_ensure(1);
+  $308.Image ensureIcon() => $_ensure(1);
 }
 
 

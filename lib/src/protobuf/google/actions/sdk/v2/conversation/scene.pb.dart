@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $258;
-import 'prompt/prompt.pb.dart' as $317;
+import '../../../../protobuf/struct.pb.dart' as $260;
+import 'prompt/prompt.pb.dart' as $319;
 import 'scene.pbenum.dart';
 
 export 'scene.pbenum.dart';
@@ -24,9 +24,9 @@ class Slot extends $pb.GeneratedMessage {
   factory Slot({
     Slot_SlotMode? mode,
     Slot_SlotStatus? status,
-    $258.Value? value,
+    $260.Value? value,
     $core.bool? updated,
-    $317.Prompt? prompt,
+    $319.Prompt? prompt,
   }) {
     final $result = create();
     if (mode != null) {
@@ -53,9 +53,9 @@ class Slot extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Slot', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
     ..e<Slot_SlotMode>(1, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: Slot_SlotMode.MODE_UNSPECIFIED, valueOf: Slot_SlotMode.valueOf, enumValues: Slot_SlotMode.values)
     ..e<Slot_SlotStatus>(2, _omitFieldNames ? '' : 'status', $pb.PbFieldType.OE, defaultOrMaker: Slot_SlotStatus.SLOT_UNSPECIFIED, valueOf: Slot_SlotStatus.valueOf, enumValues: Slot_SlotStatus.values)
-    ..aOM<$258.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $258.Value.create)
+    ..aOM<$260.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $260.Value.create)
     ..aOB(4, _omitFieldNames ? '' : 'updated')
-    ..aOM<$317.Prompt>(5, _omitFieldNames ? '' : 'prompt', subBuilder: $317.Prompt.create)
+    ..aOM<$319.Prompt>(5, _omitFieldNames ? '' : 'prompt', subBuilder: $319.Prompt.create)
     ..hasRequiredFields = false
   ;
 
@@ -103,15 +103,15 @@ class Slot extends $pb.GeneratedMessage {
   /// The value of the slot. Changing this value in the response, will
   /// modify the value in slot filling.
   @$pb.TagNumber(3)
-  $258.Value get value => $_getN(2);
+  $260.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($258.Value v) { setField(3, v); }
+  set value($260.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearValue() => clearField(3);
   @$pb.TagNumber(3)
-  $258.Value ensureValue() => $_ensure(2);
+  $260.Value ensureValue() => $_ensure(2);
 
   /// Indicates if the slot value was collected on the last turn.
   /// This field is read-only.
@@ -128,15 +128,15 @@ class Slot extends $pb.GeneratedMessage {
   /// slot. This prompt overrides the existing prompt defined in the console.
   /// This field is not included in the webhook request.
   @$pb.TagNumber(5)
-  $317.Prompt get prompt => $_getN(4);
+  $319.Prompt get prompt => $_getN(4);
   @$pb.TagNumber(5)
-  set prompt($317.Prompt v) { setField(5, v); }
+  set prompt($319.Prompt v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPrompt() => $_has(4);
   @$pb.TagNumber(5)
   void clearPrompt() => clearField(5);
   @$pb.TagNumber(5)
-  $317.Prompt ensurePrompt() => $_ensure(4);
+  $319.Prompt ensurePrompt() => $_ensure(4);
 }
 
 

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $299;
+import '../../../protobuf/timestamp.pb.dart' as $301;
 import 'ev_charging.pbenum.dart';
 
 export 'ev_charging.pbenum.dart';
@@ -28,7 +28,7 @@ class EVChargeOptions_ConnectorAggregation extends $pb.GeneratedMessage {
     $core.int? count,
     $core.int? availableCount,
     $core.int? outOfServiceCount,
-    $299.Timestamp? availabilityLastUpdateTime,
+    $301.Timestamp? availabilityLastUpdateTime,
   }) {
     final $result = create();
     if (type != null) {
@@ -61,7 +61,7 @@ class EVChargeOptions_ConnectorAggregation extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'availableCount', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'outOfServiceCount', $pb.PbFieldType.O3)
-    ..aOM<$299.Timestamp>(6, _omitFieldNames ? '' : 'availabilityLastUpdateTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'availabilityLastUpdateTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -140,15 +140,15 @@ class EVChargeOptions_ConnectorAggregation extends $pb.GeneratedMessage {
   /// The timestamp when the connector availability information in this
   /// aggregation was last updated.
   @$pb.TagNumber(6)
-  $299.Timestamp get availabilityLastUpdateTime => $_getN(5);
+  $301.Timestamp get availabilityLastUpdateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set availabilityLastUpdateTime($299.Timestamp v) { setField(6, v); }
+  set availabilityLastUpdateTime($301.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAvailabilityLastUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearAvailabilityLastUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $299.Timestamp ensureAvailabilityLastUpdateTime() => $_ensure(5);
+  $301.Timestamp ensureAvailabilityLastUpdateTime() => $_ensure(5);
 }
 
 /// Information about the EV Charge Station hosted in Place.

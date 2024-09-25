@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/any.pb.dart' as $318;
-import '../../protobuf/struct.pb.dart' as $258;
+import '../../protobuf/any.pb.dart' as $320;
+import '../../protobuf/struct.pb.dart' as $260;
 import 'environment.pbenum.dart';
 
 export 'environment.pbenum.dart';
@@ -26,11 +26,11 @@ class Environment extends $pb.GeneratedMessage {
     $core.String? clusterManagerApiService,
     $core.Iterable<$core.String>? experiments,
     $core.Iterable<WorkerPool>? workerPools,
-    $258.Struct? userAgent,
-    $258.Struct? version,
+    $260.Struct? userAgent,
+    $260.Struct? version,
     $core.String? dataset,
-    $258.Struct? sdkPipelineOptions,
-    $318.Any? internalExperiments,
+    $260.Struct? sdkPipelineOptions,
+    $320.Any? internalExperiments,
     $core.String? serviceAccountEmail,
     FlexResourceSchedulingGoal? flexResourceSchedulingGoal,
     $core.String? serviceKmsKeyName,
@@ -103,11 +103,11 @@ class Environment extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'clusterManagerApiService')
     ..pPS(3, _omitFieldNames ? '' : 'experiments')
     ..pc<WorkerPool>(4, _omitFieldNames ? '' : 'workerPools', $pb.PbFieldType.PM, subBuilder: WorkerPool.create)
-    ..aOM<$258.Struct>(5, _omitFieldNames ? '' : 'userAgent', subBuilder: $258.Struct.create)
-    ..aOM<$258.Struct>(6, _omitFieldNames ? '' : 'version', subBuilder: $258.Struct.create)
+    ..aOM<$260.Struct>(5, _omitFieldNames ? '' : 'userAgent', subBuilder: $260.Struct.create)
+    ..aOM<$260.Struct>(6, _omitFieldNames ? '' : 'version', subBuilder: $260.Struct.create)
     ..aOS(7, _omitFieldNames ? '' : 'dataset')
-    ..aOM<$258.Struct>(8, _omitFieldNames ? '' : 'sdkPipelineOptions', subBuilder: $258.Struct.create)
-    ..aOM<$318.Any>(9, _omitFieldNames ? '' : 'internalExperiments', subBuilder: $318.Any.create)
+    ..aOM<$260.Struct>(8, _omitFieldNames ? '' : 'sdkPipelineOptions', subBuilder: $260.Struct.create)
+    ..aOM<$320.Any>(9, _omitFieldNames ? '' : 'internalExperiments', subBuilder: $320.Any.create)
     ..aOS(10, _omitFieldNames ? '' : 'serviceAccountEmail')
     ..e<FlexResourceSchedulingGoal>(11, _omitFieldNames ? '' : 'flexResourceSchedulingGoal', $pb.PbFieldType.OE, defaultOrMaker: FlexResourceSchedulingGoal.FLEXRS_UNSPECIFIED, valueOf: FlexResourceSchedulingGoal.valueOf, enumValues: FlexResourceSchedulingGoal.values)
     ..aOS(12, _omitFieldNames ? '' : 'serviceKmsKeyName')
@@ -188,28 +188,28 @@ class Environment extends $pb.GeneratedMessage {
 
   /// A description of the process that generated the request.
   @$pb.TagNumber(5)
-  $258.Struct get userAgent => $_getN(4);
+  $260.Struct get userAgent => $_getN(4);
   @$pb.TagNumber(5)
-  set userAgent($258.Struct v) { setField(5, v); }
+  set userAgent($260.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUserAgent() => $_has(4);
   @$pb.TagNumber(5)
   void clearUserAgent() => clearField(5);
   @$pb.TagNumber(5)
-  $258.Struct ensureUserAgent() => $_ensure(4);
+  $260.Struct ensureUserAgent() => $_ensure(4);
 
   /// A structure describing which components and their versions of the service
   /// are required in order to run the job.
   @$pb.TagNumber(6)
-  $258.Struct get version => $_getN(5);
+  $260.Struct get version => $_getN(5);
   @$pb.TagNumber(6)
-  set version($258.Struct v) { setField(6, v); }
+  set version($260.Struct v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasVersion() => $_has(5);
   @$pb.TagNumber(6)
   void clearVersion() => clearField(6);
   @$pb.TagNumber(6)
-  $258.Struct ensureVersion() => $_ensure(5);
+  $260.Struct ensureVersion() => $_ensure(5);
 
   ///  The dataset for the current project where various workflow
   ///  related tables are stored.
@@ -232,27 +232,27 @@ class Environment extends $pb.GeneratedMessage {
   /// SDK pipeline options on the worker in a language agnostic and platform
   /// independent way.
   @$pb.TagNumber(8)
-  $258.Struct get sdkPipelineOptions => $_getN(7);
+  $260.Struct get sdkPipelineOptions => $_getN(7);
   @$pb.TagNumber(8)
-  set sdkPipelineOptions($258.Struct v) { setField(8, v); }
+  set sdkPipelineOptions($260.Struct v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasSdkPipelineOptions() => $_has(7);
   @$pb.TagNumber(8)
   void clearSdkPipelineOptions() => clearField(8);
   @$pb.TagNumber(8)
-  $258.Struct ensureSdkPipelineOptions() => $_ensure(7);
+  $260.Struct ensureSdkPipelineOptions() => $_ensure(7);
 
   /// Experimental settings.
   @$pb.TagNumber(9)
-  $318.Any get internalExperiments => $_getN(8);
+  $320.Any get internalExperiments => $_getN(8);
   @$pb.TagNumber(9)
-  set internalExperiments($318.Any v) { setField(9, v); }
+  set internalExperiments($320.Any v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasInternalExperiments() => $_has(8);
   @$pb.TagNumber(9)
   void clearInternalExperiments() => clearField(9);
   @$pb.TagNumber(9)
-  $318.Any ensureInternalExperiments() => $_ensure(8);
+  $320.Any ensureInternalExperiments() => $_ensure(8);
 
   /// Identity to run virtual machines as. Defaults to the default account.
   @$pb.TagNumber(10)
@@ -1199,7 +1199,7 @@ class WorkerPool extends $pb.GeneratedMessage {
     $core.Iterable<Disk>? dataDisks,
     $core.Map<$core.String, $core.String>? metadata,
     AutoscalingSettings? autoscalingSettings,
-    $318.Any? poolArgs,
+    $320.Any? poolArgs,
     $core.String? diskType,
     $core.String? network,
     $core.String? workerHarnessContainerImage,
@@ -1296,7 +1296,7 @@ class WorkerPool extends $pb.GeneratedMessage {
     ..pc<Disk>(12, _omitFieldNames ? '' : 'dataDisks', $pb.PbFieldType.PM, subBuilder: Disk.create)
     ..m<$core.String, $core.String>(13, _omitFieldNames ? '' : 'metadata', entryClassName: 'WorkerPool.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.dataflow.v1beta3'))
     ..aOM<AutoscalingSettings>(14, _omitFieldNames ? '' : 'autoscalingSettings', subBuilder: AutoscalingSettings.create)
-    ..aOM<$318.Any>(15, _omitFieldNames ? '' : 'poolArgs', subBuilder: $318.Any.create)
+    ..aOM<$320.Any>(15, _omitFieldNames ? '' : 'poolArgs', subBuilder: $320.Any.create)
     ..aOS(16, _omitFieldNames ? '' : 'diskType')
     ..aOS(17, _omitFieldNames ? '' : 'network')
     ..aOS(18, _omitFieldNames ? '' : 'workerHarnessContainerImage')
@@ -1482,15 +1482,15 @@ class WorkerPool extends $pb.GeneratedMessage {
 
   /// Extra arguments for this worker pool.
   @$pb.TagNumber(15)
-  $318.Any get poolArgs => $_getN(14);
+  $320.Any get poolArgs => $_getN(14);
   @$pb.TagNumber(15)
-  set poolArgs($318.Any v) { setField(15, v); }
+  set poolArgs($320.Any v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasPoolArgs() => $_has(14);
   @$pb.TagNumber(15)
   void clearPoolArgs() => clearField(15);
   @$pb.TagNumber(15)
-  $318.Any ensurePoolArgs() => $_ensure(14);
+  $320.Any ensurePoolArgs() => $_ensure(14);
 
   /// Type of root disk for VMs.  If empty or unspecified, the service will
   /// attempt to choose a reasonable default.

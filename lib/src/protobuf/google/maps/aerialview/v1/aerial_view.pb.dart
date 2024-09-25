@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $261;
-import '../../../type/date.pb.dart' as $324;
+import '../../../protobuf/duration.pb.dart' as $263;
+import '../../../type/date.pb.dart' as $326;
 import 'aerial_view.pbenum.dart';
 
 export 'aerial_view.pbenum.dart';
@@ -170,8 +170,8 @@ class Uris extends $pb.GeneratedMessage {
 class VideoMetadata extends $pb.GeneratedMessage {
   factory VideoMetadata({
     $core.String? videoId,
-    $324.Date? captureDate,
-    $261.Duration? duration,
+    $326.Date? captureDate,
+    $263.Duration? duration,
   }) {
     final $result = create();
     if (videoId != null) {
@@ -191,8 +191,8 @@ class VideoMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.aerialview.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'videoId')
-    ..aOM<$324.Date>(2, _omitFieldNames ? '' : 'captureDate', subBuilder: $324.Date.create)
-    ..aOM<$261.Duration>(3, _omitFieldNames ? '' : 'duration', subBuilder: $261.Duration.create)
+    ..aOM<$326.Date>(2, _omitFieldNames ? '' : 'captureDate', subBuilder: $326.Date.create)
+    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'duration', subBuilder: $263.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -230,27 +230,27 @@ class VideoMetadata extends $pb.GeneratedMessage {
   /// The date at which the imagery used in the video was captured.
   /// This will be at a month-level granularity.
   @$pb.TagNumber(2)
-  $324.Date get captureDate => $_getN(1);
+  $326.Date get captureDate => $_getN(1);
   @$pb.TagNumber(2)
-  set captureDate($324.Date v) { setField(2, v); }
+  set captureDate($326.Date v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCaptureDate() => $_has(1);
   @$pb.TagNumber(2)
   void clearCaptureDate() => clearField(2);
   @$pb.TagNumber(2)
-  $324.Date ensureCaptureDate() => $_ensure(1);
+  $326.Date ensureCaptureDate() => $_ensure(1);
 
   /// The length of the video.
   @$pb.TagNumber(3)
-  $261.Duration get duration => $_getN(2);
+  $263.Duration get duration => $_getN(2);
   @$pb.TagNumber(3)
-  set duration($261.Duration v) { setField(3, v); }
+  set duration($263.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $261.Duration ensureDuration() => $_ensure(2);
+  $263.Duration ensureDuration() => $_ensure(2);
 }
 
 /// Request message for `AerialView.RenderVideo`.

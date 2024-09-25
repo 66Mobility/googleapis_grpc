@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/duration.pb.dart' as $261;
-import '../../../../protobuf/field_mask.pb.dart' as $330;
-import '../../../../protobuf/timestamp.pb.dart' as $299;
+import '../../../../protobuf/duration.pb.dart' as $263;
+import '../../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../../protobuf/timestamp.pb.dart' as $301;
 import 'subscription_resource.pbenum.dart';
 
 export 'subscription_resource.pbenum.dart';
@@ -39,10 +39,10 @@ class Subscription extends $pb.GeneratedMessage {
     NotificationEndpoint? notificationEndpoint,
     Subscription_State? state,
     $core.String? authority,
-    $299.Timestamp? createTime,
-    $299.Timestamp? updateTime,
-    $299.Timestamp? expireTime,
-    $261.Duration? ttl,
+    $301.Timestamp? createTime,
+    $301.Timestamp? updateTime,
+    $301.Timestamp? expireTime,
+    $263.Duration? ttl,
     $core.bool? reconciling,
     $core.String? etag,
     Subscription_ErrorType? suspensionReason,
@@ -114,10 +114,10 @@ class Subscription extends $pb.GeneratedMessage {
     ..aOM<NotificationEndpoint>(7, _omitFieldNames ? '' : 'notificationEndpoint', subBuilder: NotificationEndpoint.create)
     ..e<Subscription_State>(8, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Subscription_State.STATE_UNSPECIFIED, valueOf: Subscription_State.valueOf, enumValues: Subscription_State.values)
     ..aOS(10, _omitFieldNames ? '' : 'authority')
-    ..aOM<$299.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(13, _omitFieldNames ? '' : 'expireTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$261.Duration>(14, _omitFieldNames ? '' : 'ttl', subBuilder: $261.Duration.create)
+    ..aOM<$301.Timestamp>(11, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(12, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(13, _omitFieldNames ? '' : 'expireTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$263.Duration>(14, _omitFieldNames ? '' : 'ttl', subBuilder: $263.Duration.create)
     ..aOB(15, _omitFieldNames ? '' : 'reconciling')
     ..aOS(17, _omitFieldNames ? '' : 'etag')
     ..e<Subscription_ErrorType>(18, _omitFieldNames ? '' : 'suspensionReason', $pb.PbFieldType.OE, defaultOrMaker: Subscription_ErrorType.ERROR_TYPE_UNSPECIFIED, valueOf: Subscription_ErrorType.valueOf, enumValues: Subscription_ErrorType.values)
@@ -263,53 +263,53 @@ class Subscription extends $pb.GeneratedMessage {
 
   /// Output only. The time when the subscription is created.
   @$pb.TagNumber(11)
-  $299.Timestamp get createTime => $_getN(8);
+  $301.Timestamp get createTime => $_getN(8);
   @$pb.TagNumber(11)
-  set createTime($299.Timestamp v) { setField(11, v); }
+  set createTime($301.Timestamp v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasCreateTime() => $_has(8);
   @$pb.TagNumber(11)
   void clearCreateTime() => clearField(11);
   @$pb.TagNumber(11)
-  $299.Timestamp ensureCreateTime() => $_ensure(8);
+  $301.Timestamp ensureCreateTime() => $_ensure(8);
 
   /// Output only. The last time that the subscription is updated.
   @$pb.TagNumber(12)
-  $299.Timestamp get updateTime => $_getN(9);
+  $301.Timestamp get updateTime => $_getN(9);
   @$pb.TagNumber(12)
-  set updateTime($299.Timestamp v) { setField(12, v); }
+  set updateTime($301.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasUpdateTime() => $_has(9);
   @$pb.TagNumber(12)
   void clearUpdateTime() => clearField(12);
   @$pb.TagNumber(12)
-  $299.Timestamp ensureUpdateTime() => $_ensure(9);
+  $301.Timestamp ensureUpdateTime() => $_ensure(9);
 
   /// Non-empty default. The timestamp in UTC when the subscription expires.
   /// Always displayed on output, regardless of what was used on input.
   @$pb.TagNumber(13)
-  $299.Timestamp get expireTime => $_getN(10);
+  $301.Timestamp get expireTime => $_getN(10);
   @$pb.TagNumber(13)
-  set expireTime($299.Timestamp v) { setField(13, v); }
+  set expireTime($301.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasExpireTime() => $_has(10);
   @$pb.TagNumber(13)
   void clearExpireTime() => clearField(13);
   @$pb.TagNumber(13)
-  $299.Timestamp ensureExpireTime() => $_ensure(10);
+  $301.Timestamp ensureExpireTime() => $_ensure(10);
 
   /// Input only. The time-to-live (TTL) or duration for the subscription. If
   /// unspecified or set to `0`, uses the maximum possible duration.
   @$pb.TagNumber(14)
-  $261.Duration get ttl => $_getN(11);
+  $263.Duration get ttl => $_getN(11);
   @$pb.TagNumber(14)
-  set ttl($261.Duration v) { setField(14, v); }
+  set ttl($263.Duration v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasTtl() => $_has(11);
   @$pb.TagNumber(14)
   void clearTtl() => clearField(14);
   @$pb.TagNumber(14)
-  $261.Duration ensureTtl() => $_ensure(11);
+  $263.Duration ensureTtl() => $_ensure(11);
 
   /// Output only. If `true`, the subscription is in the process of being
   /// updated.
@@ -354,7 +354,7 @@ class Subscription extends $pb.GeneratedMessage {
 class PayloadOptions extends $pb.GeneratedMessage {
   factory PayloadOptions({
     $core.bool? includeResource,
-    $330.FieldMask? fieldMask,
+    $332.FieldMask? fieldMask,
   }) {
     final $result = create();
     if (includeResource != null) {
@@ -371,7 +371,7 @@ class PayloadOptions extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PayloadOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'includeResource')
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'fieldMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -420,15 +420,15 @@ class PayloadOptions extends $pb.GeneratedMessage {
   ///  If you specify a field that doesn't exist for the resource, the system
   ///  ignores the field.
   @$pb.TagNumber(2)
-  $330.FieldMask get fieldMask => $_getN(1);
+  $332.FieldMask get fieldMask => $_getN(1);
   @$pb.TagNumber(2)
-  set fieldMask($330.FieldMask v) { setField(2, v); }
+  set fieldMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFieldMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearFieldMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureFieldMask() => $_ensure(1);
+  $332.FieldMask ensureFieldMask() => $_ensure(1);
 }
 
 enum NotificationEndpoint_Endpoint {

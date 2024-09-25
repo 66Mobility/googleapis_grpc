@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $258;
+import '../../../protobuf/struct.pb.dart' as $260;
 import 'content.pbenum.dart';
 
 export 'content.pbenum.dart';
@@ -571,11 +571,15 @@ class CodeExecutionResult extends $pb.GeneratedMessage {
 class Tool extends $pb.GeneratedMessage {
   factory Tool({
     $core.Iterable<FunctionDeclaration>? functionDeclarations,
+    GoogleSearchRetrieval? googleSearchRetrieval,
     CodeExecution? codeExecution,
   }) {
     final $result = create();
     if (functionDeclarations != null) {
       $result.functionDeclarations.addAll(functionDeclarations);
+    }
+    if (googleSearchRetrieval != null) {
+      $result.googleSearchRetrieval = googleSearchRetrieval;
     }
     if (codeExecution != null) {
       $result.codeExecution = codeExecution;
@@ -588,6 +592,7 @@ class Tool extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Tool', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..pc<FunctionDeclaration>(1, _omitFieldNames ? '' : 'functionDeclarations', $pb.PbFieldType.PM, subBuilder: FunctionDeclaration.create)
+    ..aOM<GoogleSearchRetrieval>(2, _omitFieldNames ? '' : 'googleSearchRetrieval', subBuilder: GoogleSearchRetrieval.create)
     ..aOM<CodeExecution>(3, _omitFieldNames ? '' : 'codeExecution', subBuilder: CodeExecution.create)
     ..hasRequiredFields = false
   ;
@@ -617,28 +622,163 @@ class Tool extends $pb.GeneratedMessage {
   ///  be used for function calling.
   ///
   ///  The model or system does not execute the function. Instead the defined
-  ///  function may be returned as a [FunctionCall][content.part.function_call]
-  ///  with arguments to the client side for execution. The model may decide to
-  ///  call a subset of these functions by populating
-  ///  [FunctionCall][content.part.function_call] in the response. The next
-  ///  conversation turn may contain a
-  ///  [FunctionResponse][content.part.function_response]
-  ///  with the [content.role] "function" generation context for the next model
-  ///  turn.
+  ///  function may be returned as a
+  ///  [FunctionCall][google.ai.generativelanguage.v1beta.Part.function_call] with
+  ///  arguments to the client side for execution. The model may decide to call a
+  ///  subset of these functions by populating
+  ///  [FunctionCall][google.ai.generativelanguage.v1beta.Part.function_call] in
+  ///  the response. The next conversation turn may contain a
+  ///  [FunctionResponse][google.ai.generativelanguage.v1beta.Part.function_response]
+  ///  with the [Content.role][google.ai.generativelanguage.v1beta.Content.role]
+  ///  "function" generation context for the next model turn.
   @$pb.TagNumber(1)
   $core.List<FunctionDeclaration> get functionDeclarations => $_getList(0);
 
+  /// Optional. Retrieval tool that is powered by Google search.
+  @$pb.TagNumber(2)
+  GoogleSearchRetrieval get googleSearchRetrieval => $_getN(1);
+  @$pb.TagNumber(2)
+  set googleSearchRetrieval(GoogleSearchRetrieval v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasGoogleSearchRetrieval() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearGoogleSearchRetrieval() => clearField(2);
+  @$pb.TagNumber(2)
+  GoogleSearchRetrieval ensureGoogleSearchRetrieval() => $_ensure(1);
+
   /// Optional. Enables the model to execute code as part of generation.
   @$pb.TagNumber(3)
-  CodeExecution get codeExecution => $_getN(1);
+  CodeExecution get codeExecution => $_getN(2);
   @$pb.TagNumber(3)
   set codeExecution(CodeExecution v) { setField(3, v); }
   @$pb.TagNumber(3)
-  $core.bool hasCodeExecution() => $_has(1);
+  $core.bool hasCodeExecution() => $_has(2);
   @$pb.TagNumber(3)
   void clearCodeExecution() => clearField(3);
   @$pb.TagNumber(3)
-  CodeExecution ensureCodeExecution() => $_ensure(1);
+  CodeExecution ensureCodeExecution() => $_ensure(2);
+}
+
+/// Tool to retrieve public web data for grounding, powered by Google.
+class GoogleSearchRetrieval extends $pb.GeneratedMessage {
+  factory GoogleSearchRetrieval({
+    DynamicRetrievalConfig? dynamicRetrievalConfig,
+  }) {
+    final $result = create();
+    if (dynamicRetrievalConfig != null) {
+      $result.dynamicRetrievalConfig = dynamicRetrievalConfig;
+    }
+    return $result;
+  }
+  GoogleSearchRetrieval._() : super();
+  factory GoogleSearchRetrieval.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory GoogleSearchRetrieval.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GoogleSearchRetrieval', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+    ..aOM<DynamicRetrievalConfig>(1, _omitFieldNames ? '' : 'dynamicRetrievalConfig', subBuilder: DynamicRetrievalConfig.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  GoogleSearchRetrieval clone() => GoogleSearchRetrieval()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  GoogleSearchRetrieval copyWith(void Function(GoogleSearchRetrieval) updates) => super.copyWith((message) => updates(message as GoogleSearchRetrieval)) as GoogleSearchRetrieval;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static GoogleSearchRetrieval create() => GoogleSearchRetrieval._();
+  GoogleSearchRetrieval createEmptyInstance() => create();
+  static $pb.PbList<GoogleSearchRetrieval> createRepeated() => $pb.PbList<GoogleSearchRetrieval>();
+  @$core.pragma('dart2js:noInline')
+  static GoogleSearchRetrieval getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GoogleSearchRetrieval>(create);
+  static GoogleSearchRetrieval? _defaultInstance;
+
+  /// Specifies the dynamic retrieval configuration for the given source.
+  @$pb.TagNumber(1)
+  DynamicRetrievalConfig get dynamicRetrievalConfig => $_getN(0);
+  @$pb.TagNumber(1)
+  set dynamicRetrievalConfig(DynamicRetrievalConfig v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasDynamicRetrievalConfig() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearDynamicRetrievalConfig() => clearField(1);
+  @$pb.TagNumber(1)
+  DynamicRetrievalConfig ensureDynamicRetrievalConfig() => $_ensure(0);
+}
+
+/// Describes the options to customize dynamic retrieval.
+class DynamicRetrievalConfig extends $pb.GeneratedMessage {
+  factory DynamicRetrievalConfig({
+    DynamicRetrievalConfig_Mode? mode,
+    $core.double? dynamicThreshold,
+  }) {
+    final $result = create();
+    if (mode != null) {
+      $result.mode = mode;
+    }
+    if (dynamicThreshold != null) {
+      $result.dynamicThreshold = dynamicThreshold;
+    }
+    return $result;
+  }
+  DynamicRetrievalConfig._() : super();
+  factory DynamicRetrievalConfig.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DynamicRetrievalConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DynamicRetrievalConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
+    ..e<DynamicRetrievalConfig_Mode>(1, _omitFieldNames ? '' : 'mode', $pb.PbFieldType.OE, defaultOrMaker: DynamicRetrievalConfig_Mode.MODE_UNSPECIFIED, valueOf: DynamicRetrievalConfig_Mode.valueOf, enumValues: DynamicRetrievalConfig_Mode.values)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'dynamicThreshold', $pb.PbFieldType.OF)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DynamicRetrievalConfig clone() => DynamicRetrievalConfig()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DynamicRetrievalConfig copyWith(void Function(DynamicRetrievalConfig) updates) => super.copyWith((message) => updates(message as DynamicRetrievalConfig)) as DynamicRetrievalConfig;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DynamicRetrievalConfig create() => DynamicRetrievalConfig._();
+  DynamicRetrievalConfig createEmptyInstance() => create();
+  static $pb.PbList<DynamicRetrievalConfig> createRepeated() => $pb.PbList<DynamicRetrievalConfig>();
+  @$core.pragma('dart2js:noInline')
+  static DynamicRetrievalConfig getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DynamicRetrievalConfig>(create);
+  static DynamicRetrievalConfig? _defaultInstance;
+
+  /// The mode of the predictor to be used in dynamic retrieval.
+  @$pb.TagNumber(1)
+  DynamicRetrievalConfig_Mode get mode => $_getN(0);
+  @$pb.TagNumber(1)
+  set mode(DynamicRetrievalConfig_Mode v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasMode() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearMode() => clearField(1);
+
+  /// The threshold to be used in dynamic retrieval.
+  /// If not set, a system default value is used.
+  @$pb.TagNumber(2)
+  $core.double get dynamicThreshold => $_getN(1);
+  @$pb.TagNumber(2)
+  set dynamicThreshold($core.double v) { $_setFloat(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasDynamicThreshold() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearDynamicThreshold() => clearField(2);
 }
 
 ///  Tool that executes code generated by the model, and automatically returns
@@ -899,7 +1039,7 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
 class FunctionCall extends $pb.GeneratedMessage {
   factory FunctionCall({
     $core.String? name,
-    $258.Struct? args,
+    $260.Struct? args,
   }) {
     final $result = create();
     if (name != null) {
@@ -916,7 +1056,7 @@ class FunctionCall extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FunctionCall', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$258.Struct>(2, _omitFieldNames ? '' : 'args', subBuilder: $258.Struct.create)
+    ..aOM<$260.Struct>(2, _omitFieldNames ? '' : 'args', subBuilder: $260.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -955,15 +1095,15 @@ class FunctionCall extends $pb.GeneratedMessage {
 
   /// Optional. The function parameters and values in JSON object format.
   @$pb.TagNumber(2)
-  $258.Struct get args => $_getN(1);
+  $260.Struct get args => $_getN(1);
   @$pb.TagNumber(2)
-  set args($258.Struct v) { setField(2, v); }
+  set args($260.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasArgs() => $_has(1);
   @$pb.TagNumber(2)
   void clearArgs() => clearField(2);
   @$pb.TagNumber(2)
-  $258.Struct ensureArgs() => $_ensure(1);
+  $260.Struct ensureArgs() => $_ensure(1);
 }
 
 /// The result output from a `FunctionCall` that contains a string
@@ -974,7 +1114,7 @@ class FunctionCall extends $pb.GeneratedMessage {
 class FunctionResponse extends $pb.GeneratedMessage {
   factory FunctionResponse({
     $core.String? name,
-    $258.Struct? response,
+    $260.Struct? response,
   }) {
     final $result = create();
     if (name != null) {
@@ -991,7 +1131,7 @@ class FunctionResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FunctionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$258.Struct>(2, _omitFieldNames ? '' : 'response', subBuilder: $258.Struct.create)
+    ..aOM<$260.Struct>(2, _omitFieldNames ? '' : 'response', subBuilder: $260.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1030,15 +1170,15 @@ class FunctionResponse extends $pb.GeneratedMessage {
 
   /// Required. The function response in JSON object format.
   @$pb.TagNumber(2)
-  $258.Struct get response => $_getN(1);
+  $260.Struct get response => $_getN(1);
   @$pb.TagNumber(2)
-  set response($258.Struct v) { setField(2, v); }
+  set response($260.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponse() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $258.Struct ensureResponse() => $_ensure(1);
+  $260.Struct ensureResponse() => $_ensure(1);
 }
 
 /// The `Schema` object allows the definition of input and output data types.
@@ -1056,6 +1196,7 @@ class Schema extends $pb.GeneratedMessage {
     $core.Map<$core.String, Schema>? properties,
     $core.Iterable<$core.String>? required,
     $fixnum.Int64? maxItems,
+    $fixnum.Int64? minItems,
   }) {
     final $result = create();
     if (type != null) {
@@ -1085,6 +1226,9 @@ class Schema extends $pb.GeneratedMessage {
     if (maxItems != null) {
       $result.maxItems = maxItems;
     }
+    if (minItems != null) {
+      $result.minItems = minItems;
+    }
     return $result;
   }
   Schema._() : super();
@@ -1101,6 +1245,7 @@ class Schema extends $pb.GeneratedMessage {
     ..m<$core.String, Schema>(7, _omitFieldNames ? '' : 'properties', entryClassName: 'Schema.PropertiesEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: Schema.create, valueDefaultOrMaker: Schema.getDefault, packageName: const $pb.PackageName('google.ai.generativelanguage.v1beta'))
     ..pPS(8, _omitFieldNames ? '' : 'required')
     ..aInt64(21, _omitFieldNames ? '' : 'maxItems')
+    ..aInt64(22, _omitFieldNames ? '' : 'minItems')
     ..hasRequiredFields = false
   ;
 
@@ -1205,6 +1350,16 @@ class Schema extends $pb.GeneratedMessage {
   $core.bool hasMaxItems() => $_has(8);
   @$pb.TagNumber(21)
   void clearMaxItems() => clearField(21);
+
+  /// Optional. Minimum number of the elements for Type.ARRAY.
+  @$pb.TagNumber(22)
+  $fixnum.Int64 get minItems => $_getI64(9);
+  @$pb.TagNumber(22)
+  set minItems($fixnum.Int64 v) { $_setInt64(9, v); }
+  @$pb.TagNumber(22)
+  $core.bool hasMinItems() => $_has(9);
+  @$pb.TagNumber(22)
+  void clearMinItems() => clearField(22);
 }
 
 /// Passage included inline with a grounding configuration.

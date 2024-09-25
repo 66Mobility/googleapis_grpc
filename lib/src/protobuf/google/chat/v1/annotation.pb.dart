@@ -15,8 +15,8 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'annotation.pbenum.dart';
-import 'attachment.pb.dart' as $96;
-import 'user.pb.dart' as $403;
+import 'attachment.pb.dart' as $97;
+import 'user.pb.dart' as $405;
 
 export 'annotation.pbenum.dart';
 
@@ -201,7 +201,7 @@ class Annotation extends $pb.GeneratedMessage {
 /// Annotation metadata for user mentions (@).
 class UserMentionMetadata extends $pb.GeneratedMessage {
   factory UserMentionMetadata({
-    $403.User? user,
+    $405.User? user,
     UserMentionMetadata_Type? type,
   }) {
     final $result = create();
@@ -218,7 +218,7 @@ class UserMentionMetadata extends $pb.GeneratedMessage {
   factory UserMentionMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UserMentionMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$403.User>(1, _omitFieldNames ? '' : 'user', subBuilder: $403.User.create)
+    ..aOM<$405.User>(1, _omitFieldNames ? '' : 'user', subBuilder: $405.User.create)
     ..e<UserMentionMetadata_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: UserMentionMetadata_Type.TYPE_UNSPECIFIED, valueOf: UserMentionMetadata_Type.valueOf, enumValues: UserMentionMetadata_Type.values)
     ..hasRequiredFields = false
   ;
@@ -246,15 +246,15 @@ class UserMentionMetadata extends $pb.GeneratedMessage {
 
   /// The user mentioned.
   @$pb.TagNumber(1)
-  $403.User get user => $_getN(0);
+  $405.User get user => $_getN(0);
   @$pb.TagNumber(1)
-  set user($403.User v) { setField(1, v); }
+  set user($405.User v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUser() => $_has(0);
   @$pb.TagNumber(1)
   void clearUser() => clearField(1);
   @$pb.TagNumber(1)
-  $403.User ensureUser() => $_ensure(0);
+  $405.User ensureUser() => $_ensure(0);
 
   /// The type of user mention.
   @$pb.TagNumber(2)
@@ -270,7 +270,7 @@ class UserMentionMetadata extends $pb.GeneratedMessage {
 /// Annotation metadata for slash commands (/).
 class SlashCommandMetadata extends $pb.GeneratedMessage {
   factory SlashCommandMetadata({
-    $403.User? bot,
+    $405.User? bot,
     SlashCommandMetadata_Type? type,
     $core.String? commandName,
     $fixnum.Int64? commandId,
@@ -299,7 +299,7 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
   factory SlashCommandMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SlashCommandMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$403.User>(1, _omitFieldNames ? '' : 'bot', subBuilder: $403.User.create)
+    ..aOM<$405.User>(1, _omitFieldNames ? '' : 'bot', subBuilder: $405.User.create)
     ..e<SlashCommandMetadata_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: SlashCommandMetadata_Type.TYPE_UNSPECIFIED, valueOf: SlashCommandMetadata_Type.valueOf, enumValues: SlashCommandMetadata_Type.values)
     ..aOS(3, _omitFieldNames ? '' : 'commandName')
     ..aInt64(4, _omitFieldNames ? '' : 'commandId')
@@ -330,15 +330,15 @@ class SlashCommandMetadata extends $pb.GeneratedMessage {
 
   /// The Chat app whose command was invoked.
   @$pb.TagNumber(1)
-  $403.User get bot => $_getN(0);
+  $405.User get bot => $_getN(0);
   @$pb.TagNumber(1)
-  set bot($403.User v) { setField(1, v); }
+  set bot($405.User v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasBot() => $_has(0);
   @$pb.TagNumber(1)
   void clearBot() => clearField(1);
   @$pb.TagNumber(1)
-  $403.User ensureBot() => $_ensure(0);
+  $405.User ensureBot() => $_ensure(0);
 
   /// The type of slash command.
   @$pb.TagNumber(2)
@@ -500,7 +500,7 @@ class RichLinkMetadata extends $pb.GeneratedMessage {
 /// Data for Google Drive links.
 class DriveLinkData extends $pb.GeneratedMessage {
   factory DriveLinkData({
-    $96.DriveDataRef? driveDataRef,
+    $97.DriveDataRef? driveDataRef,
     $core.String? mimeType,
   }) {
     final $result = create();
@@ -517,7 +517,7 @@ class DriveLinkData extends $pb.GeneratedMessage {
   factory DriveLinkData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveLinkData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$96.DriveDataRef>(1, _omitFieldNames ? '' : 'driveDataRef', subBuilder: $96.DriveDataRef.create)
+    ..aOM<$97.DriveDataRef>(1, _omitFieldNames ? '' : 'driveDataRef', subBuilder: $97.DriveDataRef.create)
     ..aOS(2, _omitFieldNames ? '' : 'mimeType')
     ..hasRequiredFields = false
   ;
@@ -547,15 +547,15 @@ class DriveLinkData extends $pb.GeneratedMessage {
   /// [DriveDataRef](https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces.messages.attachments#drivedataref)
   /// which references a Google Drive file.
   @$pb.TagNumber(1)
-  $96.DriveDataRef get driveDataRef => $_getN(0);
+  $97.DriveDataRef get driveDataRef => $_getN(0);
   @$pb.TagNumber(1)
-  set driveDataRef($96.DriveDataRef v) { setField(1, v); }
+  set driveDataRef($97.DriveDataRef v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDriveDataRef() => $_has(0);
   @$pb.TagNumber(1)
   void clearDriveDataRef() => clearField(1);
   @$pb.TagNumber(1)
-  $96.DriveDataRef ensureDriveDataRef() => $_ensure(0);
+  $97.DriveDataRef ensureDriveDataRef() => $_ensure(0);
 
   /// The mime type of the linked Google Drive resource.
   @$pb.TagNumber(2)

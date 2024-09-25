@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../protobuf/struct.pb.dart' as $258;
+import '../../../../../../protobuf/struct.pb.dart' as $260;
 
 /// Represents an Interactive Canvas response to be sent to the user.
 /// This can be used in conjunction with the "first_simple" field in the
@@ -23,7 +23,7 @@ class Canvas extends $pb.GeneratedMessage {
   factory Canvas({
     $core.String? url,
     $core.bool? suppressMic,
-    $core.Iterable<$258.Value>? data,
+    $core.Iterable<$260.Value>? data,
     $core.bool? enableFullScreen,
   }) {
     final $result = create();
@@ -48,7 +48,7 @@ class Canvas extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Canvas', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'url')
     ..aOB(3, _omitFieldNames ? '' : 'suppressMic')
-    ..pc<$258.Value>(4, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM, subBuilder: $258.Value.create)
+    ..pc<$260.Value>(4, _omitFieldNames ? '' : 'data', $pb.PbFieldType.PM, subBuilder: $260.Value.create)
     ..aOB(8, _omitFieldNames ? '' : 'enableFullScreen')
     ..hasRequiredFields = false
   ;
@@ -101,7 +101,7 @@ class Canvas extends $pb.GeneratedMessage {
   /// defined in this Canvas prompt will be added after data values defined in
   /// previous Canvas prompts.
   @$pb.TagNumber(4)
-  $core.List<$258.Value> get data => $_getList(2);
+  $core.List<$260.Value> get data => $_getList(2);
 
   /// If `true` the canvas application occupies the full screen and won't
   /// have a header at the top. A toast message will also be displayed on the

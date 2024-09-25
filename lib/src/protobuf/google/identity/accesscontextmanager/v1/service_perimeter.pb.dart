@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $299;
+import '../../../protobuf/timestamp.pb.dart' as $301;
 import 'service_perimeter.pbenum.dart';
 
 export 'service_perimeter.pbenum.dart';
@@ -33,8 +33,8 @@ class ServicePerimeter extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? title,
     $core.String? description,
-    $299.Timestamp? createTime,
-    $299.Timestamp? updateTime,
+    $301.Timestamp? createTime,
+    $301.Timestamp? updateTime,
     ServicePerimeter_PerimeterType? perimeterType,
     ServicePerimeterConfig? status,
     ServicePerimeterConfig? spec,
@@ -78,8 +78,8 @@ class ServicePerimeter extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'title')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
     ..e<ServicePerimeter_PerimeterType>(6, _omitFieldNames ? '' : 'perimeterType', $pb.PbFieldType.OE, defaultOrMaker: ServicePerimeter_PerimeterType.PERIMETER_TYPE_REGULAR, valueOf: ServicePerimeter_PerimeterType.valueOf, enumValues: ServicePerimeter_PerimeterType.values)
     ..aOM<ServicePerimeterConfig>(7, _omitFieldNames ? '' : 'status', subBuilder: ServicePerimeterConfig.create)
     ..aOM<ServicePerimeterConfig>(8, _omitFieldNames ? '' : 'spec', subBuilder: ServicePerimeterConfig.create)
@@ -144,27 +144,27 @@ class ServicePerimeter extends $pb.GeneratedMessage {
 
   /// Output only. Time the `ServicePerimeter` was created in UTC.
   @$pb.TagNumber(4)
-  $299.Timestamp get createTime => $_getN(3);
+  $301.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($299.Timestamp v) { setField(4, v); }
+  set createTime($301.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $299.Timestamp ensureCreateTime() => $_ensure(3);
+  $301.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Time the `ServicePerimeter` was updated in UTC.
   @$pb.TagNumber(5)
-  $299.Timestamp get updateTime => $_getN(4);
+  $301.Timestamp get updateTime => $_getN(4);
   @$pb.TagNumber(5)
-  set updateTime($299.Timestamp v) { setField(5, v); }
+  set updateTime($301.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $299.Timestamp ensureUpdateTime() => $_ensure(4);
+  $301.Timestamp ensureUpdateTime() => $_ensure(4);
 
   /// Perimeter type indicator. A single project is
   /// allowed to be a member of single regular perimeter, but multiple service

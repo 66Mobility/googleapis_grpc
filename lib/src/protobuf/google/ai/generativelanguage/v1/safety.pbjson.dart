@@ -28,6 +28,7 @@ const HarmCategory$json = {
     {'1': 'HARM_CATEGORY_HATE_SPEECH', '2': 8},
     {'1': 'HARM_CATEGORY_SEXUALLY_EXPLICIT', '2': 9},
     {'1': 'HARM_CATEGORY_DANGEROUS_CONTENT', '2': 10},
+    {'1': 'HARM_CATEGORY_CIVIC_INTEGRITY', '2': 11},
   ],
 };
 
@@ -39,7 +40,7 @@ final $typed_data.Uint8List harmCategoryDescriptor = $convert.base64Decode(
     'NBVEVHT1JZX01FRElDQUwQBRIbChdIQVJNX0NBVEVHT1JZX0RBTkdFUk9VUxAGEhwKGEhBUk1f'
     'Q0FURUdPUllfSEFSQVNTTUVOVBAHEh0KGUhBUk1fQ0FURUdPUllfSEFURV9TUEVFQ0gQCBIjCh'
     '9IQVJNX0NBVEVHT1JZX1NFWFVBTExZX0VYUExJQ0lUEAkSIwofSEFSTV9DQVRFR09SWV9EQU5H'
-    'RVJPVVNfQ09OVEVOVBAK');
+    'RVJPVVNfQ09OVEVOVBAKEiEKHUhBUk1fQ0FURUdPUllfQ0lWSUNfSU5URUdSSVRZEAs=');
 
 @$core.Deprecated('Use safetyRatingDescriptor instead')
 const SafetyRating$json = {
@@ -92,6 +93,7 @@ const SafetySetting_HarmBlockThreshold$json = {
     {'1': 'BLOCK_MEDIUM_AND_ABOVE', '2': 2},
     {'1': 'BLOCK_ONLY_HIGH', '2': 3},
     {'1': 'BLOCK_NONE', '2': 4},
+    {'1': 'OFF', '2': 5},
   ],
 };
 
@@ -100,8 +102,8 @@ final $typed_data.Uint8List safetySettingDescriptor = $convert.base64Decode(
     'Cg1TYWZldHlTZXR0aW5nEk4KCGNhdGVnb3J5GAMgASgOMi0uZ29vZ2xlLmFpLmdlbmVyYXRpdm'
     'VsYW5ndWFnZS52MS5IYXJtQ2F0ZWdvcnlCA+BBAlIIY2F0ZWdvcnkSZAoJdGhyZXNob2xkGAQg'
     'ASgOMkEuZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MS5TYWZldHlTZXR0aW5nLkhhcm'
-    '1CbG9ja1RocmVzaG9sZEID4EECUgl0aHJlc2hvbGQilAEKEkhhcm1CbG9ja1RocmVzaG9sZBIk'
+    '1CbG9ja1RocmVzaG9sZEID4EECUgl0aHJlc2hvbGQinQEKEkhhcm1CbG9ja1RocmVzaG9sZBIk'
     'CiBIQVJNX0JMT0NLX1RIUkVTSE9MRF9VTlNQRUNJRklFRBAAEhcKE0JMT0NLX0xPV19BTkRfQU'
     'JPVkUQARIaChZCTE9DS19NRURJVU1fQU5EX0FCT1ZFEAISEwoPQkxPQ0tfT05MWV9ISUdIEAMS'
-    'DgoKQkxPQ0tfTk9ORRAE');
+    'DgoKQkxPQ0tfTk9ORRAEEgcKA09GRhAF');
 

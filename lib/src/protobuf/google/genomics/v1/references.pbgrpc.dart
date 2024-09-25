@@ -15,32 +15,32 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'references.pb.dart' as $136;
+import 'references.pb.dart' as $137;
 
 export 'references.pb.dart';
 
 @$pb.GrpcServiceName('google.genomics.v1.ReferenceServiceV1')
 class ReferenceServiceV1Client extends $grpc.Client {
-  static final _$searchReferenceSets = $grpc.ClientMethod<$136.SearchReferenceSetsRequest, $136.SearchReferenceSetsResponse>(
+  static final _$searchReferenceSets = $grpc.ClientMethod<$137.SearchReferenceSetsRequest, $137.SearchReferenceSetsResponse>(
       '/google.genomics.v1.ReferenceServiceV1/SearchReferenceSets',
-      ($136.SearchReferenceSetsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $136.SearchReferenceSetsResponse.fromBuffer(value));
-  static final _$getReferenceSet = $grpc.ClientMethod<$136.GetReferenceSetRequest, $136.ReferenceSet>(
+      ($137.SearchReferenceSetsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $137.SearchReferenceSetsResponse.fromBuffer(value));
+  static final _$getReferenceSet = $grpc.ClientMethod<$137.GetReferenceSetRequest, $137.ReferenceSet>(
       '/google.genomics.v1.ReferenceServiceV1/GetReferenceSet',
-      ($136.GetReferenceSetRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $136.ReferenceSet.fromBuffer(value));
-  static final _$searchReferences = $grpc.ClientMethod<$136.SearchReferencesRequest, $136.SearchReferencesResponse>(
+      ($137.GetReferenceSetRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $137.ReferenceSet.fromBuffer(value));
+  static final _$searchReferences = $grpc.ClientMethod<$137.SearchReferencesRequest, $137.SearchReferencesResponse>(
       '/google.genomics.v1.ReferenceServiceV1/SearchReferences',
-      ($136.SearchReferencesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $136.SearchReferencesResponse.fromBuffer(value));
-  static final _$getReference = $grpc.ClientMethod<$136.GetReferenceRequest, $136.Reference>(
+      ($137.SearchReferencesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $137.SearchReferencesResponse.fromBuffer(value));
+  static final _$getReference = $grpc.ClientMethod<$137.GetReferenceRequest, $137.Reference>(
       '/google.genomics.v1.ReferenceServiceV1/GetReference',
-      ($136.GetReferenceRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $136.Reference.fromBuffer(value));
-  static final _$listBases = $grpc.ClientMethod<$136.ListBasesRequest, $136.ListBasesResponse>(
+      ($137.GetReferenceRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $137.Reference.fromBuffer(value));
+  static final _$listBases = $grpc.ClientMethod<$137.ListBasesRequest, $137.ListBasesResponse>(
       '/google.genomics.v1.ReferenceServiceV1/ListBases',
-      ($136.ListBasesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $136.ListBasesResponse.fromBuffer(value));
+      ($137.ListBasesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $137.ListBasesResponse.fromBuffer(value));
 
   ReferenceServiceV1Client($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -48,23 +48,23 @@ class ReferenceServiceV1Client extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$136.SearchReferenceSetsResponse> searchReferenceSets($136.SearchReferenceSetsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$137.SearchReferenceSetsResponse> searchReferenceSets($137.SearchReferenceSetsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$searchReferenceSets, request, options: options);
   }
 
-  $grpc.ResponseFuture<$136.ReferenceSet> getReferenceSet($136.GetReferenceSetRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$137.ReferenceSet> getReferenceSet($137.GetReferenceSetRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getReferenceSet, request, options: options);
   }
 
-  $grpc.ResponseFuture<$136.SearchReferencesResponse> searchReferences($136.SearchReferencesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$137.SearchReferencesResponse> searchReferences($137.SearchReferencesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$searchReferences, request, options: options);
   }
 
-  $grpc.ResponseFuture<$136.Reference> getReference($136.GetReferenceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$137.Reference> getReference($137.GetReferenceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getReference, request, options: options);
   }
 
-  $grpc.ResponseFuture<$136.ListBasesResponse> listBases($136.ListBasesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$137.ListBasesResponse> listBases($137.ListBasesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listBases, request, options: options);
   }
 }
@@ -74,66 +74,66 @@ abstract class ReferenceServiceV1ServiceBase extends $grpc.Service {
   $core.String get $name => 'google.genomics.v1.ReferenceServiceV1';
 
   ReferenceServiceV1ServiceBase() {
-    $addMethod($grpc.ServiceMethod<$136.SearchReferenceSetsRequest, $136.SearchReferenceSetsResponse>(
+    $addMethod($grpc.ServiceMethod<$137.SearchReferenceSetsRequest, $137.SearchReferenceSetsResponse>(
         'SearchReferenceSets',
         searchReferenceSets_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $136.SearchReferenceSetsRequest.fromBuffer(value),
-        ($136.SearchReferenceSetsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$136.GetReferenceSetRequest, $136.ReferenceSet>(
+        ($core.List<$core.int> value) => $137.SearchReferenceSetsRequest.fromBuffer(value),
+        ($137.SearchReferenceSetsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$137.GetReferenceSetRequest, $137.ReferenceSet>(
         'GetReferenceSet',
         getReferenceSet_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $136.GetReferenceSetRequest.fromBuffer(value),
-        ($136.ReferenceSet value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$136.SearchReferencesRequest, $136.SearchReferencesResponse>(
+        ($core.List<$core.int> value) => $137.GetReferenceSetRequest.fromBuffer(value),
+        ($137.ReferenceSet value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$137.SearchReferencesRequest, $137.SearchReferencesResponse>(
         'SearchReferences',
         searchReferences_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $136.SearchReferencesRequest.fromBuffer(value),
-        ($136.SearchReferencesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$136.GetReferenceRequest, $136.Reference>(
+        ($core.List<$core.int> value) => $137.SearchReferencesRequest.fromBuffer(value),
+        ($137.SearchReferencesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$137.GetReferenceRequest, $137.Reference>(
         'GetReference',
         getReference_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $136.GetReferenceRequest.fromBuffer(value),
-        ($136.Reference value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$136.ListBasesRequest, $136.ListBasesResponse>(
+        ($core.List<$core.int> value) => $137.GetReferenceRequest.fromBuffer(value),
+        ($137.Reference value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$137.ListBasesRequest, $137.ListBasesResponse>(
         'ListBases',
         listBases_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $136.ListBasesRequest.fromBuffer(value),
-        ($136.ListBasesResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $137.ListBasesRequest.fromBuffer(value),
+        ($137.ListBasesResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$136.SearchReferenceSetsResponse> searchReferenceSets_Pre($grpc.ServiceCall call, $async.Future<$136.SearchReferenceSetsRequest> request) async {
+  $async.Future<$137.SearchReferenceSetsResponse> searchReferenceSets_Pre($grpc.ServiceCall call, $async.Future<$137.SearchReferenceSetsRequest> request) async {
     return searchReferenceSets(call, await request);
   }
 
-  $async.Future<$136.ReferenceSet> getReferenceSet_Pre($grpc.ServiceCall call, $async.Future<$136.GetReferenceSetRequest> request) async {
+  $async.Future<$137.ReferenceSet> getReferenceSet_Pre($grpc.ServiceCall call, $async.Future<$137.GetReferenceSetRequest> request) async {
     return getReferenceSet(call, await request);
   }
 
-  $async.Future<$136.SearchReferencesResponse> searchReferences_Pre($grpc.ServiceCall call, $async.Future<$136.SearchReferencesRequest> request) async {
+  $async.Future<$137.SearchReferencesResponse> searchReferences_Pre($grpc.ServiceCall call, $async.Future<$137.SearchReferencesRequest> request) async {
     return searchReferences(call, await request);
   }
 
-  $async.Future<$136.Reference> getReference_Pre($grpc.ServiceCall call, $async.Future<$136.GetReferenceRequest> request) async {
+  $async.Future<$137.Reference> getReference_Pre($grpc.ServiceCall call, $async.Future<$137.GetReferenceRequest> request) async {
     return getReference(call, await request);
   }
 
-  $async.Future<$136.ListBasesResponse> listBases_Pre($grpc.ServiceCall call, $async.Future<$136.ListBasesRequest> request) async {
+  $async.Future<$137.ListBasesResponse> listBases_Pre($grpc.ServiceCall call, $async.Future<$137.ListBasesRequest> request) async {
     return listBases(call, await request);
   }
 
-  $async.Future<$136.SearchReferenceSetsResponse> searchReferenceSets($grpc.ServiceCall call, $136.SearchReferenceSetsRequest request);
-  $async.Future<$136.ReferenceSet> getReferenceSet($grpc.ServiceCall call, $136.GetReferenceSetRequest request);
-  $async.Future<$136.SearchReferencesResponse> searchReferences($grpc.ServiceCall call, $136.SearchReferencesRequest request);
-  $async.Future<$136.Reference> getReference($grpc.ServiceCall call, $136.GetReferenceRequest request);
-  $async.Future<$136.ListBasesResponse> listBases($grpc.ServiceCall call, $136.ListBasesRequest request);
+  $async.Future<$137.SearchReferenceSetsResponse> searchReferenceSets($grpc.ServiceCall call, $137.SearchReferenceSetsRequest request);
+  $async.Future<$137.ReferenceSet> getReferenceSet($grpc.ServiceCall call, $137.GetReferenceSetRequest request);
+  $async.Future<$137.SearchReferencesResponse> searchReferences($grpc.ServiceCall call, $137.SearchReferencesRequest request);
+  $async.Future<$137.Reference> getReference($grpc.ServiceCall call, $137.GetReferenceRequest request);
+  $async.Future<$137.ListBasesResponse> listBases($grpc.ServiceCall call, $137.ListBasesRequest request);
 }

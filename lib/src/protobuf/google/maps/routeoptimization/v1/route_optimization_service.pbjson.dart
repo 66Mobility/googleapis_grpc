@@ -903,6 +903,7 @@ const ShipmentRoute_Transition$json = {
     {'1': 'total_duration', '3': 7, '4': 1, '5': 11, '6': '.google.protobuf.Duration', '10': 'totalDuration'},
     {'1': 'start_time', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '10': 'startTime'},
     {'1': 'route_polyline', '3': 9, '4': 1, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.EncodedPolyline', '10': 'routePolyline'},
+    {'1': 'route_token', '3': 12, '4': 1, '5': 9, '8': {}, '10': 'routeToken'},
     {'1': 'vehicle_loads', '3': 11, '4': 3, '5': 11, '6': '.google.maps.routeoptimization.v1.ShipmentRoute.Transition.VehicleLoadsEntry', '10': 'vehicleLoads'},
   ],
   '3': [ShipmentRoute_Transition_VehicleLoadsEntry$json],
@@ -980,7 +981,7 @@ final $typed_data.Uint8List shipmentRouteDescriptor = $convert.base64Decode(
     'aXBtZW50X2xhYmVsGAcgASgJUg1zaGlwbWVudExhYmVsEh8KC3Zpc2l0X2xhYmVsGAggASgJUg'
     'p2aXNpdExhYmVsGm8KEExvYWREZW1hbmRzRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSRQoFdmFs'
     'dWUYAiABKAsyLy5nb29nbGUubWFwcy5yb3V0ZW9wdGltaXphdGlvbi52MS5TaGlwbWVudC5Mb2'
-    'FkUgV2YWx1ZToCOAEa2gYKClRyYW5zaXRpb24SQgoPdHJhdmVsX2R1cmF0aW9uGAEgASgLMhku'
+    'FkUgV2YWx1ZToCOAEagAcKClRyYW5zaXRpb24SQgoPdHJhdmVsX2R1cmF0aW9uGAEgASgLMhku'
     'Z29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uUg50cmF2ZWxEdXJhdGlvbhI0ChZ0cmF2ZWxfZGlzdG'
     'FuY2VfbWV0ZXJzGAIgASgBUhR0cmF2ZWxEaXN0YW5jZU1ldGVycxI4Chh0cmFmZmljX2luZm9f'
     'dW5hdmFpbGFibGUYAyABKAhSFnRyYWZmaWNJbmZvVW5hdmFpbGFibGUSQAoOZGVsYXlfZHVyYX'
@@ -991,16 +992,17 @@ final $typed_data.Uint8List shipmentRouteDescriptor = $convert.base64Decode(
     'VmLkR1cmF0aW9uUg10b3RhbER1cmF0aW9uEjkKCnN0YXJ0X3RpbWUYCCABKAsyGi5nb29nbGUu'
     'cHJvdG9idWYuVGltZXN0YW1wUglzdGFydFRpbWUSZgoOcm91dGVfcG9seWxpbmUYCSABKAsyPy'
     '5nb29nbGUubWFwcy5yb3V0ZW9wdGltaXphdGlvbi52MS5TaGlwbWVudFJvdXRlLkVuY29kZWRQ'
-    'b2x5bGluZVINcm91dGVQb2x5bGluZRJxCg12ZWhpY2xlX2xvYWRzGAsgAygLMkwuZ29vZ2xlLm'
-    '1hcHMucm91dGVvcHRpbWl6YXRpb24udjEuU2hpcG1lbnRSb3V0ZS5UcmFuc2l0aW9uLlZlaGlj'
-    'bGVMb2Fkc0VudHJ5Ugx2ZWhpY2xlTG9hZHMafAoRVmVoaWNsZUxvYWRzRW50cnkSEAoDa2V5GA'
-    'EgASgJUgNrZXkSUQoFdmFsdWUYAiABKAsyOy5nb29nbGUubWFwcy5yb3V0ZW9wdGltaXphdGlv'
-    'bi52MS5TaGlwbWVudFJvdXRlLlZlaGljbGVMb2FkUgV2YWx1ZToCOAEaJQoLVmVoaWNsZUxvYW'
-    'QSFgoGYW1vdW50GAEgASgDUgZhbW91bnQaKQoPRW5jb2RlZFBvbHlsaW5lEhYKBnBvaW50cxgB'
-    'IAEoCVIGcG9pbnRzGnkKBUJyZWFrEjkKCnN0YXJ0X3RpbWUYASABKAsyGi5nb29nbGUucHJvdG'
-    '9idWYuVGltZXN0YW1wUglzdGFydFRpbWUSNQoIZHVyYXRpb24YAiABKAsyGS5nb29nbGUucHJv'
-    'dG9idWYuRHVyYXRpb25SCGR1cmF0aW9uGj0KD1JvdXRlQ29zdHNFbnRyeRIQCgNrZXkYASABKA'
-    'lSA2tleRIUCgV2YWx1ZRgCIAEoAVIFdmFsdWU6AjgB');
+    'b2x5bGluZVINcm91dGVQb2x5bGluZRIkCgtyb3V0ZV90b2tlbhgMIAEoCUID4EEDUgpyb3V0ZV'
+    'Rva2VuEnEKDXZlaGljbGVfbG9hZHMYCyADKAsyTC5nb29nbGUubWFwcy5yb3V0ZW9wdGltaXph'
+    'dGlvbi52MS5TaGlwbWVudFJvdXRlLlRyYW5zaXRpb24uVmVoaWNsZUxvYWRzRW50cnlSDHZlaG'
+    'ljbGVMb2Fkcxp8ChFWZWhpY2xlTG9hZHNFbnRyeRIQCgNrZXkYASABKAlSA2tleRJRCgV2YWx1'
+    'ZRgCIAEoCzI7Lmdvb2dsZS5tYXBzLnJvdXRlb3B0aW1pemF0aW9uLnYxLlNoaXBtZW50Um91dG'
+    'UuVmVoaWNsZUxvYWRSBXZhbHVlOgI4ARolCgtWZWhpY2xlTG9hZBIWCgZhbW91bnQYASABKANS'
+    'BmFtb3VudBopCg9FbmNvZGVkUG9seWxpbmUSFgoGcG9pbnRzGAEgASgJUgZwb2ludHMaeQoFQn'
+    'JlYWsSOQoKc3RhcnRfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBSCXN0'
+    'YXJ0VGltZRI1CghkdXJhdGlvbhgCIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvblIIZH'
+    'VyYXRpb24aPQoPUm91dGVDb3N0c0VudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIg'
+    'ASgBUgV2YWx1ZToCOAE=');
 
 @$core.Deprecated('Use skippedShipmentDescriptor instead')
 const SkippedShipment$json = {

@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'route.pb.dart' as $483;
+import 'route.pb.dart' as $485;
 
 /// Encapsulates a custom route computed based on the route objective specified
 /// by the customer. CustomRoute contains a route and a route token, which can be
 /// passed to NavSDK to reconstruct the custom route for turn by turn navigation.
 class CustomRoute extends $pb.GeneratedMessage {
   factory CustomRoute({
-    $483.Route? route,
+    $485.Route? route,
     $core.String? token,
   }) {
     final $result = create();
@@ -37,7 +37,7 @@ class CustomRoute extends $pb.GeneratedMessage {
   factory CustomRoute.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomRoute', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..aOM<$483.Route>(11, _omitFieldNames ? '' : 'route', subBuilder: $483.Route.create)
+    ..aOM<$485.Route>(11, _omitFieldNames ? '' : 'route', subBuilder: $485.Route.create)
     ..aOS(12, _omitFieldNames ? '' : 'token')
     ..hasRequiredFields = false
   ;
@@ -65,15 +65,15 @@ class CustomRoute extends $pb.GeneratedMessage {
 
   /// The route considered 'best' for the input route objective.
   @$pb.TagNumber(11)
-  $483.Route get route => $_getN(0);
+  $485.Route get route => $_getN(0);
   @$pb.TagNumber(11)
-  set route($483.Route v) { setField(11, v); }
+  set route($485.Route v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasRoute() => $_has(0);
   @$pb.TagNumber(11)
   void clearRoute() => clearField(11);
   @$pb.TagNumber(11)
-  $483.Route ensureRoute() => $_ensure(0);
+  $485.Route ensureRoute() => $_ensure(0);
 
   /// Web-safe base64 encoded route token that can be passed to NavSDK, which
   /// allows NavSDK to reconstruct the route during navigation, and in the event

@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $299;
+import '../../protobuf/timestamp.pb.dart' as $301;
 
 /// A user's read state within a thread, used to identify read and unread
 /// messages.
 class ThreadReadState extends $pb.GeneratedMessage {
   factory ThreadReadState({
     $core.String? name,
-    $299.Timestamp? lastReadTime,
+    $301.Timestamp? lastReadTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -37,7 +37,7 @@ class ThreadReadState extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ThreadReadState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'lastReadTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'lastReadTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -77,15 +77,15 @@ class ThreadReadState extends $pb.GeneratedMessage {
   /// The time when the user's thread read state was updated. Usually this
   /// corresponds with the timestamp of the last read message in a thread.
   @$pb.TagNumber(2)
-  $299.Timestamp get lastReadTime => $_getN(1);
+  $301.Timestamp get lastReadTime => $_getN(1);
   @$pb.TagNumber(2)
-  set lastReadTime($299.Timestamp v) { setField(2, v); }
+  set lastReadTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasLastReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearLastReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureLastReadTime() => $_ensure(1);
+  $301.Timestamp ensureLastReadTime() => $_ensure(1);
 }
 
 /// Request message for GetThreadReadStateRequest API.

@@ -165,6 +165,7 @@ const Tool$json = {
   '1': 'Tool',
   '2': [
     {'1': 'function_declarations', '3': 1, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.FunctionDeclaration', '8': {}, '10': 'functionDeclarations'},
+    {'1': 'google_search_retrieval', '3': 2, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.GoogleSearchRetrieval', '8': {}, '10': 'googleSearchRetrieval'},
     {'1': 'code_execution', '3': 3, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.CodeExecution', '8': {}, '10': 'codeExecution'},
   ],
 };
@@ -173,8 +174,55 @@ const Tool$json = {
 final $typed_data.Uint8List toolDescriptor = $convert.base64Decode(
     'CgRUb29sEnIKFWZ1bmN0aW9uX2RlY2xhcmF0aW9ucxgBIAMoCzI4Lmdvb2dsZS5haS5nZW5lcm'
     'F0aXZlbGFuZ3VhZ2UudjFiZXRhLkZ1bmN0aW9uRGVjbGFyYXRpb25CA+BBAVIUZnVuY3Rpb25E'
-    'ZWNsYXJhdGlvbnMSXgoOY29kZV9leGVjdXRpb24YAyABKAsyMi5nb29nbGUuYWkuZ2VuZXJhdG'
-    'l2ZWxhbmd1YWdlLnYxYmV0YS5Db2RlRXhlY3V0aW9uQgPgQQFSDWNvZGVFeGVjdXRpb24=');
+    'ZWNsYXJhdGlvbnMSdwoXZ29vZ2xlX3NlYXJjaF9yZXRyaWV2YWwYAiABKAsyOi5nb29nbGUuYW'
+    'kuZ2VuZXJhdGl2ZWxhbmd1YWdlLnYxYmV0YS5Hb29nbGVTZWFyY2hSZXRyaWV2YWxCA+BBAVIV'
+    'Z29vZ2xlU2VhcmNoUmV0cmlldmFsEl4KDmNvZGVfZXhlY3V0aW9uGAMgASgLMjIuZ29vZ2xlLm'
+    'FpLmdlbmVyYXRpdmVsYW5ndWFnZS52MWJldGEuQ29kZUV4ZWN1dGlvbkID4EEBUg1jb2RlRXhl'
+    'Y3V0aW9u');
+
+@$core.Deprecated('Use googleSearchRetrievalDescriptor instead')
+const GoogleSearchRetrieval$json = {
+  '1': 'GoogleSearchRetrieval',
+  '2': [
+    {'1': 'dynamic_retrieval_config', '3': 1, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.DynamicRetrievalConfig', '10': 'dynamicRetrievalConfig'},
+  ],
+};
+
+/// Descriptor for `GoogleSearchRetrieval`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List googleSearchRetrievalDescriptor = $convert.base64Decode(
+    'ChVHb29nbGVTZWFyY2hSZXRyaWV2YWwSdQoYZHluYW1pY19yZXRyaWV2YWxfY29uZmlnGAEgAS'
+    'gLMjsuZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MWJldGEuRHluYW1pY1JldHJpZXZh'
+    'bENvbmZpZ1IWZHluYW1pY1JldHJpZXZhbENvbmZpZw==');
+
+@$core.Deprecated('Use dynamicRetrievalConfigDescriptor instead')
+const DynamicRetrievalConfig$json = {
+  '1': 'DynamicRetrievalConfig',
+  '2': [
+    {'1': 'mode', '3': 1, '4': 1, '5': 14, '6': '.google.ai.generativelanguage.v1beta.DynamicRetrievalConfig.Mode', '10': 'mode'},
+    {'1': 'dynamic_threshold', '3': 2, '4': 1, '5': 2, '9': 0, '10': 'dynamicThreshold', '17': true},
+  ],
+  '4': [DynamicRetrievalConfig_Mode$json],
+  '8': [
+    {'1': '_dynamic_threshold'},
+  ],
+};
+
+@$core.Deprecated('Use dynamicRetrievalConfigDescriptor instead')
+const DynamicRetrievalConfig_Mode$json = {
+  '1': 'Mode',
+  '2': [
+    {'1': 'MODE_UNSPECIFIED', '2': 0},
+    {'1': 'MODE_DYNAMIC', '2': 1},
+  ],
+};
+
+/// Descriptor for `DynamicRetrievalConfig`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dynamicRetrievalConfigDescriptor = $convert.base64Decode(
+    'ChZEeW5hbWljUmV0cmlldmFsQ29uZmlnElQKBG1vZGUYASABKA4yQC5nb29nbGUuYWkuZ2VuZX'
+    'JhdGl2ZWxhbmd1YWdlLnYxYmV0YS5EeW5hbWljUmV0cmlldmFsQ29uZmlnLk1vZGVSBG1vZGUS'
+    'MAoRZHluYW1pY190aHJlc2hvbGQYAiABKAJIAFIQZHluYW1pY1RocmVzaG9sZIgBASIuCgRNb2'
+    'RlEhQKEE1PREVfVU5TUEVDSUZJRUQQABIQCgxNT0RFX0RZTkFNSUMQAUIUChJfZHluYW1pY190'
+    'aHJlc2hvbGQ=');
 
 @$core.Deprecated('Use codeExecutionDescriptor instead')
 const CodeExecution$json = {
@@ -290,6 +338,7 @@ const Schema$json = {
     {'1': 'enum', '3': 5, '4': 3, '5': 9, '8': {}, '10': 'enum'},
     {'1': 'items', '3': 6, '4': 1, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Schema', '8': {}, '9': 0, '10': 'items', '17': true},
     {'1': 'max_items', '3': 21, '4': 1, '5': 3, '8': {}, '10': 'maxItems'},
+    {'1': 'min_items', '3': 22, '4': 1, '5': 3, '8': {}, '10': 'minItems'},
     {'1': 'properties', '3': 7, '4': 3, '5': 11, '6': '.google.ai.generativelanguage.v1beta.Schema.PropertiesEntry', '8': {}, '10': 'properties'},
     {'1': 'required', '3': 8, '4': 3, '5': 9, '8': {}, '10': 'required'},
   ],
@@ -316,12 +365,12 @@ final $typed_data.Uint8List schemaDescriptor = $convert.base64Decode(
     'c2NyaXB0aW9uGAMgASgJQgPgQQFSC2Rlc2NyaXB0aW9uEh8KCG51bGxhYmxlGAQgASgIQgPgQQ'
     'FSCG51bGxhYmxlEhcKBGVudW0YBSADKAlCA+BBAVIEZW51bRJLCgVpdGVtcxgGIAEoCzIrLmdv'
     'b2dsZS5haS5nZW5lcmF0aXZlbGFuZ3VhZ2UudjFiZXRhLlNjaGVtYUID4EEBSABSBWl0ZW1ziA'
-    'EBEiAKCW1heF9pdGVtcxgVIAEoA0ID4EEBUghtYXhJdGVtcxJgCgpwcm9wZXJ0aWVzGAcgAygL'
-    'MjsuZ29vZ2xlLmFpLmdlbmVyYXRpdmVsYW5ndWFnZS52MWJldGEuU2NoZW1hLlByb3BlcnRpZX'
-    'NFbnRyeUID4EEBUgpwcm9wZXJ0aWVzEh8KCHJlcXVpcmVkGAggAygJQgPgQQFSCHJlcXVpcmVk'
-    'GmoKD1Byb3BlcnRpZXNFbnRyeRIQCgNrZXkYASABKAlSA2tleRJBCgV2YWx1ZRgCIAEoCzIrLm'
-    'dvb2dsZS5haS5nZW5lcmF0aXZlbGFuZ3VhZ2UudjFiZXRhLlNjaGVtYVIFdmFsdWU6AjgBQggK'
-    'Bl9pdGVtcw==');
+    'EBEiAKCW1heF9pdGVtcxgVIAEoA0ID4EEBUghtYXhJdGVtcxIgCgltaW5faXRlbXMYFiABKANC'
+    'A+BBAVIIbWluSXRlbXMSYAoKcHJvcGVydGllcxgHIAMoCzI7Lmdvb2dsZS5haS5nZW5lcmF0aX'
+    'ZlbGFuZ3VhZ2UudjFiZXRhLlNjaGVtYS5Qcm9wZXJ0aWVzRW50cnlCA+BBAVIKcHJvcGVydGll'
+    'cxIfCghyZXF1aXJlZBgIIAMoCUID4EEBUghyZXF1aXJlZBpqCg9Qcm9wZXJ0aWVzRW50cnkSEA'
+    'oDa2V5GAEgASgJUgNrZXkSQQoFdmFsdWUYAiABKAsyKy5nb29nbGUuYWkuZ2VuZXJhdGl2ZWxh'
+    'bmd1YWdlLnYxYmV0YS5TY2hlbWFSBXZhbHVlOgI4AUIICgZfaXRlbXM=');
 
 @$core.Deprecated('Use groundingPassageDescriptor instead')
 const GroundingPassage$json = {

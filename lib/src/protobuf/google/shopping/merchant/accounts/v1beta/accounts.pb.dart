@@ -15,9 +15,9 @@ import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../protobuf/empty.pb.dart' as $3;
-import '../../../../protobuf/field_mask.pb.dart' as $330;
-import '../../../../type/datetime.pb.dart' as $325;
-import 'user.pb.dart' as $216;
+import '../../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../../type/datetime.pb.dart' as $327;
+import 'user.pb.dart' as $217;
 
 /// An account.
 class Account extends $pb.GeneratedMessage {
@@ -27,7 +27,7 @@ class Account extends $pb.GeneratedMessage {
     $core.String? accountName,
     $core.bool? adultContent,
     $core.bool? testAccount,
-    $325.TimeZone? timeZone,
+    $327.TimeZone? timeZone,
     $core.String? languageCode,
   }) {
     final $result = create();
@@ -64,7 +64,7 @@ class Account extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'accountName')
     ..aOB(4, _omitFieldNames ? '' : 'adultContent')
     ..aOB(5, _omitFieldNames ? '' : 'testAccount')
-    ..aOM<$325.TimeZone>(6, _omitFieldNames ? '' : 'timeZone', subBuilder: $325.TimeZone.create)
+    ..aOM<$327.TimeZone>(6, _omitFieldNames ? '' : 'timeZone', subBuilder: $327.TimeZone.create)
     ..aOS(7, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
   ;
@@ -152,15 +152,15 @@ class Account extends $pb.GeneratedMessage {
   ///  For reads, `time_zone` always returns the `display_time_zone`. If
   ///  `display_time_zone` doesn't exist for your account, `time_zone` is empty.
   @$pb.TagNumber(6)
-  $325.TimeZone get timeZone => $_getN(5);
+  $327.TimeZone get timeZone => $_getN(5);
   @$pb.TagNumber(6)
-  set timeZone($325.TimeZone v) { setField(6, v); }
+  set timeZone($327.TimeZone v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeZone() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimeZone() => clearField(6);
   @$pb.TagNumber(6)
-  $325.TimeZone ensureTimeZone() => $_ensure(5);
+  $327.TimeZone ensureTimeZone() => $_ensure(5);
 
   /// Required. The account's [BCP-47 language
   /// code](https://tools.ietf.org/html/bcp47), such as `en-US` or `sr-Latn`.
@@ -384,7 +384,7 @@ class CreateAndConfigureAccountRequest_AddAccountService extends $pb.GeneratedMe
 class CreateAndConfigureAccountRequest extends $pb.GeneratedMessage {
   factory CreateAndConfigureAccountRequest({
     Account? account,
-    $core.Iterable<$216.CreateUserRequest>? users,
+    $core.Iterable<$217.CreateUserRequest>? users,
     CreateAndConfigureAccountRequest_AcceptTermsOfService? acceptTermsOfService,
     $core.Iterable<CreateAndConfigureAccountRequest_AddAccountService>? service,
   }) {
@@ -409,7 +409,7 @@ class CreateAndConfigureAccountRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAndConfigureAccountRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOM<Account>(1, _omitFieldNames ? '' : 'account', subBuilder: Account.create)
-    ..pc<$216.CreateUserRequest>(2, _omitFieldNames ? '' : 'users', $pb.PbFieldType.PM, subBuilder: $216.CreateUserRequest.create)
+    ..pc<$217.CreateUserRequest>(2, _omitFieldNames ? '' : 'users', $pb.PbFieldType.PM, subBuilder: $217.CreateUserRequest.create)
     ..aOM<CreateAndConfigureAccountRequest_AcceptTermsOfService>(3, _omitFieldNames ? '' : 'acceptTermsOfService', subBuilder: CreateAndConfigureAccountRequest_AcceptTermsOfService.create)
     ..pc<CreateAndConfigureAccountRequest_AddAccountService>(4, _omitFieldNames ? '' : 'service', $pb.PbFieldType.PM, subBuilder: CreateAndConfigureAccountRequest_AddAccountService.create)
     ..hasRequiredFields = false
@@ -450,7 +450,7 @@ class CreateAndConfigureAccountRequest extends $pb.GeneratedMessage {
 
   /// Optional. Users to be added to the account.
   @$pb.TagNumber(2)
-  $core.List<$216.CreateUserRequest> get users => $_getList(1);
+  $core.List<$217.CreateUserRequest> get users => $_getList(1);
 
   /// Optional. The Terms of Service (ToS) to be accepted immediately upon
   /// account creation.
@@ -529,7 +529,7 @@ class DeleteAccountRequest extends $pb.GeneratedMessage {
 class UpdateAccountRequest extends $pb.GeneratedMessage {
   factory UpdateAccountRequest({
     Account? account,
-    $330.FieldMask? updateMask,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (account != null) {
@@ -546,7 +546,7 @@ class UpdateAccountRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAccountRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOM<Account>(1, _omitFieldNames ? '' : 'account', subBuilder: Account.create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -585,15 +585,15 @@ class UpdateAccountRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields being updated.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(1);
+  $332.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(1);
+  $332.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the `ListAccounts` method.

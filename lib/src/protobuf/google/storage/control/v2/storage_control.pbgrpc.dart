@@ -17,52 +17,52 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $13;
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'storage_control.pb.dart' as $250;
+import 'storage_control.pb.dart' as $252;
 
 export 'storage_control.pb.dart';
 
 @$pb.GrpcServiceName('google.storage.control.v2.StorageControl')
 class StorageControlClient extends $grpc.Client {
-  static final _$createFolder = $grpc.ClientMethod<$250.CreateFolderRequest, $250.Folder>(
+  static final _$createFolder = $grpc.ClientMethod<$252.CreateFolderRequest, $252.Folder>(
       '/google.storage.control.v2.StorageControl/CreateFolder',
-      ($250.CreateFolderRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $250.Folder.fromBuffer(value));
-  static final _$deleteFolder = $grpc.ClientMethod<$250.DeleteFolderRequest, $3.Empty>(
+      ($252.CreateFolderRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $252.Folder.fromBuffer(value));
+  static final _$deleteFolder = $grpc.ClientMethod<$252.DeleteFolderRequest, $3.Empty>(
       '/google.storage.control.v2.StorageControl/DeleteFolder',
-      ($250.DeleteFolderRequest value) => value.writeToBuffer(),
+      ($252.DeleteFolderRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$getFolder = $grpc.ClientMethod<$250.GetFolderRequest, $250.Folder>(
+  static final _$getFolder = $grpc.ClientMethod<$252.GetFolderRequest, $252.Folder>(
       '/google.storage.control.v2.StorageControl/GetFolder',
-      ($250.GetFolderRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $250.Folder.fromBuffer(value));
-  static final _$listFolders = $grpc.ClientMethod<$250.ListFoldersRequest, $250.ListFoldersResponse>(
+      ($252.GetFolderRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $252.Folder.fromBuffer(value));
+  static final _$listFolders = $grpc.ClientMethod<$252.ListFoldersRequest, $252.ListFoldersResponse>(
       '/google.storage.control.v2.StorageControl/ListFolders',
-      ($250.ListFoldersRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $250.ListFoldersResponse.fromBuffer(value));
-  static final _$renameFolder = $grpc.ClientMethod<$250.RenameFolderRequest, $13.Operation>(
+      ($252.ListFoldersRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $252.ListFoldersResponse.fromBuffer(value));
+  static final _$renameFolder = $grpc.ClientMethod<$252.RenameFolderRequest, $13.Operation>(
       '/google.storage.control.v2.StorageControl/RenameFolder',
-      ($250.RenameFolderRequest value) => value.writeToBuffer(),
+      ($252.RenameFolderRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
-  static final _$getStorageLayout = $grpc.ClientMethod<$250.GetStorageLayoutRequest, $250.StorageLayout>(
+  static final _$getStorageLayout = $grpc.ClientMethod<$252.GetStorageLayoutRequest, $252.StorageLayout>(
       '/google.storage.control.v2.StorageControl/GetStorageLayout',
-      ($250.GetStorageLayoutRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $250.StorageLayout.fromBuffer(value));
-  static final _$createManagedFolder = $grpc.ClientMethod<$250.CreateManagedFolderRequest, $250.ManagedFolder>(
+      ($252.GetStorageLayoutRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $252.StorageLayout.fromBuffer(value));
+  static final _$createManagedFolder = $grpc.ClientMethod<$252.CreateManagedFolderRequest, $252.ManagedFolder>(
       '/google.storage.control.v2.StorageControl/CreateManagedFolder',
-      ($250.CreateManagedFolderRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $250.ManagedFolder.fromBuffer(value));
-  static final _$deleteManagedFolder = $grpc.ClientMethod<$250.DeleteManagedFolderRequest, $3.Empty>(
+      ($252.CreateManagedFolderRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $252.ManagedFolder.fromBuffer(value));
+  static final _$deleteManagedFolder = $grpc.ClientMethod<$252.DeleteManagedFolderRequest, $3.Empty>(
       '/google.storage.control.v2.StorageControl/DeleteManagedFolder',
-      ($250.DeleteManagedFolderRequest value) => value.writeToBuffer(),
+      ($252.DeleteManagedFolderRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $3.Empty.fromBuffer(value));
-  static final _$getManagedFolder = $grpc.ClientMethod<$250.GetManagedFolderRequest, $250.ManagedFolder>(
+  static final _$getManagedFolder = $grpc.ClientMethod<$252.GetManagedFolderRequest, $252.ManagedFolder>(
       '/google.storage.control.v2.StorageControl/GetManagedFolder',
-      ($250.GetManagedFolderRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $250.ManagedFolder.fromBuffer(value));
-  static final _$listManagedFolders = $grpc.ClientMethod<$250.ListManagedFoldersRequest, $250.ListManagedFoldersResponse>(
+      ($252.GetManagedFolderRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $252.ManagedFolder.fromBuffer(value));
+  static final _$listManagedFolders = $grpc.ClientMethod<$252.ListManagedFoldersRequest, $252.ListManagedFoldersResponse>(
       '/google.storage.control.v2.StorageControl/ListManagedFolders',
-      ($250.ListManagedFoldersRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $250.ListManagedFoldersResponse.fromBuffer(value));
+      ($252.ListManagedFoldersRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $252.ListManagedFoldersResponse.fromBuffer(value));
 
   StorageControlClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -70,43 +70,43 @@ class StorageControlClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$250.Folder> createFolder($250.CreateFolderRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$252.Folder> createFolder($252.CreateFolderRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createFolder, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteFolder($250.DeleteFolderRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteFolder($252.DeleteFolderRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteFolder, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.Folder> getFolder($250.GetFolderRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$252.Folder> getFolder($252.GetFolderRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getFolder, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.ListFoldersResponse> listFolders($250.ListFoldersRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$252.ListFoldersResponse> listFolders($252.ListFoldersRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listFolders, request, options: options);
   }
 
-  $grpc.ResponseFuture<$13.Operation> renameFolder($250.RenameFolderRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> renameFolder($252.RenameFolderRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$renameFolder, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.StorageLayout> getStorageLayout($250.GetStorageLayoutRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$252.StorageLayout> getStorageLayout($252.GetStorageLayoutRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getStorageLayout, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.ManagedFolder> createManagedFolder($250.CreateManagedFolderRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$252.ManagedFolder> createManagedFolder($252.CreateManagedFolderRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createManagedFolder, request, options: options);
   }
 
-  $grpc.ResponseFuture<$3.Empty> deleteManagedFolder($250.DeleteManagedFolderRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$3.Empty> deleteManagedFolder($252.DeleteManagedFolderRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteManagedFolder, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.ManagedFolder> getManagedFolder($250.GetManagedFolderRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$252.ManagedFolder> getManagedFolder($252.GetManagedFolderRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getManagedFolder, request, options: options);
   }
 
-  $grpc.ResponseFuture<$250.ListManagedFoldersResponse> listManagedFolders($250.ListManagedFoldersRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$252.ListManagedFoldersResponse> listManagedFolders($252.ListManagedFoldersRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listManagedFolders, request, options: options);
   }
 }
@@ -116,126 +116,126 @@ abstract class StorageControlServiceBase extends $grpc.Service {
   $core.String get $name => 'google.storage.control.v2.StorageControl';
 
   StorageControlServiceBase() {
-    $addMethod($grpc.ServiceMethod<$250.CreateFolderRequest, $250.Folder>(
+    $addMethod($grpc.ServiceMethod<$252.CreateFolderRequest, $252.Folder>(
         'CreateFolder',
         createFolder_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.CreateFolderRequest.fromBuffer(value),
-        ($250.Folder value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.DeleteFolderRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $252.CreateFolderRequest.fromBuffer(value),
+        ($252.Folder value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$252.DeleteFolderRequest, $3.Empty>(
         'DeleteFolder',
         deleteFolder_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.DeleteFolderRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $252.DeleteFolderRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.GetFolderRequest, $250.Folder>(
+    $addMethod($grpc.ServiceMethod<$252.GetFolderRequest, $252.Folder>(
         'GetFolder',
         getFolder_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.GetFolderRequest.fromBuffer(value),
-        ($250.Folder value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.ListFoldersRequest, $250.ListFoldersResponse>(
+        ($core.List<$core.int> value) => $252.GetFolderRequest.fromBuffer(value),
+        ($252.Folder value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$252.ListFoldersRequest, $252.ListFoldersResponse>(
         'ListFolders',
         listFolders_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.ListFoldersRequest.fromBuffer(value),
-        ($250.ListFoldersResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.RenameFolderRequest, $13.Operation>(
+        ($core.List<$core.int> value) => $252.ListFoldersRequest.fromBuffer(value),
+        ($252.ListFoldersResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$252.RenameFolderRequest, $13.Operation>(
         'RenameFolder',
         renameFolder_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.RenameFolderRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $252.RenameFolderRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.GetStorageLayoutRequest, $250.StorageLayout>(
+    $addMethod($grpc.ServiceMethod<$252.GetStorageLayoutRequest, $252.StorageLayout>(
         'GetStorageLayout',
         getStorageLayout_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.GetStorageLayoutRequest.fromBuffer(value),
-        ($250.StorageLayout value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.CreateManagedFolderRequest, $250.ManagedFolder>(
+        ($core.List<$core.int> value) => $252.GetStorageLayoutRequest.fromBuffer(value),
+        ($252.StorageLayout value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$252.CreateManagedFolderRequest, $252.ManagedFolder>(
         'CreateManagedFolder',
         createManagedFolder_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.CreateManagedFolderRequest.fromBuffer(value),
-        ($250.ManagedFolder value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.DeleteManagedFolderRequest, $3.Empty>(
+        ($core.List<$core.int> value) => $252.CreateManagedFolderRequest.fromBuffer(value),
+        ($252.ManagedFolder value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$252.DeleteManagedFolderRequest, $3.Empty>(
         'DeleteManagedFolder',
         deleteManagedFolder_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.DeleteManagedFolderRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $252.DeleteManagedFolderRequest.fromBuffer(value),
         ($3.Empty value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.GetManagedFolderRequest, $250.ManagedFolder>(
+    $addMethod($grpc.ServiceMethod<$252.GetManagedFolderRequest, $252.ManagedFolder>(
         'GetManagedFolder',
         getManagedFolder_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.GetManagedFolderRequest.fromBuffer(value),
-        ($250.ManagedFolder value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$250.ListManagedFoldersRequest, $250.ListManagedFoldersResponse>(
+        ($core.List<$core.int> value) => $252.GetManagedFolderRequest.fromBuffer(value),
+        ($252.ManagedFolder value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$252.ListManagedFoldersRequest, $252.ListManagedFoldersResponse>(
         'ListManagedFolders',
         listManagedFolders_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $250.ListManagedFoldersRequest.fromBuffer(value),
-        ($250.ListManagedFoldersResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $252.ListManagedFoldersRequest.fromBuffer(value),
+        ($252.ListManagedFoldersResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$250.Folder> createFolder_Pre($grpc.ServiceCall call, $async.Future<$250.CreateFolderRequest> request) async {
+  $async.Future<$252.Folder> createFolder_Pre($grpc.ServiceCall call, $async.Future<$252.CreateFolderRequest> request) async {
     return createFolder(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteFolder_Pre($grpc.ServiceCall call, $async.Future<$250.DeleteFolderRequest> request) async {
+  $async.Future<$3.Empty> deleteFolder_Pre($grpc.ServiceCall call, $async.Future<$252.DeleteFolderRequest> request) async {
     return deleteFolder(call, await request);
   }
 
-  $async.Future<$250.Folder> getFolder_Pre($grpc.ServiceCall call, $async.Future<$250.GetFolderRequest> request) async {
+  $async.Future<$252.Folder> getFolder_Pre($grpc.ServiceCall call, $async.Future<$252.GetFolderRequest> request) async {
     return getFolder(call, await request);
   }
 
-  $async.Future<$250.ListFoldersResponse> listFolders_Pre($grpc.ServiceCall call, $async.Future<$250.ListFoldersRequest> request) async {
+  $async.Future<$252.ListFoldersResponse> listFolders_Pre($grpc.ServiceCall call, $async.Future<$252.ListFoldersRequest> request) async {
     return listFolders(call, await request);
   }
 
-  $async.Future<$13.Operation> renameFolder_Pre($grpc.ServiceCall call, $async.Future<$250.RenameFolderRequest> request) async {
+  $async.Future<$13.Operation> renameFolder_Pre($grpc.ServiceCall call, $async.Future<$252.RenameFolderRequest> request) async {
     return renameFolder(call, await request);
   }
 
-  $async.Future<$250.StorageLayout> getStorageLayout_Pre($grpc.ServiceCall call, $async.Future<$250.GetStorageLayoutRequest> request) async {
+  $async.Future<$252.StorageLayout> getStorageLayout_Pre($grpc.ServiceCall call, $async.Future<$252.GetStorageLayoutRequest> request) async {
     return getStorageLayout(call, await request);
   }
 
-  $async.Future<$250.ManagedFolder> createManagedFolder_Pre($grpc.ServiceCall call, $async.Future<$250.CreateManagedFolderRequest> request) async {
+  $async.Future<$252.ManagedFolder> createManagedFolder_Pre($grpc.ServiceCall call, $async.Future<$252.CreateManagedFolderRequest> request) async {
     return createManagedFolder(call, await request);
   }
 
-  $async.Future<$3.Empty> deleteManagedFolder_Pre($grpc.ServiceCall call, $async.Future<$250.DeleteManagedFolderRequest> request) async {
+  $async.Future<$3.Empty> deleteManagedFolder_Pre($grpc.ServiceCall call, $async.Future<$252.DeleteManagedFolderRequest> request) async {
     return deleteManagedFolder(call, await request);
   }
 
-  $async.Future<$250.ManagedFolder> getManagedFolder_Pre($grpc.ServiceCall call, $async.Future<$250.GetManagedFolderRequest> request) async {
+  $async.Future<$252.ManagedFolder> getManagedFolder_Pre($grpc.ServiceCall call, $async.Future<$252.GetManagedFolderRequest> request) async {
     return getManagedFolder(call, await request);
   }
 
-  $async.Future<$250.ListManagedFoldersResponse> listManagedFolders_Pre($grpc.ServiceCall call, $async.Future<$250.ListManagedFoldersRequest> request) async {
+  $async.Future<$252.ListManagedFoldersResponse> listManagedFolders_Pre($grpc.ServiceCall call, $async.Future<$252.ListManagedFoldersRequest> request) async {
     return listManagedFolders(call, await request);
   }
 
-  $async.Future<$250.Folder> createFolder($grpc.ServiceCall call, $250.CreateFolderRequest request);
-  $async.Future<$3.Empty> deleteFolder($grpc.ServiceCall call, $250.DeleteFolderRequest request);
-  $async.Future<$250.Folder> getFolder($grpc.ServiceCall call, $250.GetFolderRequest request);
-  $async.Future<$250.ListFoldersResponse> listFolders($grpc.ServiceCall call, $250.ListFoldersRequest request);
-  $async.Future<$13.Operation> renameFolder($grpc.ServiceCall call, $250.RenameFolderRequest request);
-  $async.Future<$250.StorageLayout> getStorageLayout($grpc.ServiceCall call, $250.GetStorageLayoutRequest request);
-  $async.Future<$250.ManagedFolder> createManagedFolder($grpc.ServiceCall call, $250.CreateManagedFolderRequest request);
-  $async.Future<$3.Empty> deleteManagedFolder($grpc.ServiceCall call, $250.DeleteManagedFolderRequest request);
-  $async.Future<$250.ManagedFolder> getManagedFolder($grpc.ServiceCall call, $250.GetManagedFolderRequest request);
-  $async.Future<$250.ListManagedFoldersResponse> listManagedFolders($grpc.ServiceCall call, $250.ListManagedFoldersRequest request);
+  $async.Future<$252.Folder> createFolder($grpc.ServiceCall call, $252.CreateFolderRequest request);
+  $async.Future<$3.Empty> deleteFolder($grpc.ServiceCall call, $252.DeleteFolderRequest request);
+  $async.Future<$252.Folder> getFolder($grpc.ServiceCall call, $252.GetFolderRequest request);
+  $async.Future<$252.ListFoldersResponse> listFolders($grpc.ServiceCall call, $252.ListFoldersRequest request);
+  $async.Future<$13.Operation> renameFolder($grpc.ServiceCall call, $252.RenameFolderRequest request);
+  $async.Future<$252.StorageLayout> getStorageLayout($grpc.ServiceCall call, $252.GetStorageLayoutRequest request);
+  $async.Future<$252.ManagedFolder> createManagedFolder($grpc.ServiceCall call, $252.CreateManagedFolderRequest request);
+  $async.Future<$3.Empty> deleteManagedFolder($grpc.ServiceCall call, $252.DeleteManagedFolderRequest request);
+  $async.Future<$252.ManagedFolder> getManagedFolder($grpc.ServiceCall call, $252.GetManagedFolderRequest request);
+  $async.Future<$252.ListManagedFoldersResponse> listManagedFolders($grpc.ServiceCall call, $252.ListManagedFoldersRequest request);
 }

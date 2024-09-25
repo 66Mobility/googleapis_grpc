@@ -15,20 +15,20 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'region_lookup_service.pb.dart' as $172;
+import 'region_lookup_service.pb.dart' as $173;
 
 export 'region_lookup_service.pb.dart';
 
 @$pb.GrpcServiceName('google.maps.regionlookup.v1alpha.RegionLookup')
 class RegionLookupClient extends $grpc.Client {
-  static final _$lookupRegion = $grpc.ClientMethod<$172.LookupRegionRequest, $172.LookupRegionResponse>(
+  static final _$lookupRegion = $grpc.ClientMethod<$173.LookupRegionRequest, $173.LookupRegionResponse>(
       '/google.maps.regionlookup.v1alpha.RegionLookup/LookupRegion',
-      ($172.LookupRegionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $172.LookupRegionResponse.fromBuffer(value));
-  static final _$searchRegion = $grpc.ClientMethod<$172.SearchRegionRequest, $172.SearchRegionResponse>(
+      ($173.LookupRegionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $173.LookupRegionResponse.fromBuffer(value));
+  static final _$searchRegion = $grpc.ClientMethod<$173.SearchRegionRequest, $173.SearchRegionResponse>(
       '/google.maps.regionlookup.v1alpha.RegionLookup/SearchRegion',
-      ($172.SearchRegionRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $172.SearchRegionResponse.fromBuffer(value));
+      ($173.SearchRegionRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $173.SearchRegionResponse.fromBuffer(value));
 
   RegionLookupClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -36,11 +36,11 @@ class RegionLookupClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$172.LookupRegionResponse> lookupRegion($172.LookupRegionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$173.LookupRegionResponse> lookupRegion($173.LookupRegionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$lookupRegion, request, options: options);
   }
 
-  $grpc.ResponseFuture<$172.SearchRegionResponse> searchRegion($172.SearchRegionRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$173.SearchRegionResponse> searchRegion($173.SearchRegionRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$searchRegion, request, options: options);
   }
 }
@@ -50,30 +50,30 @@ abstract class RegionLookupServiceBase extends $grpc.Service {
   $core.String get $name => 'google.maps.regionlookup.v1alpha.RegionLookup';
 
   RegionLookupServiceBase() {
-    $addMethod($grpc.ServiceMethod<$172.LookupRegionRequest, $172.LookupRegionResponse>(
+    $addMethod($grpc.ServiceMethod<$173.LookupRegionRequest, $173.LookupRegionResponse>(
         'LookupRegion',
         lookupRegion_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $172.LookupRegionRequest.fromBuffer(value),
-        ($172.LookupRegionResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$172.SearchRegionRequest, $172.SearchRegionResponse>(
+        ($core.List<$core.int> value) => $173.LookupRegionRequest.fromBuffer(value),
+        ($173.LookupRegionResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$173.SearchRegionRequest, $173.SearchRegionResponse>(
         'SearchRegion',
         searchRegion_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $172.SearchRegionRequest.fromBuffer(value),
-        ($172.SearchRegionResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $173.SearchRegionRequest.fromBuffer(value),
+        ($173.SearchRegionResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$172.LookupRegionResponse> lookupRegion_Pre($grpc.ServiceCall call, $async.Future<$172.LookupRegionRequest> request) async {
+  $async.Future<$173.LookupRegionResponse> lookupRegion_Pre($grpc.ServiceCall call, $async.Future<$173.LookupRegionRequest> request) async {
     return lookupRegion(call, await request);
   }
 
-  $async.Future<$172.SearchRegionResponse> searchRegion_Pre($grpc.ServiceCall call, $async.Future<$172.SearchRegionRequest> request) async {
+  $async.Future<$173.SearchRegionResponse> searchRegion_Pre($grpc.ServiceCall call, $async.Future<$173.SearchRegionRequest> request) async {
     return searchRegion(call, await request);
   }
 
-  $async.Future<$172.LookupRegionResponse> lookupRegion($grpc.ServiceCall call, $172.LookupRegionRequest request);
-  $async.Future<$172.SearchRegionResponse> searchRegion($grpc.ServiceCall call, $172.SearchRegionRequest request);
+  $async.Future<$173.LookupRegionResponse> lookupRegion($grpc.ServiceCall call, $173.LookupRegionRequest request);
+  $async.Future<$173.SearchRegionResponse> searchRegion($grpc.ServiceCall call, $173.SearchRegionRequest request);
 }

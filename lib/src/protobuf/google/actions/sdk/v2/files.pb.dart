@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'config_file.pb.dart' as $297;
-import 'data_file.pb.dart' as $298;
+import 'config_file.pb.dart' as $299;
+import 'data_file.pb.dart' as $300;
 
 enum Files_FileType {
   configFiles, 
@@ -25,8 +25,8 @@ enum Files_FileType {
 /// Wrapper for a list of files.
 class Files extends $pb.GeneratedMessage {
   factory Files({
-    $297.ConfigFiles? configFiles,
-    $298.DataFiles? dataFiles,
+    $299.ConfigFiles? configFiles,
+    $300.DataFiles? dataFiles,
   }) {
     final $result = create();
     if (configFiles != null) {
@@ -48,8 +48,8 @@ class Files extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Files', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$297.ConfigFiles>(1, _omitFieldNames ? '' : 'configFiles', subBuilder: $297.ConfigFiles.create)
-    ..aOM<$298.DataFiles>(2, _omitFieldNames ? '' : 'dataFiles', subBuilder: $298.DataFiles.create)
+    ..aOM<$299.ConfigFiles>(1, _omitFieldNames ? '' : 'configFiles', subBuilder: $299.ConfigFiles.create)
+    ..aOM<$300.DataFiles>(2, _omitFieldNames ? '' : 'dataFiles', subBuilder: $300.DataFiles.create)
     ..hasRequiredFields = false
   ;
 
@@ -80,28 +80,28 @@ class Files extends $pb.GeneratedMessage {
   /// List of config files. This includes manifest, settings, interaction model
   /// resource bundles and more.
   @$pb.TagNumber(1)
-  $297.ConfigFiles get configFiles => $_getN(0);
+  $299.ConfigFiles get configFiles => $_getN(0);
   @$pb.TagNumber(1)
-  set configFiles($297.ConfigFiles v) { setField(1, v); }
+  set configFiles($299.ConfigFiles v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasConfigFiles() => $_has(0);
   @$pb.TagNumber(1)
   void clearConfigFiles() => clearField(1);
   @$pb.TagNumber(1)
-  $297.ConfigFiles ensureConfigFiles() => $_ensure(0);
+  $299.ConfigFiles ensureConfigFiles() => $_ensure(0);
 
   /// List of data files. This includes image, audio file, cloud function
   /// source code.
   @$pb.TagNumber(2)
-  $298.DataFiles get dataFiles => $_getN(1);
+  $300.DataFiles get dataFiles => $_getN(1);
   @$pb.TagNumber(2)
-  set dataFiles($298.DataFiles v) { setField(2, v); }
+  set dataFiles($300.DataFiles v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDataFiles() => $_has(1);
   @$pb.TagNumber(2)
   void clearDataFiles() => clearField(2);
   @$pb.TagNumber(2)
-  $298.DataFiles ensureDataFiles() => $_ensure(1);
+  $300.DataFiles ensureDataFiles() => $_ensure(1);
 }
 
 

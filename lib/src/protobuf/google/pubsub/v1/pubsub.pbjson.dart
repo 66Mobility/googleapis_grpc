@@ -52,8 +52,10 @@ const IngestionDataSourceSettings$json = {
   '1': 'IngestionDataSourceSettings',
   '2': [
     {'1': 'aws_kinesis', '3': 1, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.AwsKinesis', '8': {}, '9': 0, '10': 'awsKinesis'},
+    {'1': 'cloud_storage', '3': 2, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage', '8': {}, '9': 0, '10': 'cloudStorage'},
+    {'1': 'platform_logs_settings', '3': 4, '4': 1, '5': 11, '6': '.google.pubsub.v1.PlatformLogsSettings', '8': {}, '10': 'platformLogsSettings'},
   ],
-  '3': [IngestionDataSourceSettings_AwsKinesis$json],
+  '3': [IngestionDataSourceSettings_AwsKinesis$json, IngestionDataSourceSettings_CloudStorage$json],
   '8': [
     {'1': 'source'},
   ],
@@ -85,19 +87,120 @@ const IngestionDataSourceSettings_AwsKinesis_State$json = {
   ],
 };
 
+@$core.Deprecated('Use ingestionDataSourceSettingsDescriptor instead')
+const IngestionDataSourceSettings_CloudStorage$json = {
+  '1': 'CloudStorage',
+  '2': [
+    {'1': 'state', '3': 1, '4': 1, '5': 14, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.State', '8': {}, '10': 'state'},
+    {'1': 'bucket', '3': 2, '4': 1, '5': 9, '8': {}, '10': 'bucket'},
+    {'1': 'text_format', '3': 3, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.TextFormat', '8': {}, '9': 0, '10': 'textFormat'},
+    {'1': 'avro_format', '3': 4, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.AvroFormat', '8': {}, '9': 0, '10': 'avroFormat'},
+    {'1': 'pubsub_avro_format', '3': 5, '4': 1, '5': 11, '6': '.google.pubsub.v1.IngestionDataSourceSettings.CloudStorage.PubSubAvroFormat', '8': {}, '9': 0, '10': 'pubsubAvroFormat'},
+    {'1': 'minimum_object_create_time', '3': 6, '4': 1, '5': 11, '6': '.google.protobuf.Timestamp', '8': {}, '10': 'minimumObjectCreateTime'},
+    {'1': 'match_glob', '3': 9, '4': 1, '5': 9, '8': {}, '10': 'matchGlob'},
+  ],
+  '3': [IngestionDataSourceSettings_CloudStorage_TextFormat$json, IngestionDataSourceSettings_CloudStorage_AvroFormat$json, IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat$json],
+  '4': [IngestionDataSourceSettings_CloudStorage_State$json],
+  '8': [
+    {'1': 'input_format'},
+  ],
+};
+
+@$core.Deprecated('Use ingestionDataSourceSettingsDescriptor instead')
+const IngestionDataSourceSettings_CloudStorage_TextFormat$json = {
+  '1': 'TextFormat',
+  '2': [
+    {'1': 'delimiter', '3': 1, '4': 1, '5': 9, '8': {}, '9': 0, '10': 'delimiter', '17': true},
+  ],
+  '8': [
+    {'1': '_delimiter'},
+  ],
+};
+
+@$core.Deprecated('Use ingestionDataSourceSettingsDescriptor instead')
+const IngestionDataSourceSettings_CloudStorage_AvroFormat$json = {
+  '1': 'AvroFormat',
+};
+
+@$core.Deprecated('Use ingestionDataSourceSettingsDescriptor instead')
+const IngestionDataSourceSettings_CloudStorage_PubSubAvroFormat$json = {
+  '1': 'PubSubAvroFormat',
+};
+
+@$core.Deprecated('Use ingestionDataSourceSettingsDescriptor instead')
+const IngestionDataSourceSettings_CloudStorage_State$json = {
+  '1': 'State',
+  '2': [
+    {'1': 'STATE_UNSPECIFIED', '2': 0},
+    {'1': 'ACTIVE', '2': 1},
+    {'1': 'CLOUD_STORAGE_PERMISSION_DENIED', '2': 2},
+    {'1': 'PUBLISH_PERMISSION_DENIED', '2': 3},
+    {'1': 'BUCKET_NOT_FOUND', '2': 4},
+    {'1': 'TOO_MANY_OBJECTS', '2': 5},
+  ],
+};
+
 /// Descriptor for `IngestionDataSourceSettings`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List ingestionDataSourceSettingsDescriptor = $convert.base64Decode(
     'ChtJbmdlc3Rpb25EYXRhU291cmNlU2V0dGluZ3MSYAoLYXdzX2tpbmVzaXMYASABKAsyOC5nb2'
     '9nbGUucHVic3ViLnYxLkluZ2VzdGlvbkRhdGFTb3VyY2VTZXR0aW5ncy5Bd3NLaW5lc2lzQgPg'
-    'QQFIAFIKYXdzS2luZXNpcxqoAwoKQXdzS2luZXNpcxJZCgVzdGF0ZRgBIAEoDjI+Lmdvb2dsZS'
-    '5wdWJzdWIudjEuSW5nZXN0aW9uRGF0YVNvdXJjZVNldHRpbmdzLkF3c0tpbmVzaXMuU3RhdGVC'
-    'A+BBA1IFc3RhdGUSIgoKc3RyZWFtX2FybhgCIAEoCUID4EECUglzdHJlYW1Bcm4SJgoMY29uc3'
-    'VtZXJfYXJuGAMgASgJQgPgQQJSC2NvbnN1bWVyQXJuEiUKDGF3c19yb2xlX2FybhgEIAEoCUID'
-    '4EECUgphd3NSb2xlQXJuEjMKE2djcF9zZXJ2aWNlX2FjY291bnQYBSABKAlCA+BBAlIRZ2NwU2'
-    'VydmljZUFjY291bnQilgEKBVN0YXRlEhUKEVNUQVRFX1VOU1BFQ0lGSUVEEAASCgoGQUNUSVZF'
-    'EAESHQoZS0lORVNJU19QRVJNSVNTSU9OX0RFTklFRBACEh0KGVBVQkxJU0hfUEVSTUlTU0lPTl'
-    '9ERU5JRUQQAxIUChBTVFJFQU1fTk9UX0ZPVU5EEAQSFgoSQ09OU1VNRVJfTk9UX0ZPVU5EEAVC'
-    'CAoGc291cmNl');
+    'QQFIAFIKYXdzS2luZXNpcxJmCg1jbG91ZF9zdG9yYWdlGAIgASgLMjouZ29vZ2xlLnB1YnN1Yi'
+    '52MS5Jbmdlc3Rpb25EYXRhU291cmNlU2V0dGluZ3MuQ2xvdWRTdG9yYWdlQgPgQQFIAFIMY2xv'
+    'dWRTdG9yYWdlEmEKFnBsYXRmb3JtX2xvZ3Nfc2V0dGluZ3MYBCABKAsyJi5nb29nbGUucHVic3'
+    'ViLnYxLlBsYXRmb3JtTG9nc1NldHRpbmdzQgPgQQFSFHBsYXRmb3JtTG9nc1NldHRpbmdzGqgD'
+    'CgpBd3NLaW5lc2lzElkKBXN0YXRlGAEgASgOMj4uZ29vZ2xlLnB1YnN1Yi52MS5Jbmdlc3Rpb2'
+    '5EYXRhU291cmNlU2V0dGluZ3MuQXdzS2luZXNpcy5TdGF0ZUID4EEDUgVzdGF0ZRIiCgpzdHJl'
+    'YW1fYXJuGAIgASgJQgPgQQJSCXN0cmVhbUFybhImCgxjb25zdW1lcl9hcm4YAyABKAlCA+BBAl'
+    'ILY29uc3VtZXJBcm4SJQoMYXdzX3JvbGVfYXJuGAQgASgJQgPgQQJSCmF3c1JvbGVBcm4SMwoT'
+    'Z2NwX3NlcnZpY2VfYWNjb3VudBgFIAEoCUID4EECUhFnY3BTZXJ2aWNlQWNjb3VudCKWAQoFU3'
+    'RhdGUSFQoRU1RBVEVfVU5TUEVDSUZJRUQQABIKCgZBQ1RJVkUQARIdChlLSU5FU0lTX1BFUk1J'
+    'U1NJT05fREVOSUVEEAISHQoZUFVCTElTSF9QRVJNSVNTSU9OX0RFTklFRBADEhQKEFNUUkVBTV'
+    '9OT1RfRk9VTkQQBBIWChJDT05TVU1FUl9OT1RfRk9VTkQQBRr+BgoMQ2xvdWRTdG9yYWdlElsK'
+    'BXN0YXRlGAEgASgOMkAuZ29vZ2xlLnB1YnN1Yi52MS5Jbmdlc3Rpb25EYXRhU291cmNlU2V0dG'
+    'luZ3MuQ2xvdWRTdG9yYWdlLlN0YXRlQgPgQQNSBXN0YXRlEhsKBmJ1Y2tldBgCIAEoCUID4EEB'
+    'UgZidWNrZXQSbQoLdGV4dF9mb3JtYXQYAyABKAsyRS5nb29nbGUucHVic3ViLnYxLkluZ2VzdG'
+    'lvbkRhdGFTb3VyY2VTZXR0aW5ncy5DbG91ZFN0b3JhZ2UuVGV4dEZvcm1hdEID4EEBSABSCnRl'
+    'eHRGb3JtYXQSbQoLYXZyb19mb3JtYXQYBCABKAsyRS5nb29nbGUucHVic3ViLnYxLkluZ2VzdG'
+    'lvbkRhdGFTb3VyY2VTZXR0aW5ncy5DbG91ZFN0b3JhZ2UuQXZyb0Zvcm1hdEID4EEBSABSCmF2'
+    'cm9Gb3JtYXQSgAEKEnB1YnN1Yl9hdnJvX2Zvcm1hdBgFIAEoCzJLLmdvb2dsZS5wdWJzdWIudj'
+    'EuSW5nZXN0aW9uRGF0YVNvdXJjZVNldHRpbmdzLkNsb3VkU3RvcmFnZS5QdWJTdWJBdnJvRm9y'
+    'bWF0QgPgQQFIAFIQcHVic3ViQXZyb0Zvcm1hdBJcChptaW5pbXVtX29iamVjdF9jcmVhdGVfdG'
+    'ltZRgGIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCA+BBAVIXbWluaW11bU9iamVj'
+    'dENyZWF0ZVRpbWUSIgoKbWF0Y2hfZ2xvYhgJIAEoCUID4EEBUgltYXRjaEdsb2IaQgoKVGV4dE'
+    'Zvcm1hdBImCglkZWxpbWl0ZXIYASABKAlCA+BBAUgAUglkZWxpbWl0ZXKIAQFCDAoKX2RlbGlt'
+    'aXRlchoMCgpBdnJvRm9ybWF0GhIKEFB1YlN1YkF2cm9Gb3JtYXQimgEKBVN0YXRlEhUKEVNUQV'
+    'RFX1VOU1BFQ0lGSUVEEAASCgoGQUNUSVZFEAESIwofQ0xPVURfU1RPUkFHRV9QRVJNSVNTSU9O'
+    'X0RFTklFRBACEh0KGVBVQkxJU0hfUEVSTUlTU0lPTl9ERU5JRUQQAxIUChBCVUNLRVRfTk9UX0'
+    'ZPVU5EEAQSFAoQVE9PX01BTllfT0JKRUNUUxAFQg4KDGlucHV0X2Zvcm1hdEIICgZzb3VyY2U=');
+
+@$core.Deprecated('Use platformLogsSettingsDescriptor instead')
+const PlatformLogsSettings$json = {
+  '1': 'PlatformLogsSettings',
+  '2': [
+    {'1': 'severity', '3': 1, '4': 1, '5': 14, '6': '.google.pubsub.v1.PlatformLogsSettings.Severity', '8': {}, '10': 'severity'},
+  ],
+  '4': [PlatformLogsSettings_Severity$json],
+};
+
+@$core.Deprecated('Use platformLogsSettingsDescriptor instead')
+const PlatformLogsSettings_Severity$json = {
+  '1': 'Severity',
+  '2': [
+    {'1': 'SEVERITY_UNSPECIFIED', '2': 0},
+    {'1': 'DISABLED', '2': 1},
+    {'1': 'DEBUG', '2': 2},
+    {'1': 'INFO', '2': 3},
+    {'1': 'WARNING', '2': 4},
+    {'1': 'ERROR', '2': 5},
+  ],
+};
+
+/// Descriptor for `PlatformLogsSettings`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List platformLogsSettingsDescriptor = $convert.base64Decode(
+    'ChRQbGF0Zm9ybUxvZ3NTZXR0aW5ncxJQCghzZXZlcml0eRgBIAEoDjIvLmdvb2dsZS5wdWJzdW'
+    'IudjEuUGxhdGZvcm1Mb2dzU2V0dGluZ3MuU2V2ZXJpdHlCA+BBAVIIc2V2ZXJpdHkiXwoIU2V2'
+    'ZXJpdHkSGAoUU0VWRVJJVFlfVU5TUEVDSUZJRUQQABIMCghESVNBQkxFRBABEgkKBURFQlVHEA'
+    'ISCAoESU5GTxADEgsKB1dBUk5JTkcQBBIJCgVFUlJPUhAF');
 
 @$core.Deprecated('Use topicDescriptor instead')
 const Topic$json = {

@@ -14,18 +14,18 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../protobuf/empty.pb.dart' as $3;
-import 'alertchart.pb.dart' as $515;
-import 'collapsible_group.pb.dart' as $517;
-import 'error_reporting_panel.pb.dart' as $521;
-import 'incident_list.pb.dart' as $519;
-import 'logs_panel.pb.dart' as $518;
-import 'piechart.pb.dart' as $520;
-import 'scorecard.pb.dart' as $513;
-import 'section_header.pb.dart' as $522;
-import 'single_view_group.pb.dart' as $523;
-import 'table.pb.dart' as $516;
-import 'text.pb.dart' as $514;
-import 'xychart.pb.dart' as $512;
+import 'alertchart.pb.dart' as $517;
+import 'collapsible_group.pb.dart' as $519;
+import 'error_reporting_panel.pb.dart' as $523;
+import 'incident_list.pb.dart' as $521;
+import 'logs_panel.pb.dart' as $520;
+import 'piechart.pb.dart' as $522;
+import 'scorecard.pb.dart' as $515;
+import 'section_header.pb.dart' as $524;
+import 'single_view_group.pb.dart' as $525;
+import 'table.pb.dart' as $518;
+import 'text.pb.dart' as $516;
+import 'xychart.pb.dart' as $514;
 
 enum Widget_Content {
   xyChart, 
@@ -49,20 +49,20 @@ enum Widget_Content {
 class Widget extends $pb.GeneratedMessage {
   factory Widget({
     $core.String? title,
-    $512.XyChart? xyChart,
-    $513.Scorecard? scorecard,
-    $514.Text? text,
+    $514.XyChart? xyChart,
+    $515.Scorecard? scorecard,
+    $516.Text? text,
     $3.Empty? blank,
-    $515.AlertChart? alertChart,
-    $516.TimeSeriesTable? timeSeriesTable,
-    $517.CollapsibleGroup? collapsibleGroup,
-    $518.LogsPanel? logsPanel,
-    $519.IncidentList? incidentList,
-    $520.PieChart? pieChart,
+    $517.AlertChart? alertChart,
+    $518.TimeSeriesTable? timeSeriesTable,
+    $519.CollapsibleGroup? collapsibleGroup,
+    $520.LogsPanel? logsPanel,
+    $521.IncidentList? incidentList,
+    $522.PieChart? pieChart,
     $core.String? id,
-    $521.ErrorReportingPanel? errorReportingPanel,
-    $522.SectionHeader? sectionHeader,
-    $523.SingleViewGroup? singleViewGroup,
+    $523.ErrorReportingPanel? errorReportingPanel,
+    $524.SectionHeader? sectionHeader,
+    $525.SingleViewGroup? singleViewGroup,
   }) {
     final $result = create();
     if (title != null) {
@@ -135,20 +135,20 @@ class Widget extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Widget', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3, 4, 5, 7, 8, 9, 10, 12, 14, 19, 21, 22])
     ..aOS(1, _omitFieldNames ? '' : 'title')
-    ..aOM<$512.XyChart>(2, _omitFieldNames ? '' : 'xyChart', subBuilder: $512.XyChart.create)
-    ..aOM<$513.Scorecard>(3, _omitFieldNames ? '' : 'scorecard', subBuilder: $513.Scorecard.create)
-    ..aOM<$514.Text>(4, _omitFieldNames ? '' : 'text', subBuilder: $514.Text.create)
+    ..aOM<$514.XyChart>(2, _omitFieldNames ? '' : 'xyChart', subBuilder: $514.XyChart.create)
+    ..aOM<$515.Scorecard>(3, _omitFieldNames ? '' : 'scorecard', subBuilder: $515.Scorecard.create)
+    ..aOM<$516.Text>(4, _omitFieldNames ? '' : 'text', subBuilder: $516.Text.create)
     ..aOM<$3.Empty>(5, _omitFieldNames ? '' : 'blank', subBuilder: $3.Empty.create)
-    ..aOM<$515.AlertChart>(7, _omitFieldNames ? '' : 'alertChart', subBuilder: $515.AlertChart.create)
-    ..aOM<$516.TimeSeriesTable>(8, _omitFieldNames ? '' : 'timeSeriesTable', subBuilder: $516.TimeSeriesTable.create)
-    ..aOM<$517.CollapsibleGroup>(9, _omitFieldNames ? '' : 'collapsibleGroup', subBuilder: $517.CollapsibleGroup.create)
-    ..aOM<$518.LogsPanel>(10, _omitFieldNames ? '' : 'logsPanel', subBuilder: $518.LogsPanel.create)
-    ..aOM<$519.IncidentList>(12, _omitFieldNames ? '' : 'incidentList', subBuilder: $519.IncidentList.create)
-    ..aOM<$520.PieChart>(14, _omitFieldNames ? '' : 'pieChart', subBuilder: $520.PieChart.create)
+    ..aOM<$517.AlertChart>(7, _omitFieldNames ? '' : 'alertChart', subBuilder: $517.AlertChart.create)
+    ..aOM<$518.TimeSeriesTable>(8, _omitFieldNames ? '' : 'timeSeriesTable', subBuilder: $518.TimeSeriesTable.create)
+    ..aOM<$519.CollapsibleGroup>(9, _omitFieldNames ? '' : 'collapsibleGroup', subBuilder: $519.CollapsibleGroup.create)
+    ..aOM<$520.LogsPanel>(10, _omitFieldNames ? '' : 'logsPanel', subBuilder: $520.LogsPanel.create)
+    ..aOM<$521.IncidentList>(12, _omitFieldNames ? '' : 'incidentList', subBuilder: $521.IncidentList.create)
+    ..aOM<$522.PieChart>(14, _omitFieldNames ? '' : 'pieChart', subBuilder: $522.PieChart.create)
     ..aOS(17, _omitFieldNames ? '' : 'id')
-    ..aOM<$521.ErrorReportingPanel>(19, _omitFieldNames ? '' : 'errorReportingPanel', subBuilder: $521.ErrorReportingPanel.create)
-    ..aOM<$522.SectionHeader>(21, _omitFieldNames ? '' : 'sectionHeader', subBuilder: $522.SectionHeader.create)
-    ..aOM<$523.SingleViewGroup>(22, _omitFieldNames ? '' : 'singleViewGroup', subBuilder: $523.SingleViewGroup.create)
+    ..aOM<$523.ErrorReportingPanel>(19, _omitFieldNames ? '' : 'errorReportingPanel', subBuilder: $523.ErrorReportingPanel.create)
+    ..aOM<$524.SectionHeader>(21, _omitFieldNames ? '' : 'sectionHeader', subBuilder: $524.SectionHeader.create)
+    ..aOM<$525.SingleViewGroup>(22, _omitFieldNames ? '' : 'singleViewGroup', subBuilder: $525.SingleViewGroup.create)
     ..hasRequiredFields = false
   ;
 
@@ -188,39 +188,39 @@ class Widget extends $pb.GeneratedMessage {
 
   /// A chart of time series data.
   @$pb.TagNumber(2)
-  $512.XyChart get xyChart => $_getN(1);
+  $514.XyChart get xyChart => $_getN(1);
   @$pb.TagNumber(2)
-  set xyChart($512.XyChart v) { setField(2, v); }
+  set xyChart($514.XyChart v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasXyChart() => $_has(1);
   @$pb.TagNumber(2)
   void clearXyChart() => clearField(2);
   @$pb.TagNumber(2)
-  $512.XyChart ensureXyChart() => $_ensure(1);
+  $514.XyChart ensureXyChart() => $_ensure(1);
 
   /// A scorecard summarizing time series data.
   @$pb.TagNumber(3)
-  $513.Scorecard get scorecard => $_getN(2);
+  $515.Scorecard get scorecard => $_getN(2);
   @$pb.TagNumber(3)
-  set scorecard($513.Scorecard v) { setField(3, v); }
+  set scorecard($515.Scorecard v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasScorecard() => $_has(2);
   @$pb.TagNumber(3)
   void clearScorecard() => clearField(3);
   @$pb.TagNumber(3)
-  $513.Scorecard ensureScorecard() => $_ensure(2);
+  $515.Scorecard ensureScorecard() => $_ensure(2);
 
   /// A raw string or markdown displaying textual content.
   @$pb.TagNumber(4)
-  $514.Text get text => $_getN(3);
+  $516.Text get text => $_getN(3);
   @$pb.TagNumber(4)
-  set text($514.Text v) { setField(4, v); }
+  set text($516.Text v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasText() => $_has(3);
   @$pb.TagNumber(4)
   void clearText() => clearField(4);
   @$pb.TagNumber(4)
-  $514.Text ensureText() => $_ensure(3);
+  $516.Text ensureText() => $_ensure(3);
 
   /// A blank space.
   @$pb.TagNumber(5)
@@ -236,76 +236,76 @@ class Widget extends $pb.GeneratedMessage {
 
   /// A chart of alert policy data.
   @$pb.TagNumber(7)
-  $515.AlertChart get alertChart => $_getN(5);
+  $517.AlertChart get alertChart => $_getN(5);
   @$pb.TagNumber(7)
-  set alertChart($515.AlertChart v) { setField(7, v); }
+  set alertChart($517.AlertChart v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAlertChart() => $_has(5);
   @$pb.TagNumber(7)
   void clearAlertChart() => clearField(7);
   @$pb.TagNumber(7)
-  $515.AlertChart ensureAlertChart() => $_ensure(5);
+  $517.AlertChart ensureAlertChart() => $_ensure(5);
 
   /// A widget that displays time series data in a tabular format.
   @$pb.TagNumber(8)
-  $516.TimeSeriesTable get timeSeriesTable => $_getN(6);
+  $518.TimeSeriesTable get timeSeriesTable => $_getN(6);
   @$pb.TagNumber(8)
-  set timeSeriesTable($516.TimeSeriesTable v) { setField(8, v); }
+  set timeSeriesTable($518.TimeSeriesTable v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTimeSeriesTable() => $_has(6);
   @$pb.TagNumber(8)
   void clearTimeSeriesTable() => clearField(8);
   @$pb.TagNumber(8)
-  $516.TimeSeriesTable ensureTimeSeriesTable() => $_ensure(6);
+  $518.TimeSeriesTable ensureTimeSeriesTable() => $_ensure(6);
 
   /// A widget that groups the other widgets. All widgets that are within
   /// the area spanned by the grouping widget are considered member widgets.
   @$pb.TagNumber(9)
-  $517.CollapsibleGroup get collapsibleGroup => $_getN(7);
+  $519.CollapsibleGroup get collapsibleGroup => $_getN(7);
   @$pb.TagNumber(9)
-  set collapsibleGroup($517.CollapsibleGroup v) { setField(9, v); }
+  set collapsibleGroup($519.CollapsibleGroup v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCollapsibleGroup() => $_has(7);
   @$pb.TagNumber(9)
   void clearCollapsibleGroup() => clearField(9);
   @$pb.TagNumber(9)
-  $517.CollapsibleGroup ensureCollapsibleGroup() => $_ensure(7);
+  $519.CollapsibleGroup ensureCollapsibleGroup() => $_ensure(7);
 
   /// A widget that shows a stream of logs.
   @$pb.TagNumber(10)
-  $518.LogsPanel get logsPanel => $_getN(8);
+  $520.LogsPanel get logsPanel => $_getN(8);
   @$pb.TagNumber(10)
-  set logsPanel($518.LogsPanel v) { setField(10, v); }
+  set logsPanel($520.LogsPanel v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasLogsPanel() => $_has(8);
   @$pb.TagNumber(10)
   void clearLogsPanel() => clearField(10);
   @$pb.TagNumber(10)
-  $518.LogsPanel ensureLogsPanel() => $_ensure(8);
+  $520.LogsPanel ensureLogsPanel() => $_ensure(8);
 
   /// A widget that shows list of incidents.
   @$pb.TagNumber(12)
-  $519.IncidentList get incidentList => $_getN(9);
+  $521.IncidentList get incidentList => $_getN(9);
   @$pb.TagNumber(12)
-  set incidentList($519.IncidentList v) { setField(12, v); }
+  set incidentList($521.IncidentList v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasIncidentList() => $_has(9);
   @$pb.TagNumber(12)
   void clearIncidentList() => clearField(12);
   @$pb.TagNumber(12)
-  $519.IncidentList ensureIncidentList() => $_ensure(9);
+  $521.IncidentList ensureIncidentList() => $_ensure(9);
 
   /// A widget that displays timeseries data as a pie chart.
   @$pb.TagNumber(14)
-  $520.PieChart get pieChart => $_getN(10);
+  $522.PieChart get pieChart => $_getN(10);
   @$pb.TagNumber(14)
-  set pieChart($520.PieChart v) { setField(14, v); }
+  set pieChart($522.PieChart v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasPieChart() => $_has(10);
   @$pb.TagNumber(14)
   void clearPieChart() => clearField(14);
   @$pb.TagNumber(14)
-  $520.PieChart ensurePieChart() => $_ensure(10);
+  $522.PieChart ensurePieChart() => $_ensure(10);
 
   /// Optional. The widget id. Ids may be made up of alphanumerics, dashes and
   /// underscores. Widget ids are optional.
@@ -320,40 +320,40 @@ class Widget extends $pb.GeneratedMessage {
 
   /// A widget that displays a list of error groups.
   @$pb.TagNumber(19)
-  $521.ErrorReportingPanel get errorReportingPanel => $_getN(12);
+  $523.ErrorReportingPanel get errorReportingPanel => $_getN(12);
   @$pb.TagNumber(19)
-  set errorReportingPanel($521.ErrorReportingPanel v) { setField(19, v); }
+  set errorReportingPanel($523.ErrorReportingPanel v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasErrorReportingPanel() => $_has(12);
   @$pb.TagNumber(19)
   void clearErrorReportingPanel() => clearField(19);
   @$pb.TagNumber(19)
-  $521.ErrorReportingPanel ensureErrorReportingPanel() => $_ensure(12);
+  $523.ErrorReportingPanel ensureErrorReportingPanel() => $_ensure(12);
 
   /// A widget that defines a section header for easier navigation of the
   /// dashboard.
   @$pb.TagNumber(21)
-  $522.SectionHeader get sectionHeader => $_getN(13);
+  $524.SectionHeader get sectionHeader => $_getN(13);
   @$pb.TagNumber(21)
-  set sectionHeader($522.SectionHeader v) { setField(21, v); }
+  set sectionHeader($524.SectionHeader v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasSectionHeader() => $_has(13);
   @$pb.TagNumber(21)
   void clearSectionHeader() => clearField(21);
   @$pb.TagNumber(21)
-  $522.SectionHeader ensureSectionHeader() => $_ensure(13);
+  $524.SectionHeader ensureSectionHeader() => $_ensure(13);
 
   /// A widget that groups the other widgets by using a dropdown menu.
   @$pb.TagNumber(22)
-  $523.SingleViewGroup get singleViewGroup => $_getN(14);
+  $525.SingleViewGroup get singleViewGroup => $_getN(14);
   @$pb.TagNumber(22)
-  set singleViewGroup($523.SingleViewGroup v) { setField(22, v); }
+  set singleViewGroup($525.SingleViewGroup v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasSingleViewGroup() => $_has(14);
   @$pb.TagNumber(22)
   void clearSingleViewGroup() => clearField(22);
   @$pb.TagNumber(22)
-  $523.SingleViewGroup ensureSingleViewGroup() => $_ensure(14);
+  $525.SingleViewGroup ensureSingleViewGroup() => $_ensure(14);
 }
 
 

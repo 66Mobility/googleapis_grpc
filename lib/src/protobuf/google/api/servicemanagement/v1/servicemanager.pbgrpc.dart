@@ -16,66 +16,66 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $13;
-import '../../service.pb.dart' as $43;
-import 'resources.pb.dart' as $42;
-import 'servicemanager.pb.dart' as $41;
+import '../../service.pb.dart' as $44;
+import 'resources.pb.dart' as $43;
+import 'servicemanager.pb.dart' as $42;
 
 export 'servicemanager.pb.dart';
 
 @$pb.GrpcServiceName('google.api.servicemanagement.v1.ServiceManager')
 class ServiceManagerClient extends $grpc.Client {
-  static final _$listServices = $grpc.ClientMethod<$41.ListServicesRequest, $41.ListServicesResponse>(
+  static final _$listServices = $grpc.ClientMethod<$42.ListServicesRequest, $42.ListServicesResponse>(
       '/google.api.servicemanagement.v1.ServiceManager/ListServices',
-      ($41.ListServicesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $41.ListServicesResponse.fromBuffer(value));
-  static final _$getService = $grpc.ClientMethod<$41.GetServiceRequest, $42.ManagedService>(
+      ($42.ListServicesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $42.ListServicesResponse.fromBuffer(value));
+  static final _$getService = $grpc.ClientMethod<$42.GetServiceRequest, $43.ManagedService>(
       '/google.api.servicemanagement.v1.ServiceManager/GetService',
-      ($41.GetServiceRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $42.ManagedService.fromBuffer(value));
-  static final _$createService = $grpc.ClientMethod<$41.CreateServiceRequest, $13.Operation>(
+      ($42.GetServiceRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $43.ManagedService.fromBuffer(value));
+  static final _$createService = $grpc.ClientMethod<$42.CreateServiceRequest, $13.Operation>(
       '/google.api.servicemanagement.v1.ServiceManager/CreateService',
-      ($41.CreateServiceRequest value) => value.writeToBuffer(),
+      ($42.CreateServiceRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
-  static final _$deleteService = $grpc.ClientMethod<$41.DeleteServiceRequest, $13.Operation>(
+  static final _$deleteService = $grpc.ClientMethod<$42.DeleteServiceRequest, $13.Operation>(
       '/google.api.servicemanagement.v1.ServiceManager/DeleteService',
-      ($41.DeleteServiceRequest value) => value.writeToBuffer(),
+      ($42.DeleteServiceRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
-  static final _$undeleteService = $grpc.ClientMethod<$41.UndeleteServiceRequest, $13.Operation>(
+  static final _$undeleteService = $grpc.ClientMethod<$42.UndeleteServiceRequest, $13.Operation>(
       '/google.api.servicemanagement.v1.ServiceManager/UndeleteService',
-      ($41.UndeleteServiceRequest value) => value.writeToBuffer(),
+      ($42.UndeleteServiceRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
-  static final _$listServiceConfigs = $grpc.ClientMethod<$41.ListServiceConfigsRequest, $41.ListServiceConfigsResponse>(
+  static final _$listServiceConfigs = $grpc.ClientMethod<$42.ListServiceConfigsRequest, $42.ListServiceConfigsResponse>(
       '/google.api.servicemanagement.v1.ServiceManager/ListServiceConfigs',
-      ($41.ListServiceConfigsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $41.ListServiceConfigsResponse.fromBuffer(value));
-  static final _$getServiceConfig = $grpc.ClientMethod<$41.GetServiceConfigRequest, $43.Service>(
+      ($42.ListServiceConfigsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $42.ListServiceConfigsResponse.fromBuffer(value));
+  static final _$getServiceConfig = $grpc.ClientMethod<$42.GetServiceConfigRequest, $44.Service>(
       '/google.api.servicemanagement.v1.ServiceManager/GetServiceConfig',
-      ($41.GetServiceConfigRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $43.Service.fromBuffer(value));
-  static final _$createServiceConfig = $grpc.ClientMethod<$41.CreateServiceConfigRequest, $43.Service>(
+      ($42.GetServiceConfigRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $44.Service.fromBuffer(value));
+  static final _$createServiceConfig = $grpc.ClientMethod<$42.CreateServiceConfigRequest, $44.Service>(
       '/google.api.servicemanagement.v1.ServiceManager/CreateServiceConfig',
-      ($41.CreateServiceConfigRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $43.Service.fromBuffer(value));
-  static final _$submitConfigSource = $grpc.ClientMethod<$41.SubmitConfigSourceRequest, $13.Operation>(
+      ($42.CreateServiceConfigRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $44.Service.fromBuffer(value));
+  static final _$submitConfigSource = $grpc.ClientMethod<$42.SubmitConfigSourceRequest, $13.Operation>(
       '/google.api.servicemanagement.v1.ServiceManager/SubmitConfigSource',
-      ($41.SubmitConfigSourceRequest value) => value.writeToBuffer(),
+      ($42.SubmitConfigSourceRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
-  static final _$listServiceRollouts = $grpc.ClientMethod<$41.ListServiceRolloutsRequest, $41.ListServiceRolloutsResponse>(
+  static final _$listServiceRollouts = $grpc.ClientMethod<$42.ListServiceRolloutsRequest, $42.ListServiceRolloutsResponse>(
       '/google.api.servicemanagement.v1.ServiceManager/ListServiceRollouts',
-      ($41.ListServiceRolloutsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $41.ListServiceRolloutsResponse.fromBuffer(value));
-  static final _$getServiceRollout = $grpc.ClientMethod<$41.GetServiceRolloutRequest, $42.Rollout>(
+      ($42.ListServiceRolloutsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $42.ListServiceRolloutsResponse.fromBuffer(value));
+  static final _$getServiceRollout = $grpc.ClientMethod<$42.GetServiceRolloutRequest, $43.Rollout>(
       '/google.api.servicemanagement.v1.ServiceManager/GetServiceRollout',
-      ($41.GetServiceRolloutRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $42.Rollout.fromBuffer(value));
-  static final _$createServiceRollout = $grpc.ClientMethod<$41.CreateServiceRolloutRequest, $13.Operation>(
+      ($42.GetServiceRolloutRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $43.Rollout.fromBuffer(value));
+  static final _$createServiceRollout = $grpc.ClientMethod<$42.CreateServiceRolloutRequest, $13.Operation>(
       '/google.api.servicemanagement.v1.ServiceManager/CreateServiceRollout',
-      ($41.CreateServiceRolloutRequest value) => value.writeToBuffer(),
+      ($42.CreateServiceRolloutRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
-  static final _$generateConfigReport = $grpc.ClientMethod<$41.GenerateConfigReportRequest, $41.GenerateConfigReportResponse>(
+  static final _$generateConfigReport = $grpc.ClientMethod<$42.GenerateConfigReportRequest, $42.GenerateConfigReportResponse>(
       '/google.api.servicemanagement.v1.ServiceManager/GenerateConfigReport',
-      ($41.GenerateConfigReportRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $41.GenerateConfigReportResponse.fromBuffer(value));
+      ($42.GenerateConfigReportRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $42.GenerateConfigReportResponse.fromBuffer(value));
 
   ServiceManagerClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -83,55 +83,55 @@ class ServiceManagerClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$41.ListServicesResponse> listServices($41.ListServicesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$42.ListServicesResponse> listServices($42.ListServicesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listServices, request, options: options);
   }
 
-  $grpc.ResponseFuture<$42.ManagedService> getService($41.GetServiceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$43.ManagedService> getService($42.GetServiceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$13.Operation> createService($41.CreateServiceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> createService($42.CreateServiceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$13.Operation> deleteService($41.DeleteServiceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> deleteService($42.DeleteServiceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$13.Operation> undeleteService($41.UndeleteServiceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> undeleteService($42.UndeleteServiceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$undeleteService, request, options: options);
   }
 
-  $grpc.ResponseFuture<$41.ListServiceConfigsResponse> listServiceConfigs($41.ListServiceConfigsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$42.ListServiceConfigsResponse> listServiceConfigs($42.ListServiceConfigsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listServiceConfigs, request, options: options);
   }
 
-  $grpc.ResponseFuture<$43.Service> getServiceConfig($41.GetServiceConfigRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$44.Service> getServiceConfig($42.GetServiceConfigRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getServiceConfig, request, options: options);
   }
 
-  $grpc.ResponseFuture<$43.Service> createServiceConfig($41.CreateServiceConfigRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$44.Service> createServiceConfig($42.CreateServiceConfigRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createServiceConfig, request, options: options);
   }
 
-  $grpc.ResponseFuture<$13.Operation> submitConfigSource($41.SubmitConfigSourceRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> submitConfigSource($42.SubmitConfigSourceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$submitConfigSource, request, options: options);
   }
 
-  $grpc.ResponseFuture<$41.ListServiceRolloutsResponse> listServiceRollouts($41.ListServiceRolloutsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$42.ListServiceRolloutsResponse> listServiceRollouts($42.ListServiceRolloutsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listServiceRollouts, request, options: options);
   }
 
-  $grpc.ResponseFuture<$42.Rollout> getServiceRollout($41.GetServiceRolloutRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$43.Rollout> getServiceRollout($42.GetServiceRolloutRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getServiceRollout, request, options: options);
   }
 
-  $grpc.ResponseFuture<$13.Operation> createServiceRollout($41.CreateServiceRolloutRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> createServiceRollout($42.CreateServiceRolloutRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createServiceRollout, request, options: options);
   }
 
-  $grpc.ResponseFuture<$41.GenerateConfigReportResponse> generateConfigReport($41.GenerateConfigReportRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$42.GenerateConfigReportResponse> generateConfigReport($42.GenerateConfigReportRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$generateConfigReport, request, options: options);
   }
 }
@@ -141,162 +141,162 @@ abstract class ServiceManagerServiceBase extends $grpc.Service {
   $core.String get $name => 'google.api.servicemanagement.v1.ServiceManager';
 
   ServiceManagerServiceBase() {
-    $addMethod($grpc.ServiceMethod<$41.ListServicesRequest, $41.ListServicesResponse>(
+    $addMethod($grpc.ServiceMethod<$42.ListServicesRequest, $42.ListServicesResponse>(
         'ListServices',
         listServices_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.ListServicesRequest.fromBuffer(value),
-        ($41.ListServicesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.GetServiceRequest, $42.ManagedService>(
+        ($core.List<$core.int> value) => $42.ListServicesRequest.fromBuffer(value),
+        ($42.ListServicesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$42.GetServiceRequest, $43.ManagedService>(
         'GetService',
         getService_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.GetServiceRequest.fromBuffer(value),
-        ($42.ManagedService value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.CreateServiceRequest, $13.Operation>(
+        ($core.List<$core.int> value) => $42.GetServiceRequest.fromBuffer(value),
+        ($43.ManagedService value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$42.CreateServiceRequest, $13.Operation>(
         'CreateService',
         createService_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.CreateServiceRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $42.CreateServiceRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.DeleteServiceRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$42.DeleteServiceRequest, $13.Operation>(
         'DeleteService',
         deleteService_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.DeleteServiceRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $42.DeleteServiceRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.UndeleteServiceRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$42.UndeleteServiceRequest, $13.Operation>(
         'UndeleteService',
         undeleteService_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.UndeleteServiceRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $42.UndeleteServiceRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.ListServiceConfigsRequest, $41.ListServiceConfigsResponse>(
+    $addMethod($grpc.ServiceMethod<$42.ListServiceConfigsRequest, $42.ListServiceConfigsResponse>(
         'ListServiceConfigs',
         listServiceConfigs_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.ListServiceConfigsRequest.fromBuffer(value),
-        ($41.ListServiceConfigsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.GetServiceConfigRequest, $43.Service>(
+        ($core.List<$core.int> value) => $42.ListServiceConfigsRequest.fromBuffer(value),
+        ($42.ListServiceConfigsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$42.GetServiceConfigRequest, $44.Service>(
         'GetServiceConfig',
         getServiceConfig_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.GetServiceConfigRequest.fromBuffer(value),
-        ($43.Service value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.CreateServiceConfigRequest, $43.Service>(
+        ($core.List<$core.int> value) => $42.GetServiceConfigRequest.fromBuffer(value),
+        ($44.Service value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$42.CreateServiceConfigRequest, $44.Service>(
         'CreateServiceConfig',
         createServiceConfig_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.CreateServiceConfigRequest.fromBuffer(value),
-        ($43.Service value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.SubmitConfigSourceRequest, $13.Operation>(
+        ($core.List<$core.int> value) => $42.CreateServiceConfigRequest.fromBuffer(value),
+        ($44.Service value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$42.SubmitConfigSourceRequest, $13.Operation>(
         'SubmitConfigSource',
         submitConfigSource_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.SubmitConfigSourceRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $42.SubmitConfigSourceRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.ListServiceRolloutsRequest, $41.ListServiceRolloutsResponse>(
+    $addMethod($grpc.ServiceMethod<$42.ListServiceRolloutsRequest, $42.ListServiceRolloutsResponse>(
         'ListServiceRollouts',
         listServiceRollouts_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.ListServiceRolloutsRequest.fromBuffer(value),
-        ($41.ListServiceRolloutsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.GetServiceRolloutRequest, $42.Rollout>(
+        ($core.List<$core.int> value) => $42.ListServiceRolloutsRequest.fromBuffer(value),
+        ($42.ListServiceRolloutsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$42.GetServiceRolloutRequest, $43.Rollout>(
         'GetServiceRollout',
         getServiceRollout_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.GetServiceRolloutRequest.fromBuffer(value),
-        ($42.Rollout value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.CreateServiceRolloutRequest, $13.Operation>(
+        ($core.List<$core.int> value) => $42.GetServiceRolloutRequest.fromBuffer(value),
+        ($43.Rollout value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$42.CreateServiceRolloutRequest, $13.Operation>(
         'CreateServiceRollout',
         createServiceRollout_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.CreateServiceRolloutRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $42.CreateServiceRolloutRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$41.GenerateConfigReportRequest, $41.GenerateConfigReportResponse>(
+    $addMethod($grpc.ServiceMethod<$42.GenerateConfigReportRequest, $42.GenerateConfigReportResponse>(
         'GenerateConfigReport',
         generateConfigReport_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $41.GenerateConfigReportRequest.fromBuffer(value),
-        ($41.GenerateConfigReportResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $42.GenerateConfigReportRequest.fromBuffer(value),
+        ($42.GenerateConfigReportResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$41.ListServicesResponse> listServices_Pre($grpc.ServiceCall call, $async.Future<$41.ListServicesRequest> request) async {
+  $async.Future<$42.ListServicesResponse> listServices_Pre($grpc.ServiceCall call, $async.Future<$42.ListServicesRequest> request) async {
     return listServices(call, await request);
   }
 
-  $async.Future<$42.ManagedService> getService_Pre($grpc.ServiceCall call, $async.Future<$41.GetServiceRequest> request) async {
+  $async.Future<$43.ManagedService> getService_Pre($grpc.ServiceCall call, $async.Future<$42.GetServiceRequest> request) async {
     return getService(call, await request);
   }
 
-  $async.Future<$13.Operation> createService_Pre($grpc.ServiceCall call, $async.Future<$41.CreateServiceRequest> request) async {
+  $async.Future<$13.Operation> createService_Pre($grpc.ServiceCall call, $async.Future<$42.CreateServiceRequest> request) async {
     return createService(call, await request);
   }
 
-  $async.Future<$13.Operation> deleteService_Pre($grpc.ServiceCall call, $async.Future<$41.DeleteServiceRequest> request) async {
+  $async.Future<$13.Operation> deleteService_Pre($grpc.ServiceCall call, $async.Future<$42.DeleteServiceRequest> request) async {
     return deleteService(call, await request);
   }
 
-  $async.Future<$13.Operation> undeleteService_Pre($grpc.ServiceCall call, $async.Future<$41.UndeleteServiceRequest> request) async {
+  $async.Future<$13.Operation> undeleteService_Pre($grpc.ServiceCall call, $async.Future<$42.UndeleteServiceRequest> request) async {
     return undeleteService(call, await request);
   }
 
-  $async.Future<$41.ListServiceConfigsResponse> listServiceConfigs_Pre($grpc.ServiceCall call, $async.Future<$41.ListServiceConfigsRequest> request) async {
+  $async.Future<$42.ListServiceConfigsResponse> listServiceConfigs_Pre($grpc.ServiceCall call, $async.Future<$42.ListServiceConfigsRequest> request) async {
     return listServiceConfigs(call, await request);
   }
 
-  $async.Future<$43.Service> getServiceConfig_Pre($grpc.ServiceCall call, $async.Future<$41.GetServiceConfigRequest> request) async {
+  $async.Future<$44.Service> getServiceConfig_Pre($grpc.ServiceCall call, $async.Future<$42.GetServiceConfigRequest> request) async {
     return getServiceConfig(call, await request);
   }
 
-  $async.Future<$43.Service> createServiceConfig_Pre($grpc.ServiceCall call, $async.Future<$41.CreateServiceConfigRequest> request) async {
+  $async.Future<$44.Service> createServiceConfig_Pre($grpc.ServiceCall call, $async.Future<$42.CreateServiceConfigRequest> request) async {
     return createServiceConfig(call, await request);
   }
 
-  $async.Future<$13.Operation> submitConfigSource_Pre($grpc.ServiceCall call, $async.Future<$41.SubmitConfigSourceRequest> request) async {
+  $async.Future<$13.Operation> submitConfigSource_Pre($grpc.ServiceCall call, $async.Future<$42.SubmitConfigSourceRequest> request) async {
     return submitConfigSource(call, await request);
   }
 
-  $async.Future<$41.ListServiceRolloutsResponse> listServiceRollouts_Pre($grpc.ServiceCall call, $async.Future<$41.ListServiceRolloutsRequest> request) async {
+  $async.Future<$42.ListServiceRolloutsResponse> listServiceRollouts_Pre($grpc.ServiceCall call, $async.Future<$42.ListServiceRolloutsRequest> request) async {
     return listServiceRollouts(call, await request);
   }
 
-  $async.Future<$42.Rollout> getServiceRollout_Pre($grpc.ServiceCall call, $async.Future<$41.GetServiceRolloutRequest> request) async {
+  $async.Future<$43.Rollout> getServiceRollout_Pre($grpc.ServiceCall call, $async.Future<$42.GetServiceRolloutRequest> request) async {
     return getServiceRollout(call, await request);
   }
 
-  $async.Future<$13.Operation> createServiceRollout_Pre($grpc.ServiceCall call, $async.Future<$41.CreateServiceRolloutRequest> request) async {
+  $async.Future<$13.Operation> createServiceRollout_Pre($grpc.ServiceCall call, $async.Future<$42.CreateServiceRolloutRequest> request) async {
     return createServiceRollout(call, await request);
   }
 
-  $async.Future<$41.GenerateConfigReportResponse> generateConfigReport_Pre($grpc.ServiceCall call, $async.Future<$41.GenerateConfigReportRequest> request) async {
+  $async.Future<$42.GenerateConfigReportResponse> generateConfigReport_Pre($grpc.ServiceCall call, $async.Future<$42.GenerateConfigReportRequest> request) async {
     return generateConfigReport(call, await request);
   }
 
-  $async.Future<$41.ListServicesResponse> listServices($grpc.ServiceCall call, $41.ListServicesRequest request);
-  $async.Future<$42.ManagedService> getService($grpc.ServiceCall call, $41.GetServiceRequest request);
-  $async.Future<$13.Operation> createService($grpc.ServiceCall call, $41.CreateServiceRequest request);
-  $async.Future<$13.Operation> deleteService($grpc.ServiceCall call, $41.DeleteServiceRequest request);
-  $async.Future<$13.Operation> undeleteService($grpc.ServiceCall call, $41.UndeleteServiceRequest request);
-  $async.Future<$41.ListServiceConfigsResponse> listServiceConfigs($grpc.ServiceCall call, $41.ListServiceConfigsRequest request);
-  $async.Future<$43.Service> getServiceConfig($grpc.ServiceCall call, $41.GetServiceConfigRequest request);
-  $async.Future<$43.Service> createServiceConfig($grpc.ServiceCall call, $41.CreateServiceConfigRequest request);
-  $async.Future<$13.Operation> submitConfigSource($grpc.ServiceCall call, $41.SubmitConfigSourceRequest request);
-  $async.Future<$41.ListServiceRolloutsResponse> listServiceRollouts($grpc.ServiceCall call, $41.ListServiceRolloutsRequest request);
-  $async.Future<$42.Rollout> getServiceRollout($grpc.ServiceCall call, $41.GetServiceRolloutRequest request);
-  $async.Future<$13.Operation> createServiceRollout($grpc.ServiceCall call, $41.CreateServiceRolloutRequest request);
-  $async.Future<$41.GenerateConfigReportResponse> generateConfigReport($grpc.ServiceCall call, $41.GenerateConfigReportRequest request);
+  $async.Future<$42.ListServicesResponse> listServices($grpc.ServiceCall call, $42.ListServicesRequest request);
+  $async.Future<$43.ManagedService> getService($grpc.ServiceCall call, $42.GetServiceRequest request);
+  $async.Future<$13.Operation> createService($grpc.ServiceCall call, $42.CreateServiceRequest request);
+  $async.Future<$13.Operation> deleteService($grpc.ServiceCall call, $42.DeleteServiceRequest request);
+  $async.Future<$13.Operation> undeleteService($grpc.ServiceCall call, $42.UndeleteServiceRequest request);
+  $async.Future<$42.ListServiceConfigsResponse> listServiceConfigs($grpc.ServiceCall call, $42.ListServiceConfigsRequest request);
+  $async.Future<$44.Service> getServiceConfig($grpc.ServiceCall call, $42.GetServiceConfigRequest request);
+  $async.Future<$44.Service> createServiceConfig($grpc.ServiceCall call, $42.CreateServiceConfigRequest request);
+  $async.Future<$13.Operation> submitConfigSource($grpc.ServiceCall call, $42.SubmitConfigSourceRequest request);
+  $async.Future<$42.ListServiceRolloutsResponse> listServiceRollouts($grpc.ServiceCall call, $42.ListServiceRolloutsRequest request);
+  $async.Future<$43.Rollout> getServiceRollout($grpc.ServiceCall call, $42.GetServiceRolloutRequest request);
+  $async.Future<$13.Operation> createServiceRollout($grpc.ServiceCall call, $42.CreateServiceRolloutRequest request);
+  $async.Future<$42.GenerateConfigReportResponse> generateConfigReport($grpc.ServiceCall call, $42.GenerateConfigReportRequest request);
 }

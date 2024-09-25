@@ -15,37 +15,37 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'vehicle_api.pb.dart' as $165;
-import 'vehicles.pb.dart' as $166;
+import 'vehicle_api.pb.dart' as $166;
+import 'vehicles.pb.dart' as $167;
 
 export 'vehicle_api.pb.dart';
 
 @$pb.GrpcServiceName('maps.fleetengine.v1.VehicleService')
 class VehicleServiceClient extends $grpc.Client {
-  static final _$createVehicle = $grpc.ClientMethod<$165.CreateVehicleRequest, $166.Vehicle>(
+  static final _$createVehicle = $grpc.ClientMethod<$166.CreateVehicleRequest, $167.Vehicle>(
       '/maps.fleetengine.v1.VehicleService/CreateVehicle',
-      ($165.CreateVehicleRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $166.Vehicle.fromBuffer(value));
-  static final _$getVehicle = $grpc.ClientMethod<$165.GetVehicleRequest, $166.Vehicle>(
+      ($166.CreateVehicleRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $167.Vehicle.fromBuffer(value));
+  static final _$getVehicle = $grpc.ClientMethod<$166.GetVehicleRequest, $167.Vehicle>(
       '/maps.fleetengine.v1.VehicleService/GetVehicle',
-      ($165.GetVehicleRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $166.Vehicle.fromBuffer(value));
-  static final _$updateVehicle = $grpc.ClientMethod<$165.UpdateVehicleRequest, $166.Vehicle>(
+      ($166.GetVehicleRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $167.Vehicle.fromBuffer(value));
+  static final _$updateVehicle = $grpc.ClientMethod<$166.UpdateVehicleRequest, $167.Vehicle>(
       '/maps.fleetengine.v1.VehicleService/UpdateVehicle',
-      ($165.UpdateVehicleRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $166.Vehicle.fromBuffer(value));
-  static final _$updateVehicleAttributes = $grpc.ClientMethod<$165.UpdateVehicleAttributesRequest, $165.UpdateVehicleAttributesResponse>(
+      ($166.UpdateVehicleRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $167.Vehicle.fromBuffer(value));
+  static final _$updateVehicleAttributes = $grpc.ClientMethod<$166.UpdateVehicleAttributesRequest, $166.UpdateVehicleAttributesResponse>(
       '/maps.fleetengine.v1.VehicleService/UpdateVehicleAttributes',
-      ($165.UpdateVehicleAttributesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $165.UpdateVehicleAttributesResponse.fromBuffer(value));
-  static final _$listVehicles = $grpc.ClientMethod<$165.ListVehiclesRequest, $165.ListVehiclesResponse>(
+      ($166.UpdateVehicleAttributesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $166.UpdateVehicleAttributesResponse.fromBuffer(value));
+  static final _$listVehicles = $grpc.ClientMethod<$166.ListVehiclesRequest, $166.ListVehiclesResponse>(
       '/maps.fleetengine.v1.VehicleService/ListVehicles',
-      ($165.ListVehiclesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $165.ListVehiclesResponse.fromBuffer(value));
-  static final _$searchVehicles = $grpc.ClientMethod<$165.SearchVehiclesRequest, $165.SearchVehiclesResponse>(
+      ($166.ListVehiclesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $166.ListVehiclesResponse.fromBuffer(value));
+  static final _$searchVehicles = $grpc.ClientMethod<$166.SearchVehiclesRequest, $166.SearchVehiclesResponse>(
       '/maps.fleetengine.v1.VehicleService/SearchVehicles',
-      ($165.SearchVehiclesRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $165.SearchVehiclesResponse.fromBuffer(value));
+      ($166.SearchVehiclesRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $166.SearchVehiclesResponse.fromBuffer(value));
 
   VehicleServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -53,27 +53,27 @@ class VehicleServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$166.Vehicle> createVehicle($165.CreateVehicleRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$167.Vehicle> createVehicle($166.CreateVehicleRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createVehicle, request, options: options);
   }
 
-  $grpc.ResponseFuture<$166.Vehicle> getVehicle($165.GetVehicleRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$167.Vehicle> getVehicle($166.GetVehicleRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getVehicle, request, options: options);
   }
 
-  $grpc.ResponseFuture<$166.Vehicle> updateVehicle($165.UpdateVehicleRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$167.Vehicle> updateVehicle($166.UpdateVehicleRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateVehicle, request, options: options);
   }
 
-  $grpc.ResponseFuture<$165.UpdateVehicleAttributesResponse> updateVehicleAttributes($165.UpdateVehicleAttributesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$166.UpdateVehicleAttributesResponse> updateVehicleAttributes($166.UpdateVehicleAttributesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateVehicleAttributes, request, options: options);
   }
 
-  $grpc.ResponseFuture<$165.ListVehiclesResponse> listVehicles($165.ListVehiclesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$166.ListVehiclesResponse> listVehicles($166.ListVehiclesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listVehicles, request, options: options);
   }
 
-  $grpc.ResponseFuture<$165.SearchVehiclesResponse> searchVehicles($165.SearchVehiclesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$166.SearchVehiclesResponse> searchVehicles($166.SearchVehiclesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$searchVehicles, request, options: options);
   }
 }
@@ -83,78 +83,78 @@ abstract class VehicleServiceBase extends $grpc.Service {
   $core.String get $name => 'maps.fleetengine.v1.VehicleService';
 
   VehicleServiceBase() {
-    $addMethod($grpc.ServiceMethod<$165.CreateVehicleRequest, $166.Vehicle>(
+    $addMethod($grpc.ServiceMethod<$166.CreateVehicleRequest, $167.Vehicle>(
         'CreateVehicle',
         createVehicle_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $165.CreateVehicleRequest.fromBuffer(value),
-        ($166.Vehicle value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$165.GetVehicleRequest, $166.Vehicle>(
+        ($core.List<$core.int> value) => $166.CreateVehicleRequest.fromBuffer(value),
+        ($167.Vehicle value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$166.GetVehicleRequest, $167.Vehicle>(
         'GetVehicle',
         getVehicle_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $165.GetVehicleRequest.fromBuffer(value),
-        ($166.Vehicle value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$165.UpdateVehicleRequest, $166.Vehicle>(
+        ($core.List<$core.int> value) => $166.GetVehicleRequest.fromBuffer(value),
+        ($167.Vehicle value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$166.UpdateVehicleRequest, $167.Vehicle>(
         'UpdateVehicle',
         updateVehicle_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $165.UpdateVehicleRequest.fromBuffer(value),
-        ($166.Vehicle value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$165.UpdateVehicleAttributesRequest, $165.UpdateVehicleAttributesResponse>(
+        ($core.List<$core.int> value) => $166.UpdateVehicleRequest.fromBuffer(value),
+        ($167.Vehicle value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$166.UpdateVehicleAttributesRequest, $166.UpdateVehicleAttributesResponse>(
         'UpdateVehicleAttributes',
         updateVehicleAttributes_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $165.UpdateVehicleAttributesRequest.fromBuffer(value),
-        ($165.UpdateVehicleAttributesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$165.ListVehiclesRequest, $165.ListVehiclesResponse>(
+        ($core.List<$core.int> value) => $166.UpdateVehicleAttributesRequest.fromBuffer(value),
+        ($166.UpdateVehicleAttributesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$166.ListVehiclesRequest, $166.ListVehiclesResponse>(
         'ListVehicles',
         listVehicles_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $165.ListVehiclesRequest.fromBuffer(value),
-        ($165.ListVehiclesResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$165.SearchVehiclesRequest, $165.SearchVehiclesResponse>(
+        ($core.List<$core.int> value) => $166.ListVehiclesRequest.fromBuffer(value),
+        ($166.ListVehiclesResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$166.SearchVehiclesRequest, $166.SearchVehiclesResponse>(
         'SearchVehicles',
         searchVehicles_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $165.SearchVehiclesRequest.fromBuffer(value),
-        ($165.SearchVehiclesResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $166.SearchVehiclesRequest.fromBuffer(value),
+        ($166.SearchVehiclesResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$166.Vehicle> createVehicle_Pre($grpc.ServiceCall call, $async.Future<$165.CreateVehicleRequest> request) async {
+  $async.Future<$167.Vehicle> createVehicle_Pre($grpc.ServiceCall call, $async.Future<$166.CreateVehicleRequest> request) async {
     return createVehicle(call, await request);
   }
 
-  $async.Future<$166.Vehicle> getVehicle_Pre($grpc.ServiceCall call, $async.Future<$165.GetVehicleRequest> request) async {
+  $async.Future<$167.Vehicle> getVehicle_Pre($grpc.ServiceCall call, $async.Future<$166.GetVehicleRequest> request) async {
     return getVehicle(call, await request);
   }
 
-  $async.Future<$166.Vehicle> updateVehicle_Pre($grpc.ServiceCall call, $async.Future<$165.UpdateVehicleRequest> request) async {
+  $async.Future<$167.Vehicle> updateVehicle_Pre($grpc.ServiceCall call, $async.Future<$166.UpdateVehicleRequest> request) async {
     return updateVehicle(call, await request);
   }
 
-  $async.Future<$165.UpdateVehicleAttributesResponse> updateVehicleAttributes_Pre($grpc.ServiceCall call, $async.Future<$165.UpdateVehicleAttributesRequest> request) async {
+  $async.Future<$166.UpdateVehicleAttributesResponse> updateVehicleAttributes_Pre($grpc.ServiceCall call, $async.Future<$166.UpdateVehicleAttributesRequest> request) async {
     return updateVehicleAttributes(call, await request);
   }
 
-  $async.Future<$165.ListVehiclesResponse> listVehicles_Pre($grpc.ServiceCall call, $async.Future<$165.ListVehiclesRequest> request) async {
+  $async.Future<$166.ListVehiclesResponse> listVehicles_Pre($grpc.ServiceCall call, $async.Future<$166.ListVehiclesRequest> request) async {
     return listVehicles(call, await request);
   }
 
-  $async.Future<$165.SearchVehiclesResponse> searchVehicles_Pre($grpc.ServiceCall call, $async.Future<$165.SearchVehiclesRequest> request) async {
+  $async.Future<$166.SearchVehiclesResponse> searchVehicles_Pre($grpc.ServiceCall call, $async.Future<$166.SearchVehiclesRequest> request) async {
     return searchVehicles(call, await request);
   }
 
-  $async.Future<$166.Vehicle> createVehicle($grpc.ServiceCall call, $165.CreateVehicleRequest request);
-  $async.Future<$166.Vehicle> getVehicle($grpc.ServiceCall call, $165.GetVehicleRequest request);
-  $async.Future<$166.Vehicle> updateVehicle($grpc.ServiceCall call, $165.UpdateVehicleRequest request);
-  $async.Future<$165.UpdateVehicleAttributesResponse> updateVehicleAttributes($grpc.ServiceCall call, $165.UpdateVehicleAttributesRequest request);
-  $async.Future<$165.ListVehiclesResponse> listVehicles($grpc.ServiceCall call, $165.ListVehiclesRequest request);
-  $async.Future<$165.SearchVehiclesResponse> searchVehicles($grpc.ServiceCall call, $165.SearchVehiclesRequest request);
+  $async.Future<$167.Vehicle> createVehicle($grpc.ServiceCall call, $166.CreateVehicleRequest request);
+  $async.Future<$167.Vehicle> getVehicle($grpc.ServiceCall call, $166.GetVehicleRequest request);
+  $async.Future<$167.Vehicle> updateVehicle($grpc.ServiceCall call, $166.UpdateVehicleRequest request);
+  $async.Future<$166.UpdateVehicleAttributesResponse> updateVehicleAttributes($grpc.ServiceCall call, $166.UpdateVehicleAttributesRequest request);
+  $async.Future<$166.ListVehiclesResponse> listVehicles($grpc.ServiceCall call, $166.ListVehiclesRequest request);
+  $async.Future<$166.SearchVehiclesResponse> searchVehicles($grpc.ServiceCall call, $166.SearchVehiclesRequest request);
 }

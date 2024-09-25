@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'dashboard.pb.dart' as $187;
+import 'dashboard.pb.dart' as $188;
 
 /// The `CreateDashboard` request.
 class CreateDashboardRequest extends $pb.GeneratedMessage {
   factory CreateDashboardRequest({
     $core.String? parent,
-    $187.Dashboard? dashboard,
+    $188.Dashboard? dashboard,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -40,7 +40,7 @@ class CreateDashboardRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateDashboardRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$187.Dashboard>(2, _omitFieldNames ? '' : 'dashboard', subBuilder: $187.Dashboard.create)
+    ..aOM<$188.Dashboard>(2, _omitFieldNames ? '' : 'dashboard', subBuilder: $188.Dashboard.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -82,15 +82,15 @@ class CreateDashboardRequest extends $pb.GeneratedMessage {
 
   /// Required. The initial dashboard specification.
   @$pb.TagNumber(2)
-  $187.Dashboard get dashboard => $_getN(1);
+  $188.Dashboard get dashboard => $_getN(1);
   @$pb.TagNumber(2)
-  set dashboard($187.Dashboard v) { setField(2, v); }
+  set dashboard($188.Dashboard v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDashboard() => $_has(1);
   @$pb.TagNumber(2)
   void clearDashboard() => clearField(2);
   @$pb.TagNumber(2)
-  $187.Dashboard ensureDashboard() => $_ensure(1);
+  $188.Dashboard ensureDashboard() => $_ensure(1);
 
   /// If set, validate the request and preview the review, but do not actually
   /// save it.
@@ -195,7 +195,7 @@ class ListDashboardsRequest extends $pb.GeneratedMessage {
 /// The `ListDashboards` request.
 class ListDashboardsResponse extends $pb.GeneratedMessage {
   factory ListDashboardsResponse({
-    $core.Iterable<$187.Dashboard>? dashboards,
+    $core.Iterable<$188.Dashboard>? dashboards,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -212,7 +212,7 @@ class ListDashboardsResponse extends $pb.GeneratedMessage {
   factory ListDashboardsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListDashboardsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..pc<$187.Dashboard>(1, _omitFieldNames ? '' : 'dashboards', $pb.PbFieldType.PM, subBuilder: $187.Dashboard.create)
+    ..pc<$188.Dashboard>(1, _omitFieldNames ? '' : 'dashboards', $pb.PbFieldType.PM, subBuilder: $188.Dashboard.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -240,7 +240,7 @@ class ListDashboardsResponse extends $pb.GeneratedMessage {
 
   /// The list of requested dashboards.
   @$pb.TagNumber(1)
-  $core.List<$187.Dashboard> get dashboards => $_getList(0);
+  $core.List<$188.Dashboard> get dashboards => $_getList(0);
 
   /// If there are more results than have been returned, then this field is set
   /// to a non-empty value.  To see the additional results,
@@ -368,7 +368,7 @@ class DeleteDashboardRequest extends $pb.GeneratedMessage {
 /// The `UpdateDashboard` request.
 class UpdateDashboardRequest extends $pb.GeneratedMessage {
   factory UpdateDashboardRequest({
-    $187.Dashboard? dashboard,
+    $188.Dashboard? dashboard,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -385,7 +385,7 @@ class UpdateDashboardRequest extends $pb.GeneratedMessage {
   factory UpdateDashboardRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDashboardRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$187.Dashboard>(1, _omitFieldNames ? '' : 'dashboard', subBuilder: $187.Dashboard.create)
+    ..aOM<$188.Dashboard>(1, _omitFieldNames ? '' : 'dashboard', subBuilder: $188.Dashboard.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -413,15 +413,15 @@ class UpdateDashboardRequest extends $pb.GeneratedMessage {
 
   /// Required. The dashboard that will replace the existing dashboard.
   @$pb.TagNumber(1)
-  $187.Dashboard get dashboard => $_getN(0);
+  $188.Dashboard get dashboard => $_getN(0);
   @$pb.TagNumber(1)
-  set dashboard($187.Dashboard v) { setField(1, v); }
+  set dashboard($188.Dashboard v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDashboard() => $_has(0);
   @$pb.TagNumber(1)
   void clearDashboard() => clearField(1);
   @$pb.TagNumber(1)
-  $187.Dashboard ensureDashboard() => $_ensure(0);
+  $188.Dashboard ensureDashboard() => $_ensure(0);
 
   /// If set, validate the request and preview the review, but do not actually
   /// save it.

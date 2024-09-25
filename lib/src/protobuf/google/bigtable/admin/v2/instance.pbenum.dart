@@ -71,6 +71,25 @@ class Cluster_State extends $pb.ProtobufEnum {
   const Cluster_State._($core.int v, $core.String n) : super(v, n);
 }
 
+/// Possible node scaling factors of the clusters. Node scaling delivers better
+/// latency and more throughput by removing node boundaries.
+class Cluster_NodeScalingFactor extends $pb.ProtobufEnum {
+  static const Cluster_NodeScalingFactor NODE_SCALING_FACTOR_UNSPECIFIED = Cluster_NodeScalingFactor._(0, _omitEnumNames ? '' : 'NODE_SCALING_FACTOR_UNSPECIFIED');
+  static const Cluster_NodeScalingFactor NODE_SCALING_FACTOR_1X = Cluster_NodeScalingFactor._(1, _omitEnumNames ? '' : 'NODE_SCALING_FACTOR_1X');
+  static const Cluster_NodeScalingFactor NODE_SCALING_FACTOR_2X = Cluster_NodeScalingFactor._(2, _omitEnumNames ? '' : 'NODE_SCALING_FACTOR_2X');
+
+  static const $core.List<Cluster_NodeScalingFactor> values = <Cluster_NodeScalingFactor> [
+    NODE_SCALING_FACTOR_UNSPECIFIED,
+    NODE_SCALING_FACTOR_1X,
+    NODE_SCALING_FACTOR_2X,
+  ];
+
+  static final $core.Map<$core.int, Cluster_NodeScalingFactor> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static Cluster_NodeScalingFactor? valueOf($core.int value) => _byValue[value];
+
+  const Cluster_NodeScalingFactor._($core.int v, $core.String n) : super(v, n);
+}
+
 /// Possible priorities for an app profile. Note that higher priority writes
 /// can sometimes queue behind lower priority writes to the same tablet, as
 /// writes must be strictly sequenced in the durability log.

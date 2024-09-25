@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $261;
-import '../../../protobuf/timestamp.pb.dart' as $299;
-import '../../../rpc/status.pb.dart' as $319;
+import '../../../protobuf/duration.pb.dart' as $263;
+import '../../../protobuf/timestamp.pb.dart' as $301;
+import '../../../rpc/status.pb.dart' as $321;
 import 'table.pbenum.dart';
-import 'types.pb.dart' as $398;
+import 'types.pb.dart' as $400;
 
 export 'table.pbenum.dart';
 
@@ -108,7 +108,7 @@ class RestoreInfo extends $pb.GeneratedMessage {
 /// Change stream configuration.
 class ChangeStreamConfig extends $pb.GeneratedMessage {
   factory ChangeStreamConfig({
-    $261.Duration? retentionPeriod,
+    $263.Duration? retentionPeriod,
   }) {
     final $result = create();
     if (retentionPeriod != null) {
@@ -121,7 +121,7 @@ class ChangeStreamConfig extends $pb.GeneratedMessage {
   factory ChangeStreamConfig.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ChangeStreamConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
-    ..aOM<$261.Duration>(1, _omitFieldNames ? '' : 'retentionPeriod', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(1, _omitFieldNames ? '' : 'retentionPeriod', subBuilder: $263.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -152,15 +152,15 @@ class ChangeStreamConfig extends $pb.GeneratedMessage {
   /// Values must be at least 1 day and at most 7 days, and will be truncated to
   /// microsecond granularity.
   @$pb.TagNumber(1)
-  $261.Duration get retentionPeriod => $_getN(0);
+  $263.Duration get retentionPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set retentionPeriod($261.Duration v) { setField(1, v); }
+  set retentionPeriod($263.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRetentionPeriod() => $_has(0);
   @$pb.TagNumber(1)
   void clearRetentionPeriod() => clearField(1);
   @$pb.TagNumber(1)
-  $261.Duration ensureRetentionPeriod() => $_ensure(0);
+  $263.Duration ensureRetentionPeriod() => $_ensure(0);
 }
 
 /// The state of a table's data in a particular cluster.
@@ -231,8 +231,8 @@ class Table_ClusterState extends $pb.GeneratedMessage {
 /// Defines an automated backup policy for a table
 class Table_AutomatedBackupPolicy extends $pb.GeneratedMessage {
   factory Table_AutomatedBackupPolicy({
-    $261.Duration? retentionPeriod,
-    $261.Duration? frequency,
+    $263.Duration? retentionPeriod,
+    $263.Duration? frequency,
   }) {
     final $result = create();
     if (retentionPeriod != null) {
@@ -248,8 +248,8 @@ class Table_AutomatedBackupPolicy extends $pb.GeneratedMessage {
   factory Table_AutomatedBackupPolicy.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Table.AutomatedBackupPolicy', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
-    ..aOM<$261.Duration>(1, _omitFieldNames ? '' : 'retentionPeriod', subBuilder: $261.Duration.create)
-    ..aOM<$261.Duration>(2, _omitFieldNames ? '' : 'frequency', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(1, _omitFieldNames ? '' : 'retentionPeriod', subBuilder: $263.Duration.create)
+    ..aOM<$263.Duration>(2, _omitFieldNames ? '' : 'frequency', subBuilder: $263.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -277,28 +277,28 @@ class Table_AutomatedBackupPolicy extends $pb.GeneratedMessage {
   /// Required. How long the automated backups should be retained. The only
   /// supported value at this time is 3 days.
   @$pb.TagNumber(1)
-  $261.Duration get retentionPeriod => $_getN(0);
+  $263.Duration get retentionPeriod => $_getN(0);
   @$pb.TagNumber(1)
-  set retentionPeriod($261.Duration v) { setField(1, v); }
+  set retentionPeriod($263.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRetentionPeriod() => $_has(0);
   @$pb.TagNumber(1)
   void clearRetentionPeriod() => clearField(1);
   @$pb.TagNumber(1)
-  $261.Duration ensureRetentionPeriod() => $_ensure(0);
+  $263.Duration ensureRetentionPeriod() => $_ensure(0);
 
   /// Required. How frequently automated backups should occur. The only
   /// supported value at this time is 24 hours.
   @$pb.TagNumber(2)
-  $261.Duration get frequency => $_getN(1);
+  $263.Duration get frequency => $_getN(1);
   @$pb.TagNumber(2)
-  set frequency($261.Duration v) { setField(2, v); }
+  set frequency($263.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasFrequency() => $_has(1);
   @$pb.TagNumber(2)
   void clearFrequency() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Duration ensureFrequency() => $_ensure(1);
+  $263.Duration ensureFrequency() => $_ensure(1);
 }
 
 enum Table_AutomatedBackupConfig {
@@ -727,7 +727,7 @@ class AuthorizedView extends $pb.GeneratedMessage {
 class ColumnFamily extends $pb.GeneratedMessage {
   factory ColumnFamily({
     GcRule? gcRule,
-    $398.Type? valueType,
+    $400.Type? valueType,
   }) {
     final $result = create();
     if (gcRule != null) {
@@ -744,7 +744,7 @@ class ColumnFamily extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ColumnFamily', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOM<GcRule>(1, _omitFieldNames ? '' : 'gcRule', subBuilder: GcRule.create)
-    ..aOM<$398.Type>(3, _omitFieldNames ? '' : 'valueType', subBuilder: $398.Type.create)
+    ..aOM<$400.Type>(3, _omitFieldNames ? '' : 'valueType', subBuilder: $400.Type.create)
     ..hasRequiredFields = false
   ;
 
@@ -797,15 +797,15 @@ class ColumnFamily extends $pb.GeneratedMessage {
   ///  If `value_type` is `Aggregate`, written data must be compatible with:
   ///   * `value_type.input_type` for `AddInput` mutations
   @$pb.TagNumber(3)
-  $398.Type get valueType => $_getN(1);
+  $400.Type get valueType => $_getN(1);
   @$pb.TagNumber(3)
-  set valueType($398.Type v) { setField(3, v); }
+  set valueType($400.Type v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasValueType() => $_has(1);
   @$pb.TagNumber(3)
   void clearValueType() => clearField(3);
   @$pb.TagNumber(3)
-  $398.Type ensureValueType() => $_ensure(1);
+  $400.Type ensureValueType() => $_ensure(1);
 }
 
 /// A GcRule which deletes cells matching all of the given rules.
@@ -912,7 +912,7 @@ enum GcRule_Rule {
 class GcRule extends $pb.GeneratedMessage {
   factory GcRule({
     $core.int? maxNumVersions,
-    $261.Duration? maxAge,
+    $263.Duration? maxAge,
     GcRule_Intersection? intersection,
     GcRule_Union? union,
   }) {
@@ -945,7 +945,7 @@ class GcRule extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GcRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3, 4])
     ..a<$core.int>(1, _omitFieldNames ? '' : 'maxNumVersions', $pb.PbFieldType.O3)
-    ..aOM<$261.Duration>(2, _omitFieldNames ? '' : 'maxAge', subBuilder: $261.Duration.create)
+    ..aOM<$263.Duration>(2, _omitFieldNames ? '' : 'maxAge', subBuilder: $263.Duration.create)
     ..aOM<GcRule_Intersection>(3, _omitFieldNames ? '' : 'intersection', subBuilder: GcRule_Intersection.create)
     ..aOM<GcRule_Union>(4, _omitFieldNames ? '' : 'union', subBuilder: GcRule_Union.create)
     ..hasRequiredFields = false
@@ -989,15 +989,15 @@ class GcRule extends $pb.GeneratedMessage {
   /// Values must be at least one millisecond, and will be truncated to
   /// microsecond granularity.
   @$pb.TagNumber(2)
-  $261.Duration get maxAge => $_getN(1);
+  $263.Duration get maxAge => $_getN(1);
   @$pb.TagNumber(2)
-  set maxAge($261.Duration v) { setField(2, v); }
+  set maxAge($263.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxAge() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxAge() => clearField(2);
   @$pb.TagNumber(2)
-  $261.Duration ensureMaxAge() => $_ensure(1);
+  $263.Duration ensureMaxAge() => $_ensure(1);
 
   /// Delete cells that would be deleted by every nested rule.
   @$pb.TagNumber(3)
@@ -1032,7 +1032,7 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   factory EncryptionInfo({
     $core.String? kmsKeyVersion,
     EncryptionInfo_EncryptionType? encryptionType,
-    $319.Status? encryptionStatus,
+    $321.Status? encryptionStatus,
   }) {
     final $result = create();
     if (kmsKeyVersion != null) {
@@ -1053,7 +1053,7 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EncryptionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyVersion')
     ..e<EncryptionInfo_EncryptionType>(3, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: EncryptionInfo_EncryptionType.ENCRYPTION_TYPE_UNSPECIFIED, valueOf: EncryptionInfo_EncryptionType.valueOf, enumValues: EncryptionInfo_EncryptionType.values)
-    ..aOM<$319.Status>(4, _omitFieldNames ? '' : 'encryptionStatus', subBuilder: $319.Status.create)
+    ..aOM<$321.Status>(4, _omitFieldNames ? '' : 'encryptionStatus', subBuilder: $321.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -1103,15 +1103,15 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   /// this resource. Regardless of status, the existing data is always encrypted
   /// at rest.
   @$pb.TagNumber(4)
-  $319.Status get encryptionStatus => $_getN(2);
+  $321.Status get encryptionStatus => $_getN(2);
   @$pb.TagNumber(4)
-  set encryptionStatus($319.Status v) { setField(4, v); }
+  set encryptionStatus($321.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEncryptionStatus() => $_has(2);
   @$pb.TagNumber(4)
   void clearEncryptionStatus() => clearField(4);
   @$pb.TagNumber(4)
-  $319.Status ensureEncryptionStatus() => $_ensure(2);
+  $321.Status ensureEncryptionStatus() => $_ensure(2);
 }
 
 ///  A snapshot of a table at a particular time. A snapshot can be used as a
@@ -1126,8 +1126,8 @@ class Snapshot extends $pb.GeneratedMessage {
     $core.String? name,
     Table? sourceTable,
     $fixnum.Int64? dataSizeBytes,
-    $299.Timestamp? createTime,
-    $299.Timestamp? deleteTime,
+    $301.Timestamp? createTime,
+    $301.Timestamp? deleteTime,
     Snapshot_State? state,
     $core.String? description,
   }) {
@@ -1163,8 +1163,8 @@ class Snapshot extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Table>(2, _omitFieldNames ? '' : 'sourceTable', subBuilder: Table.create)
     ..aInt64(3, _omitFieldNames ? '' : 'dataSizeBytes')
-    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'deleteTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'deleteTime', subBuilder: $301.Timestamp.create)
     ..e<Snapshot_State>(6, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Snapshot_State.STATE_NOT_KNOWN, valueOf: Snapshot_State.valueOf, enumValues: Snapshot_State.values)
     ..aOS(7, _omitFieldNames ? '' : 'description')
     ..hasRequiredFields = false
@@ -1230,29 +1230,29 @@ class Snapshot extends $pb.GeneratedMessage {
 
   /// Output only. The time when the snapshot is created.
   @$pb.TagNumber(4)
-  $299.Timestamp get createTime => $_getN(3);
+  $301.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($299.Timestamp v) { setField(4, v); }
+  set createTime($301.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $299.Timestamp ensureCreateTime() => $_ensure(3);
+  $301.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// The time when the snapshot will be deleted. The maximum amount of time a
   /// snapshot can stay active is 365 days. If 'ttl' is not specified,
   /// the default maximum of 365 days will be used.
   @$pb.TagNumber(5)
-  $299.Timestamp get deleteTime => $_getN(4);
+  $301.Timestamp get deleteTime => $_getN(4);
   @$pb.TagNumber(5)
-  set deleteTime($299.Timestamp v) { setField(5, v); }
+  set deleteTime($301.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDeleteTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearDeleteTime() => clearField(5);
   @$pb.TagNumber(5)
-  $299.Timestamp ensureDeleteTime() => $_ensure(4);
+  $301.Timestamp ensureDeleteTime() => $_ensure(4);
 
   /// Output only. The current state of the snapshot.
   @$pb.TagNumber(6)
@@ -1280,15 +1280,15 @@ class Backup extends $pb.GeneratedMessage {
   factory Backup({
     $core.String? name,
     $core.String? sourceTable,
-    $299.Timestamp? expireTime,
-    $299.Timestamp? startTime,
-    $299.Timestamp? endTime,
+    $301.Timestamp? expireTime,
+    $301.Timestamp? startTime,
+    $301.Timestamp? endTime,
     $fixnum.Int64? sizeBytes,
     Backup_State? state,
     EncryptionInfo? encryptionInfo,
     $core.String? sourceBackup,
     Backup_BackupType? backupType,
-    $299.Timestamp? hotToStandardTime,
+    $301.Timestamp? hotToStandardTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1333,15 +1333,15 @@ class Backup extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Backup', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'sourceTable')
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
     ..aInt64(6, _omitFieldNames ? '' : 'sizeBytes')
     ..e<Backup_State>(7, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Backup_State.STATE_UNSPECIFIED, valueOf: Backup_State.valueOf, enumValues: Backup_State.values)
     ..aOM<EncryptionInfo>(9, _omitFieldNames ? '' : 'encryptionInfo', subBuilder: EncryptionInfo.create)
     ..aOS(10, _omitFieldNames ? '' : 'sourceBackup')
     ..e<Backup_BackupType>(11, _omitFieldNames ? '' : 'backupType', $pb.PbFieldType.OE, defaultOrMaker: Backup_BackupType.BACKUP_TYPE_UNSPECIFIED, valueOf: Backup_BackupType.valueOf, enumValues: Backup_BackupType.values)
-    ..aOM<$299.Timestamp>(12, _omitFieldNames ? '' : 'hotToStandardTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(12, _omitFieldNames ? '' : 'hotToStandardTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1405,15 +1405,15 @@ class Backup extends $pb.GeneratedMessage {
   ///
   ///  Once the `expire_time` has passed, Cloud Bigtable will delete the backup.
   @$pb.TagNumber(3)
-  $299.Timestamp get expireTime => $_getN(2);
+  $301.Timestamp get expireTime => $_getN(2);
   @$pb.TagNumber(3)
-  set expireTime($299.Timestamp v) { setField(3, v); }
+  set expireTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureExpireTime() => $_ensure(2);
+  $301.Timestamp ensureExpireTime() => $_ensure(2);
 
   /// Output only. `start_time` is the time that the backup was started
   /// (i.e. approximately the time the
@@ -1421,28 +1421,28 @@ class Backup extends $pb.GeneratedMessage {
   /// request is received).  The row data in this backup will be no older than
   /// this timestamp.
   @$pb.TagNumber(4)
-  $299.Timestamp get startTime => $_getN(3);
+  $301.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($299.Timestamp v) { setField(4, v); }
+  set startTime($301.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $299.Timestamp ensureStartTime() => $_ensure(3);
+  $301.Timestamp ensureStartTime() => $_ensure(3);
 
   /// Output only. `end_time` is the time that the backup was finished. The row
   /// data in the backup will be no newer than this timestamp.
   @$pb.TagNumber(5)
-  $299.Timestamp get endTime => $_getN(4);
+  $301.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($299.Timestamp v) { setField(5, v); }
+  set endTime($301.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $299.Timestamp ensureEndTime() => $_ensure(4);
+  $301.Timestamp ensureEndTime() => $_ensure(4);
 
   /// Output only. Size of the backup in bytes.
   @$pb.TagNumber(6)
@@ -1508,23 +1508,23 @@ class Backup extends $pb.GeneratedMessage {
   ///  This field only applies for hot backups. When creating or updating a
   ///  standard backup, attempting to set this field will fail the request.
   @$pb.TagNumber(12)
-  $299.Timestamp get hotToStandardTime => $_getN(10);
+  $301.Timestamp get hotToStandardTime => $_getN(10);
   @$pb.TagNumber(12)
-  set hotToStandardTime($299.Timestamp v) { setField(12, v); }
+  set hotToStandardTime($301.Timestamp v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasHotToStandardTime() => $_has(10);
   @$pb.TagNumber(12)
   void clearHotToStandardTime() => clearField(12);
   @$pb.TagNumber(12)
-  $299.Timestamp ensureHotToStandardTime() => $_ensure(10);
+  $301.Timestamp ensureHotToStandardTime() => $_ensure(10);
 }
 
 /// Information about a backup.
 class BackupInfo extends $pb.GeneratedMessage {
   factory BackupInfo({
     $core.String? backup,
-    $299.Timestamp? startTime,
-    $299.Timestamp? endTime,
+    $301.Timestamp? startTime,
+    $301.Timestamp? endTime,
     $core.String? sourceTable,
     $core.String? sourceBackup,
   }) {
@@ -1552,8 +1552,8 @@ class BackupInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BackupInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.admin.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'backup')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'sourceTable')
     ..aOS(10, _omitFieldNames ? '' : 'sourceBackup')
     ..hasRequiredFields = false
@@ -1593,28 +1593,28 @@ class BackupInfo extends $pb.GeneratedMessage {
   /// Output only. The time that the backup was started. Row data in the backup
   /// will be no older than this timestamp.
   @$pb.TagNumber(2)
-  $299.Timestamp get startTime => $_getN(1);
+  $301.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($299.Timestamp v) { setField(2, v); }
+  set startTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureStartTime() => $_ensure(1);
+  $301.Timestamp ensureStartTime() => $_ensure(1);
 
   /// Output only. This time that the backup was finished. Row data in the
   /// backup will be no newer than this timestamp.
   @$pb.TagNumber(3)
-  $299.Timestamp get endTime => $_getN(2);
+  $301.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($299.Timestamp v) { setField(3, v); }
+  set endTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureEndTime() => $_ensure(2);
+  $301.Timestamp ensureEndTime() => $_ensure(2);
 
   /// Output only. Name of the table the backup was created from.
   @$pb.TagNumber(4)

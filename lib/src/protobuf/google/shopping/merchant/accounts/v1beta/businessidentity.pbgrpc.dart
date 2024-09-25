@@ -15,20 +15,20 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'businessidentity.pb.dart' as $218;
+import 'businessidentity.pb.dart' as $219;
 
 export 'businessidentity.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.accounts.v1beta.BusinessIdentityService')
 class BusinessIdentityServiceClient extends $grpc.Client {
-  static final _$getBusinessIdentity = $grpc.ClientMethod<$218.GetBusinessIdentityRequest, $218.BusinessIdentity>(
+  static final _$getBusinessIdentity = $grpc.ClientMethod<$219.GetBusinessIdentityRequest, $219.BusinessIdentity>(
       '/google.shopping.merchant.accounts.v1beta.BusinessIdentityService/GetBusinessIdentity',
-      ($218.GetBusinessIdentityRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $218.BusinessIdentity.fromBuffer(value));
-  static final _$updateBusinessIdentity = $grpc.ClientMethod<$218.UpdateBusinessIdentityRequest, $218.BusinessIdentity>(
+      ($219.GetBusinessIdentityRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $219.BusinessIdentity.fromBuffer(value));
+  static final _$updateBusinessIdentity = $grpc.ClientMethod<$219.UpdateBusinessIdentityRequest, $219.BusinessIdentity>(
       '/google.shopping.merchant.accounts.v1beta.BusinessIdentityService/UpdateBusinessIdentity',
-      ($218.UpdateBusinessIdentityRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $218.BusinessIdentity.fromBuffer(value));
+      ($219.UpdateBusinessIdentityRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $219.BusinessIdentity.fromBuffer(value));
 
   BusinessIdentityServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -36,11 +36,11 @@ class BusinessIdentityServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$218.BusinessIdentity> getBusinessIdentity($218.GetBusinessIdentityRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$219.BusinessIdentity> getBusinessIdentity($219.GetBusinessIdentityRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getBusinessIdentity, request, options: options);
   }
 
-  $grpc.ResponseFuture<$218.BusinessIdentity> updateBusinessIdentity($218.UpdateBusinessIdentityRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$219.BusinessIdentity> updateBusinessIdentity($219.UpdateBusinessIdentityRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateBusinessIdentity, request, options: options);
   }
 }
@@ -50,30 +50,30 @@ abstract class BusinessIdentityServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.accounts.v1beta.BusinessIdentityService';
 
   BusinessIdentityServiceBase() {
-    $addMethod($grpc.ServiceMethod<$218.GetBusinessIdentityRequest, $218.BusinessIdentity>(
+    $addMethod($grpc.ServiceMethod<$219.GetBusinessIdentityRequest, $219.BusinessIdentity>(
         'GetBusinessIdentity',
         getBusinessIdentity_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $218.GetBusinessIdentityRequest.fromBuffer(value),
-        ($218.BusinessIdentity value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$218.UpdateBusinessIdentityRequest, $218.BusinessIdentity>(
+        ($core.List<$core.int> value) => $219.GetBusinessIdentityRequest.fromBuffer(value),
+        ($219.BusinessIdentity value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$219.UpdateBusinessIdentityRequest, $219.BusinessIdentity>(
         'UpdateBusinessIdentity',
         updateBusinessIdentity_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $218.UpdateBusinessIdentityRequest.fromBuffer(value),
-        ($218.BusinessIdentity value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $219.UpdateBusinessIdentityRequest.fromBuffer(value),
+        ($219.BusinessIdentity value) => value.writeToBuffer()));
   }
 
-  $async.Future<$218.BusinessIdentity> getBusinessIdentity_Pre($grpc.ServiceCall call, $async.Future<$218.GetBusinessIdentityRequest> request) async {
+  $async.Future<$219.BusinessIdentity> getBusinessIdentity_Pre($grpc.ServiceCall call, $async.Future<$219.GetBusinessIdentityRequest> request) async {
     return getBusinessIdentity(call, await request);
   }
 
-  $async.Future<$218.BusinessIdentity> updateBusinessIdentity_Pre($grpc.ServiceCall call, $async.Future<$218.UpdateBusinessIdentityRequest> request) async {
+  $async.Future<$219.BusinessIdentity> updateBusinessIdentity_Pre($grpc.ServiceCall call, $async.Future<$219.UpdateBusinessIdentityRequest> request) async {
     return updateBusinessIdentity(call, await request);
   }
 
-  $async.Future<$218.BusinessIdentity> getBusinessIdentity($grpc.ServiceCall call, $218.GetBusinessIdentityRequest request);
-  $async.Future<$218.BusinessIdentity> updateBusinessIdentity($grpc.ServiceCall call, $218.UpdateBusinessIdentityRequest request);
+  $async.Future<$219.BusinessIdentity> getBusinessIdentity($grpc.ServiceCall call, $219.GetBusinessIdentityRequest request);
+  $async.Future<$219.BusinessIdentity> updateBusinessIdentity($grpc.ServiceCall call, $219.UpdateBusinessIdentityRequest request);
 }

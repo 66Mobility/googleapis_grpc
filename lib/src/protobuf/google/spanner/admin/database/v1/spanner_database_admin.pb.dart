@@ -14,11 +14,11 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../longrunning/operations.pb.dart' as $13;
-import '../../../../protobuf/field_mask.pb.dart' as $330;
-import '../../../../protobuf/timestamp.pb.dart' as $299;
-import 'backup.pb.dart' as $242;
-import 'common.pb.dart' as $545;
-import 'common.pbenum.dart' as $545;
+import '../../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../../protobuf/timestamp.pb.dart' as $301;
+import 'backup.pb.dart' as $244;
+import 'common.pb.dart' as $547;
+import 'common.pbenum.dart' as $547;
 import 'spanner_database_admin.pbenum.dart';
 
 export 'spanner_database_admin.pbenum.dart';
@@ -32,7 +32,7 @@ enum RestoreInfo_SourceInfo {
 class RestoreInfo extends $pb.GeneratedMessage {
   factory RestoreInfo({
     RestoreSourceType? sourceType,
-    $242.BackupInfo? backupInfo,
+    $244.BackupInfo? backupInfo,
   }) {
     final $result = create();
     if (sourceType != null) {
@@ -54,7 +54,7 @@ class RestoreInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RestoreInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..oo(0, [2])
     ..e<RestoreSourceType>(1, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE, defaultOrMaker: RestoreSourceType.TYPE_UNSPECIFIED, valueOf: RestoreSourceType.valueOf, enumValues: RestoreSourceType.values)
-    ..aOM<$242.BackupInfo>(2, _omitFieldNames ? '' : 'backupInfo', subBuilder: $242.BackupInfo.create)
+    ..aOM<$244.BackupInfo>(2, _omitFieldNames ? '' : 'backupInfo', subBuilder: $244.BackupInfo.create)
     ..hasRequiredFields = false
   ;
 
@@ -95,15 +95,15 @@ class RestoreInfo extends $pb.GeneratedMessage {
   /// Information about the backup used to restore the database. The backup
   /// may no longer exist.
   @$pb.TagNumber(2)
-  $242.BackupInfo get backupInfo => $_getN(1);
+  $244.BackupInfo get backupInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set backupInfo($242.BackupInfo v) { setField(2, v); }
+  set backupInfo($244.BackupInfo v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasBackupInfo() => $_has(1);
   @$pb.TagNumber(2)
   void clearBackupInfo() => clearField(2);
   @$pb.TagNumber(2)
-  $242.BackupInfo ensureBackupInfo() => $_ensure(1);
+  $244.BackupInfo ensureBackupInfo() => $_ensure(1);
 }
 
 /// A Cloud Spanner database.
@@ -111,14 +111,14 @@ class Database extends $pb.GeneratedMessage {
   factory Database({
     $core.String? name,
     Database_State? state,
-    $299.Timestamp? createTime,
+    $301.Timestamp? createTime,
     RestoreInfo? restoreInfo,
-    $545.EncryptionConfig? encryptionConfig,
+    $547.EncryptionConfig? encryptionConfig,
     $core.String? versionRetentionPeriod,
-    $299.Timestamp? earliestVersionTime,
-    $core.Iterable<$545.EncryptionInfo>? encryptionInfo,
+    $301.Timestamp? earliestVersionTime,
+    $core.Iterable<$547.EncryptionInfo>? encryptionInfo,
     $core.String? defaultLeader,
-    $545.DatabaseDialect? databaseDialect,
+    $547.DatabaseDialect? databaseDialect,
     $core.bool? enableDropProtection,
     $core.bool? reconciling,
   }) {
@@ -168,14 +168,14 @@ class Database extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Database', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<Database_State>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Database_State.STATE_UNSPECIFIED, valueOf: Database_State.valueOf, enumValues: Database_State.values)
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
     ..aOM<RestoreInfo>(4, _omitFieldNames ? '' : 'restoreInfo', subBuilder: RestoreInfo.create)
-    ..aOM<$545.EncryptionConfig>(5, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $545.EncryptionConfig.create)
+    ..aOM<$547.EncryptionConfig>(5, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $547.EncryptionConfig.create)
     ..aOS(6, _omitFieldNames ? '' : 'versionRetentionPeriod')
-    ..aOM<$299.Timestamp>(7, _omitFieldNames ? '' : 'earliestVersionTime', subBuilder: $299.Timestamp.create)
-    ..pc<$545.EncryptionInfo>(8, _omitFieldNames ? '' : 'encryptionInfo', $pb.PbFieldType.PM, subBuilder: $545.EncryptionInfo.create)
+    ..aOM<$301.Timestamp>(7, _omitFieldNames ? '' : 'earliestVersionTime', subBuilder: $301.Timestamp.create)
+    ..pc<$547.EncryptionInfo>(8, _omitFieldNames ? '' : 'encryptionInfo', $pb.PbFieldType.PM, subBuilder: $547.EncryptionInfo.create)
     ..aOS(9, _omitFieldNames ? '' : 'defaultLeader')
-    ..e<$545.DatabaseDialect>(10, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE, defaultOrMaker: $545.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED, valueOf: $545.DatabaseDialect.valueOf, enumValues: $545.DatabaseDialect.values)
+    ..e<$547.DatabaseDialect>(10, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE, defaultOrMaker: $547.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED, valueOf: $547.DatabaseDialect.valueOf, enumValues: $547.DatabaseDialect.values)
     ..aOB(11, _omitFieldNames ? '' : 'enableDropProtection')
     ..aOB(12, _omitFieldNames ? '' : 'reconciling')
     ..hasRequiredFields = false
@@ -228,15 +228,15 @@ class Database extends $pb.GeneratedMessage {
 
   /// Output only. If exists, the time at which the database creation started.
   @$pb.TagNumber(3)
-  $299.Timestamp get createTime => $_getN(2);
+  $301.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($299.Timestamp v) { setField(3, v); }
+  set createTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureCreateTime() => $_ensure(2);
+  $301.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. Applicable only for restored databases. Contains information
   /// about the restore source.
@@ -256,15 +256,15 @@ class Database extends $pb.GeneratedMessage {
   /// For databases that are using Google default or other types of encryption,
   /// this field is empty.
   @$pb.TagNumber(5)
-  $545.EncryptionConfig get encryptionConfig => $_getN(4);
+  $547.EncryptionConfig get encryptionConfig => $_getN(4);
   @$pb.TagNumber(5)
-  set encryptionConfig($545.EncryptionConfig v) { setField(5, v); }
+  set encryptionConfig($547.EncryptionConfig v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEncryptionConfig() => $_has(4);
   @$pb.TagNumber(5)
   void clearEncryptionConfig() => clearField(5);
   @$pb.TagNumber(5)
-  $545.EncryptionConfig ensureEncryptionConfig() => $_ensure(4);
+  $547.EncryptionConfig ensureEncryptionConfig() => $_ensure(4);
 
   /// Output only. The period in which Cloud Spanner retains all versions of data
   /// for the database. This is the same as the value of version_retention_period
@@ -286,15 +286,15 @@ class Database extends $pb.GeneratedMessage {
   /// sure to account for the time from the moment when the value is queried to
   /// the moment when you initiate the recovery.
   @$pb.TagNumber(7)
-  $299.Timestamp get earliestVersionTime => $_getN(6);
+  $301.Timestamp get earliestVersionTime => $_getN(6);
   @$pb.TagNumber(7)
-  set earliestVersionTime($299.Timestamp v) { setField(7, v); }
+  set earliestVersionTime($301.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEarliestVersionTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearEarliestVersionTime() => clearField(7);
   @$pb.TagNumber(7)
-  $299.Timestamp ensureEarliestVersionTime() => $_ensure(6);
+  $301.Timestamp ensureEarliestVersionTime() => $_ensure(6);
 
   ///  Output only. For databases that are using customer managed encryption, this
   ///  field contains the encryption information for the database, such as
@@ -307,7 +307,7 @@ class Database extends $pb.GeneratedMessage {
   ///  This field is propagated lazily from the backend. There might be a delay
   ///  from when a key version is being used and when it appears in this field.
   @$pb.TagNumber(8)
-  $core.List<$545.EncryptionInfo> get encryptionInfo => $_getList(7);
+  $core.List<$547.EncryptionInfo> get encryptionInfo => $_getList(7);
 
   ///  Output only. The read-write region which contains the database's leader
   ///  replicas.
@@ -326,9 +326,9 @@ class Database extends $pb.GeneratedMessage {
 
   /// Output only. The dialect of the Cloud Spanner Database.
   @$pb.TagNumber(10)
-  $545.DatabaseDialect get databaseDialect => $_getN(9);
+  $547.DatabaseDialect get databaseDialect => $_getN(9);
   @$pb.TagNumber(10)
-  set databaseDialect($545.DatabaseDialect v) { setField(10, v); }
+  set databaseDialect($547.DatabaseDialect v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDatabaseDialect() => $_has(9);
   @$pb.TagNumber(10)
@@ -518,8 +518,8 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
     $core.String? parent,
     $core.String? createStatement,
     $core.Iterable<$core.String>? extraStatements,
-    $545.EncryptionConfig? encryptionConfig,
-    $545.DatabaseDialect? databaseDialect,
+    $547.EncryptionConfig? encryptionConfig,
+    $547.DatabaseDialect? databaseDialect,
     $core.List<$core.int>? protoDescriptors,
   }) {
     final $result = create();
@@ -551,8 +551,8 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'parent')
     ..aOS(2, _omitFieldNames ? '' : 'createStatement')
     ..pPS(3, _omitFieldNames ? '' : 'extraStatements')
-    ..aOM<$545.EncryptionConfig>(4, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $545.EncryptionConfig.create)
-    ..e<$545.DatabaseDialect>(5, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE, defaultOrMaker: $545.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED, valueOf: $545.DatabaseDialect.valueOf, enumValues: $545.DatabaseDialect.values)
+    ..aOM<$547.EncryptionConfig>(4, _omitFieldNames ? '' : 'encryptionConfig', subBuilder: $547.EncryptionConfig.create)
+    ..e<$547.DatabaseDialect>(5, _omitFieldNames ? '' : 'databaseDialect', $pb.PbFieldType.OE, defaultOrMaker: $547.DatabaseDialect.DATABASE_DIALECT_UNSPECIFIED, valueOf: $547.DatabaseDialect.valueOf, enumValues: $547.DatabaseDialect.values)
     ..a<$core.List<$core.int>>(6, _omitFieldNames ? '' : 'protoDescriptors', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
   ;
@@ -614,21 +614,21 @@ class CreateDatabaseRequest extends $pb.GeneratedMessage {
   /// not specified, Cloud Spanner will encrypt/decrypt all data at rest using
   /// Google default encryption.
   @$pb.TagNumber(4)
-  $545.EncryptionConfig get encryptionConfig => $_getN(3);
+  $547.EncryptionConfig get encryptionConfig => $_getN(3);
   @$pb.TagNumber(4)
-  set encryptionConfig($545.EncryptionConfig v) { setField(4, v); }
+  set encryptionConfig($547.EncryptionConfig v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEncryptionConfig() => $_has(3);
   @$pb.TagNumber(4)
   void clearEncryptionConfig() => clearField(4);
   @$pb.TagNumber(4)
-  $545.EncryptionConfig ensureEncryptionConfig() => $_ensure(3);
+  $547.EncryptionConfig ensureEncryptionConfig() => $_ensure(3);
 
   /// Optional. The dialect of the Cloud Spanner Database.
   @$pb.TagNumber(5)
-  $545.DatabaseDialect get databaseDialect => $_getN(4);
+  $547.DatabaseDialect get databaseDialect => $_getN(4);
   @$pb.TagNumber(5)
-  set databaseDialect($545.DatabaseDialect v) { setField(5, v); }
+  set databaseDialect($547.DatabaseDialect v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDatabaseDialect() => $_has(4);
   @$pb.TagNumber(5)
@@ -771,7 +771,7 @@ class GetDatabaseRequest extends $pb.GeneratedMessage {
 class UpdateDatabaseRequest extends $pb.GeneratedMessage {
   factory UpdateDatabaseRequest({
     Database? database,
-    $330.FieldMask? updateMask,
+    $332.FieldMask? updateMask,
   }) {
     final $result = create();
     if (database != null) {
@@ -788,7 +788,7 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatabaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..aOM<Database>(1, _omitFieldNames ? '' : 'database', subBuilder: Database.create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -830,15 +830,15 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
   /// Required. The list of fields to update. Currently, only
   /// `enable_drop_protection` field can be updated.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(1);
+  $332.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(1);
+  $332.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Metadata type for the operation returned by
@@ -846,8 +846,8 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
 class UpdateDatabaseMetadata extends $pb.GeneratedMessage {
   factory UpdateDatabaseMetadata({
     UpdateDatabaseRequest? request,
-    $545.OperationProgress? progress,
-    $299.Timestamp? cancelTime,
+    $547.OperationProgress? progress,
+    $301.Timestamp? cancelTime,
   }) {
     final $result = create();
     if (request != null) {
@@ -867,8 +867,8 @@ class UpdateDatabaseMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatabaseMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..aOM<UpdateDatabaseRequest>(1, _omitFieldNames ? '' : 'request', subBuilder: UpdateDatabaseRequest.create)
-    ..aOM<$545.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $545.OperationProgress.create)
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$547.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $547.OperationProgress.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'cancelTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -910,28 +910,28 @@ class UpdateDatabaseMetadata extends $pb.GeneratedMessage {
   /// [UpdateDatabase][google.spanner.admin.database.v1.DatabaseAdmin.UpdateDatabase]
   /// operation.
   @$pb.TagNumber(2)
-  $545.OperationProgress get progress => $_getN(1);
+  $547.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($545.OperationProgress v) { setField(2, v); }
+  set progress($547.OperationProgress v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $545.OperationProgress ensureProgress() => $_ensure(1);
+  $547.OperationProgress ensureProgress() => $_ensure(1);
 
   /// The time at which this operation was cancelled. If set, this operation is
   /// in the process of undoing itself (which is best-effort).
   @$pb.TagNumber(3)
-  $299.Timestamp get cancelTime => $_getN(2);
+  $301.Timestamp get cancelTime => $_getN(2);
   @$pb.TagNumber(3)
-  set cancelTime($299.Timestamp v) { setField(3, v); }
+  set cancelTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCancelTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCancelTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureCancelTime() => $_ensure(2);
+  $301.Timestamp ensureCancelTime() => $_ensure(2);
 }
 
 ///  Enqueues the given DDL statements to be applied, in order but not
@@ -1164,9 +1164,9 @@ class UpdateDatabaseDdlMetadata extends $pb.GeneratedMessage {
   factory UpdateDatabaseDdlMetadata({
     $core.String? database,
     $core.Iterable<$core.String>? statements,
-    $core.Iterable<$299.Timestamp>? commitTimestamps,
+    $core.Iterable<$301.Timestamp>? commitTimestamps,
     $core.bool? throttled,
-    $core.Iterable<$545.OperationProgress>? progress,
+    $core.Iterable<$547.OperationProgress>? progress,
     $core.Iterable<DdlStatementActionInfo>? actions,
   }) {
     final $result = create();
@@ -1197,9 +1197,9 @@ class UpdateDatabaseDdlMetadata extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatabaseDdlMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'database')
     ..pPS(2, _omitFieldNames ? '' : 'statements')
-    ..pc<$299.Timestamp>(3, _omitFieldNames ? '' : 'commitTimestamps', $pb.PbFieldType.PM, subBuilder: $299.Timestamp.create)
+    ..pc<$301.Timestamp>(3, _omitFieldNames ? '' : 'commitTimestamps', $pb.PbFieldType.PM, subBuilder: $301.Timestamp.create)
     ..aOB(4, _omitFieldNames ? '' : 'throttled')
-    ..pc<$545.OperationProgress>(5, _omitFieldNames ? '' : 'progress', $pb.PbFieldType.PM, subBuilder: $545.OperationProgress.create)
+    ..pc<$547.OperationProgress>(5, _omitFieldNames ? '' : 'progress', $pb.PbFieldType.PM, subBuilder: $547.OperationProgress.create)
     ..pc<DdlStatementActionInfo>(6, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: DdlStatementActionInfo.create)
     ..hasRequiredFields = false
   ;
@@ -1244,7 +1244,7 @@ class UpdateDatabaseDdlMetadata extends $pb.GeneratedMessage {
   /// succeeded so far, where `commit_timestamps[i]` is the commit
   /// timestamp for the statement `statements[i]`.
   @$pb.TagNumber(3)
-  $core.List<$299.Timestamp> get commitTimestamps => $_getList(2);
+  $core.List<$301.Timestamp> get commitTimestamps => $_getList(2);
 
   /// Output only. When true, indicates that the operation is throttled e.g.
   /// due to resource constraints. When resources become available the operation
@@ -1266,7 +1266,7 @@ class UpdateDatabaseDdlMetadata extends $pb.GeneratedMessage {
   /// timestamp of operation, as well as a progress of 100% once the operation
   /// has completed.
   @$pb.TagNumber(5)
-  $core.List<$545.OperationProgress> get progress => $_getList(4);
+  $core.List<$547.OperationProgress> get progress => $_getList(4);
 
   /// The brief action info for the DDL statements.
   /// `actions[i]` is the brief info for `statements[i]`.
@@ -1896,9 +1896,9 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   factory RestoreDatabaseMetadata({
     $core.String? name,
     RestoreSourceType? sourceType,
-    $242.BackupInfo? backupInfo,
-    $545.OperationProgress? progress,
-    $299.Timestamp? cancelTime,
+    $244.BackupInfo? backupInfo,
+    $547.OperationProgress? progress,
+    $301.Timestamp? cancelTime,
     $core.String? optimizeDatabaseOperationName,
   }) {
     final $result = create();
@@ -1934,9 +1934,9 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
     ..oo(0, [3])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<RestoreSourceType>(2, _omitFieldNames ? '' : 'sourceType', $pb.PbFieldType.OE, defaultOrMaker: RestoreSourceType.TYPE_UNSPECIFIED, valueOf: RestoreSourceType.valueOf, enumValues: RestoreSourceType.values)
-    ..aOM<$242.BackupInfo>(3, _omitFieldNames ? '' : 'backupInfo', subBuilder: $242.BackupInfo.create)
-    ..aOM<$545.OperationProgress>(4, _omitFieldNames ? '' : 'progress', subBuilder: $545.OperationProgress.create)
-    ..aOM<$299.Timestamp>(5, _omitFieldNames ? '' : 'cancelTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$244.BackupInfo>(3, _omitFieldNames ? '' : 'backupInfo', subBuilder: $244.BackupInfo.create)
+    ..aOM<$547.OperationProgress>(4, _omitFieldNames ? '' : 'progress', subBuilder: $547.OperationProgress.create)
+    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'cancelTime', subBuilder: $301.Timestamp.create)
     ..aOS(6, _omitFieldNames ? '' : 'optimizeDatabaseOperationName')
     ..hasRequiredFields = false
   ;
@@ -1987,29 +1987,29 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
 
   /// Information about the backup used to restore the database.
   @$pb.TagNumber(3)
-  $242.BackupInfo get backupInfo => $_getN(2);
+  $244.BackupInfo get backupInfo => $_getN(2);
   @$pb.TagNumber(3)
-  set backupInfo($242.BackupInfo v) { setField(3, v); }
+  set backupInfo($244.BackupInfo v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackupInfo() => $_has(2);
   @$pb.TagNumber(3)
   void clearBackupInfo() => clearField(3);
   @$pb.TagNumber(3)
-  $242.BackupInfo ensureBackupInfo() => $_ensure(2);
+  $244.BackupInfo ensureBackupInfo() => $_ensure(2);
 
   /// The progress of the
   /// [RestoreDatabase][google.spanner.admin.database.v1.DatabaseAdmin.RestoreDatabase]
   /// operation.
   @$pb.TagNumber(4)
-  $545.OperationProgress get progress => $_getN(3);
+  $547.OperationProgress get progress => $_getN(3);
   @$pb.TagNumber(4)
-  set progress($545.OperationProgress v) { setField(4, v); }
+  set progress($547.OperationProgress v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasProgress() => $_has(3);
   @$pb.TagNumber(4)
   void clearProgress() => clearField(4);
   @$pb.TagNumber(4)
-  $545.OperationProgress ensureProgress() => $_ensure(3);
+  $547.OperationProgress ensureProgress() => $_ensure(3);
 
   /// The time at which cancellation of this operation was received.
   /// [Operations.CancelOperation][google.longrunning.Operations.CancelOperation]
@@ -2024,15 +2024,15 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
   /// [google.rpc.Status.code][google.rpc.Status.code] of 1, corresponding to
   /// `Code.CANCELLED`.
   @$pb.TagNumber(5)
-  $299.Timestamp get cancelTime => $_getN(4);
+  $301.Timestamp get cancelTime => $_getN(4);
   @$pb.TagNumber(5)
-  set cancelTime($299.Timestamp v) { setField(5, v); }
+  set cancelTime($301.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCancelTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCancelTime() => clearField(5);
   @$pb.TagNumber(5)
-  $299.Timestamp ensureCancelTime() => $_ensure(4);
+  $301.Timestamp ensureCancelTime() => $_ensure(4);
 
   /// If exists, the name of the long-running operation that will be used to
   /// track the post-restore optimization process to optimize the performance of
@@ -2062,7 +2062,7 @@ class RestoreDatabaseMetadata extends $pb.GeneratedMessage {
 class OptimizeRestoredDatabaseMetadata extends $pb.GeneratedMessage {
   factory OptimizeRestoredDatabaseMetadata({
     $core.String? name,
-    $545.OperationProgress? progress,
+    $547.OperationProgress? progress,
   }) {
     final $result = create();
     if (name != null) {
@@ -2079,7 +2079,7 @@ class OptimizeRestoredDatabaseMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OptimizeRestoredDatabaseMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$545.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $545.OperationProgress.create)
+    ..aOM<$547.OperationProgress>(2, _omitFieldNames ? '' : 'progress', subBuilder: $547.OperationProgress.create)
     ..hasRequiredFields = false
   ;
 
@@ -2116,15 +2116,15 @@ class OptimizeRestoredDatabaseMetadata extends $pb.GeneratedMessage {
 
   /// The progress of the post-restore optimizations.
   @$pb.TagNumber(2)
-  $545.OperationProgress get progress => $_getN(1);
+  $547.OperationProgress get progress => $_getN(1);
   @$pb.TagNumber(2)
-  set progress($545.OperationProgress v) { setField(2, v); }
+  set progress($547.OperationProgress v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasProgress() => $_has(1);
   @$pb.TagNumber(2)
   void clearProgress() => clearField(2);
   @$pb.TagNumber(2)
-  $545.OperationProgress ensureProgress() => $_ensure(1);
+  $547.OperationProgress ensureProgress() => $_ensure(1);
 }
 
 /// A Cloud Spanner database role.

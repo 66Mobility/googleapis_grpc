@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $330;
-import '../../../protobuf/timestamp.pb.dart' as $299;
+import '../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../protobuf/timestamp.pb.dart' as $301;
 
 /// Cluster resource.
 class Cluster extends $pb.GeneratedMessage {
   factory Cluster({
     $core.String? name,
-    $299.Timestamp? createTime,
-    $299.Timestamp? updateTime,
+    $301.Timestamp? createTime,
+    $301.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
     $core.String? certificate,
     $core.String? serviceEndpoint,
@@ -53,8 +53,8 @@ class Cluster extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cluster', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Cluster.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.partner.aistreams.v1alpha1'))
     ..aOS(5, _omitFieldNames ? '' : 'certificate')
     ..aOS(6, _omitFieldNames ? '' : 'serviceEndpoint')
@@ -95,27 +95,27 @@ class Cluster extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this cluster was created.
   @$pb.TagNumber(2)
-  $299.Timestamp get createTime => $_getN(1);
+  $301.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($299.Timestamp v) { setField(2, v); }
+  set createTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureCreateTime() => $_ensure(1);
+  $301.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time at which this cluster was updated.
   @$pb.TagNumber(3)
-  $299.Timestamp get updateTime => $_getN(2);
+  $301.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($299.Timestamp v) { setField(3, v); }
+  set updateTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureUpdateTime() => $_ensure(2);
+  $301.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// Labels with user-defined metadata.
   @$pb.TagNumber(4)
@@ -495,7 +495,7 @@ class CreateClusterRequest extends $pb.GeneratedMessage {
 /// Request message for 'UpdateCluster'.
 class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest({
-    $330.FieldMask? updateMask,
+    $332.FieldMask? updateMask,
     Cluster? cluster,
     $core.String? requestId,
   }) {
@@ -516,7 +516,7 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   factory UpdateClusterRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateClusterRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$330.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..aOM<Cluster>(2, _omitFieldNames ? '' : 'cluster', subBuilder: Cluster.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -549,15 +549,15 @@ class UpdateClusterRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $330.FieldMask get updateMask => $_getN(0);
+  $332.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($330.FieldMask v) { setField(1, v); }
+  set updateMask($332.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $330.FieldMask ensureUpdateMask() => $_ensure(0);
+  $332.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The Cluster resource to update.
   @$pb.TagNumber(2)
@@ -677,8 +677,8 @@ class DeleteClusterRequest extends $pb.GeneratedMessage {
 class Stream extends $pb.GeneratedMessage {
   factory Stream({
     $core.String? name,
-    $299.Timestamp? createTime,
-    $299.Timestamp? updateTime,
+    $301.Timestamp? createTime,
+    $301.Timestamp? updateTime,
     $core.Map<$core.String, $core.String>? labels,
   }) {
     final $result = create();
@@ -702,8 +702,8 @@ class Stream extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Stream', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
     ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'labels', entryClassName: 'Stream.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.partner.aistreams.v1alpha1'))
     ..hasRequiredFields = false
   ;
@@ -742,27 +742,27 @@ class Stream extends $pb.GeneratedMessage {
 
   /// Output only. The time at which this Stream was created.
   @$pb.TagNumber(2)
-  $299.Timestamp get createTime => $_getN(1);
+  $301.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($299.Timestamp v) { setField(2, v); }
+  set createTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureCreateTime() => $_ensure(1);
+  $301.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// Output only. The time at which this Stream was updated.
   @$pb.TagNumber(3)
-  $299.Timestamp get updateTime => $_getN(2);
+  $301.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(3)
-  set updateTime($299.Timestamp v) { setField(3, v); }
+  set updateTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureUpdateTime() => $_ensure(2);
+  $301.Timestamp ensureUpdateTime() => $_ensure(2);
 
   /// The labels of the stream.
   @$pb.TagNumber(4)
@@ -1121,7 +1121,7 @@ class CreateStreamRequest extends $pb.GeneratedMessage {
 /// Request message for 'UpdateStream'.
 class UpdateStreamRequest extends $pb.GeneratedMessage {
   factory UpdateStreamRequest({
-    $330.FieldMask? updateMask,
+    $332.FieldMask? updateMask,
     Stream? stream,
     $core.String? requestId,
   }) {
@@ -1142,7 +1142,7 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
   factory UpdateStreamRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateStreamRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$330.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
+    ..aOM<$332.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
     ..aOM<Stream>(2, _omitFieldNames ? '' : 'stream', subBuilder: Stream.create)
     ..aOS(3, _omitFieldNames ? '' : 'requestId')
     ..hasRequiredFields = false
@@ -1175,15 +1175,15 @@ class UpdateStreamRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $330.FieldMask get updateMask => $_getN(0);
+  $332.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($330.FieldMask v) { setField(1, v); }
+  set updateMask($332.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $330.FieldMask ensureUpdateMask() => $_ensure(0);
+  $332.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The stream resource to update.
   @$pb.TagNumber(2)
@@ -1302,8 +1302,8 @@ class DeleteStreamRequest extends $pb.GeneratedMessage {
 /// Represents the metadata of the long-running operation.
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
-    $299.Timestamp? createTime,
-    $299.Timestamp? endTime,
+    $301.Timestamp? createTime,
+    $301.Timestamp? endTime,
     $core.String? target,
     $core.String? verb,
     $core.String? statusMessage,
@@ -1339,8 +1339,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.partner.aistreams.v1alpha1'), createEmptyInstance: create)
-    ..aOM<$299.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'target')
     ..aOS(4, _omitFieldNames ? '' : 'verb')
     ..aOS(5, _omitFieldNames ? '' : 'statusMessage')
@@ -1372,27 +1372,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// Output only. The time the operation was created.
   @$pb.TagNumber(1)
-  $299.Timestamp get createTime => $_getN(0);
+  $301.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($299.Timestamp v) { setField(1, v); }
+  set createTime($301.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $299.Timestamp ensureCreateTime() => $_ensure(0);
+  $301.Timestamp ensureCreateTime() => $_ensure(0);
 
   /// Output only. The time the operation finished running.
   @$pb.TagNumber(2)
-  $299.Timestamp get endTime => $_getN(1);
+  $301.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($299.Timestamp v) { setField(2, v); }
+  set endTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureEndTime() => $_ensure(1);
+  $301.Timestamp ensureEndTime() => $_ensure(1);
 
   /// Output only. Server-defined resource path for the target of the operation.
   @$pb.TagNumber(3)

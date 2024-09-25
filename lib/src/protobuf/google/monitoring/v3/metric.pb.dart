@@ -14,17 +14,17 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../api/label.pb.dart' as $345;
-import '../../api/metric.pb.dart' as $196;
-import '../../api/metric.pbenum.dart' as $196;
-import '../../api/monitored_resource.pb.dart' as $195;
-import 'common.pb.dart' as $528;
+import '../../api/label.pb.dart' as $347;
+import '../../api/metric.pb.dart' as $197;
+import '../../api/metric.pbenum.dart' as $197;
+import '../../api/monitored_resource.pb.dart' as $196;
+import 'common.pb.dart' as $530;
 
 /// A single data point in a time series.
 class Point extends $pb.GeneratedMessage {
   factory Point({
-    $528.TimeInterval? interval,
-    $528.TypedValue? value,
+    $530.TimeInterval? interval,
+    $530.TypedValue? value,
   }) {
     final $result = create();
     if (interval != null) {
@@ -40,8 +40,8 @@ class Point extends $pb.GeneratedMessage {
   factory Point.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Point', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$528.TimeInterval>(1, _omitFieldNames ? '' : 'interval', subBuilder: $528.TimeInterval.create)
-    ..aOM<$528.TypedValue>(2, _omitFieldNames ? '' : 'value', subBuilder: $528.TypedValue.create)
+    ..aOM<$530.TimeInterval>(1, _omitFieldNames ? '' : 'interval', subBuilder: $530.TimeInterval.create)
+    ..aOM<$530.TypedValue>(2, _omitFieldNames ? '' : 'value', subBuilder: $530.TypedValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,27 +76,27 @@ class Point extends $pb.GeneratedMessage {
   /// until an event resets the cumulative value to zero and sets a new start
   /// time for the following points.
   @$pb.TagNumber(1)
-  $528.TimeInterval get interval => $_getN(0);
+  $530.TimeInterval get interval => $_getN(0);
   @$pb.TagNumber(1)
-  set interval($528.TimeInterval v) { setField(1, v); }
+  set interval($530.TimeInterval v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasInterval() => $_has(0);
   @$pb.TagNumber(1)
   void clearInterval() => clearField(1);
   @$pb.TagNumber(1)
-  $528.TimeInterval ensureInterval() => $_ensure(0);
+  $530.TimeInterval ensureInterval() => $_ensure(0);
 
   /// The value of the data point.
   @$pb.TagNumber(2)
-  $528.TypedValue get value => $_getN(1);
+  $530.TypedValue get value => $_getN(1);
   @$pb.TagNumber(2)
-  set value($528.TypedValue v) { setField(2, v); }
+  set value($530.TypedValue v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $528.TypedValue ensureValue() => $_ensure(1);
+  $530.TypedValue ensureValue() => $_ensure(1);
 }
 
 /// A collection of data points that describes the time-varying values
@@ -105,12 +105,12 @@ class Point extends $pb.GeneratedMessage {
 /// This type is used for both listing and creating time series.
 class TimeSeries extends $pb.GeneratedMessage {
   factory TimeSeries({
-    $196.Metric? metric,
-    $195.MonitoredResource? resource,
-    $196.MetricDescriptor_MetricKind? metricKind,
-    $196.MetricDescriptor_ValueType? valueType,
+    $197.Metric? metric,
+    $196.MonitoredResource? resource,
+    $197.MetricDescriptor_MetricKind? metricKind,
+    $197.MetricDescriptor_ValueType? valueType,
     $core.Iterable<Point>? points,
-    $195.MonitoredResourceMetadata? metadata,
+    $196.MonitoredResourceMetadata? metadata,
     $core.String? unit,
   }) {
     final $result = create();
@@ -142,12 +142,12 @@ class TimeSeries extends $pb.GeneratedMessage {
   factory TimeSeries.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeries', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$196.Metric>(1, _omitFieldNames ? '' : 'metric', subBuilder: $196.Metric.create)
-    ..aOM<$195.MonitoredResource>(2, _omitFieldNames ? '' : 'resource', subBuilder: $195.MonitoredResource.create)
-    ..e<$196.MetricDescriptor_MetricKind>(3, _omitFieldNames ? '' : 'metricKind', $pb.PbFieldType.OE, defaultOrMaker: $196.MetricDescriptor_MetricKind.METRIC_KIND_UNSPECIFIED, valueOf: $196.MetricDescriptor_MetricKind.valueOf, enumValues: $196.MetricDescriptor_MetricKind.values)
-    ..e<$196.MetricDescriptor_ValueType>(4, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: $196.MetricDescriptor_ValueType.VALUE_TYPE_UNSPECIFIED, valueOf: $196.MetricDescriptor_ValueType.valueOf, enumValues: $196.MetricDescriptor_ValueType.values)
+    ..aOM<$197.Metric>(1, _omitFieldNames ? '' : 'metric', subBuilder: $197.Metric.create)
+    ..aOM<$196.MonitoredResource>(2, _omitFieldNames ? '' : 'resource', subBuilder: $196.MonitoredResource.create)
+    ..e<$197.MetricDescriptor_MetricKind>(3, _omitFieldNames ? '' : 'metricKind', $pb.PbFieldType.OE, defaultOrMaker: $197.MetricDescriptor_MetricKind.METRIC_KIND_UNSPECIFIED, valueOf: $197.MetricDescriptor_MetricKind.valueOf, enumValues: $197.MetricDescriptor_MetricKind.values)
+    ..e<$197.MetricDescriptor_ValueType>(4, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: $197.MetricDescriptor_ValueType.VALUE_TYPE_UNSPECIFIED, valueOf: $197.MetricDescriptor_ValueType.valueOf, enumValues: $197.MetricDescriptor_ValueType.values)
     ..pc<Point>(5, _omitFieldNames ? '' : 'points', $pb.PbFieldType.PM, subBuilder: Point.create)
-    ..aOM<$195.MonitoredResourceMetadata>(7, _omitFieldNames ? '' : 'metadata', subBuilder: $195.MonitoredResourceMetadata.create)
+    ..aOM<$196.MonitoredResourceMetadata>(7, _omitFieldNames ? '' : 'metadata', subBuilder: $196.MonitoredResourceMetadata.create)
     ..aOS(8, _omitFieldNames ? '' : 'unit')
     ..hasRequiredFields = false
   ;
@@ -176,30 +176,30 @@ class TimeSeries extends $pb.GeneratedMessage {
   /// The associated metric. A fully-specified metric used to identify the time
   /// series.
   @$pb.TagNumber(1)
-  $196.Metric get metric => $_getN(0);
+  $197.Metric get metric => $_getN(0);
   @$pb.TagNumber(1)
-  set metric($196.Metric v) { setField(1, v); }
+  set metric($197.Metric v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMetric() => $_has(0);
   @$pb.TagNumber(1)
   void clearMetric() => clearField(1);
   @$pb.TagNumber(1)
-  $196.Metric ensureMetric() => $_ensure(0);
+  $197.Metric ensureMetric() => $_ensure(0);
 
   /// The associated monitored resource.  Custom metrics can use only certain
   /// monitored resource types in their time series data. For more information,
   /// see [Monitored resources for custom
   /// metrics](https://cloud.google.com/monitoring/custom-metrics/creating-metrics#custom-metric-resources).
   @$pb.TagNumber(2)
-  $195.MonitoredResource get resource => $_getN(1);
+  $196.MonitoredResource get resource => $_getN(1);
   @$pb.TagNumber(2)
-  set resource($195.MonitoredResource v) { setField(2, v); }
+  set resource($196.MonitoredResource v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResource() => $_has(1);
   @$pb.TagNumber(2)
   void clearResource() => clearField(2);
   @$pb.TagNumber(2)
-  $195.MonitoredResource ensureResource() => $_ensure(1);
+  $196.MonitoredResource ensureResource() => $_ensure(1);
 
   ///  The metric kind of the time series. When listing time series, this metric
   ///  kind might be different from the metric kind of the associated metric if
@@ -211,9 +211,9 @@ class TimeSeries extends $pb.GeneratedMessage {
   ///  metric kind of the new descriptor and must be either `GAUGE` (the default)
   ///  or `CUMULATIVE`.
   @$pb.TagNumber(3)
-  $196.MetricDescriptor_MetricKind get metricKind => $_getN(2);
+  $197.MetricDescriptor_MetricKind get metricKind => $_getN(2);
   @$pb.TagNumber(3)
-  set metricKind($196.MetricDescriptor_MetricKind v) { setField(3, v); }
+  set metricKind($197.MetricDescriptor_MetricKind v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMetricKind() => $_has(2);
   @$pb.TagNumber(3)
@@ -226,9 +226,9 @@ class TimeSeries extends $pb.GeneratedMessage {
   ///  When creating a time series, this field is optional. If present, it must be
   ///  the same as the type of the data in the `points` field.
   @$pb.TagNumber(4)
-  $196.MetricDescriptor_ValueType get valueType => $_getN(3);
+  $197.MetricDescriptor_ValueType get valueType => $_getN(3);
   @$pb.TagNumber(4)
-  set valueType($196.MetricDescriptor_ValueType v) { setField(4, v); }
+  set valueType($197.MetricDescriptor_ValueType v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasValueType() => $_has(3);
   @$pb.TagNumber(4)
@@ -249,15 +249,15 @@ class TimeSeries extends $pb.GeneratedMessage {
   /// time series, this field will include metadata labels that are explicitly
   /// named in the reduction. When creating a time series, this field is ignored.
   @$pb.TagNumber(7)
-  $195.MonitoredResourceMetadata get metadata => $_getN(5);
+  $196.MonitoredResourceMetadata get metadata => $_getN(5);
   @$pb.TagNumber(7)
-  set metadata($195.MonitoredResourceMetadata v) { setField(7, v); }
+  set metadata($196.MonitoredResourceMetadata v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasMetadata() => $_has(5);
   @$pb.TagNumber(7)
   void clearMetadata() => clearField(7);
   @$pb.TagNumber(7)
-  $195.MonitoredResourceMetadata ensureMetadata() => $_ensure(5);
+  $196.MonitoredResourceMetadata ensureMetadata() => $_ensure(5);
 
   /// The units in which the metric value is reported. It is only applicable
   /// if the `value_type` is `INT64`, `DOUBLE`, or `DISTRIBUTION`. The `unit`
@@ -276,8 +276,8 @@ class TimeSeries extends $pb.GeneratedMessage {
 class TimeSeriesDescriptor_ValueDescriptor extends $pb.GeneratedMessage {
   factory TimeSeriesDescriptor_ValueDescriptor({
     $core.String? key,
-    $196.MetricDescriptor_ValueType? valueType,
-    $196.MetricDescriptor_MetricKind? metricKind,
+    $197.MetricDescriptor_ValueType? valueType,
+    $197.MetricDescriptor_MetricKind? metricKind,
     $core.String? unit,
   }) {
     final $result = create();
@@ -301,8 +301,8 @@ class TimeSeriesDescriptor_ValueDescriptor extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeriesDescriptor.ValueDescriptor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
-    ..e<$196.MetricDescriptor_ValueType>(2, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: $196.MetricDescriptor_ValueType.VALUE_TYPE_UNSPECIFIED, valueOf: $196.MetricDescriptor_ValueType.valueOf, enumValues: $196.MetricDescriptor_ValueType.values)
-    ..e<$196.MetricDescriptor_MetricKind>(3, _omitFieldNames ? '' : 'metricKind', $pb.PbFieldType.OE, defaultOrMaker: $196.MetricDescriptor_MetricKind.METRIC_KIND_UNSPECIFIED, valueOf: $196.MetricDescriptor_MetricKind.valueOf, enumValues: $196.MetricDescriptor_MetricKind.values)
+    ..e<$197.MetricDescriptor_ValueType>(2, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: $197.MetricDescriptor_ValueType.VALUE_TYPE_UNSPECIFIED, valueOf: $197.MetricDescriptor_ValueType.valueOf, enumValues: $197.MetricDescriptor_ValueType.values)
+    ..e<$197.MetricDescriptor_MetricKind>(3, _omitFieldNames ? '' : 'metricKind', $pb.PbFieldType.OE, defaultOrMaker: $197.MetricDescriptor_MetricKind.METRIC_KIND_UNSPECIFIED, valueOf: $197.MetricDescriptor_MetricKind.valueOf, enumValues: $197.MetricDescriptor_MetricKind.values)
     ..aOS(4, _omitFieldNames ? '' : 'unit')
     ..hasRequiredFields = false
   ;
@@ -340,9 +340,9 @@ class TimeSeriesDescriptor_ValueDescriptor extends $pb.GeneratedMessage {
 
   /// The value type.
   @$pb.TagNumber(2)
-  $196.MetricDescriptor_ValueType get valueType => $_getN(1);
+  $197.MetricDescriptor_ValueType get valueType => $_getN(1);
   @$pb.TagNumber(2)
-  set valueType($196.MetricDescriptor_ValueType v) { setField(2, v); }
+  set valueType($197.MetricDescriptor_ValueType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValueType() => $_has(1);
   @$pb.TagNumber(2)
@@ -350,9 +350,9 @@ class TimeSeriesDescriptor_ValueDescriptor extends $pb.GeneratedMessage {
 
   /// The value stream kind.
   @$pb.TagNumber(3)
-  $196.MetricDescriptor_MetricKind get metricKind => $_getN(2);
+  $197.MetricDescriptor_MetricKind get metricKind => $_getN(2);
   @$pb.TagNumber(3)
-  set metricKind($196.MetricDescriptor_MetricKind v) { setField(3, v); }
+  set metricKind($197.MetricDescriptor_MetricKind v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMetricKind() => $_has(2);
   @$pb.TagNumber(3)
@@ -375,7 +375,7 @@ class TimeSeriesDescriptor_ValueDescriptor extends $pb.GeneratedMessage {
 /// A descriptor for the labels and points in a time series.
 class TimeSeriesDescriptor extends $pb.GeneratedMessage {
   factory TimeSeriesDescriptor({
-    $core.Iterable<$345.LabelDescriptor>? labelDescriptors,
+    $core.Iterable<$347.LabelDescriptor>? labelDescriptors,
     $core.Iterable<TimeSeriesDescriptor_ValueDescriptor>? pointDescriptors,
   }) {
     final $result = create();
@@ -392,7 +392,7 @@ class TimeSeriesDescriptor extends $pb.GeneratedMessage {
   factory TimeSeriesDescriptor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeriesDescriptor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$345.LabelDescriptor>(1, _omitFieldNames ? '' : 'labelDescriptors', $pb.PbFieldType.PM, subBuilder: $345.LabelDescriptor.create)
+    ..pc<$347.LabelDescriptor>(1, _omitFieldNames ? '' : 'labelDescriptors', $pb.PbFieldType.PM, subBuilder: $347.LabelDescriptor.create)
     ..pc<TimeSeriesDescriptor_ValueDescriptor>(5, _omitFieldNames ? '' : 'pointDescriptors', $pb.PbFieldType.PM, subBuilder: TimeSeriesDescriptor_ValueDescriptor.create)
     ..hasRequiredFields = false
   ;
@@ -420,7 +420,7 @@ class TimeSeriesDescriptor extends $pb.GeneratedMessage {
 
   /// Descriptors for the labels.
   @$pb.TagNumber(1)
-  $core.List<$345.LabelDescriptor> get labelDescriptors => $_getList(0);
+  $core.List<$347.LabelDescriptor> get labelDescriptors => $_getList(0);
 
   /// Descriptors for the point data value columns.
   @$pb.TagNumber(5)
@@ -432,8 +432,8 @@ class TimeSeriesDescriptor extends $pb.GeneratedMessage {
 /// the TimeSeriesDescriptor associated with this object.
 class TimeSeriesData_PointData extends $pb.GeneratedMessage {
   factory TimeSeriesData_PointData({
-    $core.Iterable<$528.TypedValue>? values,
-    $528.TimeInterval? timeInterval,
+    $core.Iterable<$530.TypedValue>? values,
+    $530.TimeInterval? timeInterval,
   }) {
     final $result = create();
     if (values != null) {
@@ -449,8 +449,8 @@ class TimeSeriesData_PointData extends $pb.GeneratedMessage {
   factory TimeSeriesData_PointData.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeSeriesData.PointData', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$528.TypedValue>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $528.TypedValue.create)
-    ..aOM<$528.TimeInterval>(2, _omitFieldNames ? '' : 'timeInterval', subBuilder: $528.TimeInterval.create)
+    ..pc<$530.TypedValue>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $530.TypedValue.create)
+    ..aOM<$530.TimeInterval>(2, _omitFieldNames ? '' : 'timeInterval', subBuilder: $530.TimeInterval.create)
     ..hasRequiredFields = false
   ;
 
@@ -477,19 +477,19 @@ class TimeSeriesData_PointData extends $pb.GeneratedMessage {
 
   /// The values that make up the point.
   @$pb.TagNumber(1)
-  $core.List<$528.TypedValue> get values => $_getList(0);
+  $core.List<$530.TypedValue> get values => $_getList(0);
 
   /// The time interval associated with the point.
   @$pb.TagNumber(2)
-  $528.TimeInterval get timeInterval => $_getN(1);
+  $530.TimeInterval get timeInterval => $_getN(1);
   @$pb.TagNumber(2)
-  set timeInterval($528.TimeInterval v) { setField(2, v); }
+  set timeInterval($530.TimeInterval v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTimeInterval() => $_has(1);
   @$pb.TagNumber(2)
   void clearTimeInterval() => clearField(2);
   @$pb.TagNumber(2)
-  $528.TimeInterval ensureTimeInterval() => $_ensure(1);
+  $530.TimeInterval ensureTimeInterval() => $_ensure(1);
 }
 
 /// Represents the values of a time series associated with a

@@ -13,19 +13,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/postal_address.pb.dart' as $445;
-import 'address.pb.dart' as $447;
+import '../../../type/postal_address.pb.dart' as $447;
+import 'address.pb.dart' as $449;
 import 'address_validation_service.pbenum.dart';
-import 'geocode.pb.dart' as $448;
-import 'metadata.pb.dart' as $449;
-import 'usps_data.pb.dart' as $450;
+import 'geocode.pb.dart' as $450;
+import 'metadata.pb.dart' as $451;
+import 'usps_data.pb.dart' as $452;
 
 export 'address_validation_service.pbenum.dart';
 
 /// The request for validating an address.
 class ValidateAddressRequest extends $pb.GeneratedMessage {
   factory ValidateAddressRequest({
-    $445.PostalAddress? address,
+    $447.PostalAddress? address,
     $core.String? previousResponseId,
     $core.bool? enableUspsCass,
     $core.String? sessionToken,
@@ -50,7 +50,7 @@ class ValidateAddressRequest extends $pb.GeneratedMessage {
   factory ValidateAddressRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ValidateAddressRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
-    ..aOM<$445.PostalAddress>(1, _omitFieldNames ? '' : 'address', subBuilder: $445.PostalAddress.create)
+    ..aOM<$447.PostalAddress>(1, _omitFieldNames ? '' : 'address', subBuilder: $447.PostalAddress.create)
     ..aOS(2, _omitFieldNames ? '' : 'previousResponseId')
     ..aOB(3, _omitFieldNames ? '' : 'enableUspsCass')
     ..aOS(5, _omitFieldNames ? '' : 'sessionToken')
@@ -97,15 +97,15 @@ class ValidateAddressRequest extends $pb.GeneratedMessage {
   ///  [organization][google.type.PostalAddress.organization]. Any values in those
   ///  fields will be discarded and not returned. Please do not set them.
   @$pb.TagNumber(1)
-  $445.PostalAddress get address => $_getN(0);
+  $447.PostalAddress get address => $_getN(0);
   @$pb.TagNumber(1)
-  set address($445.PostalAddress v) { setField(1, v); }
+  set address($447.PostalAddress v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasAddress() => $_has(0);
   @$pb.TagNumber(1)
   void clearAddress() => clearField(1);
   @$pb.TagNumber(1)
-  $445.PostalAddress ensureAddress() => $_ensure(0);
+  $447.PostalAddress ensureAddress() => $_ensure(0);
 
   /// This field must be empty for the first address validation request. If
   /// more requests are necessary to fully validate a single address (for
@@ -356,10 +356,10 @@ class ProvideValidationFeedbackResponse extends $pb.GeneratedMessage {
 class ValidationResult extends $pb.GeneratedMessage {
   factory ValidationResult({
     Verdict? verdict,
-    $447.Address? address,
-    $448.Geocode? geocode,
-    $449.AddressMetadata? metadata,
-    $450.UspsData? uspsData,
+    $449.Address? address,
+    $450.Geocode? geocode,
+    $451.AddressMetadata? metadata,
+    $452.UspsData? uspsData,
   }) {
     final $result = create();
     if (verdict != null) {
@@ -385,10 +385,10 @@ class ValidationResult extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ValidationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.addressvalidation.v1'), createEmptyInstance: create)
     ..aOM<Verdict>(1, _omitFieldNames ? '' : 'verdict', subBuilder: Verdict.create)
-    ..aOM<$447.Address>(2, _omitFieldNames ? '' : 'address', subBuilder: $447.Address.create)
-    ..aOM<$448.Geocode>(3, _omitFieldNames ? '' : 'geocode', subBuilder: $448.Geocode.create)
-    ..aOM<$449.AddressMetadata>(4, _omitFieldNames ? '' : 'metadata', subBuilder: $449.AddressMetadata.create)
-    ..aOM<$450.UspsData>(5, _omitFieldNames ? '' : 'uspsData', subBuilder: $450.UspsData.create)
+    ..aOM<$449.Address>(2, _omitFieldNames ? '' : 'address', subBuilder: $449.Address.create)
+    ..aOM<$450.Geocode>(3, _omitFieldNames ? '' : 'geocode', subBuilder: $450.Geocode.create)
+    ..aOM<$451.AddressMetadata>(4, _omitFieldNames ? '' : 'metadata', subBuilder: $451.AddressMetadata.create)
+    ..aOM<$452.UspsData>(5, _omitFieldNames ? '' : 'uspsData', subBuilder: $452.UspsData.create)
     ..hasRequiredFields = false
   ;
 
@@ -427,53 +427,53 @@ class ValidationResult extends $pb.GeneratedMessage {
 
   /// Information about the address itself as opposed to the geocode.
   @$pb.TagNumber(2)
-  $447.Address get address => $_getN(1);
+  $449.Address get address => $_getN(1);
   @$pb.TagNumber(2)
-  set address($447.Address v) { setField(2, v); }
+  set address($449.Address v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAddress() => $_has(1);
   @$pb.TagNumber(2)
   void clearAddress() => clearField(2);
   @$pb.TagNumber(2)
-  $447.Address ensureAddress() => $_ensure(1);
+  $449.Address ensureAddress() => $_ensure(1);
 
   /// Information about the location and place that the address geocoded to.
   @$pb.TagNumber(3)
-  $448.Geocode get geocode => $_getN(2);
+  $450.Geocode get geocode => $_getN(2);
   @$pb.TagNumber(3)
-  set geocode($448.Geocode v) { setField(3, v); }
+  set geocode($450.Geocode v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasGeocode() => $_has(2);
   @$pb.TagNumber(3)
   void clearGeocode() => clearField(3);
   @$pb.TagNumber(3)
-  $448.Geocode ensureGeocode() => $_ensure(2);
+  $450.Geocode ensureGeocode() => $_ensure(2);
 
   /// Other information relevant to deliverability. `metadata` is not guaranteed
   /// to be fully populated for every address sent to the Address Validation API.
   @$pb.TagNumber(4)
-  $449.AddressMetadata get metadata => $_getN(3);
+  $451.AddressMetadata get metadata => $_getN(3);
   @$pb.TagNumber(4)
-  set metadata($449.AddressMetadata v) { setField(4, v); }
+  set metadata($451.AddressMetadata v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasMetadata() => $_has(3);
   @$pb.TagNumber(4)
   void clearMetadata() => clearField(4);
   @$pb.TagNumber(4)
-  $449.AddressMetadata ensureMetadata() => $_ensure(3);
+  $451.AddressMetadata ensureMetadata() => $_ensure(3);
 
   /// Extra deliverability flags provided by USPS. Only provided in region `US`
   /// and `PR`.
   @$pb.TagNumber(5)
-  $450.UspsData get uspsData => $_getN(4);
+  $452.UspsData get uspsData => $_getN(4);
   @$pb.TagNumber(5)
-  set uspsData($450.UspsData v) { setField(5, v); }
+  set uspsData($452.UspsData v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUspsData() => $_has(4);
   @$pb.TagNumber(5)
   void clearUspsData() => clearField(5);
   @$pb.TagNumber(5)
-  $450.UspsData ensureUspsData() => $_ensure(4);
+  $452.UspsData ensureUspsData() => $_ensure(4);
 }
 
 /// High level overview of the address validation result and geocode.

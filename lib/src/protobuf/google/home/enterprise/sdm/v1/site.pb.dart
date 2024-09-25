@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/struct.pb.dart' as $258;
+import '../../../../protobuf/struct.pb.dart' as $260;
 
 /// Structure resource represents an instance of enterprise managed home or hotel
 /// room.
 class Structure extends $pb.GeneratedMessage {
   factory Structure({
     $core.String? name,
-    $258.Struct? traits,
+    $260.Struct? traits,
   }) {
     final $result = create();
     if (name != null) {
@@ -37,7 +37,7 @@ class Structure extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Structure', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$258.Struct>(2, _omitFieldNames ? '' : 'traits', subBuilder: $258.Struct.create)
+    ..aOM<$260.Struct>(2, _omitFieldNames ? '' : 'traits', subBuilder: $260.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -75,15 +75,15 @@ class Structure extends $pb.GeneratedMessage {
 
   /// Structure traits.
   @$pb.TagNumber(2)
-  $258.Struct get traits => $_getN(1);
+  $260.Struct get traits => $_getN(1);
   @$pb.TagNumber(2)
-  set traits($258.Struct v) { setField(2, v); }
+  set traits($260.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTraits() => $_has(1);
   @$pb.TagNumber(2)
   void clearTraits() => clearField(2);
   @$pb.TagNumber(2)
-  $258.Struct ensureTraits() => $_ensure(1);
+  $260.Struct ensureTraits() => $_ensure(1);
 }
 
 /// Room resource represents an instance of sub-space within a structure such as
@@ -91,7 +91,7 @@ class Structure extends $pb.GeneratedMessage {
 class Room extends $pb.GeneratedMessage {
   factory Room({
     $core.String? name,
-    $258.Struct? traits,
+    $260.Struct? traits,
   }) {
     final $result = create();
     if (name != null) {
@@ -108,7 +108,7 @@ class Room extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Room', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.home.enterprise.sdm.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$258.Struct>(2, _omitFieldNames ? '' : 'traits', subBuilder: $258.Struct.create)
+    ..aOM<$260.Struct>(2, _omitFieldNames ? '' : 'traits', subBuilder: $260.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -146,15 +146,15 @@ class Room extends $pb.GeneratedMessage {
 
   /// Room traits.
   @$pb.TagNumber(2)
-  $258.Struct get traits => $_getN(1);
+  $260.Struct get traits => $_getN(1);
   @$pb.TagNumber(2)
-  set traits($258.Struct v) { setField(2, v); }
+  set traits($260.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasTraits() => $_has(1);
   @$pb.TagNumber(2)
   void clearTraits() => clearField(2);
   @$pb.TagNumber(2)
-  $258.Struct ensureTraits() => $_ensure(1);
+  $260.Struct ensureTraits() => $_ensure(1);
 }
 
 

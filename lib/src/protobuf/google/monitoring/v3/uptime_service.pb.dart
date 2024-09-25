@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $330;
-import 'uptime.pb.dart' as $204;
+import '../../protobuf/field_mask.pb.dart' as $332;
+import 'uptime.pb.dart' as $205;
 
 /// The protocol for the `ListUptimeCheckConfigs` request.
 class ListUptimeCheckConfigsRequest extends $pb.GeneratedMessage {
@@ -129,7 +129,7 @@ class ListUptimeCheckConfigsRequest extends $pb.GeneratedMessage {
 /// The protocol for the `ListUptimeCheckConfigs` response.
 class ListUptimeCheckConfigsResponse extends $pb.GeneratedMessage {
   factory ListUptimeCheckConfigsResponse({
-    $core.Iterable<$204.UptimeCheckConfig>? uptimeCheckConfigs,
+    $core.Iterable<$205.UptimeCheckConfig>? uptimeCheckConfigs,
     $core.String? nextPageToken,
     $core.int? totalSize,
   }) {
@@ -150,7 +150,7 @@ class ListUptimeCheckConfigsResponse extends $pb.GeneratedMessage {
   factory ListUptimeCheckConfigsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListUptimeCheckConfigsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$204.UptimeCheckConfig>(1, _omitFieldNames ? '' : 'uptimeCheckConfigs', $pb.PbFieldType.PM, subBuilder: $204.UptimeCheckConfig.create)
+    ..pc<$205.UptimeCheckConfig>(1, _omitFieldNames ? '' : 'uptimeCheckConfigs', $pb.PbFieldType.PM, subBuilder: $205.UptimeCheckConfig.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
@@ -179,7 +179,7 @@ class ListUptimeCheckConfigsResponse extends $pb.GeneratedMessage {
 
   /// The returned Uptime check configurations.
   @$pb.TagNumber(1)
-  $core.List<$204.UptimeCheckConfig> get uptimeCheckConfigs => $_getList(0);
+  $core.List<$205.UptimeCheckConfig> get uptimeCheckConfigs => $_getList(0);
 
   /// This field represents the pagination token to retrieve the next page of
   /// results. If the value is empty, it means no further results for the
@@ -265,7 +265,7 @@ class GetUptimeCheckConfigRequest extends $pb.GeneratedMessage {
 class CreateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   factory CreateUptimeCheckConfigRequest({
     $core.String? parent,
-    $204.UptimeCheckConfig? uptimeCheckConfig,
+    $205.UptimeCheckConfig? uptimeCheckConfig,
   }) {
     final $result = create();
     if (parent != null) {
@@ -282,7 +282,7 @@ class CreateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateUptimeCheckConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$204.UptimeCheckConfig>(2, _omitFieldNames ? '' : 'uptimeCheckConfig', subBuilder: $204.UptimeCheckConfig.create)
+    ..aOM<$205.UptimeCheckConfig>(2, _omitFieldNames ? '' : 'uptimeCheckConfig', subBuilder: $205.UptimeCheckConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -323,22 +323,22 @@ class CreateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
 
   /// Required. The new Uptime check configuration.
   @$pb.TagNumber(2)
-  $204.UptimeCheckConfig get uptimeCheckConfig => $_getN(1);
+  $205.UptimeCheckConfig get uptimeCheckConfig => $_getN(1);
   @$pb.TagNumber(2)
-  set uptimeCheckConfig($204.UptimeCheckConfig v) { setField(2, v); }
+  set uptimeCheckConfig($205.UptimeCheckConfig v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUptimeCheckConfig() => $_has(1);
   @$pb.TagNumber(2)
   void clearUptimeCheckConfig() => clearField(2);
   @$pb.TagNumber(2)
-  $204.UptimeCheckConfig ensureUptimeCheckConfig() => $_ensure(1);
+  $205.UptimeCheckConfig ensureUptimeCheckConfig() => $_ensure(1);
 }
 
 /// The protocol for the `UpdateUptimeCheckConfig` request.
 class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   factory UpdateUptimeCheckConfigRequest({
-    $330.FieldMask? updateMask,
-    $204.UptimeCheckConfig? uptimeCheckConfig,
+    $332.FieldMask? updateMask,
+    $205.UptimeCheckConfig? uptimeCheckConfig,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -354,8 +354,8 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   factory UpdateUptimeCheckConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateUptimeCheckConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
-    ..aOM<$204.UptimeCheckConfig>(3, _omitFieldNames ? '' : 'uptimeCheckConfig', subBuilder: $204.UptimeCheckConfig.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$205.UptimeCheckConfig>(3, _omitFieldNames ? '' : 'uptimeCheckConfig', subBuilder: $205.UptimeCheckConfig.create)
     ..hasRequiredFields = false
   ;
 
@@ -385,15 +385,15 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   /// field is empty, then the current configuration is completely replaced with
   /// the new configuration.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(0);
+  $332.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(0);
+  $332.FieldMask ensureUpdateMask() => $_ensure(0);
 
   ///  Required. If an `updateMask` has been specified, this field gives
   ///  the values for the set of fields mentioned in the `updateMask`. If an
@@ -407,15 +407,15 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   ///  `http_check`, `tcp_check`, `timeout`, `content_matchers`, and
   ///  `selected_regions`.
   @$pb.TagNumber(3)
-  $204.UptimeCheckConfig get uptimeCheckConfig => $_getN(1);
+  $205.UptimeCheckConfig get uptimeCheckConfig => $_getN(1);
   @$pb.TagNumber(3)
-  set uptimeCheckConfig($204.UptimeCheckConfig v) { setField(3, v); }
+  set uptimeCheckConfig($205.UptimeCheckConfig v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUptimeCheckConfig() => $_has(1);
   @$pb.TagNumber(3)
   void clearUptimeCheckConfig() => clearField(3);
   @$pb.TagNumber(3)
-  $204.UptimeCheckConfig ensureUptimeCheckConfig() => $_ensure(1);
+  $205.UptimeCheckConfig ensureUptimeCheckConfig() => $_ensure(1);
 }
 
 /// The protocol for the `DeleteUptimeCheckConfig` request.
@@ -549,7 +549,7 @@ class ListUptimeCheckIpsRequest extends $pb.GeneratedMessage {
 /// The protocol for the `ListUptimeCheckIps` response.
 class ListUptimeCheckIpsResponse extends $pb.GeneratedMessage {
   factory ListUptimeCheckIpsResponse({
-    $core.Iterable<$204.UptimeCheckIp>? uptimeCheckIps,
+    $core.Iterable<$205.UptimeCheckIp>? uptimeCheckIps,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -566,7 +566,7 @@ class ListUptimeCheckIpsResponse extends $pb.GeneratedMessage {
   factory ListUptimeCheckIpsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListUptimeCheckIpsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$204.UptimeCheckIp>(1, _omitFieldNames ? '' : 'uptimeCheckIps', $pb.PbFieldType.PM, subBuilder: $204.UptimeCheckIp.create)
+    ..pc<$205.UptimeCheckIp>(1, _omitFieldNames ? '' : 'uptimeCheckIps', $pb.PbFieldType.PM, subBuilder: $205.UptimeCheckIp.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -595,7 +595,7 @@ class ListUptimeCheckIpsResponse extends $pb.GeneratedMessage {
   /// The returned list of IP addresses (including region and location) that the
   /// checkers run from.
   @$pb.TagNumber(1)
-  $core.List<$204.UptimeCheckIp> get uptimeCheckIps => $_getList(0);
+  $core.List<$205.UptimeCheckIp> get uptimeCheckIps => $_getList(0);
 
   /// This field represents the pagination token to retrieve the next page of
   /// results. If the value is empty, it means no further results for the

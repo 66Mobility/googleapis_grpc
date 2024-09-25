@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $330;
-import '../../protobuf/timestamp.pb.dart' as $299;
-import 'notification.pb.dart' as $198;
+import '../../protobuf/field_mask.pb.dart' as $332;
+import '../../protobuf/timestamp.pb.dart' as $301;
+import 'notification.pb.dart' as $199;
 
 /// The `ListNotificationChannelDescriptors` request.
 class ListNotificationChannelDescriptorsRequest extends $pb.GeneratedMessage {
@@ -116,7 +116,7 @@ class ListNotificationChannelDescriptorsRequest extends $pb.GeneratedMessage {
 /// The `ListNotificationChannelDescriptors` response.
 class ListNotificationChannelDescriptorsResponse extends $pb.GeneratedMessage {
   factory ListNotificationChannelDescriptorsResponse({
-    $core.Iterable<$198.NotificationChannelDescriptor>? channelDescriptors,
+    $core.Iterable<$199.NotificationChannelDescriptor>? channelDescriptors,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -133,7 +133,7 @@ class ListNotificationChannelDescriptorsResponse extends $pb.GeneratedMessage {
   factory ListNotificationChannelDescriptorsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationChannelDescriptorsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..pc<$198.NotificationChannelDescriptor>(1, _omitFieldNames ? '' : 'channelDescriptors', $pb.PbFieldType.PM, subBuilder: $198.NotificationChannelDescriptor.create)
+    ..pc<$199.NotificationChannelDescriptor>(1, _omitFieldNames ? '' : 'channelDescriptors', $pb.PbFieldType.PM, subBuilder: $199.NotificationChannelDescriptor.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -162,7 +162,7 @@ class ListNotificationChannelDescriptorsResponse extends $pb.GeneratedMessage {
   /// The monitored resource descriptors supported for the specified
   /// project, optionally filtered.
   @$pb.TagNumber(1)
-  $core.List<$198.NotificationChannelDescriptor> get channelDescriptors => $_getList(0);
+  $core.List<$199.NotificationChannelDescriptor> get channelDescriptors => $_getList(0);
 
   /// If not empty, indicates that there may be more results that match
   /// the request. Use the value in the `page_token` field in a
@@ -235,7 +235,7 @@ class GetNotificationChannelDescriptorRequest extends $pb.GeneratedMessage {
 /// The `CreateNotificationChannel` request.
 class CreateNotificationChannelRequest extends $pb.GeneratedMessage {
   factory CreateNotificationChannelRequest({
-    $198.NotificationChannel? notificationChannel,
+    $199.NotificationChannel? notificationChannel,
     $core.String? name,
   }) {
     final $result = create();
@@ -252,7 +252,7 @@ class CreateNotificationChannelRequest extends $pb.GeneratedMessage {
   factory CreateNotificationChannelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateNotificationChannelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$198.NotificationChannel>(2, _omitFieldNames ? '' : 'notificationChannel', subBuilder: $198.NotificationChannel.create)
+    ..aOM<$199.NotificationChannel>(2, _omitFieldNames ? '' : 'notificationChannel', subBuilder: $199.NotificationChannel.create)
     ..aOS(3, _omitFieldNames ? '' : 'name')
     ..hasRequiredFields = false
   ;
@@ -280,15 +280,15 @@ class CreateNotificationChannelRequest extends $pb.GeneratedMessage {
 
   /// Required. The definition of the `NotificationChannel` to create.
   @$pb.TagNumber(2)
-  $198.NotificationChannel get notificationChannel => $_getN(0);
+  $199.NotificationChannel get notificationChannel => $_getN(0);
   @$pb.TagNumber(2)
-  set notificationChannel($198.NotificationChannel v) { setField(2, v); }
+  set notificationChannel($199.NotificationChannel v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasNotificationChannel() => $_has(0);
   @$pb.TagNumber(2)
   void clearNotificationChannel() => clearField(2);
   @$pb.TagNumber(2)
-  $198.NotificationChannel ensureNotificationChannel() => $_ensure(0);
+  $199.NotificationChannel ensureNotificationChannel() => $_ensure(0);
 
   ///  Required. The
   ///  [project](https://cloud.google.com/monitoring/api/v3#project_name) on which
@@ -450,7 +450,7 @@ class ListNotificationChannelsRequest extends $pb.GeneratedMessage {
 class ListNotificationChannelsResponse extends $pb.GeneratedMessage {
   factory ListNotificationChannelsResponse({
     $core.String? nextPageToken,
-    $core.Iterable<$198.NotificationChannel>? notificationChannels,
+    $core.Iterable<$199.NotificationChannel>? notificationChannels,
     $core.int? totalSize,
   }) {
     final $result = create();
@@ -471,7 +471,7 @@ class ListNotificationChannelsResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListNotificationChannelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
-    ..pc<$198.NotificationChannel>(3, _omitFieldNames ? '' : 'notificationChannels', $pb.PbFieldType.PM, subBuilder: $198.NotificationChannel.create)
+    ..pc<$199.NotificationChannel>(3, _omitFieldNames ? '' : 'notificationChannels', $pb.PbFieldType.PM, subBuilder: $199.NotificationChannel.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'totalSize', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -512,7 +512,7 @@ class ListNotificationChannelsResponse extends $pb.GeneratedMessage {
 
   /// The notification channels defined for the specified project.
   @$pb.TagNumber(3)
-  $core.List<$198.NotificationChannel> get notificationChannels => $_getList(1);
+  $core.List<$199.NotificationChannel> get notificationChannels => $_getList(1);
 
   /// The total number of notification channels in all pages. This number is only
   /// an estimate, and may change in subsequent pages. https://aip.dev/158
@@ -583,8 +583,8 @@ class GetNotificationChannelRequest extends $pb.GeneratedMessage {
 /// The `UpdateNotificationChannel` request.
 class UpdateNotificationChannelRequest extends $pb.GeneratedMessage {
   factory UpdateNotificationChannelRequest({
-    $330.FieldMask? updateMask,
-    $198.NotificationChannel? notificationChannel,
+    $332.FieldMask? updateMask,
+    $199.NotificationChannel? notificationChannel,
   }) {
     final $result = create();
     if (updateMask != null) {
@@ -600,8 +600,8 @@ class UpdateNotificationChannelRequest extends $pb.GeneratedMessage {
   factory UpdateNotificationChannelRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateNotificationChannelRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$330.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $330.FieldMask.create)
-    ..aOM<$198.NotificationChannel>(3, _omitFieldNames ? '' : 'notificationChannel', subBuilder: $198.NotificationChannel.create)
+    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$199.NotificationChannel>(3, _omitFieldNames ? '' : 'notificationChannel', subBuilder: $199.NotificationChannel.create)
     ..hasRequiredFields = false
   ;
 
@@ -628,30 +628,30 @@ class UpdateNotificationChannelRequest extends $pb.GeneratedMessage {
 
   /// The fields to update.
   @$pb.TagNumber(2)
-  $330.FieldMask get updateMask => $_getN(0);
+  $332.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(2)
-  set updateMask($330.FieldMask v) { setField(2, v); }
+  set updateMask($332.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $330.FieldMask ensureUpdateMask() => $_ensure(0);
+  $332.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. A description of the changes to be applied to the specified
   /// notification channel. The description must provide a definition for
   /// fields to be updated; the names of these fields should also be
   /// included in the `update_mask`.
   @$pb.TagNumber(3)
-  $198.NotificationChannel get notificationChannel => $_getN(1);
+  $199.NotificationChannel get notificationChannel => $_getN(1);
   @$pb.TagNumber(3)
-  set notificationChannel($198.NotificationChannel v) { setField(3, v); }
+  set notificationChannel($199.NotificationChannel v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasNotificationChannel() => $_has(1);
   @$pb.TagNumber(3)
   void clearNotificationChannel() => clearField(3);
   @$pb.TagNumber(3)
-  $198.NotificationChannel ensureNotificationChannel() => $_ensure(1);
+  $199.NotificationChannel ensureNotificationChannel() => $_ensure(1);
 }
 
 /// The `DeleteNotificationChannel` request.
@@ -782,7 +782,7 @@ class SendNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessag
 class GetNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessage {
   factory GetNotificationChannelVerificationCodeRequest({
     $core.String? name,
-    $299.Timestamp? expireTime,
+    $301.Timestamp? expireTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -799,7 +799,7 @@ class GetNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessage
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetNotificationChannelVerificationCodeRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -846,22 +846,22 @@ class GetNotificationChannelVerificationCodeRequest extends $pb.GeneratedMessage
   /// code's lifetime over omitting an expiration, even though the API does
   /// impose an upper limit on the maximum expiration that is permitted).
   @$pb.TagNumber(2)
-  $299.Timestamp get expireTime => $_getN(1);
+  $301.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($299.Timestamp v) { setField(2, v); }
+  set expireTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureExpireTime() => $_ensure(1);
+  $301.Timestamp ensureExpireTime() => $_ensure(1);
 }
 
 /// The `GetNotificationChannelVerificationCode` request.
 class GetNotificationChannelVerificationCodeResponse extends $pb.GeneratedMessage {
   factory GetNotificationChannelVerificationCodeResponse({
     $core.String? code,
-    $299.Timestamp? expireTime,
+    $301.Timestamp? expireTime,
   }) {
     final $result = create();
     if (code != null) {
@@ -878,7 +878,7 @@ class GetNotificationChannelVerificationCodeResponse extends $pb.GeneratedMessag
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetNotificationChannelVerificationCodeResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'code')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'expireTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -920,15 +920,15 @@ class GetNotificationChannelVerificationCodeResponse extends $pb.GeneratedMessag
   /// an expiration was provided in the request, this is the minimum of the
   /// requested expiration in the request and the max permitted expiration.
   @$pb.TagNumber(2)
-  $299.Timestamp get expireTime => $_getN(1);
+  $301.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(2)
-  set expireTime($299.Timestamp v) { setField(2, v); }
+  set expireTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearExpireTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureExpireTime() => $_ensure(1);
+  $301.Timestamp ensureExpireTime() => $_ensure(1);
 }
 
 /// The `VerifyNotificationChannel` request.

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $299;
-import '../../../type/localized_text.pb.dart' as $457;
-import 'attribution.pb.dart' as $458;
+import '../../../protobuf/timestamp.pb.dart' as $301;
+import '../../../type/localized_text.pb.dart' as $459;
+import 'attribution.pb.dart' as $460;
 
 /// Information about a review of a place.
 class Review extends $pb.GeneratedMessage {
@@ -23,10 +23,10 @@ class Review extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? relativePublishTimeDescription,
     $core.double? rating,
-    $457.LocalizedText? text,
-    $457.LocalizedText? originalText,
-    $458.AuthorAttribution? authorAttribution,
-    $299.Timestamp? publishTime,
+    $459.LocalizedText? text,
+    $459.LocalizedText? originalText,
+    $460.AuthorAttribution? authorAttribution,
+    $301.Timestamp? publishTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -60,10 +60,10 @@ class Review extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'relativePublishTimeDescription')
     ..a<$core.double>(7, _omitFieldNames ? '' : 'rating', $pb.PbFieldType.OD)
-    ..aOM<$457.LocalizedText>(9, _omitFieldNames ? '' : 'text', subBuilder: $457.LocalizedText.create)
-    ..aOM<$457.LocalizedText>(12, _omitFieldNames ? '' : 'originalText', subBuilder: $457.LocalizedText.create)
-    ..aOM<$458.AuthorAttribution>(13, _omitFieldNames ? '' : 'authorAttribution', subBuilder: $458.AuthorAttribution.create)
-    ..aOM<$299.Timestamp>(14, _omitFieldNames ? '' : 'publishTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$459.LocalizedText>(9, _omitFieldNames ? '' : 'text', subBuilder: $459.LocalizedText.create)
+    ..aOM<$459.LocalizedText>(12, _omitFieldNames ? '' : 'originalText', subBuilder: $459.LocalizedText.create)
+    ..aOM<$460.AuthorAttribution>(13, _omitFieldNames ? '' : 'authorAttribution', subBuilder: $460.AuthorAttribution.create)
+    ..aOM<$301.Timestamp>(14, _omitFieldNames ? '' : 'publishTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -123,51 +123,51 @@ class Review extends $pb.GeneratedMessage {
 
   /// The localized text of the review.
   @$pb.TagNumber(9)
-  $457.LocalizedText get text => $_getN(3);
+  $459.LocalizedText get text => $_getN(3);
   @$pb.TagNumber(9)
-  set text($457.LocalizedText v) { setField(9, v); }
+  set text($459.LocalizedText v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasText() => $_has(3);
   @$pb.TagNumber(9)
   void clearText() => clearField(9);
   @$pb.TagNumber(9)
-  $457.LocalizedText ensureText() => $_ensure(3);
+  $459.LocalizedText ensureText() => $_ensure(3);
 
   /// The review text in its original language.
   @$pb.TagNumber(12)
-  $457.LocalizedText get originalText => $_getN(4);
+  $459.LocalizedText get originalText => $_getN(4);
   @$pb.TagNumber(12)
-  set originalText($457.LocalizedText v) { setField(12, v); }
+  set originalText($459.LocalizedText v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasOriginalText() => $_has(4);
   @$pb.TagNumber(12)
   void clearOriginalText() => clearField(12);
   @$pb.TagNumber(12)
-  $457.LocalizedText ensureOriginalText() => $_ensure(4);
+  $459.LocalizedText ensureOriginalText() => $_ensure(4);
 
   /// This review's author.
   @$pb.TagNumber(13)
-  $458.AuthorAttribution get authorAttribution => $_getN(5);
+  $460.AuthorAttribution get authorAttribution => $_getN(5);
   @$pb.TagNumber(13)
-  set authorAttribution($458.AuthorAttribution v) { setField(13, v); }
+  set authorAttribution($460.AuthorAttribution v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasAuthorAttribution() => $_has(5);
   @$pb.TagNumber(13)
   void clearAuthorAttribution() => clearField(13);
   @$pb.TagNumber(13)
-  $458.AuthorAttribution ensureAuthorAttribution() => $_ensure(5);
+  $460.AuthorAttribution ensureAuthorAttribution() => $_ensure(5);
 
   /// Timestamp for the review.
   @$pb.TagNumber(14)
-  $299.Timestamp get publishTime => $_getN(6);
+  $301.Timestamp get publishTime => $_getN(6);
   @$pb.TagNumber(14)
-  set publishTime($299.Timestamp v) { setField(14, v); }
+  set publishTime($301.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasPublishTime() => $_has(6);
   @$pb.TagNumber(14)
   void clearPublishTime() => clearField(14);
   @$pb.TagNumber(14)
-  $299.Timestamp ensurePublishTime() => $_ensure(6);
+  $301.Timestamp ensurePublishTime() => $_ensure(6);
 }
 
 

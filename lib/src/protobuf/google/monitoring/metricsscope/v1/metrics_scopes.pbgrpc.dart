@@ -16,28 +16,28 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $13;
-import 'metrics_scope.pb.dart' as $189;
-import 'metrics_scopes.pb.dart' as $188;
+import 'metrics_scope.pb.dart' as $190;
+import 'metrics_scopes.pb.dart' as $189;
 
 export 'metrics_scopes.pb.dart';
 
 @$pb.GrpcServiceName('google.monitoring.metricsscope.v1.MetricsScopes')
 class MetricsScopesClient extends $grpc.Client {
-  static final _$getMetricsScope = $grpc.ClientMethod<$188.GetMetricsScopeRequest, $189.MetricsScope>(
+  static final _$getMetricsScope = $grpc.ClientMethod<$189.GetMetricsScopeRequest, $190.MetricsScope>(
       '/google.monitoring.metricsscope.v1.MetricsScopes/GetMetricsScope',
-      ($188.GetMetricsScopeRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $189.MetricsScope.fromBuffer(value));
-  static final _$listMetricsScopesByMonitoredProject = $grpc.ClientMethod<$188.ListMetricsScopesByMonitoredProjectRequest, $188.ListMetricsScopesByMonitoredProjectResponse>(
+      ($189.GetMetricsScopeRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $190.MetricsScope.fromBuffer(value));
+  static final _$listMetricsScopesByMonitoredProject = $grpc.ClientMethod<$189.ListMetricsScopesByMonitoredProjectRequest, $189.ListMetricsScopesByMonitoredProjectResponse>(
       '/google.monitoring.metricsscope.v1.MetricsScopes/ListMetricsScopesByMonitoredProject',
-      ($188.ListMetricsScopesByMonitoredProjectRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $188.ListMetricsScopesByMonitoredProjectResponse.fromBuffer(value));
-  static final _$createMonitoredProject = $grpc.ClientMethod<$188.CreateMonitoredProjectRequest, $13.Operation>(
+      ($189.ListMetricsScopesByMonitoredProjectRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $189.ListMetricsScopesByMonitoredProjectResponse.fromBuffer(value));
+  static final _$createMonitoredProject = $grpc.ClientMethod<$189.CreateMonitoredProjectRequest, $13.Operation>(
       '/google.monitoring.metricsscope.v1.MetricsScopes/CreateMonitoredProject',
-      ($188.CreateMonitoredProjectRequest value) => value.writeToBuffer(),
+      ($189.CreateMonitoredProjectRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
-  static final _$deleteMonitoredProject = $grpc.ClientMethod<$188.DeleteMonitoredProjectRequest, $13.Operation>(
+  static final _$deleteMonitoredProject = $grpc.ClientMethod<$189.DeleteMonitoredProjectRequest, $13.Operation>(
       '/google.monitoring.metricsscope.v1.MetricsScopes/DeleteMonitoredProject',
-      ($188.DeleteMonitoredProjectRequest value) => value.writeToBuffer(),
+      ($189.DeleteMonitoredProjectRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
 
   MetricsScopesClient($grpc.ClientChannel channel,
@@ -46,19 +46,19 @@ class MetricsScopesClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$189.MetricsScope> getMetricsScope($188.GetMetricsScopeRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$190.MetricsScope> getMetricsScope($189.GetMetricsScopeRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getMetricsScope, request, options: options);
   }
 
-  $grpc.ResponseFuture<$188.ListMetricsScopesByMonitoredProjectResponse> listMetricsScopesByMonitoredProject($188.ListMetricsScopesByMonitoredProjectRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$189.ListMetricsScopesByMonitoredProjectResponse> listMetricsScopesByMonitoredProject($189.ListMetricsScopesByMonitoredProjectRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listMetricsScopesByMonitoredProject, request, options: options);
   }
 
-  $grpc.ResponseFuture<$13.Operation> createMonitoredProject($188.CreateMonitoredProjectRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> createMonitoredProject($189.CreateMonitoredProjectRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$createMonitoredProject, request, options: options);
   }
 
-  $grpc.ResponseFuture<$13.Operation> deleteMonitoredProject($188.DeleteMonitoredProjectRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> deleteMonitoredProject($189.DeleteMonitoredProjectRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$deleteMonitoredProject, request, options: options);
   }
 }
@@ -68,54 +68,54 @@ abstract class MetricsScopesServiceBase extends $grpc.Service {
   $core.String get $name => 'google.monitoring.metricsscope.v1.MetricsScopes';
 
   MetricsScopesServiceBase() {
-    $addMethod($grpc.ServiceMethod<$188.GetMetricsScopeRequest, $189.MetricsScope>(
+    $addMethod($grpc.ServiceMethod<$189.GetMetricsScopeRequest, $190.MetricsScope>(
         'GetMetricsScope',
         getMetricsScope_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $188.GetMetricsScopeRequest.fromBuffer(value),
-        ($189.MetricsScope value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$188.ListMetricsScopesByMonitoredProjectRequest, $188.ListMetricsScopesByMonitoredProjectResponse>(
+        ($core.List<$core.int> value) => $189.GetMetricsScopeRequest.fromBuffer(value),
+        ($190.MetricsScope value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$189.ListMetricsScopesByMonitoredProjectRequest, $189.ListMetricsScopesByMonitoredProjectResponse>(
         'ListMetricsScopesByMonitoredProject',
         listMetricsScopesByMonitoredProject_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $188.ListMetricsScopesByMonitoredProjectRequest.fromBuffer(value),
-        ($188.ListMetricsScopesByMonitoredProjectResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$188.CreateMonitoredProjectRequest, $13.Operation>(
+        ($core.List<$core.int> value) => $189.ListMetricsScopesByMonitoredProjectRequest.fromBuffer(value),
+        ($189.ListMetricsScopesByMonitoredProjectResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$189.CreateMonitoredProjectRequest, $13.Operation>(
         'CreateMonitoredProject',
         createMonitoredProject_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $188.CreateMonitoredProjectRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $189.CreateMonitoredProjectRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$188.DeleteMonitoredProjectRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$189.DeleteMonitoredProjectRequest, $13.Operation>(
         'DeleteMonitoredProject',
         deleteMonitoredProject_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $188.DeleteMonitoredProjectRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $189.DeleteMonitoredProjectRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
   }
 
-  $async.Future<$189.MetricsScope> getMetricsScope_Pre($grpc.ServiceCall call, $async.Future<$188.GetMetricsScopeRequest> request) async {
+  $async.Future<$190.MetricsScope> getMetricsScope_Pre($grpc.ServiceCall call, $async.Future<$189.GetMetricsScopeRequest> request) async {
     return getMetricsScope(call, await request);
   }
 
-  $async.Future<$188.ListMetricsScopesByMonitoredProjectResponse> listMetricsScopesByMonitoredProject_Pre($grpc.ServiceCall call, $async.Future<$188.ListMetricsScopesByMonitoredProjectRequest> request) async {
+  $async.Future<$189.ListMetricsScopesByMonitoredProjectResponse> listMetricsScopesByMonitoredProject_Pre($grpc.ServiceCall call, $async.Future<$189.ListMetricsScopesByMonitoredProjectRequest> request) async {
     return listMetricsScopesByMonitoredProject(call, await request);
   }
 
-  $async.Future<$13.Operation> createMonitoredProject_Pre($grpc.ServiceCall call, $async.Future<$188.CreateMonitoredProjectRequest> request) async {
+  $async.Future<$13.Operation> createMonitoredProject_Pre($grpc.ServiceCall call, $async.Future<$189.CreateMonitoredProjectRequest> request) async {
     return createMonitoredProject(call, await request);
   }
 
-  $async.Future<$13.Operation> deleteMonitoredProject_Pre($grpc.ServiceCall call, $async.Future<$188.DeleteMonitoredProjectRequest> request) async {
+  $async.Future<$13.Operation> deleteMonitoredProject_Pre($grpc.ServiceCall call, $async.Future<$189.DeleteMonitoredProjectRequest> request) async {
     return deleteMonitoredProject(call, await request);
   }
 
-  $async.Future<$189.MetricsScope> getMetricsScope($grpc.ServiceCall call, $188.GetMetricsScopeRequest request);
-  $async.Future<$188.ListMetricsScopesByMonitoredProjectResponse> listMetricsScopesByMonitoredProject($grpc.ServiceCall call, $188.ListMetricsScopesByMonitoredProjectRequest request);
-  $async.Future<$13.Operation> createMonitoredProject($grpc.ServiceCall call, $188.CreateMonitoredProjectRequest request);
-  $async.Future<$13.Operation> deleteMonitoredProject($grpc.ServiceCall call, $188.DeleteMonitoredProjectRequest request);
+  $async.Future<$190.MetricsScope> getMetricsScope($grpc.ServiceCall call, $189.GetMetricsScopeRequest request);
+  $async.Future<$189.ListMetricsScopesByMonitoredProjectResponse> listMetricsScopesByMonitoredProject($grpc.ServiceCall call, $189.ListMetricsScopesByMonitoredProjectRequest request);
+  $async.Future<$13.Operation> createMonitoredProject($grpc.ServiceCall call, $189.CreateMonitoredProjectRequest request);
+  $async.Future<$13.Operation> deleteMonitoredProject($grpc.ServiceCall call, $189.DeleteMonitoredProjectRequest request);
 }

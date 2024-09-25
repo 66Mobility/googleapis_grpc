@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'resources.pb.dart' as $45;
+import 'resources.pb.dart' as $46;
 import 'serviceusage.pbenum.dart';
 
 export 'serviceusage.pbenum.dart';
@@ -85,7 +85,7 @@ class EnableServiceRequest extends $pb.GeneratedMessage {
 /// Operation when that operation is done.
 class EnableServiceResponse extends $pb.GeneratedMessage {
   factory EnableServiceResponse({
-    $45.Service? service,
+    $46.Service? service,
   }) {
     final $result = create();
     if (service != null) {
@@ -98,7 +98,7 @@ class EnableServiceResponse extends $pb.GeneratedMessage {
   factory EnableServiceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnableServiceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1'), createEmptyInstance: create)
-    ..aOM<$45.Service>(1, _omitFieldNames ? '' : 'service', subBuilder: $45.Service.create)
+    ..aOM<$46.Service>(1, _omitFieldNames ? '' : 'service', subBuilder: $46.Service.create)
     ..hasRequiredFields = false
   ;
 
@@ -125,15 +125,15 @@ class EnableServiceResponse extends $pb.GeneratedMessage {
 
   /// The new state of the service after enabling.
   @$pb.TagNumber(1)
-  $45.Service get service => $_getN(0);
+  $46.Service get service => $_getN(0);
   @$pb.TagNumber(1)
-  set service($45.Service v) { setField(1, v); }
+  set service($46.Service v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
   void clearService() => clearField(1);
   @$pb.TagNumber(1)
-  $45.Service ensureService() => $_ensure(0);
+  $46.Service ensureService() => $_ensure(0);
 }
 
 /// Request message for the `DisableService` method.
@@ -233,7 +233,7 @@ class DisableServiceRequest extends $pb.GeneratedMessage {
 /// Operation when that operation is done.
 class DisableServiceResponse extends $pb.GeneratedMessage {
   factory DisableServiceResponse({
-    $45.Service? service,
+    $46.Service? service,
   }) {
     final $result = create();
     if (service != null) {
@@ -246,7 +246,7 @@ class DisableServiceResponse extends $pb.GeneratedMessage {
   factory DisableServiceResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DisableServiceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1'), createEmptyInstance: create)
-    ..aOM<$45.Service>(1, _omitFieldNames ? '' : 'service', subBuilder: $45.Service.create)
+    ..aOM<$46.Service>(1, _omitFieldNames ? '' : 'service', subBuilder: $46.Service.create)
     ..hasRequiredFields = false
   ;
 
@@ -273,15 +273,15 @@ class DisableServiceResponse extends $pb.GeneratedMessage {
 
   /// The new state of the service after disabling.
   @$pb.TagNumber(1)
-  $45.Service get service => $_getN(0);
+  $46.Service get service => $_getN(0);
   @$pb.TagNumber(1)
-  set service($45.Service v) { setField(1, v); }
+  set service($46.Service v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasService() => $_has(0);
   @$pb.TagNumber(1)
   void clearService() => clearField(1);
   @$pb.TagNumber(1)
-  $45.Service ensureService() => $_ensure(0);
+  $46.Service ensureService() => $_ensure(0);
 }
 
 /// Request message for the `GetService` method.
@@ -447,7 +447,7 @@ class ListServicesRequest extends $pb.GeneratedMessage {
 /// Response message for the `ListServices` method.
 class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse({
-    $core.Iterable<$45.Service>? services,
+    $core.Iterable<$46.Service>? services,
     $core.String? nextPageToken,
   }) {
     final $result = create();
@@ -464,7 +464,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
   factory ListServicesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListServicesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1'), createEmptyInstance: create)
-    ..pc<$45.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $45.Service.create)
+    ..pc<$46.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $46.Service.create)
     ..aOS(2, _omitFieldNames ? '' : 'nextPageToken')
     ..hasRequiredFields = false
   ;
@@ -492,7 +492,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
 
   /// The available services for the requested project.
   @$pb.TagNumber(1)
-  $core.List<$45.Service> get services => $_getList(0);
+  $core.List<$46.Service> get services => $_getList(0);
 
   /// Token that can be passed to `ListServices` to resume a paginated
   /// query.
@@ -654,7 +654,7 @@ class BatchEnableServicesResponse_EnableFailure extends $pb.GeneratedMessage {
 /// Operation when that operation is done.
 class BatchEnableServicesResponse extends $pb.GeneratedMessage {
   factory BatchEnableServicesResponse({
-    $core.Iterable<$45.Service>? services,
+    $core.Iterable<$46.Service>? services,
     $core.Iterable<BatchEnableServicesResponse_EnableFailure>? failures,
   }) {
     final $result = create();
@@ -671,7 +671,7 @@ class BatchEnableServicesResponse extends $pb.GeneratedMessage {
   factory BatchEnableServicesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchEnableServicesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1'), createEmptyInstance: create)
-    ..pc<$45.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $45.Service.create)
+    ..pc<$46.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $46.Service.create)
     ..pc<BatchEnableServicesResponse_EnableFailure>(2, _omitFieldNames ? '' : 'failures', $pb.PbFieldType.PM, subBuilder: BatchEnableServicesResponse_EnableFailure.create)
     ..hasRequiredFields = false
   ;
@@ -699,7 +699,7 @@ class BatchEnableServicesResponse extends $pb.GeneratedMessage {
 
   /// The new state of the services after enabling.
   @$pb.TagNumber(1)
-  $core.List<$45.Service> get services => $_getList(0);
+  $core.List<$46.Service> get services => $_getList(0);
 
   /// If allow_partial_success is true, and one or more services could not be
   /// enabled, this field contains the details about each failure.
@@ -780,7 +780,7 @@ class BatchGetServicesRequest extends $pb.GeneratedMessage {
 /// Response message for the `BatchGetServices` method.
 class BatchGetServicesResponse extends $pb.GeneratedMessage {
   factory BatchGetServicesResponse({
-    $core.Iterable<$45.Service>? services,
+    $core.Iterable<$46.Service>? services,
   }) {
     final $result = create();
     if (services != null) {
@@ -793,7 +793,7 @@ class BatchGetServicesResponse extends $pb.GeneratedMessage {
   factory BatchGetServicesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BatchGetServicesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1'), createEmptyInstance: create)
-    ..pc<$45.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $45.Service.create)
+    ..pc<$46.Service>(1, _omitFieldNames ? '' : 'services', $pb.PbFieldType.PM, subBuilder: $46.Service.create)
     ..hasRequiredFields = false
   ;
 
@@ -820,7 +820,7 @@ class BatchGetServicesResponse extends $pb.GeneratedMessage {
 
   /// The requested Service states.
   @$pb.TagNumber(1)
-  $core.List<$45.Service> get services => $_getList(0);
+  $core.List<$46.Service> get services => $_getList(0);
 }
 
 

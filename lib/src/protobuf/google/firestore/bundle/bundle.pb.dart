@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $299;
-import '../v1/document.pb.dart' as $129;
-import '../v1/query.pb.dart' as $425;
+import '../../protobuf/timestamp.pb.dart' as $301;
+import '../v1/document.pb.dart' as $130;
+import '../v1/query.pb.dart' as $427;
 import 'bundle.pbenum.dart';
 
 export 'bundle.pbenum.dart';
@@ -30,7 +30,7 @@ enum BundledQuery_QueryType {
 class BundledQuery extends $pb.GeneratedMessage {
   factory BundledQuery({
     $core.String? parent,
-    $425.StructuredQuery? structuredQuery,
+    $427.StructuredQuery? structuredQuery,
     BundledQuery_LimitType? limitType,
   }) {
     final $result = create();
@@ -56,7 +56,7 @@ class BundledQuery extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BundledQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.bundle'), createEmptyInstance: create)
     ..oo(0, [2])
     ..aOS(1, _omitFieldNames ? '' : 'parent')
-    ..aOM<$425.StructuredQuery>(2, _omitFieldNames ? '' : 'structuredQuery', subBuilder: $425.StructuredQuery.create)
+    ..aOM<$427.StructuredQuery>(2, _omitFieldNames ? '' : 'structuredQuery', subBuilder: $427.StructuredQuery.create)
     ..e<BundledQuery_LimitType>(3, _omitFieldNames ? '' : 'limitType', $pb.PbFieldType.OE, defaultOrMaker: BundledQuery_LimitType.FIRST, valueOf: BundledQuery_LimitType.valueOf, enumValues: BundledQuery_LimitType.values)
     ..hasRequiredFields = false
   ;
@@ -97,15 +97,15 @@ class BundledQuery extends $pb.GeneratedMessage {
 
   /// A structured query.
   @$pb.TagNumber(2)
-  $425.StructuredQuery get structuredQuery => $_getN(1);
+  $427.StructuredQuery get structuredQuery => $_getN(1);
   @$pb.TagNumber(2)
-  set structuredQuery($425.StructuredQuery v) { setField(2, v); }
+  set structuredQuery($427.StructuredQuery v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStructuredQuery() => $_has(1);
   @$pb.TagNumber(2)
   void clearStructuredQuery() => clearField(2);
   @$pb.TagNumber(2)
-  $425.StructuredQuery ensureStructuredQuery() => $_ensure(1);
+  $427.StructuredQuery ensureStructuredQuery() => $_ensure(1);
 
   @$pb.TagNumber(3)
   BundledQuery_LimitType get limitType => $_getN(2);
@@ -123,7 +123,7 @@ class NamedQuery extends $pb.GeneratedMessage {
   factory NamedQuery({
     $core.String? name,
     BundledQuery? bundledQuery,
-    $299.Timestamp? readTime,
+    $301.Timestamp? readTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -144,7 +144,7 @@ class NamedQuery extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'NamedQuery', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.bundle'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<BundledQuery>(2, _omitFieldNames ? '' : 'bundledQuery', subBuilder: BundledQuery.create)
-    ..aOM<$299.Timestamp>(3, _omitFieldNames ? '' : 'readTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'readTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -196,22 +196,22 @@ class NamedQuery extends $pb.GeneratedMessage {
   /// The read time of the query, when it is used to build the bundle. This is useful to
   /// resume the query from the bundle, once it is loaded by client SDKs.
   @$pb.TagNumber(3)
-  $299.Timestamp get readTime => $_getN(2);
+  $301.Timestamp get readTime => $_getN(2);
   @$pb.TagNumber(3)
-  set readTime($299.Timestamp v) { setField(3, v); }
+  set readTime($301.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasReadTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearReadTime() => clearField(3);
   @$pb.TagNumber(3)
-  $299.Timestamp ensureReadTime() => $_ensure(2);
+  $301.Timestamp ensureReadTime() => $_ensure(2);
 }
 
 /// Metadata describing a Firestore document saved in the bundle.
 class BundledDocumentMetadata extends $pb.GeneratedMessage {
   factory BundledDocumentMetadata({
     $core.String? name,
-    $299.Timestamp? readTime,
+    $301.Timestamp? readTime,
     $core.bool? exists,
     $core.Iterable<$core.String>? queries,
   }) {
@@ -236,7 +236,7 @@ class BundledDocumentMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BundledDocumentMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.bundle'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'readTime', subBuilder: $301.Timestamp.create)
     ..aOB(3, _omitFieldNames ? '' : 'exists')
     ..pPS(4, _omitFieldNames ? '' : 'queries')
     ..hasRequiredFields = false
@@ -275,15 +275,15 @@ class BundledDocumentMetadata extends $pb.GeneratedMessage {
 
   /// The snapshot version of the document data bundled.
   @$pb.TagNumber(2)
-  $299.Timestamp get readTime => $_getN(1);
+  $301.Timestamp get readTime => $_getN(1);
   @$pb.TagNumber(2)
-  set readTime($299.Timestamp v) { setField(2, v); }
+  set readTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasReadTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearReadTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureReadTime() => $_ensure(1);
+  $301.Timestamp ensureReadTime() => $_ensure(1);
 
   /// Whether the document exists.
   @$pb.TagNumber(3)
@@ -304,7 +304,7 @@ class BundledDocumentMetadata extends $pb.GeneratedMessage {
 class BundleMetadata extends $pb.GeneratedMessage {
   factory BundleMetadata({
     $core.String? id,
-    $299.Timestamp? createTime,
+    $301.Timestamp? createTime,
     $core.int? version,
     $core.int? totalDocuments,
     $fixnum.Int64? totalBytes,
@@ -333,7 +333,7 @@ class BundleMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BundleMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.bundle'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'version', $pb.PbFieldType.OU3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'totalDocuments', $pb.PbFieldType.OU3)
     ..a<$fixnum.Int64>(5, _omitFieldNames ? '' : 'totalBytes', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
@@ -373,15 +373,15 @@ class BundleMetadata extends $pb.GeneratedMessage {
 
   /// Time at which the documents snapshot is taken for this bundle.
   @$pb.TagNumber(2)
-  $299.Timestamp get createTime => $_getN(1);
+  $301.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(2)
-  set createTime($299.Timestamp v) { setField(2, v); }
+  set createTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearCreateTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureCreateTime() => $_ensure(1);
+  $301.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The schema version of the bundle.
   @$pb.TagNumber(3)
@@ -432,7 +432,7 @@ class BundleElement extends $pb.GeneratedMessage {
     BundleMetadata? metadata,
     NamedQuery? namedQuery,
     BundledDocumentMetadata? documentMetadata,
-    $129.Document? document,
+    $130.Document? document,
   }) {
     final $result = create();
     if (metadata != null) {
@@ -465,7 +465,7 @@ class BundleElement extends $pb.GeneratedMessage {
     ..aOM<BundleMetadata>(1, _omitFieldNames ? '' : 'metadata', subBuilder: BundleMetadata.create)
     ..aOM<NamedQuery>(2, _omitFieldNames ? '' : 'namedQuery', subBuilder: NamedQuery.create)
     ..aOM<BundledDocumentMetadata>(3, _omitFieldNames ? '' : 'documentMetadata', subBuilder: BundledDocumentMetadata.create)
-    ..aOM<$129.Document>(4, _omitFieldNames ? '' : 'document', subBuilder: $129.Document.create)
+    ..aOM<$130.Document>(4, _omitFieldNames ? '' : 'document', subBuilder: $130.Document.create)
     ..hasRequiredFields = false
   ;
 
@@ -527,15 +527,15 @@ class BundleElement extends $pb.GeneratedMessage {
   BundledDocumentMetadata ensureDocumentMetadata() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $129.Document get document => $_getN(3);
+  $130.Document get document => $_getN(3);
   @$pb.TagNumber(4)
-  set document($129.Document v) { setField(4, v); }
+  set document($130.Document v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDocument() => $_has(3);
   @$pb.TagNumber(4)
   void clearDocument() => clearField(4);
   @$pb.TagNumber(4)
-  $129.Document ensureDocument() => $_ensure(3);
+  $130.Document ensureDocument() => $_ensure(3);
 }
 
 

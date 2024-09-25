@@ -16,19 +16,19 @@ import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../longrunning/operations.pb.dart' as $13;
-import 'datastore_admin.pb.dart' as $112;
+import 'datastore_admin.pb.dart' as $113;
 
 export 'datastore_admin.pb.dart';
 
 @$pb.GrpcServiceName('google.datastore.admin.v1beta1.DatastoreAdmin')
 class DatastoreAdminClient extends $grpc.Client {
-  static final _$exportEntities = $grpc.ClientMethod<$112.ExportEntitiesRequest, $13.Operation>(
+  static final _$exportEntities = $grpc.ClientMethod<$113.ExportEntitiesRequest, $13.Operation>(
       '/google.datastore.admin.v1beta1.DatastoreAdmin/ExportEntities',
-      ($112.ExportEntitiesRequest value) => value.writeToBuffer(),
+      ($113.ExportEntitiesRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
-  static final _$importEntities = $grpc.ClientMethod<$112.ImportEntitiesRequest, $13.Operation>(
+  static final _$importEntities = $grpc.ClientMethod<$113.ImportEntitiesRequest, $13.Operation>(
       '/google.datastore.admin.v1beta1.DatastoreAdmin/ImportEntities',
-      ($112.ImportEntitiesRequest value) => value.writeToBuffer(),
+      ($113.ImportEntitiesRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $13.Operation.fromBuffer(value));
 
   DatastoreAdminClient($grpc.ClientChannel channel,
@@ -37,11 +37,11 @@ class DatastoreAdminClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$13.Operation> exportEntities($112.ExportEntitiesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> exportEntities($113.ExportEntitiesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$exportEntities, request, options: options);
   }
 
-  $grpc.ResponseFuture<$13.Operation> importEntities($112.ImportEntitiesRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$13.Operation> importEntities($113.ImportEntitiesRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$importEntities, request, options: options);
   }
 }
@@ -51,30 +51,30 @@ abstract class DatastoreAdminServiceBase extends $grpc.Service {
   $core.String get $name => 'google.datastore.admin.v1beta1.DatastoreAdmin';
 
   DatastoreAdminServiceBase() {
-    $addMethod($grpc.ServiceMethod<$112.ExportEntitiesRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$113.ExportEntitiesRequest, $13.Operation>(
         'ExportEntities',
         exportEntities_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $112.ExportEntitiesRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $113.ExportEntitiesRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$112.ImportEntitiesRequest, $13.Operation>(
+    $addMethod($grpc.ServiceMethod<$113.ImportEntitiesRequest, $13.Operation>(
         'ImportEntities',
         importEntities_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $112.ImportEntitiesRequest.fromBuffer(value),
+        ($core.List<$core.int> value) => $113.ImportEntitiesRequest.fromBuffer(value),
         ($13.Operation value) => value.writeToBuffer()));
   }
 
-  $async.Future<$13.Operation> exportEntities_Pre($grpc.ServiceCall call, $async.Future<$112.ExportEntitiesRequest> request) async {
+  $async.Future<$13.Operation> exportEntities_Pre($grpc.ServiceCall call, $async.Future<$113.ExportEntitiesRequest> request) async {
     return exportEntities(call, await request);
   }
 
-  $async.Future<$13.Operation> importEntities_Pre($grpc.ServiceCall call, $async.Future<$112.ImportEntitiesRequest> request) async {
+  $async.Future<$13.Operation> importEntities_Pre($grpc.ServiceCall call, $async.Future<$113.ImportEntitiesRequest> request) async {
     return importEntities(call, await request);
   }
 
-  $async.Future<$13.Operation> exportEntities($grpc.ServiceCall call, $112.ExportEntitiesRequest request);
-  $async.Future<$13.Operation> importEntities($grpc.ServiceCall call, $112.ImportEntitiesRequest request);
+  $async.Future<$13.Operation> exportEntities($grpc.ServiceCall call, $113.ExportEntitiesRequest request);
+  $async.Future<$13.Operation> importEntities($grpc.ServiceCall call, $113.ImportEntitiesRequest request);
 }

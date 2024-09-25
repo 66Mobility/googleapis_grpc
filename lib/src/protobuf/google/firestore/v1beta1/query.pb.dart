@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/wrappers.pb.dart' as $304;
-import 'document.pb.dart' as $131;
+import '../../protobuf/wrappers.pb.dart' as $306;
+import 'document.pb.dart' as $132;
 import 'query.pbenum.dart';
 
 export 'query.pbenum.dart';
@@ -261,7 +261,7 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
   factory StructuredQuery_FieldFilter({
     StructuredQuery_FieldReference? field_1,
     StructuredQuery_FieldFilter_Operator? op,
-    $131.Value? value,
+    $132.Value? value,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -282,7 +282,7 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredQuery.FieldFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1beta1'), createEmptyInstance: create)
     ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'field', subBuilder: StructuredQuery_FieldReference.create)
     ..e<StructuredQuery_FieldFilter_Operator>(2, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE, defaultOrMaker: StructuredQuery_FieldFilter_Operator.OPERATOR_UNSPECIFIED, valueOf: StructuredQuery_FieldFilter_Operator.valueOf, enumValues: StructuredQuery_FieldFilter_Operator.values)
-    ..aOM<$131.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $131.Value.create)
+    ..aOM<$132.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $132.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -331,15 +331,15 @@ class StructuredQuery_FieldFilter extends $pb.GeneratedMessage {
 
   /// The value to compare to.
   @$pb.TagNumber(3)
-  $131.Value get value => $_getN(2);
+  $132.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($131.Value v) { setField(3, v); }
+  set value($132.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearValue() => clearField(3);
   @$pb.TagNumber(3)
-  $131.Value ensureValue() => $_ensure(2);
+  $132.Value ensureValue() => $_ensure(2);
 }
 
 enum StructuredQuery_UnaryFilter_OperandType {
@@ -600,7 +600,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
     $core.Iterable<StructuredQuery_CollectionSelector>? from,
     StructuredQuery_Filter? where,
     $core.Iterable<StructuredQuery_Order>? orderBy,
-    $304.Int32Value? limit,
+    $306.Int32Value? limit,
     $core.int? offset,
     Cursor? startAt,
     Cursor? endAt,
@@ -641,7 +641,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
     ..pc<StructuredQuery_CollectionSelector>(2, _omitFieldNames ? '' : 'from', $pb.PbFieldType.PM, subBuilder: StructuredQuery_CollectionSelector.create)
     ..aOM<StructuredQuery_Filter>(3, _omitFieldNames ? '' : 'where', subBuilder: StructuredQuery_Filter.create)
     ..pc<StructuredQuery_Order>(4, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.PM, subBuilder: StructuredQuery_Order.create)
-    ..aOM<$304.Int32Value>(5, _omitFieldNames ? '' : 'limit', subBuilder: $304.Int32Value.create)
+    ..aOM<$306.Int32Value>(5, _omitFieldNames ? '' : 'limit', subBuilder: $306.Int32Value.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
     ..aOM<Cursor>(7, _omitFieldNames ? '' : 'startAt', subBuilder: Cursor.create)
     ..aOM<Cursor>(8, _omitFieldNames ? '' : 'endAt', subBuilder: Cursor.create)
@@ -723,15 +723,15 @@ class StructuredQuery extends $pb.GeneratedMessage {
   ///  Applies after all other constraints.
   ///  Must be >= 0 if specified.
   @$pb.TagNumber(5)
-  $304.Int32Value get limit => $_getN(4);
+  $306.Int32Value get limit => $_getN(4);
   @$pb.TagNumber(5)
-  set limit($304.Int32Value v) { setField(5, v); }
+  set limit($306.Int32Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLimit() => $_has(4);
   @$pb.TagNumber(5)
   void clearLimit() => clearField(5);
   @$pb.TagNumber(5)
-  $304.Int32Value ensureLimit() => $_ensure(4);
+  $306.Int32Value ensureLimit() => $_ensure(4);
 
   ///  The number of results to skip.
   ///
@@ -774,7 +774,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
 /// A position in a query result set.
 class Cursor extends $pb.GeneratedMessage {
   factory Cursor({
-    $core.Iterable<$131.Value>? values,
+    $core.Iterable<$132.Value>? values,
     $core.bool? before,
   }) {
     final $result = create();
@@ -791,7 +791,7 @@ class Cursor extends $pb.GeneratedMessage {
   factory Cursor.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Cursor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1beta1'), createEmptyInstance: create)
-    ..pc<$131.Value>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $131.Value.create)
+    ..pc<$132.Value>(1, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $132.Value.create)
     ..aOB(2, _omitFieldNames ? '' : 'before')
     ..hasRequiredFields = false
   ;
@@ -822,7 +822,7 @@ class Cursor extends $pb.GeneratedMessage {
   ///
   ///  Can contain fewer values than specified in the order by clause.
   @$pb.TagNumber(1)
-  $core.List<$131.Value> get values => $_getList(0);
+  $core.List<$132.Value> get values => $_getList(0);
 
   /// If the position is just before or just after the given values, relative
   /// to the sort order defined by the query.

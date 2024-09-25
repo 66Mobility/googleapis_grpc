@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'document.pb.dart' as $129;
+import 'document.pb.dart' as $130;
 
 ///  The result of a single bucket from a Firestore aggregation query.
 ///
@@ -22,7 +22,7 @@ import 'document.pb.dart' as $129;
 ///  each result.
 class AggregationResult extends $pb.GeneratedMessage {
   factory AggregationResult({
-    $core.Map<$core.String, $129.Value>? aggregateFields,
+    $core.Map<$core.String, $130.Value>? aggregateFields,
   }) {
     final $result = create();
     if (aggregateFields != null) {
@@ -35,7 +35,7 @@ class AggregationResult extends $pb.GeneratedMessage {
   factory AggregationResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..m<$core.String, $129.Value>(2, _omitFieldNames ? '' : 'aggregateFields', entryClassName: 'AggregationResult.AggregateFieldsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $129.Value.create, valueDefaultOrMaker: $129.Value.getDefault, packageName: const $pb.PackageName('google.firestore.v1'))
+    ..m<$core.String, $130.Value>(2, _omitFieldNames ? '' : 'aggregateFields', entryClassName: 'AggregationResult.AggregateFieldsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OM, valueCreator: $130.Value.create, valueDefaultOrMaker: $130.Value.getDefault, packageName: const $pb.PackageName('google.firestore.v1'))
     ..hasRequiredFields = false
   ;
 
@@ -67,7 +67,7 @@ class AggregationResult extends $pb.GeneratedMessage {
   ///  assigned to the aggregation function on input and the size of this map
   ///  equals the number of aggregation functions in the query.
   @$pb.TagNumber(2)
-  $core.Map<$core.String, $129.Value> get aggregateFields => $_getMap(0);
+  $core.Map<$core.String, $130.Value> get aggregateFields => $_getMap(0);
 }
 
 

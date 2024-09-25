@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/localized_text.pb.dart' as $457;
+import '../../../type/localized_text.pb.dart' as $459;
 
 /// Localized description of time.
 class LocalizedTime extends $pb.GeneratedMessage {
   factory LocalizedTime({
-    $457.LocalizedText? time,
+    $459.LocalizedText? time,
     $core.String? timeZone,
   }) {
     final $result = create();
@@ -35,7 +35,7 @@ class LocalizedTime extends $pb.GeneratedMessage {
   factory LocalizedTime.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LocalizedTime', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..aOM<$457.LocalizedText>(1, _omitFieldNames ? '' : 'time', subBuilder: $457.LocalizedText.create)
+    ..aOM<$459.LocalizedText>(1, _omitFieldNames ? '' : 'time', subBuilder: $459.LocalizedText.create)
     ..aOS(2, _omitFieldNames ? '' : 'timeZone')
     ..hasRequiredFields = false
   ;
@@ -63,15 +63,15 @@ class LocalizedTime extends $pb.GeneratedMessage {
 
   /// The time specified as a string in a given time zone.
   @$pb.TagNumber(1)
-  $457.LocalizedText get time => $_getN(0);
+  $459.LocalizedText get time => $_getN(0);
   @$pb.TagNumber(1)
-  set time($457.LocalizedText v) { setField(1, v); }
+  set time($459.LocalizedText v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearTime() => clearField(1);
   @$pb.TagNumber(1)
-  $457.LocalizedText ensureTime() => $_ensure(0);
+  $459.LocalizedText ensureTime() => $_ensure(0);
 
   /// Contains the time zone. The value is the name of the time zone as defined
   /// in the [IANA Time Zone Database](http://www.iana.org/time-zones), e.g.

@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/any.pb.dart' as $318;
+import '../protobuf/any.pb.dart' as $320;
 
 /// Source information used to create a Service Config
 class SourceInfo extends $pb.GeneratedMessage {
   factory SourceInfo({
-    $core.Iterable<$318.Any>? sourceFiles,
+    $core.Iterable<$320.Any>? sourceFiles,
   }) {
     final $result = create();
     if (sourceFiles != null) {
@@ -31,7 +31,7 @@ class SourceInfo extends $pb.GeneratedMessage {
   factory SourceInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SourceInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..pc<$318.Any>(1, _omitFieldNames ? '' : 'sourceFiles', $pb.PbFieldType.PM, subBuilder: $318.Any.create)
+    ..pc<$320.Any>(1, _omitFieldNames ? '' : 'sourceFiles', $pb.PbFieldType.PM, subBuilder: $320.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -58,7 +58,7 @@ class SourceInfo extends $pb.GeneratedMessage {
 
   /// All files used during config generation.
   @$pb.TagNumber(1)
-  $core.List<$318.Any> get sourceFiles => $_getList(0);
+  $core.List<$320.Any> get sourceFiles => $_getList(0);
 }
 
 

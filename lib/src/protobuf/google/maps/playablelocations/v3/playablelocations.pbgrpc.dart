@@ -15,24 +15,24 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'playablelocations.pb.dart' as $171;
+import 'playablelocations.pb.dart' as $172;
 
 export 'playablelocations.pb.dart';
 
 @$pb.GrpcServiceName('google.maps.playablelocations.v3.PlayableLocations')
 class PlayableLocationsClient extends $grpc.Client {
-  static final _$samplePlayableLocations = $grpc.ClientMethod<$171.SamplePlayableLocationsRequest, $171.SamplePlayableLocationsResponse>(
+  static final _$samplePlayableLocations = $grpc.ClientMethod<$172.SamplePlayableLocationsRequest, $172.SamplePlayableLocationsResponse>(
       '/google.maps.playablelocations.v3.PlayableLocations/SamplePlayableLocations',
-      ($171.SamplePlayableLocationsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $171.SamplePlayableLocationsResponse.fromBuffer(value));
-  static final _$logPlayerReports = $grpc.ClientMethod<$171.LogPlayerReportsRequest, $171.LogPlayerReportsResponse>(
+      ($172.SamplePlayableLocationsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $172.SamplePlayableLocationsResponse.fromBuffer(value));
+  static final _$logPlayerReports = $grpc.ClientMethod<$172.LogPlayerReportsRequest, $172.LogPlayerReportsResponse>(
       '/google.maps.playablelocations.v3.PlayableLocations/LogPlayerReports',
-      ($171.LogPlayerReportsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $171.LogPlayerReportsResponse.fromBuffer(value));
-  static final _$logImpressions = $grpc.ClientMethod<$171.LogImpressionsRequest, $171.LogImpressionsResponse>(
+      ($172.LogPlayerReportsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $172.LogPlayerReportsResponse.fromBuffer(value));
+  static final _$logImpressions = $grpc.ClientMethod<$172.LogImpressionsRequest, $172.LogImpressionsResponse>(
       '/google.maps.playablelocations.v3.PlayableLocations/LogImpressions',
-      ($171.LogImpressionsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $171.LogImpressionsResponse.fromBuffer(value));
+      ($172.LogImpressionsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $172.LogImpressionsResponse.fromBuffer(value));
 
   PlayableLocationsClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -40,15 +40,15 @@ class PlayableLocationsClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$171.SamplePlayableLocationsResponse> samplePlayableLocations($171.SamplePlayableLocationsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$172.SamplePlayableLocationsResponse> samplePlayableLocations($172.SamplePlayableLocationsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$samplePlayableLocations, request, options: options);
   }
 
-  $grpc.ResponseFuture<$171.LogPlayerReportsResponse> logPlayerReports($171.LogPlayerReportsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$172.LogPlayerReportsResponse> logPlayerReports($172.LogPlayerReportsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$logPlayerReports, request, options: options);
   }
 
-  $grpc.ResponseFuture<$171.LogImpressionsResponse> logImpressions($171.LogImpressionsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$172.LogImpressionsResponse> logImpressions($172.LogImpressionsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$logImpressions, request, options: options);
   }
 }
@@ -58,42 +58,42 @@ abstract class PlayableLocationsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.maps.playablelocations.v3.PlayableLocations';
 
   PlayableLocationsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$171.SamplePlayableLocationsRequest, $171.SamplePlayableLocationsResponse>(
+    $addMethod($grpc.ServiceMethod<$172.SamplePlayableLocationsRequest, $172.SamplePlayableLocationsResponse>(
         'SamplePlayableLocations',
         samplePlayableLocations_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $171.SamplePlayableLocationsRequest.fromBuffer(value),
-        ($171.SamplePlayableLocationsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$171.LogPlayerReportsRequest, $171.LogPlayerReportsResponse>(
+        ($core.List<$core.int> value) => $172.SamplePlayableLocationsRequest.fromBuffer(value),
+        ($172.SamplePlayableLocationsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$172.LogPlayerReportsRequest, $172.LogPlayerReportsResponse>(
         'LogPlayerReports',
         logPlayerReports_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $171.LogPlayerReportsRequest.fromBuffer(value),
-        ($171.LogPlayerReportsResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$171.LogImpressionsRequest, $171.LogImpressionsResponse>(
+        ($core.List<$core.int> value) => $172.LogPlayerReportsRequest.fromBuffer(value),
+        ($172.LogPlayerReportsResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$172.LogImpressionsRequest, $172.LogImpressionsResponse>(
         'LogImpressions',
         logImpressions_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $171.LogImpressionsRequest.fromBuffer(value),
-        ($171.LogImpressionsResponse value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $172.LogImpressionsRequest.fromBuffer(value),
+        ($172.LogImpressionsResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$171.SamplePlayableLocationsResponse> samplePlayableLocations_Pre($grpc.ServiceCall call, $async.Future<$171.SamplePlayableLocationsRequest> request) async {
+  $async.Future<$172.SamplePlayableLocationsResponse> samplePlayableLocations_Pre($grpc.ServiceCall call, $async.Future<$172.SamplePlayableLocationsRequest> request) async {
     return samplePlayableLocations(call, await request);
   }
 
-  $async.Future<$171.LogPlayerReportsResponse> logPlayerReports_Pre($grpc.ServiceCall call, $async.Future<$171.LogPlayerReportsRequest> request) async {
+  $async.Future<$172.LogPlayerReportsResponse> logPlayerReports_Pre($grpc.ServiceCall call, $async.Future<$172.LogPlayerReportsRequest> request) async {
     return logPlayerReports(call, await request);
   }
 
-  $async.Future<$171.LogImpressionsResponse> logImpressions_Pre($grpc.ServiceCall call, $async.Future<$171.LogImpressionsRequest> request) async {
+  $async.Future<$172.LogImpressionsResponse> logImpressions_Pre($grpc.ServiceCall call, $async.Future<$172.LogImpressionsRequest> request) async {
     return logImpressions(call, await request);
   }
 
-  $async.Future<$171.SamplePlayableLocationsResponse> samplePlayableLocations($grpc.ServiceCall call, $171.SamplePlayableLocationsRequest request);
-  $async.Future<$171.LogPlayerReportsResponse> logPlayerReports($grpc.ServiceCall call, $171.LogPlayerReportsRequest request);
-  $async.Future<$171.LogImpressionsResponse> logImpressions($grpc.ServiceCall call, $171.LogImpressionsRequest request);
+  $async.Future<$172.SamplePlayableLocationsResponse> samplePlayableLocations($grpc.ServiceCall call, $172.SamplePlayableLocationsRequest request);
+  $async.Future<$172.LogPlayerReportsResponse> logPlayerReports($grpc.ServiceCall call, $172.LogPlayerReportsRequest request);
+  $async.Future<$172.LogImpressionsResponse> logImpressions($grpc.ServiceCall call, $172.LogImpressionsRequest request);
 }

@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'membership.pb.dart' as $95;
-import 'space.pb.dart' as $97;
+import 'membership.pb.dart' as $96;
+import 'space.pb.dart' as $98;
 
 /// Request to create a space and add specified users to it.
 class SetUpSpaceRequest extends $pb.GeneratedMessage {
   factory SetUpSpaceRequest({
-    $97.Space? space,
+    $98.Space? space,
     $core.String? requestId,
-    $core.Iterable<$95.Membership>? memberships,
+    $core.Iterable<$96.Membership>? memberships,
   }) {
     final $result = create();
     if (space != null) {
@@ -40,9 +40,9 @@ class SetUpSpaceRequest extends $pb.GeneratedMessage {
   factory SetUpSpaceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SetUpSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
-    ..aOM<$97.Space>(1, _omitFieldNames ? '' : 'space', subBuilder: $97.Space.create)
+    ..aOM<$98.Space>(1, _omitFieldNames ? '' : 'space', subBuilder: $98.Space.create)
     ..aOS(2, _omitFieldNames ? '' : 'requestId')
-    ..pc<$95.Membership>(4, _omitFieldNames ? '' : 'memberships', $pb.PbFieldType.PM, subBuilder: $95.Membership.create)
+    ..pc<$96.Membership>(4, _omitFieldNames ? '' : 'memberships', $pb.PbFieldType.PM, subBuilder: $96.Membership.create)
     ..hasRequiredFields = false
   ;
 
@@ -91,15 +91,15 @@ class SetUpSpaceRequest extends $pb.GeneratedMessage {
   ///  If a `DIRECT_MESSAGE` space already exists, that space is returned instead
   ///  of creating a new space.
   @$pb.TagNumber(1)
-  $97.Space get space => $_getN(0);
+  $98.Space get space => $_getN(0);
   @$pb.TagNumber(1)
-  set space($97.Space v) { setField(1, v); }
+  set space($98.Space v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSpace() => $_has(0);
   @$pb.TagNumber(1)
   void clearSpace() => clearField(1);
   @$pb.TagNumber(1)
-  $97.Space ensureSpace() => $_ensure(0);
+  $98.Space ensureSpace() => $_ensure(0);
 
   /// Optional. A unique identifier for this request.
   /// A random UUID is recommended.
@@ -146,7 +146,7 @@ class SetUpSpaceRequest extends $pb.GeneratedMessage {
   ///  calling Chat app (when setting `Space.spaceType` to
   ///  `DIRECT_MESSAGE` and `Space.singleUserBotDm` to `true`).
   @$pb.TagNumber(4)
-  $core.List<$95.Membership> get memberships => $_getList(2);
+  $core.List<$96.Membership> get memberships => $_getList(2);
 }
 
 

@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $299;
+import '../../../../protobuf/timestamp.pb.dart' as $301;
 
 /// Information about time ranges.
 class TimeRange extends $pb.GeneratedMessage {
   factory TimeRange({
-    $299.Timestamp? startTime,
-    $299.Timestamp? endTime,
+    $301.Timestamp? startTime,
+    $301.Timestamp? endTime,
   }) {
     final $result = create();
     if (startTime != null) {
@@ -35,8 +35,8 @@ class TimeRange extends $pb.GeneratedMessage {
   factory TimeRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TimeRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
-    ..aOM<$299.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $299.Timestamp.create)
-    ..aOM<$299.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $299.Timestamp.create)
+    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -63,27 +63,27 @@ class TimeRange extends $pb.GeneratedMessage {
 
   /// The start of the time range.
   @$pb.TagNumber(1)
-  $299.Timestamp get startTime => $_getN(0);
+  $301.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($299.Timestamp v) { setField(1, v); }
+  set startTime($301.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $299.Timestamp ensureStartTime() => $_ensure(0);
+  $301.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The end of the time range.
   @$pb.TagNumber(2)
-  $299.Timestamp get endTime => $_getN(1);
+  $301.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($299.Timestamp v) { setField(2, v); }
+  set endTime($301.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $299.Timestamp ensureEndTime() => $_ensure(1);
+  $301.Timestamp ensureEndTime() => $_ensure(1);
 }
 
 /// Information about a group.
