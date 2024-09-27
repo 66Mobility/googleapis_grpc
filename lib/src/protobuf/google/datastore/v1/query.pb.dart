@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $301;
-import '../../protobuf/wrappers.pb.dart' as $306;
-import 'entity.pb.dart' as $420;
+import '../../protobuf/timestamp.pb.dart' as $302;
+import '../../protobuf/wrappers.pb.dart' as $307;
+import 'entity.pb.dart' as $421;
 import 'query.pbenum.dart';
 
 export 'query.pbenum.dart';
@@ -24,11 +24,11 @@ export 'query.pbenum.dart';
 /// The result of fetching an entity from Datastore.
 class EntityResult extends $pb.GeneratedMessage {
   factory EntityResult({
-    $420.Entity? entity,
+    $421.Entity? entity,
     $core.List<$core.int>? cursor,
     $fixnum.Int64? version,
-    $301.Timestamp? updateTime,
-    $301.Timestamp? createTime,
+    $302.Timestamp? updateTime,
+    $302.Timestamp? createTime,
   }) {
     final $result = create();
     if (entity != null) {
@@ -53,11 +53,11 @@ class EntityResult extends $pb.GeneratedMessage {
   factory EntityResult.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EntityResult', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$420.Entity>(1, _omitFieldNames ? '' : 'entity', subBuilder: $420.Entity.create)
+    ..aOM<$421.Entity>(1, _omitFieldNames ? '' : 'entity', subBuilder: $421.Entity.create)
     ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
     ..aInt64(4, _omitFieldNames ? '' : 'version')
-    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -84,15 +84,15 @@ class EntityResult extends $pb.GeneratedMessage {
 
   /// The resulting entity.
   @$pb.TagNumber(1)
-  $420.Entity get entity => $_getN(0);
+  $421.Entity get entity => $_getN(0);
   @$pb.TagNumber(1)
-  set entity($420.Entity v) { setField(1, v); }
+  set entity($421.Entity v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasEntity() => $_has(0);
   @$pb.TagNumber(1)
   void clearEntity() => clearField(1);
   @$pb.TagNumber(1)
-  $420.Entity ensureEntity() => $_ensure(0);
+  $421.Entity ensureEntity() => $_ensure(0);
 
   /// A cursor that points to the position after the result entity.
   /// Set only when the `EntityResult` is part of a `QueryResultBatch` message.
@@ -128,30 +128,30 @@ class EntityResult extends $pb.GeneratedMessage {
   /// [`FULL`][google.datastore.v1.EntityResult.ResultType.FULL] entity results.
   /// If this entity is missing, this field will not be set.
   @$pb.TagNumber(5)
-  $301.Timestamp get updateTime => $_getN(3);
+  $302.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(5)
-  set updateTime($301.Timestamp v) { setField(5, v); }
+  set updateTime($302.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $301.Timestamp ensureUpdateTime() => $_ensure(3);
+  $302.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// The time at which the entity was created.
   /// This field is set for
   /// [`FULL`][google.datastore.v1.EntityResult.ResultType.FULL] entity results.
   /// If this entity is missing, this field will not be set.
   @$pb.TagNumber(6)
-  $301.Timestamp get createTime => $_getN(4);
+  $302.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(6)
-  set createTime($301.Timestamp v) { setField(6, v); }
+  set createTime($302.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $301.Timestamp ensureCreateTime() => $_ensure(4);
+  $302.Timestamp ensureCreateTime() => $_ensure(4);
 }
 
 /// A query for entities.
@@ -165,7 +165,7 @@ class Query extends $pb.GeneratedMessage {
     $core.List<$core.int>? startCursor,
     $core.List<$core.int>? endCursor,
     $core.int? offset,
-    $306.Int32Value? limit,
+    $307.Int32Value? limit,
   }) {
     final $result = create();
     if (projection != null) {
@@ -210,7 +210,7 @@ class Query extends $pb.GeneratedMessage {
     ..a<$core.List<$core.int>>(7, _omitFieldNames ? '' : 'startCursor', $pb.PbFieldType.OY)
     ..a<$core.List<$core.int>>(8, _omitFieldNames ? '' : 'endCursor', $pb.PbFieldType.OY)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
-    ..aOM<$306.Int32Value>(12, _omitFieldNames ? '' : 'limit', subBuilder: $306.Int32Value.create)
+    ..aOM<$307.Int32Value>(12, _omitFieldNames ? '' : 'limit', subBuilder: $307.Int32Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -313,15 +313,15 @@ class Query extends $pb.GeneratedMessage {
   /// Unspecified is interpreted as no limit.
   /// Must be >= 0 if specified.
   @$pb.TagNumber(12)
-  $306.Int32Value get limit => $_getN(8);
+  $307.Int32Value get limit => $_getN(8);
   @$pb.TagNumber(12)
-  set limit($306.Int32Value v) { setField(12, v); }
+  set limit($307.Int32Value v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasLimit() => $_has(8);
   @$pb.TagNumber(12)
   void clearLimit() => clearField(12);
   @$pb.TagNumber(12)
-  $306.Int32Value ensureLimit() => $_ensure(8);
+  $307.Int32Value ensureLimit() => $_ensure(8);
 }
 
 ///  Count of entities that match the query.
@@ -330,7 +330,7 @@ class Query extends $pb.GeneratedMessage {
 ///  so it does not require a field reference.
 class AggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
   factory AggregationQuery_Aggregation_Count({
-    $306.Int64Value? upTo,
+    $307.Int64Value? upTo,
   }) {
     final $result = create();
     if (upTo != null) {
@@ -343,7 +343,7 @@ class AggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
   factory AggregationQuery_Aggregation_Count.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'AggregationQuery.Aggregation.Count', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..aOM<$306.Int64Value>(1, _omitFieldNames ? '' : 'upTo', subBuilder: $306.Int64Value.create)
+    ..aOM<$307.Int64Value>(1, _omitFieldNames ? '' : 'upTo', subBuilder: $307.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -389,15 +389,15 @@ class AggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
   ///
   ///  * Must be non-negative when present.
   @$pb.TagNumber(1)
-  $306.Int64Value get upTo => $_getN(0);
+  $307.Int64Value get upTo => $_getN(0);
   @$pb.TagNumber(1)
-  set upTo($306.Int64Value v) { setField(1, v); }
+  set upTo($307.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpTo() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpTo() => clearField(1);
   @$pb.TagNumber(1)
-  $306.Int64Value ensureUpTo() => $_ensure(0);
+  $307.Int64Value ensureUpTo() => $_ensure(0);
 }
 
 ///  Sum of the values of the requested property.
@@ -1163,7 +1163,7 @@ class PropertyFilter extends $pb.GeneratedMessage {
   factory PropertyFilter({
     PropertyReference? property,
     PropertyFilter_Operator? op,
-    $420.Value? value,
+    $421.Value? value,
   }) {
     final $result = create();
     if (property != null) {
@@ -1184,7 +1184,7 @@ class PropertyFilter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PropertyFilter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
     ..aOM<PropertyReference>(1, _omitFieldNames ? '' : 'property', subBuilder: PropertyReference.create)
     ..e<PropertyFilter_Operator>(2, _omitFieldNames ? '' : 'op', $pb.PbFieldType.OE, defaultOrMaker: PropertyFilter_Operator.OPERATOR_UNSPECIFIED, valueOf: PropertyFilter_Operator.valueOf, enumValues: PropertyFilter_Operator.values)
-    ..aOM<$420.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $420.Value.create)
+    ..aOM<$421.Value>(3, _omitFieldNames ? '' : 'value', subBuilder: $421.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1233,15 +1233,15 @@ class PropertyFilter extends $pb.GeneratedMessage {
 
   /// The value to compare the property to.
   @$pb.TagNumber(3)
-  $420.Value get value => $_getN(2);
+  $421.Value get value => $_getN(2);
   @$pb.TagNumber(3)
-  set value($420.Value v) { setField(3, v); }
+  set value($421.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
   void clearValue() => clearField(3);
   @$pb.TagNumber(3)
-  $420.Value ensureValue() => $_ensure(2);
+  $421.Value ensureValue() => $_ensure(2);
 }
 
 /// A [GQL
@@ -1351,7 +1351,7 @@ enum GqlQueryParameter_ParameterType {
 /// A binding parameter for a GQL query.
 class GqlQueryParameter extends $pb.GeneratedMessage {
   factory GqlQueryParameter({
-    $420.Value? value,
+    $421.Value? value,
     $core.List<$core.int>? cursor,
   }) {
     final $result = create();
@@ -1374,7 +1374,7 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GqlQueryParameter', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
     ..oo(0, [2, 3])
-    ..aOM<$420.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $420.Value.create)
+    ..aOM<$421.Value>(2, _omitFieldNames ? '' : 'value', subBuilder: $421.Value.create)
     ..a<$core.List<$core.int>>(3, _omitFieldNames ? '' : 'cursor', $pb.PbFieldType.OY)
     ..hasRequiredFields = false
   ;
@@ -1405,15 +1405,15 @@ class GqlQueryParameter extends $pb.GeneratedMessage {
 
   /// A value parameter.
   @$pb.TagNumber(2)
-  $420.Value get value => $_getN(0);
+  $421.Value get value => $_getN(0);
   @$pb.TagNumber(2)
-  set value($420.Value v) { setField(2, v); }
+  set value($421.Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasValue() => $_has(0);
   @$pb.TagNumber(2)
   void clearValue() => clearField(2);
   @$pb.TagNumber(2)
-  $420.Value ensureValue() => $_ensure(0);
+  $421.Value ensureValue() => $_ensure(0);
 
   /// A query cursor. Query cursors are returned in query
   /// result batches.
@@ -1437,7 +1437,7 @@ class QueryResultBatch extends $pb.GeneratedMessage {
     QueryResultBatch_MoreResultsType? moreResults,
     $core.int? skippedResults,
     $fixnum.Int64? snapshotVersion,
-    $301.Timestamp? readTime,
+    $302.Timestamp? readTime,
   }) {
     final $result = create();
     if (entityResultType != null) {
@@ -1478,7 +1478,7 @@ class QueryResultBatch extends $pb.GeneratedMessage {
     ..e<QueryResultBatch_MoreResultsType>(5, _omitFieldNames ? '' : 'moreResults', $pb.PbFieldType.OE, defaultOrMaker: QueryResultBatch_MoreResultsType.MORE_RESULTS_TYPE_UNSPECIFIED, valueOf: QueryResultBatch_MoreResultsType.valueOf, enumValues: QueryResultBatch_MoreResultsType.values)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'skippedResults', $pb.PbFieldType.O3)
     ..aInt64(7, _omitFieldNames ? '' : 'snapshotVersion')
-    ..aOM<$301.Timestamp>(8, _omitFieldNames ? '' : 'readTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'readTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1587,15 +1587,15 @@ class QueryResultBatch extends $pb.GeneratedMessage {
   ///  This value will not be set for eventually consistent queries in Cloud
   ///  Datastore.
   @$pb.TagNumber(8)
-  $301.Timestamp get readTime => $_getN(7);
+  $302.Timestamp get readTime => $_getN(7);
   @$pb.TagNumber(8)
-  set readTime($301.Timestamp v) { setField(8, v); }
+  set readTime($302.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasReadTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearReadTime() => clearField(8);
   @$pb.TagNumber(8)
-  $301.Timestamp ensureReadTime() => $_ensure(7);
+  $302.Timestamp ensureReadTime() => $_ensure(7);
 }
 
 

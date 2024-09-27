@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../protobuf/field_mask.pb.dart' as $333;
 import 'permission.pb.dart' as $32;
 
 /// Request to create a `Permission`.
@@ -302,7 +302,7 @@ class ListPermissionsResponse extends $pb.GeneratedMessage {
 class UpdatePermissionRequest extends $pb.GeneratedMessage {
   factory UpdatePermissionRequest({
     $32.Permission? permission,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (permission != null) {
@@ -319,7 +319,7 @@ class UpdatePermissionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdatePermissionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta3'), createEmptyInstance: create)
     ..aOM<$32.Permission>(1, _omitFieldNames ? '' : 'permission', subBuilder: $32.Permission.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -361,15 +361,15 @@ class UpdatePermissionRequest extends $pb.GeneratedMessage {
   /// Required. The list of fields to update. Accepted ones:
   ///  - role (`Permission.role` field)
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to delete the `Permission`.

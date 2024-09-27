@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $260;
+import '../../../protobuf/struct.pb.dart' as $261;
 
 /// Request message for
 /// [PredictionService.Predict][google.ai.generativelanguage.v1beta.PredictionService.Predict].
 class PredictRequest extends $pb.GeneratedMessage {
   factory PredictRequest({
     $core.String? model,
-    $core.Iterable<$260.Value>? instances,
-    $260.Value? parameters,
+    $core.Iterable<$261.Value>? instances,
+    $261.Value? parameters,
   }) {
     final $result = create();
     if (model != null) {
@@ -41,8 +41,8 @@ class PredictRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$260.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $260.Value.create)
-    ..aOM<$260.Value>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $260.Value.create)
+    ..pc<$261.Value>(2, _omitFieldNames ? '' : 'instances', $pb.PbFieldType.PM, subBuilder: $261.Value.create)
+    ..aOM<$261.Value>(3, _omitFieldNames ? '' : 'parameters', subBuilder: $261.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -80,25 +80,25 @@ class PredictRequest extends $pb.GeneratedMessage {
 
   /// Required. The instances that are the input to the prediction call.
   @$pb.TagNumber(2)
-  $core.List<$260.Value> get instances => $_getList(1);
+  $core.List<$261.Value> get instances => $_getList(1);
 
   /// Optional. The parameters that govern the prediction call.
   @$pb.TagNumber(3)
-  $260.Value get parameters => $_getN(2);
+  $261.Value get parameters => $_getN(2);
   @$pb.TagNumber(3)
-  set parameters($260.Value v) { setField(3, v); }
+  set parameters($261.Value v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasParameters() => $_has(2);
   @$pb.TagNumber(3)
   void clearParameters() => clearField(3);
   @$pb.TagNumber(3)
-  $260.Value ensureParameters() => $_ensure(2);
+  $261.Value ensureParameters() => $_ensure(2);
 }
 
 /// Response message for [PredictionService.Predict].
 class PredictResponse extends $pb.GeneratedMessage {
   factory PredictResponse({
-    $core.Iterable<$260.Value>? predictions,
+    $core.Iterable<$261.Value>? predictions,
   }) {
     final $result = create();
     if (predictions != null) {
@@ -111,7 +111,7 @@ class PredictResponse extends $pb.GeneratedMessage {
   factory PredictResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PredictResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..pc<$260.Value>(1, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM, subBuilder: $260.Value.create)
+    ..pc<$261.Value>(1, _omitFieldNames ? '' : 'predictions', $pb.PbFieldType.PM, subBuilder: $261.Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -138,7 +138,7 @@ class PredictResponse extends $pb.GeneratedMessage {
 
   /// The outputs of the prediction call.
   @$pb.TagNumber(1)
-  $core.List<$260.Value> get predictions => $_getList(0);
+  $core.List<$261.Value> get predictions => $_getList(0);
 }
 
 

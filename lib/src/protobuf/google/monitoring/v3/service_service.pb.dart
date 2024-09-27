@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $332;
+import '../../protobuf/field_mask.pb.dart' as $333;
 import 'service.pb.dart' as $201;
 import 'service.pbenum.dart' as $201;
 
@@ -349,7 +349,7 @@ class ListServicesResponse extends $pb.GeneratedMessage {
 class UpdateServiceRequest extends $pb.GeneratedMessage {
   factory UpdateServiceRequest({
     $201.Service? service,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (service != null) {
@@ -366,7 +366,7 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServiceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOM<$201.Service>(1, _omitFieldNames ? '' : 'service', subBuilder: $201.Service.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -406,15 +406,15 @@ class UpdateServiceRequest extends $pb.GeneratedMessage {
 
   /// A set of field paths defining which fields to use for the update.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The `DeleteService` request.
@@ -823,7 +823,7 @@ class ListServiceLevelObjectivesResponse extends $pb.GeneratedMessage {
 class UpdateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
   factory UpdateServiceLevelObjectiveRequest({
     $201.ServiceLevelObjective? serviceLevelObjective,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (serviceLevelObjective != null) {
@@ -840,7 +840,7 @@ class UpdateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateServiceLevelObjectiveRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOM<$201.ServiceLevelObjective>(1, _omitFieldNames ? '' : 'serviceLevelObjective', subBuilder: $201.ServiceLevelObjective.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -880,15 +880,15 @@ class UpdateServiceLevelObjectiveRequest extends $pb.GeneratedMessage {
 
   /// A set of field paths defining which fields to use for the update.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The `DeleteServiceLevelObjective` request.

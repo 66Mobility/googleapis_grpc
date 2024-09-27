@@ -91,7 +91,7 @@ const ListAccountIssuesRequest$json = {
     {'1': 'page_size', '3': 2, '4': 1, '5': 5, '8': {}, '10': 'pageSize'},
     {'1': 'page_token', '3': 3, '4': 1, '5': 9, '8': {}, '10': 'pageToken'},
     {'1': 'language_code', '3': 4, '4': 1, '5': 9, '8': {}, '10': 'languageCode'},
-    {'1': 'time_zone', '3': 5, '4': 1, '5': 11, '6': '.google.type.TimeZone', '8': {}, '10': 'timeZone'},
+    {'1': 'time_zone', '3': 5, '4': 1, '5': 9, '8': {}, '10': 'timeZone'},
   ],
 };
 
@@ -100,8 +100,8 @@ final $typed_data.Uint8List listAccountIssuesRequestDescriptor = $convert.base64
     'ChhMaXN0QWNjb3VudElzc3Vlc1JlcXVlc3QSQgoGcGFyZW50GAEgASgJQirgQQL6QSQKIm1lcm'
     'NoYW50YXBpLmdvb2dsZWFwaXMuY29tL0FjY291bnRSBnBhcmVudBIgCglwYWdlX3NpemUYAiAB'
     'KAVCA+BBAVIIcGFnZVNpemUSIgoKcGFnZV90b2tlbhgDIAEoCUID4EEBUglwYWdlVG9rZW4SKA'
-    'oNbGFuZ3VhZ2VfY29kZRgEIAEoCUID4EEBUgxsYW5ndWFnZUNvZGUSNwoJdGltZV96b25lGAUg'
-    'ASgLMhUuZ29vZ2xlLnR5cGUuVGltZVpvbmVCA+BBAVIIdGltZVpvbmU=');
+    'oNbGFuZ3VhZ2VfY29kZRgEIAEoCUID4EEBUgxsYW5ndWFnZUNvZGUSIAoJdGltZV96b25lGAUg'
+    'ASgJQgPgQQFSCHRpbWVab25l');
 
 @$core.Deprecated('Use listAccountIssuesResponseDescriptor instead')
 const ListAccountIssuesResponse$json = {

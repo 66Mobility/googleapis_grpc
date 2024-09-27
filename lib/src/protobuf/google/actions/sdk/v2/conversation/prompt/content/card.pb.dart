@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'image.pb.dart' as $308;
-import 'image.pbenum.dart' as $308;
-import 'link.pb.dart' as $309;
+import 'image.pb.dart' as $309;
+import 'image.pbenum.dart' as $309;
+import 'link.pb.dart' as $310;
 
 /// A basic card for displaying some information, e.g. an image and/or text.
 class Card extends $pb.GeneratedMessage {
@@ -23,9 +23,9 @@ class Card extends $pb.GeneratedMessage {
     $core.String? title,
     $core.String? subtitle,
     $core.String? text,
-    $308.Image? image,
-    $308.Image_ImageFill? imageFill,
-    $309.Link? button,
+    $309.Image? image,
+    $309.Image_ImageFill? imageFill,
+    $310.Link? button,
   }) {
     final $result = create();
     if (title != null) {
@@ -56,9 +56,9 @@ class Card extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
     ..aOS(3, _omitFieldNames ? '' : 'text')
-    ..aOM<$308.Image>(4, _omitFieldNames ? '' : 'image', subBuilder: $308.Image.create)
-    ..e<$308.Image_ImageFill>(5, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $308.Image_ImageFill.UNSPECIFIED, valueOf: $308.Image_ImageFill.valueOf, enumValues: $308.Image_ImageFill.values)
-    ..aOM<$309.Link>(6, _omitFieldNames ? '' : 'button', subBuilder: $309.Link.create)
+    ..aOM<$309.Image>(4, _omitFieldNames ? '' : 'image', subBuilder: $309.Image.create)
+    ..e<$309.Image_ImageFill>(5, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $309.Image_ImageFill.UNSPECIFIED, valueOf: $309.Image_ImageFill.valueOf, enumValues: $309.Image_ImageFill.values)
+    ..aOM<$310.Link>(6, _omitFieldNames ? '' : 'button', subBuilder: $310.Link.create)
     ..hasRequiredFields = false
   ;
 
@@ -119,21 +119,21 @@ class Card extends $pb.GeneratedMessage {
   /// A hero image for the card. The height is fixed to 192dp.
   /// Optional.
   @$pb.TagNumber(4)
-  $308.Image get image => $_getN(3);
+  $309.Image get image => $_getN(3);
   @$pb.TagNumber(4)
-  set image($308.Image v) { setField(4, v); }
+  set image($309.Image v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(3);
   @$pb.TagNumber(4)
   void clearImage() => clearField(4);
   @$pb.TagNumber(4)
-  $308.Image ensureImage() => $_ensure(3);
+  $309.Image ensureImage() => $_ensure(3);
 
   /// How the image background will be filled. Optional.
   @$pb.TagNumber(5)
-  $308.Image_ImageFill get imageFill => $_getN(4);
+  $309.Image_ImageFill get imageFill => $_getN(4);
   @$pb.TagNumber(5)
-  set imageFill($308.Image_ImageFill v) { setField(5, v); }
+  set imageFill($309.Image_ImageFill v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasImageFill() => $_has(4);
   @$pb.TagNumber(5)
@@ -142,15 +142,15 @@ class Card extends $pb.GeneratedMessage {
   /// Button.
   /// Optional.
   @$pb.TagNumber(6)
-  $309.Link get button => $_getN(5);
+  $310.Link get button => $_getN(5);
   @$pb.TagNumber(6)
-  set button($309.Link v) { setField(6, v); }
+  set button($310.Link v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasButton() => $_has(5);
   @$pb.TagNumber(6)
   void clearButton() => clearField(6);
   @$pb.TagNumber(6)
-  $309.Link ensureButton() => $_ensure(5);
+  $310.Link ensureButton() => $_ensure(5);
 }
 
 

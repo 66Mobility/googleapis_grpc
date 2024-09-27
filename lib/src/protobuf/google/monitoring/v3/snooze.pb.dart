@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $530;
+import 'common.pb.dart' as $531;
 
 /// Criteria specific to the `AlertPolicy`s that this `Snooze` applies to. The
 /// `Snooze` will suppress alerts that come from one of the `AlertPolicy`s
@@ -77,7 +77,7 @@ class Snooze extends $pb.GeneratedMessage {
   factory Snooze({
     $core.String? name,
     Snooze_Criteria? criteria,
-    $530.TimeInterval? interval,
+    $531.TimeInterval? interval,
     $core.String? displayName,
   }) {
     final $result = create();
@@ -102,7 +102,7 @@ class Snooze extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Snooze', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Snooze_Criteria>(3, _omitFieldNames ? '' : 'criteria', subBuilder: Snooze_Criteria.create)
-    ..aOM<$530.TimeInterval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $530.TimeInterval.create)
+    ..aOM<$531.TimeInterval>(4, _omitFieldNames ? '' : 'interval', subBuilder: $531.TimeInterval.create)
     ..aOS(5, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
   ;
@@ -161,15 +161,15 @@ class Snooze extends $pb.GeneratedMessage {
   /// skew to account for the time it takes for a request to reach the API from
   /// the UI.
   @$pb.TagNumber(4)
-  $530.TimeInterval get interval => $_getN(2);
+  $531.TimeInterval get interval => $_getN(2);
   @$pb.TagNumber(4)
-  set interval($530.TimeInterval v) { setField(4, v); }
+  set interval($531.TimeInterval v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInterval() => $_has(2);
   @$pb.TagNumber(4)
   void clearInterval() => clearField(4);
   @$pb.TagNumber(4)
-  $530.TimeInterval ensureInterval() => $_ensure(2);
+  $531.TimeInterval ensureInterval() => $_ensure(2);
 
   /// Required. A display name for the `Snooze`. This can be, at most, 512
   /// unicode characters.

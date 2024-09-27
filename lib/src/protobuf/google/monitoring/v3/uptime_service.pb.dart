@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $332;
+import '../../protobuf/field_mask.pb.dart' as $333;
 import 'uptime.pb.dart' as $205;
 
 /// The protocol for the `ListUptimeCheckConfigs` request.
@@ -337,7 +337,7 @@ class CreateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
 /// The protocol for the `UpdateUptimeCheckConfig` request.
 class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   factory UpdateUptimeCheckConfigRequest({
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
     $205.UptimeCheckConfig? uptimeCheckConfig,
   }) {
     final $result = create();
@@ -354,7 +354,7 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   factory UpdateUptimeCheckConfigRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateUptimeCheckConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..aOM<$205.UptimeCheckConfig>(3, _omitFieldNames ? '' : 'uptimeCheckConfig', subBuilder: $205.UptimeCheckConfig.create)
     ..hasRequiredFields = false
   ;
@@ -385,15 +385,15 @@ class UpdateUptimeCheckConfigRequest extends $pb.GeneratedMessage {
   /// field is empty, then the current configuration is completely replaced with
   /// the new configuration.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(0);
+  $333.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(0);
+  $333.FieldMask ensureUpdateMask() => $_ensure(0);
 
   ///  Required. If an `updateMask` has been specified, this field gives
   ///  the values for the set of fields mentioned in the `updateMask`. If an

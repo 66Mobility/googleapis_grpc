@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'actor.pb.dart' as $385;
-import 'common.pb.dart' as $386;
+import 'actor.pb.dart' as $386;
+import 'common.pb.dart' as $387;
 import 'target.pbenum.dart';
 
 export 'target.pbenum.dart';
@@ -744,10 +744,10 @@ enum Owner_Owner {
 /// Information about the owner of a Drive item.
 class Owner extends $pb.GeneratedMessage {
   factory Owner({
-    $385.User? user,
+    $386.User? user,
   @$core.Deprecated('This field is deprecated.')
     TeamDriveReference? teamDrive,
-    $386.Domain? domain,
+    $387.Domain? domain,
     DriveReference? drive,
   }) {
     final $result = create();
@@ -777,9 +777,9 @@ class Owner extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Owner', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
     ..oo(0, [1, 4])
-    ..aOM<$385.User>(1, _omitFieldNames ? '' : 'user', subBuilder: $385.User.create)
+    ..aOM<$386.User>(1, _omitFieldNames ? '' : 'user', subBuilder: $386.User.create)
     ..aOM<TeamDriveReference>(2, _omitFieldNames ? '' : 'teamDrive', subBuilder: TeamDriveReference.create)
-    ..aOM<$386.Domain>(3, _omitFieldNames ? '' : 'domain', subBuilder: $386.Domain.create)
+    ..aOM<$387.Domain>(3, _omitFieldNames ? '' : 'domain', subBuilder: $387.Domain.create)
     ..aOM<DriveReference>(4, _omitFieldNames ? '' : 'drive', subBuilder: DriveReference.create)
     ..hasRequiredFields = false
   ;
@@ -810,15 +810,15 @@ class Owner extends $pb.GeneratedMessage {
 
   /// The user that owns the Drive item.
   @$pb.TagNumber(1)
-  $385.User get user => $_getN(0);
+  $386.User get user => $_getN(0);
   @$pb.TagNumber(1)
-  set user($385.User v) { setField(1, v); }
+  set user($386.User v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUser() => $_has(0);
   @$pb.TagNumber(1)
   void clearUser() => clearField(1);
   @$pb.TagNumber(1)
-  $385.User ensureUser() => $_ensure(0);
+  $386.User ensureUser() => $_ensure(0);
 
   /// This field is deprecated; please use the `drive` field instead.
   @$core.Deprecated('This field is deprecated.')
@@ -839,15 +839,15 @@ class Owner extends $pb.GeneratedMessage {
 
   /// The domain of the Drive item owner.
   @$pb.TagNumber(3)
-  $386.Domain get domain => $_getN(2);
+  $387.Domain get domain => $_getN(2);
   @$pb.TagNumber(3)
-  set domain($386.Domain v) { setField(3, v); }
+  set domain($387.Domain v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDomain() => $_has(2);
   @$pb.TagNumber(3)
   void clearDomain() => clearField(3);
   @$pb.TagNumber(3)
-  $386.Domain ensureDomain() => $_ensure(2);
+  $387.Domain ensureDomain() => $_ensure(2);
 
   /// The drive that owns the item.
   @$pb.TagNumber(4)

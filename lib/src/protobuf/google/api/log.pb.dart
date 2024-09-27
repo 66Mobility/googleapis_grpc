@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'label.pb.dart' as $347;
+import 'label.pb.dart' as $348;
 
 ///  A description of a log type. Example in YAML format:
 ///
@@ -26,7 +26,7 @@ import 'label.pb.dart' as $347;
 class LogDescriptor extends $pb.GeneratedMessage {
   factory LogDescriptor({
     $core.String? name,
-    $core.Iterable<$347.LabelDescriptor>? labels,
+    $core.Iterable<$348.LabelDescriptor>? labels,
     $core.String? description,
     $core.String? displayName,
   }) {
@@ -51,7 +51,7 @@ class LogDescriptor extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogDescriptor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<$347.LabelDescriptor>(2, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $347.LabelDescriptor.create)
+    ..pc<$348.LabelDescriptor>(2, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $348.LabelDescriptor.create)
     ..aOS(3, _omitFieldNames ? '' : 'description')
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..hasRequiredFields = false
@@ -95,7 +95,7 @@ class LogDescriptor extends $pb.GeneratedMessage {
   /// Runtime requests that contain labels not specified here are
   /// considered invalid.
   @$pb.TagNumber(2)
-  $core.List<$347.LabelDescriptor> get labels => $_getList(1);
+  $core.List<$348.LabelDescriptor> get labels => $_getList(1);
 
   /// A human-readable description of this log. This information appears in
   /// the documentation and can contain details.

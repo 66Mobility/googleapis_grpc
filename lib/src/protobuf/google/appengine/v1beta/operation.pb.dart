@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $301;
+import '../../protobuf/timestamp.pb.dart' as $302;
 
 enum OperationMetadataV1Beta_MethodMetadata {
   createVersionMetadata, 
@@ -24,8 +24,8 @@ enum OperationMetadataV1Beta_MethodMetadata {
 class OperationMetadataV1Beta extends $pb.GeneratedMessage {
   factory OperationMetadataV1Beta({
     $core.String? method,
-    $301.Timestamp? insertTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? insertTime,
+    $302.Timestamp? endTime,
     $core.String? user,
     $core.String? target,
     $core.String? ephemeralMessage,
@@ -70,8 +70,8 @@ class OperationMetadataV1Beta extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadataV1Beta', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
     ..oo(0, [8])
     ..aOS(1, _omitFieldNames ? '' : 'method')
-    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'insertTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'insertTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..aOS(4, _omitFieldNames ? '' : 'user')
     ..aOS(5, _omitFieldNames ? '' : 'target')
     ..aOS(6, _omitFieldNames ? '' : 'ephemeralMessage')
@@ -121,29 +121,29 @@ class OperationMetadataV1Beta extends $pb.GeneratedMessage {
   ///
   ///  @OutputOnly
   @$pb.TagNumber(2)
-  $301.Timestamp get insertTime => $_getN(1);
+  $302.Timestamp get insertTime => $_getN(1);
   @$pb.TagNumber(2)
-  set insertTime($301.Timestamp v) { setField(2, v); }
+  set insertTime($302.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasInsertTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearInsertTime() => clearField(2);
   @$pb.TagNumber(2)
-  $301.Timestamp ensureInsertTime() => $_ensure(1);
+  $302.Timestamp ensureInsertTime() => $_ensure(1);
 
   ///  Time that this operation completed.
   ///
   ///  @OutputOnly
   @$pb.TagNumber(3)
-  $301.Timestamp get endTime => $_getN(2);
+  $302.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($301.Timestamp v) { setField(3, v); }
+  set endTime($302.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $301.Timestamp ensureEndTime() => $_ensure(2);
+  $302.Timestamp ensureEndTime() => $_ensure(2);
 
   ///  User who requested this operation.
   ///

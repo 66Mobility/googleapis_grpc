@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/phone_number.pb.dart' as $539;
+import '../../../../type/phone_number.pb.dart' as $541;
 
 /// Customer service information.
 class CustomerService extends $pb.GeneratedMessage {
   factory CustomerService({
     $core.String? uri,
     $core.String? email,
-    $539.PhoneNumber? phone,
+    $541.PhoneNumber? phone,
   }) {
     final $result = create();
     if (uri != null) {
@@ -41,7 +41,7 @@ class CustomerService extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomerService', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'uri')
     ..aOS(2, _omitFieldNames ? '' : 'email')
-    ..aOM<$539.PhoneNumber>(3, _omitFieldNames ? '' : 'phone', subBuilder: $539.PhoneNumber.create)
+    ..aOM<$541.PhoneNumber>(3, _omitFieldNames ? '' : 'phone', subBuilder: $541.PhoneNumber.create)
     ..hasRequiredFields = false
   ;
 
@@ -88,15 +88,15 @@ class CustomerService extends $pb.GeneratedMessage {
 
   /// Optional. The phone number where customer service may be called.
   @$pb.TagNumber(3)
-  $539.PhoneNumber get phone => $_getN(2);
+  $541.PhoneNumber get phone => $_getN(2);
   @$pb.TagNumber(3)
-  set phone($539.PhoneNumber v) { setField(3, v); }
+  set phone($541.PhoneNumber v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPhone() => $_has(2);
   @$pb.TagNumber(3)
   void clearPhone() => clearField(3);
   @$pb.TagNumber(3)
-  $539.PhoneNumber ensurePhone() => $_ensure(2);
+  $541.PhoneNumber ensurePhone() => $_ensure(2);
 }
 
 

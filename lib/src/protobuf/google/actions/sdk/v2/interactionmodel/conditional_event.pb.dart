@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'event_handler.pb.dart' as $276;
+import 'event_handler.pb.dart' as $277;
 
 /// Registers events that trigger as the result of a true condition.
 class ConditionalEvent extends $pb.GeneratedMessage {
   factory ConditionalEvent({
     $core.String? condition,
     $core.String? transitionToScene,
-    $276.EventHandler? handler,
+    $277.EventHandler? handler,
   }) {
     final $result = create();
     if (condition != null) {
@@ -41,7 +41,7 @@ class ConditionalEvent extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ConditionalEvent', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'condition')
     ..aOS(2, _omitFieldNames ? '' : 'transitionToScene')
-    ..aOM<$276.EventHandler>(3, _omitFieldNames ? '' : 'handler', subBuilder: $276.EventHandler.create)
+    ..aOM<$277.EventHandler>(3, _omitFieldNames ? '' : 'handler', subBuilder: $277.EventHandler.create)
     ..hasRequiredFields = false
   ;
 
@@ -106,15 +106,15 @@ class ConditionalEvent extends $pb.GeneratedMessage {
   /// to `true`. Should execute before transitioning to the destination scene.
   /// Useful to generate Prompts in response to events.
   @$pb.TagNumber(3)
-  $276.EventHandler get handler => $_getN(2);
+  $277.EventHandler get handler => $_getN(2);
   @$pb.TagNumber(3)
-  set handler($276.EventHandler v) { setField(3, v); }
+  set handler($277.EventHandler v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasHandler() => $_has(2);
   @$pb.TagNumber(3)
   void clearHandler() => clearField(3);
   @$pb.TagNumber(3)
-  $276.EventHandler ensureHandler() => $_ensure(2);
+  $277.EventHandler ensureHandler() => $_ensure(2);
 }
 
 

@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/empty.pb.dart' as $3;
-import '../../../../protobuf/field_mask.pb.dart' as $332;
-import '../../../../type/datetime.pb.dart' as $327;
+import '../../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../../type/datetime.pb.dart' as $328;
+import 'accountservices.pb.dart' as $540;
 import 'user.pb.dart' as $217;
 
 /// An account.
@@ -27,7 +27,7 @@ class Account extends $pb.GeneratedMessage {
     $core.String? accountName,
     $core.bool? adultContent,
     $core.bool? testAccount,
-    $327.TimeZone? timeZone,
+    $328.TimeZone? timeZone,
     $core.String? languageCode,
   }) {
     final $result = create();
@@ -64,7 +64,7 @@ class Account extends $pb.GeneratedMessage {
     ..aOS(3, _omitFieldNames ? '' : 'accountName')
     ..aOB(4, _omitFieldNames ? '' : 'adultContent')
     ..aOB(5, _omitFieldNames ? '' : 'testAccount')
-    ..aOM<$327.TimeZone>(6, _omitFieldNames ? '' : 'timeZone', subBuilder: $327.TimeZone.create)
+    ..aOM<$328.TimeZone>(6, _omitFieldNames ? '' : 'timeZone', subBuilder: $328.TimeZone.create)
     ..aOS(7, _omitFieldNames ? '' : 'languageCode')
     ..hasRequiredFields = false
   ;
@@ -152,15 +152,15 @@ class Account extends $pb.GeneratedMessage {
   ///  For reads, `time_zone` always returns the `display_time_zone`. If
   ///  `display_time_zone` doesn't exist for your account, `time_zone` is empty.
   @$pb.TagNumber(6)
-  $327.TimeZone get timeZone => $_getN(5);
+  $328.TimeZone get timeZone => $_getN(5);
   @$pb.TagNumber(6)
-  set timeZone($327.TimeZone v) { setField(6, v); }
+  set timeZone($328.TimeZone v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeZone() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimeZone() => clearField(6);
   @$pb.TagNumber(6)
-  $327.TimeZone ensureTimeZone() => $_ensure(5);
+  $328.TimeZone ensureTimeZone() => $_ensure(5);
 
   /// Required. The account's [BCP-47 language
   /// code](https://tools.ietf.org/html/bcp47), such as `en-US` or `sr-Latn`.
@@ -273,7 +273,10 @@ class CreateAndConfigureAccountRequest_AcceptTermsOfService extends $pb.Generate
   static CreateAndConfigureAccountRequest_AcceptTermsOfService getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateAndConfigureAccountRequest_AcceptTermsOfService>(create);
   static CreateAndConfigureAccountRequest_AcceptTermsOfService? _defaultInstance;
 
-  /// Required. The resource name of the terms of service version.
+  /// Required. The resource name of the terms of service version in the format
+  /// `termsOfService/{version}`. To retrieve the latest version, use the
+  /// [termsOfService.retrieveLatest](/merchant/api/reference/rest/accounts_v1beta/termsOfService/retrieveLatest)
+  /// method.
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -306,7 +309,7 @@ enum CreateAndConfigureAccountRequest_AddAccountService_ServiceType {
 class CreateAndConfigureAccountRequest_AddAccountService extends $pb.GeneratedMessage {
   factory CreateAndConfigureAccountRequest_AddAccountService({
     $core.String? provider,
-    $3.Empty? accountAggregation,
+    $540.AccountAggregation? accountAggregation,
   }) {
     final $result = create();
     if (provider != null) {
@@ -322,13 +325,13 @@ class CreateAndConfigureAccountRequest_AddAccountService extends $pb.GeneratedMe
   factory CreateAndConfigureAccountRequest_AddAccountService.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static const $core.Map<$core.int, CreateAndConfigureAccountRequest_AddAccountService_ServiceType> _CreateAndConfigureAccountRequest_AddAccountService_ServiceTypeByTag = {
-    2 : CreateAndConfigureAccountRequest_AddAccountService_ServiceType.accountAggregation,
+    103 : CreateAndConfigureAccountRequest_AddAccountService_ServiceType.accountAggregation,
     0 : CreateAndConfigureAccountRequest_AddAccountService_ServiceType.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateAndConfigureAccountRequest.AddAccountService', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
-    ..oo(0, [2])
+    ..oo(0, [103])
     ..aOS(1, _omitFieldNames ? '' : 'provider')
-    ..aOM<$3.Empty>(2, _omitFieldNames ? '' : 'accountAggregation', subBuilder: $3.Empty.create)
+    ..aOM<$540.AccountAggregation>(103, _omitFieldNames ? '' : 'accountAggregation', subBuilder: $540.AccountAggregation.create)
     ..hasRequiredFields = false
   ;
 
@@ -367,17 +370,19 @@ class CreateAndConfigureAccountRequest_AddAccountService extends $pb.GeneratedMe
   @$pb.TagNumber(1)
   void clearProvider() => clearField(1);
 
-  /// The provider is an aggregator for the account.
-  @$pb.TagNumber(2)
-  $3.Empty get accountAggregation => $_getN(1);
-  @$pb.TagNumber(2)
-  set accountAggregation($3.Empty v) { setField(2, v); }
-  @$pb.TagNumber(2)
+  /// The provider is an
+  /// [aggregator](https://support.google.com/merchants/answer/188487) for
+  /// the account. Payload for service type Account Aggregation.
+  @$pb.TagNumber(103)
+  $540.AccountAggregation get accountAggregation => $_getN(1);
+  @$pb.TagNumber(103)
+  set accountAggregation($540.AccountAggregation v) { setField(103, v); }
+  @$pb.TagNumber(103)
   $core.bool hasAccountAggregation() => $_has(1);
-  @$pb.TagNumber(2)
-  void clearAccountAggregation() => clearField(2);
-  @$pb.TagNumber(2)
-  $3.Empty ensureAccountAggregation() => $_ensure(1);
+  @$pb.TagNumber(103)
+  void clearAccountAggregation() => clearField(103);
+  @$pb.TagNumber(103)
+  $540.AccountAggregation ensureAccountAggregation() => $_ensure(1);
 }
 
 /// Request message for the `CreateAndConfigureAccount` method.
@@ -465,9 +470,12 @@ class CreateAndConfigureAccountRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   CreateAndConfigureAccountRequest_AcceptTermsOfService ensureAcceptTermsOfService() => $_ensure(2);
 
-  /// Optional. If specified, an account service between the account to be
-  /// created and the provider account is initialized as part of the
-  /// creation.
+  /// Required. An account service between the account to be created and the
+  /// provider account is initialized as part of the creation. At least one such
+  /// service needs to be provided. Currently exactly one of these needs to be
+  /// `account_aggregation`, which means you can only create sub accounts, not
+  /// standalone account through this method. Additional `account_management` or
+  /// `product_management` services may be provided.
   @$pb.TagNumber(4)
   $core.List<CreateAndConfigureAccountRequest_AddAccountService> get service => $_getList(3);
 }
@@ -529,7 +537,7 @@ class DeleteAccountRequest extends $pb.GeneratedMessage {
 class UpdateAccountRequest extends $pb.GeneratedMessage {
   factory UpdateAccountRequest({
     Account? account,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (account != null) {
@@ -546,7 +554,7 @@ class UpdateAccountRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateAccountRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOM<Account>(1, _omitFieldNames ? '' : 'account', subBuilder: Account.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -585,15 +593,15 @@ class UpdateAccountRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields being updated.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the `ListAccounts` method.

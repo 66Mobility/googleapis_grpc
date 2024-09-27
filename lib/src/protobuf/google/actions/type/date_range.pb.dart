@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/date.pb.dart' as $326;
+import '../../type/date.pb.dart' as $327;
 
 ///  Represents a range based on whole or partial calendar dates, e.g. the
 ///  duration of a hotel reservation or the Common Era. This can represent:
@@ -62,8 +62,8 @@ import '../../type/date.pb.dart' as $326;
 ///  except that year must always be non-zero in DateRange.
 class DateRange extends $pb.GeneratedMessage {
   factory DateRange({
-    $326.Date? start,
-    $326.Date? end,
+    $327.Date? start,
+    $327.Date? end,
   }) {
     final $result = create();
     if (start != null) {
@@ -79,8 +79,8 @@ class DateRange extends $pb.GeneratedMessage {
   factory DateRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.type'), createEmptyInstance: create)
-    ..aOM<$326.Date>(1, _omitFieldNames ? '' : 'start', subBuilder: $326.Date.create)
-    ..aOM<$326.Date>(2, _omitFieldNames ? '' : 'end', subBuilder: $326.Date.create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'start', subBuilder: $327.Date.create)
+    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'end', subBuilder: $327.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -108,28 +108,28 @@ class DateRange extends $pb.GeneratedMessage {
   /// Date at which the date range begins. If unset, the date range has no
   /// beginning bound.
   @$pb.TagNumber(1)
-  $326.Date get start => $_getN(0);
+  $327.Date get start => $_getN(0);
   @$pb.TagNumber(1)
-  set start($326.Date v) { setField(1, v); }
+  set start($327.Date v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStart() => $_has(0);
   @$pb.TagNumber(1)
   void clearStart() => clearField(1);
   @$pb.TagNumber(1)
-  $326.Date ensureStart() => $_ensure(0);
+  $327.Date ensureStart() => $_ensure(0);
 
   /// Date at which the date range ends. If unset, the date range has no ending
   /// bound.
   @$pb.TagNumber(2)
-  $326.Date get end => $_getN(1);
+  $327.Date get end => $_getN(1);
   @$pb.TagNumber(2)
-  set end($326.Date v) { setField(2, v); }
+  set end($327.Date v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEnd() => $_has(1);
   @$pb.TagNumber(2)
   void clearEnd() => clearField(2);
   @$pb.TagNumber(2)
-  $326.Date ensureEnd() => $_ensure(1);
+  $327.Date ensureEnd() => $_ensure(1);
 }
 
 

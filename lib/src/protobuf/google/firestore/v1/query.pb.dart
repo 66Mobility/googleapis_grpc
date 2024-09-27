@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/wrappers.pb.dart' as $306;
+import '../../protobuf/wrappers.pb.dart' as $307;
 import 'document.pb.dart' as $130;
 import 'query.pbenum.dart';
 
@@ -612,9 +612,9 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
     StructuredQuery_FieldReference? vectorField,
     $130.Value? queryVector,
     StructuredQuery_FindNearest_DistanceMeasure? distanceMeasure,
-    $306.Int32Value? limit,
+    $307.Int32Value? limit,
     $core.String? distanceResultField,
-    $306.DoubleValue? distanceThreshold,
+    $307.DoubleValue? distanceThreshold,
   }) {
     final $result = create();
     if (vectorField != null) {
@@ -645,9 +645,9 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
     ..aOM<StructuredQuery_FieldReference>(1, _omitFieldNames ? '' : 'vectorField', subBuilder: StructuredQuery_FieldReference.create)
     ..aOM<$130.Value>(2, _omitFieldNames ? '' : 'queryVector', subBuilder: $130.Value.create)
     ..e<StructuredQuery_FindNearest_DistanceMeasure>(3, _omitFieldNames ? '' : 'distanceMeasure', $pb.PbFieldType.OE, defaultOrMaker: StructuredQuery_FindNearest_DistanceMeasure.DISTANCE_MEASURE_UNSPECIFIED, valueOf: StructuredQuery_FindNearest_DistanceMeasure.valueOf, enumValues: StructuredQuery_FindNearest_DistanceMeasure.values)
-    ..aOM<$306.Int32Value>(4, _omitFieldNames ? '' : 'limit', subBuilder: $306.Int32Value.create)
+    ..aOM<$307.Int32Value>(4, _omitFieldNames ? '' : 'limit', subBuilder: $307.Int32Value.create)
     ..aOS(5, _omitFieldNames ? '' : 'distanceResultField')
-    ..aOM<$306.DoubleValue>(6, _omitFieldNames ? '' : 'distanceThreshold', subBuilder: $306.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(6, _omitFieldNames ? '' : 'distanceThreshold', subBuilder: $307.DoubleValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -712,15 +712,15 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   /// Required. The number of nearest neighbors to return. Must be a positive
   /// integer of no more than 1000.
   @$pb.TagNumber(4)
-  $306.Int32Value get limit => $_getN(3);
+  $307.Int32Value get limit => $_getN(3);
   @$pb.TagNumber(4)
-  set limit($306.Int32Value v) { setField(4, v); }
+  set limit($307.Int32Value v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasLimit() => $_has(3);
   @$pb.TagNumber(4)
   void clearLimit() => clearField(4);
   @$pb.TagNumber(4)
-  $306.Int32Value ensureLimit() => $_ensure(3);
+  $307.Int32Value ensureLimit() => $_ensure(3);
 
   /// Optional. Optional name of the field to output the result of the vector
   /// distance calculation. Must conform to [document field
@@ -743,15 +743,15 @@ class StructuredQuery_FindNearest extends $pb.GeneratedMessage {
   ///  For EUCLIDEAN, COSINE: WHERE distance <= distance_threshold
   ///  For DOT_PRODUCT:       WHERE distance >= distance_threshold
   @$pb.TagNumber(6)
-  $306.DoubleValue get distanceThreshold => $_getN(5);
+  $307.DoubleValue get distanceThreshold => $_getN(5);
   @$pb.TagNumber(6)
-  set distanceThreshold($306.DoubleValue v) { setField(6, v); }
+  set distanceThreshold($307.DoubleValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDistanceThreshold() => $_has(5);
   @$pb.TagNumber(6)
   void clearDistanceThreshold() => clearField(6);
   @$pb.TagNumber(6)
-  $306.DoubleValue ensureDistanceThreshold() => $_ensure(5);
+  $307.DoubleValue ensureDistanceThreshold() => $_ensure(5);
 }
 
 ///  A Firestore query.
@@ -769,7 +769,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
     $core.Iterable<StructuredQuery_CollectionSelector>? from,
     StructuredQuery_Filter? where,
     $core.Iterable<StructuredQuery_Order>? orderBy,
-    $306.Int32Value? limit,
+    $307.Int32Value? limit,
     $core.int? offset,
     Cursor? startAt,
     Cursor? endAt,
@@ -814,7 +814,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
     ..pc<StructuredQuery_CollectionSelector>(2, _omitFieldNames ? '' : 'from', $pb.PbFieldType.PM, subBuilder: StructuredQuery_CollectionSelector.create)
     ..aOM<StructuredQuery_Filter>(3, _omitFieldNames ? '' : 'where', subBuilder: StructuredQuery_Filter.create)
     ..pc<StructuredQuery_Order>(4, _omitFieldNames ? '' : 'orderBy', $pb.PbFieldType.PM, subBuilder: StructuredQuery_Order.create)
-    ..aOM<$306.Int32Value>(5, _omitFieldNames ? '' : 'limit', subBuilder: $306.Int32Value.create)
+    ..aOM<$307.Int32Value>(5, _omitFieldNames ? '' : 'limit', subBuilder: $307.Int32Value.create)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
     ..aOM<Cursor>(7, _omitFieldNames ? '' : 'startAt', subBuilder: Cursor.create)
     ..aOM<Cursor>(8, _omitFieldNames ? '' : 'endAt', subBuilder: Cursor.create)
@@ -906,15 +906,15 @@ class StructuredQuery extends $pb.GeneratedMessage {
   ///
   ///  * The value must be greater than or equal to zero if specified.
   @$pb.TagNumber(5)
-  $306.Int32Value get limit => $_getN(4);
+  $307.Int32Value get limit => $_getN(4);
   @$pb.TagNumber(5)
-  set limit($306.Int32Value v) { setField(5, v); }
+  set limit($307.Int32Value v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasLimit() => $_has(4);
   @$pb.TagNumber(5)
   void clearLimit() => clearField(5);
   @$pb.TagNumber(5)
-  $306.Int32Value ensureLimit() => $_ensure(4);
+  $307.Int32Value ensureLimit() => $_ensure(4);
 
   ///  The number of documents to skip before returning the first result.
   ///
@@ -1018,7 +1018,7 @@ class StructuredQuery extends $pb.GeneratedMessage {
 ///  so it does not require a field reference.
 class StructuredAggregationQuery_Aggregation_Count extends $pb.GeneratedMessage {
   factory StructuredAggregationQuery_Aggregation_Count({
-    $306.Int64Value? upTo,
+    $307.Int64Value? upTo,
   }) {
     final $result = create();
     if (upTo != null) {
@@ -1031,7 +1031,7 @@ class StructuredAggregationQuery_Aggregation_Count extends $pb.GeneratedMessage 
   factory StructuredAggregationQuery_Aggregation_Count.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StructuredAggregationQuery.Aggregation.Count', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.v1'), createEmptyInstance: create)
-    ..aOM<$306.Int64Value>(1, _omitFieldNames ? '' : 'upTo', subBuilder: $306.Int64Value.create)
+    ..aOM<$307.Int64Value>(1, _omitFieldNames ? '' : 'upTo', subBuilder: $307.Int64Value.create)
     ..hasRequiredFields = false
   ;
 
@@ -1074,15 +1074,15 @@ class StructuredAggregationQuery_Aggregation_Count extends $pb.GeneratedMessage 
   ///
   ///  * Must be greater than zero when present.
   @$pb.TagNumber(1)
-  $306.Int64Value get upTo => $_getN(0);
+  $307.Int64Value get upTo => $_getN(0);
   @$pb.TagNumber(1)
-  set upTo($306.Int64Value v) { setField(1, v); }
+  set upTo($307.Int64Value v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpTo() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpTo() => clearField(1);
   @$pb.TagNumber(1)
-  $306.Int64Value ensureUpTo() => $_ensure(0);
+  $307.Int64Value ensureUpTo() => $_ensure(0);
 }
 
 ///  Sum of the values of the requested field.

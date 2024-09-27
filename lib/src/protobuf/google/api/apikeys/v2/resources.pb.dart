@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $301;
+import '../../../protobuf/timestamp.pb.dart' as $302;
 
 /// The representation of a key managed by the API Keys API.
 class Key extends $pb.GeneratedMessage {
@@ -21,10 +21,10 @@ class Key extends $pb.GeneratedMessage {
     $core.String? name,
     $core.String? displayName,
     $core.String? keyString,
-    $301.Timestamp? createTime,
+    $302.Timestamp? createTime,
     $core.String? uid,
-    $301.Timestamp? updateTime,
-    $301.Timestamp? deleteTime,
+    $302.Timestamp? updateTime,
+    $302.Timestamp? deleteTime,
     $core.Map<$core.String, $core.String>? annotations,
     Restrictions? restrictions,
     $core.String? etag,
@@ -70,10 +70,10 @@ class Key extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'keyString')
-    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
     ..aOS(5, _omitFieldNames ? '' : 'uid')
-    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'deleteTime', subBuilder: $302.Timestamp.create)
     ..m<$core.String, $core.String>(8, _omitFieldNames ? '' : 'annotations', entryClassName: 'Key.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api.apikeys.v2'))
     ..aOM<Restrictions>(9, _omitFieldNames ? '' : 'restrictions', subBuilder: Restrictions.create)
     ..aOS(11, _omitFieldNames ? '' : 'etag')
@@ -143,15 +143,15 @@ class Key extends $pb.GeneratedMessage {
   /// Output only. A timestamp identifying the time this key was originally
   /// created.
   @$pb.TagNumber(4)
-  $301.Timestamp get createTime => $_getN(3);
+  $302.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($301.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $301.Timestamp ensureCreateTime() => $_ensure(3);
+  $302.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// Output only. Unique id in UUID4 format.
   @$pb.TagNumber(5)
@@ -166,28 +166,28 @@ class Key extends $pb.GeneratedMessage {
   /// Output only. A timestamp identifying the time this key was last
   /// updated.
   @$pb.TagNumber(6)
-  $301.Timestamp get updateTime => $_getN(5);
+  $302.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($301.Timestamp v) { setField(6, v); }
+  set updateTime($302.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $301.Timestamp ensureUpdateTime() => $_ensure(5);
+  $302.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. A timestamp when this key was deleted. If the resource is not
   /// deleted, this must be empty.
   @$pb.TagNumber(7)
-  $301.Timestamp get deleteTime => $_getN(6);
+  $302.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(7)
-  set deleteTime($301.Timestamp v) { setField(7, v); }
+  set deleteTime($302.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearDeleteTime() => clearField(7);
   @$pb.TagNumber(7)
-  $301.Timestamp ensureDeleteTime() => $_ensure(6);
+  $302.Timestamp ensureDeleteTime() => $_ensure(6);
 
   /// Annotations is an unstructured key-value map stored with a policy that
   /// may be set by external tools to store and retrieve arbitrary metadata.

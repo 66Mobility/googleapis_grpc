@@ -15,16 +15,16 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'fileuploads.pb.dart' as $231;
+import 'fileuploads.pb.dart' as $232;
 
 export 'fileuploads.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.datasources.v1beta.FileUploadsService')
 class FileUploadsServiceClient extends $grpc.Client {
-  static final _$getFileUpload = $grpc.ClientMethod<$231.GetFileUploadRequest, $231.FileUpload>(
+  static final _$getFileUpload = $grpc.ClientMethod<$232.GetFileUploadRequest, $232.FileUpload>(
       '/google.shopping.merchant.datasources.v1beta.FileUploadsService/GetFileUpload',
-      ($231.GetFileUploadRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $231.FileUpload.fromBuffer(value));
+      ($232.GetFileUploadRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $232.FileUpload.fromBuffer(value));
 
   FileUploadsServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -32,7 +32,7 @@ class FileUploadsServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$231.FileUpload> getFileUpload($231.GetFileUploadRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$232.FileUpload> getFileUpload($232.GetFileUploadRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getFileUpload, request, options: options);
   }
 }
@@ -42,18 +42,18 @@ abstract class FileUploadsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.datasources.v1beta.FileUploadsService';
 
   FileUploadsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$231.GetFileUploadRequest, $231.FileUpload>(
+    $addMethod($grpc.ServiceMethod<$232.GetFileUploadRequest, $232.FileUpload>(
         'GetFileUpload',
         getFileUpload_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $231.GetFileUploadRequest.fromBuffer(value),
-        ($231.FileUpload value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $232.GetFileUploadRequest.fromBuffer(value),
+        ($232.FileUpload value) => value.writeToBuffer()));
   }
 
-  $async.Future<$231.FileUpload> getFileUpload_Pre($grpc.ServiceCall call, $async.Future<$231.GetFileUploadRequest> request) async {
+  $async.Future<$232.FileUpload> getFileUpload_Pre($grpc.ServiceCall call, $async.Future<$232.GetFileUploadRequest> request) async {
     return getFileUpload(call, await request);
   }
 
-  $async.Future<$231.FileUpload> getFileUpload($grpc.ServiceCall call, $231.GetFileUploadRequest request);
+  $async.Future<$232.FileUpload> getFileUpload($grpc.ServiceCall call, $232.GetFileUploadRequest request);
 }

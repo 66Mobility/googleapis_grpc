@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $301;
+import '../../../protobuf/timestamp.pb.dart' as $302;
 import 'metrics_scope.pb.dart' as $190;
 import 'metrics_scopes.pbenum.dart';
 
@@ -312,8 +312,8 @@ class DeleteMonitoredProjectRequest extends $pb.GeneratedMessage {
 class OperationMetadata extends $pb.GeneratedMessage {
   factory OperationMetadata({
     OperationMetadata_State? state,
-    $301.Timestamp? createTime,
-    $301.Timestamp? updateTime,
+    $302.Timestamp? createTime,
+    $302.Timestamp? updateTime,
   }) {
     final $result = create();
     if (state != null) {
@@ -333,8 +333,8 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.metricsscope.v1'), createEmptyInstance: create)
     ..e<OperationMetadata_State>(1, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: OperationMetadata_State.STATE_UNSPECIFIED, valueOf: OperationMetadata_State.valueOf, enumValues: OperationMetadata_State.values)
-    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -371,27 +371,27 @@ class OperationMetadata extends $pb.GeneratedMessage {
 
   /// The time when the batch request was received.
   @$pb.TagNumber(5)
-  $301.Timestamp get createTime => $_getN(1);
+  $302.Timestamp get createTime => $_getN(1);
   @$pb.TagNumber(5)
-  set createTime($301.Timestamp v) { setField(5, v); }
+  set createTime($302.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(1);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $301.Timestamp ensureCreateTime() => $_ensure(1);
+  $302.Timestamp ensureCreateTime() => $_ensure(1);
 
   /// The time when the operation result was last updated.
   @$pb.TagNumber(6)
-  $301.Timestamp get updateTime => $_getN(2);
+  $302.Timestamp get updateTime => $_getN(2);
   @$pb.TagNumber(6)
-  set updateTime($301.Timestamp v) { setField(6, v); }
+  set updateTime($302.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(2);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $301.Timestamp ensureUpdateTime() => $_ensure(2);
+  $302.Timestamp ensureUpdateTime() => $_ensure(2);
 }
 
 

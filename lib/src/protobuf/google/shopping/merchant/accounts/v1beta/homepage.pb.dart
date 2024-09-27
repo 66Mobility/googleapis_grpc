@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../../protobuf/field_mask.pb.dart' as $333;
 
 /// A store's homepage.
 class Homepage extends $pb.GeneratedMessage {
@@ -156,7 +156,7 @@ class GetHomepageRequest extends $pb.GeneratedMessage {
 class UpdateHomepageRequest extends $pb.GeneratedMessage {
   factory UpdateHomepageRequest({
     Homepage? homepage,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (homepage != null) {
@@ -173,7 +173,7 @@ class UpdateHomepageRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateHomepageRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOM<Homepage>(1, _omitFieldNames ? '' : 'homepage', subBuilder: Homepage.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -212,15 +212,15 @@ class UpdateHomepageRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields being updated.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the `ClaimHomepage` method.

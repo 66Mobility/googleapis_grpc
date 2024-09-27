@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/datetime.pb.dart' as $327;
+import '../../type/datetime.pb.dart' as $328;
 
 ///  Represents a date and time range. This can represent:
 ///
@@ -47,8 +47,8 @@ import '../../type/datetime.pb.dart' as $327;
 ///  [google.type.DateTime][google.type.DateTime].
 class DateTimeRange extends $pb.GeneratedMessage {
   factory DateTimeRange({
-    $327.DateTime? start,
-    $327.DateTime? end,
+    $328.DateTime? start,
+    $328.DateTime? end,
   }) {
     final $result = create();
     if (start != null) {
@@ -64,8 +64,8 @@ class DateTimeRange extends $pb.GeneratedMessage {
   factory DateTimeRange.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateTimeRange', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.type'), createEmptyInstance: create)
-    ..aOM<$327.DateTime>(1, _omitFieldNames ? '' : 'start', subBuilder: $327.DateTime.create)
-    ..aOM<$327.DateTime>(2, _omitFieldNames ? '' : 'end', subBuilder: $327.DateTime.create)
+    ..aOM<$328.DateTime>(1, _omitFieldNames ? '' : 'start', subBuilder: $328.DateTime.create)
+    ..aOM<$328.DateTime>(2, _omitFieldNames ? '' : 'end', subBuilder: $328.DateTime.create)
     ..hasRequiredFields = false
   ;
 
@@ -93,28 +93,28 @@ class DateTimeRange extends $pb.GeneratedMessage {
   /// DateTime at which the date range begins. If unset, the range has no
   /// beginning bound.
   @$pb.TagNumber(1)
-  $327.DateTime get start => $_getN(0);
+  $328.DateTime get start => $_getN(0);
   @$pb.TagNumber(1)
-  set start($327.DateTime v) { setField(1, v); }
+  set start($328.DateTime v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStart() => $_has(0);
   @$pb.TagNumber(1)
   void clearStart() => clearField(1);
   @$pb.TagNumber(1)
-  $327.DateTime ensureStart() => $_ensure(0);
+  $328.DateTime ensureStart() => $_ensure(0);
 
   /// DateTime at which the date range ends. If unset, the range has no ending
   /// bound.
   @$pb.TagNumber(2)
-  $327.DateTime get end => $_getN(1);
+  $328.DateTime get end => $_getN(1);
   @$pb.TagNumber(2)
-  set end($327.DateTime v) { setField(2, v); }
+  set end($328.DateTime v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEnd() => $_has(1);
   @$pb.TagNumber(2)
   void clearEnd() => clearField(2);
   @$pb.TagNumber(2)
-  $327.DateTime ensureEnd() => $_ensure(1);
+  $328.DateTime ensureEnd() => $_ensure(1);
 }
 
 

@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $263;
-import '../../../protobuf/timestamp.pb.dart' as $301;
-import '../../../protobuf/wrappers.pb.dart' as $306;
-import '../../../type/latlng.pb.dart' as $324;
+import '../../../protobuf/duration.pb.dart' as $264;
+import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../protobuf/wrappers.pb.dart' as $307;
+import '../../../type/latlng.pb.dart' as $325;
 import 'fleetengine.pbenum.dart';
-import 'traffic.pb.dart' as $455;
+import 'traffic.pb.dart' as $456;
 
 export 'fleetengine.pbenum.dart';
 
@@ -141,7 +141,7 @@ class TerminalPointId extends $pb.GeneratedMessage {
 /// Describes the location of a waypoint.
 class TerminalLocation extends $pb.GeneratedMessage {
   factory TerminalLocation({
-    $324.LatLng? point,
+    $325.LatLng? point,
   @$core.Deprecated('This field is deprecated.')
     TerminalPointId? terminalPointId,
   @$core.Deprecated('This field is deprecated.')
@@ -178,7 +178,7 @@ class TerminalLocation extends $pb.GeneratedMessage {
   factory TerminalLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TerminalLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$324.LatLng>(1, _omitFieldNames ? '' : 'point', subBuilder: $324.LatLng.create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'point', subBuilder: $325.LatLng.create)
     ..aOM<TerminalPointId>(2, _omitFieldNames ? '' : 'terminalPointId', subBuilder: TerminalPointId.create)
     ..aOS(3, _omitFieldNames ? '' : 'accessPointId')
     ..aOS(4, _omitFieldNames ? '' : 'tripId')
@@ -209,15 +209,15 @@ class TerminalLocation extends $pb.GeneratedMessage {
 
   /// Required. Denotes the location of a trip waypoint.
   @$pb.TagNumber(1)
-  $324.LatLng get point => $_getN(0);
+  $325.LatLng get point => $_getN(0);
   @$pb.TagNumber(1)
-  set point($324.LatLng v) { setField(1, v); }
+  set point($325.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPoint() => $_has(0);
   @$pb.TagNumber(1)
   void clearPoint() => clearField(1);
   @$pb.TagNumber(1)
-  $324.LatLng ensurePoint() => $_ensure(0);
+  $325.LatLng ensurePoint() => $_ensure(0);
 
   /// Deprecated: Specify the `point` field instead.
   @$core.Deprecated('This field is deprecated.')
@@ -286,12 +286,12 @@ class TripWaypoint extends $pb.GeneratedMessage {
     TerminalLocation? location,
     $core.String? tripId,
     WaypointType? waypointType,
-    $core.Iterable<$324.LatLng>? pathToWaypoint,
+    $core.Iterable<$325.LatLng>? pathToWaypoint,
     $core.String? encodedPathToWaypoint,
-    $306.Int32Value? distanceMeters,
-    $301.Timestamp? eta,
-    $263.Duration? duration,
-    $455.ConsumableTrafficPolyline? trafficToWaypoint,
+    $307.Int32Value? distanceMeters,
+    $302.Timestamp? eta,
+    $264.Duration? duration,
+    $456.ConsumableTrafficPolyline? trafficToWaypoint,
   }) {
     final $result = create();
     if (location != null) {
@@ -331,12 +331,12 @@ class TripWaypoint extends $pb.GeneratedMessage {
     ..aOM<TerminalLocation>(1, _omitFieldNames ? '' : 'location', subBuilder: TerminalLocation.create)
     ..aOS(2, _omitFieldNames ? '' : 'tripId')
     ..e<WaypointType>(3, _omitFieldNames ? '' : 'waypointType', $pb.PbFieldType.OE, defaultOrMaker: WaypointType.UNKNOWN_WAYPOINT_TYPE, valueOf: WaypointType.valueOf, enumValues: WaypointType.values)
-    ..pc<$324.LatLng>(4, _omitFieldNames ? '' : 'pathToWaypoint', $pb.PbFieldType.PM, subBuilder: $324.LatLng.create)
+    ..pc<$325.LatLng>(4, _omitFieldNames ? '' : 'pathToWaypoint', $pb.PbFieldType.PM, subBuilder: $325.LatLng.create)
     ..aOS(5, _omitFieldNames ? '' : 'encodedPathToWaypoint')
-    ..aOM<$306.Int32Value>(6, _omitFieldNames ? '' : 'distanceMeters', subBuilder: $306.Int32Value.create)
-    ..aOM<$301.Timestamp>(7, _omitFieldNames ? '' : 'eta', subBuilder: $301.Timestamp.create)
-    ..aOM<$263.Duration>(8, _omitFieldNames ? '' : 'duration', subBuilder: $263.Duration.create)
-    ..aOM<$455.ConsumableTrafficPolyline>(10, _omitFieldNames ? '' : 'trafficToWaypoint', subBuilder: $455.ConsumableTrafficPolyline.create)
+    ..aOM<$307.Int32Value>(6, _omitFieldNames ? '' : 'distanceMeters', subBuilder: $307.Int32Value.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'eta', subBuilder: $302.Timestamp.create)
+    ..aOM<$264.Duration>(8, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
+    ..aOM<$456.ConsumableTrafficPolyline>(10, _omitFieldNames ? '' : 'trafficToWaypoint', subBuilder: $456.ConsumableTrafficPolyline.create)
     ..hasRequiredFields = false
   ;
 
@@ -396,7 +396,7 @@ class TripWaypoint extends $pb.GeneratedMessage {
   /// The path from the previous waypoint to the current waypoint.  Undefined for
   /// the first waypoint in a list. This field is only populated when requested.
   @$pb.TagNumber(4)
-  $core.List<$324.LatLng> get pathToWaypoint => $_getList(3);
+  $core.List<$325.LatLng> get pathToWaypoint => $_getList(3);
 
   ///  The encoded path from the previous waypoint to the current waypoint.
   ///
@@ -414,55 +414,55 @@ class TripWaypoint extends $pb.GeneratedMessage {
   /// The path distance from the previous waypoint to the current waypoint.
   /// Undefined for the first waypoint in a list.
   @$pb.TagNumber(6)
-  $306.Int32Value get distanceMeters => $_getN(5);
+  $307.Int32Value get distanceMeters => $_getN(5);
   @$pb.TagNumber(6)
-  set distanceMeters($306.Int32Value v) { setField(6, v); }
+  set distanceMeters($307.Int32Value v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDistanceMeters() => $_has(5);
   @$pb.TagNumber(6)
   void clearDistanceMeters() => clearField(6);
   @$pb.TagNumber(6)
-  $306.Int32Value ensureDistanceMeters() => $_ensure(5);
+  $307.Int32Value ensureDistanceMeters() => $_ensure(5);
 
   /// The estimated time of arrival at this waypoint. Undefined for the first
   /// waypoint in a list.
   @$pb.TagNumber(7)
-  $301.Timestamp get eta => $_getN(6);
+  $302.Timestamp get eta => $_getN(6);
   @$pb.TagNumber(7)
-  set eta($301.Timestamp v) { setField(7, v); }
+  set eta($302.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEta() => $_has(6);
   @$pb.TagNumber(7)
   void clearEta() => clearField(7);
   @$pb.TagNumber(7)
-  $301.Timestamp ensureEta() => $_ensure(6);
+  $302.Timestamp ensureEta() => $_ensure(6);
 
   /// The travel time from previous waypoint to this point. Undefined for the
   /// first waypoint in a list.
   @$pb.TagNumber(8)
-  $263.Duration get duration => $_getN(7);
+  $264.Duration get duration => $_getN(7);
   @$pb.TagNumber(8)
-  set duration($263.Duration v) { setField(8, v); }
+  set duration($264.Duration v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDuration() => $_has(7);
   @$pb.TagNumber(8)
   void clearDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $263.Duration ensureDuration() => $_ensure(7);
+  $264.Duration ensureDuration() => $_ensure(7);
 
   /// The traffic conditions along the path to this waypoint.  Note that traffic
   /// is only available for Google Map Platform Rides and Deliveries Solution
   /// customers.
   @$pb.TagNumber(10)
-  $455.ConsumableTrafficPolyline get trafficToWaypoint => $_getN(8);
+  $456.ConsumableTrafficPolyline get trafficToWaypoint => $_getN(8);
   @$pb.TagNumber(10)
-  set trafficToWaypoint($455.ConsumableTrafficPolyline v) { setField(10, v); }
+  set trafficToWaypoint($456.ConsumableTrafficPolyline v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasTrafficToWaypoint() => $_has(8);
   @$pb.TagNumber(10)
   void clearTrafficToWaypoint() => clearField(10);
   @$pb.TagNumber(10)
-  $455.ConsumableTrafficPolyline ensureTrafficToWaypoint() => $_ensure(8);
+  $456.ConsumableTrafficPolyline ensureTrafficToWaypoint() => $_ensure(8);
 }
 
 enum VehicleAttribute_VehicleAttributeValue {
@@ -604,39 +604,39 @@ class VehicleAttribute extends $pb.GeneratedMessage {
 /// The location, speed, and heading of a vehicle at a point in time.
 class VehicleLocation extends $pb.GeneratedMessage {
   factory VehicleLocation({
-    $324.LatLng? location,
-    $306.Int32Value? heading,
+    $325.LatLng? location,
+    $307.Int32Value? heading,
   @$core.Deprecated('This field is deprecated.')
-    $306.Int32Value? speedKmph,
-    $301.Timestamp? updateTime,
-    $306.DoubleValue? altitude,
-    $306.DoubleValue? speed,
-    $306.DoubleValue? speedAccuracy,
+    $307.Int32Value? speedKmph,
+    $302.Timestamp? updateTime,
+    $307.DoubleValue? altitude,
+    $307.DoubleValue? speed,
+    $307.DoubleValue? speedAccuracy,
   @$core.Deprecated('This field is deprecated.')
-    $306.DoubleValue? horizontalAccuracy,
+    $307.DoubleValue? horizontalAccuracy,
   @$core.Deprecated('This field is deprecated.')
-    $306.DoubleValue? verticalAccuracy,
+    $307.DoubleValue? verticalAccuracy,
   @$core.Deprecated('This field is deprecated.')
-    $306.DoubleValue? bearingAccuracy,
+    $307.DoubleValue? bearingAccuracy,
     LocationSensor? locationSensor,
-    $306.BoolValue? isGpsSensorEnabled,
-    $301.Timestamp? serverTime,
-    $306.Int32Value? timeSinceUpdate,
+    $307.BoolValue? isGpsSensorEnabled,
+    $302.Timestamp? serverTime,
+    $307.Int32Value? timeSinceUpdate,
   @$core.Deprecated('This field is deprecated.')
-    $306.Int32Value? numStaleUpdates,
-    $324.LatLng? rawLocation,
-    $301.Timestamp? rawLocationTime,
-    $324.LatLng? supplementalLocation,
-    $301.Timestamp? supplementalLocationTime,
+    $307.Int32Value? numStaleUpdates,
+    $325.LatLng? rawLocation,
+    $302.Timestamp? rawLocationTime,
+    $325.LatLng? supplementalLocation,
+    $302.Timestamp? supplementalLocationTime,
     LocationSensor? supplementalLocationSensor,
-    $306.DoubleValue? supplementalLocationAccuracy,
-    $306.DoubleValue? latlngAccuracy,
-    $306.DoubleValue? headingAccuracy,
-    $306.DoubleValue? altitudeAccuracy,
-    $306.DoubleValue? rawLocationAccuracy,
+    $307.DoubleValue? supplementalLocationAccuracy,
+    $307.DoubleValue? latlngAccuracy,
+    $307.DoubleValue? headingAccuracy,
+    $307.DoubleValue? altitudeAccuracy,
+    $307.DoubleValue? rawLocationAccuracy,
   @$core.Deprecated('This field is deprecated.')
     $core.bool? roadSnapped,
-    $306.BoolValue? isRoadSnapped,
+    $307.BoolValue? isRoadSnapped,
     LocationSensor? rawLocationSensor,
   }) {
     final $result = create();
@@ -737,33 +737,33 @@ class VehicleLocation extends $pb.GeneratedMessage {
   factory VehicleLocation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'maps.fleetengine.v1'), createEmptyInstance: create)
-    ..aOM<$324.LatLng>(1, _omitFieldNames ? '' : 'location', subBuilder: $324.LatLng.create)
-    ..aOM<$306.Int32Value>(2, _omitFieldNames ? '' : 'heading', subBuilder: $306.Int32Value.create)
-    ..aOM<$306.Int32Value>(3, _omitFieldNames ? '' : 'speedKmph', subBuilder: $306.Int32Value.create)
-    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$306.DoubleValue>(5, _omitFieldNames ? '' : 'altitude', subBuilder: $306.DoubleValue.create)
-    ..aOM<$306.DoubleValue>(6, _omitFieldNames ? '' : 'speed', subBuilder: $306.DoubleValue.create)
-    ..aOM<$306.DoubleValue>(7, _omitFieldNames ? '' : 'speedAccuracy', subBuilder: $306.DoubleValue.create)
-    ..aOM<$306.DoubleValue>(8, _omitFieldNames ? '' : 'horizontalAccuracy', subBuilder: $306.DoubleValue.create)
-    ..aOM<$306.DoubleValue>(9, _omitFieldNames ? '' : 'verticalAccuracy', subBuilder: $306.DoubleValue.create)
-    ..aOM<$306.DoubleValue>(10, _omitFieldNames ? '' : 'bearingAccuracy', subBuilder: $306.DoubleValue.create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'location', subBuilder: $325.LatLng.create)
+    ..aOM<$307.Int32Value>(2, _omitFieldNames ? '' : 'heading', subBuilder: $307.Int32Value.create)
+    ..aOM<$307.Int32Value>(3, _omitFieldNames ? '' : 'speedKmph', subBuilder: $307.Int32Value.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$307.DoubleValue>(5, _omitFieldNames ? '' : 'altitude', subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(6, _omitFieldNames ? '' : 'speed', subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(7, _omitFieldNames ? '' : 'speedAccuracy', subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(8, _omitFieldNames ? '' : 'horizontalAccuracy', subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(9, _omitFieldNames ? '' : 'verticalAccuracy', subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(10, _omitFieldNames ? '' : 'bearingAccuracy', subBuilder: $307.DoubleValue.create)
     ..e<LocationSensor>(11, _omitFieldNames ? '' : 'locationSensor', $pb.PbFieldType.OE, defaultOrMaker: LocationSensor.UNKNOWN_SENSOR, valueOf: LocationSensor.valueOf, enumValues: LocationSensor.values)
-    ..aOM<$306.BoolValue>(12, _omitFieldNames ? '' : 'isGpsSensorEnabled', subBuilder: $306.BoolValue.create)
-    ..aOM<$301.Timestamp>(13, _omitFieldNames ? '' : 'serverTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$306.Int32Value>(14, _omitFieldNames ? '' : 'timeSinceUpdate', subBuilder: $306.Int32Value.create)
-    ..aOM<$306.Int32Value>(15, _omitFieldNames ? '' : 'numStaleUpdates', subBuilder: $306.Int32Value.create)
-    ..aOM<$324.LatLng>(16, _omitFieldNames ? '' : 'rawLocation', subBuilder: $324.LatLng.create)
-    ..aOM<$301.Timestamp>(17, _omitFieldNames ? '' : 'rawLocationTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$324.LatLng>(18, _omitFieldNames ? '' : 'supplementalLocation', subBuilder: $324.LatLng.create)
-    ..aOM<$301.Timestamp>(19, _omitFieldNames ? '' : 'supplementalLocationTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$307.BoolValue>(12, _omitFieldNames ? '' : 'isGpsSensorEnabled', subBuilder: $307.BoolValue.create)
+    ..aOM<$302.Timestamp>(13, _omitFieldNames ? '' : 'serverTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$307.Int32Value>(14, _omitFieldNames ? '' : 'timeSinceUpdate', subBuilder: $307.Int32Value.create)
+    ..aOM<$307.Int32Value>(15, _omitFieldNames ? '' : 'numStaleUpdates', subBuilder: $307.Int32Value.create)
+    ..aOM<$325.LatLng>(16, _omitFieldNames ? '' : 'rawLocation', subBuilder: $325.LatLng.create)
+    ..aOM<$302.Timestamp>(17, _omitFieldNames ? '' : 'rawLocationTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$325.LatLng>(18, _omitFieldNames ? '' : 'supplementalLocation', subBuilder: $325.LatLng.create)
+    ..aOM<$302.Timestamp>(19, _omitFieldNames ? '' : 'supplementalLocationTime', subBuilder: $302.Timestamp.create)
     ..e<LocationSensor>(20, _omitFieldNames ? '' : 'supplementalLocationSensor', $pb.PbFieldType.OE, defaultOrMaker: LocationSensor.UNKNOWN_SENSOR, valueOf: LocationSensor.valueOf, enumValues: LocationSensor.values)
-    ..aOM<$306.DoubleValue>(21, _omitFieldNames ? '' : 'supplementalLocationAccuracy', subBuilder: $306.DoubleValue.create)
-    ..aOM<$306.DoubleValue>(22, _omitFieldNames ? '' : 'latlngAccuracy', subBuilder: $306.DoubleValue.create)
-    ..aOM<$306.DoubleValue>(23, _omitFieldNames ? '' : 'headingAccuracy', subBuilder: $306.DoubleValue.create)
-    ..aOM<$306.DoubleValue>(24, _omitFieldNames ? '' : 'altitudeAccuracy', subBuilder: $306.DoubleValue.create)
-    ..aOM<$306.DoubleValue>(25, _omitFieldNames ? '' : 'rawLocationAccuracy', subBuilder: $306.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(21, _omitFieldNames ? '' : 'supplementalLocationAccuracy', subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(22, _omitFieldNames ? '' : 'latlngAccuracy', subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(23, _omitFieldNames ? '' : 'headingAccuracy', subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(24, _omitFieldNames ? '' : 'altitudeAccuracy', subBuilder: $307.DoubleValue.create)
+    ..aOM<$307.DoubleValue>(25, _omitFieldNames ? '' : 'rawLocationAccuracy', subBuilder: $307.DoubleValue.create)
     ..aOB(26, _omitFieldNames ? '' : 'roadSnapped')
-    ..aOM<$306.BoolValue>(27, _omitFieldNames ? '' : 'isRoadSnapped', subBuilder: $306.BoolValue.create)
+    ..aOM<$307.BoolValue>(27, _omitFieldNames ? '' : 'isRoadSnapped', subBuilder: $307.BoolValue.create)
     ..e<LocationSensor>(28, _omitFieldNames ? '' : 'rawLocationSensor', $pb.PbFieldType.OE, defaultOrMaker: LocationSensor.UNKNOWN_SENSOR, valueOf: LocationSensor.valueOf, enumValues: LocationSensor.values)
     ..hasRequiredFields = false
   ;
@@ -795,37 +795,37 @@ class VehicleLocation extends $pb.GeneratedMessage {
   /// GPS location, a supplemental location, or some other estimated location.
   /// The source is specified in `location_sensor`.
   @$pb.TagNumber(1)
-  $324.LatLng get location => $_getN(0);
+  $325.LatLng get location => $_getN(0);
   @$pb.TagNumber(1)
-  set location($324.LatLng v) { setField(1, v); }
+  set location($325.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLocation() => $_has(0);
   @$pb.TagNumber(1)
   void clearLocation() => clearField(1);
   @$pb.TagNumber(1)
-  $324.LatLng ensureLocation() => $_ensure(0);
+  $325.LatLng ensureLocation() => $_ensure(0);
 
   /// Direction the vehicle is moving in degrees.  0 represents North.
   /// The valid range is [0,360).
   @$pb.TagNumber(2)
-  $306.Int32Value get heading => $_getN(1);
+  $307.Int32Value get heading => $_getN(1);
   @$pb.TagNumber(2)
-  set heading($306.Int32Value v) { setField(2, v); }
+  set heading($307.Int32Value v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasHeading() => $_has(1);
   @$pb.TagNumber(2)
   void clearHeading() => clearField(2);
   @$pb.TagNumber(2)
-  $306.Int32Value ensureHeading() => $_ensure(1);
+  $307.Int32Value ensureHeading() => $_ensure(1);
 
   /// Speed of the vehicle in kilometers per hour.
   /// Deprecated: Use `speed` instead.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  $306.Int32Value get speedKmph => $_getN(2);
+  $307.Int32Value get speedKmph => $_getN(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  set speedKmph($306.Int32Value v) { setField(3, v); }
+  set speedKmph($307.Int32Value v) { setField(3, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
   $core.bool hasSpeedKmph() => $_has(2);
@@ -834,64 +834,64 @@ class VehicleLocation extends $pb.GeneratedMessage {
   void clearSpeedKmph() => clearField(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(3)
-  $306.Int32Value ensureSpeedKmph() => $_ensure(2);
+  $307.Int32Value ensureSpeedKmph() => $_ensure(2);
 
   /// The time when `location` was reported by the sensor according to the
   /// sensor's clock.
   @$pb.TagNumber(4)
-  $301.Timestamp get updateTime => $_getN(3);
+  $302.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(4)
-  set updateTime($301.Timestamp v) { setField(4, v); }
+  set updateTime($302.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $301.Timestamp ensureUpdateTime() => $_ensure(3);
+  $302.Timestamp ensureUpdateTime() => $_ensure(3);
 
   /// Altitude in meters above WGS84.
   @$pb.TagNumber(5)
-  $306.DoubleValue get altitude => $_getN(4);
+  $307.DoubleValue get altitude => $_getN(4);
   @$pb.TagNumber(5)
-  set altitude($306.DoubleValue v) { setField(5, v); }
+  set altitude($307.DoubleValue v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAltitude() => $_has(4);
   @$pb.TagNumber(5)
   void clearAltitude() => clearField(5);
   @$pb.TagNumber(5)
-  $306.DoubleValue ensureAltitude() => $_ensure(4);
+  $307.DoubleValue ensureAltitude() => $_ensure(4);
 
   /// Speed of the vehicle in meters/second
   @$pb.TagNumber(6)
-  $306.DoubleValue get speed => $_getN(5);
+  $307.DoubleValue get speed => $_getN(5);
   @$pb.TagNumber(6)
-  set speed($306.DoubleValue v) { setField(6, v); }
+  set speed($307.DoubleValue v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSpeed() => $_has(5);
   @$pb.TagNumber(6)
   void clearSpeed() => clearField(6);
   @$pb.TagNumber(6)
-  $306.DoubleValue ensureSpeed() => $_ensure(5);
+  $307.DoubleValue ensureSpeed() => $_ensure(5);
 
   /// Accuracy of `speed` in meters/second.
   @$pb.TagNumber(7)
-  $306.DoubleValue get speedAccuracy => $_getN(6);
+  $307.DoubleValue get speedAccuracy => $_getN(6);
   @$pb.TagNumber(7)
-  set speedAccuracy($306.DoubleValue v) { setField(7, v); }
+  set speedAccuracy($307.DoubleValue v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSpeedAccuracy() => $_has(6);
   @$pb.TagNumber(7)
   void clearSpeedAccuracy() => clearField(7);
   @$pb.TagNumber(7)
-  $306.DoubleValue ensureSpeedAccuracy() => $_ensure(6);
+  $307.DoubleValue ensureSpeedAccuracy() => $_ensure(6);
 
   /// Deprecated: Use `latlng_accuracy` instead.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
-  $306.DoubleValue get horizontalAccuracy => $_getN(7);
+  $307.DoubleValue get horizontalAccuracy => $_getN(7);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
-  set horizontalAccuracy($306.DoubleValue v) { setField(8, v); }
+  set horizontalAccuracy($307.DoubleValue v) { setField(8, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
   $core.bool hasHorizontalAccuracy() => $_has(7);
@@ -900,15 +900,15 @@ class VehicleLocation extends $pb.GeneratedMessage {
   void clearHorizontalAccuracy() => clearField(8);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(8)
-  $306.DoubleValue ensureHorizontalAccuracy() => $_ensure(7);
+  $307.DoubleValue ensureHorizontalAccuracy() => $_ensure(7);
 
   /// Deprecated: Use `altitude_accuracy` instead.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  $306.DoubleValue get verticalAccuracy => $_getN(8);
+  $307.DoubleValue get verticalAccuracy => $_getN(8);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  set verticalAccuracy($306.DoubleValue v) { setField(9, v); }
+  set verticalAccuracy($307.DoubleValue v) { setField(9, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
   $core.bool hasVerticalAccuracy() => $_has(8);
@@ -917,15 +917,15 @@ class VehicleLocation extends $pb.GeneratedMessage {
   void clearVerticalAccuracy() => clearField(9);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(9)
-  $306.DoubleValue ensureVerticalAccuracy() => $_ensure(8);
+  $307.DoubleValue ensureVerticalAccuracy() => $_ensure(8);
 
   /// Deprecated: Use `heading_accuracy` instead.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
-  $306.DoubleValue get bearingAccuracy => $_getN(9);
+  $307.DoubleValue get bearingAccuracy => $_getN(9);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
-  set bearingAccuracy($306.DoubleValue v) { setField(10, v); }
+  set bearingAccuracy($307.DoubleValue v) { setField(10, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
   $core.bool hasBearingAccuracy() => $_has(9);
@@ -934,7 +934,7 @@ class VehicleLocation extends $pb.GeneratedMessage {
   void clearBearingAccuracy() => clearField(10);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
-  $306.DoubleValue ensureBearingAccuracy() => $_ensure(9);
+  $307.DoubleValue ensureBearingAccuracy() => $_ensure(9);
 
   /// Provider of location data (for example, `GPS`).
   @$pb.TagNumber(11)
@@ -949,50 +949,50 @@ class VehicleLocation extends $pb.GeneratedMessage {
   /// Input only. Indicates whether the GPS sensor is enabled on the mobile
   /// device.
   @$pb.TagNumber(12)
-  $306.BoolValue get isGpsSensorEnabled => $_getN(11);
+  $307.BoolValue get isGpsSensorEnabled => $_getN(11);
   @$pb.TagNumber(12)
-  set isGpsSensorEnabled($306.BoolValue v) { setField(12, v); }
+  set isGpsSensorEnabled($307.BoolValue v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasIsGpsSensorEnabled() => $_has(11);
   @$pb.TagNumber(12)
   void clearIsGpsSensorEnabled() => clearField(12);
   @$pb.TagNumber(12)
-  $306.BoolValue ensureIsGpsSensorEnabled() => $_ensure(11);
+  $307.BoolValue ensureIsGpsSensorEnabled() => $_ensure(11);
 
   /// Output only. The time when the server received the location information.
   @$pb.TagNumber(13)
-  $301.Timestamp get serverTime => $_getN(12);
+  $302.Timestamp get serverTime => $_getN(12);
   @$pb.TagNumber(13)
-  set serverTime($301.Timestamp v) { setField(13, v); }
+  set serverTime($302.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasServerTime() => $_has(12);
   @$pb.TagNumber(13)
   void clearServerTime() => clearField(13);
   @$pb.TagNumber(13)
-  $301.Timestamp ensureServerTime() => $_ensure(12);
+  $302.Timestamp ensureServerTime() => $_ensure(12);
 
   /// Input only. Time (in seconds) since this location was first sent to the
   /// server. This will be zero for the first update. If the time is unknown (for
   /// example, when the app restarts), this value resets to zero.
   @$pb.TagNumber(14)
-  $306.Int32Value get timeSinceUpdate => $_getN(13);
+  $307.Int32Value get timeSinceUpdate => $_getN(13);
   @$pb.TagNumber(14)
-  set timeSinceUpdate($306.Int32Value v) { setField(14, v); }
+  set timeSinceUpdate($307.Int32Value v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasTimeSinceUpdate() => $_has(13);
   @$pb.TagNumber(14)
   void clearTimeSinceUpdate() => clearField(14);
   @$pb.TagNumber(14)
-  $306.Int32Value ensureTimeSinceUpdate() => $_ensure(13);
+  $307.Int32Value ensureTimeSinceUpdate() => $_ensure(13);
 
   /// Input only. Deprecated: Other signals are now used to determine if a
   /// location is stale.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  $306.Int32Value get numStaleUpdates => $_getN(14);
+  $307.Int32Value get numStaleUpdates => $_getN(14);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  set numStaleUpdates($306.Int32Value v) { setField(15, v); }
+  set numStaleUpdates($307.Int32Value v) { setField(15, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
   $core.bool hasNumStaleUpdates() => $_has(14);
@@ -1001,55 +1001,55 @@ class VehicleLocation extends $pb.GeneratedMessage {
   void clearNumStaleUpdates() => clearField(15);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(15)
-  $306.Int32Value ensureNumStaleUpdates() => $_ensure(14);
+  $307.Int32Value ensureNumStaleUpdates() => $_ensure(14);
 
   /// Raw vehicle location (unprocessed by road-snapper).
   @$pb.TagNumber(16)
-  $324.LatLng get rawLocation => $_getN(15);
+  $325.LatLng get rawLocation => $_getN(15);
   @$pb.TagNumber(16)
-  set rawLocation($324.LatLng v) { setField(16, v); }
+  set rawLocation($325.LatLng v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasRawLocation() => $_has(15);
   @$pb.TagNumber(16)
   void clearRawLocation() => clearField(16);
   @$pb.TagNumber(16)
-  $324.LatLng ensureRawLocation() => $_ensure(15);
+  $325.LatLng ensureRawLocation() => $_ensure(15);
 
   /// Timestamp associated with the raw location.
   @$pb.TagNumber(17)
-  $301.Timestamp get rawLocationTime => $_getN(16);
+  $302.Timestamp get rawLocationTime => $_getN(16);
   @$pb.TagNumber(17)
-  set rawLocationTime($301.Timestamp v) { setField(17, v); }
+  set rawLocationTime($302.Timestamp v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasRawLocationTime() => $_has(16);
   @$pb.TagNumber(17)
   void clearRawLocationTime() => clearField(17);
   @$pb.TagNumber(17)
-  $301.Timestamp ensureRawLocationTime() => $_ensure(16);
+  $302.Timestamp ensureRawLocationTime() => $_ensure(16);
 
   /// Supplemental location provided by the integrating app.
   @$pb.TagNumber(18)
-  $324.LatLng get supplementalLocation => $_getN(17);
+  $325.LatLng get supplementalLocation => $_getN(17);
   @$pb.TagNumber(18)
-  set supplementalLocation($324.LatLng v) { setField(18, v); }
+  set supplementalLocation($325.LatLng v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasSupplementalLocation() => $_has(17);
   @$pb.TagNumber(18)
   void clearSupplementalLocation() => clearField(18);
   @$pb.TagNumber(18)
-  $324.LatLng ensureSupplementalLocation() => $_ensure(17);
+  $325.LatLng ensureSupplementalLocation() => $_ensure(17);
 
   /// Timestamp associated with the supplemental location.
   @$pb.TagNumber(19)
-  $301.Timestamp get supplementalLocationTime => $_getN(18);
+  $302.Timestamp get supplementalLocationTime => $_getN(18);
   @$pb.TagNumber(19)
-  set supplementalLocationTime($301.Timestamp v) { setField(19, v); }
+  set supplementalLocationTime($302.Timestamp v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasSupplementalLocationTime() => $_has(18);
   @$pb.TagNumber(19)
   void clearSupplementalLocationTime() => clearField(19);
   @$pb.TagNumber(19)
-  $301.Timestamp ensureSupplementalLocationTime() => $_ensure(18);
+  $302.Timestamp ensureSupplementalLocationTime() => $_ensure(18);
 
   /// Source of the supplemental location. Defaults to
   /// `CUSTOMER_SUPPLIED_LOCATION`.
@@ -1064,63 +1064,63 @@ class VehicleLocation extends $pb.GeneratedMessage {
 
   /// Accuracy of `supplemental_location` as a radius, in meters.
   @$pb.TagNumber(21)
-  $306.DoubleValue get supplementalLocationAccuracy => $_getN(20);
+  $307.DoubleValue get supplementalLocationAccuracy => $_getN(20);
   @$pb.TagNumber(21)
-  set supplementalLocationAccuracy($306.DoubleValue v) { setField(21, v); }
+  set supplementalLocationAccuracy($307.DoubleValue v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasSupplementalLocationAccuracy() => $_has(20);
   @$pb.TagNumber(21)
   void clearSupplementalLocationAccuracy() => clearField(21);
   @$pb.TagNumber(21)
-  $306.DoubleValue ensureSupplementalLocationAccuracy() => $_ensure(20);
+  $307.DoubleValue ensureSupplementalLocationAccuracy() => $_ensure(20);
 
   /// Accuracy of `location` in meters as a radius.
   @$pb.TagNumber(22)
-  $306.DoubleValue get latlngAccuracy => $_getN(21);
+  $307.DoubleValue get latlngAccuracy => $_getN(21);
   @$pb.TagNumber(22)
-  set latlngAccuracy($306.DoubleValue v) { setField(22, v); }
+  set latlngAccuracy($307.DoubleValue v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasLatlngAccuracy() => $_has(21);
   @$pb.TagNumber(22)
   void clearLatlngAccuracy() => clearField(22);
   @$pb.TagNumber(22)
-  $306.DoubleValue ensureLatlngAccuracy() => $_ensure(21);
+  $307.DoubleValue ensureLatlngAccuracy() => $_ensure(21);
 
   /// Accuracy of `heading` in degrees.
   @$pb.TagNumber(23)
-  $306.DoubleValue get headingAccuracy => $_getN(22);
+  $307.DoubleValue get headingAccuracy => $_getN(22);
   @$pb.TagNumber(23)
-  set headingAccuracy($306.DoubleValue v) { setField(23, v); }
+  set headingAccuracy($307.DoubleValue v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasHeadingAccuracy() => $_has(22);
   @$pb.TagNumber(23)
   void clearHeadingAccuracy() => clearField(23);
   @$pb.TagNumber(23)
-  $306.DoubleValue ensureHeadingAccuracy() => $_ensure(22);
+  $307.DoubleValue ensureHeadingAccuracy() => $_ensure(22);
 
   /// Accuracy of `altitude` in meters.
   @$pb.TagNumber(24)
-  $306.DoubleValue get altitudeAccuracy => $_getN(23);
+  $307.DoubleValue get altitudeAccuracy => $_getN(23);
   @$pb.TagNumber(24)
-  set altitudeAccuracy($306.DoubleValue v) { setField(24, v); }
+  set altitudeAccuracy($307.DoubleValue v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasAltitudeAccuracy() => $_has(23);
   @$pb.TagNumber(24)
   void clearAltitudeAccuracy() => clearField(24);
   @$pb.TagNumber(24)
-  $306.DoubleValue ensureAltitudeAccuracy() => $_ensure(23);
+  $307.DoubleValue ensureAltitudeAccuracy() => $_ensure(23);
 
   /// Accuracy of `raw_location` as a radius, in meters.
   @$pb.TagNumber(25)
-  $306.DoubleValue get rawLocationAccuracy => $_getN(24);
+  $307.DoubleValue get rawLocationAccuracy => $_getN(24);
   @$pb.TagNumber(25)
-  set rawLocationAccuracy($306.DoubleValue v) { setField(25, v); }
+  set rawLocationAccuracy($307.DoubleValue v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasRawLocationAccuracy() => $_has(24);
   @$pb.TagNumber(25)
   void clearRawLocationAccuracy() => clearField(25);
   @$pb.TagNumber(25)
-  $306.DoubleValue ensureRawLocationAccuracy() => $_ensure(24);
+  $307.DoubleValue ensureRawLocationAccuracy() => $_ensure(24);
 
   /// Deprecated: Use `is_road_snapped` instead.
   @$core.Deprecated('This field is deprecated.')
@@ -1138,15 +1138,15 @@ class VehicleLocation extends $pb.GeneratedMessage {
 
   /// Whether `location` is snapped to a road.
   @$pb.TagNumber(27)
-  $306.BoolValue get isRoadSnapped => $_getN(26);
+  $307.BoolValue get isRoadSnapped => $_getN(26);
   @$pb.TagNumber(27)
-  set isRoadSnapped($306.BoolValue v) { setField(27, v); }
+  set isRoadSnapped($307.BoolValue v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasIsRoadSnapped() => $_has(26);
   @$pb.TagNumber(27)
   void clearIsRoadSnapped() => clearField(27);
   @$pb.TagNumber(27)
-  $306.BoolValue ensureIsRoadSnapped() => $_ensure(26);
+  $307.BoolValue ensureIsRoadSnapped() => $_ensure(26);
 
   /// Source of the raw location. Defaults to `GPS`.
   @$pb.TagNumber(28)

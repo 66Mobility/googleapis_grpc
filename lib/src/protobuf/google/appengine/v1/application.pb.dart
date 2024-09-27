@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $263;
+import '../../protobuf/duration.pb.dart' as $264;
 import 'application.pbenum.dart';
 
 export 'application.pbenum.dart';
@@ -211,7 +211,7 @@ class Application extends $pb.GeneratedMessage {
     $core.String? authDomain,
     $core.String? locationId,
     $core.String? codeBucket,
-    $263.Duration? defaultCookieExpiration,
+    $264.Duration? defaultCookieExpiration,
     Application_ServingStatus? servingStatus,
     $core.String? defaultHostname,
     $core.String? defaultBucket,
@@ -280,7 +280,7 @@ class Application extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'authDomain')
     ..aOS(7, _omitFieldNames ? '' : 'locationId')
     ..aOS(8, _omitFieldNames ? '' : 'codeBucket')
-    ..aOM<$263.Duration>(9, _omitFieldNames ? '' : 'defaultCookieExpiration', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(9, _omitFieldNames ? '' : 'defaultCookieExpiration', subBuilder: $264.Duration.create)
     ..e<Application_ServingStatus>(10, _omitFieldNames ? '' : 'servingStatus', $pb.PbFieldType.OE, defaultOrMaker: Application_ServingStatus.UNSPECIFIED, valueOf: Application_ServingStatus.valueOf, enumValues: Application_ServingStatus.values)
     ..aOS(11, _omitFieldNames ? '' : 'defaultHostname')
     ..aOS(12, _omitFieldNames ? '' : 'defaultBucket')
@@ -391,15 +391,15 @@ class Application extends $pb.GeneratedMessage {
 
   /// Cookie expiration policy for this application.
   @$pb.TagNumber(9)
-  $263.Duration get defaultCookieExpiration => $_getN(6);
+  $264.Duration get defaultCookieExpiration => $_getN(6);
   @$pb.TagNumber(9)
-  set defaultCookieExpiration($263.Duration v) { setField(9, v); }
+  set defaultCookieExpiration($264.Duration v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDefaultCookieExpiration() => $_has(6);
   @$pb.TagNumber(9)
   void clearDefaultCookieExpiration() => clearField(9);
   @$pb.TagNumber(9)
-  $263.Duration ensureDefaultCookieExpiration() => $_ensure(6);
+  $264.Duration ensureDefaultCookieExpiration() => $_ensure(6);
 
   /// Serving status of this application.
   @$pb.TagNumber(10)

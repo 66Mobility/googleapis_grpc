@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/any.pb.dart' as $320;
-import '../../../protobuf/timestamp.pb.dart' as $301;
-import 'log_entry.pb.dart' as $371;
-import 'metric_value.pb.dart' as $370;
+import '../../../protobuf/any.pb.dart' as $321;
+import '../../../protobuf/timestamp.pb.dart' as $302;
+import 'log_entry.pb.dart' as $372;
+import 'metric_value.pb.dart' as $371;
 import 'operation.pbenum.dart';
 
 export 'operation.pbenum.dart';
@@ -27,13 +27,13 @@ class Operation extends $pb.GeneratedMessage {
     $core.String? operationId,
     $core.String? operationName,
     $core.String? consumerId,
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
     $core.Map<$core.String, $core.String>? labels,
-    $core.Iterable<$370.MetricValueSet>? metricValueSets,
-    $core.Iterable<$371.LogEntry>? logEntries,
+    $core.Iterable<$371.MetricValueSet>? metricValueSets,
+    $core.Iterable<$372.LogEntry>? logEntries,
     Operation_Importance? importance,
-    $core.Iterable<$320.Any>? extensions,
+    $core.Iterable<$321.Any>? extensions,
   }) {
     final $result = create();
     if (operationId != null) {
@@ -76,13 +76,13 @@ class Operation extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'operationId')
     ..aOS(2, _omitFieldNames ? '' : 'operationName')
     ..aOS(3, _omitFieldNames ? '' : 'consumerId')
-    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..m<$core.String, $core.String>(6, _omitFieldNames ? '' : 'labels', entryClassName: 'Operation.LabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.api.servicecontrol.v1'))
-    ..pc<$370.MetricValueSet>(7, _omitFieldNames ? '' : 'metricValueSets', $pb.PbFieldType.PM, subBuilder: $370.MetricValueSet.create)
-    ..pc<$371.LogEntry>(8, _omitFieldNames ? '' : 'logEntries', $pb.PbFieldType.PM, subBuilder: $371.LogEntry.create)
+    ..pc<$371.MetricValueSet>(7, _omitFieldNames ? '' : 'metricValueSets', $pb.PbFieldType.PM, subBuilder: $371.MetricValueSet.create)
+    ..pc<$372.LogEntry>(8, _omitFieldNames ? '' : 'logEntries', $pb.PbFieldType.PM, subBuilder: $372.LogEntry.create)
     ..e<Operation_Importance>(11, _omitFieldNames ? '' : 'importance', $pb.PbFieldType.OE, defaultOrMaker: Operation_Importance.LOW, valueOf: Operation_Importance.valueOf, enumValues: Operation_Importance.values)
-    ..pc<$320.Any>(16, _omitFieldNames ? '' : 'extensions', $pb.PbFieldType.PM, subBuilder: $320.Any.create)
+    ..pc<$321.Any>(16, _omitFieldNames ? '' : 'extensions', $pb.PbFieldType.PM, subBuilder: $321.Any.create)
     ..hasRequiredFields = false
   ;
 
@@ -158,15 +158,15 @@ class Operation extends $pb.GeneratedMessage {
 
   /// Required. Start time of the operation.
   @$pb.TagNumber(4)
-  $301.Timestamp get startTime => $_getN(3);
+  $302.Timestamp get startTime => $_getN(3);
   @$pb.TagNumber(4)
-  set startTime($301.Timestamp v) { setField(4, v); }
+  set startTime($302.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartTime() => clearField(4);
   @$pb.TagNumber(4)
-  $301.Timestamp ensureStartTime() => $_ensure(3);
+  $302.Timestamp ensureStartTime() => $_ensure(3);
 
   /// End time of the operation.
   /// Required when the operation is used in
@@ -174,15 +174,15 @@ class Operation extends $pb.GeneratedMessage {
   /// but optional when the operation is used in
   /// [ServiceController.Check][google.api.servicecontrol.v1.ServiceController.Check].
   @$pb.TagNumber(5)
-  $301.Timestamp get endTime => $_getN(4);
+  $302.Timestamp get endTime => $_getN(4);
   @$pb.TagNumber(5)
-  set endTime($301.Timestamp v) { setField(5, v); }
+  set endTime($302.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndTime() => clearField(5);
   @$pb.TagNumber(5)
-  $301.Timestamp ensureEndTime() => $_ensure(4);
+  $302.Timestamp ensureEndTime() => $_ensure(4);
 
   ///  Labels describing the operation. Only the following labels are allowed:
   ///
@@ -214,11 +214,11 @@ class Operation extends $pb.GeneratedMessage {
   ///  instances, the entire request is rejected with
   ///  an invalid argument error.
   @$pb.TagNumber(7)
-  $core.List<$370.MetricValueSet> get metricValueSets => $_getList(6);
+  $core.List<$371.MetricValueSet> get metricValueSets => $_getList(6);
 
   /// Represents information to be logged.
   @$pb.TagNumber(8)
-  $core.List<$371.LogEntry> get logEntries => $_getList(7);
+  $core.List<$372.LogEntry> get logEntries => $_getList(7);
 
   /// DO NOT USE. This is an experimental field.
   @$pb.TagNumber(11)
@@ -232,7 +232,7 @@ class Operation extends $pb.GeneratedMessage {
 
   /// Unimplemented.
   @$pb.TagNumber(16)
-  $core.List<$320.Any> get extensions => $_getList(9);
+  $core.List<$321.Any> get extensions => $_getList(9);
 }
 
 

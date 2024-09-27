@@ -13,20 +13,21 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $332;
-import '../../../../type/phone_number.pb.dart' as $539;
-import '../../../../type/postal_address.pb.dart' as $447;
-import 'customerservice.pb.dart' as $540;
-import 'phoneverificationstate.pbenum.dart' as $541;
+import '../../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../../type/phone_number.pb.dart' as $541;
+import '../../../../type/postal_address.pb.dart' as $448;
+import 'customerservice.pb.dart' as $542;
+import 'phoneverificationstate.pbenum.dart' as $543;
 
 /// Collection of information related to a business.
 class BusinessInfo extends $pb.GeneratedMessage {
   factory BusinessInfo({
     $core.String? name,
-    $447.PostalAddress? address,
-    $539.PhoneNumber? phone,
-    $541.PhoneVerificationState? phoneVerificationState,
-    $540.CustomerService? customerService,
+    $448.PostalAddress? address,
+    $541.PhoneNumber? phone,
+    $543.PhoneVerificationState? phoneVerificationState,
+    $542.CustomerService? customerService,
+    $core.String? koreanBusinessRegistrationNumber,
   }) {
     final $result = create();
     if (name != null) {
@@ -44,6 +45,9 @@ class BusinessInfo extends $pb.GeneratedMessage {
     if (customerService != null) {
       $result.customerService = customerService;
     }
+    if (koreanBusinessRegistrationNumber != null) {
+      $result.koreanBusinessRegistrationNumber = koreanBusinessRegistrationNumber;
+    }
     return $result;
   }
   BusinessInfo._() : super();
@@ -52,10 +56,11 @@ class BusinessInfo extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BusinessInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$447.PostalAddress>(2, _omitFieldNames ? '' : 'address', subBuilder: $447.PostalAddress.create)
-    ..aOM<$539.PhoneNumber>(3, _omitFieldNames ? '' : 'phone', subBuilder: $539.PhoneNumber.create)
-    ..e<$541.PhoneVerificationState>(4, _omitFieldNames ? '' : 'phoneVerificationState', $pb.PbFieldType.OE, defaultOrMaker: $541.PhoneVerificationState.PHONE_VERIFICATION_STATE_UNSPECIFIED, valueOf: $541.PhoneVerificationState.valueOf, enumValues: $541.PhoneVerificationState.values)
-    ..aOM<$540.CustomerService>(5, _omitFieldNames ? '' : 'customerService', subBuilder: $540.CustomerService.create)
+    ..aOM<$448.PostalAddress>(2, _omitFieldNames ? '' : 'address', subBuilder: $448.PostalAddress.create)
+    ..aOM<$541.PhoneNumber>(3, _omitFieldNames ? '' : 'phone', subBuilder: $541.PhoneNumber.create)
+    ..e<$543.PhoneVerificationState>(4, _omitFieldNames ? '' : 'phoneVerificationState', $pb.PbFieldType.OE, defaultOrMaker: $543.PhoneVerificationState.PHONE_VERIFICATION_STATE_UNSPECIFIED, valueOf: $543.PhoneVerificationState.valueOf, enumValues: $543.PhoneVerificationState.values)
+    ..aOM<$542.CustomerService>(5, _omitFieldNames ? '' : 'customerService', subBuilder: $542.CustomerService.create)
+    ..aOS(6, _omitFieldNames ? '' : 'koreanBusinessRegistrationNumber')
     ..hasRequiredFields = false
   ;
 
@@ -93,33 +98,33 @@ class BusinessInfo extends $pb.GeneratedMessage {
 
   /// Optional. The address of the business.
   @$pb.TagNumber(2)
-  $447.PostalAddress get address => $_getN(1);
+  $448.PostalAddress get address => $_getN(1);
   @$pb.TagNumber(2)
-  set address($447.PostalAddress v) { setField(2, v); }
+  set address($448.PostalAddress v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasAddress() => $_has(1);
   @$pb.TagNumber(2)
   void clearAddress() => clearField(2);
   @$pb.TagNumber(2)
-  $447.PostalAddress ensureAddress() => $_ensure(1);
+  $448.PostalAddress ensureAddress() => $_ensure(1);
 
   /// Output only. The phone number of the business.
   @$pb.TagNumber(3)
-  $539.PhoneNumber get phone => $_getN(2);
+  $541.PhoneNumber get phone => $_getN(2);
   @$pb.TagNumber(3)
-  set phone($539.PhoneNumber v) { setField(3, v); }
+  set phone($541.PhoneNumber v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPhone() => $_has(2);
   @$pb.TagNumber(3)
   void clearPhone() => clearField(3);
   @$pb.TagNumber(3)
-  $539.PhoneNumber ensurePhone() => $_ensure(2);
+  $541.PhoneNumber ensurePhone() => $_ensure(2);
 
   /// Output only. The phone verification state of the business.
   @$pb.TagNumber(4)
-  $541.PhoneVerificationState get phoneVerificationState => $_getN(3);
+  $543.PhoneVerificationState get phoneVerificationState => $_getN(3);
   @$pb.TagNumber(4)
-  set phoneVerificationState($541.PhoneVerificationState v) { setField(4, v); }
+  set phoneVerificationState($543.PhoneVerificationState v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPhoneVerificationState() => $_has(3);
   @$pb.TagNumber(4)
@@ -127,15 +132,27 @@ class BusinessInfo extends $pb.GeneratedMessage {
 
   /// Optional. The customer service of the business.
   @$pb.TagNumber(5)
-  $540.CustomerService get customerService => $_getN(4);
+  $542.CustomerService get customerService => $_getN(4);
   @$pb.TagNumber(5)
-  set customerService($540.CustomerService v) { setField(5, v); }
+  set customerService($542.CustomerService v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCustomerService() => $_has(4);
   @$pb.TagNumber(5)
   void clearCustomerService() => clearField(5);
   @$pb.TagNumber(5)
-  $540.CustomerService ensureCustomerService() => $_ensure(4);
+  $542.CustomerService ensureCustomerService() => $_ensure(4);
+
+  /// Optional. The 10-digit [Korean business registration
+  /// number](https://support.google.com/merchants/answer/9037766) separated with
+  /// dashes in the format: XXX-XX-XXXXX.
+  @$pb.TagNumber(6)
+  $core.String get koreanBusinessRegistrationNumber => $_getSZ(5);
+  @$pb.TagNumber(6)
+  set koreanBusinessRegistrationNumber($core.String v) { $_setString(5, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasKoreanBusinessRegistrationNumber() => $_has(5);
+  @$pb.TagNumber(6)
+  void clearKoreanBusinessRegistrationNumber() => clearField(6);
 }
 
 /// Request message for the `GetBusinessInfo` method.
@@ -195,7 +212,7 @@ class GetBusinessInfoRequest extends $pb.GeneratedMessage {
 class UpdateBusinessInfoRequest extends $pb.GeneratedMessage {
   factory UpdateBusinessInfoRequest({
     BusinessInfo? businessInfo,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (businessInfo != null) {
@@ -212,7 +229,7 @@ class UpdateBusinessInfoRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBusinessInfoRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOM<BusinessInfo>(1, _omitFieldNames ? '' : 'businessInfo', subBuilder: BusinessInfo.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -251,15 +268,15 @@ class UpdateBusinessInfoRequest extends $pb.GeneratedMessage {
 
   /// Required. List of fields being updated.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 

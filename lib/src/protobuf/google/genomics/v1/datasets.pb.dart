@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $332;
-import '../../protobuf/timestamp.pb.dart' as $301;
+import '../../protobuf/field_mask.pb.dart' as $333;
+import '../../protobuf/timestamp.pb.dart' as $302;
 
 ///  A Dataset is a collection of genomic data.
 ///
@@ -25,7 +25,7 @@ class Dataset extends $pb.GeneratedMessage {
     $core.String? id,
     $core.String? projectId,
     $core.String? name,
-    $301.Timestamp? createTime,
+    $302.Timestamp? createTime,
   }) {
     final $result = create();
     if (id != null) {
@@ -50,7 +50,7 @@ class Dataset extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..aOS(3, _omitFieldNames ? '' : 'name')
-    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -107,15 +107,15 @@ class Dataset extends $pb.GeneratedMessage {
 
   /// The time this dataset was created, in seconds from the epoch.
   @$pb.TagNumber(4)
-  $301.Timestamp get createTime => $_getN(3);
+  $302.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($301.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $301.Timestamp ensureCreateTime() => $_ensure(3);
+  $302.Timestamp ensureCreateTime() => $_ensure(3);
 }
 
 /// The dataset list request.
@@ -323,7 +323,7 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
   factory UpdateDatasetRequest({
     $core.String? datasetId,
     Dataset? dataset,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (datasetId != null) {
@@ -344,7 +344,7 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatasetRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.genomics.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'datasetId')
     ..aOM<Dataset>(2, _omitFieldNames ? '' : 'dataset', subBuilder: Dataset.create)
-    ..aOM<$332.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -396,15 +396,15 @@ class UpdateDatasetRequest extends $pb.GeneratedMessage {
   /// acceptable value is "name". If unspecified, all mutable fields will be
   /// updated.
   @$pb.TagNumber(3)
-  $332.FieldMask get updateMask => $_getN(2);
+  $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($332.FieldMask v) { setField(3, v); }
+  set updateMask($333.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $332.FieldMask ensureUpdateMask() => $_ensure(2);
+  $333.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 class DeleteDatasetRequest extends $pb.GeneratedMessage {

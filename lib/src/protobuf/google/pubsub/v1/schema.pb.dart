@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $301;
+import '../../protobuf/timestamp.pb.dart' as $302;
 import 'schema.pbenum.dart';
 
 export 'schema.pbenum.dart';
@@ -25,7 +25,7 @@ class Schema extends $pb.GeneratedMessage {
     Schema_Type? type,
     $core.String? definition,
     $core.String? revisionId,
-    $301.Timestamp? revisionCreateTime,
+    $302.Timestamp? revisionCreateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -54,7 +54,7 @@ class Schema extends $pb.GeneratedMessage {
     ..e<Schema_Type>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: Schema_Type.TYPE_UNSPECIFIED, valueOf: Schema_Type.valueOf, enumValues: Schema_Type.values)
     ..aOS(3, _omitFieldNames ? '' : 'definition')
     ..aOS(4, _omitFieldNames ? '' : 'revisionId')
-    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'revisionCreateTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -124,15 +124,15 @@ class Schema extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp that the revision was created.
   @$pb.TagNumber(6)
-  $301.Timestamp get revisionCreateTime => $_getN(4);
+  $302.Timestamp get revisionCreateTime => $_getN(4);
   @$pb.TagNumber(6)
-  set revisionCreateTime($301.Timestamp v) { setField(6, v); }
+  set revisionCreateTime($302.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasRevisionCreateTime() => $_has(4);
   @$pb.TagNumber(6)
   void clearRevisionCreateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $301.Timestamp ensureRevisionCreateTime() => $_ensure(4);
+  $302.Timestamp ensureRevisionCreateTime() => $_ensure(4);
 }
 
 /// Request for the CreateSchema method.

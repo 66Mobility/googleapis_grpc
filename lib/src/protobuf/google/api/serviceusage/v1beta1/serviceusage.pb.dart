@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../protobuf/field_mask.pb.dart' as $333;
 import 'resources.pb.dart' as $48;
 import 'resources.pbenum.dart' as $48;
 import 'serviceusage.pbenum.dart';
@@ -856,7 +856,7 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $48.QuotaOverride? override,
     $core.bool? force,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
     $core.Iterable<$48.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
@@ -885,7 +885,7 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<$48.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $48.QuotaOverride.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..aOM<$332.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..pc<$48.QuotaSafetyCheck>(5, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $48.QuotaSafetyCheck.valueOf, enumValues: $48.QuotaSafetyCheck.values, defaultEnumValue: $48.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
@@ -952,15 +952,15 @@ class UpdateAdminOverrideRequest extends $pb.GeneratedMessage {
   /// Update only the specified fields of the override.
   /// If unset, all fields will be updated.
   @$pb.TagNumber(4)
-  $332.FieldMask get updateMask => $_getN(3);
+  $333.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($332.FieldMask v) { setField(4, v); }
+  set updateMask($333.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $332.FieldMask ensureUpdateMask() => $_ensure(3);
+  $333.FieldMask ensureUpdateMask() => $_ensure(3);
 
   /// The list of quota safety checks to ignore before the override mutation.
   /// Unlike 'force' field that ignores all the quota safety checks, the
@@ -1552,7 +1552,7 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
     $core.String? name,
     $48.QuotaOverride? override,
     $core.bool? force,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
     $core.Iterable<$48.QuotaSafetyCheck>? forceOnly,
   }) {
     final $result = create();
@@ -1581,7 +1581,7 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<$48.QuotaOverride>(2, _omitFieldNames ? '' : 'override', subBuilder: $48.QuotaOverride.create)
     ..aOB(3, _omitFieldNames ? '' : 'force')
-    ..aOM<$332.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..pc<$48.QuotaSafetyCheck>(5, _omitFieldNames ? '' : 'forceOnly', $pb.PbFieldType.KE, valueOf: $48.QuotaSafetyCheck.valueOf, enumValues: $48.QuotaSafetyCheck.values, defaultEnumValue: $48.QuotaSafetyCheck.QUOTA_SAFETY_CHECK_UNSPECIFIED)
     ..hasRequiredFields = false
   ;
@@ -1648,15 +1648,15 @@ class UpdateConsumerOverrideRequest extends $pb.GeneratedMessage {
   /// Update only the specified fields of the override.
   /// If unset, all fields will be updated.
   @$pb.TagNumber(4)
-  $332.FieldMask get updateMask => $_getN(3);
+  $333.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($332.FieldMask v) { setField(4, v); }
+  set updateMask($333.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $332.FieldMask ensureUpdateMask() => $_ensure(3);
+  $333.FieldMask ensureUpdateMask() => $_ensure(3);
 
   /// The list of quota safety checks to ignore before the override mutation.
   /// Unlike 'force' field that ignores all the quota safety checks, the

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $263;
-import 'metrics.pb.dart' as $512;
+import '../../../protobuf/duration.pb.dart' as $264;
+import 'metrics.pb.dart' as $513;
 import 'piechart.pbenum.dart';
 
 export 'piechart.pbenum.dart';
@@ -22,9 +22,9 @@ export 'piechart.pbenum.dart';
 /// Groups a time series query definition.
 class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   factory PieChart_PieChartDataSet({
-    $512.TimeSeriesQuery? timeSeriesQuery,
+    $513.TimeSeriesQuery? timeSeriesQuery,
     $core.String? sliceNameTemplate,
-    $263.Duration? minAlignmentPeriod,
+    $264.Duration? minAlignmentPeriod,
   }) {
     final $result = create();
     if (timeSeriesQuery != null) {
@@ -43,9 +43,9 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   factory PieChart_PieChartDataSet.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PieChart.PieChartDataSet', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
-    ..aOM<$512.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $512.TimeSeriesQuery.create)
+    ..aOM<$513.TimeSeriesQuery>(1, _omitFieldNames ? '' : 'timeSeriesQuery', subBuilder: $513.TimeSeriesQuery.create)
     ..aOS(2, _omitFieldNames ? '' : 'sliceNameTemplate')
-    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'minAlignmentPeriod', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -73,15 +73,15 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   /// Required. The query for the PieChart. See,
   /// `google.monitoring.dashboard.v1.TimeSeriesQuery`.
   @$pb.TagNumber(1)
-  $512.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
+  $513.TimeSeriesQuery get timeSeriesQuery => $_getN(0);
   @$pb.TagNumber(1)
-  set timeSeriesQuery($512.TimeSeriesQuery v) { setField(1, v); }
+  set timeSeriesQuery($513.TimeSeriesQuery v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasTimeSeriesQuery() => $_has(0);
   @$pb.TagNumber(1)
   void clearTimeSeriesQuery() => clearField(1);
   @$pb.TagNumber(1)
-  $512.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
+  $513.TimeSeriesQuery ensureTimeSeriesQuery() => $_ensure(0);
 
   /// Optional. A template for the name of the slice. This name will be
   /// displayed in the legend and the tooltip of the pie chart. It replaces the
@@ -104,15 +104,15 @@ class PieChart_PieChartDataSet extends $pb.GeneratedMessage {
   /// minutes, the `min_alignment_period` should be at least 10 minutes. It
   /// would not make sense to fetch and align data at one minute intervals.
   @$pb.TagNumber(3)
-  $263.Duration get minAlignmentPeriod => $_getN(2);
+  $264.Duration get minAlignmentPeriod => $_getN(2);
   @$pb.TagNumber(3)
-  set minAlignmentPeriod($263.Duration v) { setField(3, v); }
+  set minAlignmentPeriod($264.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMinAlignmentPeriod() => $_has(2);
   @$pb.TagNumber(3)
   void clearMinAlignmentPeriod() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Duration ensureMinAlignmentPeriod() => $_ensure(2);
+  $264.Duration ensureMinAlignmentPeriod() => $_ensure(2);
 }
 
 /// A widget that displays timeseries data as a pie or a donut.

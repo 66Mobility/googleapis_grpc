@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $301;
-import '../../../../rpc/status.pb.dart' as $321;
+import '../../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../../rpc/status.pb.dart' as $322;
 import 'common.pbenum.dart';
 
 export 'common.pbenum.dart';
@@ -24,8 +24,8 @@ export 'common.pbenum.dart';
 class OperationProgress extends $pb.GeneratedMessage {
   factory OperationProgress({
     $core.int? progressPercent,
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
   }) {
     final $result = create();
     if (progressPercent != null) {
@@ -45,8 +45,8 @@ class OperationProgress extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationProgress', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -84,28 +84,28 @@ class OperationProgress extends $pb.GeneratedMessage {
 
   /// Time the request was received.
   @$pb.TagNumber(2)
-  $301.Timestamp get startTime => $_getN(1);
+  $302.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($301.Timestamp v) { setField(2, v); }
+  set startTime($302.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $301.Timestamp ensureStartTime() => $_ensure(1);
+  $302.Timestamp ensureStartTime() => $_ensure(1);
 
   /// If set, the time at which this operation failed or was completed
   /// successfully.
   @$pb.TagNumber(3)
-  $301.Timestamp get endTime => $_getN(2);
+  $302.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($301.Timestamp v) { setField(3, v); }
+  set endTime($302.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $301.Timestamp ensureEndTime() => $_ensure(2);
+  $302.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 /// Encryption configuration for a Cloud Spanner database.
@@ -190,7 +190,7 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   factory EncryptionInfo({
     $core.String? kmsKeyVersion,
     EncryptionInfo_Type? encryptionType,
-    $321.Status? encryptionStatus,
+    $322.Status? encryptionStatus,
   }) {
     final $result = create();
     if (kmsKeyVersion != null) {
@@ -211,7 +211,7 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EncryptionInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.database.v1'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'kmsKeyVersion')
     ..e<EncryptionInfo_Type>(3, _omitFieldNames ? '' : 'encryptionType', $pb.PbFieldType.OE, defaultOrMaker: EncryptionInfo_Type.TYPE_UNSPECIFIED, valueOf: EncryptionInfo_Type.valueOf, enumValues: EncryptionInfo_Type.values)
-    ..aOM<$321.Status>(4, _omitFieldNames ? '' : 'encryptionStatus', subBuilder: $321.Status.create)
+    ..aOM<$322.Status>(4, _omitFieldNames ? '' : 'encryptionStatus', subBuilder: $322.Status.create)
     ..hasRequiredFields = false
   ;
 
@@ -261,15 +261,15 @@ class EncryptionInfo extends $pb.GeneratedMessage {
   /// underlying data for this database or backup. Regardless of status, data is
   /// always encrypted at rest.
   @$pb.TagNumber(4)
-  $321.Status get encryptionStatus => $_getN(2);
+  $322.Status get encryptionStatus => $_getN(2);
   @$pb.TagNumber(4)
-  set encryptionStatus($321.Status v) { setField(4, v); }
+  set encryptionStatus($322.Status v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasEncryptionStatus() => $_has(2);
   @$pb.TagNumber(4)
   void clearEncryptionStatus() => clearField(4);
   @$pb.TagNumber(4)
-  $321.Status ensureEncryptionStatus() => $_ensure(2);
+  $322.Status ensureEncryptionStatus() => $_ensure(2);
 }
 
 

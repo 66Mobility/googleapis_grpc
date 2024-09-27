@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../geo/type/viewport.pb.dart' as $448;
-import '../../../protobuf/duration.pb.dart' as $263;
-import '../../../type/money.pb.dart' as $464;
-import 'polyline.pb.dart' as $482;
+import '../../../geo/type/viewport.pb.dart' as $449;
+import '../../../protobuf/duration.pb.dart' as $264;
+import '../../../type/money.pb.dart' as $465;
+import 'polyline.pb.dart' as $483;
 import 'route.pbenum.dart';
-import 'waypoint.pb.dart' as $481;
+import 'waypoint.pb.dart' as $482;
 
 export 'route.pbenum.dart';
 
@@ -28,12 +28,12 @@ class Route extends $pb.GeneratedMessage {
   factory Route({
     $core.Iterable<RouteLeg>? legs,
     $core.int? distanceMeters,
-    $263.Duration? duration,
-    $263.Duration? staticDuration,
-    $482.Polyline? polyline,
+    $264.Duration? duration,
+    $264.Duration? staticDuration,
+    $483.Polyline? polyline,
     $core.String? description,
     $core.Iterable<$core.String>? warnings,
-    $448.Viewport? viewport,
+    $449.Viewport? viewport,
     RouteTravelAdvisory? travelAdvisory,
     $core.Iterable<$core.int>? optimizedIntermediateWaypointIndex,
   }) {
@@ -77,12 +77,12 @@ class Route extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Route', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..pc<RouteLeg>(1, _omitFieldNames ? '' : 'legs', $pb.PbFieldType.PM, subBuilder: RouteLeg.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'duration', subBuilder: $263.Duration.create)
-    ..aOM<$263.Duration>(4, _omitFieldNames ? '' : 'staticDuration', subBuilder: $263.Duration.create)
-    ..aOM<$482.Polyline>(5, _omitFieldNames ? '' : 'polyline', subBuilder: $482.Polyline.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'staticDuration', subBuilder: $264.Duration.create)
+    ..aOM<$483.Polyline>(5, _omitFieldNames ? '' : 'polyline', subBuilder: $483.Polyline.create)
     ..aOS(6, _omitFieldNames ? '' : 'description')
     ..pPS(7, _omitFieldNames ? '' : 'warnings')
-    ..aOM<$448.Viewport>(8, _omitFieldNames ? '' : 'viewport', subBuilder: $448.Viewport.create)
+    ..aOM<$449.Viewport>(8, _omitFieldNames ? '' : 'viewport', subBuilder: $449.Viewport.create)
     ..aOM<RouteTravelAdvisory>(9, _omitFieldNames ? '' : 'travelAdvisory', subBuilder: RouteTravelAdvisory.create)
     ..p<$core.int>(10, _omitFieldNames ? '' : 'optimizedIntermediateWaypointIndex', $pb.PbFieldType.K3)
     ..hasRequiredFields = false
@@ -135,41 +135,41 @@ class Route extends $pb.GeneratedMessage {
   /// `TRAFFIC_AWARE` or `TRAFFIC_AWARE_OPTIMAL`, then this value is calculated
   /// taking traffic conditions into account.
   @$pb.TagNumber(3)
-  $263.Duration get duration => $_getN(2);
+  $264.Duration get duration => $_getN(2);
   @$pb.TagNumber(3)
-  set duration($263.Duration v) { setField(3, v); }
+  set duration($264.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Duration ensureDuration() => $_ensure(2);
+  $264.Duration ensureDuration() => $_ensure(2);
 
   /// The duration of traveling through the route without taking traffic
   /// conditions into consideration.
   @$pb.TagNumber(4)
-  $263.Duration get staticDuration => $_getN(3);
+  $264.Duration get staticDuration => $_getN(3);
   @$pb.TagNumber(4)
-  set staticDuration($263.Duration v) { setField(4, v); }
+  set staticDuration($264.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStaticDuration() => $_has(3);
   @$pb.TagNumber(4)
   void clearStaticDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $263.Duration ensureStaticDuration() => $_ensure(3);
+  $264.Duration ensureStaticDuration() => $_ensure(3);
 
   /// The overall route polyline. This polyline is the combined polyline of all
   /// `legs`.
   @$pb.TagNumber(5)
-  $482.Polyline get polyline => $_getN(4);
+  $483.Polyline get polyline => $_getN(4);
   @$pb.TagNumber(5)
-  set polyline($482.Polyline v) { setField(5, v); }
+  set polyline($483.Polyline v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasPolyline() => $_has(4);
   @$pb.TagNumber(5)
   void clearPolyline() => clearField(5);
   @$pb.TagNumber(5)
-  $482.Polyline ensurePolyline() => $_ensure(4);
+  $483.Polyline ensurePolyline() => $_ensure(4);
 
   /// A description of the route.
   @$pb.TagNumber(6)
@@ -187,15 +187,15 @@ class Route extends $pb.GeneratedMessage {
 
   /// The viewport bounding box of the polyline.
   @$pb.TagNumber(8)
-  $448.Viewport get viewport => $_getN(7);
+  $449.Viewport get viewport => $_getN(7);
   @$pb.TagNumber(8)
-  set viewport($448.Viewport v) { setField(8, v); }
+  set viewport($449.Viewport v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasViewport() => $_has(7);
   @$pb.TagNumber(8)
   void clearViewport() => clearField(8);
   @$pb.TagNumber(8)
-  $448.Viewport ensureViewport() => $_ensure(7);
+  $449.Viewport ensureViewport() => $_ensure(7);
 
   /// Additional information about the route.
   @$pb.TagNumber(9)
@@ -602,11 +602,11 @@ class LicensePlateLastCharacterRestriction extends $pb.GeneratedMessage {
 class RouteLeg extends $pb.GeneratedMessage {
   factory RouteLeg({
     $core.int? distanceMeters,
-    $263.Duration? duration,
-    $263.Duration? staticDuration,
-    $482.Polyline? polyline,
-    $481.Location? startLocation,
-    $481.Location? endLocation,
+    $264.Duration? duration,
+    $264.Duration? staticDuration,
+    $483.Polyline? polyline,
+    $482.Location? startLocation,
+    $482.Location? endLocation,
     $core.Iterable<RouteLegStep>? steps,
     RouteLegTravelAdvisory? travelAdvisory,
   }) {
@@ -643,11 +643,11 @@ class RouteLeg extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLeg', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..aOM<$263.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $263.Duration.create)
-    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'staticDuration', subBuilder: $263.Duration.create)
-    ..aOM<$482.Polyline>(4, _omitFieldNames ? '' : 'polyline', subBuilder: $482.Polyline.create)
-    ..aOM<$481.Location>(5, _omitFieldNames ? '' : 'startLocation', subBuilder: $481.Location.create)
-    ..aOM<$481.Location>(6, _omitFieldNames ? '' : 'endLocation', subBuilder: $481.Location.create)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'staticDuration', subBuilder: $264.Duration.create)
+    ..aOM<$483.Polyline>(4, _omitFieldNames ? '' : 'polyline', subBuilder: $483.Polyline.create)
+    ..aOM<$482.Location>(5, _omitFieldNames ? '' : 'startLocation', subBuilder: $482.Location.create)
+    ..aOM<$482.Location>(6, _omitFieldNames ? '' : 'endLocation', subBuilder: $482.Location.create)
     ..pc<RouteLegStep>(7, _omitFieldNames ? '' : 'steps', $pb.PbFieldType.PM, subBuilder: RouteLegStep.create)
     ..aOM<RouteLegTravelAdvisory>(8, _omitFieldNames ? '' : 'travelAdvisory', subBuilder: RouteLegTravelAdvisory.create)
     ..hasRequiredFields = false
@@ -690,69 +690,69 @@ class RouteLeg extends $pb.GeneratedMessage {
   /// `TRAFFIC_AWARE_OPTIMAL`, then this value is calculated taking traffic
   /// conditions into account.
   @$pb.TagNumber(2)
-  $263.Duration get duration => $_getN(1);
+  $264.Duration get duration => $_getN(1);
   @$pb.TagNumber(2)
-  set duration($263.Duration v) { setField(2, v); }
+  set duration($264.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $263.Duration ensureDuration() => $_ensure(1);
+  $264.Duration ensureDuration() => $_ensure(1);
 
   /// The duration of traveling through the leg, calculated without taking
   /// traffic conditions into consideration.
   @$pb.TagNumber(3)
-  $263.Duration get staticDuration => $_getN(2);
+  $264.Duration get staticDuration => $_getN(2);
   @$pb.TagNumber(3)
-  set staticDuration($263.Duration v) { setField(3, v); }
+  set staticDuration($264.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasStaticDuration() => $_has(2);
   @$pb.TagNumber(3)
   void clearStaticDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Duration ensureStaticDuration() => $_ensure(2);
+  $264.Duration ensureStaticDuration() => $_ensure(2);
 
   /// The overall polyline for this leg. This includes that each `step`'s
   /// polyline.
   @$pb.TagNumber(4)
-  $482.Polyline get polyline => $_getN(3);
+  $483.Polyline get polyline => $_getN(3);
   @$pb.TagNumber(4)
-  set polyline($482.Polyline v) { setField(4, v); }
+  set polyline($483.Polyline v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPolyline() => $_has(3);
   @$pb.TagNumber(4)
   void clearPolyline() => clearField(4);
   @$pb.TagNumber(4)
-  $482.Polyline ensurePolyline() => $_ensure(3);
+  $483.Polyline ensurePolyline() => $_ensure(3);
 
   /// The start location of this leg. This might be different from the provided
   /// `origin`. For example, when the provided `origin` is not near a road, this
   /// is a point on the road.
   @$pb.TagNumber(5)
-  $481.Location get startLocation => $_getN(4);
+  $482.Location get startLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set startLocation($481.Location v) { setField(5, v); }
+  set startLocation($482.Location v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStartLocation() => $_has(4);
   @$pb.TagNumber(5)
   void clearStartLocation() => clearField(5);
   @$pb.TagNumber(5)
-  $481.Location ensureStartLocation() => $_ensure(4);
+  $482.Location ensureStartLocation() => $_ensure(4);
 
   /// The end location of this leg. This might be different from the provided
   /// `destination`. For example, when the provided `destination` is not near a
   /// road, this is a point on the road.
   @$pb.TagNumber(6)
-  $481.Location get endLocation => $_getN(5);
+  $482.Location get endLocation => $_getN(5);
   @$pb.TagNumber(6)
-  set endLocation($481.Location v) { setField(6, v); }
+  set endLocation($482.Location v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasEndLocation() => $_has(5);
   @$pb.TagNumber(6)
   void clearEndLocation() => clearField(6);
   @$pb.TagNumber(6)
-  $481.Location ensureEndLocation() => $_ensure(5);
+  $482.Location ensureEndLocation() => $_ensure(5);
 
   /// An array of steps denoting segments within this leg. Each step represents
   /// one navigation instruction.
@@ -776,7 +776,7 @@ class RouteLeg extends $pb.GeneratedMessage {
 /// Encapsulates toll information on a `Route` or on a `RouteLeg`.
 class TollInfo extends $pb.GeneratedMessage {
   factory TollInfo({
-    $core.Iterable<$464.Money>? estimatedPrice,
+    $core.Iterable<$465.Money>? estimatedPrice,
   }) {
     final $result = create();
     if (estimatedPrice != null) {
@@ -789,7 +789,7 @@ class TollInfo extends $pb.GeneratedMessage {
   factory TollInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TollInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..pc<$464.Money>(1, _omitFieldNames ? '' : 'estimatedPrice', $pb.PbFieldType.PM, subBuilder: $464.Money.create)
+    ..pc<$465.Money>(1, _omitFieldNames ? '' : 'estimatedPrice', $pb.PbFieldType.PM, subBuilder: $465.Money.create)
     ..hasRequiredFields = false
   ;
 
@@ -820,7 +820,7 @@ class TollInfo extends $pb.GeneratedMessage {
   /// item for routes with tolls in one currency. For international trips, this
   /// list may contain multiple items to reflect tolls in different currencies.
   @$pb.TagNumber(1)
-  $core.List<$464.Money> get estimatedPrice => $_getList(0);
+  $core.List<$465.Money> get estimatedPrice => $_getList(0);
 }
 
 /// Encapsulates a segment of a `RouteLeg`. A step corresponds to a single
@@ -828,10 +828,10 @@ class TollInfo extends $pb.GeneratedMessage {
 class RouteLegStep extends $pb.GeneratedMessage {
   factory RouteLegStep({
     $core.int? distanceMeters,
-    $263.Duration? staticDuration,
-    $482.Polyline? polyline,
-    $481.Location? startLocation,
-    $481.Location? endLocation,
+    $264.Duration? staticDuration,
+    $483.Polyline? polyline,
+    $482.Location? startLocation,
+    $482.Location? endLocation,
     NavigationInstruction? navigationInstruction,
     RouteLegStepTravelAdvisory? travelAdvisory,
   }) {
@@ -865,10 +865,10 @@ class RouteLegStep extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RouteLegStep', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
-    ..aOM<$263.Duration>(2, _omitFieldNames ? '' : 'staticDuration', subBuilder: $263.Duration.create)
-    ..aOM<$482.Polyline>(3, _omitFieldNames ? '' : 'polyline', subBuilder: $482.Polyline.create)
-    ..aOM<$481.Location>(4, _omitFieldNames ? '' : 'startLocation', subBuilder: $481.Location.create)
-    ..aOM<$481.Location>(5, _omitFieldNames ? '' : 'endLocation', subBuilder: $481.Location.create)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'staticDuration', subBuilder: $264.Duration.create)
+    ..aOM<$483.Polyline>(3, _omitFieldNames ? '' : 'polyline', subBuilder: $483.Polyline.create)
+    ..aOM<$482.Location>(4, _omitFieldNames ? '' : 'startLocation', subBuilder: $482.Location.create)
+    ..aOM<$482.Location>(5, _omitFieldNames ? '' : 'endLocation', subBuilder: $482.Location.create)
     ..aOM<NavigationInstruction>(6, _omitFieldNames ? '' : 'navigationInstruction', subBuilder: NavigationInstruction.create)
     ..aOM<RouteLegStepTravelAdvisory>(7, _omitFieldNames ? '' : 'travelAdvisory', subBuilder: RouteLegStepTravelAdvisory.create)
     ..hasRequiredFields = false
@@ -910,51 +910,51 @@ class RouteLegStep extends $pb.GeneratedMessage {
   /// into consideration. In some circumstances, this field might not have a
   /// value.
   @$pb.TagNumber(2)
-  $263.Duration get staticDuration => $_getN(1);
+  $264.Duration get staticDuration => $_getN(1);
   @$pb.TagNumber(2)
-  set staticDuration($263.Duration v) { setField(2, v); }
+  set staticDuration($264.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStaticDuration() => $_has(1);
   @$pb.TagNumber(2)
   void clearStaticDuration() => clearField(2);
   @$pb.TagNumber(2)
-  $263.Duration ensureStaticDuration() => $_ensure(1);
+  $264.Duration ensureStaticDuration() => $_ensure(1);
 
   /// The polyline associated with this step.
   @$pb.TagNumber(3)
-  $482.Polyline get polyline => $_getN(2);
+  $483.Polyline get polyline => $_getN(2);
   @$pb.TagNumber(3)
-  set polyline($482.Polyline v) { setField(3, v); }
+  set polyline($483.Polyline v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPolyline() => $_has(2);
   @$pb.TagNumber(3)
   void clearPolyline() => clearField(3);
   @$pb.TagNumber(3)
-  $482.Polyline ensurePolyline() => $_ensure(2);
+  $483.Polyline ensurePolyline() => $_ensure(2);
 
   /// The start location of this step.
   @$pb.TagNumber(4)
-  $481.Location get startLocation => $_getN(3);
+  $482.Location get startLocation => $_getN(3);
   @$pb.TagNumber(4)
-  set startLocation($481.Location v) { setField(4, v); }
+  set startLocation($482.Location v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasStartLocation() => $_has(3);
   @$pb.TagNumber(4)
   void clearStartLocation() => clearField(4);
   @$pb.TagNumber(4)
-  $481.Location ensureStartLocation() => $_ensure(3);
+  $482.Location ensureStartLocation() => $_ensure(3);
 
   /// The end location of this step.
   @$pb.TagNumber(5)
-  $481.Location get endLocation => $_getN(4);
+  $482.Location get endLocation => $_getN(4);
   @$pb.TagNumber(5)
-  set endLocation($481.Location v) { setField(5, v); }
+  set endLocation($482.Location v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasEndLocation() => $_has(4);
   @$pb.TagNumber(5)
   void clearEndLocation() => clearField(5);
   @$pb.TagNumber(5)
-  $481.Location ensureEndLocation() => $_ensure(4);
+  $482.Location ensureEndLocation() => $_ensure(4);
 
   /// Navigation instructions.
   @$pb.TagNumber(6)
@@ -1142,7 +1142,7 @@ class CustomLayerInfo_AreaInfo extends $pb.GeneratedMessage {
   factory CustomLayerInfo_AreaInfo({
     $core.String? areaId,
     $core.double? distanceInAreaMeters,
-    $263.Duration? durationInArea,
+    $264.Duration? durationInArea,
   }) {
     final $result = create();
     if (areaId != null) {
@@ -1163,7 +1163,7 @@ class CustomLayerInfo_AreaInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomLayerInfo.AreaInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'areaId')
     ..a<$core.double>(2, _omitFieldNames ? '' : 'distanceInAreaMeters', $pb.PbFieldType.OF)
-    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'durationInArea', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'durationInArea', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1217,15 +1217,15 @@ class CustomLayerInfo_AreaInfo extends $pb.GeneratedMessage {
 
   /// Total time spent in the area.
   @$pb.TagNumber(3)
-  $263.Duration get durationInArea => $_getN(2);
+  $264.Duration get durationInArea => $_getN(2);
   @$pb.TagNumber(3)
-  set durationInArea($263.Duration v) { setField(3, v); }
+  set durationInArea($264.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDurationInArea() => $_has(2);
   @$pb.TagNumber(3)
   void clearDurationInArea() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Duration ensureDurationInArea() => $_ensure(2);
+  $264.Duration ensureDurationInArea() => $_ensure(2);
 }
 
 /// Deprecated: This field will stop being populated soon.
@@ -1235,7 +1235,7 @@ class CustomLayerInfo extends $pb.GeneratedMessage {
   factory CustomLayerInfo({
     $core.Iterable<CustomLayerInfo_AreaInfo>? areaInfo,
     $core.double? totalDistanceInAreasMeters,
-    $263.Duration? totalDurationInAreas,
+    $264.Duration? totalDurationInAreas,
   }) {
     final $result = create();
     if (areaInfo != null) {
@@ -1256,7 +1256,7 @@ class CustomLayerInfo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CustomLayerInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
     ..pc<CustomLayerInfo_AreaInfo>(1, _omitFieldNames ? '' : 'areaInfo', $pb.PbFieldType.PM, subBuilder: CustomLayerInfo_AreaInfo.create)
     ..a<$core.double>(2, _omitFieldNames ? '' : 'totalDistanceInAreasMeters', $pb.PbFieldType.OF)
-    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'totalDurationInAreas', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'totalDurationInAreas', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1305,15 +1305,15 @@ class CustomLayerInfo extends $pb.GeneratedMessage {
   /// area B, the time spent in the intersection region is only added once to the
   /// `total_duration_in_areas`.
   @$pb.TagNumber(3)
-  $263.Duration get totalDurationInAreas => $_getN(2);
+  $264.Duration get totalDurationInAreas => $_getN(2);
   @$pb.TagNumber(3)
-  set totalDurationInAreas($263.Duration v) { setField(3, v); }
+  set totalDurationInAreas($264.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTotalDurationInAreas() => $_has(2);
   @$pb.TagNumber(3)
   void clearTotalDurationInAreas() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Duration ensureTotalDurationInAreas() => $_ensure(2);
+  $264.Duration ensureTotalDurationInAreas() => $_ensure(2);
 }
 
 

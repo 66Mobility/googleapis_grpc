@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'attribution.pb.dart' as $460;
+import 'attribution.pb.dart' as $461;
 
 /// Information about a photo of a place.
 class Photo extends $pb.GeneratedMessage {
@@ -21,7 +21,7 @@ class Photo extends $pb.GeneratedMessage {
     $core.String? name,
     $core.int? widthPx,
     $core.int? heightPx,
-    $core.Iterable<$460.AuthorAttribution>? authorAttributions,
+    $core.Iterable<$461.AuthorAttribution>? authorAttributions,
   }) {
     final $result = create();
     if (name != null) {
@@ -46,7 +46,7 @@ class Photo extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'widthPx', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'heightPx', $pb.PbFieldType.O3)
-    ..pc<$460.AuthorAttribution>(4, _omitFieldNames ? '' : 'authorAttributions', $pb.PbFieldType.PM, subBuilder: $460.AuthorAttribution.create)
+    ..pc<$461.AuthorAttribution>(4, _omitFieldNames ? '' : 'authorAttributions', $pb.PbFieldType.PM, subBuilder: $461.AuthorAttribution.create)
     ..hasRequiredFields = false
   ;
 
@@ -105,7 +105,7 @@ class Photo extends $pb.GeneratedMessage {
 
   /// This photo's authors.
   @$pb.TagNumber(4)
-  $core.List<$460.AuthorAttribution> get authorAttributions => $_getList(3);
+  $core.List<$461.AuthorAttribution> get authorAttributions => $_getList(3);
 }
 
 

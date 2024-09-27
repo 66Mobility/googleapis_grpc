@@ -13,14 +13,14 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/api.pb.dart' as $350;
-import '../../auth.pb.dart' as $354;
-import '../../documentation.pb.dart' as $351;
-import '../../endpoint.pb.dart' as $357;
+import '../../../protobuf/api.pb.dart' as $351;
+import '../../auth.pb.dart' as $355;
+import '../../documentation.pb.dart' as $352;
+import '../../endpoint.pb.dart' as $358;
 import '../../monitored_resource.pb.dart' as $196;
-import '../../monitoring.pb.dart' as $362;
-import '../../quota.pb.dart' as $353;
-import '../../usage.pb.dart' as $356;
+import '../../monitoring.pb.dart' as $363;
+import '../../quota.pb.dart' as $354;
+import '../../usage.pb.dart' as $357;
 import 'resources.pbenum.dart';
 
 export 'resources.pbenum.dart';
@@ -138,14 +138,14 @@ class ServiceConfig extends $pb.GeneratedMessage {
   factory ServiceConfig({
     $core.String? name,
     $core.String? title,
-    $core.Iterable<$350.Api>? apis,
-    $351.Documentation? documentation,
-    $353.Quota? quota,
-    $354.Authentication? authentication,
-    $356.Usage? usage,
-    $core.Iterable<$357.Endpoint>? endpoints,
+    $core.Iterable<$351.Api>? apis,
+    $352.Documentation? documentation,
+    $354.Quota? quota,
+    $355.Authentication? authentication,
+    $357.Usage? usage,
+    $core.Iterable<$358.Endpoint>? endpoints,
     $core.Iterable<$196.MonitoredResourceDescriptor>? monitoredResources,
-    $362.Monitoring? monitoring,
+    $363.Monitoring? monitoring,
   }) {
     final $result = create();
     if (name != null) {
@@ -187,14 +187,14 @@ class ServiceConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ServiceConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.serviceusage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'title')
-    ..pc<$350.Api>(3, _omitFieldNames ? '' : 'apis', $pb.PbFieldType.PM, subBuilder: $350.Api.create)
-    ..aOM<$351.Documentation>(6, _omitFieldNames ? '' : 'documentation', subBuilder: $351.Documentation.create)
-    ..aOM<$353.Quota>(10, _omitFieldNames ? '' : 'quota', subBuilder: $353.Quota.create)
-    ..aOM<$354.Authentication>(11, _omitFieldNames ? '' : 'authentication', subBuilder: $354.Authentication.create)
-    ..aOM<$356.Usage>(15, _omitFieldNames ? '' : 'usage', subBuilder: $356.Usage.create)
-    ..pc<$357.Endpoint>(18, _omitFieldNames ? '' : 'endpoints', $pb.PbFieldType.PM, subBuilder: $357.Endpoint.create)
+    ..pc<$351.Api>(3, _omitFieldNames ? '' : 'apis', $pb.PbFieldType.PM, subBuilder: $351.Api.create)
+    ..aOM<$352.Documentation>(6, _omitFieldNames ? '' : 'documentation', subBuilder: $352.Documentation.create)
+    ..aOM<$354.Quota>(10, _omitFieldNames ? '' : 'quota', subBuilder: $354.Quota.create)
+    ..aOM<$355.Authentication>(11, _omitFieldNames ? '' : 'authentication', subBuilder: $355.Authentication.create)
+    ..aOM<$357.Usage>(15, _omitFieldNames ? '' : 'usage', subBuilder: $357.Usage.create)
+    ..pc<$358.Endpoint>(18, _omitFieldNames ? '' : 'endpoints', $pb.PbFieldType.PM, subBuilder: $358.Endpoint.create)
     ..pc<$196.MonitoredResourceDescriptor>(25, _omitFieldNames ? '' : 'monitoredResources', $pb.PbFieldType.PM, subBuilder: $196.MonitoredResourceDescriptor.create)
-    ..aOM<$362.Monitoring>(28, _omitFieldNames ? '' : 'monitoring', subBuilder: $362.Monitoring.create)
+    ..aOM<$363.Monitoring>(28, _omitFieldNames ? '' : 'monitoring', subBuilder: $363.Monitoring.create)
     ..hasRequiredFields = false
   ;
 
@@ -245,61 +245,61 @@ class ServiceConfig extends $pb.GeneratedMessage {
   /// A list of API interfaces exported by this service. Contains only the names,
   /// versions, and method names of the interfaces.
   @$pb.TagNumber(3)
-  $core.List<$350.Api> get apis => $_getList(2);
+  $core.List<$351.Api> get apis => $_getList(2);
 
   /// Additional API documentation. Contains only the summary and the
   /// documentation URL.
   @$pb.TagNumber(6)
-  $351.Documentation get documentation => $_getN(3);
+  $352.Documentation get documentation => $_getN(3);
   @$pb.TagNumber(6)
-  set documentation($351.Documentation v) { setField(6, v); }
+  set documentation($352.Documentation v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDocumentation() => $_has(3);
   @$pb.TagNumber(6)
   void clearDocumentation() => clearField(6);
   @$pb.TagNumber(6)
-  $351.Documentation ensureDocumentation() => $_ensure(3);
+  $352.Documentation ensureDocumentation() => $_ensure(3);
 
   /// Quota configuration.
   @$pb.TagNumber(10)
-  $353.Quota get quota => $_getN(4);
+  $354.Quota get quota => $_getN(4);
   @$pb.TagNumber(10)
-  set quota($353.Quota v) { setField(10, v); }
+  set quota($354.Quota v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasQuota() => $_has(4);
   @$pb.TagNumber(10)
   void clearQuota() => clearField(10);
   @$pb.TagNumber(10)
-  $353.Quota ensureQuota() => $_ensure(4);
+  $354.Quota ensureQuota() => $_ensure(4);
 
   /// Auth configuration. Contains only the OAuth rules.
   @$pb.TagNumber(11)
-  $354.Authentication get authentication => $_getN(5);
+  $355.Authentication get authentication => $_getN(5);
   @$pb.TagNumber(11)
-  set authentication($354.Authentication v) { setField(11, v); }
+  set authentication($355.Authentication v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasAuthentication() => $_has(5);
   @$pb.TagNumber(11)
   void clearAuthentication() => clearField(11);
   @$pb.TagNumber(11)
-  $354.Authentication ensureAuthentication() => $_ensure(5);
+  $355.Authentication ensureAuthentication() => $_ensure(5);
 
   /// Configuration controlling usage of this service.
   @$pb.TagNumber(15)
-  $356.Usage get usage => $_getN(6);
+  $357.Usage get usage => $_getN(6);
   @$pb.TagNumber(15)
-  set usage($356.Usage v) { setField(15, v); }
+  set usage($357.Usage v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasUsage() => $_has(6);
   @$pb.TagNumber(15)
   void clearUsage() => clearField(15);
   @$pb.TagNumber(15)
-  $356.Usage ensureUsage() => $_ensure(6);
+  $357.Usage ensureUsage() => $_ensure(6);
 
   /// Configuration for network endpoints. Contains only the names and aliases
   /// of the endpoints.
   @$pb.TagNumber(18)
-  $core.List<$357.Endpoint> get endpoints => $_getList(7);
+  $core.List<$358.Endpoint> get endpoints => $_getList(7);
 
   /// Defines the monitored resources used by this service. This is required
   /// by the [Service.monitoring][google.api.Service.monitoring] and
@@ -310,15 +310,15 @@ class ServiceConfig extends $pb.GeneratedMessage {
   /// Monitoring configuration.
   /// This should not include the 'producer_destinations' field.
   @$pb.TagNumber(28)
-  $362.Monitoring get monitoring => $_getN(9);
+  $363.Monitoring get monitoring => $_getN(9);
   @$pb.TagNumber(28)
-  set monitoring($362.Monitoring v) { setField(28, v); }
+  set monitoring($363.Monitoring v) { setField(28, v); }
   @$pb.TagNumber(28)
   $core.bool hasMonitoring() => $_has(9);
   @$pb.TagNumber(28)
   void clearMonitoring() => clearField(28);
   @$pb.TagNumber(28)
-  $362.Monitoring ensureMonitoring() => $_ensure(9);
+  $363.Monitoring ensureMonitoring() => $_ensure(9);
 }
 
 /// The operation metadata returned for the batchend services operation.

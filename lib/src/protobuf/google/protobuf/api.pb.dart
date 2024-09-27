@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'source_context.pb.dart' as $348;
-import 'type.pb.dart' as $349;
-import 'type.pbenum.dart' as $349;
+import 'source_context.pb.dart' as $349;
+import 'type.pb.dart' as $350;
+import 'type.pbenum.dart' as $350;
 
 ///  Api is a light-weight descriptor for an API Interface.
 ///
@@ -30,11 +30,11 @@ class Api extends $pb.GeneratedMessage {
   factory Api({
     $core.String? name,
     $core.Iterable<Method>? methods,
-    $core.Iterable<$349.Option>? options,
+    $core.Iterable<$350.Option>? options,
     $core.String? version,
-    $348.SourceContext? sourceContext,
+    $349.SourceContext? sourceContext,
     $core.Iterable<Mixin>? mixins,
-    $349.Syntax? syntax,
+    $350.Syntax? syntax,
   }) {
     final $result = create();
     if (name != null) {
@@ -67,11 +67,11 @@ class Api extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Api', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.protobuf'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pc<Method>(2, _omitFieldNames ? '' : 'methods', $pb.PbFieldType.PM, subBuilder: Method.create)
-    ..pc<$349.Option>(3, _omitFieldNames ? '' : 'options', $pb.PbFieldType.PM, subBuilder: $349.Option.create)
+    ..pc<$350.Option>(3, _omitFieldNames ? '' : 'options', $pb.PbFieldType.PM, subBuilder: $350.Option.create)
     ..aOS(4, _omitFieldNames ? '' : 'version')
-    ..aOM<$348.SourceContext>(5, _omitFieldNames ? '' : 'sourceContext', subBuilder: $348.SourceContext.create)
+    ..aOM<$349.SourceContext>(5, _omitFieldNames ? '' : 'sourceContext', subBuilder: $349.SourceContext.create)
     ..pc<Mixin>(6, _omitFieldNames ? '' : 'mixins', $pb.PbFieldType.PM, subBuilder: Mixin.create)
-    ..e<$349.Syntax>(7, _omitFieldNames ? '' : 'syntax', $pb.PbFieldType.OE, defaultOrMaker: $349.Syntax.SYNTAX_PROTO2, valueOf: $349.Syntax.valueOf, enumValues: $349.Syntax.values)
+    ..e<$350.Syntax>(7, _omitFieldNames ? '' : 'syntax', $pb.PbFieldType.OE, defaultOrMaker: $350.Syntax.SYNTAX_PROTO2, valueOf: $350.Syntax.valueOf, enumValues: $350.Syntax.values)
     ..hasRequiredFields = false
   ;
 
@@ -113,7 +113,7 @@ class Api extends $pb.GeneratedMessage {
 
   /// Any metadata attached to the interface.
   @$pb.TagNumber(3)
-  $core.List<$349.Option> get options => $_getList(2);
+  $core.List<$350.Option> get options => $_getList(2);
 
   ///  A version string for this interface. If specified, must have the form
   ///  `major-version.minor-version`, as in `1.10`. If the minor version is
@@ -146,15 +146,15 @@ class Api extends $pb.GeneratedMessage {
   /// Source context for the protocol buffer service represented by this
   /// message.
   @$pb.TagNumber(5)
-  $348.SourceContext get sourceContext => $_getN(4);
+  $349.SourceContext get sourceContext => $_getN(4);
   @$pb.TagNumber(5)
-  set sourceContext($348.SourceContext v) { setField(5, v); }
+  set sourceContext($349.SourceContext v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSourceContext() => $_has(4);
   @$pb.TagNumber(5)
   void clearSourceContext() => clearField(5);
   @$pb.TagNumber(5)
-  $348.SourceContext ensureSourceContext() => $_ensure(4);
+  $349.SourceContext ensureSourceContext() => $_ensure(4);
 
   /// Included interfaces. See [Mixin][].
   @$pb.TagNumber(6)
@@ -162,9 +162,9 @@ class Api extends $pb.GeneratedMessage {
 
   /// The source syntax of the service.
   @$pb.TagNumber(7)
-  $349.Syntax get syntax => $_getN(6);
+  $350.Syntax get syntax => $_getN(6);
   @$pb.TagNumber(7)
-  set syntax($349.Syntax v) { setField(7, v); }
+  set syntax($350.Syntax v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSyntax() => $_has(6);
   @$pb.TagNumber(7)
@@ -179,8 +179,8 @@ class Method extends $pb.GeneratedMessage {
     $core.bool? requestStreaming,
     $core.String? responseTypeUrl,
     $core.bool? responseStreaming,
-    $core.Iterable<$349.Option>? options,
-    $349.Syntax? syntax,
+    $core.Iterable<$350.Option>? options,
+    $350.Syntax? syntax,
   }) {
     final $result = create();
     if (name != null) {
@@ -216,8 +216,8 @@ class Method extends $pb.GeneratedMessage {
     ..aOB(3, _omitFieldNames ? '' : 'requestStreaming')
     ..aOS(4, _omitFieldNames ? '' : 'responseTypeUrl')
     ..aOB(5, _omitFieldNames ? '' : 'responseStreaming')
-    ..pc<$349.Option>(6, _omitFieldNames ? '' : 'options', $pb.PbFieldType.PM, subBuilder: $349.Option.create)
-    ..e<$349.Syntax>(7, _omitFieldNames ? '' : 'syntax', $pb.PbFieldType.OE, defaultOrMaker: $349.Syntax.SYNTAX_PROTO2, valueOf: $349.Syntax.valueOf, enumValues: $349.Syntax.values)
+    ..pc<$350.Option>(6, _omitFieldNames ? '' : 'options', $pb.PbFieldType.PM, subBuilder: $350.Option.create)
+    ..e<$350.Syntax>(7, _omitFieldNames ? '' : 'syntax', $pb.PbFieldType.OE, defaultOrMaker: $350.Syntax.SYNTAX_PROTO2, valueOf: $350.Syntax.valueOf, enumValues: $350.Syntax.values)
     ..hasRequiredFields = false
   ;
 
@@ -294,13 +294,13 @@ class Method extends $pb.GeneratedMessage {
 
   /// Any metadata attached to the method.
   @$pb.TagNumber(6)
-  $core.List<$349.Option> get options => $_getList(5);
+  $core.List<$350.Option> get options => $_getList(5);
 
   /// The source syntax of this method.
   @$pb.TagNumber(7)
-  $349.Syntax get syntax => $_getN(6);
+  $350.Syntax get syntax => $_getN(6);
   @$pb.TagNumber(7)
-  set syntax($349.Syntax v) { setField(7, v); }
+  set syntax($350.Syntax v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSyntax() => $_has(6);
   @$pb.TagNumber(7)

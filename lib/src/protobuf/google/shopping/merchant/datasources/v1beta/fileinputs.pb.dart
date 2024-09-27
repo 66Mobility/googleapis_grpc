@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/dayofweek.pbenum.dart' as $426;
-import '../../../../type/timeofday.pb.dart' as $534;
+import '../../../../type/dayofweek.pbenum.dart' as $427;
+import '../../../../type/timeofday.pb.dart' as $535;
 import 'fileinputs.pbenum.dart';
 
 export 'fileinputs.pbenum.dart';
@@ -24,8 +24,8 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   factory FileInput_FetchSettings({
     $core.bool? enabled,
     $core.int? dayOfMonth,
-    $534.TimeOfDay? timeOfDay,
-    $426.DayOfWeek? dayOfWeek,
+    $535.TimeOfDay? timeOfDay,
+    $427.DayOfWeek? dayOfWeek,
     $core.String? timeZone,
     FileInput_FetchSettings_Frequency? frequency,
     $core.String? fetchUri,
@@ -69,8 +69,8 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FileInput.FetchSettings', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabled')
     ..a<$core.int>(2, _omitFieldNames ? '' : 'dayOfMonth', $pb.PbFieldType.O3)
-    ..aOM<$534.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay', subBuilder: $534.TimeOfDay.create)
-    ..e<$426.DayOfWeek>(4, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $426.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $426.DayOfWeek.valueOf, enumValues: $426.DayOfWeek.values)
+    ..aOM<$535.TimeOfDay>(3, _omitFieldNames ? '' : 'timeOfDay', subBuilder: $535.TimeOfDay.create)
+    ..e<$427.DayOfWeek>(4, _omitFieldNames ? '' : 'dayOfWeek', $pb.PbFieldType.OE, defaultOrMaker: $427.DayOfWeek.DAY_OF_WEEK_UNSPECIFIED, valueOf: $427.DayOfWeek.valueOf, enumValues: $427.DayOfWeek.values)
     ..aOS(5, _omitFieldNames ? '' : 'timeZone')
     ..e<FileInput_FetchSettings_Frequency>(6, _omitFieldNames ? '' : 'frequency', $pb.PbFieldType.OE, defaultOrMaker: FileInput_FetchSettings_Frequency.FREQUENCY_UNSPECIFIED, valueOf: FileInput_FetchSettings_Frequency.valueOf, enumValues: FileInput_FetchSettings_Frequency.values)
     ..aOS(7, _omitFieldNames ? '' : 'fetchUri')
@@ -124,22 +124,22 @@ class FileInput_FetchSettings extends $pb.GeneratedMessage {
   /// Optional. The hour of the day when the data source file should be
   /// fetched. Minutes and seconds are not supported and will be ignored.
   @$pb.TagNumber(3)
-  $534.TimeOfDay get timeOfDay => $_getN(2);
+  $535.TimeOfDay get timeOfDay => $_getN(2);
   @$pb.TagNumber(3)
-  set timeOfDay($534.TimeOfDay v) { setField(3, v); }
+  set timeOfDay($535.TimeOfDay v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTimeOfDay() => $_has(2);
   @$pb.TagNumber(3)
   void clearTimeOfDay() => clearField(3);
   @$pb.TagNumber(3)
-  $534.TimeOfDay ensureTimeOfDay() => $_ensure(2);
+  $535.TimeOfDay ensureTimeOfDay() => $_ensure(2);
 
   /// Optional. The day of the week when the data source file should be
   /// fetched. This field can only be set for weekly frequency.
   @$pb.TagNumber(4)
-  $426.DayOfWeek get dayOfWeek => $_getN(3);
+  $427.DayOfWeek get dayOfWeek => $_getN(3);
   @$pb.TagNumber(4)
-  set dayOfWeek($426.DayOfWeek v) { setField(4, v); }
+  set dayOfWeek($427.DayOfWeek v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDayOfWeek() => $_has(3);
   @$pb.TagNumber(4)

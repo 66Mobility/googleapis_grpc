@@ -15,28 +15,28 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'homepage.pb.dart' as $222;
+import 'homepage.pb.dart' as $223;
 
 export 'homepage.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.accounts.v1beta.HomepageService')
 class HomepageServiceClient extends $grpc.Client {
-  static final _$getHomepage = $grpc.ClientMethod<$222.GetHomepageRequest, $222.Homepage>(
+  static final _$getHomepage = $grpc.ClientMethod<$223.GetHomepageRequest, $223.Homepage>(
       '/google.shopping.merchant.accounts.v1beta.HomepageService/GetHomepage',
-      ($222.GetHomepageRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $222.Homepage.fromBuffer(value));
-  static final _$updateHomepage = $grpc.ClientMethod<$222.UpdateHomepageRequest, $222.Homepage>(
+      ($223.GetHomepageRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $223.Homepage.fromBuffer(value));
+  static final _$updateHomepage = $grpc.ClientMethod<$223.UpdateHomepageRequest, $223.Homepage>(
       '/google.shopping.merchant.accounts.v1beta.HomepageService/UpdateHomepage',
-      ($222.UpdateHomepageRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $222.Homepage.fromBuffer(value));
-  static final _$claimHomepage = $grpc.ClientMethod<$222.ClaimHomepageRequest, $222.Homepage>(
+      ($223.UpdateHomepageRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $223.Homepage.fromBuffer(value));
+  static final _$claimHomepage = $grpc.ClientMethod<$223.ClaimHomepageRequest, $223.Homepage>(
       '/google.shopping.merchant.accounts.v1beta.HomepageService/ClaimHomepage',
-      ($222.ClaimHomepageRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $222.Homepage.fromBuffer(value));
-  static final _$unclaimHomepage = $grpc.ClientMethod<$222.UnclaimHomepageRequest, $222.Homepage>(
+      ($223.ClaimHomepageRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $223.Homepage.fromBuffer(value));
+  static final _$unclaimHomepage = $grpc.ClientMethod<$223.UnclaimHomepageRequest, $223.Homepage>(
       '/google.shopping.merchant.accounts.v1beta.HomepageService/UnclaimHomepage',
-      ($222.UnclaimHomepageRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $222.Homepage.fromBuffer(value));
+      ($223.UnclaimHomepageRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $223.Homepage.fromBuffer(value));
 
   HomepageServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -44,19 +44,19 @@ class HomepageServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$222.Homepage> getHomepage($222.GetHomepageRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$223.Homepage> getHomepage($223.GetHomepageRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getHomepage, request, options: options);
   }
 
-  $grpc.ResponseFuture<$222.Homepage> updateHomepage($222.UpdateHomepageRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$223.Homepage> updateHomepage($223.UpdateHomepageRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$updateHomepage, request, options: options);
   }
 
-  $grpc.ResponseFuture<$222.Homepage> claimHomepage($222.ClaimHomepageRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$223.Homepage> claimHomepage($223.ClaimHomepageRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$claimHomepage, request, options: options);
   }
 
-  $grpc.ResponseFuture<$222.Homepage> unclaimHomepage($222.UnclaimHomepageRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$223.Homepage> unclaimHomepage($223.UnclaimHomepageRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$unclaimHomepage, request, options: options);
   }
 }
@@ -66,54 +66,54 @@ abstract class HomepageServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.accounts.v1beta.HomepageService';
 
   HomepageServiceBase() {
-    $addMethod($grpc.ServiceMethod<$222.GetHomepageRequest, $222.Homepage>(
+    $addMethod($grpc.ServiceMethod<$223.GetHomepageRequest, $223.Homepage>(
         'GetHomepage',
         getHomepage_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $222.GetHomepageRequest.fromBuffer(value),
-        ($222.Homepage value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$222.UpdateHomepageRequest, $222.Homepage>(
+        ($core.List<$core.int> value) => $223.GetHomepageRequest.fromBuffer(value),
+        ($223.Homepage value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$223.UpdateHomepageRequest, $223.Homepage>(
         'UpdateHomepage',
         updateHomepage_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $222.UpdateHomepageRequest.fromBuffer(value),
-        ($222.Homepage value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$222.ClaimHomepageRequest, $222.Homepage>(
+        ($core.List<$core.int> value) => $223.UpdateHomepageRequest.fromBuffer(value),
+        ($223.Homepage value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$223.ClaimHomepageRequest, $223.Homepage>(
         'ClaimHomepage',
         claimHomepage_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $222.ClaimHomepageRequest.fromBuffer(value),
-        ($222.Homepage value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$222.UnclaimHomepageRequest, $222.Homepage>(
+        ($core.List<$core.int> value) => $223.ClaimHomepageRequest.fromBuffer(value),
+        ($223.Homepage value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$223.UnclaimHomepageRequest, $223.Homepage>(
         'UnclaimHomepage',
         unclaimHomepage_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $222.UnclaimHomepageRequest.fromBuffer(value),
-        ($222.Homepage value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $223.UnclaimHomepageRequest.fromBuffer(value),
+        ($223.Homepage value) => value.writeToBuffer()));
   }
 
-  $async.Future<$222.Homepage> getHomepage_Pre($grpc.ServiceCall call, $async.Future<$222.GetHomepageRequest> request) async {
+  $async.Future<$223.Homepage> getHomepage_Pre($grpc.ServiceCall call, $async.Future<$223.GetHomepageRequest> request) async {
     return getHomepage(call, await request);
   }
 
-  $async.Future<$222.Homepage> updateHomepage_Pre($grpc.ServiceCall call, $async.Future<$222.UpdateHomepageRequest> request) async {
+  $async.Future<$223.Homepage> updateHomepage_Pre($grpc.ServiceCall call, $async.Future<$223.UpdateHomepageRequest> request) async {
     return updateHomepage(call, await request);
   }
 
-  $async.Future<$222.Homepage> claimHomepage_Pre($grpc.ServiceCall call, $async.Future<$222.ClaimHomepageRequest> request) async {
+  $async.Future<$223.Homepage> claimHomepage_Pre($grpc.ServiceCall call, $async.Future<$223.ClaimHomepageRequest> request) async {
     return claimHomepage(call, await request);
   }
 
-  $async.Future<$222.Homepage> unclaimHomepage_Pre($grpc.ServiceCall call, $async.Future<$222.UnclaimHomepageRequest> request) async {
+  $async.Future<$223.Homepage> unclaimHomepage_Pre($grpc.ServiceCall call, $async.Future<$223.UnclaimHomepageRequest> request) async {
     return unclaimHomepage(call, await request);
   }
 
-  $async.Future<$222.Homepage> getHomepage($grpc.ServiceCall call, $222.GetHomepageRequest request);
-  $async.Future<$222.Homepage> updateHomepage($grpc.ServiceCall call, $222.UpdateHomepageRequest request);
-  $async.Future<$222.Homepage> claimHomepage($grpc.ServiceCall call, $222.ClaimHomepageRequest request);
-  $async.Future<$222.Homepage> unclaimHomepage($grpc.ServiceCall call, $222.UnclaimHomepageRequest request);
+  $async.Future<$223.Homepage> getHomepage($grpc.ServiceCall call, $223.GetHomepageRequest request);
+  $async.Future<$223.Homepage> updateHomepage($grpc.ServiceCall call, $223.UpdateHomepageRequest request);
+  $async.Future<$223.Homepage> claimHomepage($grpc.ServiceCall call, $223.ClaimHomepageRequest request);
+  $async.Future<$223.Homepage> unclaimHomepage($grpc.ServiceCall call, $223.UnclaimHomepageRequest request);
 }

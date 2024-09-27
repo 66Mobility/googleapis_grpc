@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $263;
+import '../../../protobuf/duration.pb.dart' as $264;
 
 /// A leg is a single portion of a journey from one location to another.
 class RoutingSummary_Leg extends $pb.GeneratedMessage {
   factory RoutingSummary_Leg({
-    $263.Duration? duration,
+    $264.Duration? duration,
     $core.int? distanceMeters,
   }) {
     final $result = create();
@@ -35,7 +35,7 @@ class RoutingSummary_Leg extends $pb.GeneratedMessage {
   factory RoutingSummary_Leg.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RoutingSummary.Leg', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<$263.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'duration', subBuilder: $264.Duration.create)
     ..a<$core.int>(2, _omitFieldNames ? '' : 'distanceMeters', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -63,15 +63,15 @@ class RoutingSummary_Leg extends $pb.GeneratedMessage {
 
   /// The time it takes to complete this leg of the trip.
   @$pb.TagNumber(1)
-  $263.Duration get duration => $_getN(0);
+  $264.Duration get duration => $_getN(0);
   @$pb.TagNumber(1)
-  set duration($263.Duration v) { setField(1, v); }
+  set duration($264.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $263.Duration ensureDuration() => $_ensure(0);
+  $264.Duration ensureDuration() => $_ensure(0);
 
   /// The distance of this leg of the trip.
   @$pb.TagNumber(2)

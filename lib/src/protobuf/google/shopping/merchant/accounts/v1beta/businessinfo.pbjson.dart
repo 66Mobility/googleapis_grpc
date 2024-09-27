@@ -22,6 +22,7 @@ const BusinessInfo$json = {
     {'1': 'phone', '3': 3, '4': 1, '5': 11, '6': '.google.type.PhoneNumber', '8': {}, '9': 1, '10': 'phone', '17': true},
     {'1': 'phone_verification_state', '3': 4, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.PhoneVerificationState', '8': {}, '9': 2, '10': 'phoneVerificationState', '17': true},
     {'1': 'customer_service', '3': 5, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.CustomerService', '8': {}, '9': 3, '10': 'customerService', '17': true},
+    {'1': 'korean_business_registration_number', '3': 6, '4': 1, '5': 9, '8': {}, '9': 4, '10': 'koreanBusinessRegistrationNumber', '17': true},
   ],
   '7': {},
   '8': [
@@ -29,6 +30,7 @@ const BusinessInfo$json = {
     {'1': '_phone'},
     {'1': '_phone_verification_state'},
     {'1': '_customer_service'},
+    {'1': '_korean_business_registration_number'},
   ],
 };
 
@@ -41,10 +43,12 @@ final $typed_data.Uint8List businessInfoDescriptor = $convert.base64Decode(
     'dC5hY2NvdW50cy52MWJldGEuUGhvbmVWZXJpZmljYXRpb25TdGF0ZUID4EEDSAJSFnBob25lVm'
     'VyaWZpY2F0aW9uU3RhdGWIAQESbgoQY3VzdG9tZXJfc2VydmljZRgFIAEoCzI5Lmdvb2dsZS5z'
     'aG9wcGluZy5tZXJjaGFudC5hY2NvdW50cy52MWJldGEuQ3VzdG9tZXJTZXJ2aWNlQgPgQQFIA1'
-    'IPY3VzdG9tZXJTZXJ2aWNliAEBOmrqQWcKJ21lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29tL0J1'
-    'c2luZXNzSW5mbxIfYWNjb3VudHMve2FjY291bnR9L2J1c2luZXNzSW5mbyoNYnVzaW5lc3NJbm'
-    'ZvczIMYnVzaW5lc3NJbmZvQgoKCF9hZGRyZXNzQggKBl9waG9uZUIbChlfcGhvbmVfdmVyaWZp'
-    'Y2F0aW9uX3N0YXRlQhMKEV9jdXN0b21lcl9zZXJ2aWNl');
+    'IPY3VzdG9tZXJTZXJ2aWNliAEBElcKI2tvcmVhbl9idXNpbmVzc19yZWdpc3RyYXRpb25fbnVt'
+    'YmVyGAYgASgJQgPgQQFIBFIga29yZWFuQnVzaW5lc3NSZWdpc3RyYXRpb25OdW1iZXKIAQE6au'
+    'pBZwonbWVyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vQnVzaW5lc3NJbmZvEh9hY2NvdW50cy97'
+    'YWNjb3VudH0vYnVzaW5lc3NJbmZvKg1idXNpbmVzc0luZm9zMgxidXNpbmVzc0luZm9CCgoIX2'
+    'FkZHJlc3NCCAoGX3Bob25lQhsKGV9waG9uZV92ZXJpZmljYXRpb25fc3RhdGVCEwoRX2N1c3Rv'
+    'bWVyX3NlcnZpY2VCJgokX2tvcmVhbl9idXNpbmVzc19yZWdpc3RyYXRpb25fbnVtYmVy');
 
 @$core.Deprecated('Use getBusinessInfoRequestDescriptor instead')
 const GetBusinessInfoRequest$json = {

@@ -14,10 +14,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../../protobuf/field_mask.pb.dart' as $333;
 import 'datasources.pbenum.dart';
-import 'datasourcetypes.pb.dart' as $543;
-import 'fileinputs.pb.dart' as $544;
+import 'datasourcetypes.pb.dart' as $545;
+import 'fileinputs.pb.dart' as $546;
 
 export 'datasources.pbenum.dart';
 
@@ -37,13 +37,13 @@ class DataSource extends $pb.GeneratedMessage {
     $core.String? name,
     $fixnum.Int64? dataSourceId,
     $core.String? displayName,
-    $543.PrimaryProductDataSource? primaryProductDataSource,
-    $543.SupplementalProductDataSource? supplementalProductDataSource,
-    $543.LocalInventoryDataSource? localInventoryDataSource,
-    $543.RegionalInventoryDataSource? regionalInventoryDataSource,
-    $543.PromotionDataSource? promotionDataSource,
+    $545.PrimaryProductDataSource? primaryProductDataSource,
+    $545.SupplementalProductDataSource? supplementalProductDataSource,
+    $545.LocalInventoryDataSource? localInventoryDataSource,
+    $545.RegionalInventoryDataSource? regionalInventoryDataSource,
+    $545.PromotionDataSource? promotionDataSource,
     DataSource_Input? input,
-    $544.FileInput? fileInput,
+    $546.FileInput? fileInput,
   }) {
     final $result = create();
     if (name != null) {
@@ -95,13 +95,13 @@ class DataSource extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aInt64(2, _omitFieldNames ? '' : 'dataSourceId')
     ..aOS(3, _omitFieldNames ? '' : 'displayName')
-    ..aOM<$543.PrimaryProductDataSource>(4, _omitFieldNames ? '' : 'primaryProductDataSource', subBuilder: $543.PrimaryProductDataSource.create)
-    ..aOM<$543.SupplementalProductDataSource>(5, _omitFieldNames ? '' : 'supplementalProductDataSource', subBuilder: $543.SupplementalProductDataSource.create)
-    ..aOM<$543.LocalInventoryDataSource>(6, _omitFieldNames ? '' : 'localInventoryDataSource', subBuilder: $543.LocalInventoryDataSource.create)
-    ..aOM<$543.RegionalInventoryDataSource>(7, _omitFieldNames ? '' : 'regionalInventoryDataSource', subBuilder: $543.RegionalInventoryDataSource.create)
-    ..aOM<$543.PromotionDataSource>(8, _omitFieldNames ? '' : 'promotionDataSource', subBuilder: $543.PromotionDataSource.create)
+    ..aOM<$545.PrimaryProductDataSource>(4, _omitFieldNames ? '' : 'primaryProductDataSource', subBuilder: $545.PrimaryProductDataSource.create)
+    ..aOM<$545.SupplementalProductDataSource>(5, _omitFieldNames ? '' : 'supplementalProductDataSource', subBuilder: $545.SupplementalProductDataSource.create)
+    ..aOM<$545.LocalInventoryDataSource>(6, _omitFieldNames ? '' : 'localInventoryDataSource', subBuilder: $545.LocalInventoryDataSource.create)
+    ..aOM<$545.RegionalInventoryDataSource>(7, _omitFieldNames ? '' : 'regionalInventoryDataSource', subBuilder: $545.RegionalInventoryDataSource.create)
+    ..aOM<$545.PromotionDataSource>(8, _omitFieldNames ? '' : 'promotionDataSource', subBuilder: $545.PromotionDataSource.create)
     ..e<DataSource_Input>(10, _omitFieldNames ? '' : 'input', $pb.PbFieldType.OE, defaultOrMaker: DataSource_Input.INPUT_UNSPECIFIED, valueOf: DataSource_Input.valueOf, enumValues: DataSource_Input.values)
-    ..aOM<$544.FileInput>(11, _omitFieldNames ? '' : 'fileInput', subBuilder: $544.FileInput.create)
+    ..aOM<$546.FileInput>(11, _omitFieldNames ? '' : 'fileInput', subBuilder: $546.FileInput.create)
     ..hasRequiredFields = false
   ;
 
@@ -165,71 +165,71 @@ class DataSource extends $pb.GeneratedMessage {
   /// source](https://support.google.com/merchants/answer/7439058) for local
   /// and online products.
   @$pb.TagNumber(4)
-  $543.PrimaryProductDataSource get primaryProductDataSource => $_getN(3);
+  $545.PrimaryProductDataSource get primaryProductDataSource => $_getN(3);
   @$pb.TagNumber(4)
-  set primaryProductDataSource($543.PrimaryProductDataSource v) { setField(4, v); }
+  set primaryProductDataSource($545.PrimaryProductDataSource v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasPrimaryProductDataSource() => $_has(3);
   @$pb.TagNumber(4)
   void clearPrimaryProductDataSource() => clearField(4);
   @$pb.TagNumber(4)
-  $543.PrimaryProductDataSource ensurePrimaryProductDataSource() => $_ensure(3);
+  $545.PrimaryProductDataSource ensurePrimaryProductDataSource() => $_ensure(3);
 
   /// Required. The [supplemental data
   /// source](https://support.google.com/merchants/answer/7439058) for local
   /// and online products.
   @$pb.TagNumber(5)
-  $543.SupplementalProductDataSource get supplementalProductDataSource => $_getN(4);
+  $545.SupplementalProductDataSource get supplementalProductDataSource => $_getN(4);
   @$pb.TagNumber(5)
-  set supplementalProductDataSource($543.SupplementalProductDataSource v) { setField(5, v); }
+  set supplementalProductDataSource($545.SupplementalProductDataSource v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSupplementalProductDataSource() => $_has(4);
   @$pb.TagNumber(5)
   void clearSupplementalProductDataSource() => clearField(5);
   @$pb.TagNumber(5)
-  $543.SupplementalProductDataSource ensureSupplementalProductDataSource() => $_ensure(4);
+  $545.SupplementalProductDataSource ensureSupplementalProductDataSource() => $_ensure(4);
 
   /// Required. The [local
   /// inventory](https://support.google.com/merchants/answer/7023001) data
   /// source.
   @$pb.TagNumber(6)
-  $543.LocalInventoryDataSource get localInventoryDataSource => $_getN(5);
+  $545.LocalInventoryDataSource get localInventoryDataSource => $_getN(5);
   @$pb.TagNumber(6)
-  set localInventoryDataSource($543.LocalInventoryDataSource v) { setField(6, v); }
+  set localInventoryDataSource($545.LocalInventoryDataSource v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasLocalInventoryDataSource() => $_has(5);
   @$pb.TagNumber(6)
   void clearLocalInventoryDataSource() => clearField(6);
   @$pb.TagNumber(6)
-  $543.LocalInventoryDataSource ensureLocalInventoryDataSource() => $_ensure(5);
+  $545.LocalInventoryDataSource ensureLocalInventoryDataSource() => $_ensure(5);
 
   /// Required. The [regional
   /// inventory](https://support.google.com/merchants/answer/7439058) data
   /// source.
   @$pb.TagNumber(7)
-  $543.RegionalInventoryDataSource get regionalInventoryDataSource => $_getN(6);
+  $545.RegionalInventoryDataSource get regionalInventoryDataSource => $_getN(6);
   @$pb.TagNumber(7)
-  set regionalInventoryDataSource($543.RegionalInventoryDataSource v) { setField(7, v); }
+  set regionalInventoryDataSource($545.RegionalInventoryDataSource v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasRegionalInventoryDataSource() => $_has(6);
   @$pb.TagNumber(7)
   void clearRegionalInventoryDataSource() => clearField(7);
   @$pb.TagNumber(7)
-  $543.RegionalInventoryDataSource ensureRegionalInventoryDataSource() => $_ensure(6);
+  $545.RegionalInventoryDataSource ensureRegionalInventoryDataSource() => $_ensure(6);
 
   /// Required. The
   /// [promotion](https://support.google.com/merchants/answer/2906014) data
   /// source.
   @$pb.TagNumber(8)
-  $543.PromotionDataSource get promotionDataSource => $_getN(7);
+  $545.PromotionDataSource get promotionDataSource => $_getN(7);
   @$pb.TagNumber(8)
-  set promotionDataSource($543.PromotionDataSource v) { setField(8, v); }
+  set promotionDataSource($545.PromotionDataSource v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasPromotionDataSource() => $_has(7);
   @$pb.TagNumber(8)
   void clearPromotionDataSource() => clearField(8);
   @$pb.TagNumber(8)
-  $543.PromotionDataSource ensurePromotionDataSource() => $_ensure(7);
+  $545.PromotionDataSource ensurePromotionDataSource() => $_ensure(7);
 
   /// Output only. Determines the type of input to the data source. Based on the
   /// input some settings might not work. Only generic data sources can be
@@ -245,15 +245,15 @@ class DataSource extends $pb.GeneratedMessage {
 
   /// Optional. The field is used only when data is managed through a file.
   @$pb.TagNumber(11)
-  $544.FileInput get fileInput => $_getN(9);
+  $546.FileInput get fileInput => $_getN(9);
   @$pb.TagNumber(11)
-  set fileInput($544.FileInput v) { setField(11, v); }
+  set fileInput($546.FileInput v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasFileInput() => $_has(9);
   @$pb.TagNumber(11)
   void clearFileInput() => clearField(11);
   @$pb.TagNumber(11)
-  $544.FileInput ensureFileInput() => $_ensure(9);
+  $546.FileInput ensureFileInput() => $_ensure(9);
 }
 
 /// Request message for the GetDataSource method.
@@ -535,7 +535,7 @@ class CreateDataSourceRequest extends $pb.GeneratedMessage {
 class UpdateDataSourceRequest extends $pb.GeneratedMessage {
   factory UpdateDataSourceRequest({
     DataSource? dataSource,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (dataSource != null) {
@@ -552,7 +552,7 @@ class UpdateDataSourceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDataSourceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.datasources.v1beta'), createEmptyInstance: create)
     ..aOM<DataSource>(1, _omitFieldNames ? '' : 'dataSource', subBuilder: DataSource.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -597,15 +597,15 @@ class UpdateDataSourceRequest extends $pb.GeneratedMessage {
   ///  Providing special "*" value for full data source replacement is not
   ///  supported.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request message for the FetchDataSource method.

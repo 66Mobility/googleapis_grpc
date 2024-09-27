@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../../../protobuf/duration.pb.dart' as $263;
-import 'static_image_prompt.pb.dart' as $261;
+import '../../../../../../protobuf/duration.pb.dart' as $264;
+import 'static_image_prompt.pb.dart' as $262;
 import 'static_media_prompt.pbenum.dart';
 
 export 'static_media_prompt.pbenum.dart';
@@ -23,7 +23,7 @@ export 'static_media_prompt.pbenum.dart';
 /// Next id: 11
 class StaticMediaPrompt extends $pb.GeneratedMessage {
   factory StaticMediaPrompt({
-    $263.Duration? startOffset,
+    $264.Duration? startOffset,
     $core.Iterable<StaticMediaPrompt_OptionalMediaControls>? optionalMediaControls,
     $core.Iterable<MediaObject>? mediaObjects,
     StaticMediaPrompt_MediaType? mediaType,
@@ -52,7 +52,7 @@ class StaticMediaPrompt extends $pb.GeneratedMessage {
   factory StaticMediaPrompt.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StaticMediaPrompt', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
-    ..aOM<$263.Duration>(5, _omitFieldNames ? '' : 'startOffset', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'startOffset', subBuilder: $264.Duration.create)
     ..pc<StaticMediaPrompt_OptionalMediaControls>(6, _omitFieldNames ? '' : 'optionalMediaControls', $pb.PbFieldType.KE, valueOf: StaticMediaPrompt_OptionalMediaControls.valueOf, enumValues: StaticMediaPrompt_OptionalMediaControls.values, defaultEnumValue: StaticMediaPrompt_OptionalMediaControls.OPTIONAL_MEDIA_CONTROLS_UNSPECIFIED)
     ..pc<MediaObject>(7, _omitFieldNames ? '' : 'mediaObjects', $pb.PbFieldType.PM, subBuilder: MediaObject.create)
     ..e<StaticMediaPrompt_MediaType>(8, _omitFieldNames ? '' : 'mediaType', $pb.PbFieldType.OE, defaultOrMaker: StaticMediaPrompt_MediaType.MEDIA_TYPE_UNSPECIFIED, valueOf: StaticMediaPrompt_MediaType.valueOf, enumValues: StaticMediaPrompt_MediaType.values)
@@ -83,15 +83,15 @@ class StaticMediaPrompt extends $pb.GeneratedMessage {
 
   /// Start offset of the first media object.
   @$pb.TagNumber(5)
-  $263.Duration get startOffset => $_getN(0);
+  $264.Duration get startOffset => $_getN(0);
   @$pb.TagNumber(5)
-  set startOffset($263.Duration v) { setField(5, v); }
+  set startOffset($264.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasStartOffset() => $_has(0);
   @$pb.TagNumber(5)
   void clearStartOffset() => clearField(5);
   @$pb.TagNumber(5)
-  $263.Duration ensureStartOffset() => $_ensure(0);
+  $264.Duration ensureStartOffset() => $_ensure(0);
 
   /// Optional media control types this media response session can support.
   /// If set, request will be made to 3p when a certain media event happens.
@@ -233,8 +233,8 @@ enum MediaImage_Image {
 /// Image to be shown inside a MediaPrompt.
 class MediaImage extends $pb.GeneratedMessage {
   factory MediaImage({
-    $261.StaticImagePrompt? large,
-    $261.StaticImagePrompt? icon,
+    $262.StaticImagePrompt? large,
+    $262.StaticImagePrompt? icon,
   }) {
     final $result = create();
     if (large != null) {
@@ -256,8 +256,8 @@ class MediaImage extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MediaImage', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel.prompt'), createEmptyInstance: create)
     ..oo(0, [1, 2])
-    ..aOM<$261.StaticImagePrompt>(1, _omitFieldNames ? '' : 'large', subBuilder: $261.StaticImagePrompt.create)
-    ..aOM<$261.StaticImagePrompt>(2, _omitFieldNames ? '' : 'icon', subBuilder: $261.StaticImagePrompt.create)
+    ..aOM<$262.StaticImagePrompt>(1, _omitFieldNames ? '' : 'large', subBuilder: $262.StaticImagePrompt.create)
+    ..aOM<$262.StaticImagePrompt>(2, _omitFieldNames ? '' : 'icon', subBuilder: $262.StaticImagePrompt.create)
     ..hasRequiredFields = false
   ;
 
@@ -287,28 +287,28 @@ class MediaImage extends $pb.GeneratedMessage {
 
   /// A large image, such as the cover of the album, etc.
   @$pb.TagNumber(1)
-  $261.StaticImagePrompt get large => $_getN(0);
+  $262.StaticImagePrompt get large => $_getN(0);
   @$pb.TagNumber(1)
-  set large($261.StaticImagePrompt v) { setField(1, v); }
+  set large($262.StaticImagePrompt v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasLarge() => $_has(0);
   @$pb.TagNumber(1)
   void clearLarge() => clearField(1);
   @$pb.TagNumber(1)
-  $261.StaticImagePrompt ensureLarge() => $_ensure(0);
+  $262.StaticImagePrompt ensureLarge() => $_ensure(0);
 
   /// A small image icon displayed on the right from the title.
   /// It's resized to 36x36 dp.
   @$pb.TagNumber(2)
-  $261.StaticImagePrompt get icon => $_getN(1);
+  $262.StaticImagePrompt get icon => $_getN(1);
   @$pb.TagNumber(2)
-  set icon($261.StaticImagePrompt v) { setField(2, v); }
+  set icon($262.StaticImagePrompt v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasIcon() => $_has(1);
   @$pb.TagNumber(2)
   void clearIcon() => clearField(2);
   @$pb.TagNumber(2)
-  $261.StaticImagePrompt ensureIcon() => $_ensure(1);
+  $262.StaticImagePrompt ensureIcon() => $_ensure(1);
 }
 
 

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/struct.pb.dart' as $260;
-import 'keys.pb.dart' as $549;
+import '../../protobuf/struct.pb.dart' as $261;
+import 'keys.pb.dart' as $551;
 
 /// Arguments to [insert][google.spanner.v1.Mutation.insert], [update][google.spanner.v1.Mutation.update], [insert_or_update][google.spanner.v1.Mutation.insert_or_update], and
 /// [replace][google.spanner.v1.Mutation.replace] operations.
@@ -22,7 +22,7 @@ class Mutation_Write extends $pb.GeneratedMessage {
   factory Mutation_Write({
     $core.String? table,
     $core.Iterable<$core.String>? columns,
-    $core.Iterable<$260.ListValue>? values,
+    $core.Iterable<$261.ListValue>? values,
   }) {
     final $result = create();
     if (table != null) {
@@ -43,7 +43,7 @@ class Mutation_Write extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Mutation.Write', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'table')
     ..pPS(2, _omitFieldNames ? '' : 'columns')
-    ..pc<$260.ListValue>(3, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $260.ListValue.create)
+    ..pc<$261.ListValue>(3, _omitFieldNames ? '' : 'values', $pb.PbFieldType.PM, subBuilder: $261.ListValue.create)
     ..hasRequiredFields = false
   ;
 
@@ -95,14 +95,14 @@ class Mutation_Write extends $pb.GeneratedMessage {
   /// [table][google.spanner.v1.Mutation.Write.table] and [columns][google.spanner.v1.Mutation.Write.columns]. Individual values in each list are
   /// encoded as described [here][google.spanner.v1.TypeCode].
   @$pb.TagNumber(3)
-  $core.List<$260.ListValue> get values => $_getList(2);
+  $core.List<$261.ListValue> get values => $_getList(2);
 }
 
 /// Arguments to [delete][google.spanner.v1.Mutation.delete] operations.
 class Mutation_Delete extends $pb.GeneratedMessage {
   factory Mutation_Delete({
     $core.String? table,
-    $549.KeySet? keySet,
+    $551.KeySet? keySet,
   }) {
     final $result = create();
     if (table != null) {
@@ -119,7 +119,7 @@ class Mutation_Delete extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Mutation.Delete', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'table')
-    ..aOM<$549.KeySet>(2, _omitFieldNames ? '' : 'keySet', subBuilder: $549.KeySet.create)
+    ..aOM<$551.KeySet>(2, _omitFieldNames ? '' : 'keySet', subBuilder: $551.KeySet.create)
     ..hasRequiredFields = false
   ;
 
@@ -161,15 +161,15 @@ class Mutation_Delete extends $pb.GeneratedMessage {
   /// Delete is idempotent. The transaction will succeed even if some or all
   /// rows do not exist.
   @$pb.TagNumber(2)
-  $549.KeySet get keySet => $_getN(1);
+  $551.KeySet get keySet => $_getN(1);
   @$pb.TagNumber(2)
-  set keySet($549.KeySet v) { setField(2, v); }
+  set keySet($551.KeySet v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasKeySet() => $_has(1);
   @$pb.TagNumber(2)
   void clearKeySet() => clearField(2);
   @$pb.TagNumber(2)
-  $549.KeySet ensureKeySet() => $_ensure(1);
+  $551.KeySet ensureKeySet() => $_ensure(1);
 }
 
 enum Mutation_Operation {

@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $332;
-import '../../protobuf/timestamp.pb.dart' as $301;
-import 'history_state.pbenum.dart' as $408;
+import '../../protobuf/field_mask.pb.dart' as $333;
+import '../../protobuf/timestamp.pb.dart' as $302;
+import 'history_state.pbenum.dart' as $409;
 import 'space.pbenum.dart';
 
 export 'space.pbenum.dart';
@@ -252,10 +252,10 @@ class Space extends $pb.GeneratedMessage {
     Space_SpaceThreadingState? spaceThreadingState,
     Space_SpaceType? spaceType,
     Space_SpaceDetails? spaceDetails,
-    $408.HistoryState? spaceHistoryState,
+    $409.HistoryState? spaceHistoryState,
     $core.bool? importMode,
-    $301.Timestamp? createTime,
-    $301.Timestamp? lastActiveTime,
+    $302.Timestamp? createTime,
+    $302.Timestamp? lastActiveTime,
     $core.bool? adminInstalled,
     Space_MembershipCount? membershipCount,
     Space_AccessSettings? accessSettings,
@@ -331,10 +331,10 @@ class Space extends $pb.GeneratedMessage {
     ..e<Space_SpaceThreadingState>(9, _omitFieldNames ? '' : 'spaceThreadingState', $pb.PbFieldType.OE, defaultOrMaker: Space_SpaceThreadingState.SPACE_THREADING_STATE_UNSPECIFIED, valueOf: Space_SpaceThreadingState.valueOf, enumValues: Space_SpaceThreadingState.values)
     ..e<Space_SpaceType>(10, _omitFieldNames ? '' : 'spaceType', $pb.PbFieldType.OE, defaultOrMaker: Space_SpaceType.SPACE_TYPE_UNSPECIFIED, valueOf: Space_SpaceType.valueOf, enumValues: Space_SpaceType.values)
     ..aOM<Space_SpaceDetails>(11, _omitFieldNames ? '' : 'spaceDetails', subBuilder: Space_SpaceDetails.create)
-    ..e<$408.HistoryState>(13, _omitFieldNames ? '' : 'spaceHistoryState', $pb.PbFieldType.OE, defaultOrMaker: $408.HistoryState.HISTORY_STATE_UNSPECIFIED, valueOf: $408.HistoryState.valueOf, enumValues: $408.HistoryState.values)
+    ..e<$409.HistoryState>(13, _omitFieldNames ? '' : 'spaceHistoryState', $pb.PbFieldType.OE, defaultOrMaker: $409.HistoryState.HISTORY_STATE_UNSPECIFIED, valueOf: $409.HistoryState.valueOf, enumValues: $409.HistoryState.values)
     ..aOB(16, _omitFieldNames ? '' : 'importMode')
-    ..aOM<$301.Timestamp>(17, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(18, _omitFieldNames ? '' : 'lastActiveTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(17, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(18, _omitFieldNames ? '' : 'lastActiveTime', subBuilder: $302.Timestamp.create)
     ..aOB(19, _omitFieldNames ? '' : 'adminInstalled')
     ..aOM<Space_MembershipCount>(20, _omitFieldNames ? '' : 'membershipCount', subBuilder: Space_MembershipCount.create)
     ..aOM<Space_AccessSettings>(23, _omitFieldNames ? '' : 'accessSettings', subBuilder: Space_AccessSettings.create)
@@ -497,9 +497,9 @@ class Space extends $pb.GeneratedMessage {
 
   /// The message history state for messages and threads in this space.
   @$pb.TagNumber(13)
-  $408.HistoryState get spaceHistoryState => $_getN(9);
+  $409.HistoryState get spaceHistoryState => $_getN(9);
   @$pb.TagNumber(13)
-  set spaceHistoryState($408.HistoryState v) { setField(13, v); }
+  set spaceHistoryState($409.HistoryState v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasSpaceHistoryState() => $_has(9);
   @$pb.TagNumber(13)
@@ -526,27 +526,27 @@ class Space extends $pb.GeneratedMessage {
   ///
   ///  Only populated in the output when `spaceType` is `GROUP_CHAT` or `SPACE`.
   @$pb.TagNumber(17)
-  $301.Timestamp get createTime => $_getN(11);
+  $302.Timestamp get createTime => $_getN(11);
   @$pb.TagNumber(17)
-  set createTime($301.Timestamp v) { setField(17, v); }
+  set createTime($302.Timestamp v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasCreateTime() => $_has(11);
   @$pb.TagNumber(17)
   void clearCreateTime() => clearField(17);
   @$pb.TagNumber(17)
-  $301.Timestamp ensureCreateTime() => $_ensure(11);
+  $302.Timestamp ensureCreateTime() => $_ensure(11);
 
   /// Output only. Timestamp of the last message in the space.
   @$pb.TagNumber(18)
-  $301.Timestamp get lastActiveTime => $_getN(12);
+  $302.Timestamp get lastActiveTime => $_getN(12);
   @$pb.TagNumber(18)
-  set lastActiveTime($301.Timestamp v) { setField(18, v); }
+  set lastActiveTime($302.Timestamp v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasLastActiveTime() => $_has(12);
   @$pb.TagNumber(18)
   void clearLastActiveTime() => clearField(18);
   @$pb.TagNumber(18)
-  $301.Timestamp ensureLastActiveTime() => $_ensure(12);
+  $302.Timestamp ensureLastActiveTime() => $_ensure(12);
 
   ///  Output only. For direct message (DM) spaces with a Chat app, whether the
   ///  space was created by a Google Workspace administrator. Administrators can
@@ -1003,7 +1003,7 @@ class FindDirectMessageRequest extends $pb.GeneratedMessage {
 class UpdateSpaceRequest extends $pb.GeneratedMessage {
   factory UpdateSpaceRequest({
     Space? space,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
     $core.bool? useAdminAccess,
   }) {
     final $result = create();
@@ -1024,7 +1024,7 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOM<Space>(1, _omitFieldNames ? '' : 'space', subBuilder: Space.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
@@ -1116,15 +1116,15 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   ///   (Warning: mutually exclusive with all other non-permission settings field
   ///  paths). `permission_settings` is not supported with admin access.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 
   ///  When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.

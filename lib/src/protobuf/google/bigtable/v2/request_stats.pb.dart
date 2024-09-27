@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $263;
+import '../../protobuf/duration.pb.dart' as $264;
 
 /// ReadIterationStats captures information about the iteration of rows or cells
 /// over the course of a read, e.g. how many results were scanned in a read
@@ -122,7 +122,7 @@ class ReadIterationStats extends $pb.GeneratedMessage {
 /// request took to execute within a frontend server.
 class RequestLatencyStats extends $pb.GeneratedMessage {
   factory RequestLatencyStats({
-    $263.Duration? frontendServerLatency,
+    $264.Duration? frontendServerLatency,
   }) {
     final $result = create();
     if (frontendServerLatency != null) {
@@ -135,7 +135,7 @@ class RequestLatencyStats extends $pb.GeneratedMessage {
   factory RequestLatencyStats.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RequestLatencyStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.bigtable.v2'), createEmptyInstance: create)
-    ..aOM<$263.Duration>(1, _omitFieldNames ? '' : 'frontendServerLatency', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'frontendServerLatency', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -178,15 +178,15 @@ class RequestLatencyStats extends $pb.GeneratedMessage {
   ///  for results from nodes, and finally sending results from nodes back to the
   ///  caller.
   @$pb.TagNumber(1)
-  $263.Duration get frontendServerLatency => $_getN(0);
+  $264.Duration get frontendServerLatency => $_getN(0);
   @$pb.TagNumber(1)
-  set frontendServerLatency($263.Duration v) { setField(1, v); }
+  set frontendServerLatency($264.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasFrontendServerLatency() => $_has(0);
   @$pb.TagNumber(1)
   void clearFrontendServerLatency() => clearField(1);
   @$pb.TagNumber(1)
-  $263.Duration ensureFrontendServerLatency() => $_ensure(0);
+  $264.Duration ensureFrontendServerLatency() => $_ensure(0);
 }
 
 /// FullReadStatsView captures all known information about a read.

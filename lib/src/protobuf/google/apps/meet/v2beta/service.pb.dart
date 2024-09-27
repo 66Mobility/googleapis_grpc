@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../protobuf/field_mask.pb.dart' as $333;
 import 'resource.pb.dart' as $83;
 
 /// Request to create a space.
@@ -127,7 +127,7 @@ class GetSpaceRequest extends $pb.GeneratedMessage {
 class UpdateSpaceRequest extends $pb.GeneratedMessage {
   factory UpdateSpaceRequest({
     $83.Space? space,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (space != null) {
@@ -144,7 +144,7 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSpaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.meet.v2beta'), createEmptyInstance: create)
     ..aOM<$83.Space>(1, _omitFieldNames ? '' : 'space', subBuilder: $83.Space.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -186,15 +186,15 @@ class UpdateSpaceRequest extends $pb.GeneratedMessage {
   /// fields provided in the request, including deleting fields not set in the
   /// request.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Request to end an ongoing conference of a space.

@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $263;
-import '../../type/calendar_period.pbenum.dart' as $532;
+import '../../protobuf/duration.pb.dart' as $264;
+import '../../type/calendar_period.pbenum.dart' as $533;
 
 export 'service.pbenum.dart';
 
@@ -1331,8 +1331,8 @@ class ServiceLevelObjective extends $pb.GeneratedMessage {
     $core.String? name,
     ServiceLevelIndicator? serviceLevelIndicator,
     $core.double? goal,
-    $263.Duration? rollingPeriod,
-    $532.CalendarPeriod? calendarPeriod,
+    $264.Duration? rollingPeriod,
+    $533.CalendarPeriod? calendarPeriod,
     $core.String? displayName,
     $core.Map<$core.String, $core.String>? userLabels,
   }) {
@@ -1374,8 +1374,8 @@ class ServiceLevelObjective extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<ServiceLevelIndicator>(3, _omitFieldNames ? '' : 'serviceLevelIndicator', subBuilder: ServiceLevelIndicator.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'goal', $pb.PbFieldType.OD)
-    ..aOM<$263.Duration>(5, _omitFieldNames ? '' : 'rollingPeriod', subBuilder: $263.Duration.create)
-    ..e<$532.CalendarPeriod>(6, _omitFieldNames ? '' : 'calendarPeriod', $pb.PbFieldType.OE, defaultOrMaker: $532.CalendarPeriod.CALENDAR_PERIOD_UNSPECIFIED, valueOf: $532.CalendarPeriod.valueOf, enumValues: $532.CalendarPeriod.values)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'rollingPeriod', subBuilder: $264.Duration.create)
+    ..e<$533.CalendarPeriod>(6, _omitFieldNames ? '' : 'calendarPeriod', $pb.PbFieldType.OE, defaultOrMaker: $533.CalendarPeriod.CALENDAR_PERIOD_UNSPECIFIED, valueOf: $533.CalendarPeriod.valueOf, enumValues: $533.CalendarPeriod.values)
     ..aOS(11, _omitFieldNames ? '' : 'displayName')
     ..m<$core.String, $core.String>(12, _omitFieldNames ? '' : 'userLabels', entryClassName: 'ServiceLevelObjective.UserLabelsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.monitoring.v3'))
     ..hasRequiredFields = false
@@ -1445,23 +1445,23 @@ class ServiceLevelObjective extends $pb.GeneratedMessage {
   /// A rolling time period, semantically "in the past `<rolling_period>`".
   /// Must be an integer multiple of 1 day no larger than 30 days.
   @$pb.TagNumber(5)
-  $263.Duration get rollingPeriod => $_getN(3);
+  $264.Duration get rollingPeriod => $_getN(3);
   @$pb.TagNumber(5)
-  set rollingPeriod($263.Duration v) { setField(5, v); }
+  set rollingPeriod($264.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasRollingPeriod() => $_has(3);
   @$pb.TagNumber(5)
   void clearRollingPeriod() => clearField(5);
   @$pb.TagNumber(5)
-  $263.Duration ensureRollingPeriod() => $_ensure(3);
+  $264.Duration ensureRollingPeriod() => $_ensure(3);
 
   /// A calendar period, semantically "since the start of the current
   /// `<calendar_period>`". At this time, only `DAY`, `WEEK`, `FORTNIGHT`, and
   /// `MONTH` are supported.
   @$pb.TagNumber(6)
-  $532.CalendarPeriod get calendarPeriod => $_getN(4);
+  $533.CalendarPeriod get calendarPeriod => $_getN(4);
   @$pb.TagNumber(6)
-  set calendarPeriod($532.CalendarPeriod v) { setField(6, v); }
+  set calendarPeriod($533.CalendarPeriod v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCalendarPeriod() => $_has(4);
   @$pb.TagNumber(6)
@@ -1640,7 +1640,7 @@ class BasicSli_AvailabilityCriteria extends $pb.GeneratedMessage {
 /// Parameters for a latency threshold SLI.
 class BasicSli_LatencyCriteria extends $pb.GeneratedMessage {
   factory BasicSli_LatencyCriteria({
-    $263.Duration? threshold,
+    $264.Duration? threshold,
   }) {
     final $result = create();
     if (threshold != null) {
@@ -1653,7 +1653,7 @@ class BasicSli_LatencyCriteria extends $pb.GeneratedMessage {
   factory BasicSli_LatencyCriteria.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BasicSli.LatencyCriteria', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
-    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'threshold', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'threshold', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1681,15 +1681,15 @@ class BasicSli_LatencyCriteria extends $pb.GeneratedMessage {
   /// Good service is defined to be the count of requests made to this service
   /// that return in no more than `threshold`.
   @$pb.TagNumber(3)
-  $263.Duration get threshold => $_getN(0);
+  $264.Duration get threshold => $_getN(0);
   @$pb.TagNumber(3)
-  set threshold($263.Duration v) { setField(3, v); }
+  set threshold($264.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasThreshold() => $_has(0);
   @$pb.TagNumber(3)
   void clearThreshold() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Duration ensureThreshold() => $_ensure(0);
+  $264.Duration ensureThreshold() => $_ensure(0);
 }
 
 enum BasicSli_SliCriteria {
@@ -2345,7 +2345,7 @@ enum WindowsBasedSli_WindowCriterion {
 class WindowsBasedSli extends $pb.GeneratedMessage {
   factory WindowsBasedSli({
     WindowsBasedSli_PerformanceThreshold? goodTotalRatioThreshold,
-    $263.Duration? windowPeriod,
+    $264.Duration? windowPeriod,
     $core.String? goodBadMetricFilter,
     WindowsBasedSli_MetricRange? metricMeanInRange,
     WindowsBasedSli_MetricRange? metricSumInRange,
@@ -2382,7 +2382,7 @@ class WindowsBasedSli extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WindowsBasedSli', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.v3'), createEmptyInstance: create)
     ..oo(0, [2, 5, 6, 7])
     ..aOM<WindowsBasedSli_PerformanceThreshold>(2, _omitFieldNames ? '' : 'goodTotalRatioThreshold', subBuilder: WindowsBasedSli_PerformanceThreshold.create)
-    ..aOM<$263.Duration>(4, _omitFieldNames ? '' : 'windowPeriod', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(4, _omitFieldNames ? '' : 'windowPeriod', subBuilder: $264.Duration.create)
     ..aOS(5, _omitFieldNames ? '' : 'goodBadMetricFilter')
     ..aOM<WindowsBasedSli_MetricRange>(6, _omitFieldNames ? '' : 'metricMeanInRange', subBuilder: WindowsBasedSli_MetricRange.create)
     ..aOM<WindowsBasedSli_MetricRange>(7, _omitFieldNames ? '' : 'metricSumInRange', subBuilder: WindowsBasedSli_MetricRange.create)
@@ -2428,15 +2428,15 @@ class WindowsBasedSli extends $pb.GeneratedMessage {
   /// Duration over which window quality is evaluated. Must be an integer
   /// fraction of a day and at least `60s`.
   @$pb.TagNumber(4)
-  $263.Duration get windowPeriod => $_getN(1);
+  $264.Duration get windowPeriod => $_getN(1);
   @$pb.TagNumber(4)
-  set windowPeriod($263.Duration v) { setField(4, v); }
+  set windowPeriod($264.Duration v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasWindowPeriod() => $_has(1);
   @$pb.TagNumber(4)
   void clearWindowPeriod() => clearField(4);
   @$pb.TagNumber(4)
-  $263.Duration ensureWindowPeriod() => $_ensure(1);
+  $264.Duration ensureWindowPeriod() => $_ensure(1);
 
   /// A [monitoring filter](https://cloud.google.com/monitoring/api/v3/filters)
   /// specifying a `TimeSeries` with `ValueType = BOOL`. The window is good if

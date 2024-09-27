@@ -13,13 +13,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'severity.pbenum.dart' as $560;
+import 'severity.pbenum.dart' as $562;
 
 /// A compliance check that is a CIS benchmark.
 class ComplianceNote_CisBenchmark extends $pb.GeneratedMessage {
   factory ComplianceNote_CisBenchmark({
     $core.int? profileLevel,
-    $560.Severity? severity,
+    $562.Severity? severity,
   }) {
     final $result = create();
     if (profileLevel != null) {
@@ -36,7 +36,7 @@ class ComplianceNote_CisBenchmark extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComplianceNote.CisBenchmark', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'profileLevel', $pb.PbFieldType.O3)
-    ..e<$560.Severity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $560.Severity.SEVERITY_UNSPECIFIED, valueOf: $560.Severity.valueOf, enumValues: $560.Severity.values)
+    ..e<$562.Severity>(2, _omitFieldNames ? '' : 'severity', $pb.PbFieldType.OE, defaultOrMaker: $562.Severity.SEVERITY_UNSPECIFIED, valueOf: $562.Severity.valueOf, enumValues: $562.Severity.values)
     ..hasRequiredFields = false
   ;
 
@@ -71,9 +71,9 @@ class ComplianceNote_CisBenchmark extends $pb.GeneratedMessage {
   void clearProfileLevel() => clearField(1);
 
   @$pb.TagNumber(2)
-  $560.Severity get severity => $_getN(1);
+  $562.Severity get severity => $_getN(1);
   @$pb.TagNumber(2)
-  set severity($560.Severity v) { setField(2, v); }
+  set severity($562.Severity v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSeverity() => $_has(1);
   @$pb.TagNumber(2)

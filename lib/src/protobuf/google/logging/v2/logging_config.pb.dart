@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $332;
-import '../../protobuf/timestamp.pb.dart' as $301;
+import '../../protobuf/field_mask.pb.dart' as $333;
+import '../../protobuf/timestamp.pb.dart' as $302;
 import 'logging_config.pbenum.dart';
 
 export 'logging_config.pbenum.dart';
@@ -25,7 +25,7 @@ class IndexConfig extends $pb.GeneratedMessage {
   factory IndexConfig({
     $core.String? fieldPath,
     IndexType? type,
-    $301.Timestamp? createTime,
+    $302.Timestamp? createTime,
   }) {
     final $result = create();
     if (fieldPath != null) {
@@ -46,7 +46,7 @@ class IndexConfig extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IndexConfig', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'fieldPath')
     ..e<IndexType>(2, _omitFieldNames ? '' : 'type', $pb.PbFieldType.OE, defaultOrMaker: IndexType.INDEX_TYPE_UNSPECIFIED, valueOf: IndexType.valueOf, enumValues: IndexType.values)
-    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -103,15 +103,15 @@ class IndexConfig extends $pb.GeneratedMessage {
   ///  This is used to return the timestamp, and will be ignored if supplied
   ///  during update.
   @$pb.TagNumber(3)
-  $301.Timestamp get createTime => $_getN(2);
+  $302.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($301.Timestamp v) { setField(3, v); }
+  set createTime($302.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $301.Timestamp ensureCreateTime() => $_ensure(2);
+  $302.Timestamp ensureCreateTime() => $_ensure(2);
 }
 
 /// Describes a repository in which log entries are stored.
@@ -119,8 +119,8 @@ class LogBucket extends $pb.GeneratedMessage {
   factory LogBucket({
     $core.String? name,
     $core.String? description,
-    $301.Timestamp? createTime,
-    $301.Timestamp? updateTime,
+    $302.Timestamp? createTime,
+    $302.Timestamp? updateTime,
     $core.bool? locked,
     $core.int? retentionDays,
     LifecycleState? lifecycleState,
@@ -172,8 +172,8 @@ class LogBucket extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogBucket', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
     ..aOB(9, _omitFieldNames ? '' : 'locked')
     ..a<$core.int>(11, _omitFieldNames ? '' : 'retentionDays', $pb.PbFieldType.O3)
     ..e<LifecycleState>(12, _omitFieldNames ? '' : 'lifecycleState', $pb.PbFieldType.OE, defaultOrMaker: LifecycleState.LIFECYCLE_STATE_UNSPECIFIED, valueOf: LifecycleState.valueOf, enumValues: LifecycleState.values)
@@ -240,27 +240,27 @@ class LogBucket extends $pb.GeneratedMessage {
   /// Output only. The creation timestamp of the bucket. This is not set for any
   /// of the default buckets.
   @$pb.TagNumber(4)
-  $301.Timestamp get createTime => $_getN(2);
+  $302.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(4)
-  set createTime($301.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $301.Timestamp ensureCreateTime() => $_ensure(2);
+  $302.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The last update timestamp of the bucket.
   @$pb.TagNumber(5)
-  $301.Timestamp get updateTime => $_getN(3);
+  $302.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(5)
-  set updateTime($301.Timestamp v) { setField(5, v); }
+  set updateTime($302.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $301.Timestamp ensureUpdateTime() => $_ensure(3);
+  $302.Timestamp ensureUpdateTime() => $_ensure(3);
 
   ///  Whether the bucket is locked.
   ///
@@ -346,8 +346,8 @@ class LogView extends $pb.GeneratedMessage {
   factory LogView({
     $core.String? name,
     $core.String? description,
-    $301.Timestamp? createTime,
-    $301.Timestamp? updateTime,
+    $302.Timestamp? createTime,
+    $302.Timestamp? updateTime,
     $core.String? filter,
   }) {
     final $result = create();
@@ -375,8 +375,8 @@ class LogView extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogView', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'description')
-    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
     ..aOS(7, _omitFieldNames ? '' : 'filter')
     ..hasRequiredFields = false
   ;
@@ -428,27 +428,27 @@ class LogView extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of the view.
   @$pb.TagNumber(4)
-  $301.Timestamp get createTime => $_getN(2);
+  $302.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(4)
-  set createTime($301.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $301.Timestamp ensureCreateTime() => $_ensure(2);
+  $302.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The last update timestamp of the view.
   @$pb.TagNumber(5)
-  $301.Timestamp get updateTime => $_getN(3);
+  $302.Timestamp get updateTime => $_getN(3);
   @$pb.TagNumber(5)
-  set updateTime($301.Timestamp v) { setField(5, v); }
+  set updateTime($302.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasUpdateTime() => $_has(3);
   @$pb.TagNumber(5)
   void clearUpdateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $301.Timestamp ensureUpdateTime() => $_ensure(3);
+  $302.Timestamp ensureUpdateTime() => $_ensure(3);
 
   ///  Filter that restricts which log entries in a bucket are visible in this
   ///  view.
@@ -494,8 +494,8 @@ class LogSink extends $pb.GeneratedMessage {
     $core.String? writerIdentity,
     $core.bool? includeChildren,
     BigQueryOptions? bigqueryOptions,
-    $301.Timestamp? createTime,
-    $301.Timestamp? updateTime,
+    $302.Timestamp? createTime,
+    $302.Timestamp? updateTime,
     $core.Iterable<LogExclusion>? exclusions,
     $core.String? description,
     $core.bool? disabled,
@@ -557,8 +557,8 @@ class LogSink extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'writerIdentity')
     ..aOB(9, _omitFieldNames ? '' : 'includeChildren')
     ..aOM<BigQueryOptions>(12, _omitFieldNames ? '' : 'bigqueryOptions', subBuilder: BigQueryOptions.create)
-    ..aOM<$301.Timestamp>(13, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(13, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(14, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
     ..pc<LogExclusion>(16, _omitFieldNames ? '' : 'exclusions', $pb.PbFieldType.PM, subBuilder: LogExclusion.create)
     ..aOS(18, _omitFieldNames ? '' : 'description')
     ..aOB(19, _omitFieldNames ? '' : 'disabled')
@@ -724,29 +724,29 @@ class LogSink extends $pb.GeneratedMessage {
   ///
   ///  This field may not be present for older sinks.
   @$pb.TagNumber(13)
-  $301.Timestamp get createTime => $_getN(7);
+  $302.Timestamp get createTime => $_getN(7);
   @$pb.TagNumber(13)
-  set createTime($301.Timestamp v) { setField(13, v); }
+  set createTime($302.Timestamp v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasCreateTime() => $_has(7);
   @$pb.TagNumber(13)
   void clearCreateTime() => clearField(13);
   @$pb.TagNumber(13)
-  $301.Timestamp ensureCreateTime() => $_ensure(7);
+  $302.Timestamp ensureCreateTime() => $_ensure(7);
 
   ///  Output only. The last update timestamp of the sink.
   ///
   ///  This field may not be present for older sinks.
   @$pb.TagNumber(14)
-  $301.Timestamp get updateTime => $_getN(8);
+  $302.Timestamp get updateTime => $_getN(8);
   @$pb.TagNumber(14)
-  set updateTime($301.Timestamp v) { setField(14, v); }
+  set updateTime($302.Timestamp v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasUpdateTime() => $_has(8);
   @$pb.TagNumber(14)
   void clearUpdateTime() => clearField(14);
   @$pb.TagNumber(14)
-  $301.Timestamp ensureUpdateTime() => $_ensure(8);
+  $302.Timestamp ensureUpdateTime() => $_ensure(8);
 
   ///  Optional. Log entries that match any of these exclusion filters will not be
   ///  exported.
@@ -843,7 +843,7 @@ class Link extends $pb.GeneratedMessage {
   factory Link({
     $core.String? name,
     $core.String? description,
-    $301.Timestamp? createTime,
+    $302.Timestamp? createTime,
     LifecycleState? lifecycleState,
     BigQueryDataset? bigqueryDataset,
   }) {
@@ -872,7 +872,7 @@ class Link extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Link', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
     ..e<LifecycleState>(4, _omitFieldNames ? '' : 'lifecycleState', $pb.PbFieldType.OE, defaultOrMaker: LifecycleState.LIFECYCLE_STATE_UNSPECIFIED, valueOf: LifecycleState.valueOf, enumValues: LifecycleState.values)
     ..aOM<BigQueryDataset>(5, _omitFieldNames ? '' : 'bigqueryDataset', subBuilder: BigQueryDataset.create)
     ..hasRequiredFields = false
@@ -934,15 +934,15 @@ class Link extends $pb.GeneratedMessage {
 
   /// Output only. The creation timestamp of the link.
   @$pb.TagNumber(3)
-  $301.Timestamp get createTime => $_getN(2);
+  $302.Timestamp get createTime => $_getN(2);
   @$pb.TagNumber(3)
-  set createTime($301.Timestamp v) { setField(3, v); }
+  set createTime($302.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCreateTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearCreateTime() => clearField(3);
   @$pb.TagNumber(3)
-  $301.Timestamp ensureCreateTime() => $_ensure(2);
+  $302.Timestamp ensureCreateTime() => $_ensure(2);
 
   /// Output only. The resource lifecycle state.
   @$pb.TagNumber(4)
@@ -1308,7 +1308,7 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
   factory UpdateBucketRequest({
     $core.String? name,
     LogBucket? bucket,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -1329,7 +1329,7 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBucketRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<LogBucket>(2, _omitFieldNames ? '' : 'bucket', subBuilder: LogBucket.create)
-    ..aOM<$332.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1394,15 +1394,15 @@ class UpdateBucketRequest extends $pb.GeneratedMessage {
   ///
   ///  For example: `updateMask=retention_days`
   @$pb.TagNumber(4)
-  $332.FieldMask get updateMask => $_getN(2);
+  $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($332.FieldMask v) { setField(4, v); }
+  set updateMask($333.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $332.FieldMask ensureUpdateMask() => $_ensure(2);
+  $333.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The parameters to `GetBucket`.
@@ -1838,7 +1838,7 @@ class UpdateViewRequest extends $pb.GeneratedMessage {
   factory UpdateViewRequest({
     $core.String? name,
     LogView? view,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -1859,7 +1859,7 @@ class UpdateViewRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateViewRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<LogView>(2, _omitFieldNames ? '' : 'view', subBuilder: LogView.create)
-    ..aOM<$332.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1921,15 +1921,15 @@ class UpdateViewRequest extends $pb.GeneratedMessage {
   ///
   ///  For example: `updateMask=filter`
   @$pb.TagNumber(4)
-  $332.FieldMask get updateMask => $_getN(2);
+  $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($332.FieldMask v) { setField(4, v); }
+  set updateMask($333.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $332.FieldMask ensureUpdateMask() => $_ensure(2);
+  $333.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The parameters to `GetView`.
@@ -2376,7 +2376,7 @@ class UpdateSinkRequest extends $pb.GeneratedMessage {
     $core.String? sinkName,
     LogSink? sink,
     $core.bool? uniqueWriterIdentity,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (sinkName != null) {
@@ -2401,7 +2401,7 @@ class UpdateSinkRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'sinkName')
     ..aOM<LogSink>(2, _omitFieldNames ? '' : 'sink', subBuilder: LogSink.create)
     ..aOB(3, _omitFieldNames ? '' : 'uniqueWriterIdentity')
-    ..aOM<$332.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(4, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -2496,15 +2496,15 @@ class UpdateSinkRequest extends $pb.GeneratedMessage {
   ///
   ///  For example: `updateMask=filter`
   @$pb.TagNumber(4)
-  $332.FieldMask get updateMask => $_getN(3);
+  $333.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($332.FieldMask v) { setField(4, v); }
+  set updateMask($333.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $332.FieldMask ensureUpdateMask() => $_ensure(3);
+  $333.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 /// The parameters to `DeleteSink`.
@@ -2937,8 +2937,8 @@ class LogExclusion extends $pb.GeneratedMessage {
     $core.String? description,
     $core.String? filter,
     $core.bool? disabled,
-    $301.Timestamp? createTime,
-    $301.Timestamp? updateTime,
+    $302.Timestamp? createTime,
+    $302.Timestamp? updateTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -2970,8 +2970,8 @@ class LogExclusion extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'description')
     ..aOS(3, _omitFieldNames ? '' : 'filter')
     ..aOB(4, _omitFieldNames ? '' : 'disabled')
-    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -3055,29 +3055,29 @@ class LogExclusion extends $pb.GeneratedMessage {
   ///
   ///  This field may not be present for older exclusions.
   @$pb.TagNumber(5)
-  $301.Timestamp get createTime => $_getN(4);
+  $302.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($301.Timestamp v) { setField(5, v); }
+  set createTime($302.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $301.Timestamp ensureCreateTime() => $_ensure(4);
+  $302.Timestamp ensureCreateTime() => $_ensure(4);
 
   ///  Output only. The last update timestamp of the exclusion.
   ///
   ///  This field may not be present for older exclusions.
   @$pb.TagNumber(6)
-  $301.Timestamp get updateTime => $_getN(5);
+  $302.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($301.Timestamp v) { setField(6, v); }
+  set updateTime($302.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $301.Timestamp ensureUpdateTime() => $_ensure(5);
+  $302.Timestamp ensureUpdateTime() => $_ensure(5);
 }
 
 /// The parameters to `ListExclusions`.
@@ -3381,7 +3381,7 @@ class UpdateExclusionRequest extends $pb.GeneratedMessage {
   factory UpdateExclusionRequest({
     $core.String? name,
     LogExclusion? exclusion,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -3402,7 +3402,7 @@ class UpdateExclusionRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateExclusionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<LogExclusion>(2, _omitFieldNames ? '' : 'exclusion', subBuilder: LogExclusion.create)
-    ..aOM<$332.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3468,15 +3468,15 @@ class UpdateExclusionRequest extends $pb.GeneratedMessage {
   ///  For example, to change the filter and description of an exclusion,
   ///  specify an `update_mask` of `"filter,description"`.
   @$pb.TagNumber(3)
-  $332.FieldMask get updateMask => $_getN(2);
+  $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($332.FieldMask v) { setField(3, v); }
+  set updateMask($333.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $332.FieldMask ensureUpdateMask() => $_ensure(2);
+  $333.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// The parameters to `DeleteExclusion`.
@@ -3621,7 +3621,7 @@ class UpdateCmekSettingsRequest extends $pb.GeneratedMessage {
   factory UpdateCmekSettingsRequest({
     $core.String? name,
     CmekSettings? cmekSettings,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -3642,7 +3642,7 @@ class UpdateCmekSettingsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateCmekSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<CmekSettings>(2, _omitFieldNames ? '' : 'cmekSettings', subBuilder: CmekSettings.create)
-    ..aOM<$332.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -3714,15 +3714,15 @@ class UpdateCmekSettingsRequest extends $pb.GeneratedMessage {
   ///
   ///  For example: `"updateMask=kmsKeyName"`
   @$pb.TagNumber(3)
-  $332.FieldMask get updateMask => $_getN(2);
+  $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($332.FieldMask v) { setField(3, v); }
+  set updateMask($333.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $332.FieldMask ensureUpdateMask() => $_ensure(2);
+  $333.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 ///  Describes the customer-managed encryption key (CMEK) settings associated with
@@ -3966,7 +3966,7 @@ class UpdateSettingsRequest extends $pb.GeneratedMessage {
   factory UpdateSettingsRequest({
     $core.String? name,
     Settings? settings,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (name != null) {
@@ -3987,7 +3987,7 @@ class UpdateSettingsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSettingsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOM<Settings>(2, _omitFieldNames ? '' : 'settings', subBuilder: Settings.create)
-    ..aOM<$332.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(3, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -4056,15 +4056,15 @@ class UpdateSettingsRequest extends $pb.GeneratedMessage {
   ///
   ///  For example: `"updateMask=kmsKeyName"`
   @$pb.TagNumber(3)
-  $332.FieldMask get updateMask => $_getN(2);
+  $333.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(3)
-  set updateMask($332.FieldMask v) { setField(3, v); }
+  set updateMask($333.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearUpdateMask() => clearField(3);
   @$pb.TagNumber(3)
-  $332.FieldMask ensureUpdateMask() => $_ensure(2);
+  $333.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 /// Describes the settings associated with a project, folder, organization,
@@ -4312,8 +4312,8 @@ class CopyLogEntriesRequest extends $pb.GeneratedMessage {
 /// Metadata for CopyLogEntries long running operations.
 class CopyLogEntriesMetadata extends $pb.GeneratedMessage {
   factory CopyLogEntriesMetadata({
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
     OperationState? state,
     $core.bool? cancellationRequested,
     CopyLogEntriesRequest? request,
@@ -4349,8 +4349,8 @@ class CopyLogEntriesMetadata extends $pb.GeneratedMessage {
   factory CopyLogEntriesMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CopyLogEntriesMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
-    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..e<OperationState>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: OperationState.OPERATION_STATE_UNSPECIFIED, valueOf: OperationState.valueOf, enumValues: OperationState.values)
     ..aOB(4, _omitFieldNames ? '' : 'cancellationRequested')
     ..aOM<CopyLogEntriesRequest>(5, _omitFieldNames ? '' : 'request', subBuilder: CopyLogEntriesRequest.create)
@@ -4382,27 +4382,27 @@ class CopyLogEntriesMetadata extends $pb.GeneratedMessage {
 
   /// The create time of an operation.
   @$pb.TagNumber(1)
-  $301.Timestamp get startTime => $_getN(0);
+  $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($301.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $301.Timestamp ensureStartTime() => $_ensure(0);
+  $302.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The end time of an operation.
   @$pb.TagNumber(2)
-  $301.Timestamp get endTime => $_getN(1);
+  $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($301.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $301.Timestamp ensureEndTime() => $_ensure(1);
+  $302.Timestamp ensureEndTime() => $_ensure(1);
 
   /// State of an operation.
   @$pb.TagNumber(3)
@@ -4524,8 +4524,8 @@ enum BucketMetadata_Request {
 /// Metadata for LongRunningUpdateBucket Operations.
 class BucketMetadata extends $pb.GeneratedMessage {
   factory BucketMetadata({
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
     OperationState? state,
     CreateBucketRequest? createBucketRequest,
     UpdateBucketRequest? updateBucketRequest,
@@ -4559,8 +4559,8 @@ class BucketMetadata extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BucketMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..oo(0, [4, 5])
-    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..e<OperationState>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: OperationState.OPERATION_STATE_UNSPECIFIED, valueOf: OperationState.valueOf, enumValues: OperationState.values)
     ..aOM<CreateBucketRequest>(4, _omitFieldNames ? '' : 'createBucketRequest', subBuilder: CreateBucketRequest.create)
     ..aOM<UpdateBucketRequest>(5, _omitFieldNames ? '' : 'updateBucketRequest', subBuilder: UpdateBucketRequest.create)
@@ -4593,27 +4593,27 @@ class BucketMetadata extends $pb.GeneratedMessage {
 
   /// The create time of an operation.
   @$pb.TagNumber(1)
-  $301.Timestamp get startTime => $_getN(0);
+  $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($301.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $301.Timestamp ensureStartTime() => $_ensure(0);
+  $302.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The end time of an operation.
   @$pb.TagNumber(2)
-  $301.Timestamp get endTime => $_getN(1);
+  $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($301.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $301.Timestamp ensureEndTime() => $_ensure(1);
+  $302.Timestamp ensureEndTime() => $_ensure(1);
 
   /// State of an operation.
   @$pb.TagNumber(3)
@@ -4659,8 +4659,8 @@ enum LinkMetadata_Request {
 /// Metadata for long running Link operations.
 class LinkMetadata extends $pb.GeneratedMessage {
   factory LinkMetadata({
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
     OperationState? state,
     CreateLinkRequest? createLinkRequest,
     DeleteLinkRequest? deleteLinkRequest,
@@ -4694,8 +4694,8 @@ class LinkMetadata extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LinkMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.logging.v2'), createEmptyInstance: create)
     ..oo(0, [4, 5])
-    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..e<OperationState>(3, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: OperationState.OPERATION_STATE_UNSPECIFIED, valueOf: OperationState.valueOf, enumValues: OperationState.values)
     ..aOM<CreateLinkRequest>(4, _omitFieldNames ? '' : 'createLinkRequest', subBuilder: CreateLinkRequest.create)
     ..aOM<DeleteLinkRequest>(5, _omitFieldNames ? '' : 'deleteLinkRequest', subBuilder: DeleteLinkRequest.create)
@@ -4728,27 +4728,27 @@ class LinkMetadata extends $pb.GeneratedMessage {
 
   /// The start time of an operation.
   @$pb.TagNumber(1)
-  $301.Timestamp get startTime => $_getN(0);
+  $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($301.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $301.Timestamp ensureStartTime() => $_ensure(0);
+  $302.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The end time of an operation.
   @$pb.TagNumber(2)
-  $301.Timestamp get endTime => $_getN(1);
+  $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($301.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $301.Timestamp ensureEndTime() => $_ensure(1);
+  $302.Timestamp ensureEndTime() => $_ensure(1);
 
   /// State of an operation.
   @$pb.TagNumber(3)

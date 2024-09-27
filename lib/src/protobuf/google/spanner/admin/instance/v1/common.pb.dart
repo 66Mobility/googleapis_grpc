@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $301;
+import '../../../../protobuf/timestamp.pb.dart' as $302;
 
 export 'common.pbenum.dart';
 
@@ -22,8 +22,8 @@ export 'common.pbenum.dart';
 class OperationProgress extends $pb.GeneratedMessage {
   factory OperationProgress({
     $core.int? progressPercent,
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
   }) {
     final $result = create();
     if (progressPercent != null) {
@@ -43,8 +43,8 @@ class OperationProgress extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'OperationProgress', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.spanner.admin.instance.v1'), createEmptyInstance: create)
     ..a<$core.int>(1, _omitFieldNames ? '' : 'progressPercent', $pb.PbFieldType.O3)
-    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -82,28 +82,28 @@ class OperationProgress extends $pb.GeneratedMessage {
 
   /// Time the request was received.
   @$pb.TagNumber(2)
-  $301.Timestamp get startTime => $_getN(1);
+  $302.Timestamp get startTime => $_getN(1);
   @$pb.TagNumber(2)
-  set startTime($301.Timestamp v) { setField(2, v); }
+  set startTime($302.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasStartTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearStartTime() => clearField(2);
   @$pb.TagNumber(2)
-  $301.Timestamp ensureStartTime() => $_ensure(1);
+  $302.Timestamp ensureStartTime() => $_ensure(1);
 
   /// If set, the time at which this operation failed or was completed
   /// successfully.
   @$pb.TagNumber(3)
-  $301.Timestamp get endTime => $_getN(2);
+  $302.Timestamp get endTime => $_getN(2);
   @$pb.TagNumber(3)
-  set endTime($301.Timestamp v) { setField(3, v); }
+  set endTime($302.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasEndTime() => $_has(2);
   @$pb.TagNumber(3)
   void clearEndTime() => clearField(3);
   @$pb.TagNumber(3)
-  $301.Timestamp ensureEndTime() => $_ensure(2);
+  $302.Timestamp ensureEndTime() => $_ensure(2);
 }
 
 

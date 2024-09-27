@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../protobuf/duration.pb.dart' as $263;
-import 'label.pb.dart' as $347;
-import 'launch_stage.pbenum.dart' as $303;
+import '../protobuf/duration.pb.dart' as $264;
+import 'label.pb.dart' as $348;
+import 'launch_stage.pbenum.dart' as $304;
 import 'metric.pbenum.dart';
 
 export 'metric.pbenum.dart';
@@ -24,9 +24,9 @@ export 'metric.pbenum.dart';
 class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
   factory MetricDescriptor_MetricDescriptorMetadata({
   @$core.Deprecated('This field is deprecated.')
-    $303.LaunchStage? launchStage,
-    $263.Duration? samplePeriod,
-    $263.Duration? ingestDelay,
+    $304.LaunchStage? launchStage,
+    $264.Duration? samplePeriod,
+    $264.Duration? ingestDelay,
   }) {
     final $result = create();
     if (launchStage != null) {
@@ -46,9 +46,9 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
   factory MetricDescriptor_MetricDescriptorMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetricDescriptor.MetricDescriptorMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
-    ..e<$303.LaunchStage>(1, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $303.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $303.LaunchStage.valueOf, enumValues: $303.LaunchStage.values)
-    ..aOM<$263.Duration>(2, _omitFieldNames ? '' : 'samplePeriod', subBuilder: $263.Duration.create)
-    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'ingestDelay', subBuilder: $263.Duration.create)
+    ..e<$304.LaunchStage>(1, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $304.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $304.LaunchStage.valueOf, enumValues: $304.LaunchStage.values)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'samplePeriod', subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'ingestDelay', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -78,10 +78,10 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
   /// instead.
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  $303.LaunchStage get launchStage => $_getN(0);
+  $304.LaunchStage get launchStage => $_getN(0);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  set launchStage($303.LaunchStage v) { setField(1, v); }
+  set launchStage($304.LaunchStage v) { setField(1, v); }
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   $core.bool hasLaunchStage() => $_has(0);
@@ -94,29 +94,29 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
   /// excluding data loss due to errors. Metrics with a higher granularity have
   /// a smaller sampling period.
   @$pb.TagNumber(2)
-  $263.Duration get samplePeriod => $_getN(1);
+  $264.Duration get samplePeriod => $_getN(1);
   @$pb.TagNumber(2)
-  set samplePeriod($263.Duration v) { setField(2, v); }
+  set samplePeriod($264.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasSamplePeriod() => $_has(1);
   @$pb.TagNumber(2)
   void clearSamplePeriod() => clearField(2);
   @$pb.TagNumber(2)
-  $263.Duration ensureSamplePeriod() => $_ensure(1);
+  $264.Duration ensureSamplePeriod() => $_ensure(1);
 
   /// The delay of data points caused by ingestion. Data points older than this
   /// age are guaranteed to be ingested and available to be read, excluding
   /// data loss due to errors.
   @$pb.TagNumber(3)
-  $263.Duration get ingestDelay => $_getN(2);
+  $264.Duration get ingestDelay => $_getN(2);
   @$pb.TagNumber(3)
-  set ingestDelay($263.Duration v) { setField(3, v); }
+  set ingestDelay($264.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasIngestDelay() => $_has(2);
   @$pb.TagNumber(3)
   void clearIngestDelay() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Duration ensureIngestDelay() => $_ensure(2);
+  $264.Duration ensureIngestDelay() => $_ensure(2);
 }
 
 ///  Defines a metric type and its schema. Once a metric descriptor is created,
@@ -125,7 +125,7 @@ class MetricDescriptor_MetricDescriptorMetadata extends $pb.GeneratedMessage {
 class MetricDescriptor extends $pb.GeneratedMessage {
   factory MetricDescriptor({
     $core.String? name,
-    $core.Iterable<$347.LabelDescriptor>? labels,
+    $core.Iterable<$348.LabelDescriptor>? labels,
     MetricDescriptor_MetricKind? metricKind,
     MetricDescriptor_ValueType? valueType,
     $core.String? unit,
@@ -133,7 +133,7 @@ class MetricDescriptor extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? type,
     MetricDescriptor_MetricDescriptorMetadata? metadata,
-    $303.LaunchStage? launchStage,
+    $304.LaunchStage? launchStage,
     $core.Iterable<$core.String>? monitoredResourceTypes,
   }) {
     final $result = create();
@@ -178,7 +178,7 @@ class MetricDescriptor extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MetricDescriptor', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..pc<$347.LabelDescriptor>(2, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $347.LabelDescriptor.create)
+    ..pc<$348.LabelDescriptor>(2, _omitFieldNames ? '' : 'labels', $pb.PbFieldType.PM, subBuilder: $348.LabelDescriptor.create)
     ..e<MetricDescriptor_MetricKind>(3, _omitFieldNames ? '' : 'metricKind', $pb.PbFieldType.OE, defaultOrMaker: MetricDescriptor_MetricKind.METRIC_KIND_UNSPECIFIED, valueOf: MetricDescriptor_MetricKind.valueOf, enumValues: MetricDescriptor_MetricKind.values)
     ..e<MetricDescriptor_ValueType>(4, _omitFieldNames ? '' : 'valueType', $pb.PbFieldType.OE, defaultOrMaker: MetricDescriptor_ValueType.VALUE_TYPE_UNSPECIFIED, valueOf: MetricDescriptor_ValueType.valueOf, enumValues: MetricDescriptor_ValueType.values)
     ..aOS(5, _omitFieldNames ? '' : 'unit')
@@ -186,7 +186,7 @@ class MetricDescriptor extends $pb.GeneratedMessage {
     ..aOS(7, _omitFieldNames ? '' : 'displayName')
     ..aOS(8, _omitFieldNames ? '' : 'type')
     ..aOM<MetricDescriptor_MetricDescriptorMetadata>(10, _omitFieldNames ? '' : 'metadata', subBuilder: MetricDescriptor_MetricDescriptorMetadata.create)
-    ..e<$303.LaunchStage>(12, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $303.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $303.LaunchStage.valueOf, enumValues: $303.LaunchStage.values)
+    ..e<$304.LaunchStage>(12, _omitFieldNames ? '' : 'launchStage', $pb.PbFieldType.OE, defaultOrMaker: $304.LaunchStage.LAUNCH_STAGE_UNSPECIFIED, valueOf: $304.LaunchStage.valueOf, enumValues: $304.LaunchStage.values)
     ..pPS(13, _omitFieldNames ? '' : 'monitoredResourceTypes')
     ..hasRequiredFields = false
   ;
@@ -229,7 +229,7 @@ class MetricDescriptor extends $pb.GeneratedMessage {
   /// you can look at latencies for successful responses or just
   /// for responses that failed.
   @$pb.TagNumber(2)
-  $core.List<$347.LabelDescriptor> get labels => $_getList(1);
+  $core.List<$348.LabelDescriptor> get labels => $_getList(1);
 
   /// Whether the metric records instantaneous values, changes to a value, etc.
   /// Some combinations of `metric_kind` and `value_type` might not be supported.
@@ -418,9 +418,9 @@ class MetricDescriptor extends $pb.GeneratedMessage {
 
   /// Optional. The launch stage of the metric definition.
   @$pb.TagNumber(12)
-  $303.LaunchStage get launchStage => $_getN(9);
+  $304.LaunchStage get launchStage => $_getN(9);
   @$pb.TagNumber(12)
-  set launchStage($303.LaunchStage v) { setField(12, v); }
+  set launchStage($304.LaunchStage v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasLaunchStage() => $_has(9);
   @$pb.TagNumber(12)

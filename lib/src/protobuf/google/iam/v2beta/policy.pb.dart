@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/timestamp.pb.dart' as $301;
-import 'deny.pb.dart' as $443;
+import '../../protobuf/timestamp.pb.dart' as $302;
+import 'deny.pb.dart' as $444;
 
 /// Data for an IAM policy.
 class Policy extends $pb.GeneratedMessage {
@@ -25,9 +25,9 @@ class Policy extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.Map<$core.String, $core.String>? annotations,
     $core.String? etag,
-    $301.Timestamp? createTime,
-    $301.Timestamp? updateTime,
-    $301.Timestamp? deleteTime,
+    $302.Timestamp? createTime,
+    $302.Timestamp? updateTime,
+    $302.Timestamp? deleteTime,
     $core.Iterable<PolicyRule>? rules,
   }) {
     final $result = create();
@@ -74,9 +74,9 @@ class Policy extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'displayName')
     ..m<$core.String, $core.String>(5, _omitFieldNames ? '' : 'annotations', entryClassName: 'Policy.AnnotationsEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.iam.v2beta'))
     ..aOS(6, _omitFieldNames ? '' : 'etag')
-    ..aOM<$301.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(9, _omitFieldNames ? '' : 'deleteTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(9, _omitFieldNames ? '' : 'deleteTime', subBuilder: $302.Timestamp.create)
     ..pc<PolicyRule>(10, _omitFieldNames ? '' : 'rules', $pb.PbFieldType.PM, subBuilder: PolicyRule.create)
     ..hasRequiredFields = false
   ;
@@ -177,39 +177,39 @@ class Policy extends $pb.GeneratedMessage {
 
   /// Output only. The time when the `Policy` was created.
   @$pb.TagNumber(7)
-  $301.Timestamp get createTime => $_getN(6);
+  $302.Timestamp get createTime => $_getN(6);
   @$pb.TagNumber(7)
-  set createTime($301.Timestamp v) { setField(7, v); }
+  set createTime($302.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasCreateTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearCreateTime() => clearField(7);
   @$pb.TagNumber(7)
-  $301.Timestamp ensureCreateTime() => $_ensure(6);
+  $302.Timestamp ensureCreateTime() => $_ensure(6);
 
   /// Output only. The time when the `Policy` was last updated.
   @$pb.TagNumber(8)
-  $301.Timestamp get updateTime => $_getN(7);
+  $302.Timestamp get updateTime => $_getN(7);
   @$pb.TagNumber(8)
-  set updateTime($301.Timestamp v) { setField(8, v); }
+  set updateTime($302.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasUpdateTime() => $_has(7);
   @$pb.TagNumber(8)
   void clearUpdateTime() => clearField(8);
   @$pb.TagNumber(8)
-  $301.Timestamp ensureUpdateTime() => $_ensure(7);
+  $302.Timestamp ensureUpdateTime() => $_ensure(7);
 
   /// Output only. The time when the `Policy` was deleted. Empty if the policy is not deleted.
   @$pb.TagNumber(9)
-  $301.Timestamp get deleteTime => $_getN(8);
+  $302.Timestamp get deleteTime => $_getN(8);
   @$pb.TagNumber(9)
-  set deleteTime($301.Timestamp v) { setField(9, v); }
+  set deleteTime($302.Timestamp v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDeleteTime() => $_has(8);
   @$pb.TagNumber(9)
   void clearDeleteTime() => clearField(9);
   @$pb.TagNumber(9)
-  $301.Timestamp ensureDeleteTime() => $_ensure(8);
+  $302.Timestamp ensureDeleteTime() => $_ensure(8);
 
   /// A list of rules that specify the behavior of the `Policy`. All of the rules
   /// should be of the `kind` specified in the `Policy`.
@@ -226,7 +226,7 @@ enum PolicyRule_Kind {
 class PolicyRule extends $pb.GeneratedMessage {
   factory PolicyRule({
     $core.String? description,
-    $443.DenyRule? denyRule,
+    $444.DenyRule? denyRule,
   }) {
     final $result = create();
     if (description != null) {
@@ -248,7 +248,7 @@ class PolicyRule extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PolicyRule', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v2beta'), createEmptyInstance: create)
     ..oo(0, [2])
     ..aOS(1, _omitFieldNames ? '' : 'description')
-    ..aOM<$443.DenyRule>(2, _omitFieldNames ? '' : 'denyRule', subBuilder: $443.DenyRule.create)
+    ..aOM<$444.DenyRule>(2, _omitFieldNames ? '' : 'denyRule', subBuilder: $444.DenyRule.create)
     ..hasRequiredFields = false
   ;
 
@@ -289,15 +289,15 @@ class PolicyRule extends $pb.GeneratedMessage {
 
   /// A rule for a deny policy.
   @$pb.TagNumber(2)
-  $443.DenyRule get denyRule => $_getN(1);
+  $444.DenyRule get denyRule => $_getN(1);
   @$pb.TagNumber(2)
-  set denyRule($443.DenyRule v) { setField(2, v); }
+  set denyRule($444.DenyRule v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDenyRule() => $_has(1);
   @$pb.TagNumber(2)
   void clearDenyRule() => clearField(2);
   @$pb.TagNumber(2)
-  $443.DenyRule ensureDenyRule() => $_ensure(1);
+  $444.DenyRule ensureDenyRule() => $_ensure(1);
 }
 
 /// Request message for `ListPolicies`.
@@ -757,7 +757,7 @@ class DeletePolicyRequest extends $pb.GeneratedMessage {
 /// Metadata for long-running `Policy` operations.
 class PolicyOperationMetadata extends $pb.GeneratedMessage {
   factory PolicyOperationMetadata({
-    $301.Timestamp? createTime,
+    $302.Timestamp? createTime,
   }) {
     final $result = create();
     if (createTime != null) {
@@ -770,7 +770,7 @@ class PolicyOperationMetadata extends $pb.GeneratedMessage {
   factory PolicyOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PolicyOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.v2beta'), createEmptyInstance: create)
-    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -797,15 +797,15 @@ class PolicyOperationMetadata extends $pb.GeneratedMessage {
 
   /// Timestamp when the `google.longrunning.Operation` was created.
   @$pb.TagNumber(1)
-  $301.Timestamp get createTime => $_getN(0);
+  $302.Timestamp get createTime => $_getN(0);
   @$pb.TagNumber(1)
-  set createTime($301.Timestamp v) { setField(1, v); }
+  set createTime($302.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreateTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreateTime() => clearField(1);
   @$pb.TagNumber(1)
-  $301.Timestamp ensureCreateTime() => $_ensure(0);
+  $302.Timestamp ensureCreateTime() => $_ensure(0);
 }
 
 

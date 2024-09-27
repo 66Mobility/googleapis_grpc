@@ -13,12 +13,12 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'vehicle_emission_type.pbenum.dart' as $498;
+import 'vehicle_emission_type.pbenum.dart' as $499;
 
 /// Contains the vehicle information, such as the vehicle emission type.
 class VehicleInfo extends $pb.GeneratedMessage {
   factory VehicleInfo({
-    $498.VehicleEmissionType? emissionType,
+    $499.VehicleEmissionType? emissionType,
   }) {
     final $result = create();
     if (emissionType != null) {
@@ -31,7 +31,7 @@ class VehicleInfo extends $pb.GeneratedMessage {
   factory VehicleInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VehicleInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routing.v2'), createEmptyInstance: create)
-    ..e<$498.VehicleEmissionType>(2, _omitFieldNames ? '' : 'emissionType', $pb.PbFieldType.OE, defaultOrMaker: $498.VehicleEmissionType.VEHICLE_EMISSION_TYPE_UNSPECIFIED, valueOf: $498.VehicleEmissionType.valueOf, enumValues: $498.VehicleEmissionType.values)
+    ..e<$499.VehicleEmissionType>(2, _omitFieldNames ? '' : 'emissionType', $pb.PbFieldType.OE, defaultOrMaker: $499.VehicleEmissionType.VEHICLE_EMISSION_TYPE_UNSPECIFIED, valueOf: $499.VehicleEmissionType.valueOf, enumValues: $499.VehicleEmissionType.values)
     ..hasRequiredFields = false
   ;
 
@@ -60,9 +60,9 @@ class VehicleInfo extends $pb.GeneratedMessage {
   /// Applies only to the `DRIVE`
   /// [`RouteTravelMode`][google.maps.routing.v2.RouteTravelMode].
   @$pb.TagNumber(2)
-  $498.VehicleEmissionType get emissionType => $_getN(0);
+  $499.VehicleEmissionType get emissionType => $_getN(0);
   @$pb.TagNumber(2)
-  set emissionType($498.VehicleEmissionType v) { setField(2, v); }
+  set emissionType($499.VehicleEmissionType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEmissionType() => $_has(0);
   @$pb.TagNumber(2)

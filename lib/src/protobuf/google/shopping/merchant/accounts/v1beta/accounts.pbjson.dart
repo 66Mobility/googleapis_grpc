@@ -79,7 +79,7 @@ const CreateAndConfigureAccountRequest_AcceptTermsOfService$json = {
 const CreateAndConfigureAccountRequest_AddAccountService$json = {
   '1': 'AddAccountService',
   '2': [
-    {'1': 'account_aggregation', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.Empty', '9': 0, '10': 'accountAggregation'},
+    {'1': 'account_aggregation', '3': 103, '4': 1, '5': 11, '6': '.google.shopping.merchant.accounts.v1beta.AccountAggregation', '9': 0, '10': 'accountAggregation'},
     {'1': 'provider', '3': 1, '4': 1, '5': 9, '8': {}, '9': 1, '10': 'provider', '17': true},
   ],
   '8': [
@@ -98,14 +98,15 @@ final $typed_data.Uint8List createAndConfigureAccountRequestDescriptor = $conver
     'JldGEuQ3JlYXRlQW5kQ29uZmlndXJlQWNjb3VudFJlcXVlc3QuQWNjZXB0VGVybXNPZlNlcnZp'
     'Y2VCA+BBAUgAUhRhY2NlcHRUZXJtc09mU2VydmljZYgBARJ7CgdzZXJ2aWNlGAQgAygLMlwuZ2'
     '9vZ2xlLnNob3BwaW5nLm1lcmNoYW50LmFjY291bnRzLnYxYmV0YS5DcmVhdGVBbmRDb25maWd1'
-    'cmVBY2NvdW50UmVxdWVzdC5BZGRBY2NvdW50U2VydmljZUID4EEBUgdzZXJ2aWNlGoMBChRBY2'
+    'cmVBY2NvdW50UmVxdWVzdC5BZGRBY2NvdW50U2VydmljZUID4EECUgdzZXJ2aWNlGoMBChRBY2'
     'NlcHRUZXJtc09mU2VydmljZRJFCgRuYW1lGAEgASgJQjHgQQL6QSsKKW1lcmNoYW50YXBpLmdv'
     'b2dsZWFwaXMuY29tL1Rlcm1zT2ZTZXJ2aWNlUgRuYW1lEiQKC3JlZ2lvbl9jb2RlGAMgASgJQg'
-    'PgQQJSCnJlZ2lvbkNvZGUayAEKEUFkZEFjY291bnRTZXJ2aWNlEkkKE2FjY291bnRfYWdncmVn'
-    'YXRpb24YAiABKAsyFi5nb29nbGUucHJvdG9idWYuRW1wdHlIAFISYWNjb3VudEFnZ3JlZ2F0aW'
-    '9uEksKCHByb3ZpZGVyGAEgASgJQirgQQH6QSQKIm1lcmNoYW50YXBpLmdvb2dsZWFwaXMuY29t'
-    'L0FjY291bnRIAVIIcHJvdmlkZXKIAQFCDgoMc2VydmljZV90eXBlQgsKCV9wcm92aWRlckIaCh'
-    'hfYWNjZXB0X3Rlcm1zX29mX3NlcnZpY2U=');
+    'PgQQJSCnJlZ2lvbkNvZGUa7gEKEUFkZEFjY291bnRTZXJ2aWNlEm8KE2FjY291bnRfYWdncmVn'
+    'YXRpb24YZyABKAsyPC5nb29nbGUuc2hvcHBpbmcubWVyY2hhbnQuYWNjb3VudHMudjFiZXRhLk'
+    'FjY291bnRBZ2dyZWdhdGlvbkgAUhJhY2NvdW50QWdncmVnYXRpb24SSwoIcHJvdmlkZXIYASAB'
+    'KAlCKuBBAfpBJAoibWVyY2hhbnRhcGkuZ29vZ2xlYXBpcy5jb20vQWNjb3VudEgBUghwcm92aW'
+    'RlcogBAUIOCgxzZXJ2aWNlX3R5cGVCCwoJX3Byb3ZpZGVyQhoKGF9hY2NlcHRfdGVybXNfb2Zf'
+    'c2VydmljZQ==');
 
 @$core.Deprecated('Use deleteAccountRequestDescriptor instead')
 const DeleteAccountRequest$json = {

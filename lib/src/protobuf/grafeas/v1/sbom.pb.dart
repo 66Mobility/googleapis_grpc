@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'common.pb.dart' as $554;
-import 'intoto_statement.pb.dart' as $559;
+import 'common.pb.dart' as $556;
+import 'intoto_statement.pb.dart' as $561;
 
 /// The note representing an SBOM reference.
 class SBOMReferenceNote extends $pb.GeneratedMessage {
@@ -92,7 +92,7 @@ class SBOMReferenceOccurrence extends $pb.GeneratedMessage {
   factory SBOMReferenceOccurrence({
     SbomReferenceIntotoPayload? payload,
     $core.String? payloadType,
-    $core.Iterable<$554.EnvelopeSignature>? signatures,
+    $core.Iterable<$556.EnvelopeSignature>? signatures,
   }) {
     final $result = create();
     if (payload != null) {
@@ -113,7 +113,7 @@ class SBOMReferenceOccurrence extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SBOMReferenceOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..aOM<SbomReferenceIntotoPayload>(1, _omitFieldNames ? '' : 'payload', subBuilder: SbomReferenceIntotoPayload.create)
     ..aOS(2, _omitFieldNames ? '' : 'payloadType')
-    ..pc<$554.EnvelopeSignature>(3, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM, subBuilder: $554.EnvelopeSignature.create)
+    ..pc<$556.EnvelopeSignature>(3, _omitFieldNames ? '' : 'signatures', $pb.PbFieldType.PM, subBuilder: $556.EnvelopeSignature.create)
     ..hasRequiredFields = false
   ;
 
@@ -164,7 +164,7 @@ class SBOMReferenceOccurrence extends $pb.GeneratedMessage {
 
   /// The signatures over the payload.
   @$pb.TagNumber(3)
-  $core.List<$554.EnvelopeSignature> get signatures => $_getList(2);
+  $core.List<$556.EnvelopeSignature> get signatures => $_getList(2);
 }
 
 /// The actual payload that contains the SBOM Reference data.
@@ -175,7 +175,7 @@ class SbomReferenceIntotoPayload extends $pb.GeneratedMessage {
   factory SbomReferenceIntotoPayload({
     $core.String? type,
     $core.String? predicateType,
-    $core.Iterable<$559.Subject>? subject,
+    $core.Iterable<$561.Subject>? subject,
     SbomReferenceIntotoPredicate? predicate,
   }) {
     final $result = create();
@@ -200,7 +200,7 @@ class SbomReferenceIntotoPayload extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SbomReferenceIntotoPayload', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : '_type', protoName: 'type')
     ..aOS(2, _omitFieldNames ? '' : 'predicateType')
-    ..pc<$559.Subject>(3, _omitFieldNames ? '' : 'subject', $pb.PbFieldType.PM, subBuilder: $559.Subject.create)
+    ..pc<$561.Subject>(3, _omitFieldNames ? '' : 'subject', $pb.PbFieldType.PM, subBuilder: $561.Subject.create)
     ..aOM<SbomReferenceIntotoPredicate>(4, _omitFieldNames ? '' : 'predicate', subBuilder: SbomReferenceIntotoPredicate.create)
     ..hasRequiredFields = false
   ;
@@ -249,7 +249,7 @@ class SbomReferenceIntotoPayload extends $pb.GeneratedMessage {
   /// Set of software artifacts that the attestation applies to. Each element
   /// represents a single software artifact.
   @$pb.TagNumber(3)
-  $core.List<$559.Subject> get subject => $_getList(2);
+  $core.List<$561.Subject> get subject => $_getList(2);
 
   /// Additional parameters of the Predicate. Includes the actual data about the
   /// SBOM.

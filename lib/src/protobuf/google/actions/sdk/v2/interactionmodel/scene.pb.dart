@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'conditional_event.pb.dart' as $279;
-import 'event_handler.pb.dart' as $276;
-import 'intent_event.pb.dart' as $278;
-import 'slot.pb.dart' as $280;
+import 'conditional_event.pb.dart' as $280;
+import 'event_handler.pb.dart' as $277;
+import 'intent_event.pb.dart' as $279;
+import 'slot.pb.dart' as $281;
 
 /// Scene is the basic unit of control flow when designing a conversation. They
 /// can be chained together with other scenes, generate prompts for the end user,
@@ -24,11 +24,11 @@ import 'slot.pb.dart' as $280;
 /// The scene name is specified in the name of the file.
 class Scene extends $pb.GeneratedMessage {
   factory Scene({
-    $276.EventHandler? onEnter,
-    $core.Iterable<$278.IntentEvent>? intentEvents,
-    $core.Iterable<$279.ConditionalEvent>? conditionalEvents,
-    $core.Iterable<$280.Slot>? slots,
-    $276.EventHandler? onSlotUpdated,
+    $277.EventHandler? onEnter,
+    $core.Iterable<$279.IntentEvent>? intentEvents,
+    $core.Iterable<$280.ConditionalEvent>? conditionalEvents,
+    $core.Iterable<$281.Slot>? slots,
+    $277.EventHandler? onSlotUpdated,
   }) {
     final $result = create();
     if (onEnter != null) {
@@ -53,11 +53,11 @@ class Scene extends $pb.GeneratedMessage {
   factory Scene.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Scene', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.interactionmodel'), createEmptyInstance: create)
-    ..aOM<$276.EventHandler>(1, _omitFieldNames ? '' : 'onEnter', subBuilder: $276.EventHandler.create)
-    ..pc<$278.IntentEvent>(2, _omitFieldNames ? '' : 'intentEvents', $pb.PbFieldType.PM, subBuilder: $278.IntentEvent.create)
-    ..pc<$279.ConditionalEvent>(3, _omitFieldNames ? '' : 'conditionalEvents', $pb.PbFieldType.PM, subBuilder: $279.ConditionalEvent.create)
-    ..pc<$280.Slot>(4, _omitFieldNames ? '' : 'slots', $pb.PbFieldType.PM, subBuilder: $280.Slot.create)
-    ..aOM<$276.EventHandler>(5, _omitFieldNames ? '' : 'onSlotUpdated', subBuilder: $276.EventHandler.create)
+    ..aOM<$277.EventHandler>(1, _omitFieldNames ? '' : 'onEnter', subBuilder: $277.EventHandler.create)
+    ..pc<$279.IntentEvent>(2, _omitFieldNames ? '' : 'intentEvents', $pb.PbFieldType.PM, subBuilder: $279.IntentEvent.create)
+    ..pc<$280.ConditionalEvent>(3, _omitFieldNames ? '' : 'conditionalEvents', $pb.PbFieldType.PM, subBuilder: $280.ConditionalEvent.create)
+    ..pc<$281.Slot>(4, _omitFieldNames ? '' : 'slots', $pb.PbFieldType.PM, subBuilder: $281.Slot.create)
+    ..aOM<$277.EventHandler>(5, _omitFieldNames ? '' : 'onSlotUpdated', subBuilder: $277.EventHandler.create)
     ..hasRequiredFields = false
   ;
 
@@ -84,15 +84,15 @@ class Scene extends $pb.GeneratedMessage {
 
   /// Handler to invoke when transitioning into this scene.
   @$pb.TagNumber(1)
-  $276.EventHandler get onEnter => $_getN(0);
+  $277.EventHandler get onEnter => $_getN(0);
   @$pb.TagNumber(1)
-  set onEnter($276.EventHandler v) { setField(1, v); }
+  set onEnter($277.EventHandler v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOnEnter() => $_has(0);
   @$pb.TagNumber(1)
   void clearOnEnter() => clearField(1);
   @$pb.TagNumber(1)
-  $276.EventHandler ensureOnEnter() => $_ensure(0);
+  $277.EventHandler ensureOnEnter() => $_ensure(0);
 
   /// The list of events that trigger based on intents. These events can
   /// be triggered at any time after the on_load Handler has been called.
@@ -101,34 +101,34 @@ class Scene extends $pb.GeneratedMessage {
   /// have the same intents or their triggering phrases. Intent names must be
   /// unique within a scene.
   @$pb.TagNumber(2)
-  $core.List<$278.IntentEvent> get intentEvents => $_getList(1);
+  $core.List<$279.IntentEvent> get intentEvents => $_getList(1);
 
   /// The list of events to trigger based on conditional statements. These are
   /// evaluated after the form has been filled or immediately after on_load if
   /// this scene does not have a form (evaluation is only done once). Only the
   /// first matching event will be triggered.
   @$pb.TagNumber(3)
-  $core.List<$279.ConditionalEvent> get conditionalEvents => $_getList(2);
+  $core.List<$280.ConditionalEvent> get conditionalEvents => $_getList(2);
 
   /// Ordered list of slots. Each slot defines the type of data
   /// that it will resolve and configuration to customize the experience of this
   /// resolution (e.g. prompts).
   @$pb.TagNumber(4)
-  $core.List<$280.Slot> get slots => $_getList(3);
+  $core.List<$281.Slot> get slots => $_getList(3);
 
   /// Handler called when there is a change in state of a slot not
   /// caused by updates within another Handler. This allows slots to be
   /// invalidated, the scene invalidated or other changes to scene state.
   @$pb.TagNumber(5)
-  $276.EventHandler get onSlotUpdated => $_getN(4);
+  $277.EventHandler get onSlotUpdated => $_getN(4);
   @$pb.TagNumber(5)
-  set onSlotUpdated($276.EventHandler v) { setField(5, v); }
+  set onSlotUpdated($277.EventHandler v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasOnSlotUpdated() => $_has(4);
   @$pb.TagNumber(5)
   void clearOnSlotUpdated() => clearField(5);
   @$pb.TagNumber(5)
-  $276.EventHandler ensureOnSlotUpdated() => $_ensure(4);
+  $277.EventHandler ensureOnSlotUpdated() => $_ensure(4);
 }
 
 

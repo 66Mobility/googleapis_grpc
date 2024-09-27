@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../type/expr.pb.dart' as $398;
+import '../../type/expr.pb.dart' as $399;
 
 /// A deny rule in an IAM deny policy.
 class DenyRule extends $pb.GeneratedMessage {
@@ -22,7 +22,7 @@ class DenyRule extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? exceptionPrincipals,
     $core.Iterable<$core.String>? deniedPermissions,
     $core.Iterable<$core.String>? exceptionPermissions,
-    $398.Expr? denialCondition,
+    $399.Expr? denialCondition,
   }) {
     final $result = create();
     if (deniedPrincipals != null) {
@@ -51,7 +51,7 @@ class DenyRule extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'exceptionPrincipals')
     ..pPS(3, _omitFieldNames ? '' : 'deniedPermissions')
     ..pPS(4, _omitFieldNames ? '' : 'exceptionPermissions')
-    ..aOM<$398.Expr>(5, _omitFieldNames ? '' : 'denialCondition', subBuilder: $398.Expr.create)
+    ..aOM<$399.Expr>(5, _omitFieldNames ? '' : 'denialCondition', subBuilder: $399.Expr.create)
     ..hasRequiredFields = false
   ;
 
@@ -159,15 +159,15 @@ class DenyRule extends $pb.GeneratedMessage {
   ///  tags](https://cloud.google.com/iam/help/conditions/resource-tags). Other
   ///  functions and operators are not supported.
   @$pb.TagNumber(5)
-  $398.Expr get denialCondition => $_getN(4);
+  $399.Expr get denialCondition => $_getN(4);
   @$pb.TagNumber(5)
-  set denialCondition($398.Expr v) { setField(5, v); }
+  set denialCondition($399.Expr v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDenialCondition() => $_has(4);
   @$pb.TagNumber(5)
   void clearDenialCondition() => clearField(5);
   @$pb.TagNumber(5)
-  $398.Expr ensureDenialCondition() => $_ensure(4);
+  $399.Expr ensureDenialCondition() => $_ensure(4);
 }
 
 

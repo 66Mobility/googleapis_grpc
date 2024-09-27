@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/date.pb.dart' as $326;
-import 'termsofservicekind.pbenum.dart' as $542;
+import '../../../../type/date.pb.dart' as $327;
+import 'termsofservicekind.pbenum.dart' as $544;
 
 ///  This resource represents the agreement state for a given account and terms of
 ///  service kind.
@@ -42,7 +42,7 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   factory TermsOfServiceAgreementState({
     $core.String? name,
     $core.String? regionCode,
-    $542.TermsOfServiceKind? termsOfServiceKind,
+    $544.TermsOfServiceKind? termsOfServiceKind,
     Accepted? accepted,
     Required? required,
   }) {
@@ -71,7 +71,7 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TermsOfServiceAgreementState', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'regionCode')
-    ..e<$542.TermsOfServiceKind>(3, _omitFieldNames ? '' : 'termsOfServiceKind', $pb.PbFieldType.OE, defaultOrMaker: $542.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED, valueOf: $542.TermsOfServiceKind.valueOf, enumValues: $542.TermsOfServiceKind.values)
+    ..e<$544.TermsOfServiceKind>(3, _omitFieldNames ? '' : 'termsOfServiceKind', $pb.PbFieldType.OE, defaultOrMaker: $544.TermsOfServiceKind.TERMS_OF_SERVICE_KIND_UNSPECIFIED, valueOf: $544.TermsOfServiceKind.valueOf, enumValues: $544.TermsOfServiceKind.values)
     ..aOM<Accepted>(4, _omitFieldNames ? '' : 'accepted', subBuilder: Accepted.create)
     ..aOM<Required>(5, _omitFieldNames ? '' : 'required', subBuilder: Required.create)
     ..hasRequiredFields = false
@@ -100,6 +100,8 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
 
   /// Identifier. The resource name of the terms of service version.
   /// Format: `accounts/{account}/termsOfServiceAgreementState/{identifier}`
+  /// The identifier format is: `{TermsOfServiceKind}-{country}`
+  /// For example, an identifier could be: `MERCHANT_CENTER-US`
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -122,9 +124,9 @@ class TermsOfServiceAgreementState extends $pb.GeneratedMessage {
 
   /// Terms of Service kind associated with the particular version.
   @$pb.TagNumber(3)
-  $542.TermsOfServiceKind get termsOfServiceKind => $_getN(2);
+  $544.TermsOfServiceKind get termsOfServiceKind => $_getN(2);
   @$pb.TagNumber(3)
-  set termsOfServiceKind($542.TermsOfServiceKind v) { setField(3, v); }
+  set termsOfServiceKind($544.TermsOfServiceKind v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasTermsOfServiceKind() => $_has(2);
   @$pb.TagNumber(3)
@@ -161,7 +163,7 @@ class Accepted extends $pb.GeneratedMessage {
   factory Accepted({
     $core.String? termsOfService,
     $core.String? acceptedBy,
-    $326.Date? validUntil,
+    $327.Date? validUntil,
   }) {
     final $result = create();
     if (termsOfService != null) {
@@ -182,7 +184,7 @@ class Accepted extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Accepted', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.accounts.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'termsOfService')
     ..aOS(2, _omitFieldNames ? '' : 'acceptedBy')
-    ..aOM<$326.Date>(3, _omitFieldNames ? '' : 'validUntil', subBuilder: $326.Date.create)
+    ..aOM<$327.Date>(3, _omitFieldNames ? '' : 'validUntil', subBuilder: $327.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -236,15 +238,15 @@ class Accepted extends $pb.GeneratedMessage {
   /// [TermsOfService](google.shopping.merchant.accounts.v1main.TermsOfService)
   /// is found in the [Required](Required) message.
   @$pb.TagNumber(3)
-  $326.Date get validUntil => $_getN(2);
+  $327.Date get validUntil => $_getN(2);
   @$pb.TagNumber(3)
-  set validUntil($326.Date v) { setField(3, v); }
+  set validUntil($327.Date v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasValidUntil() => $_has(2);
   @$pb.TagNumber(3)
   void clearValidUntil() => clearField(3);
   @$pb.TagNumber(3)
-  $326.Date ensureValidUntil() => $_ensure(2);
+  $327.Date ensureValidUntil() => $_ensure(2);
 }
 
 /// Describes the terms of service which are required to be accepted.
@@ -361,6 +363,7 @@ class GetTermsOfServiceAgreementStateRequest extends $pb.GeneratedMessage {
 
   /// Required. The resource name of the terms of service version.
   /// Format: `accounts/{account}/termsOfServiceAgreementState/{identifier}`
+  /// The identifier format is: `{TermsOfServiceKind}-{country}`
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)

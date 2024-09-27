@@ -14,14 +14,14 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'widget.pb.dart' as $526;
+import 'widget.pb.dart' as $527;
 
 /// A basic layout divides the available space into vertical columns of equal
 /// width and arranges a list of widgets using a row-first strategy.
 class GridLayout extends $pb.GeneratedMessage {
   factory GridLayout({
     $fixnum.Int64? columns,
-    $core.Iterable<$526.Widget>? widgets,
+    $core.Iterable<$527.Widget>? widgets,
   }) {
     final $result = create();
     if (columns != null) {
@@ -38,7 +38,7 @@ class GridLayout extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GridLayout', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'columns')
-    ..pc<$526.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $526.Widget.create)
+    ..pc<$527.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $527.Widget.create)
     ..hasRequiredFields = false
   ;
 
@@ -76,7 +76,7 @@ class GridLayout extends $pb.GeneratedMessage {
 
   /// The informational elements that are arranged into the columns row-first.
   @$pb.TagNumber(2)
-  $core.List<$526.Widget> get widgets => $_getList(1);
+  $core.List<$527.Widget> get widgets => $_getList(1);
 }
 
 /// A single tile in the mosaic. The placement and size of the tile are
@@ -87,7 +87,7 @@ class MosaicLayout_Tile extends $pb.GeneratedMessage {
     $core.int? yPos,
     $core.int? width,
     $core.int? height,
-    $526.Widget? widget,
+    $527.Widget? widget,
   }) {
     final $result = create();
     if (xPos != null) {
@@ -116,7 +116,7 @@ class MosaicLayout_Tile extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'yPos', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'width', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'height', $pb.PbFieldType.O3)
-    ..aOM<$526.Widget>(5, _omitFieldNames ? '' : 'widget', subBuilder: $526.Widget.create)
+    ..aOM<$527.Widget>(5, _omitFieldNames ? '' : 'widget', subBuilder: $527.Widget.create)
     ..hasRequiredFields = false
   ;
 
@@ -188,15 +188,15 @@ class MosaicLayout_Tile extends $pb.GeneratedMessage {
 
   /// The informational widget contained in the tile. For example an `XyChart`.
   @$pb.TagNumber(5)
-  $526.Widget get widget => $_getN(4);
+  $527.Widget get widget => $_getN(4);
   @$pb.TagNumber(5)
-  set widget($526.Widget v) { setField(5, v); }
+  set widget($527.Widget v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasWidget() => $_has(4);
   @$pb.TagNumber(5)
   void clearWidget() => clearField(5);
   @$pb.TagNumber(5)
-  $526.Widget ensureWidget() => $_ensure(4);
+  $527.Widget ensureWidget() => $_ensure(4);
 }
 
 /// A mosaic layout divides the available space into a grid of blocks, and
@@ -267,7 +267,7 @@ class MosaicLayout extends $pb.GeneratedMessage {
 class RowLayout_Row extends $pb.GeneratedMessage {
   factory RowLayout_Row({
     $fixnum.Int64? weight,
-    $core.Iterable<$526.Widget>? widgets,
+    $core.Iterable<$527.Widget>? widgets,
   }) {
     final $result = create();
     if (weight != null) {
@@ -284,7 +284,7 @@ class RowLayout_Row extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RowLayout.Row', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'weight')
-    ..pc<$526.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $526.Widget.create)
+    ..pc<$527.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $527.Widget.create)
     ..hasRequiredFields = false
   ;
 
@@ -324,7 +324,7 @@ class RowLayout_Row extends $pb.GeneratedMessage {
 
   /// The display widgets arranged horizontally in this row.
   @$pb.TagNumber(2)
-  $core.List<$526.Widget> get widgets => $_getList(1);
+  $core.List<$527.Widget> get widgets => $_getList(1);
 }
 
 /// A simplified layout that divides the available space into rows
@@ -378,7 +378,7 @@ class RowLayout extends $pb.GeneratedMessage {
 class ColumnLayout_Column extends $pb.GeneratedMessage {
   factory ColumnLayout_Column({
     $fixnum.Int64? weight,
-    $core.Iterable<$526.Widget>? widgets,
+    $core.Iterable<$527.Widget>? widgets,
   }) {
     final $result = create();
     if (weight != null) {
@@ -395,7 +395,7 @@ class ColumnLayout_Column extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ColumnLayout.Column', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.monitoring.dashboard.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'weight')
-    ..pc<$526.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $526.Widget.create)
+    ..pc<$527.Widget>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $527.Widget.create)
     ..hasRequiredFields = false
   ;
 
@@ -435,7 +435,7 @@ class ColumnLayout_Column extends $pb.GeneratedMessage {
 
   /// The display widgets arranged vertically in this column.
   @$pb.TagNumber(2)
-  $core.List<$526.Widget> get widgets => $_getList(1);
+  $core.List<$527.Widget> get widgets => $_getList(1);
 }
 
 /// A simplified layout that divides the available space into vertical columns

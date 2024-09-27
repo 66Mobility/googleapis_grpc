@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'account_linking.pb.dart' as $288;
-import 'localized_settings.pb.dart' as $287;
+import 'account_linking.pb.dart' as $289;
+import 'localized_settings.pb.dart' as $288;
 import 'settings.pbenum.dart';
-import 'surface.pb.dart' as $286;
+import 'surface.pb.dart' as $287;
 
 export 'settings.pbenum.dart';
 
@@ -34,10 +34,10 @@ class Settings extends $pb.GeneratedMessage {
     $core.bool? designedForFamily,
     $core.bool? containsAlcoholOrTobaccoContent,
     $core.bool? keepsMicOpen,
-    $286.SurfaceRequirements? surfaceRequirements,
+    $287.SurfaceRequirements? surfaceRequirements,
     $core.String? testingInstructions,
-    $287.LocalizedSettings? localizedSettings,
-    $288.AccountLinking? accountLinking,
+    $288.LocalizedSettings? localizedSettings,
+    $289.AccountLinking? accountLinking,
     $core.bool? usesHomeStorage,
     $core.Iterable<$core.String>? selectedAndroidApps,
   }) {
@@ -111,10 +111,10 @@ class Settings extends $pb.GeneratedMessage {
     ..aOB(9, _omitFieldNames ? '' : 'designedForFamily')
     ..aOB(11, _omitFieldNames ? '' : 'containsAlcoholOrTobaccoContent')
     ..aOB(12, _omitFieldNames ? '' : 'keepsMicOpen')
-    ..aOM<$286.SurfaceRequirements>(13, _omitFieldNames ? '' : 'surfaceRequirements', subBuilder: $286.SurfaceRequirements.create)
+    ..aOM<$287.SurfaceRequirements>(13, _omitFieldNames ? '' : 'surfaceRequirements', subBuilder: $287.SurfaceRequirements.create)
     ..aOS(14, _omitFieldNames ? '' : 'testingInstructions')
-    ..aOM<$287.LocalizedSettings>(15, _omitFieldNames ? '' : 'localizedSettings', subBuilder: $287.LocalizedSettings.create)
-    ..aOM<$288.AccountLinking>(16, _omitFieldNames ? '' : 'accountLinking', subBuilder: $288.AccountLinking.create)
+    ..aOM<$288.LocalizedSettings>(15, _omitFieldNames ? '' : 'localizedSettings', subBuilder: $288.LocalizedSettings.create)
+    ..aOM<$289.AccountLinking>(16, _omitFieldNames ? '' : 'accountLinking', subBuilder: $289.AccountLinking.create)
     ..aOB(17, _omitFieldNames ? '' : 'usesHomeStorage')
     ..pPS(20, _omitFieldNames ? '' : 'selectedAndroidApps')
     ..hasRequiredFields = false
@@ -274,15 +274,15 @@ class Settings extends $pb.GeneratedMessage {
   /// The surface requirements that a client surface must support to invoke
   /// Actions in this project.
   @$pb.TagNumber(13)
-  $286.SurfaceRequirements get surfaceRequirements => $_getN(11);
+  $287.SurfaceRequirements get surfaceRequirements => $_getN(11);
   @$pb.TagNumber(13)
-  set surfaceRequirements($286.SurfaceRequirements v) { setField(13, v); }
+  set surfaceRequirements($287.SurfaceRequirements v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasSurfaceRequirements() => $_has(11);
   @$pb.TagNumber(13)
   void clearSurfaceRequirements() => clearField(13);
   @$pb.TagNumber(13)
-  $286.SurfaceRequirements ensureSurfaceRequirements() => $_ensure(11);
+  $287.SurfaceRequirements ensureSurfaceRequirements() => $_ensure(11);
 
   /// Free-form testing instructions for Actions reviewer (for example, account
   /// linking instructions).
@@ -298,28 +298,28 @@ class Settings extends $pb.GeneratedMessage {
   /// Localized settings for the project's default locale. Every additional
   /// locale should have its own settings file in its own directory.
   @$pb.TagNumber(15)
-  $287.LocalizedSettings get localizedSettings => $_getN(13);
+  $288.LocalizedSettings get localizedSettings => $_getN(13);
   @$pb.TagNumber(15)
-  set localizedSettings($287.LocalizedSettings v) { setField(15, v); }
+  set localizedSettings($288.LocalizedSettings v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasLocalizedSettings() => $_has(13);
   @$pb.TagNumber(15)
   void clearLocalizedSettings() => clearField(15);
   @$pb.TagNumber(15)
-  $287.LocalizedSettings ensureLocalizedSettings() => $_ensure(13);
+  $288.LocalizedSettings ensureLocalizedSettings() => $_ensure(13);
 
   /// Allow users to create or link accounts through Google sign-in and/or your
   /// own OAuth service.
   @$pb.TagNumber(16)
-  $288.AccountLinking get accountLinking => $_getN(14);
+  $289.AccountLinking get accountLinking => $_getN(14);
   @$pb.TagNumber(16)
-  set accountLinking($288.AccountLinking v) { setField(16, v); }
+  set accountLinking($289.AccountLinking v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasAccountLinking() => $_has(14);
   @$pb.TagNumber(16)
   void clearAccountLinking() => clearField(16);
   @$pb.TagNumber(16)
-  $288.AccountLinking ensureAccountLinking() => $_ensure(14);
+  $289.AccountLinking ensureAccountLinking() => $_ensure(14);
 
   /// Whether Actions use the home storage feature.
   @$pb.TagNumber(17)

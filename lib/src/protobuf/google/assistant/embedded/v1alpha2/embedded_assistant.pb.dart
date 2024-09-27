@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/latlng.pb.dart' as $324;
+import '../../../type/latlng.pb.dart' as $325;
 import 'embedded_assistant.pbenum.dart';
 
 export 'embedded_assistant.pbenum.dart';
@@ -1349,7 +1349,7 @@ enum DeviceLocation_Type {
 ///     above are specified.
 class DeviceLocation extends $pb.GeneratedMessage {
   factory DeviceLocation({
-    $324.LatLng? coordinates,
+    $325.LatLng? coordinates,
   }) {
     final $result = create();
     if (coordinates != null) {
@@ -1367,7 +1367,7 @@ class DeviceLocation extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeviceLocation', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.assistant.embedded.v1alpha2'), createEmptyInstance: create)
     ..oo(0, [1])
-    ..aOM<$324.LatLng>(1, _omitFieldNames ? '' : 'coordinates', subBuilder: $324.LatLng.create)
+    ..aOM<$325.LatLng>(1, _omitFieldNames ? '' : 'coordinates', subBuilder: $325.LatLng.create)
     ..hasRequiredFields = false
   ;
 
@@ -1397,15 +1397,15 @@ class DeviceLocation extends $pb.GeneratedMessage {
 
   /// Latitude and longitude of device.
   @$pb.TagNumber(1)
-  $324.LatLng get coordinates => $_getN(0);
+  $325.LatLng get coordinates => $_getN(0);
   @$pb.TagNumber(1)
-  set coordinates($324.LatLng v) { setField(1, v); }
+  set coordinates($325.LatLng v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCoordinates() => $_has(0);
   @$pb.TagNumber(1)
   void clearCoordinates() => clearField(1);
   @$pb.TagNumber(1)
-  $324.LatLng ensureCoordinates() => $_ensure(0);
+  $325.LatLng ensureCoordinates() => $_ensure(0);
 }
 
 

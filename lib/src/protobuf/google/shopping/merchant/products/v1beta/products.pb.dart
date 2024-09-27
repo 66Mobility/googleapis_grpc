@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../type/types.pb.dart' as $535;
-import '../../../type/types.pbenum.dart' as $535;
-import 'products_common.pb.dart' as $545;
+import '../../../type/types.pb.dart' as $536;
+import '../../../type/types.pbenum.dart' as $536;
+import 'products_common.pb.dart' as $547;
 
 ///  The processed product, built from multiple [product
 ///  inputs][[google.shopping.content.bundles.Products.ProductInput] after
@@ -34,15 +34,15 @@ import 'products_common.pb.dart' as $545;
 class Product extends $pb.GeneratedMessage {
   factory Product({
     $core.String? name,
-    $535.Channel_ChannelEnum? channel,
+    $536.Channel_ChannelEnum? channel,
     $core.String? offerId,
     $core.String? contentLanguage,
     $core.String? feedLabel,
     $core.String? dataSource,
     $fixnum.Int64? versionNumber,
-    $545.Attributes? attributes,
-    $core.Iterable<$535.CustomAttribute>? customAttributes,
-    $545.ProductStatus? productStatus,
+    $547.Attributes? attributes,
+    $core.Iterable<$536.CustomAttribute>? customAttributes,
+    $547.ProductStatus? productStatus,
   }) {
     final $result = create();
     if (name != null) {
@@ -83,15 +83,15 @@ class Product extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Product', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.shopping.merchant.products.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..e<$535.Channel_ChannelEnum>(2, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $535.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED, valueOf: $535.Channel_ChannelEnum.valueOf, enumValues: $535.Channel_ChannelEnum.values)
+    ..e<$536.Channel_ChannelEnum>(2, _omitFieldNames ? '' : 'channel', $pb.PbFieldType.OE, defaultOrMaker: $536.Channel_ChannelEnum.CHANNEL_ENUM_UNSPECIFIED, valueOf: $536.Channel_ChannelEnum.valueOf, enumValues: $536.Channel_ChannelEnum.values)
     ..aOS(3, _omitFieldNames ? '' : 'offerId')
     ..aOS(4, _omitFieldNames ? '' : 'contentLanguage')
     ..aOS(5, _omitFieldNames ? '' : 'feedLabel')
     ..aOS(6, _omitFieldNames ? '' : 'dataSource')
     ..aInt64(7, _omitFieldNames ? '' : 'versionNumber')
-    ..aOM<$545.Attributes>(8, _omitFieldNames ? '' : 'attributes', subBuilder: $545.Attributes.create)
-    ..pc<$535.CustomAttribute>(9, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $535.CustomAttribute.create)
-    ..aOM<$545.ProductStatus>(10, _omitFieldNames ? '' : 'productStatus', subBuilder: $545.ProductStatus.create)
+    ..aOM<$547.Attributes>(8, _omitFieldNames ? '' : 'attributes', subBuilder: $547.Attributes.create)
+    ..pc<$536.CustomAttribute>(9, _omitFieldNames ? '' : 'customAttributes', $pb.PbFieldType.PM, subBuilder: $536.CustomAttribute.create)
+    ..aOM<$547.ProductStatus>(10, _omitFieldNames ? '' : 'productStatus', subBuilder: $547.ProductStatus.create)
     ..hasRequiredFields = false
   ;
 
@@ -132,9 +132,9 @@ class Product extends $pb.GeneratedMessage {
   /// [channel](https://support.google.com/merchants/answer/7361332) of the
   /// product.
   @$pb.TagNumber(2)
-  $535.Channel_ChannelEnum get channel => $_getN(1);
+  $536.Channel_ChannelEnum get channel => $_getN(1);
   @$pb.TagNumber(2)
-  set channel($535.Channel_ChannelEnum v) { setField(2, v); }
+  set channel($536.Channel_ChannelEnum v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasChannel() => $_has(1);
   @$pb.TagNumber(2)
@@ -211,15 +211,15 @@ class Product extends $pb.GeneratedMessage {
 
   /// Output only. A list of product attributes.
   @$pb.TagNumber(8)
-  $545.Attributes get attributes => $_getN(7);
+  $547.Attributes get attributes => $_getN(7);
   @$pb.TagNumber(8)
-  set attributes($545.Attributes v) { setField(8, v); }
+  set attributes($547.Attributes v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasAttributes() => $_has(7);
   @$pb.TagNumber(8)
   void clearAttributes() => clearField(8);
   @$pb.TagNumber(8)
-  $545.Attributes ensureAttributes() => $_ensure(7);
+  $547.Attributes ensureAttributes() => $_ensure(7);
 
   /// Output only. A list of custom (merchant-provided) attributes. It can also
   /// be used to submit any attribute of the data specification in its generic
@@ -228,20 +228,20 @@ class Product extends $pb.GeneratedMessage {
   /// This is useful for submitting attributes not explicitly exposed by the
   /// API, such as additional attributes used for Buy on Google.
   @$pb.TagNumber(9)
-  $core.List<$535.CustomAttribute> get customAttributes => $_getList(8);
+  $core.List<$536.CustomAttribute> get customAttributes => $_getList(8);
 
   /// Output only. The status of a product, data validation issues, that is,
   /// information about a product computed asynchronously.
   @$pb.TagNumber(10)
-  $545.ProductStatus get productStatus => $_getN(9);
+  $547.ProductStatus get productStatus => $_getN(9);
   @$pb.TagNumber(10)
-  set productStatus($545.ProductStatus v) { setField(10, v); }
+  set productStatus($547.ProductStatus v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasProductStatus() => $_has(9);
   @$pb.TagNumber(10)
   void clearProductStatus() => clearField(10);
   @$pb.TagNumber(10)
-  $545.ProductStatus ensureProductStatus() => $_ensure(9);
+  $547.ProductStatus ensureProductStatus() => $_ensure(9);
 }
 
 /// Request message for the GetProduct method.

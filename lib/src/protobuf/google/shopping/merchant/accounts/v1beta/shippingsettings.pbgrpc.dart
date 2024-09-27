@@ -15,20 +15,20 @@ import 'dart:core' as $core;
 import 'package:grpc/service_api.dart' as $grpc;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'shippingsettings.pb.dart' as $226;
+import 'shippingsettings.pb.dart' as $227;
 
 export 'shippingsettings.pb.dart';
 
 @$pb.GrpcServiceName('google.shopping.merchant.accounts.v1beta.ShippingSettingsService')
 class ShippingSettingsServiceClient extends $grpc.Client {
-  static final _$getShippingSettings = $grpc.ClientMethod<$226.GetShippingSettingsRequest, $226.ShippingSettings>(
+  static final _$getShippingSettings = $grpc.ClientMethod<$227.GetShippingSettingsRequest, $227.ShippingSettings>(
       '/google.shopping.merchant.accounts.v1beta.ShippingSettingsService/GetShippingSettings',
-      ($226.GetShippingSettingsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $226.ShippingSettings.fromBuffer(value));
-  static final _$insertShippingSettings = $grpc.ClientMethod<$226.InsertShippingSettingsRequest, $226.ShippingSettings>(
+      ($227.GetShippingSettingsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $227.ShippingSettings.fromBuffer(value));
+  static final _$insertShippingSettings = $grpc.ClientMethod<$227.InsertShippingSettingsRequest, $227.ShippingSettings>(
       '/google.shopping.merchant.accounts.v1beta.ShippingSettingsService/InsertShippingSettings',
-      ($226.InsertShippingSettingsRequest value) => value.writeToBuffer(),
-      ($core.List<$core.int> value) => $226.ShippingSettings.fromBuffer(value));
+      ($227.InsertShippingSettingsRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $227.ShippingSettings.fromBuffer(value));
 
   ShippingSettingsServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -36,11 +36,11 @@ class ShippingSettingsServiceClient extends $grpc.Client {
       : super(channel, options: options,
         interceptors: interceptors);
 
-  $grpc.ResponseFuture<$226.ShippingSettings> getShippingSettings($226.GetShippingSettingsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$227.ShippingSettings> getShippingSettings($227.GetShippingSettingsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getShippingSettings, request, options: options);
   }
 
-  $grpc.ResponseFuture<$226.ShippingSettings> insertShippingSettings($226.InsertShippingSettingsRequest request, {$grpc.CallOptions? options}) {
+  $grpc.ResponseFuture<$227.ShippingSettings> insertShippingSettings($227.InsertShippingSettingsRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$insertShippingSettings, request, options: options);
   }
 }
@@ -50,30 +50,30 @@ abstract class ShippingSettingsServiceBase extends $grpc.Service {
   $core.String get $name => 'google.shopping.merchant.accounts.v1beta.ShippingSettingsService';
 
   ShippingSettingsServiceBase() {
-    $addMethod($grpc.ServiceMethod<$226.GetShippingSettingsRequest, $226.ShippingSettings>(
+    $addMethod($grpc.ServiceMethod<$227.GetShippingSettingsRequest, $227.ShippingSettings>(
         'GetShippingSettings',
         getShippingSettings_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $226.GetShippingSettingsRequest.fromBuffer(value),
-        ($226.ShippingSettings value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$226.InsertShippingSettingsRequest, $226.ShippingSettings>(
+        ($core.List<$core.int> value) => $227.GetShippingSettingsRequest.fromBuffer(value),
+        ($227.ShippingSettings value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$227.InsertShippingSettingsRequest, $227.ShippingSettings>(
         'InsertShippingSettings',
         insertShippingSettings_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $226.InsertShippingSettingsRequest.fromBuffer(value),
-        ($226.ShippingSettings value) => value.writeToBuffer()));
+        ($core.List<$core.int> value) => $227.InsertShippingSettingsRequest.fromBuffer(value),
+        ($227.ShippingSettings value) => value.writeToBuffer()));
   }
 
-  $async.Future<$226.ShippingSettings> getShippingSettings_Pre($grpc.ServiceCall call, $async.Future<$226.GetShippingSettingsRequest> request) async {
+  $async.Future<$227.ShippingSettings> getShippingSettings_Pre($grpc.ServiceCall call, $async.Future<$227.GetShippingSettingsRequest> request) async {
     return getShippingSettings(call, await request);
   }
 
-  $async.Future<$226.ShippingSettings> insertShippingSettings_Pre($grpc.ServiceCall call, $async.Future<$226.InsertShippingSettingsRequest> request) async {
+  $async.Future<$227.ShippingSettings> insertShippingSettings_Pre($grpc.ServiceCall call, $async.Future<$227.InsertShippingSettingsRequest> request) async {
     return insertShippingSettings(call, await request);
   }
 
-  $async.Future<$226.ShippingSettings> getShippingSettings($grpc.ServiceCall call, $226.GetShippingSettingsRequest request);
-  $async.Future<$226.ShippingSettings> insertShippingSettings($grpc.ServiceCall call, $226.InsertShippingSettingsRequest request);
+  $async.Future<$227.ShippingSettings> getShippingSettings($grpc.ServiceCall call, $227.GetShippingSettingsRequest request);
+  $async.Future<$227.ShippingSettings> insertShippingSettings($grpc.ServiceCall call, $227.InsertShippingSettingsRequest request);
 }

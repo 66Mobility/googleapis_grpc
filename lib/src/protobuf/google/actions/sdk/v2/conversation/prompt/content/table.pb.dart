@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'image.pb.dart' as $308;
-import 'link.pb.dart' as $309;
+import 'image.pb.dart' as $309;
+import 'link.pb.dart' as $310;
 import 'table.pbenum.dart';
 
 export 'table.pbenum.dart';
@@ -24,10 +24,10 @@ class Table extends $pb.GeneratedMessage {
   factory Table({
     $core.String? title,
     $core.String? subtitle,
-    $308.Image? image,
+    $309.Image? image,
     $core.Iterable<TableColumn>? columns,
     $core.Iterable<TableRow>? rows,
-    $309.Link? button,
+    $310.Link? button,
   }) {
     final $result = create();
     if (title != null) {
@@ -57,10 +57,10 @@ class Table extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Table', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.actions.sdk.v2.conversation'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
-    ..aOM<$308.Image>(4, _omitFieldNames ? '' : 'image', subBuilder: $308.Image.create)
+    ..aOM<$309.Image>(4, _omitFieldNames ? '' : 'image', subBuilder: $309.Image.create)
     ..pc<TableColumn>(5, _omitFieldNames ? '' : 'columns', $pb.PbFieldType.PM, subBuilder: TableColumn.create)
     ..pc<TableRow>(6, _omitFieldNames ? '' : 'rows', $pb.PbFieldType.PM, subBuilder: TableRow.create)
-    ..aOM<$309.Link>(7, _omitFieldNames ? '' : 'button', subBuilder: $309.Link.create)
+    ..aOM<$310.Link>(7, _omitFieldNames ? '' : 'button', subBuilder: $310.Link.create)
     ..hasRequiredFields = false
   ;
 
@@ -107,15 +107,15 @@ class Table extends $pb.GeneratedMessage {
 
   /// Image associated with the table. Optional.
   @$pb.TagNumber(4)
-  $308.Image get image => $_getN(2);
+  $309.Image get image => $_getN(2);
   @$pb.TagNumber(4)
-  set image($308.Image v) { setField(4, v); }
+  set image($309.Image v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImage() => $_has(2);
   @$pb.TagNumber(4)
   void clearImage() => clearField(4);
   @$pb.TagNumber(4)
-  $308.Image ensureImage() => $_ensure(2);
+  $309.Image ensureImage() => $_ensure(2);
 
   /// Headers and alignment of columns.
   @$pb.TagNumber(5)
@@ -131,15 +131,15 @@ class Table extends $pb.GeneratedMessage {
 
   /// Button.
   @$pb.TagNumber(7)
-  $309.Link get button => $_getN(5);
+  $310.Link get button => $_getN(5);
   @$pb.TagNumber(7)
-  set button($309.Link v) { setField(7, v); }
+  set button($310.Link v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasButton() => $_has(5);
   @$pb.TagNumber(7)
   void clearButton() => clearField(7);
   @$pb.TagNumber(7)
-  $309.Link ensureButton() => $_ensure(5);
+  $310.Link ensureButton() => $_ensure(5);
 }
 
 /// Describes a column in a table.

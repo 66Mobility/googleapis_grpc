@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'contextual_addon.pbenum.dart';
-import 'widgets.pb.dart' as $407;
+import 'widgets.pb.dart' as $408;
 
 export 'contextual_addon.pbenum.dart';
 
@@ -123,7 +123,7 @@ class ContextualAddOnMarkup_Card_CardHeader extends $pb.GeneratedMessage {
 class ContextualAddOnMarkup_Card_Section extends $pb.GeneratedMessage {
   factory ContextualAddOnMarkup_Card_Section({
     $core.String? header,
-    $core.Iterable<$407.WidgetMarkup>? widgets,
+    $core.Iterable<$408.WidgetMarkup>? widgets,
   }) {
     final $result = create();
     if (header != null) {
@@ -140,7 +140,7 @@ class ContextualAddOnMarkup_Card_Section extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContextualAddOnMarkup.Card.Section', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'header')
-    ..pc<$407.WidgetMarkup>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $407.WidgetMarkup.create)
+    ..pc<$408.WidgetMarkup>(2, _omitFieldNames ? '' : 'widgets', $pb.PbFieldType.PM, subBuilder: $408.WidgetMarkup.create)
     ..hasRequiredFields = false
   ;
 
@@ -185,7 +185,7 @@ class ContextualAddOnMarkup_Card_Section extends $pb.GeneratedMessage {
 
   /// A section must contain at least one widget.
   @$pb.TagNumber(2)
-  $core.List<$407.WidgetMarkup> get widgets => $_getList(1);
+  $core.List<$408.WidgetMarkup> get widgets => $_getList(1);
 }
 
 ///  A card action is
@@ -197,7 +197,7 @@ class ContextualAddOnMarkup_Card_Section extends $pb.GeneratedMessage {
 class ContextualAddOnMarkup_Card_CardAction extends $pb.GeneratedMessage {
   factory ContextualAddOnMarkup_Card_CardAction({
     $core.String? actionLabel,
-    $407.WidgetMarkup_OnClick? onClick,
+    $408.WidgetMarkup_OnClick? onClick,
   }) {
     final $result = create();
     if (actionLabel != null) {
@@ -214,7 +214,7 @@ class ContextualAddOnMarkup_Card_CardAction extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContextualAddOnMarkup.Card.CardAction', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'actionLabel')
-    ..aOM<$407.WidgetMarkup_OnClick>(2, _omitFieldNames ? '' : 'onClick', subBuilder: $407.WidgetMarkup_OnClick.create)
+    ..aOM<$408.WidgetMarkup_OnClick>(2, _omitFieldNames ? '' : 'onClick', subBuilder: $408.WidgetMarkup_OnClick.create)
     ..hasRequiredFields = false
   ;
 
@@ -251,15 +251,15 @@ class ContextualAddOnMarkup_Card_CardAction extends $pb.GeneratedMessage {
 
   /// The onclick action for this action item.
   @$pb.TagNumber(2)
-  $407.WidgetMarkup_OnClick get onClick => $_getN(1);
+  $408.WidgetMarkup_OnClick get onClick => $_getN(1);
   @$pb.TagNumber(2)
-  set onClick($407.WidgetMarkup_OnClick v) { setField(2, v); }
+  set onClick($408.WidgetMarkup_OnClick v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasOnClick() => $_has(1);
   @$pb.TagNumber(2)
   void clearOnClick() => clearField(2);
   @$pb.TagNumber(2)
-  $407.WidgetMarkup_OnClick ensureOnClick() => $_ensure(1);
+  $408.WidgetMarkup_OnClick ensureOnClick() => $_ensure(1);
 }
 
 /// A card is a UI element that can contain UI widgets such as text and

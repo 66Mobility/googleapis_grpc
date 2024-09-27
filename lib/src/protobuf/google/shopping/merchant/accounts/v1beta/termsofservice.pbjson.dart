@@ -56,16 +56,16 @@ final $typed_data.Uint8List getTermsOfServiceRequestDescriptor = $convert.base64
 const RetrieveLatestTermsOfServiceRequest$json = {
   '1': 'RetrieveLatestTermsOfServiceRequest',
   '2': [
-    {'1': 'region_code', '3': 1, '4': 1, '5': 9, '10': 'regionCode'},
-    {'1': 'kind', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.TermsOfServiceKind', '10': 'kind'},
+    {'1': 'region_code', '3': 1, '4': 1, '5': 9, '8': {}, '10': 'regionCode'},
+    {'1': 'kind', '3': 2, '4': 1, '5': 14, '6': '.google.shopping.merchant.accounts.v1beta.TermsOfServiceKind', '8': {}, '10': 'kind'},
   ],
 };
 
 /// Descriptor for `RetrieveLatestTermsOfServiceRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List retrieveLatestTermsOfServiceRequestDescriptor = $convert.base64Decode(
-    'CiNSZXRyaWV2ZUxhdGVzdFRlcm1zT2ZTZXJ2aWNlUmVxdWVzdBIfCgtyZWdpb25fY29kZRgBIA'
-    'EoCVIKcmVnaW9uQ29kZRJQCgRraW5kGAIgASgOMjwuZ29vZ2xlLnNob3BwaW5nLm1lcmNoYW50'
-    'LmFjY291bnRzLnYxYmV0YS5UZXJtc09mU2VydmljZUtpbmRSBGtpbmQ=');
+    'CiNSZXRyaWV2ZUxhdGVzdFRlcm1zT2ZTZXJ2aWNlUmVxdWVzdBIkCgtyZWdpb25fY29kZRgBIA'
+    'EoCUID4EECUgpyZWdpb25Db2RlElUKBGtpbmQYAiABKA4yPC5nb29nbGUuc2hvcHBpbmcubWVy'
+    'Y2hhbnQuYWNjb3VudHMudjFiZXRhLlRlcm1zT2ZTZXJ2aWNlS2luZEID4EECUgRraW5k');
 
 @$core.Deprecated('Use acceptTermsOfServiceRequestDescriptor instead')
 const AcceptTermsOfServiceRequest$json = {

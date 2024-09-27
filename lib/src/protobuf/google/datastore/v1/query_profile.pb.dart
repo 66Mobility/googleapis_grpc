@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $263;
-import '../../protobuf/struct.pb.dart' as $260;
+import '../../protobuf/duration.pb.dart' as $264;
+import '../../protobuf/struct.pb.dart' as $261;
 
 /// Explain options for the query.
 class ExplainOptions extends $pb.GeneratedMessage {
@@ -151,7 +151,7 @@ class ExplainMetrics extends $pb.GeneratedMessage {
 /// Planning phase information for the query.
 class PlanSummary extends $pb.GeneratedMessage {
   factory PlanSummary({
-    $core.Iterable<$260.Struct>? indexesUsed,
+    $core.Iterable<$261.Struct>? indexesUsed,
   }) {
     final $result = create();
     if (indexesUsed != null) {
@@ -164,7 +164,7 @@ class PlanSummary extends $pb.GeneratedMessage {
   factory PlanSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PlanSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
-    ..pc<$260.Struct>(1, _omitFieldNames ? '' : 'indexesUsed', $pb.PbFieldType.PM, subBuilder: $260.Struct.create)
+    ..pc<$261.Struct>(1, _omitFieldNames ? '' : 'indexesUsed', $pb.PbFieldType.PM, subBuilder: $261.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -195,16 +195,16 @@ class PlanSummary extends $pb.GeneratedMessage {
   ///    {"query_scope": "Collection", "properties": "(bar ASC, __name__ ASC)"}
   ///  ]
   @$pb.TagNumber(1)
-  $core.List<$260.Struct> get indexesUsed => $_getList(0);
+  $core.List<$261.Struct> get indexesUsed => $_getList(0);
 }
 
 /// Execution statistics for the query.
 class ExecutionStats extends $pb.GeneratedMessage {
   factory ExecutionStats({
     $fixnum.Int64? resultsReturned,
-    $263.Duration? executionDuration,
+    $264.Duration? executionDuration,
     $fixnum.Int64? readOperations,
-    $260.Struct? debugStats,
+    $261.Struct? debugStats,
   }) {
     final $result = create();
     if (resultsReturned != null) {
@@ -227,9 +227,9 @@ class ExecutionStats extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecutionStats', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.datastore.v1'), createEmptyInstance: create)
     ..aInt64(1, _omitFieldNames ? '' : 'resultsReturned')
-    ..aOM<$263.Duration>(3, _omitFieldNames ? '' : 'executionDuration', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(3, _omitFieldNames ? '' : 'executionDuration', subBuilder: $264.Duration.create)
     ..aInt64(4, _omitFieldNames ? '' : 'readOperations')
-    ..aOM<$260.Struct>(5, _omitFieldNames ? '' : 'debugStats', subBuilder: $260.Struct.create)
+    ..aOM<$261.Struct>(5, _omitFieldNames ? '' : 'debugStats', subBuilder: $261.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -267,15 +267,15 @@ class ExecutionStats extends $pb.GeneratedMessage {
 
   /// Total time to execute the query in the backend.
   @$pb.TagNumber(3)
-  $263.Duration get executionDuration => $_getN(1);
+  $264.Duration get executionDuration => $_getN(1);
   @$pb.TagNumber(3)
-  set executionDuration($263.Duration v) { setField(3, v); }
+  set executionDuration($264.Duration v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExecutionDuration() => $_has(1);
   @$pb.TagNumber(3)
   void clearExecutionDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $263.Duration ensureExecutionDuration() => $_ensure(1);
+  $264.Duration ensureExecutionDuration() => $_ensure(1);
 
   /// Total billable read operations.
   @$pb.TagNumber(4)
@@ -300,15 +300,15 @@ class ExecutionStats extends $pb.GeneratedMessage {
   ///    }
   ///  }
   @$pb.TagNumber(5)
-  $260.Struct get debugStats => $_getN(3);
+  $261.Struct get debugStats => $_getN(3);
   @$pb.TagNumber(5)
-  set debugStats($260.Struct v) { setField(5, v); }
+  set debugStats($261.Struct v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDebugStats() => $_has(3);
   @$pb.TagNumber(5)
   void clearDebugStats() => clearField(5);
   @$pb.TagNumber(5)
-  $260.Struct ensureDebugStats() => $_ensure(3);
+  $261.Struct ensureDebugStats() => $_ensure(3);
 }
 
 

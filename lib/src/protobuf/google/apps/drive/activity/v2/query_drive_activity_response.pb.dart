@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/timestamp.pb.dart' as $301;
-import 'action.pb.dart' as $388;
-import 'actor.pb.dart' as $385;
-import 'common.pb.dart' as $386;
-import 'target.pb.dart' as $387;
+import '../../../../protobuf/timestamp.pb.dart' as $302;
+import 'action.pb.dart' as $389;
+import 'actor.pb.dart' as $386;
+import 'common.pb.dart' as $387;
+import 'target.pb.dart' as $388;
 
 /// Response message for querying Drive activity.
 class QueryDriveActivityResponse extends $pb.GeneratedMessage {
@@ -95,12 +95,12 @@ enum DriveActivity_Time {
 /// of a ConsolidationStrategy in the QueryDriveActivityRequest.
 class DriveActivity extends $pb.GeneratedMessage {
   factory DriveActivity({
-    $388.ActionDetail? primaryActionDetail,
-    $core.Iterable<$385.Actor>? actors,
-    $core.Iterable<$388.Action>? actions,
-    $core.Iterable<$387.Target>? targets,
-    $301.Timestamp? timestamp,
-    $386.TimeRange? timeRange,
+    $389.ActionDetail? primaryActionDetail,
+    $core.Iterable<$386.Actor>? actors,
+    $core.Iterable<$389.Action>? actions,
+    $core.Iterable<$388.Target>? targets,
+    $302.Timestamp? timestamp,
+    $387.TimeRange? timeRange,
   }) {
     final $result = create();
     if (primaryActionDetail != null) {
@@ -134,12 +134,12 @@ class DriveActivity extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DriveActivity', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.activity.v2'), createEmptyInstance: create)
     ..oo(0, [6, 7])
-    ..aOM<$388.ActionDetail>(2, _omitFieldNames ? '' : 'primaryActionDetail', subBuilder: $388.ActionDetail.create)
-    ..pc<$385.Actor>(3, _omitFieldNames ? '' : 'actors', $pb.PbFieldType.PM, subBuilder: $385.Actor.create)
-    ..pc<$388.Action>(4, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: $388.Action.create)
-    ..pc<$387.Target>(5, _omitFieldNames ? '' : 'targets', $pb.PbFieldType.PM, subBuilder: $387.Target.create)
-    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'timestamp', subBuilder: $301.Timestamp.create)
-    ..aOM<$386.TimeRange>(7, _omitFieldNames ? '' : 'timeRange', subBuilder: $386.TimeRange.create)
+    ..aOM<$389.ActionDetail>(2, _omitFieldNames ? '' : 'primaryActionDetail', subBuilder: $389.ActionDetail.create)
+    ..pc<$386.Actor>(3, _omitFieldNames ? '' : 'actors', $pb.PbFieldType.PM, subBuilder: $386.Actor.create)
+    ..pc<$389.Action>(4, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: $389.Action.create)
+    ..pc<$388.Target>(5, _omitFieldNames ? '' : 'targets', $pb.PbFieldType.PM, subBuilder: $388.Target.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'timestamp', subBuilder: $302.Timestamp.create)
+    ..aOM<$387.TimeRange>(7, _omitFieldNames ? '' : 'timeRange', subBuilder: $387.TimeRange.create)
     ..hasRequiredFields = false
   ;
 
@@ -171,53 +171,53 @@ class DriveActivity extends $pb.GeneratedMessage {
   /// representative, or the most important, of all actions in the activity,
   /// according to the ConsolidationStrategy in the request.
   @$pb.TagNumber(2)
-  $388.ActionDetail get primaryActionDetail => $_getN(0);
+  $389.ActionDetail get primaryActionDetail => $_getN(0);
   @$pb.TagNumber(2)
-  set primaryActionDetail($388.ActionDetail v) { setField(2, v); }
+  set primaryActionDetail($389.ActionDetail v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasPrimaryActionDetail() => $_has(0);
   @$pb.TagNumber(2)
   void clearPrimaryActionDetail() => clearField(2);
   @$pb.TagNumber(2)
-  $388.ActionDetail ensurePrimaryActionDetail() => $_ensure(0);
+  $389.ActionDetail ensurePrimaryActionDetail() => $_ensure(0);
 
   /// All actor(s) responsible for the activity.
   @$pb.TagNumber(3)
-  $core.List<$385.Actor> get actors => $_getList(1);
+  $core.List<$386.Actor> get actors => $_getList(1);
 
   /// Details on all actions in this activity.
   @$pb.TagNumber(4)
-  $core.List<$388.Action> get actions => $_getList(2);
+  $core.List<$389.Action> get actions => $_getList(2);
 
   /// All Google Drive objects this activity is about (e.g. file, folder, drive).
   /// This represents the state of the target immediately after the actions
   /// occurred.
   @$pb.TagNumber(5)
-  $core.List<$387.Target> get targets => $_getList(3);
+  $core.List<$388.Target> get targets => $_getList(3);
 
   /// The activity occurred at this specific time.
   @$pb.TagNumber(6)
-  $301.Timestamp get timestamp => $_getN(4);
+  $302.Timestamp get timestamp => $_getN(4);
   @$pb.TagNumber(6)
-  set timestamp($301.Timestamp v) { setField(6, v); }
+  set timestamp($302.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimestamp() => $_has(4);
   @$pb.TagNumber(6)
   void clearTimestamp() => clearField(6);
   @$pb.TagNumber(6)
-  $301.Timestamp ensureTimestamp() => $_ensure(4);
+  $302.Timestamp ensureTimestamp() => $_ensure(4);
 
   /// The activity occurred over this time range.
   @$pb.TagNumber(7)
-  $386.TimeRange get timeRange => $_getN(5);
+  $387.TimeRange get timeRange => $_getN(5);
   @$pb.TagNumber(7)
-  set timeRange($386.TimeRange v) { setField(7, v); }
+  set timeRange($387.TimeRange v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTimeRange() => $_has(5);
   @$pb.TagNumber(7)
   void clearTimeRange() => clearField(7);
   @$pb.TagNumber(7)
-  $386.TimeRange ensureTimeRange() => $_ensure(5);
+  $387.TimeRange ensureTimeRange() => $_ensure(5);
 }
 
 

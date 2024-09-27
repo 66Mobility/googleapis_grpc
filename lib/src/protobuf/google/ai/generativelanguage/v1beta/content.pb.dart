@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/struct.pb.dart' as $260;
+import '../../../protobuf/struct.pb.dart' as $261;
 import 'content.pbenum.dart';
 
 export 'content.pbenum.dart';
@@ -1039,7 +1039,7 @@ class FunctionDeclaration extends $pb.GeneratedMessage {
 class FunctionCall extends $pb.GeneratedMessage {
   factory FunctionCall({
     $core.String? name,
-    $260.Struct? args,
+    $261.Struct? args,
   }) {
     final $result = create();
     if (name != null) {
@@ -1056,7 +1056,7 @@ class FunctionCall extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FunctionCall', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$260.Struct>(2, _omitFieldNames ? '' : 'args', subBuilder: $260.Struct.create)
+    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'args', subBuilder: $261.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1095,15 +1095,15 @@ class FunctionCall extends $pb.GeneratedMessage {
 
   /// Optional. The function parameters and values in JSON object format.
   @$pb.TagNumber(2)
-  $260.Struct get args => $_getN(1);
+  $261.Struct get args => $_getN(1);
   @$pb.TagNumber(2)
-  set args($260.Struct v) { setField(2, v); }
+  set args($261.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasArgs() => $_has(1);
   @$pb.TagNumber(2)
   void clearArgs() => clearField(2);
   @$pb.TagNumber(2)
-  $260.Struct ensureArgs() => $_ensure(1);
+  $261.Struct ensureArgs() => $_ensure(1);
 }
 
 /// The result output from a `FunctionCall` that contains a string
@@ -1114,7 +1114,7 @@ class FunctionCall extends $pb.GeneratedMessage {
 class FunctionResponse extends $pb.GeneratedMessage {
   factory FunctionResponse({
     $core.String? name,
-    $260.Struct? response,
+    $261.Struct? response,
   }) {
     final $result = create();
     if (name != null) {
@@ -1131,7 +1131,7 @@ class FunctionResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FunctionResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
-    ..aOM<$260.Struct>(2, _omitFieldNames ? '' : 'response', subBuilder: $260.Struct.create)
+    ..aOM<$261.Struct>(2, _omitFieldNames ? '' : 'response', subBuilder: $261.Struct.create)
     ..hasRequiredFields = false
   ;
 
@@ -1170,15 +1170,15 @@ class FunctionResponse extends $pb.GeneratedMessage {
 
   /// Required. The function response in JSON object format.
   @$pb.TagNumber(2)
-  $260.Struct get response => $_getN(1);
+  $261.Struct get response => $_getN(1);
   @$pb.TagNumber(2)
-  set response($260.Struct v) { setField(2, v); }
+  set response($261.Struct v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasResponse() => $_has(1);
   @$pb.TagNumber(2)
   void clearResponse() => clearField(2);
   @$pb.TagNumber(2)
-  $260.Struct ensureResponse() => $_ensure(1);
+  $261.Struct ensureResponse() => $_ensure(1);
 }
 
 /// The `Schema` object allows the definition of input and output data types.

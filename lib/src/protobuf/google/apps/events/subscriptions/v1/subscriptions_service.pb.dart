@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../../protobuf/field_mask.pb.dart' as $333;
 import 'subscription_resource.pb.dart' as $79;
 
 /// The request message for
@@ -252,7 +252,7 @@ class GetSubscriptionRequest extends $pb.GeneratedMessage {
 class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   factory UpdateSubscriptionRequest({
     $79.Subscription? subscription,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
     $core.bool? validateOnly,
   }) {
     final $result = create();
@@ -273,7 +273,7 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSubscriptionRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.events.subscriptions.v1'), createEmptyInstance: create)
     ..aOM<$79.Subscription>(1, _omitFieldNames ? '' : 'subscription', subBuilder: $79.Subscription.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'validateOnly')
     ..hasRequiredFields = false
   ;
@@ -324,15 +324,15 @@ class UpdateSubscriptionRequest extends $pb.GeneratedMessage {
   ///  time-to-live (TTL) or duration of the
   ///    subscription.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 
   /// Optional. If set to `true`, validates and previews the request, but doesn't
   /// update the subscription.

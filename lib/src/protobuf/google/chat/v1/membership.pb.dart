@@ -13,11 +13,11 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/field_mask.pb.dart' as $332;
-import '../../protobuf/timestamp.pb.dart' as $301;
-import 'group.pb.dart' as $406;
+import '../../protobuf/field_mask.pb.dart' as $333;
+import '../../protobuf/timestamp.pb.dart' as $302;
+import 'group.pb.dart' as $407;
 import 'membership.pbenum.dart';
-import 'user.pb.dart' as $405;
+import 'user.pb.dart' as $406;
 
 export 'membership.pbenum.dart';
 
@@ -33,11 +33,11 @@ class Membership extends $pb.GeneratedMessage {
   factory Membership({
     $core.String? name,
     Membership_MembershipState? state,
-    $405.User? member,
-    $301.Timestamp? createTime,
-    $406.Group? groupMember,
+    $406.User? member,
+    $302.Timestamp? createTime,
+    $407.Group? groupMember,
     Membership_MembershipRole? role,
-    $301.Timestamp? deleteTime,
+    $302.Timestamp? deleteTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -76,11 +76,11 @@ class Membership extends $pb.GeneratedMessage {
     ..oo(0, [3, 5])
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..e<Membership_MembershipState>(2, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: Membership_MembershipState.MEMBERSHIP_STATE_UNSPECIFIED, valueOf: Membership_MembershipState.valueOf, enumValues: Membership_MembershipState.values)
-    ..aOM<$405.User>(3, _omitFieldNames ? '' : 'member', subBuilder: $405.User.create)
-    ..aOM<$301.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$406.Group>(5, _omitFieldNames ? '' : 'groupMember', subBuilder: $406.Group.create)
+    ..aOM<$406.User>(3, _omitFieldNames ? '' : 'member', subBuilder: $406.User.create)
+    ..aOM<$302.Timestamp>(4, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$407.Group>(5, _omitFieldNames ? '' : 'groupMember', subBuilder: $407.Group.create)
     ..e<Membership_MembershipRole>(7, _omitFieldNames ? '' : 'role', $pb.PbFieldType.OE, defaultOrMaker: Membership_MembershipRole.MEMBERSHIP_ROLE_UNSPECIFIED, valueOf: Membership_MembershipRole.valueOf, enumValues: Membership_MembershipRole.values)
-    ..aOM<$301.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(8, _omitFieldNames ? '' : 'deleteTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -137,41 +137,41 @@ class Membership extends $pb.GeneratedMessage {
   /// [user](https://developers.google.com/workspace/chat/api/reference/rest/v1/User)
   /// `name` and `type`.
   @$pb.TagNumber(3)
-  $405.User get member => $_getN(2);
+  $406.User get member => $_getN(2);
   @$pb.TagNumber(3)
-  set member($405.User v) { setField(3, v); }
+  set member($406.User v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMember() => $_has(2);
   @$pb.TagNumber(3)
   void clearMember() => clearField(3);
   @$pb.TagNumber(3)
-  $405.User ensureMember() => $_ensure(2);
+  $406.User ensureMember() => $_ensure(2);
 
   /// Optional. Immutable. The creation time of the membership, such as when a
   /// member joined or was invited to join a space. This field is output only,
   /// except when used to import historical memberships in import mode spaces.
   @$pb.TagNumber(4)
-  $301.Timestamp get createTime => $_getN(3);
+  $302.Timestamp get createTime => $_getN(3);
   @$pb.TagNumber(4)
-  set createTime($301.Timestamp v) { setField(4, v); }
+  set createTime($302.Timestamp v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasCreateTime() => $_has(3);
   @$pb.TagNumber(4)
   void clearCreateTime() => clearField(4);
   @$pb.TagNumber(4)
-  $301.Timestamp ensureCreateTime() => $_ensure(3);
+  $302.Timestamp ensureCreateTime() => $_ensure(3);
 
   /// The Google Group the membership corresponds to.
   @$pb.TagNumber(5)
-  $406.Group get groupMember => $_getN(4);
+  $407.Group get groupMember => $_getN(4);
   @$pb.TagNumber(5)
-  set groupMember($406.Group v) { setField(5, v); }
+  set groupMember($407.Group v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasGroupMember() => $_has(4);
   @$pb.TagNumber(5)
   void clearGroupMember() => clearField(5);
   @$pb.TagNumber(5)
-  $406.Group ensureGroupMember() => $_ensure(4);
+  $407.Group ensureGroupMember() => $_ensure(4);
 
   ///  Optional. User's role within a Chat space, which determines their permitted
   ///  actions in the space.
@@ -190,15 +190,15 @@ class Membership extends $pb.GeneratedMessage {
   /// member left or was removed from a space. This field is output only, except
   /// when used to import historical memberships in import mode spaces.
   @$pb.TagNumber(8)
-  $301.Timestamp get deleteTime => $_getN(6);
+  $302.Timestamp get deleteTime => $_getN(6);
   @$pb.TagNumber(8)
-  set deleteTime($301.Timestamp v) { setField(8, v); }
+  set deleteTime($302.Timestamp v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDeleteTime() => $_has(6);
   @$pb.TagNumber(8)
   void clearDeleteTime() => clearField(8);
   @$pb.TagNumber(8)
-  $301.Timestamp ensureDeleteTime() => $_ensure(6);
+  $302.Timestamp ensureDeleteTime() => $_ensure(6);
 }
 
 /// Request message for creating a membership.
@@ -319,7 +319,7 @@ class CreateMembershipRequest extends $pb.GeneratedMessage {
 class UpdateMembershipRequest extends $pb.GeneratedMessage {
   factory UpdateMembershipRequest({
     Membership? membership,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
     $core.bool? useAdminAccess,
   }) {
     final $result = create();
@@ -340,7 +340,7 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateMembershipRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.chat.v1'), createEmptyInstance: create)
     ..aOM<Membership>(1, _omitFieldNames ? '' : 'membership', subBuilder: Membership.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..aOB(3, _omitFieldNames ? '' : 'useAdminAccess')
     ..hasRequiredFields = false
   ;
@@ -386,15 +386,15 @@ class UpdateMembershipRequest extends $pb.GeneratedMessage {
   ///
   ///  - `role`
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 
   ///  When `true`, the method runs using the user's Google Workspace
   ///  administrator privileges.

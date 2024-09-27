@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/timestamp.pb.dart' as $301;
+import '../../../protobuf/timestamp.pb.dart' as $302;
 import 'firestore_admin.pbenum.dart';
 import 'index.pb.dart' as $125;
 
@@ -24,8 +24,8 @@ export 'firestore_admin.pbenum.dart';
 /// the metadata field of [google.longrunning.Operation][google.longrunning.Operation].
 class IndexOperationMetadata extends $pb.GeneratedMessage {
   factory IndexOperationMetadata({
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
     $core.String? index,
     IndexOperationMetadata_OperationType? operationType,
     $core.bool? cancelled,
@@ -57,8 +57,8 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
   factory IndexOperationMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'IndexOperationMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..aOS(3, _omitFieldNames ? '' : 'index')
     ..e<IndexOperationMetadata_OperationType>(4, _omitFieldNames ? '' : 'operationType', $pb.PbFieldType.OE, defaultOrMaker: IndexOperationMetadata_OperationType.OPERATION_TYPE_UNSPECIFIED, valueOf: IndexOperationMetadata_OperationType.valueOf, enumValues: IndexOperationMetadata_OperationType.values)
     ..aOB(5, _omitFieldNames ? '' : 'cancelled')
@@ -89,28 +89,28 @@ class IndexOperationMetadata extends $pb.GeneratedMessage {
 
   /// The time that work began on the operation.
   @$pb.TagNumber(1)
-  $301.Timestamp get startTime => $_getN(0);
+  $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($301.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $301.Timestamp ensureStartTime() => $_ensure(0);
+  $302.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the operation ended, either successfully or otherwise. Unset if
   /// the operation is still active.
   @$pb.TagNumber(2)
-  $301.Timestamp get endTime => $_getN(1);
+  $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($301.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $301.Timestamp ensureEndTime() => $_ensure(1);
+  $302.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The index resource that this operation is acting on. For example:
   /// `projects/{project_id}/databases/{database_id}/indexes/{index_id}`
@@ -785,8 +785,8 @@ class ExportDocumentsResponse extends $pb.GeneratedMessage {
 /// Metadata for ExportDocuments operations.
 class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ExportDocumentsMetadata({
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
     OperationState? operationState,
     Progress? progressDocuments,
     Progress? progressBytes,
@@ -822,8 +822,8 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ExportDocumentsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExportDocumentsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..e<OperationState>(3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE, defaultOrMaker: OperationState.STATE_UNSPECIFIED, valueOf: OperationState.valueOf, enumValues: OperationState.values)
     ..aOM<Progress>(4, _omitFieldNames ? '' : 'progressDocuments', subBuilder: Progress.create)
     ..aOM<Progress>(5, _omitFieldNames ? '' : 'progressBytes', subBuilder: Progress.create)
@@ -855,28 +855,28 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
 
   /// The time that work began on the operation.
   @$pb.TagNumber(1)
-  $301.Timestamp get startTime => $_getN(0);
+  $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($301.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $301.Timestamp ensureStartTime() => $_ensure(0);
+  $302.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the operation ended, either successfully or otherwise. Unset if
   /// the operation is still active.
   @$pb.TagNumber(2)
-  $301.Timestamp get endTime => $_getN(1);
+  $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($301.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $301.Timestamp ensureEndTime() => $_ensure(1);
+  $302.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The state of the export operation.
   @$pb.TagNumber(3)
@@ -930,8 +930,8 @@ class ExportDocumentsMetadata extends $pb.GeneratedMessage {
 /// Metadata for ImportDocuments operations.
 class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ImportDocumentsMetadata({
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
     OperationState? operationState,
     Progress? progressDocuments,
     Progress? progressBytes,
@@ -967,8 +967,8 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
   factory ImportDocumentsMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImportDocumentsMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta1'), createEmptyInstance: create)
-    ..aOM<$301.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(1, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(2, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..e<OperationState>(3, _omitFieldNames ? '' : 'operationState', $pb.PbFieldType.OE, defaultOrMaker: OperationState.STATE_UNSPECIFIED, valueOf: OperationState.valueOf, enumValues: OperationState.values)
     ..aOM<Progress>(4, _omitFieldNames ? '' : 'progressDocuments', subBuilder: Progress.create)
     ..aOM<Progress>(5, _omitFieldNames ? '' : 'progressBytes', subBuilder: Progress.create)
@@ -1000,28 +1000,28 @@ class ImportDocumentsMetadata extends $pb.GeneratedMessage {
 
   /// The time that work began on the operation.
   @$pb.TagNumber(1)
-  $301.Timestamp get startTime => $_getN(0);
+  $302.Timestamp get startTime => $_getN(0);
   @$pb.TagNumber(1)
-  set startTime($301.Timestamp v) { setField(1, v); }
+  set startTime($302.Timestamp v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasStartTime() => $_has(0);
   @$pb.TagNumber(1)
   void clearStartTime() => clearField(1);
   @$pb.TagNumber(1)
-  $301.Timestamp ensureStartTime() => $_ensure(0);
+  $302.Timestamp ensureStartTime() => $_ensure(0);
 
   /// The time the operation ended, either successfully or otherwise. Unset if
   /// the operation is still active.
   @$pb.TagNumber(2)
-  $301.Timestamp get endTime => $_getN(1);
+  $302.Timestamp get endTime => $_getN(1);
   @$pb.TagNumber(2)
-  set endTime($301.Timestamp v) { setField(2, v); }
+  set endTime($302.Timestamp v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasEndTime() => $_has(1);
   @$pb.TagNumber(2)
   void clearEndTime() => clearField(2);
   @$pb.TagNumber(2)
-  $301.Timestamp ensureEndTime() => $_ensure(1);
+  $302.Timestamp ensureEndTime() => $_ensure(1);
 
   /// The state of the import operation.
   @$pb.TagNumber(3)

@@ -14,8 +14,8 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'compute_custom_routes_response.pbenum.dart';
-import 'custom_route.pb.dart' as $486;
-import 'fallback_info.pbenum.dart' as $487;
+import 'custom_route.pb.dart' as $487;
+import 'fallback_info.pbenum.dart' as $488;
 
 export 'compute_custom_routes_response.pbenum.dart';
 
@@ -34,8 +34,8 @@ export 'compute_custom_routes_response.pbenum.dart';
 ///  objective.
 class ComputeCustomRoutesResponse_FallbackInfo extends $pb.GeneratedMessage {
   factory ComputeCustomRoutesResponse_FallbackInfo({
-    $487.FallbackRoutingMode? routingMode,
-    $487.FallbackReason? routingModeReason,
+    $488.FallbackRoutingMode? routingMode,
+    $488.FallbackReason? routingModeReason,
     ComputeCustomRoutesResponse_FallbackInfo_FallbackRouteObjective? routeObjective,
   }) {
     final $result = create();
@@ -55,8 +55,8 @@ class ComputeCustomRoutesResponse_FallbackInfo extends $pb.GeneratedMessage {
   factory ComputeCustomRoutesResponse_FallbackInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeCustomRoutesResponse.FallbackInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..e<$487.FallbackRoutingMode>(1, _omitFieldNames ? '' : 'routingMode', $pb.PbFieldType.OE, defaultOrMaker: $487.FallbackRoutingMode.FALLBACK_ROUTING_MODE_UNSPECIFIED, valueOf: $487.FallbackRoutingMode.valueOf, enumValues: $487.FallbackRoutingMode.values)
-    ..e<$487.FallbackReason>(2, _omitFieldNames ? '' : 'routingModeReason', $pb.PbFieldType.OE, defaultOrMaker: $487.FallbackReason.FALLBACK_REASON_UNSPECIFIED, valueOf: $487.FallbackReason.valueOf, enumValues: $487.FallbackReason.values)
+    ..e<$488.FallbackRoutingMode>(1, _omitFieldNames ? '' : 'routingMode', $pb.PbFieldType.OE, defaultOrMaker: $488.FallbackRoutingMode.FALLBACK_ROUTING_MODE_UNSPECIFIED, valueOf: $488.FallbackRoutingMode.valueOf, enumValues: $488.FallbackRoutingMode.values)
+    ..e<$488.FallbackReason>(2, _omitFieldNames ? '' : 'routingModeReason', $pb.PbFieldType.OE, defaultOrMaker: $488.FallbackReason.FALLBACK_REASON_UNSPECIFIED, valueOf: $488.FallbackReason.valueOf, enumValues: $488.FallbackReason.values)
     ..e<ComputeCustomRoutesResponse_FallbackInfo_FallbackRouteObjective>(3, _omitFieldNames ? '' : 'routeObjective', $pb.PbFieldType.OE, defaultOrMaker: ComputeCustomRoutesResponse_FallbackInfo_FallbackRouteObjective.FALLBACK_ROUTE_OBJECTIVE_UNSPECIFIED, valueOf: ComputeCustomRoutesResponse_FallbackInfo_FallbackRouteObjective.valueOf, enumValues: ComputeCustomRoutesResponse_FallbackInfo_FallbackRouteObjective.values)
     ..hasRequiredFields = false
   ;
@@ -86,9 +86,9 @@ class ComputeCustomRoutesResponse_FallbackInfo extends $pb.GeneratedMessage {
   /// may be different from routing preference set in the original client
   /// request.
   @$pb.TagNumber(1)
-  $487.FallbackRoutingMode get routingMode => $_getN(0);
+  $488.FallbackRoutingMode get routingMode => $_getN(0);
   @$pb.TagNumber(1)
-  set routingMode($487.FallbackRoutingMode v) { setField(1, v); }
+  set routingMode($488.FallbackRoutingMode v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasRoutingMode() => $_has(0);
   @$pb.TagNumber(1)
@@ -99,9 +99,9 @@ class ComputeCustomRoutesResponse_FallbackInfo extends $pb.GeneratedMessage {
   /// This field is only populated when the fallback mode is triggered and
   /// the fallback response is returned.
   @$pb.TagNumber(2)
-  $487.FallbackReason get routingModeReason => $_getN(1);
+  $488.FallbackReason get routingModeReason => $_getN(1);
   @$pb.TagNumber(2)
-  set routingModeReason($487.FallbackReason v) { setField(2, v); }
+  set routingModeReason($488.FallbackReason v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRoutingModeReason() => $_has(1);
   @$pb.TagNumber(2)
@@ -123,9 +123,9 @@ class ComputeCustomRoutesResponse_FallbackInfo extends $pb.GeneratedMessage {
 /// ComputeCustomRoutes response message.
 class ComputeCustomRoutesResponse extends $pb.GeneratedMessage {
   factory ComputeCustomRoutesResponse({
-    $486.CustomRoute? fastestRoute,
-    $486.CustomRoute? shortestRoute,
-    $core.Iterable<$486.CustomRoute>? routes,
+    $487.CustomRoute? fastestRoute,
+    $487.CustomRoute? shortestRoute,
+    $core.Iterable<$487.CustomRoute>? routes,
     ComputeCustomRoutesResponse_FallbackInfo? fallbackInfo,
   }) {
     final $result = create();
@@ -148,9 +148,9 @@ class ComputeCustomRoutesResponse extends $pb.GeneratedMessage {
   factory ComputeCustomRoutesResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ComputeCustomRoutesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.routes.v1'), createEmptyInstance: create)
-    ..aOM<$486.CustomRoute>(5, _omitFieldNames ? '' : 'fastestRoute', subBuilder: $486.CustomRoute.create)
-    ..aOM<$486.CustomRoute>(6, _omitFieldNames ? '' : 'shortestRoute', subBuilder: $486.CustomRoute.create)
-    ..pc<$486.CustomRoute>(7, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM, subBuilder: $486.CustomRoute.create)
+    ..aOM<$487.CustomRoute>(5, _omitFieldNames ? '' : 'fastestRoute', subBuilder: $487.CustomRoute.create)
+    ..aOM<$487.CustomRoute>(6, _omitFieldNames ? '' : 'shortestRoute', subBuilder: $487.CustomRoute.create)
+    ..pc<$487.CustomRoute>(7, _omitFieldNames ? '' : 'routes', $pb.PbFieldType.PM, subBuilder: $487.CustomRoute.create)
     ..aOM<ComputeCustomRoutesResponse_FallbackInfo>(8, _omitFieldNames ? '' : 'fallbackInfo', subBuilder: ComputeCustomRoutesResponse_FallbackInfo.create)
     ..hasRequiredFields = false
   ;
@@ -178,31 +178,31 @@ class ComputeCustomRoutesResponse extends $pb.GeneratedMessage {
 
   /// The fastest reference route.
   @$pb.TagNumber(5)
-  $486.CustomRoute get fastestRoute => $_getN(0);
+  $487.CustomRoute get fastestRoute => $_getN(0);
   @$pb.TagNumber(5)
-  set fastestRoute($486.CustomRoute v) { setField(5, v); }
+  set fastestRoute($487.CustomRoute v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFastestRoute() => $_has(0);
   @$pb.TagNumber(5)
   void clearFastestRoute() => clearField(5);
   @$pb.TagNumber(5)
-  $486.CustomRoute ensureFastestRoute() => $_ensure(0);
+  $487.CustomRoute ensureFastestRoute() => $_ensure(0);
 
   /// The shortest reference route.
   @$pb.TagNumber(6)
-  $486.CustomRoute get shortestRoute => $_getN(1);
+  $487.CustomRoute get shortestRoute => $_getN(1);
   @$pb.TagNumber(6)
-  set shortestRoute($486.CustomRoute v) { setField(6, v); }
+  set shortestRoute($487.CustomRoute v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasShortestRoute() => $_has(1);
   @$pb.TagNumber(6)
   void clearShortestRoute() => clearField(6);
   @$pb.TagNumber(6)
-  $486.CustomRoute ensureShortestRoute() => $_ensure(1);
+  $487.CustomRoute ensureShortestRoute() => $_ensure(1);
 
   /// The ‘best’ routes for the input route objective.
   @$pb.TagNumber(7)
-  $core.List<$486.CustomRoute> get routes => $_getList(2);
+  $core.List<$487.CustomRoute> get routes => $_getList(2);
 
   /// Fallback info for custom routes.
   @$pb.TagNumber(8)

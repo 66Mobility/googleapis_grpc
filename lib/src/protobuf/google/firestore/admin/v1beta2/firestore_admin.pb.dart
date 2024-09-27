@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../protobuf/field_mask.pb.dart' as $333;
 import 'field.pb.dart' as $128;
 import 'index.pb.dart' as $127;
 
@@ -359,7 +359,7 @@ class DeleteIndexRequest extends $pb.GeneratedMessage {
 class UpdateFieldRequest extends $pb.GeneratedMessage {
   factory UpdateFieldRequest({
     $128.Field? field_1,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -376,7 +376,7 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFieldRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1beta2'), createEmptyInstance: create)
     ..aOM<$128.Field>(1, _omitFieldNames ? '' : 'field', subBuilder: $128.Field.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -416,15 +416,15 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
   /// A mask, relative to the field. If specified, only configuration specified
   /// by this field_mask will be updated in the field.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request for [FirestoreAdmin.GetField][google.firestore.admin.v1beta2.FirestoreAdmin.GetField].

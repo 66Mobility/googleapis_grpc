@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $332;
+import '../../../protobuf/field_mask.pb.dart' as $333;
 import 'resources.pb.dart' as $37;
 import 'resources.pbenum.dart' as $37;
 
@@ -582,7 +582,7 @@ class CreateQuotaPreferenceRequest extends $pb.GeneratedMessage {
 /// Message for updating a QuotaPreference
 class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   factory UpdateQuotaPreferenceRequest({
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
     $37.QuotaPreference? quotaPreference,
     $core.bool? allowMissing,
     $core.bool? validateOnly,
@@ -611,7 +611,7 @@ class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   factory UpdateQuotaPreferenceRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateQuotaPreferenceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.api.cloudquotas.v1'), createEmptyInstance: create)
-    ..aOM<$332.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(1, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..aOM<$37.QuotaPreference>(2, _omitFieldNames ? '' : 'quotaPreference', subBuilder: $37.QuotaPreference.create)
     ..aOB(3, _omitFieldNames ? '' : 'allowMissing')
     ..aOB(4, _omitFieldNames ? '' : 'validateOnly')
@@ -646,15 +646,15 @@ class UpdateQuotaPreferenceRequest extends $pb.GeneratedMessage {
   /// the full request. A field will be overwritten if it is in the mask. If the
   /// user does not provide a mask then all fields will be overwritten.
   @$pb.TagNumber(1)
-  $332.FieldMask get updateMask => $_getN(0);
+  $333.FieldMask get updateMask => $_getN(0);
   @$pb.TagNumber(1)
-  set updateMask($332.FieldMask v) { setField(1, v); }
+  set updateMask($333.FieldMask v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasUpdateMask() => $_has(0);
   @$pb.TagNumber(1)
   void clearUpdateMask() => clearField(1);
   @$pb.TagNumber(1)
-  $332.FieldMask ensureUpdateMask() => $_ensure(0);
+  $333.FieldMask ensureUpdateMask() => $_ensure(0);
 
   /// Required. The resource being updated
   @$pb.TagNumber(2)

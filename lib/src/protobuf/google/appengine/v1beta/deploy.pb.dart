@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $263;
+import '../../protobuf/duration.pb.dart' as $264;
 
 /// Code and application artifacts used to deploy a version to App Engine.
 class Deployment extends $pb.GeneratedMessage {
@@ -339,7 +339,7 @@ class BuildInfo extends $pb.GeneratedMessage {
 class CloudBuildOptions extends $pb.GeneratedMessage {
   factory CloudBuildOptions({
     $core.String? appYamlPath,
-    $263.Duration? cloudBuildTimeout,
+    $264.Duration? cloudBuildTimeout,
   }) {
     final $result = create();
     if (appYamlPath != null) {
@@ -356,7 +356,7 @@ class CloudBuildOptions extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CloudBuildOptions', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.appengine.v1beta'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'appYamlPath')
-    ..aOM<$263.Duration>(2, _omitFieldNames ? '' : 'cloudBuildTimeout', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(2, _omitFieldNames ? '' : 'cloudBuildTimeout', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -400,15 +400,15 @@ class CloudBuildOptions extends $pb.GeneratedMessage {
   /// The Cloud Build timeout used as part of any dependent builds performed by
   /// version creation. Defaults to 10 minutes.
   @$pb.TagNumber(2)
-  $263.Duration get cloudBuildTimeout => $_getN(1);
+  $264.Duration get cloudBuildTimeout => $_getN(1);
   @$pb.TagNumber(2)
-  set cloudBuildTimeout($263.Duration v) { setField(2, v); }
+  set cloudBuildTimeout($264.Duration v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCloudBuildTimeout() => $_has(1);
   @$pb.TagNumber(2)
   void clearCloudBuildTimeout() => clearField(2);
   @$pb.TagNumber(2)
-  $263.Duration ensureCloudBuildTimeout() => $_ensure(1);
+  $264.Duration ensureCloudBuildTimeout() => $_ensure(1);
 }
 
 /// The zip file information for a zip deployment.

@@ -14,7 +14,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../../type/date.pb.dart' as $326;
+import '../../../../type/date.pb.dart' as $327;
 
 /// Label constraints governing the structure of a Label; such as, the maximum
 /// number of Fields allowed and maximum length of the label title.
@@ -604,8 +604,8 @@ class IntegerLimits extends $pb.GeneratedMessage {
 /// Limits for date Field type.
 class DateLimits extends $pb.GeneratedMessage {
   factory DateLimits({
-    $326.Date? minValue,
-    $326.Date? maxValue,
+    $327.Date? minValue,
+    $327.Date? maxValue,
   }) {
     final $result = create();
     if (minValue != null) {
@@ -621,8 +621,8 @@ class DateLimits extends $pb.GeneratedMessage {
   factory DateLimits.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DateLimits', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.apps.drive.labels.v2'), createEmptyInstance: create)
-    ..aOM<$326.Date>(1, _omitFieldNames ? '' : 'minValue', subBuilder: $326.Date.create)
-    ..aOM<$326.Date>(2, _omitFieldNames ? '' : 'maxValue', subBuilder: $326.Date.create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'minValue', subBuilder: $327.Date.create)
+    ..aOM<$327.Date>(2, _omitFieldNames ? '' : 'maxValue', subBuilder: $327.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -649,27 +649,27 @@ class DateLimits extends $pb.GeneratedMessage {
 
   /// Minimum value for the date Field type.
   @$pb.TagNumber(1)
-  $326.Date get minValue => $_getN(0);
+  $327.Date get minValue => $_getN(0);
   @$pb.TagNumber(1)
-  set minValue($326.Date v) { setField(1, v); }
+  set minValue($327.Date v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMinValue() => $_has(0);
   @$pb.TagNumber(1)
   void clearMinValue() => clearField(1);
   @$pb.TagNumber(1)
-  $326.Date ensureMinValue() => $_ensure(0);
+  $327.Date ensureMinValue() => $_ensure(0);
 
   /// Maximum value for the date Field type.
   @$pb.TagNumber(2)
-  $326.Date get maxValue => $_getN(1);
+  $327.Date get maxValue => $_getN(1);
   @$pb.TagNumber(2)
-  set maxValue($326.Date v) { setField(2, v); }
+  set maxValue($327.Date v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaxValue() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaxValue() => clearField(2);
   @$pb.TagNumber(2)
-  $326.Date ensureMaxValue() => $_ensure(1);
+  $327.Date ensureMaxValue() => $_ensure(1);
 }
 
 /// Limits for selection Field type.

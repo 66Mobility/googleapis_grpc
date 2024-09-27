@@ -13,15 +13,15 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $263;
-import '../../../protobuf/timestamp.pb.dart' as $301;
+import '../../../protobuf/duration.pb.dart' as $264;
+import '../../../protobuf/timestamp.pb.dart' as $302;
 
 class GenerateAccessTokenRequest extends $pb.GeneratedMessage {
   factory GenerateAccessTokenRequest({
     $core.String? name,
     $core.Iterable<$core.String>? delegates,
     $core.Iterable<$core.String>? scope,
-    $263.Duration? lifetime,
+    $264.Duration? lifetime,
   }) {
     final $result = create();
     if (name != null) {
@@ -46,7 +46,7 @@ class GenerateAccessTokenRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..pPS(2, _omitFieldNames ? '' : 'delegates')
     ..pPS(4, _omitFieldNames ? '' : 'scope')
-    ..aOM<$263.Duration>(7, _omitFieldNames ? '' : 'lifetime', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'lifetime', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -109,21 +109,21 @@ class GenerateAccessTokenRequest extends $pb.GeneratedMessage {
   /// not specified, the token's lifetime will be set to a default value of one
   /// hour.
   @$pb.TagNumber(7)
-  $263.Duration get lifetime => $_getN(3);
+  $264.Duration get lifetime => $_getN(3);
   @$pb.TagNumber(7)
-  set lifetime($263.Duration v) { setField(7, v); }
+  set lifetime($264.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasLifetime() => $_has(3);
   @$pb.TagNumber(7)
   void clearLifetime() => clearField(7);
   @$pb.TagNumber(7)
-  $263.Duration ensureLifetime() => $_ensure(3);
+  $264.Duration ensureLifetime() => $_ensure(3);
 }
 
 class GenerateAccessTokenResponse extends $pb.GeneratedMessage {
   factory GenerateAccessTokenResponse({
     $core.String? accessToken,
-    $301.Timestamp? expireTime,
+    $302.Timestamp? expireTime,
   }) {
     final $result = create();
     if (accessToken != null) {
@@ -140,7 +140,7 @@ class GenerateAccessTokenResponse extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateAccessTokenResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.iam.credentials.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'accessToken')
-    ..aOM<$301.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(3, _omitFieldNames ? '' : 'expireTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -178,15 +178,15 @@ class GenerateAccessTokenResponse extends $pb.GeneratedMessage {
   /// Token expiration time.
   /// The expiration time is always set.
   @$pb.TagNumber(3)
-  $301.Timestamp get expireTime => $_getN(1);
+  $302.Timestamp get expireTime => $_getN(1);
   @$pb.TagNumber(3)
-  set expireTime($301.Timestamp v) { setField(3, v); }
+  set expireTime($302.Timestamp v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasExpireTime() => $_has(1);
   @$pb.TagNumber(3)
   void clearExpireTime() => clearField(3);
   @$pb.TagNumber(3)
-  $301.Timestamp ensureExpireTime() => $_ensure(1);
+  $302.Timestamp ensureExpireTime() => $_ensure(1);
 }
 
 class SignBlobRequest extends $pb.GeneratedMessage {

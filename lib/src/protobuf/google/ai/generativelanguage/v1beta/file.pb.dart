@@ -14,9 +14,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/duration.pb.dart' as $263;
-import '../../../protobuf/timestamp.pb.dart' as $301;
-import '../../../rpc/status.pb.dart' as $321;
+import '../../../protobuf/duration.pb.dart' as $264;
+import '../../../protobuf/timestamp.pb.dart' as $302;
+import '../../../rpc/status.pb.dart' as $322;
 import 'file.pbenum.dart';
 
 export 'file.pbenum.dart';
@@ -33,13 +33,13 @@ class File extends $pb.GeneratedMessage {
     $core.String? displayName,
     $core.String? mimeType,
     $fixnum.Int64? sizeBytes,
-    $301.Timestamp? createTime,
-    $301.Timestamp? updateTime,
-    $301.Timestamp? expirationTime,
+    $302.Timestamp? createTime,
+    $302.Timestamp? updateTime,
+    $302.Timestamp? expirationTime,
     $core.List<$core.int>? sha256Hash,
     $core.String? uri,
     File_State? state,
-    $321.Status? error,
+    $322.Status? error,
     VideoMetadata? videoMetadata,
   }) {
     final $result = create();
@@ -95,13 +95,13 @@ class File extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'displayName')
     ..aOS(3, _omitFieldNames ? '' : 'mimeType')
     ..aInt64(4, _omitFieldNames ? '' : 'sizeBytes')
-    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(7, _omitFieldNames ? '' : 'expirationTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'updateTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'expirationTime', subBuilder: $302.Timestamp.create)
     ..a<$core.List<$core.int>>(8, _omitFieldNames ? '' : 'sha256Hash', $pb.PbFieldType.OY)
     ..aOS(9, _omitFieldNames ? '' : 'uri')
     ..e<File_State>(10, _omitFieldNames ? '' : 'state', $pb.PbFieldType.OE, defaultOrMaker: File_State.STATE_UNSPECIFIED, valueOf: File_State.valueOf, enumValues: File_State.values)
-    ..aOM<$321.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $321.Status.create)
+    ..aOM<$322.Status>(11, _omitFieldNames ? '' : 'error', subBuilder: $322.Status.create)
     ..aOM<VideoMetadata>(12, _omitFieldNames ? '' : 'videoMetadata', subBuilder: VideoMetadata.create)
     ..hasRequiredFields = false
   ;
@@ -178,40 +178,40 @@ class File extends $pb.GeneratedMessage {
 
   /// Output only. The timestamp of when the `File` was created.
   @$pb.TagNumber(5)
-  $301.Timestamp get createTime => $_getN(4);
+  $302.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($301.Timestamp v) { setField(5, v); }
+  set createTime($302.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $301.Timestamp ensureCreateTime() => $_ensure(4);
+  $302.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Output only. The timestamp of when the `File` was last updated.
   @$pb.TagNumber(6)
-  $301.Timestamp get updateTime => $_getN(5);
+  $302.Timestamp get updateTime => $_getN(5);
   @$pb.TagNumber(6)
-  set updateTime($301.Timestamp v) { setField(6, v); }
+  set updateTime($302.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasUpdateTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearUpdateTime() => clearField(6);
   @$pb.TagNumber(6)
-  $301.Timestamp ensureUpdateTime() => $_ensure(5);
+  $302.Timestamp ensureUpdateTime() => $_ensure(5);
 
   /// Output only. The timestamp of when the `File` will be deleted. Only set if
   /// the `File` is scheduled to expire.
   @$pb.TagNumber(7)
-  $301.Timestamp get expirationTime => $_getN(6);
+  $302.Timestamp get expirationTime => $_getN(6);
   @$pb.TagNumber(7)
-  set expirationTime($301.Timestamp v) { setField(7, v); }
+  set expirationTime($302.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasExpirationTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearExpirationTime() => clearField(7);
   @$pb.TagNumber(7)
-  $301.Timestamp ensureExpirationTime() => $_ensure(6);
+  $302.Timestamp ensureExpirationTime() => $_ensure(6);
 
   /// Output only. SHA-256 hash of the uploaded bytes.
   @$pb.TagNumber(8)
@@ -245,15 +245,15 @@ class File extends $pb.GeneratedMessage {
 
   /// Output only. Error status if File processing failed.
   @$pb.TagNumber(11)
-  $321.Status get error => $_getN(10);
+  $322.Status get error => $_getN(10);
   @$pb.TagNumber(11)
-  set error($321.Status v) { setField(11, v); }
+  set error($322.Status v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasError() => $_has(10);
   @$pb.TagNumber(11)
   void clearError() => clearField(11);
   @$pb.TagNumber(11)
-  $321.Status ensureError() => $_ensure(10);
+  $322.Status ensureError() => $_ensure(10);
 
   /// Output only. Metadata for a video.
   @$pb.TagNumber(12)
@@ -271,7 +271,7 @@ class File extends $pb.GeneratedMessage {
 /// Metadata for a video `File`.
 class VideoMetadata extends $pb.GeneratedMessage {
   factory VideoMetadata({
-    $263.Duration? videoDuration,
+    $264.Duration? videoDuration,
   }) {
     final $result = create();
     if (videoDuration != null) {
@@ -284,7 +284,7 @@ class VideoMetadata extends $pb.GeneratedMessage {
   factory VideoMetadata.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'VideoMetadata', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1beta'), createEmptyInstance: create)
-    ..aOM<$263.Duration>(1, _omitFieldNames ? '' : 'videoDuration', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(1, _omitFieldNames ? '' : 'videoDuration', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -311,15 +311,15 @@ class VideoMetadata extends $pb.GeneratedMessage {
 
   /// Duration of the video.
   @$pb.TagNumber(1)
-  $263.Duration get videoDuration => $_getN(0);
+  $264.Duration get videoDuration => $_getN(0);
   @$pb.TagNumber(1)
-  set videoDuration($263.Duration v) { setField(1, v); }
+  set videoDuration($264.Duration v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasVideoDuration() => $_has(0);
   @$pb.TagNumber(1)
   void clearVideoDuration() => clearField(1);
   @$pb.TagNumber(1)
-  $263.Duration ensureVideoDuration() => $_ensure(0);
+  $264.Duration ensureVideoDuration() => $_ensure(0);
 }
 
 

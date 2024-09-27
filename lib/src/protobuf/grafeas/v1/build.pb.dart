@@ -13,9 +13,9 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'intoto_provenance.pb.dart' as $555;
-import 'intoto_statement.pb.dart' as $559;
-import 'provenance.pb.dart' as $558;
+import 'intoto_provenance.pb.dart' as $557;
+import 'intoto_statement.pb.dart' as $561;
+import 'provenance.pb.dart' as $560;
 
 /// Note holding the version of the provider's builder and the signature of the
 /// provenance message in the build details occurrence.
@@ -73,11 +73,11 @@ class BuildNote extends $pb.GeneratedMessage {
 /// Details of a build occurrence.
 class BuildOccurrence extends $pb.GeneratedMessage {
   factory BuildOccurrence({
-    $558.BuildProvenance? provenance,
+    $560.BuildProvenance? provenance,
     $core.String? provenanceBytes,
-    $555.InTotoProvenance? intotoProvenance,
-    $559.InTotoStatement? intotoStatement,
-    $559.InTotoSlsaProvenanceV1? inTotoSlsaProvenanceV1,
+    $557.InTotoProvenance? intotoProvenance,
+    $561.InTotoStatement? intotoStatement,
+    $561.InTotoSlsaProvenanceV1? inTotoSlsaProvenanceV1,
   }) {
     final $result = create();
     if (provenance != null) {
@@ -102,11 +102,11 @@ class BuildOccurrence extends $pb.GeneratedMessage {
   factory BuildOccurrence.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'BuildOccurrence', package: const $pb.PackageName(_omitMessageNames ? '' : 'grafeas.v1'), createEmptyInstance: create)
-    ..aOM<$558.BuildProvenance>(1, _omitFieldNames ? '' : 'provenance', subBuilder: $558.BuildProvenance.create)
+    ..aOM<$560.BuildProvenance>(1, _omitFieldNames ? '' : 'provenance', subBuilder: $560.BuildProvenance.create)
     ..aOS(2, _omitFieldNames ? '' : 'provenanceBytes')
-    ..aOM<$555.InTotoProvenance>(3, _omitFieldNames ? '' : 'intotoProvenance', subBuilder: $555.InTotoProvenance.create)
-    ..aOM<$559.InTotoStatement>(4, _omitFieldNames ? '' : 'intotoStatement', subBuilder: $559.InTotoStatement.create)
-    ..aOM<$559.InTotoSlsaProvenanceV1>(5, _omitFieldNames ? '' : 'inTotoSlsaProvenanceV1', subBuilder: $559.InTotoSlsaProvenanceV1.create)
+    ..aOM<$557.InTotoProvenance>(3, _omitFieldNames ? '' : 'intotoProvenance', subBuilder: $557.InTotoProvenance.create)
+    ..aOM<$561.InTotoStatement>(4, _omitFieldNames ? '' : 'intotoStatement', subBuilder: $561.InTotoStatement.create)
+    ..aOM<$561.InTotoSlsaProvenanceV1>(5, _omitFieldNames ? '' : 'inTotoSlsaProvenanceV1', subBuilder: $561.InTotoSlsaProvenanceV1.create)
     ..hasRequiredFields = false
   ;
 
@@ -133,15 +133,15 @@ class BuildOccurrence extends $pb.GeneratedMessage {
 
   /// The actual provenance for the build.
   @$pb.TagNumber(1)
-  $558.BuildProvenance get provenance => $_getN(0);
+  $560.BuildProvenance get provenance => $_getN(0);
   @$pb.TagNumber(1)
-  set provenance($558.BuildProvenance v) { setField(1, v); }
+  set provenance($560.BuildProvenance v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasProvenance() => $_has(0);
   @$pb.TagNumber(1)
   void clearProvenance() => clearField(1);
   @$pb.TagNumber(1)
-  $558.BuildProvenance ensureProvenance() => $_ensure(0);
+  $560.BuildProvenance ensureProvenance() => $_ensure(0);
 
   ///  Serialized JSON representation of the provenance, used in generating the
   ///  build signature in the corresponding build note. After verifying the
@@ -166,45 +166,45 @@ class BuildOccurrence extends $pb.GeneratedMessage {
   /// Deprecated. See InTotoStatement for the replacement.
   /// In-toto Provenance representation as defined in spec.
   @$pb.TagNumber(3)
-  $555.InTotoProvenance get intotoProvenance => $_getN(2);
+  $557.InTotoProvenance get intotoProvenance => $_getN(2);
   @$pb.TagNumber(3)
-  set intotoProvenance($555.InTotoProvenance v) { setField(3, v); }
+  set intotoProvenance($557.InTotoProvenance v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasIntotoProvenance() => $_has(2);
   @$pb.TagNumber(3)
   void clearIntotoProvenance() => clearField(3);
   @$pb.TagNumber(3)
-  $555.InTotoProvenance ensureIntotoProvenance() => $_ensure(2);
+  $557.InTotoProvenance ensureIntotoProvenance() => $_ensure(2);
 
   /// In-toto Statement representation as defined in spec.
   /// The intoto_statement can contain any type of provenance. The serialized
   /// payload of the statement can be stored and signed in the Occurrence's
   /// envelope.
   @$pb.TagNumber(4)
-  $559.InTotoStatement get intotoStatement => $_getN(3);
+  $561.InTotoStatement get intotoStatement => $_getN(3);
   @$pb.TagNumber(4)
-  set intotoStatement($559.InTotoStatement v) { setField(4, v); }
+  set intotoStatement($561.InTotoStatement v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasIntotoStatement() => $_has(3);
   @$pb.TagNumber(4)
   void clearIntotoStatement() => clearField(4);
   @$pb.TagNumber(4)
-  $559.InTotoStatement ensureIntotoStatement() => $_ensure(3);
+  $561.InTotoStatement ensureIntotoStatement() => $_ensure(3);
 
   /// In-Toto Slsa Provenance V1 represents a slsa provenance meeting the slsa
   /// spec, wrapped in an in-toto statement. This allows for direct
   /// jsonification of a to-spec in-toto slsa statement with a to-spec
   /// slsa provenance.
   @$pb.TagNumber(5)
-  $559.InTotoSlsaProvenanceV1 get inTotoSlsaProvenanceV1 => $_getN(4);
+  $561.InTotoSlsaProvenanceV1 get inTotoSlsaProvenanceV1 => $_getN(4);
   @$pb.TagNumber(5)
-  set inTotoSlsaProvenanceV1($559.InTotoSlsaProvenanceV1 v) { setField(5, v); }
+  set inTotoSlsaProvenanceV1($561.InTotoSlsaProvenanceV1 v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasInTotoSlsaProvenanceV1() => $_has(4);
   @$pb.TagNumber(5)
   void clearInTotoSlsaProvenanceV1() => clearField(5);
   @$pb.TagNumber(5)
-  $559.InTotoSlsaProvenanceV1 ensureInTotoSlsaProvenanceV1() => $_ensure(4);
+  $561.InTotoSlsaProvenanceV1 ensureInTotoSlsaProvenanceV1() => $_ensure(4);
 }
 
 

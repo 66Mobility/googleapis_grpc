@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../google/protobuf/timestamp.pb.dart' as $301;
+import '../../google/protobuf/timestamp.pb.dart' as $302;
 import 'provenance.pbenum.dart';
 
 export 'provenance.pbenum.dart';
@@ -26,9 +26,9 @@ class BuildProvenance extends $pb.GeneratedMessage {
     $core.String? projectId,
     $core.Iterable<Command>? commands,
     $core.Iterable<Artifact>? builtArtifacts,
-    $301.Timestamp? createTime,
-    $301.Timestamp? startTime,
-    $301.Timestamp? endTime,
+    $302.Timestamp? createTime,
+    $302.Timestamp? startTime,
+    $302.Timestamp? endTime,
     $core.String? creator,
     $core.String? logsUri,
     Source? sourceProvenance,
@@ -87,9 +87,9 @@ class BuildProvenance extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'projectId')
     ..pc<Command>(3, _omitFieldNames ? '' : 'commands', $pb.PbFieldType.PM, subBuilder: Command.create)
     ..pc<Artifact>(4, _omitFieldNames ? '' : 'builtArtifacts', $pb.PbFieldType.PM, subBuilder: Artifact.create)
-    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $301.Timestamp.create)
-    ..aOM<$301.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'createTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(6, _omitFieldNames ? '' : 'startTime', subBuilder: $302.Timestamp.create)
+    ..aOM<$302.Timestamp>(7, _omitFieldNames ? '' : 'endTime', subBuilder: $302.Timestamp.create)
     ..aOS(8, _omitFieldNames ? '' : 'creator')
     ..aOS(9, _omitFieldNames ? '' : 'logsUri')
     ..aOM<Source>(10, _omitFieldNames ? '' : 'sourceProvenance', subBuilder: Source.create)
@@ -150,39 +150,39 @@ class BuildProvenance extends $pb.GeneratedMessage {
 
   /// Time at which the build was created.
   @$pb.TagNumber(5)
-  $301.Timestamp get createTime => $_getN(4);
+  $302.Timestamp get createTime => $_getN(4);
   @$pb.TagNumber(5)
-  set createTime($301.Timestamp v) { setField(5, v); }
+  set createTime($302.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCreateTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearCreateTime() => clearField(5);
   @$pb.TagNumber(5)
-  $301.Timestamp ensureCreateTime() => $_ensure(4);
+  $302.Timestamp ensureCreateTime() => $_ensure(4);
 
   /// Time at which execution of the build was started.
   @$pb.TagNumber(6)
-  $301.Timestamp get startTime => $_getN(5);
+  $302.Timestamp get startTime => $_getN(5);
   @$pb.TagNumber(6)
-  set startTime($301.Timestamp v) { setField(6, v); }
+  set startTime($302.Timestamp v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasStartTime() => $_has(5);
   @$pb.TagNumber(6)
   void clearStartTime() => clearField(6);
   @$pb.TagNumber(6)
-  $301.Timestamp ensureStartTime() => $_ensure(5);
+  $302.Timestamp ensureStartTime() => $_ensure(5);
 
   /// Time at which execution of the build was finished.
   @$pb.TagNumber(7)
-  $301.Timestamp get endTime => $_getN(6);
+  $302.Timestamp get endTime => $_getN(6);
   @$pb.TagNumber(7)
-  set endTime($301.Timestamp v) { setField(7, v); }
+  set endTime($302.Timestamp v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasEndTime() => $_has(6);
   @$pb.TagNumber(7)
   void clearEndTime() => clearField(7);
   @$pb.TagNumber(7)
-  $301.Timestamp ensureEndTime() => $_ensure(6);
+  $302.Timestamp ensureEndTime() => $_ensure(6);
 
   /// E-mail address of the user who initiated this build. Note that this was the
   /// user's e-mail address at the time the build was initiated; this address may

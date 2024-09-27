@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'image.pbenum.dart' as $308;
+import 'image.pbenum.dart' as $309;
 
 /// An item in the collection
 class Collection_CollectionItem extends $pb.GeneratedMessage {
@@ -74,7 +74,7 @@ class Collection extends $pb.GeneratedMessage {
     $core.String? title,
     $core.String? subtitle,
     $core.Iterable<Collection_CollectionItem>? items,
-    $308.Image_ImageFill? imageFill,
+    $309.Image_ImageFill? imageFill,
   }) {
     final $result = create();
     if (title != null) {
@@ -99,7 +99,7 @@ class Collection extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'title')
     ..aOS(2, _omitFieldNames ? '' : 'subtitle')
     ..pc<Collection_CollectionItem>(3, _omitFieldNames ? '' : 'items', $pb.PbFieldType.PM, subBuilder: Collection_CollectionItem.create)
-    ..e<$308.Image_ImageFill>(4, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $308.Image_ImageFill.UNSPECIFIED, valueOf: $308.Image_ImageFill.valueOf, enumValues: $308.Image_ImageFill.values)
+    ..e<$309.Image_ImageFill>(4, _omitFieldNames ? '' : 'imageFill', $pb.PbFieldType.OE, defaultOrMaker: $309.Image_ImageFill.UNSPECIFIED, valueOf: $309.Image_ImageFill.valueOf, enumValues: $309.Image_ImageFill.values)
     ..hasRequiredFields = false
   ;
 
@@ -150,9 +150,9 @@ class Collection extends $pb.GeneratedMessage {
 
   /// How the image backgrounds of collection items will be filled. Optional.
   @$pb.TagNumber(4)
-  $308.Image_ImageFill get imageFill => $_getN(3);
+  $309.Image_ImageFill get imageFill => $_getN(3);
   @$pb.TagNumber(4)
-  set imageFill($308.Image_ImageFill v) { setField(4, v); }
+  set imageFill($309.Image_ImageFill v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasImageFill() => $_has(3);
   @$pb.TagNumber(4)

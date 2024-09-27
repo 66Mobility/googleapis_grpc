@@ -13,10 +13,10 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'citation.pb.dart' as $330;
-import 'content.pb.dart' as $328;
+import 'citation.pb.dart' as $331;
+import 'content.pb.dart' as $329;
 import 'generative_service.pbenum.dart';
-import 'safety.pb.dart' as $329;
+import 'safety.pb.dart' as $330;
 
 export 'generative_service.pbenum.dart';
 
@@ -24,8 +24,8 @@ export 'generative_service.pbenum.dart';
 class GenerateContentRequest extends $pb.GeneratedMessage {
   factory GenerateContentRequest({
     $core.String? model,
-    $core.Iterable<$328.Content>? contents,
-    $core.Iterable<$329.SafetySetting>? safetySettings,
+    $core.Iterable<$329.Content>? contents,
+    $core.Iterable<$330.SafetySetting>? safetySettings,
     GenerationConfig? generationConfig,
   }) {
     final $result = create();
@@ -49,8 +49,8 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateContentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$328.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $328.Content.create)
-    ..pc<$329.SafetySetting>(3, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM, subBuilder: $329.SafetySetting.create)
+    ..pc<$329.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $329.Content.create)
+    ..pc<$330.SafetySetting>(3, _omitFieldNames ? '' : 'safetySettings', $pb.PbFieldType.PM, subBuilder: $330.SafetySetting.create)
     ..aOM<GenerationConfig>(4, _omitFieldNames ? '' : 'generationConfig', subBuilder: GenerationConfig.create)
     ..hasRequiredFields = false
   ;
@@ -95,7 +95,7 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   ///  this is a repeated field that contains the conversation history and the
   ///  latest request.
   @$pb.TagNumber(2)
-  $core.List<$328.Content> get contents => $_getList(1);
+  $core.List<$329.Content> get contents => $_getList(1);
 
   ///  Optional. A list of unique `SafetySetting` instances for blocking unsafe
   ///  content.
@@ -115,7 +115,7 @@ class GenerateContentRequest extends $pb.GeneratedMessage {
   ///  [Safety guidance](https://ai.google.dev/gemini-api/docs/safety-guidance) to
   ///  learn how to incorporate safety considerations in your AI applications.
   @$pb.TagNumber(3)
-  $core.List<$329.SafetySetting> get safetySettings => $_getList(2);
+  $core.List<$330.SafetySetting> get safetySettings => $_getList(2);
 
   /// Optional. Configuration options for model generation and outputs.
   @$pb.TagNumber(4)
@@ -383,7 +383,7 @@ class GenerationConfig extends $pb.GeneratedMessage {
 class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
   factory GenerateContentResponse_PromptFeedback({
     GenerateContentResponse_PromptFeedback_BlockReason? blockReason,
-    $core.Iterable<$329.SafetyRating>? safetyRatings,
+    $core.Iterable<$330.SafetyRating>? safetyRatings,
   }) {
     final $result = create();
     if (blockReason != null) {
@@ -400,7 +400,7 @@ class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GenerateContentResponse.PromptFeedback', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
     ..e<GenerateContentResponse_PromptFeedback_BlockReason>(1, _omitFieldNames ? '' : 'blockReason', $pb.PbFieldType.OE, defaultOrMaker: GenerateContentResponse_PromptFeedback_BlockReason.BLOCK_REASON_UNSPECIFIED, valueOf: GenerateContentResponse_PromptFeedback_BlockReason.valueOf, enumValues: GenerateContentResponse_PromptFeedback_BlockReason.values)
-    ..pc<$329.SafetyRating>(2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $329.SafetyRating.create)
+    ..pc<$330.SafetyRating>(2, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $330.SafetyRating.create)
     ..hasRequiredFields = false
   ;
 
@@ -439,7 +439,7 @@ class GenerateContentResponse_PromptFeedback extends $pb.GeneratedMessage {
   /// Ratings for safety of the prompt.
   /// There is at most one rating per category.
   @$pb.TagNumber(2)
-  $core.List<$329.SafetyRating> get safetyRatings => $_getList(1);
+  $core.List<$330.SafetyRating> get safetyRatings => $_getList(1);
 }
 
 /// Metadata on the generation request's token usage.
@@ -619,11 +619,11 @@ class GenerateContentResponse extends $pb.GeneratedMessage {
 /// A response candidate generated from the model.
 class Candidate extends $pb.GeneratedMessage {
   factory Candidate({
-    $328.Content? content,
+    $329.Content? content,
     Candidate_FinishReason? finishReason,
     $core.int? index,
-    $core.Iterable<$329.SafetyRating>? safetyRatings,
-    $330.CitationMetadata? citationMetadata,
+    $core.Iterable<$330.SafetyRating>? safetyRatings,
+    $331.CitationMetadata? citationMetadata,
     $core.int? tokenCount,
     $core.double? avgLogprobs,
     LogprobsResult? logprobsResult,
@@ -660,11 +660,11 @@ class Candidate extends $pb.GeneratedMessage {
   factory Candidate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Candidate', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
-    ..aOM<$328.Content>(1, _omitFieldNames ? '' : 'content', subBuilder: $328.Content.create)
+    ..aOM<$329.Content>(1, _omitFieldNames ? '' : 'content', subBuilder: $329.Content.create)
     ..e<Candidate_FinishReason>(2, _omitFieldNames ? '' : 'finishReason', $pb.PbFieldType.OE, defaultOrMaker: Candidate_FinishReason.FINISH_REASON_UNSPECIFIED, valueOf: Candidate_FinishReason.valueOf, enumValues: Candidate_FinishReason.values)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'index', $pb.PbFieldType.O3)
-    ..pc<$329.SafetyRating>(5, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $329.SafetyRating.create)
-    ..aOM<$330.CitationMetadata>(6, _omitFieldNames ? '' : 'citationMetadata', subBuilder: $330.CitationMetadata.create)
+    ..pc<$330.SafetyRating>(5, _omitFieldNames ? '' : 'safetyRatings', $pb.PbFieldType.PM, subBuilder: $330.SafetyRating.create)
+    ..aOM<$331.CitationMetadata>(6, _omitFieldNames ? '' : 'citationMetadata', subBuilder: $331.CitationMetadata.create)
     ..a<$core.int>(7, _omitFieldNames ? '' : 'tokenCount', $pb.PbFieldType.O3)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'avgLogprobs', $pb.PbFieldType.OD)
     ..aOM<LogprobsResult>(11, _omitFieldNames ? '' : 'logprobsResult', subBuilder: LogprobsResult.create)
@@ -694,15 +694,15 @@ class Candidate extends $pb.GeneratedMessage {
 
   /// Output only. Generated content returned from the model.
   @$pb.TagNumber(1)
-  $328.Content get content => $_getN(0);
+  $329.Content get content => $_getN(0);
   @$pb.TagNumber(1)
-  set content($328.Content v) { setField(1, v); }
+  set content($329.Content v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasContent() => $_has(0);
   @$pb.TagNumber(1)
   void clearContent() => clearField(1);
   @$pb.TagNumber(1)
-  $328.Content ensureContent() => $_ensure(0);
+  $329.Content ensureContent() => $_ensure(0);
 
   ///  Optional. Output only. The reason why the model stopped generating tokens.
   ///
@@ -730,7 +730,7 @@ class Candidate extends $pb.GeneratedMessage {
   ///
   ///  There is at most one rating per category.
   @$pb.TagNumber(5)
-  $core.List<$329.SafetyRating> get safetyRatings => $_getList(3);
+  $core.List<$330.SafetyRating> get safetyRatings => $_getList(3);
 
   ///  Output only. Citation information for model-generated candidate.
   ///
@@ -738,15 +738,15 @@ class Candidate extends $pb.GeneratedMessage {
   ///  included in the `content`. These are passages that are "recited" from
   ///  copyrighted material in the foundational LLM's training data.
   @$pb.TagNumber(6)
-  $330.CitationMetadata get citationMetadata => $_getN(4);
+  $331.CitationMetadata get citationMetadata => $_getN(4);
   @$pb.TagNumber(6)
-  set citationMetadata($330.CitationMetadata v) { setField(6, v); }
+  set citationMetadata($331.CitationMetadata v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCitationMetadata() => $_has(4);
   @$pb.TagNumber(6)
   void clearCitationMetadata() => clearField(6);
   @$pb.TagNumber(6)
-  $330.CitationMetadata ensureCitationMetadata() => $_ensure(4);
+  $331.CitationMetadata ensureCitationMetadata() => $_ensure(4);
 
   /// Output only. Token count for this candidate.
   @$pb.TagNumber(7)
@@ -969,7 +969,7 @@ class LogprobsResult extends $pb.GeneratedMessage {
 class EmbedContentRequest extends $pb.GeneratedMessage {
   factory EmbedContentRequest({
     $core.String? model,
-    $328.Content? content,
+    $329.Content? content,
     TaskType? taskType,
     $core.String? title,
     $core.int? outputDimensionality,
@@ -998,7 +998,7 @@ class EmbedContentRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EmbedContentRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..aOM<$328.Content>(2, _omitFieldNames ? '' : 'content', subBuilder: $328.Content.create)
+    ..aOM<$329.Content>(2, _omitFieldNames ? '' : 'content', subBuilder: $329.Content.create)
     ..e<TaskType>(3, _omitFieldNames ? '' : 'taskType', $pb.PbFieldType.OE, defaultOrMaker: TaskType.TASK_TYPE_UNSPECIFIED, valueOf: TaskType.valueOf, enumValues: TaskType.values)
     ..aOS(4, _omitFieldNames ? '' : 'title')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'outputDimensionality', $pb.PbFieldType.O3)
@@ -1044,15 +1044,15 @@ class EmbedContentRequest extends $pb.GeneratedMessage {
   /// Required. The content to embed. Only the `parts.text` fields will be
   /// counted.
   @$pb.TagNumber(2)
-  $328.Content get content => $_getN(1);
+  $329.Content get content => $_getN(1);
   @$pb.TagNumber(2)
-  set content($328.Content v) { setField(2, v); }
+  set content($329.Content v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasContent() => $_has(1);
   @$pb.TagNumber(2)
   void clearContent() => clearField(2);
   @$pb.TagNumber(2)
-  $328.Content ensureContent() => $_ensure(1);
+  $329.Content ensureContent() => $_ensure(1);
 
   /// Optional. Optional task type for which the embeddings will be used. Can
   /// only be set for `models/embedding-001`.
@@ -1314,7 +1314,7 @@ class BatchEmbedContentsResponse extends $pb.GeneratedMessage {
 class CountTokensRequest extends $pb.GeneratedMessage {
   factory CountTokensRequest({
     $core.String? model,
-    $core.Iterable<$328.Content>? contents,
+    $core.Iterable<$329.Content>? contents,
     GenerateContentRequest? generateContentRequest,
   }) {
     final $result = create();
@@ -1335,7 +1335,7 @@ class CountTokensRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CountTokensRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.ai.generativelanguage.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'model')
-    ..pc<$328.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $328.Content.create)
+    ..pc<$329.Content>(2, _omitFieldNames ? '' : 'contents', $pb.PbFieldType.PM, subBuilder: $329.Content.create)
     ..aOM<GenerateContentRequest>(3, _omitFieldNames ? '' : 'generateContentRequest', subBuilder: GenerateContentRequest.create)
     ..hasRequiredFields = false
   ;
@@ -1379,7 +1379,7 @@ class CountTokensRequest extends $pb.GeneratedMessage {
   /// Optional. The input given to the model as a prompt. This field is ignored
   /// when `generate_content_request` is set.
   @$pb.TagNumber(2)
-  $core.List<$328.Content> get contents => $_getList(1);
+  $core.List<$329.Content> get contents => $_getList(1);
 
   /// Optional. The overall input given to the `Model`. This includes the prompt
   /// as well as other model steering information like [system

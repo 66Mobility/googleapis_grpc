@@ -13,8 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../protobuf/field_mask.pb.dart' as $332;
-import '../../../protobuf/timestamp.pb.dart' as $301;
+import '../../../protobuf/field_mask.pb.dart' as $333;
+import '../../../protobuf/timestamp.pb.dart' as $302;
 import 'backup.pb.dart' as $122;
 import 'database.pb.dart' as $121;
 import 'field.pb.dart' as $120;
@@ -337,7 +337,7 @@ class GetDatabaseRequest extends $pb.GeneratedMessage {
 class UpdateDatabaseRequest extends $pb.GeneratedMessage {
   factory UpdateDatabaseRequest({
     $121.Database? database,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (database != null) {
@@ -354,7 +354,7 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateDatabaseRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
     ..aOM<$121.Database>(1, _omitFieldNames ? '' : 'database', subBuilder: $121.Database.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -393,15 +393,15 @@ class UpdateDatabaseRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// Metadata related to the update database operation.
@@ -674,7 +674,7 @@ class GetBackupScheduleRequest extends $pb.GeneratedMessage {
 class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
   factory UpdateBackupScheduleRequest({
     $123.BackupSchedule? backupSchedule,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (backupSchedule != null) {
@@ -691,7 +691,7 @@ class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateBackupScheduleRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
     ..aOM<$123.BackupSchedule>(1, _omitFieldNames ? '' : 'backupSchedule', subBuilder: $123.BackupSchedule.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -730,15 +730,15 @@ class UpdateBackupScheduleRequest extends $pb.GeneratedMessage {
 
   /// The list of fields to be updated.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request for
@@ -1246,7 +1246,7 @@ class DeleteIndexRequest extends $pb.GeneratedMessage {
 class UpdateFieldRequest extends $pb.GeneratedMessage {
   factory UpdateFieldRequest({
     $120.Field? field_1,
-    $332.FieldMask? updateMask,
+    $333.FieldMask? updateMask,
   }) {
     final $result = create();
     if (field_1 != null) {
@@ -1263,7 +1263,7 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateFieldRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.firestore.admin.v1'), createEmptyInstance: create)
     ..aOM<$120.Field>(1, _omitFieldNames ? '' : 'field', subBuilder: $120.Field.create)
-    ..aOM<$332.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $332.FieldMask.create)
+    ..aOM<$333.FieldMask>(2, _omitFieldNames ? '' : 'updateMask', subBuilder: $333.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -1303,15 +1303,15 @@ class UpdateFieldRequest extends $pb.GeneratedMessage {
   /// A mask, relative to the field. If specified, only configuration specified
   /// by this field_mask will be updated in the field.
   @$pb.TagNumber(2)
-  $332.FieldMask get updateMask => $_getN(1);
+  $333.FieldMask get updateMask => $_getN(1);
   @$pb.TagNumber(2)
-  set updateMask($332.FieldMask v) { setField(2, v); }
+  set updateMask($333.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdateMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdateMask() => clearField(2);
   @$pb.TagNumber(2)
-  $332.FieldMask ensureUpdateMask() => $_ensure(1);
+  $333.FieldMask ensureUpdateMask() => $_ensure(1);
 }
 
 /// The request for
@@ -1546,7 +1546,7 @@ class ExportDocumentsRequest extends $pb.GeneratedMessage {
     $core.Iterable<$core.String>? collectionIds,
     $core.String? outputUriPrefix,
     $core.Iterable<$core.String>? namespaceIds,
-    $301.Timestamp? snapshotTime,
+    $302.Timestamp? snapshotTime,
   }) {
     final $result = create();
     if (name != null) {
@@ -1575,7 +1575,7 @@ class ExportDocumentsRequest extends $pb.GeneratedMessage {
     ..pPS(2, _omitFieldNames ? '' : 'collectionIds')
     ..aOS(3, _omitFieldNames ? '' : 'outputUriPrefix')
     ..pPS(4, _omitFieldNames ? '' : 'namespaceIds')
-    ..aOM<$301.Timestamp>(5, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $301.Timestamp.create)
+    ..aOM<$302.Timestamp>(5, _omitFieldNames ? '' : 'snapshotTime', subBuilder: $302.Timestamp.create)
     ..hasRequiredFields = false
   ;
 
@@ -1650,15 +1650,15 @@ class ExportDocumentsRequest extends $pb.GeneratedMessage {
   /// of the database at the provided time. Otherwise, there are no guarantees
   /// about the consistency of the exported documents.
   @$pb.TagNumber(5)
-  $301.Timestamp get snapshotTime => $_getN(4);
+  $302.Timestamp get snapshotTime => $_getN(4);
   @$pb.TagNumber(5)
-  set snapshotTime($301.Timestamp v) { setField(5, v); }
+  set snapshotTime($302.Timestamp v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSnapshotTime() => $_has(4);
   @$pb.TagNumber(5)
   void clearSnapshotTime() => clearField(5);
   @$pb.TagNumber(5)
-  $301.Timestamp ensureSnapshotTime() => $_ensure(4);
+  $302.Timestamp ensureSnapshotTime() => $_ensure(4);
 }
 
 /// The request for

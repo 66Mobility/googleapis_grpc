@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../protobuf/duration.pb.dart' as $263;
+import '../../protobuf/duration.pb.dart' as $264;
 import 'app_yaml.pbenum.dart';
 
 export 'app_yaml.pbenum.dart';
@@ -415,7 +415,7 @@ class StaticFilesHandler extends $pb.GeneratedMessage {
     $core.String? uploadPathRegex,
     $core.Map<$core.String, $core.String>? httpHeaders,
     $core.String? mimeType,
-    $263.Duration? expiration,
+    $264.Duration? expiration,
     $core.bool? requireMatchingFile,
     $core.bool? applicationReadable,
   }) {
@@ -452,7 +452,7 @@ class StaticFilesHandler extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'uploadPathRegex')
     ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'httpHeaders', entryClassName: 'StaticFilesHandler.HttpHeadersEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('google.appengine.v1'))
     ..aOS(4, _omitFieldNames ? '' : 'mimeType')
-    ..aOM<$263.Duration>(5, _omitFieldNames ? '' : 'expiration', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'expiration', subBuilder: $264.Duration.create)
     ..aOB(6, _omitFieldNames ? '' : 'requireMatchingFile')
     ..aOB(7, _omitFieldNames ? '' : 'applicationReadable')
     ..hasRequiredFields = false
@@ -522,15 +522,15 @@ class StaticFilesHandler extends $pb.GeneratedMessage {
   /// Time a static file served by this handler should be cached
   /// by web proxies and browsers.
   @$pb.TagNumber(5)
-  $263.Duration get expiration => $_getN(4);
+  $264.Duration get expiration => $_getN(4);
   @$pb.TagNumber(5)
-  set expiration($263.Duration v) { setField(5, v); }
+  set expiration($264.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasExpiration() => $_has(4);
   @$pb.TagNumber(5)
   void clearExpiration() => clearField(5);
   @$pb.TagNumber(5)
-  $263.Duration ensureExpiration() => $_ensure(4);
+  $264.Duration ensureExpiration() => $_ensure(4);
 
   /// Whether this handler should match the request if the file
   /// referenced by the handler does not exist.
@@ -672,8 +672,8 @@ class HealthCheck extends $pb.GeneratedMessage {
     $core.int? healthyThreshold,
     $core.int? unhealthyThreshold,
     $core.int? restartThreshold,
-    $263.Duration? checkInterval,
-    $263.Duration? timeout,
+    $264.Duration? checkInterval,
+    $264.Duration? timeout,
   }) {
     final $result = create();
     if (disableHealthCheck != null) {
@@ -709,8 +709,8 @@ class HealthCheck extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'healthyThreshold', $pb.PbFieldType.OU3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'unhealthyThreshold', $pb.PbFieldType.OU3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'restartThreshold', $pb.PbFieldType.OU3)
-    ..aOM<$263.Duration>(6, _omitFieldNames ? '' : 'checkInterval', subBuilder: $263.Duration.create)
-    ..aOM<$263.Duration>(7, _omitFieldNames ? '' : 'timeout', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'checkInterval', subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'timeout', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -791,27 +791,27 @@ class HealthCheck extends $pb.GeneratedMessage {
 
   /// Interval between health checks.
   @$pb.TagNumber(6)
-  $263.Duration get checkInterval => $_getN(5);
+  $264.Duration get checkInterval => $_getN(5);
   @$pb.TagNumber(6)
-  set checkInterval($263.Duration v) { setField(6, v); }
+  set checkInterval($264.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasCheckInterval() => $_has(5);
   @$pb.TagNumber(6)
   void clearCheckInterval() => clearField(6);
   @$pb.TagNumber(6)
-  $263.Duration ensureCheckInterval() => $_ensure(5);
+  $264.Duration ensureCheckInterval() => $_ensure(5);
 
   /// Time before the health check is considered failed.
   @$pb.TagNumber(7)
-  $263.Duration get timeout => $_getN(6);
+  $264.Duration get timeout => $_getN(6);
   @$pb.TagNumber(7)
-  set timeout($263.Duration v) { setField(7, v); }
+  set timeout($264.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasTimeout() => $_has(6);
   @$pb.TagNumber(7)
   void clearTimeout() => clearField(7);
   @$pb.TagNumber(7)
-  $263.Duration ensureTimeout() => $_ensure(6);
+  $264.Duration ensureTimeout() => $_ensure(6);
 }
 
 /// Readiness checking configuration for VM instances. Unhealthy instances
@@ -822,9 +822,9 @@ class ReadinessCheck extends $pb.GeneratedMessage {
     $core.String? host,
     $core.int? failureThreshold,
     $core.int? successThreshold,
-    $263.Duration? checkInterval,
-    $263.Duration? timeout,
-    $263.Duration? appStartTimeout,
+    $264.Duration? checkInterval,
+    $264.Duration? timeout,
+    $264.Duration? appStartTimeout,
   }) {
     final $result = create();
     if (path != null) {
@@ -859,9 +859,9 @@ class ReadinessCheck extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'host')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'failureThreshold', $pb.PbFieldType.OU3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'successThreshold', $pb.PbFieldType.OU3)
-    ..aOM<$263.Duration>(5, _omitFieldNames ? '' : 'checkInterval', subBuilder: $263.Duration.create)
-    ..aOM<$263.Duration>(6, _omitFieldNames ? '' : 'timeout', subBuilder: $263.Duration.create)
-    ..aOM<$263.Duration>(7, _omitFieldNames ? '' : 'appStartTimeout', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'checkInterval', subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'timeout', subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'appStartTimeout', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -931,41 +931,41 @@ class ReadinessCheck extends $pb.GeneratedMessage {
 
   /// Interval between health checks.
   @$pb.TagNumber(5)
-  $263.Duration get checkInterval => $_getN(4);
+  $264.Duration get checkInterval => $_getN(4);
   @$pb.TagNumber(5)
-  set checkInterval($263.Duration v) { setField(5, v); }
+  set checkInterval($264.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCheckInterval() => $_has(4);
   @$pb.TagNumber(5)
   void clearCheckInterval() => clearField(5);
   @$pb.TagNumber(5)
-  $263.Duration ensureCheckInterval() => $_ensure(4);
+  $264.Duration ensureCheckInterval() => $_ensure(4);
 
   /// Time before the check is considered failed.
   @$pb.TagNumber(6)
-  $263.Duration get timeout => $_getN(5);
+  $264.Duration get timeout => $_getN(5);
   @$pb.TagNumber(6)
-  set timeout($263.Duration v) { setField(6, v); }
+  set timeout($264.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeout() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimeout() => clearField(6);
   @$pb.TagNumber(6)
-  $263.Duration ensureTimeout() => $_ensure(5);
+  $264.Duration ensureTimeout() => $_ensure(5);
 
   /// A maximum time limit on application initialization, measured from moment
   /// the application successfully replies to a healthcheck until it is ready to
   /// serve traffic.
   @$pb.TagNumber(7)
-  $263.Duration get appStartTimeout => $_getN(6);
+  $264.Duration get appStartTimeout => $_getN(6);
   @$pb.TagNumber(7)
-  set appStartTimeout($263.Duration v) { setField(7, v); }
+  set appStartTimeout($264.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasAppStartTimeout() => $_has(6);
   @$pb.TagNumber(7)
   void clearAppStartTimeout() => clearField(7);
   @$pb.TagNumber(7)
-  $263.Duration ensureAppStartTimeout() => $_ensure(6);
+  $264.Duration ensureAppStartTimeout() => $_ensure(6);
 }
 
 /// Health checking configuration for VM instances. Unhealthy instances
@@ -976,9 +976,9 @@ class LivenessCheck extends $pb.GeneratedMessage {
     $core.String? host,
     $core.int? failureThreshold,
     $core.int? successThreshold,
-    $263.Duration? checkInterval,
-    $263.Duration? timeout,
-    $263.Duration? initialDelay,
+    $264.Duration? checkInterval,
+    $264.Duration? timeout,
+    $264.Duration? initialDelay,
   }) {
     final $result = create();
     if (path != null) {
@@ -1013,9 +1013,9 @@ class LivenessCheck extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'host')
     ..a<$core.int>(3, _omitFieldNames ? '' : 'failureThreshold', $pb.PbFieldType.OU3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'successThreshold', $pb.PbFieldType.OU3)
-    ..aOM<$263.Duration>(5, _omitFieldNames ? '' : 'checkInterval', subBuilder: $263.Duration.create)
-    ..aOM<$263.Duration>(6, _omitFieldNames ? '' : 'timeout', subBuilder: $263.Duration.create)
-    ..aOM<$263.Duration>(7, _omitFieldNames ? '' : 'initialDelay', subBuilder: $263.Duration.create)
+    ..aOM<$264.Duration>(5, _omitFieldNames ? '' : 'checkInterval', subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(6, _omitFieldNames ? '' : 'timeout', subBuilder: $264.Duration.create)
+    ..aOM<$264.Duration>(7, _omitFieldNames ? '' : 'initialDelay', subBuilder: $264.Duration.create)
     ..hasRequiredFields = false
   ;
 
@@ -1085,39 +1085,39 @@ class LivenessCheck extends $pb.GeneratedMessage {
 
   /// Interval between health checks.
   @$pb.TagNumber(5)
-  $263.Duration get checkInterval => $_getN(4);
+  $264.Duration get checkInterval => $_getN(4);
   @$pb.TagNumber(5)
-  set checkInterval($263.Duration v) { setField(5, v); }
+  set checkInterval($264.Duration v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasCheckInterval() => $_has(4);
   @$pb.TagNumber(5)
   void clearCheckInterval() => clearField(5);
   @$pb.TagNumber(5)
-  $263.Duration ensureCheckInterval() => $_ensure(4);
+  $264.Duration ensureCheckInterval() => $_ensure(4);
 
   /// Time before the check is considered failed.
   @$pb.TagNumber(6)
-  $263.Duration get timeout => $_getN(5);
+  $264.Duration get timeout => $_getN(5);
   @$pb.TagNumber(6)
-  set timeout($263.Duration v) { setField(6, v); }
+  set timeout($264.Duration v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTimeout() => $_has(5);
   @$pb.TagNumber(6)
   void clearTimeout() => clearField(6);
   @$pb.TagNumber(6)
-  $263.Duration ensureTimeout() => $_ensure(5);
+  $264.Duration ensureTimeout() => $_ensure(5);
 
   /// The initial delay before starting to execute the checks.
   @$pb.TagNumber(7)
-  $263.Duration get initialDelay => $_getN(6);
+  $264.Duration get initialDelay => $_getN(6);
   @$pb.TagNumber(7)
-  set initialDelay($263.Duration v) { setField(7, v); }
+  set initialDelay($264.Duration v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInitialDelay() => $_has(6);
   @$pb.TagNumber(7)
   void clearInitialDelay() => clearField(7);
   @$pb.TagNumber(7)
-  $263.Duration ensureInitialDelay() => $_ensure(6);
+  $264.Duration ensureInitialDelay() => $_ensure(6);
 }
 
 /// Third-party Python runtime library that is required by the application.

@@ -13,17 +13,17 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../geo/type/viewport.pb.dart' as $448;
-import '../../../type/date.pb.dart' as $326;
-import '../../../type/latlng.pb.dart' as $324;
-import '../../../type/localized_text.pb.dart' as $459;
-import 'content_block.pb.dart' as $467;
-import 'ev_charging.pb.dart' as $466;
-import 'fuel_options.pb.dart' as $465;
-import 'photo.pb.dart' as $463;
+import '../../../geo/type/viewport.pb.dart' as $449;
+import '../../../type/date.pb.dart' as $327;
+import '../../../type/latlng.pb.dart' as $325;
+import '../../../type/localized_text.pb.dart' as $460;
+import 'content_block.pb.dart' as $468;
+import 'ev_charging.pb.dart' as $467;
+import 'fuel_options.pb.dart' as $466;
+import 'photo.pb.dart' as $464;
 import 'place.pbenum.dart';
-import 'reference.pb.dart' as $462;
-import 'review.pb.dart' as $461;
+import 'reference.pb.dart' as $463;
+import 'review.pb.dart' as $462;
 
 export 'place.pbenum.dart';
 
@@ -202,7 +202,7 @@ class Place_OpeningHours_Period_Point extends $pb.GeneratedMessage {
     $core.int? hour,
     $core.int? minute,
     $core.bool? truncated,
-    $326.Date? date,
+    $327.Date? date,
   }) {
     final $result = create();
     if (day != null) {
@@ -231,7 +231,7 @@ class Place_OpeningHours_Period_Point extends $pb.GeneratedMessage {
     ..a<$core.int>(2, _omitFieldNames ? '' : 'hour', $pb.PbFieldType.O3)
     ..a<$core.int>(3, _omitFieldNames ? '' : 'minute', $pb.PbFieldType.O3)
     ..aOB(5, _omitFieldNames ? '' : 'truncated')
-    ..aOM<$326.Date>(6, _omitFieldNames ? '' : 'date', subBuilder: $326.Date.create)
+    ..aOM<$327.Date>(6, _omitFieldNames ? '' : 'date', subBuilder: $327.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -303,15 +303,15 @@ class Place_OpeningHours_Period_Point extends $pb.GeneratedMessage {
 
   /// Date in the local timezone for the place.
   @$pb.TagNumber(6)
-  $326.Date get date => $_getN(4);
+  $327.Date get date => $_getN(4);
   @$pb.TagNumber(6)
-  set date($326.Date v) { setField(6, v); }
+  set date($327.Date v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDate() => $_has(4);
   @$pb.TagNumber(6)
   void clearDate() => clearField(6);
   @$pb.TagNumber(6)
-  $326.Date ensureDate() => $_ensure(4);
+  $327.Date ensureDate() => $_ensure(4);
 }
 
 /// A period the place remains in open_now status.
@@ -390,7 +390,7 @@ class Place_OpeningHours_Period extends $pb.GeneratedMessage {
 /// the business hours of a place, e.g. Christmas day.
 class Place_OpeningHours_SpecialDay extends $pb.GeneratedMessage {
   factory Place_OpeningHours_SpecialDay({
-    $326.Date? date,
+    $327.Date? date,
   }) {
     final $result = create();
     if (date != null) {
@@ -403,7 +403,7 @@ class Place_OpeningHours_SpecialDay extends $pb.GeneratedMessage {
   factory Place_OpeningHours_SpecialDay.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.OpeningHours.SpecialDay', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<$326.Date>(1, _omitFieldNames ? '' : 'date', subBuilder: $326.Date.create)
+    ..aOM<$327.Date>(1, _omitFieldNames ? '' : 'date', subBuilder: $327.Date.create)
     ..hasRequiredFields = false
   ;
 
@@ -430,15 +430,15 @@ class Place_OpeningHours_SpecialDay extends $pb.GeneratedMessage {
 
   /// The date of this special day.
   @$pb.TagNumber(1)
-  $326.Date get date => $_getN(0);
+  $327.Date get date => $_getN(0);
   @$pb.TagNumber(1)
-  set date($326.Date v) { setField(1, v); }
+  set date($327.Date v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasDate() => $_has(0);
   @$pb.TagNumber(1)
   void clearDate() => clearField(1);
   @$pb.TagNumber(1)
-  $326.Date ensureDate() => $_ensure(0);
+  $327.Date ensureDate() => $_ensure(0);
 }
 
 /// Information about business hour of the place.
@@ -1027,9 +1027,9 @@ class Place_AccessibilityOptions extends $pb.GeneratedMessage {
 ///  AI-generated summary of the place.
 class Place_GenerativeSummary extends $pb.GeneratedMessage {
   factory Place_GenerativeSummary({
-    $459.LocalizedText? overview,
-    $459.LocalizedText? description,
-    $462.References? references,
+    $460.LocalizedText? overview,
+    $460.LocalizedText? description,
+    $463.References? references,
   }) {
     final $result = create();
     if (overview != null) {
@@ -1048,9 +1048,9 @@ class Place_GenerativeSummary extends $pb.GeneratedMessage {
   factory Place_GenerativeSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.GenerativeSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..aOM<$459.LocalizedText>(1, _omitFieldNames ? '' : 'overview', subBuilder: $459.LocalizedText.create)
-    ..aOM<$459.LocalizedText>(2, _omitFieldNames ? '' : 'description', subBuilder: $459.LocalizedText.create)
-    ..aOM<$462.References>(3, _omitFieldNames ? '' : 'references', subBuilder: $462.References.create)
+    ..aOM<$460.LocalizedText>(1, _omitFieldNames ? '' : 'overview', subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(2, _omitFieldNames ? '' : 'description', subBuilder: $460.LocalizedText.create)
+    ..aOM<$463.References>(3, _omitFieldNames ? '' : 'references', subBuilder: $463.References.create)
     ..hasRequiredFields = false
   ;
 
@@ -1077,39 +1077,39 @@ class Place_GenerativeSummary extends $pb.GeneratedMessage {
 
   /// The overview of the place.
   @$pb.TagNumber(1)
-  $459.LocalizedText get overview => $_getN(0);
+  $460.LocalizedText get overview => $_getN(0);
   @$pb.TagNumber(1)
-  set overview($459.LocalizedText v) { setField(1, v); }
+  set overview($460.LocalizedText v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasOverview() => $_has(0);
   @$pb.TagNumber(1)
   void clearOverview() => clearField(1);
   @$pb.TagNumber(1)
-  $459.LocalizedText ensureOverview() => $_ensure(0);
+  $460.LocalizedText ensureOverview() => $_ensure(0);
 
   /// The detailed description of the place.
   @$pb.TagNumber(2)
-  $459.LocalizedText get description => $_getN(1);
+  $460.LocalizedText get description => $_getN(1);
   @$pb.TagNumber(2)
-  set description($459.LocalizedText v) { setField(2, v); }
+  set description($460.LocalizedText v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasDescription() => $_has(1);
   @$pb.TagNumber(2)
   void clearDescription() => clearField(2);
   @$pb.TagNumber(2)
-  $459.LocalizedText ensureDescription() => $_ensure(1);
+  $460.LocalizedText ensureDescription() => $_ensure(1);
 
   /// References that are used to generate the summary description.
   @$pb.TagNumber(3)
-  $462.References get references => $_getN(2);
+  $463.References get references => $_getN(2);
   @$pb.TagNumber(3)
-  set references($462.References v) { setField(3, v); }
+  set references($463.References v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasReferences() => $_has(2);
   @$pb.TagNumber(3)
   void clearReferences() => clearField(3);
   @$pb.TagNumber(3)
-  $462.References ensureReferences() => $_ensure(2);
+  $463.References ensureReferences() => $_ensure(2);
 }
 
 ///  Experimental: See
@@ -1119,7 +1119,7 @@ class Place_GenerativeSummary extends $pb.GeneratedMessage {
 ///  AI-generated summary of the area that the place is in.
 class Place_AreaSummary extends $pb.GeneratedMessage {
   factory Place_AreaSummary({
-    $core.Iterable<$467.ContentBlock>? contentBlocks,
+    $core.Iterable<$468.ContentBlock>? contentBlocks,
   }) {
     final $result = create();
     if (contentBlocks != null) {
@@ -1132,7 +1132,7 @@ class Place_AreaSummary extends $pb.GeneratedMessage {
   factory Place_AreaSummary.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Place.AreaSummary', package: const $pb.PackageName(_omitMessageNames ? '' : 'google.maps.places.v1'), createEmptyInstance: create)
-    ..pc<$467.ContentBlock>(4, _omitFieldNames ? '' : 'contentBlocks', $pb.PbFieldType.PM, subBuilder: $467.ContentBlock.create)
+    ..pc<$468.ContentBlock>(4, _omitFieldNames ? '' : 'contentBlocks', $pb.PbFieldType.PM, subBuilder: $468.ContentBlock.create)
     ..hasRequiredFields = false
   ;
 
@@ -1160,7 +1160,7 @@ class Place_AreaSummary extends $pb.GeneratedMessage {
   /// Content blocks that compose the area summary. Each block has a separate
   /// topic about the area.
   @$pb.TagNumber(4)
-  $core.List<$467.ContentBlock> get contentBlocks => $_getList(0);
+  $core.List<$468.ContentBlock> get contentBlocks => $_getList(0);
 }
 
 /// All the information representing a Place.
@@ -1174,8 +1174,8 @@ class Place extends $pb.GeneratedMessage {
     $core.String? formattedAddress,
     $core.Iterable<Place_AddressComponent>? addressComponents,
     Place_PlusCode? plusCode,
-    $324.LatLng? location,
-    $448.Viewport? viewport,
+    $325.LatLng? location,
+    $449.Viewport? viewport,
     $core.double? rating,
     $core.String? googleMapsUri,
     $core.String? websiteUri,
@@ -1188,8 +1188,8 @@ class Place extends $pb.GeneratedMessage {
     $core.int? userRatingCount,
     $core.String? iconMaskBaseUri,
     $core.String? iconBackgroundColor,
-    $459.LocalizedText? displayName,
-    $459.LocalizedText? primaryTypeDisplayName,
+    $460.LocalizedText? displayName,
+    $460.LocalizedText? primaryTypeDisplayName,
     $core.bool? takeout,
     $core.bool? delivery,
     $core.bool? dineIn,
@@ -1207,9 +1207,9 @@ class Place extends $pb.GeneratedMessage {
     $core.Iterable<Place_OpeningHours>? regularSecondaryOpeningHours,
     $core.String? primaryType,
     $core.String? shortFormattedAddress,
-    $459.LocalizedText? editorialSummary,
-    $core.Iterable<$461.Review>? reviews,
-    $core.Iterable<$463.Photo>? photos,
+    $460.LocalizedText? editorialSummary,
+    $core.Iterable<$462.Review>? reviews,
+    $core.Iterable<$464.Photo>? photos,
     $core.bool? outdoorSeating,
     $core.bool? liveMusic,
     $core.bool? menuForChildren,
@@ -1225,8 +1225,8 @@ class Place extends $pb.GeneratedMessage {
     Place_ParkingOptions? parkingOptions,
     $core.Iterable<Place_SubDestination>? subDestinations,
     Place_AccessibilityOptions? accessibilityOptions,
-    $465.FuelOptions? fuelOptions,
-    $466.EVChargeOptions? evChargeOptions,
+    $466.FuelOptions? fuelOptions,
+    $467.EVChargeOptions? evChargeOptions,
     Place_GenerativeSummary? generativeSummary,
     Place_AreaSummary? areaSummary,
   }) {
@@ -1435,8 +1435,8 @@ class Place extends $pb.GeneratedMessage {
     ..aOS(9, _omitFieldNames ? '' : 'formattedAddress')
     ..pc<Place_AddressComponent>(10, _omitFieldNames ? '' : 'addressComponents', $pb.PbFieldType.PM, subBuilder: Place_AddressComponent.create)
     ..aOM<Place_PlusCode>(11, _omitFieldNames ? '' : 'plusCode', subBuilder: Place_PlusCode.create)
-    ..aOM<$324.LatLng>(12, _omitFieldNames ? '' : 'location', subBuilder: $324.LatLng.create)
-    ..aOM<$448.Viewport>(13, _omitFieldNames ? '' : 'viewport', subBuilder: $448.Viewport.create)
+    ..aOM<$325.LatLng>(12, _omitFieldNames ? '' : 'location', subBuilder: $325.LatLng.create)
+    ..aOM<$449.Viewport>(13, _omitFieldNames ? '' : 'viewport', subBuilder: $449.Viewport.create)
     ..a<$core.double>(14, _omitFieldNames ? '' : 'rating', $pb.PbFieldType.OD)
     ..aOS(15, _omitFieldNames ? '' : 'googleMapsUri')
     ..aOS(16, _omitFieldNames ? '' : 'websiteUri')
@@ -1449,8 +1449,8 @@ class Place extends $pb.GeneratedMessage {
     ..a<$core.int>(28, _omitFieldNames ? '' : 'userRatingCount', $pb.PbFieldType.O3)
     ..aOS(29, _omitFieldNames ? '' : 'iconMaskBaseUri')
     ..aOS(30, _omitFieldNames ? '' : 'iconBackgroundColor')
-    ..aOM<$459.LocalizedText>(31, _omitFieldNames ? '' : 'displayName', subBuilder: $459.LocalizedText.create)
-    ..aOM<$459.LocalizedText>(32, _omitFieldNames ? '' : 'primaryTypeDisplayName', subBuilder: $459.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(31, _omitFieldNames ? '' : 'displayName', subBuilder: $460.LocalizedText.create)
+    ..aOM<$460.LocalizedText>(32, _omitFieldNames ? '' : 'primaryTypeDisplayName', subBuilder: $460.LocalizedText.create)
     ..aOB(33, _omitFieldNames ? '' : 'takeout')
     ..aOB(34, _omitFieldNames ? '' : 'delivery')
     ..aOB(35, _omitFieldNames ? '' : 'dineIn')
@@ -1468,9 +1468,9 @@ class Place extends $pb.GeneratedMessage {
     ..pc<Place_OpeningHours>(49, _omitFieldNames ? '' : 'regularSecondaryOpeningHours', $pb.PbFieldType.PM, subBuilder: Place_OpeningHours.create)
     ..aOS(50, _omitFieldNames ? '' : 'primaryType')
     ..aOS(51, _omitFieldNames ? '' : 'shortFormattedAddress')
-    ..aOM<$459.LocalizedText>(52, _omitFieldNames ? '' : 'editorialSummary', subBuilder: $459.LocalizedText.create)
-    ..pc<$461.Review>(53, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM, subBuilder: $461.Review.create)
-    ..pc<$463.Photo>(54, _omitFieldNames ? '' : 'photos', $pb.PbFieldType.PM, subBuilder: $463.Photo.create)
+    ..aOM<$460.LocalizedText>(52, _omitFieldNames ? '' : 'editorialSummary', subBuilder: $460.LocalizedText.create)
+    ..pc<$462.Review>(53, _omitFieldNames ? '' : 'reviews', $pb.PbFieldType.PM, subBuilder: $462.Review.create)
+    ..pc<$464.Photo>(54, _omitFieldNames ? '' : 'photos', $pb.PbFieldType.PM, subBuilder: $464.Photo.create)
     ..aOB(55, _omitFieldNames ? '' : 'outdoorSeating')
     ..aOB(56, _omitFieldNames ? '' : 'liveMusic')
     ..aOB(57, _omitFieldNames ? '' : 'menuForChildren')
@@ -1486,8 +1486,8 @@ class Place extends $pb.GeneratedMessage {
     ..aOM<Place_ParkingOptions>(70, _omitFieldNames ? '' : 'parkingOptions', subBuilder: Place_ParkingOptions.create)
     ..pc<Place_SubDestination>(71, _omitFieldNames ? '' : 'subDestinations', $pb.PbFieldType.PM, subBuilder: Place_SubDestination.create)
     ..aOM<Place_AccessibilityOptions>(72, _omitFieldNames ? '' : 'accessibilityOptions', subBuilder: Place_AccessibilityOptions.create)
-    ..aOM<$465.FuelOptions>(78, _omitFieldNames ? '' : 'fuelOptions', subBuilder: $465.FuelOptions.create)
-    ..aOM<$466.EVChargeOptions>(79, _omitFieldNames ? '' : 'evChargeOptions', subBuilder: $466.EVChargeOptions.create)
+    ..aOM<$466.FuelOptions>(78, _omitFieldNames ? '' : 'fuelOptions', subBuilder: $466.FuelOptions.create)
+    ..aOM<$467.EVChargeOptions>(79, _omitFieldNames ? '' : 'evChargeOptions', subBuilder: $467.EVChargeOptions.create)
     ..aOM<Place_GenerativeSummary>(80, _omitFieldNames ? '' : 'generativeSummary', subBuilder: Place_GenerativeSummary.create)
     ..aOM<Place_AreaSummary>(81, _omitFieldNames ? '' : 'areaSummary', subBuilder: Place_AreaSummary.create)
     ..hasRequiredFields = false
@@ -1603,27 +1603,27 @@ class Place extends $pb.GeneratedMessage {
 
   /// The position of this place.
   @$pb.TagNumber(12)
-  $324.LatLng get location => $_getN(8);
+  $325.LatLng get location => $_getN(8);
   @$pb.TagNumber(12)
-  set location($324.LatLng v) { setField(12, v); }
+  set location($325.LatLng v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasLocation() => $_has(8);
   @$pb.TagNumber(12)
   void clearLocation() => clearField(12);
   @$pb.TagNumber(12)
-  $324.LatLng ensureLocation() => $_ensure(8);
+  $325.LatLng ensureLocation() => $_ensure(8);
 
   /// A viewport suitable for displaying the place on an average-sized map.
   @$pb.TagNumber(13)
-  $448.Viewport get viewport => $_getN(9);
+  $449.Viewport get viewport => $_getN(9);
   @$pb.TagNumber(13)
-  set viewport($448.Viewport v) { setField(13, v); }
+  set viewport($449.Viewport v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasViewport() => $_has(9);
   @$pb.TagNumber(13)
   void clearViewport() => clearField(13);
   @$pb.TagNumber(13)
-  $448.Viewport ensureViewport() => $_ensure(9);
+  $449.Viewport ensureViewport() => $_ensure(9);
 
   /// A rating between 1.0 and 5.0, based on user reviews of this place.
   @$pb.TagNumber(14)
@@ -1750,30 +1750,30 @@ class Place extends $pb.GeneratedMessage {
   /// The localized name of the place, suitable as a short human-readable
   /// description. For example, "Google Sydney", "Starbucks", "Pyrmont", etc.
   @$pb.TagNumber(31)
-  $459.LocalizedText get displayName => $_getN(22);
+  $460.LocalizedText get displayName => $_getN(22);
   @$pb.TagNumber(31)
-  set displayName($459.LocalizedText v) { setField(31, v); }
+  set displayName($460.LocalizedText v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasDisplayName() => $_has(22);
   @$pb.TagNumber(31)
   void clearDisplayName() => clearField(31);
   @$pb.TagNumber(31)
-  $459.LocalizedText ensureDisplayName() => $_ensure(22);
+  $460.LocalizedText ensureDisplayName() => $_ensure(22);
 
   /// The display name of the primary type, localized to the request language if
   /// applicable. For the complete list of possible values, see Table A and Table
   /// B at
   /// https://developers.google.com/maps/documentation/places/web-service/place-types
   @$pb.TagNumber(32)
-  $459.LocalizedText get primaryTypeDisplayName => $_getN(23);
+  $460.LocalizedText get primaryTypeDisplayName => $_getN(23);
   @$pb.TagNumber(32)
-  set primaryTypeDisplayName($459.LocalizedText v) { setField(32, v); }
+  set primaryTypeDisplayName($460.LocalizedText v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasPrimaryTypeDisplayName() => $_has(23);
   @$pb.TagNumber(32)
   void clearPrimaryTypeDisplayName() => clearField(32);
   @$pb.TagNumber(32)
-  $459.LocalizedText ensurePrimaryTypeDisplayName() => $_ensure(23);
+  $460.LocalizedText ensurePrimaryTypeDisplayName() => $_ensure(23);
 
   /// Specifies if the business supports takeout.
   @$pb.TagNumber(33)
@@ -1958,25 +1958,25 @@ class Place extends $pb.GeneratedMessage {
   /// overview, and also includes the language code for these if applicable.
   /// Summary text must be presented as-is and can not be modified or altered.
   @$pb.TagNumber(52)
-  $459.LocalizedText get editorialSummary => $_getN(41);
+  $460.LocalizedText get editorialSummary => $_getN(41);
   @$pb.TagNumber(52)
-  set editorialSummary($459.LocalizedText v) { setField(52, v); }
+  set editorialSummary($460.LocalizedText v) { setField(52, v); }
   @$pb.TagNumber(52)
   $core.bool hasEditorialSummary() => $_has(41);
   @$pb.TagNumber(52)
   void clearEditorialSummary() => clearField(52);
   @$pb.TagNumber(52)
-  $459.LocalizedText ensureEditorialSummary() => $_ensure(41);
+  $460.LocalizedText ensureEditorialSummary() => $_ensure(41);
 
   /// List of reviews about this place, sorted by relevance. A maximum of 5
   /// reviews can be returned.
   @$pb.TagNumber(53)
-  $core.List<$461.Review> get reviews => $_getList(42);
+  $core.List<$462.Review> get reviews => $_getList(42);
 
   /// Information (including references) about photos of this place. A maximum of
   /// 10 photos can be returned.
   @$pb.TagNumber(54)
-  $core.List<$463.Photo> get photos => $_getList(43);
+  $core.List<$464.Photo> get photos => $_getList(43);
 
   /// Place provides outdoor seating.
   @$pb.TagNumber(55)
@@ -2132,27 +2132,27 @@ class Place extends $pb.GeneratedMessage {
   /// The most recent information about fuel options in a gas station. This
   /// information is updated regularly.
   @$pb.TagNumber(78)
-  $465.FuelOptions get fuelOptions => $_getN(59);
+  $466.FuelOptions get fuelOptions => $_getN(59);
   @$pb.TagNumber(78)
-  set fuelOptions($465.FuelOptions v) { setField(78, v); }
+  set fuelOptions($466.FuelOptions v) { setField(78, v); }
   @$pb.TagNumber(78)
   $core.bool hasFuelOptions() => $_has(59);
   @$pb.TagNumber(78)
   void clearFuelOptions() => clearField(78);
   @$pb.TagNumber(78)
-  $465.FuelOptions ensureFuelOptions() => $_ensure(59);
+  $466.FuelOptions ensureFuelOptions() => $_ensure(59);
 
   /// Information of ev charging options.
   @$pb.TagNumber(79)
-  $466.EVChargeOptions get evChargeOptions => $_getN(60);
+  $467.EVChargeOptions get evChargeOptions => $_getN(60);
   @$pb.TagNumber(79)
-  set evChargeOptions($466.EVChargeOptions v) { setField(79, v); }
+  set evChargeOptions($467.EVChargeOptions v) { setField(79, v); }
   @$pb.TagNumber(79)
   $core.bool hasEvChargeOptions() => $_has(60);
   @$pb.TagNumber(79)
   void clearEvChargeOptions() => clearField(79);
   @$pb.TagNumber(79)
-  $466.EVChargeOptions ensureEvChargeOptions() => $_ensure(60);
+  $467.EVChargeOptions ensureEvChargeOptions() => $_ensure(60);
 
   ///  Experimental: See
   ///  https://developers.google.com/maps/documentation/places/web-service/experimental/places-generative
